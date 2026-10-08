@@ -10,7 +10,6 @@ export default function Footer() {
           {/* Logo */}
           <div className="w-full xl:w-auto xl:flex-[2] mt-2 mb-8 xl:mb-0">
             <Logo />
-            <p className="mt-3 text-[11px] tracking-[0.12em] uppercase text-white/70">Components. Composed.</p>
           </div>
           {/* Link columns */}
           {FOOTER_COLUMNS.map((col) => (

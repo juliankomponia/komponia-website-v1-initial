@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-07",
+  "images": [
+    {
+      "file": "procurement.jpg",
+      "source": "/Users/julian/Documents/Default Project/Komponia_Website_final/assets/img/komponia-einkauf-hero.jpg",
+      "sha256": "1052e30716f2f1f3721de196f79db34541d1e563d604f24874ff6a965e8c049b",
+      "note": "Existing hero image from the earlier Komponia website, reused unchanged at the user\u2019s request."
+    },
+    {
+      "file": "engineered.jpg",
+      "source": "/Users/julian/Documents/Default Project/Komponia_Website_final/assets/img/komponia-engineered.jpg",
+      "sha256": "1627338e1329cd7376dbf1f392d30811a9c2351c0d87b9fc805ac68588ce98ba",
+      "note": "Existing hero image from the earlier Komponia website, reused unchanged at the user\u2019s request."
+    },
+    {
+      "file": "supply-chain.jpg",
+      "source": "/Users/julian/Documents/Default Project/Komponia_Website_final/assets/img/komponia-supply-final.jpg",
+      "sha256": "054613aab98c48226ce21ca252ed9ca9ab9e955ce750c44c7c0f5ce688390c65",
+      "note": "Existing hero image from the earlier Komponia website, reused unchanged at the user\u2019s request."
+    },
+    {
+      "file": "series.jpg",
+      "source": "/Users/julian/Documents/Default Project/Komponia_Website_final/assets/img/komponia-serie-2.jpg",
+      "sha256": "d6e9b9182fa00e7a18345bdc92a59cc17022d434a30d2421ee611f8e7e9ead63",
+      "note": "Existing hero image from the earlier Komponia website, reused unchanged at the user\u2019s request."
+    }
+  ]
+}

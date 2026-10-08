@@ -1,15 +1,46 @@
 {
   "hero": {
-    "title": "Technical components.\nComposed for your application.",
-    "intro": "Select the right component, develop a custom solution or plan ongoing supply. We bring the technical requirements and sourcing decisions together.",
-    "lines": [
-      "Components — Selection, advice and sourcing.",
-      "Custom solutions — Engineering, samples and agreed checks.",
-      "Ongoing supply — Recurring deliveries and defined stock terms."
-    ],
     "cta": {
       "label": "Discuss your requirements",
       "to": null
+    },
+    "slides": {
+      "procurement": {
+        "title": "Technical components.\nSelected for your application.",
+        "intro": "Find the right technical component for your application. We connect component selection, technical advice and sourcing around your requirements.",
+        "lines": [
+          "Component selection — Match function, interfaces and specifications.",
+          "Technical advice — Compare standard parts and suitable alternatives.",
+          "Sourcing — Align quantities, availability and documentation."
+        ]
+      },
+      "engineered": {
+        "title": "Custom solutions.\nDeveloped for your application.",
+        "intro": "Start with the application, a drawing or a sample. We bring engineering, suitable sources and agreed checks together for your custom component.",
+        "lines": [
+          "Application review — Define function, interfaces and operating conditions.",
+          "Custom development — Adapt standard parts or develop a custom solution.",
+          "Samples and checks — Agree evaluation criteria before release."
+        ]
+      },
+      "supplyChain": {
+        "title": "Component supply.\nPlanned around your needs.",
+        "intro": "Turn component demand into a coordinated supply plan. We align sourcing, stock arrangements and deliveries with your operational requirements.",
+        "lines": [
+          "Supply planning — Align demand, order cycles and lead times.",
+          "Stock arrangements — Define inventory levels and replenishment terms.",
+          "Delivery coordination — Plan quantities, schedules and documentation."
+        ]
+      },
+      "series": {
+        "title": "Series supply.\nBuilt around your demand.",
+        "intro": "Move from approved samples to repeat orders. We coordinate agreed specifications, recurring quantities and supply terms as your production needs develop.",
+        "lines": [
+          "Release requirements — Agree specifications, samples and checks.",
+          "Repeat orders — Maintain agreed references and documentation.",
+          "Ongoing supply — Plan recurring deliveries and stock terms."
+        ]
+      }
     }
   },
   "capabilities": {

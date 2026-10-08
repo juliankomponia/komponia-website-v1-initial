@@ -1,0 +1,62 @@
+STARTPROMPT – KOMPONIA: MANUFACTURING-INHALTE PRÜFEN
+Stand: 8. Oktober 2026
+
+Ich möchte die bestehende Komponia-Website inhaltlich weiterentwickeln. Der nächste Schritt ist ausschließlich die Prüfung des Manufacturing-Abschnitts auf der Startseite: Welche Hauptpunkte sollen dort unser tatsächliches Angebot darstellen?
+
+Arbeite im aktuellen Checkout des privaten Repositorys:
+https://github.com/juliankomponia/komponia-website-v1-initial
+Ursprünglicher lokaler Arbeitsordner:
+/Users/julian/Downloads/komponia-website-v1-initial
+Nach einem Clone gilt der tatsächlich gewählte Projektordner.
+Vorschau: http://localhost:3000/#/
+Website Englisch, Kommunikation Deutsch. Falls nötig, die lokale Vorschau starten.
+
+Aktueller Abschnitt:
+Überschrift „Manufacturing for custom parts“ mit vier Karten:
+– CNC machining
+– 3D printing
+– Sheet metal fabrication
+– Injection molding
+
+Diese Auswahl ist der aktuelle Website-Stand, keine bestätigte Priorisierung unserer wichtigsten Fertigungsleistungen. Prüfe sie anhand der Komponia-Inhalte und meiner Angaben.
+
+Gültige inhaltliche Quellen:
+Im getrennten privaten Repository juliankomponia/Unternehmensstrategie,
+Ordner Komponia_Sourcura_Strategie:
+– stage13_komponia.md
+– stage13_gesamtkonzept.md
+Ursprüngliche lokale Pfade:
+/Users/julian/Documents/Unternehmensstrategie/Komponia_Sourcura_Strategie/stage13_komponia.md
+/Users/julian/Documents/Unternehmensstrategie/Komponia_Sourcura_Strategie/stage13_gesamtkonzept.md
+Sind sie auf diesem Rechner nicht vorhanden, kläre den Zugriff auf diese Quellen, bevor du unbelegte Leistungsbehauptungen formulierst.
+
+Prüfe im aktuellen Website-Checkout:
+– src/data/home.json
+– src/pages/Home.tsx
+– src/components/Sections.tsx
+Beziehe bei Bedarf die verlinkten Fertigungsseiten und die Navigation ein.
+
+Inhaltlicher Maßstab:
+Komponia verbindet technische Komponenten, individuelle Lösungen und laufende Versorgung. Bestehender Komponentenhandel und Herstellerbeziehungen bleiben Kernangebot. Individuelle Lösungen umfassen Anpassung/Entwicklung, Muster, vereinbarte Prüfungen sowie die Begleitung von Fertigung und Serienübergang. Eigene und Partnerleistungen müssen korrekt beschrieben werden. Konkrete Verfahren und Fähigkeiten brauchen Bestätigung; die Strategie allein belegt keine verfügbare Fertigungskapazität. Regeltechnik, Sensorik und Heizelemente gehören zum Komponentenportfolio und sind nicht automatisch Manufacturing-Kategorien.
+
+Vorgehen:
+1. Vergleiche die vier aktuellen Karten mit den Quellen. Zeige knapp, was passt, was unklar ist und welche wichtigen Inhalte fehlen könnten.
+2. Empfiehl die wichtigsten Manufacturing-Punkte in sinnvoller Reihenfolge. Prüfe auch, ob eine Gliederung nach Verfahren oder nach individuellen Teilen/Lösungen unseren Kunden besser hilft und ob die Überschrift passt. Die bestehende Vier-Karten-Struktur ist der Ausgangspunkt; eine andere Anzahl zunächst nur vorschlagen.
+3. Frage mich gezielt nach fehlenden Angaben zu tatsächlichen Leistungen, Partnern, typischen Teilen, Mengen oder Prioritäten. Erfinde keine Fähigkeiten oder Referenzen.
+4. Erarbeite nach dieser Klärung einen konkreten englischen Textvorschlag: Abschnittsüberschrift, Einleitung sowie je Karte Titel, kurzer Beschreibungstext, zwei hilfreiche Stichpunkte und CTA. Erkläre die Empfehlung auf Deutsch.
+5. Erst nach meiner Zustimmung die Website anpassen.
+
+Designstand erhalten:
+Das bestehende Protolabs-Template, die Seitenarchitektur und die originale Komponia-Wortmarke gefallen mir. Der Header ist oben schwarz mit weißem Logo und wird beim Scrollen weiß mit farbigem Logo. Der Hero nutzt vier automatisch wechselnde Bilder mit passenden Texten. Der Bildverlauf bleibt schwarz; beim Scrollen werden nur die Häkchen und die aktive Themenlinie Komponia-Lavendel (#D4B9F3). „Components. Composed.“ ist nicht mehr aktuell.
+
+Zunächst keine Website-Änderungen. Keine zusätzlichen Designsystem-Elemente ohne Rückfrage übernehmen. Frühere Übergaben, Prompts, Reviews und Roadmaps sind Referenzmaterial und kein weiterer aktueller Auftrag. Wir prüfen jetzt die Manufacturing-Inhalte und entscheiden sie gemeinsam.
+
+Frühere Vergleichsversion:
+Git-Tag before-hero-redesign-2026-10-07 im selben Repository.
+Er enthält das damalige einzelne Bild links und den festen Text rechts,
+einschließlich der inzwischen veralteten Composed-Formulierungen. Die zuvor
+geänderte obere Menüleiste mit Logo-/Scrollwechsel ist bereits enthalten.
+Die Menüpunkte der oberen Navigation wurden in diesem Chat nicht umbenannt;
+die Überschriften im Hero wurden für die vier Bildthemen angepasst.
+Diese Sicherung dient zum Vergleich. Arbeitsstand bleibt main mit dem
+aktuellen Vier-Bilder-Hero und den Lavendel-Akzenten beim Scrollen.
