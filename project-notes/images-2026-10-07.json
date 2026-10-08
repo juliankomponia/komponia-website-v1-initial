@@ -1,0 +1,428 @@
+[
+  {
+    "src": "/src/assets/industrial/hero-components.webp",
+    "kind": "Higgsfield illustration; not a product/facility/project record",
+    "routes": [
+      "#/",
+      "#/3d-printing",
+      "#/about",
+      "#/case-studies",
+      "#/cnc-machining",
+      "#/protolabs-network",
+      "#/sheet-metal-fabrication"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/5dIVfxkqGFvzjBkaHXVsA0/929fa91910df6d1e2fa5c32e7d4bf869/cnc_milling_capabilities__1_.webp?fit=thumb&fm=png&q=82",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/",
+      "#/3d-printing",
+      "#/injection-molding",
+      "#/sheet-metal-fabrication"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/7mYMLpmZjw4DDQ1ICJdDdR/bb19fb3e9491cad7df51b6af3debfecd/3d_printing.webp?fit=thumb&fm=png&q=82",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/",
+      "#/3d-printing",
+      "#/injection-molding",
+      "#/sheet-metal-fabrication"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/2GG1dVocfDHoAT4cz1Cff4/56fb0f33eb102ef6828bdac641f211bc/sheet_metal_fabrication.webp?fit=thumb&fm=png&q=82",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/",
+      "#/3d-printing",
+      "#/injection-molding",
+      "#/sheet-metal-fabrication"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/3cYkeHi8bTrHsJ1zGC4Hvq/8180dbc0062102832490325909b21fde/technologies_im_homepage.webp?fit=thumb&fm=png&q=82",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/",
+      "#/3d-printing",
+      "#/injection-molding",
+      "#/sheet-metal-fabrication"
+    ]
+  },
+  {
+    "src": "/src/assets/industrial/custom-engineering.webp",
+    "kind": "Higgsfield illustration; not a product/facility/project record",
+    "routes": [
+      "#/",
+      "#/3d-printing",
+      "#/about",
+      "#/become-a-manufacturing-partner",
+      "#/blog",
+      "#/cnc-machining",
+      "#/contact",
+      "#/get",
+      "#/guides",
+      "#/how-ordering-works",
+      "#/industries",
+      "#/jobs",
+      "#/knowledge-base",
+      "#/newsletter",
+      "#/partner-network",
+      "#/team",
+      "#/team-account"
+    ]
+  },
+  {
+    "src": "/src/assets/industrial/controllers.webp",
+    "kind": "Higgsfield illustration; not a product/facility/project record",
+    "routes": [
+      "#/",
+      "#/3d-printing",
+      "#/cnc-machining",
+      "#/components",
+      "#/components/controllers-and-control-systems",
+      "#/components/controllers-and-control-systems/accessories",
+      "#/components/controllers-and-control-systems/control-systems",
+      "#/components/controllers-and-control-systems/refrigeration-controllers",
+      "#/components/controllers-and-control-systems/temperature-controllers",
+      "#/components/heating-elements/heating-cables",
+      "#/components/heating-elements/heating-foils",
+      "#/components/heating-elements/tubular-heating-elements",
+      "#/components/pressure-and-switching-devices/differential-pressure-switches",
+      "#/components/pressure-and-switching-devices/pressure-switches",
+      "#/components/pressure-and-switching-devices/thermal-switches",
+      "#/components/sensors-and-probes/ntc-probes",
+      "#/components/sensors-and-probes/pt100-probes",
+      "#/components/sensors-and-probes/pt1000-probes",
+      "#/components/sensors-and-probes/ptc-probes",
+      "#/guides/component-selection",
+      "#/industries"
+    ]
+  },
+  {
+    "src": "/src/assets/industrial/sensors.webp",
+    "kind": "Higgsfield illustration; not a product/facility/project record",
+    "routes": [
+      "#/",
+      "#/3d-printing",
+      "#/cnc-machining",
+      "#/components",
+      "#/components/controllers-and-control-systems/accessories",
+      "#/components/controllers-and-control-systems/control-systems",
+      "#/components/controllers-and-control-systems/refrigeration-controllers",
+      "#/components/controllers-and-control-systems/temperature-controllers",
+      "#/components/heating-elements/heating-cables",
+      "#/components/heating-elements/heating-foils",
+      "#/components/heating-elements/tubular-heating-elements",
+      "#/components/pressure-and-switching-devices/differential-pressure-switches",
+      "#/components/pressure-and-switching-devices/pressure-switches",
+      "#/components/pressure-and-switching-devices/thermal-switches",
+      "#/components/sensors-and-probes",
+      "#/components/sensors-and-probes/ntc-probes",
+      "#/components/sensors-and-probes/pt100-probes",
+      "#/components/sensors-and-probes/pt1000-probes",
+      "#/components/sensors-and-probes/ptc-probes",
+      "#/guides/replacement-assessment",
+      "#/industries"
+    ]
+  },
+  {
+    "src": "/src/assets/industrial/heating.webp",
+    "kind": "Higgsfield illustration; not a product/facility/project record",
+    "routes": [
+      "#/",
+      "#/3d-printing",
+      "#/cnc-machining",
+      "#/components",
+      "#/components/controllers-and-control-systems/accessories",
+      "#/components/controllers-and-control-systems/control-systems",
+      "#/components/controllers-and-control-systems/refrigeration-controllers",
+      "#/components/controllers-and-control-systems/temperature-controllers",
+      "#/components/heating-elements",
+      "#/components/heating-elements/heating-cables",
+      "#/components/heating-elements/heating-foils",
+      "#/components/heating-elements/tubular-heating-elements",
+      "#/components/pressure-and-switching-devices/differential-pressure-switches",
+      "#/components/pressure-and-switching-devices/pressure-switches",
+      "#/components/pressure-and-switching-devices/thermal-switches",
+      "#/components/sensors-and-probes/ntc-probes",
+      "#/components/sensors-and-probes/pt100-probes",
+      "#/components/sensors-and-probes/pt1000-probes",
+      "#/components/sensors-and-probes/ptc-probes",
+      "#/industries"
+    ]
+  },
+  {
+    "src": "/src/assets/industrial/pressure-switches.webp",
+    "kind": "Higgsfield illustration; not a product/facility/project record",
+    "routes": [
+      "#/",
+      "#/3d-printing",
+      "#/components",
+      "#/components/controllers-and-control-systems/accessories",
+      "#/components/controllers-and-control-systems/control-systems",
+      "#/components/controllers-and-control-systems/refrigeration-controllers",
+      "#/components/controllers-and-control-systems/temperature-controllers",
+      "#/components/heating-elements/heating-cables",
+      "#/components/heating-elements/heating-foils",
+      "#/components/heating-elements/tubular-heating-elements",
+      "#/components/pressure-and-switching-devices",
+      "#/components/pressure-and-switching-devices/differential-pressure-switches",
+      "#/components/pressure-and-switching-devices/pressure-switches",
+      "#/components/pressure-and-switching-devices/thermal-switches",
+      "#/components/sensors-and-probes/ntc-probes",
+      "#/components/sensors-and-probes/pt100-probes",
+      "#/components/sensors-and-probes/pt1000-probes",
+      "#/components/sensors-and-probes/ptc-probes"
+    ]
+  },
+  {
+    "src": "/src/assets/industrial/quality-inspection.webp",
+    "kind": "Higgsfield illustration; not a product/facility/project record",
+    "routes": [
+      "#/",
+      "#/3d-printing",
+      "#/about",
+      "#/ip-protection",
+      "#/the-protolabs-network-standard"
+    ]
+  },
+  {
+    "src": "/src/assets/industrial/ongoing-supply.webp",
+    "kind": "Higgsfield illustration; not a product/facility/project record",
+    "routes": [
+      "#/",
+      "#/3d-printing",
+      "#/guides/recurring-supply",
+      "#/production-orders",
+      "#/sustainability"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/6EBYxRZBkURacjIg9WmeZ0/b57c86b3c48ef5969ce8a21c866891b4/Print_example_with_CNC_machining_service.webp?w=1500",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/cnc-machining"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/30YVqCmw3LC51a3EFRzc1R/8ba564107fa95002110f3e7d89444512/cnc_milling_anodized_def.webp?fit=thumb&fm=png&q=82",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/cnc-machining"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/78Ppw0OmfJ3yRrVPbnxBrU/ac3771c044f27e0a7e204434b7a0e9c0/cnc_turning_def.webp?fit=thumb&fm=png&q=82",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/cnc-machining"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/2smKKBY4ypJR0bKygdI86k/b5a21779c6d387565a2a312c17991e91/india_cnc.webp?w=1000&h=1000&fm=jpg&q=82&fit=thumb",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/cnc-machining"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/6kJRoiMEkBpbA90vfaIo5A/4f1084d83584dfc028915f1b7696b164/3dp_page_hero.webp?w=1500",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/3d-printing"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/3vq5CaEYGhwH2gtQZCn7oQ/9905796dd08e464cc05c8f76c53c161e/fdm_capabilities.webp?fit=thumb&fm=png&q=82",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/3d-printing"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/4U0hbO2DaDK0ikTJC3DOd4/e8c6604e0203eb4c78f991cd2dc068a4/sls_capabilities.webp?fit=thumb&fm=png&q=82",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/3d-printing"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/54nsXHICMJEjYLtzjr63Gy/0253cca2a404ec56ef89e1618fbe54aa/mjf_capabilities.webp?fit=thumb&fm=png&q=82",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/3d-printing"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/4lb7tM2wQ6xuHYTHdhYhhe/c710535fe86666b75628cd4ac48d3084/sla_capabilities.webp?fit=thumb&fm=png&q=82",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/3d-printing"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/P60R6WMcdcfo6WhjDa9GT/a84f21ad61365df8433544c7304fe503/interface_10_2024.webp",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/3d-printing"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/1WRHlR8i3zDuTOqSj5Ojyw/dc5893cfa7d5d5c63fe1fe9afda66761/europe_3dp.webp?w=1000&h=1000&fm=jpg&q=82&fit=thumb",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/3d-printing"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/1QaPyZTPWlDN55ZMK0XPew/895e16be4f0b58bb764f11b0c2957840/sheet_metal_service_hero.webp?w=1500",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/sheet-metal-fabrication"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/2A5cRcJ92w6QHfPIpDdOSe/a66ebe9b2db7da0d3512d79c35a08f5f/laser_cutting_process.webp?w=800&h=800&fm=png",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/sheet-metal-fabrication"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/7boBBvhAbceUj6VtisJY9L/fba37c8983fa47f10994578a3becfdb0/metal_bending_process.webp?w=800&h=800&fm=png",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/sheet-metal-fabrication"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/50D7ZGO98ORfKS7qB1wpQF/e81d24477538f2113dd5c607b6ca07e5/IM_hero_v3.webp?w=1500",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/injection-molding"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/1C8IVPd1qr2WLbFFhyZuTi/312409dfd4762a55cd7438adcfa9dd9b/Plastic_injection_molding.webp?w=800&h=800&fm=png",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/injection-molding"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/1dyvotL8544yOgFLwcYqRS/a9dad8b5e25980256439a711951d8dde/Insert-molding.webp?w=800&h=800&fm=png",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/injection-molding"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/u3amq2siK6oON0uViY0Ht/fcca28f9f898338e56f59a48f863f305/Overmolding.webp?w=800&h=800&fm=png",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/injection-molding"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/3YP2A32e416FFvCKLyePUc/5b77b8a19c2dc6f78ebc826a484e30f7/Liquid-silicone-rubber-molding.webp?w=800&h=800&fm=png",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/injection-molding"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/1ggJGmypuiuG9XK7VkTVUB/5cf1a01b21eb9fe2fb8a505260e7889b/usa_3dp.webp?w=1000&h=1000&fm=jpg&q=82&fit=thumb",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/how-ordering-works"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/26YT44kq9SOt0JAzBRkZPj/69032018dbd17ddcec5997a97851eaa2/many_cnc_machined_parts_crop.webp",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/how-ordering-works"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/6u6gZCEjS93Nn0QBjPmyRy/067bbc402a5f9af4c5aada2478970732/aviation_aerospace_kepler_hero.webp",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/industries"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/1wKVgA2sFNVPZBe8SuwsBF/89fc625b457bc018e64070849c6009f7/manufacturing_with_FDM.webp",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/3d-printing/fdm"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/2uvc1L3kg50k2a99UebW8H/18882d3aac7c57059546e18ed81f2fa3/manufacturing_with_sla.webp",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/3d-printing/sla-dlp"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/70j09DZWqXBXpsU6wzYlu8/70074571c73374271af21f4aa6ed9f7c/What_is_sls.webp",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/3d-printing/sls"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/6hzz882nn7SotrQBZXYLEd/6b389815a87cd1f5ff044bd2a2530c77/MJF_printing_service_.webp",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/3d-printing/mjf"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/cnc-machining/cnc-milling-service",
+      "#/industries/aerospace-manufacturing",
+      "#/industries/robotics-automation"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/55WMaz4rGhh14B7bi5sVoA/63a1ba4a0d4237ff5a554005f92ea5fd/surface_finishes_cnc_machining.webp",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/cnc-machining/cnc-milling-service",
+      "#/cnc-machining/cnc-turning-service",
+      "#/surface-finishing-services"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/47yo9mm5760W57xNNdBBFF/4e023e0d093ca163deaf7939bdaf0dde/lathe_what_is_cnc_turning.webp",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/cnc-machining/cnc-turning-service",
+      "#/industries/automotive-manufacturing"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/industries/industrial-machinery"
+    ]
+  },
+  {
+    "src": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500",
+    "kind": "Template CDN manufacturing illustration; review for local replacement",
+    "routes": [
+      "#/industries/electronics-manufacturing",
+      "#/industries/medical",
+      "#/materials"
+    ]
+  }
+]

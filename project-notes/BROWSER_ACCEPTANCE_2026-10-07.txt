@@ -1,0 +1,82 @@
+KOMPONIA — AKTUELLE BROWSERPRÜFUNG UND GALERIEKORREKTUR
+Stand: 7. Oktober 2026
+Aktives Projekt: /Users/julian/Downloads/komponia-website-v1-initial
+Vorschau: http://localhost:3000/#/
+
+Browserzugriff
+Nach dem vom Nutzer bereitgestellten Screenshot mit Browsen = Immer zulassen
+und ohne Website-Ausnahme wurde ein normaler Zugriff erfolgreich geprüft.
+Die frühere Ursache bleibt unbekannt; keine Umgehung und keine pauschale
+Änderung von Sicherheitsregeln durch den Agenten. Die früheren Sperrvermerke
+im Kimi-Protokoll beschreiben den damaligen Zustand.
+
+Responsive-Prüfung
+70 stabile Browsermessungen: 10 repräsentative Seiten bei 390, 768, 1024,
+1200, 1280, 1440 und 1920 CSS-Pixeln. Die Breite wurde nach jeder Änderung
+im tatsächlich gerenderten Dokument gemessen. Frühe instabile Messungen
+wurden als Werkzeugdiagnose getrennt und nicht als bestandene Checks gezählt.
+Kein globaler horizontaler Overflow, keine Fehler bei bereits geladenen
+Bildern und korrekter Headerwechsel bei 1280 px. Weiße Abschluss-CTA-H2s
+auch auf Komponentenseiten. Kategorie-/Generic-Hero-Bilder mobil sichtbar,
+maximal 300 px hoch und vollständig enthalten.
+Seiten: Home, About, Industries, Components-Übersicht, Controllers-Gruppe,
+PT100, Temperature controllers, Automotive, CNC, Component-selection-Guide.
+Diese breite Prüfung erfolgte vor dem kleinen Galeriefix; danach wurden
+die betroffenen Galerie-/Fokuszustände gezielt erneut im Browser geprüft.
+
+Bestätigter Fehler und Korrektur
+Das geöffnete Galeriepanel behielt volle Kartenhöhe, obwohl es bei 45 %
+begann. Beim Tastaturfokus scrollte die overflow-hidden-Karte intern um
+160 px (375 px Kartenhöhe, 544 px Scrollhöhe), sodass fast das ganze Motiv
+verdeckt wurde. Nun: offen 55 % Panelhöhe, geschlossen nur 3.5 rem; der
+Inhaltsbereich erhält min-h-0/flex-1 und scrollt lokal.
+Nachmessung: äußere Karte scrollTop 0 und Scrollhöhe 375 px, Panel 206.25 px.
+Tab erreicht den unteren Link und scrollt ausschließlich den Textbereich.
+Galerie-Escape schließt das Panel. Formen, Inhalte und Architektur erhalten.
+Zusätzlich motion-reduce:transition-none für Galerie-Chevron und FAQ-Plus.
+
+Tatsächlich geprüfte Interaktionen
+- Desktop-Menü öffnet; Escape schließt und fokussiert Components-Trigger.
+- Tastaturfokus im weißen Mega-Menü: Temperature controllers, solid 2 px,
+  #0071E3 sichtbar.
+- Mobilmenü öffnet; Prepare an inquiry führt zu Contact und schließt es.
+- Components-Abschnittssprung erhält #/; Überschrift sichtbar, aktive Linie
+  korrekt. Galerietabelle/Link per Tastatur erreichbar.
+- PT100: eine H1, die zwei Tabellen mit insgesamt vier Auswahlfragen;
+  mobil Bild/Caption und Actions, Desktop Sidebar mit Auswahlprioritäten.
+- PT100-Anfrage: group=sensors-and-probes&component=pt100-probes;
+  Formularreferenz Sensors and probes / PT100 probes, type=component.
+- Browser-Zurück stellt PT100-Title und Description wieder her.
+
+Prüfgrenzen bleiben ausdrücklich offen
+- Druck-CSS aus Quellen geprüft; keine aktuelle Druckvorschau-Abnahme.
+- Tatsächliches Reduced-Motion-Systemprofil nicht aktiviert; normale
+  Systemeinstellung beobachtet. Exponierte Browserfunktionen enthalten
+  keine Media-Emulation. Relevante Codezweige und Transition-Ausnahmen geprüft.
+- PT100-Checklisten-Download im IAB nicht bestätigt: Event jeweils Timeout,
+  keine passende Datei im Standard-Downloads-Ordner. Keine Frontendfehler
+  im beobachteten Log. Ablageort/Browserverhalten ungeklärt; kein Erfolg behauptet.
+- Kein physisches Touch-Gerät und keine vollständige Barrierefreiheitsprüfung.
+
+Technische Prüfung und Rückübernahme
+Production build mit Node 24.21.0/TypeScript/Vite 7.3.0 in Arbeitskopie und
+aktivem Original erfolgreich. Gezieltes ESLint für beide geänderten TSX-Dateien
+bestanden. Zwei Quelldateien mit aktuellen Hashes konfliktfrei übertragen.
+Sicherung vor dem Fix: komponia-before-browser-qa.tar.gz im Session-Ordner.
+Browser zum Abschluss auf Home und normale Viewport-Einstellung zurückgesetzt.
+Keine Veröffentlichung, kein Backend, keine neuen Produktdatensätze.
+Das getrennte Strategie-Repository wurde nicht verändert oder committed.
+
+Nachweise
+BROWSER_ACCEPTANCE_2026-10-07.json enthält die zusammengefassten Ergebnisse.
+Messungen, Diagnosen und aktuelle JPEG-Screenshots liegen unter:
+/Users/julian/.codex/visualizations/2026/10/07/01a116d2-77bc-7e23-b9fa-89cc29a3e34b/browser-acceptance
+home-desktop.jpg, pt100-mobile.jpg, gallery-desktop-fixed.jpg.
+Die Screenshots sind Werkzeugaufnahmen; Pixelmaße der JPEGs sind nicht mit
+den separat gemessenen CSS-Viewport-Breiten gleichzusetzen.
+
+Nächstes Inhaltspaket
+Eine reale Produktfamilie mit freigegebenen Fotos, Originaldatenblättern,
+Varianten, Quelle und Prüfdatum vollständig ergänzen. Parallel bestätigten
+Kontaktkanal und Versanddienst festlegen. Diese fehlenden Fakten wurden
+nicht aus Illustrationen oder aus der Strategie abgeleitet.

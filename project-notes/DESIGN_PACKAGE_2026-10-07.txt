@@ -1,0 +1,64 @@
+KOMPONIA — DESIGN PACKAGE
+Date: 2026-10-07
+
+Implemented locally
+- Existing Protolabs page families, navigation, route architecture, split heroes, manufacturing cards, tables and section order retained.
+- Komponia signature: a 36 x 2 px #3E5AF5 rule and 11 px tracked section labels. Applied to hero labels and selected technical modules.
+- Existing raster logo preserved byte-for-byte; header display height increased from 40 to 46 px, with explicit intrinsic dimensions and preserved aspect ratio.
+- Poppins, template action blue #0071E3, dark #191919, button shapes and card radii retained. Lavender and yellow remain in the logo.
+- Home: shorter two-part headline, concise introduction, equally prominent component/custom/supply lines, aligned CTA row and shorter section introductions.
+- Components: stronger category identity, quieter group/selection fields, more readable technical tables, larger contained images and three numbered selection priorities alongside the illustration. Existing downloadable preparation checklists retained.
+- New illustrative close-ups: temperature controller, metal temperature probe and tubular heating element. Used on the respective category detail pages and their group-list thumbnails; these are not confirmed commercial products or specifications.
+- Automotive: three distinct local illustration motifs for components, inspection and development. A compact requirements table differentiates development samples, production equipment and installed vehicle parts within the existing first section.
+- Other industry/resource pages: image assignment depends on the section rather than repeating the hero image throughout. Generic hero titles and body text refined within their existing layouts.
+- Industries overview: existing cards given the normal template gutters and section spacing.
+
+Design sources
+/Users/julian/Documents/Default Project/Komponia_Website_final/Komponia_Design_fin/readme.md
+/Users/julian/Documents/Default Project/Komponia_Website_final/Komponia_Design_fin/SKILL.md
+/Users/julian/Documents/Default Project/Komponia_Website_final/Komponia_Design_fin/tokens/colors.css
+/Users/julian/Documents/Default Project/Komponia_Website_final/Komponia_Design_fin/tokens/fonts.css
+/Users/julian/Documents/Default Project/Komponia_Website_final/Komponia_Design_fin/tokens/motion.css
+/Users/julian/Documents/Default Project/Komponia_Website_final/Komponia_Design_fin/components/core/Logo.prompt.md
+Guidelines: brand-logo, brand-mark, brand-imagery, type-eyebrow, brand-motion.
+
+The handoff's explicit template-preservation rules take precedence over the alternative Sora/pill/1200 px UI kit. No design-system stylesheet or alternative UI-kit implementation imported. No new icon set or logo drawn.
+
+Template references reviewed
+https://www.hubs.com/materials/
+https://www.hubs.com/industries/automotive-manufacturing/
+Used to preserve component/category browsing and application-specific technical sections. No foreign qualifications, customers, performance figures or contact information adopted.
+
+Image provenance
+Higgsfield / gpt_image_2_5. Three completed jobs, cost estimate 0.25 credits each (0.75 total). Generation prompts, source URLs, hashes, dimensions and intended usage are in src/assets/industrial/manifest.json.
+1024 x 688 px WebP at quality 86; proportions retained. New assets total 47,000 bytes (about 46 KiB).
+These images are illustrations, not photographs documenting actual Komponia inventory or configurations. Existing category records still contain selection questions rather than technical specifications.
+
+Validation
+- Final production build: successful after all refinements and new assets (Vite 7.3.0).
+- Final ESLint check: all 15 changed TypeScript/React files passed.
+- Source-rendering check: 63 routes, one H1 each, no empty image source or undefined markup, three different Automotive images, expected component image/provenance and contact draft action present.
+- The source-rendering check does not test browser layout, interaction or mobile image crops.
+- Fresh browser access was requested after the earlier localhost access rejection. No browser workaround used. Current desktop/mobile visual acceptance remains pending renewed access.
+- Image dimensions and provenance checked. Mechanical plausibility and visual quality of the new generated images still need visual acceptance.
+
+Remaining publication/data work
+- Confirmed public contact and actual message delivery.
+- Verified product configurations, real product photography and original datasheets.
+- Approved real project examples and company/legal/privacy information.
+- Confirmed domain and hosting, public routing/SEO and final browser acceptance.
+
+Backup before this package
+/Users/julian/.codex/visualizations/2026/10/07/01a1165a-edbc-7e12-b5c5-48be1fe25b8e/komponia-before-design-2026-10-07.tar.gz
+Source fingerprints: komponia-before-design-hashes.json in the same directory.
+No Git commit/push or public deployment. Strategy repository files not modified by this package.
+
+
+Permission diagnostics correction
+- User explicitly authorized browser access and reports no visible blocklist entry.
+- Browser tool reports a saved permission block for http://localhost:3000; its cause has not been established from the visible settings.
+- No browser_use policy or profile-specific browser rule is present in the checked personal config.toml. Checked local requirements files and project config files are absent.
+- Native control of com.openai.codex is separately disallowed by Computer Use; this does not prove a user-created website blocklist entry.
+- Earlier guidance referred to extension permissions under Settings > Computer Use > Manage. The task uses the built-in browser, whose documented controls are Settings > Browser > Agent permissions.
+- Official source: https://learn.chatgpt.com/docs/browser#computer-use-in-the-browser
+- No permission setting modified and no blocked browser action retried or worked around.

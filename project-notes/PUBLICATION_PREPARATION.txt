@@ -1,0 +1,24 @@
+Komponia – Veröffentlichungsvorbereitung (offen)
+Stand: 7. Oktober 2026
+
+Lokaler Build: dist/ erfolgreich erstellt. Kein Deployment beauftragt oder erfolgt.
+Die Website nutzt weiter HashRouter und bleibt bis zur Abnahme noindex.
+
+Vor Live-Anbindung festlegen:
+1. Rechtliche Firma und Vollzugsstand, veröffentlichbare Kontaktdaten.
+2. Bestätigtes Empfängerpostfach; Backend-/Formulardienst und Datenfluss.
+3. Zulässige Dateien, Größen, Prüfung und Verarbeitung für einen echten Upload.
+4. Domain, Host, SSL, Vorschauweg und explizite Veröffentlichungsfreigabe.
+5. Impressum/Datenschutz passend zu Firma und tatsächlicher Verarbeitung.
+
+Nach Wahl des Hosts konkret umsetzen:
+- Crawlbare Seitenpfade mit Direktaufrufen, Neuladen und Zurück-Navigation;
+  Übergang von /#/... sowie deutschen Komponenten-Aliasen mitprüfen.
+- Server-Rewrites bzw. Prerendering und echte HTTP-404-Behandlung abstimmen.
+- Routebezogene Canonicals und öffentliche Open-Graph-URLs mit echter Domain.
+- Sitemap und Indexierung nur für tatsächlich freigegebene Inhalte.
+- Versand/Fehler/Wiederholungsabsenden und Anhänge mit genehmigtem
+  Testempfänger prüfen; Erfolg erst nach bestätigter Annahme.
+- noindex erst beim freigegebenen Veröffentlichungsstand entfernen.
+- Verbleibende externe Fonts und Bilder hinsichtlich Hosting und Verarbeitung
+  bewusst entscheiden; keine erfundenen Zertifikate oder Produktnachweise.

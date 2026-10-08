@@ -1,0 +1,27 @@
+KOMPONIA — PREPARE A RECURRING SUPPLY ARRANGEMENT
+Version: 2026-10-07
+General preparation checklist. Not a manufacturer datasheet, specification or offer.
+
+Standard components and custom parts can both be included in an agreed delivery model. Begin with the actual product reference and demand.
+
+DESCRIBE DEMAND AND ORDERING
+Identify the required component version, expected consumption and the relevant planning period. Distinguish forecast quantities from committed orders or releases.
+- Product reference and agreed version.
+- Expected consumption and order quantities.
+- Preferred delivery rhythm and documents.
+
+DEFINE STOCK TERMS WHERE NEEDED
+A proposed stock arrangement needs clear limits and commercial terms. Discuss ownership, financing, acceptance, ageing and treatment of unused or changed parts.
+Quantities — Stock limits, release quantities and accepted commitments.
+Ownership and financing — Who owns the stock and which terms cover its cost.
+Changes — How revisions, ageing and discontinued items are handled.
+Unused stock — Acceptance and disposition rules.
+
+ASSIGN CHANGE AND REORDER RESPONSIBILITIES
+Agree how a repeat order refers to the approved product and which changes need review. Additional sources need their own technical assessment and documented switching conditions.
+
+YOUR NOTES
+Application / part reference:
+Requirements and open questions:
+Quantity / preferred date:
+Required documents and approvals:

@@ -1,0 +1,19 @@
+.contact-page { --komponia-detail-blue: #3e5af5; }
+.inquiry-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 112px); align-items: start; }
+.inquiry-form, .inquiry-preview { max-width: 52rem; }
+.inquiry-aside { background: #f2f2f2; padding: clamp(24px, 3vw, 48px); border-radius: 3px; line-height: 1.65; font-size: 15px; color: #444; }
+.inquiry-brand-rule { display: block; width: 36px; height: 2px; background: var(--komponia-detail-blue); margin-bottom: 24px; }
+.inquiry-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px; }
+.inquiry-field { margin-bottom: 24px; min-width: 0; }
+.inquiry-field label { display: block; font-size: 14px; font-weight: 500; color: #191919; margin-bottom: 8px; }
+.inquiry-field input, .inquiry-field select, .inquiry-field textarea { width: 100%; min-width: 0; padding: 12px; border: 1px solid #999; border-radius: 3px; background: #fff; font: inherit; font-size: 15px; color: #191919; }
+.inquiry-field textarea { resize: vertical; }
+.inquiry-help { font-size: 13px; line-height: 1.6; color: #595959; margin-top: 7px; }
+.inquiry-error { color: #a42820; font-size: 14px; margin-top: 7px; }
+.inquiry-field [aria-invalid="true"] { border-color: #a42820; }
+.contact-page :focus-visible { outline: 3px solid #0071e3; outline-offset: 3px; }
+.inquiry-preview { padding: 24px; border: 1px solid #bbb; border-radius: 3px; }
+.inquiry-draft { white-space: pre-wrap; overflow-wrap: anywhere; font-family: inherit; font-size: 14px; line-height: 1.7; background: #f2f2f2; padding: 20px; }
+@media (max-width: 1023px) { .inquiry-layout { grid-template-columns: 1fr; } }
+@media (max-width: 599px) { .inquiry-fields { grid-template-columns: 1fr; } .inquiry-preview { padding: 16px; } }
+@media print { .inquiry-aside, .inquiry-form, .contact-page > section:first-child, .contact-page button { display: none; } .inquiry-layout { display: block; } }

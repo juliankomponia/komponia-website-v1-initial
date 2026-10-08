@@ -1,0 +1,131 @@
+KOMPONIA — KIMI-REVIEW: BEWERTUNG UND UMSETZUNG
+Stand: 7. Oktober 2026
+
+Aktives Projekt: /Users/julian/Downloads/komponia-website-v1-initial
+Vorschau: http://localhost:3000/#/
+Englische Website; Protolabs-Seitenfamilien, React/Vite, HashRouter, Poppins,
+Action-Blau, bestehende Button-/Kartenformen und breite Flächen erhalten.
+
+Grundlage
+Der Nutzer hat nach Lektüre der beiden angehängten Dateien ausdrücklich
+bestätigt, dass das Review geprüft und passende Website-Verbesserungen
+umgesetzt werden sollen. Kimi ist eine Zweitmeinung, keine neue Faktenquelle.
+Aktuelle Übergabe, ursprüngliche Designregeln/To-dos, gültige Stage-13-
+Grundlagen und originale Komponia-Designquelle wurden berücksichtigt.
+
+Übernommen und umgesetzt
+- Home-Galerien: getrennte fachlich passende Bildlisten, keine Hero-Abbildung
+  in den Galerien. Hero-Motiv von vier auf ein Vorkommen im Home-Hauptinhalt.
+- Versorgung: rechter Bereich des vorhandenen Supply-Terms-Moduls zeigt die
+  vier bereits vorhandenen topics statt einer zweiten gleichen Supply-Abbildung.
+  Das Supply-Motiv erscheint auf Home zweimal statt viermal. Sektionen und
+  Galerien erhalten; kein absoluter Anspruch auf null Wiederholungen.
+- CTA: Abschlussbotschaft als H2, höchstens 48 rem breit, verlässlich weiß auch
+  auf Komponentenseiten. Anfrage-CTAs konsistent: Prepare an inquiry.
+- Home-Anwendungen: vier verschiedene vorhandene Ziele. Kälte/Klima führt zu
+  Controls, Heizung zu Heating, Maschinen zu ihrer Industry-Seite, Labor zu
+  Sensors/Probes. Linktexte beschreiben jeweils dieses Ziel.
+- Industries: sechs tatsächlich vorhandene Industry-Detailseiten aus pages.json
+  statt vier Selbstlinks. Routebezogene Description passend aktualisiert.
+- About: ruhige BrandLabels statt großer blauer Verben; anderes Herkunftsmotiv.
+- Mobile: GenericPage-Heros und Komponenten-Gruppenbilder sichtbar. Gruppenbild
+  16:10/maximal 300 px/contain; Generic-Mobile-Bild maximal 300 px/contain.
+- Industry-Heros: Electronics = temperatureController, Medical = temperatureProbe.
+  Abschnittsbilder orientieren sich am Inhalt: Prüfung = qualityInspection,
+  technische Abstimmung = customEngineering. Automotive behält drei Motive.
+- Illustrationen: sichtbare Herkunftshinweise für Heros, Galerien, Kartenserien,
+  Komponenten-Gruppenbilder und generische Fach-/Guide-Abschnitte ergänzt.
+- Footer: einheitlicher Button-Hover, längerer CTA darf umbrechen. Footer-Spalten
+  ab 1280 px, damit das lesbarere Logo bei 1024 px nicht in Links hineinragt.
+- Header/Footer-Fokus: helle Fokusmarkierung auf Dunkel, blaue im weißen Mega-Menü.
+
+Logo — Original erhalten, Kimi-Befund präzisiert
+Die PNG ist opak, hat aber keinen einheitlichen Hintergrund #1F2223. Die
+Original-Ecke ist (216,217,216), weitere Randpixel sind hell; im Bildinneren
+liegt ein variabler dunkler Hintergrund. Die Review-Angabe einer vollständig
+flachen Fläche ist daher falsch.
+Die originale Datei bleibt bytegleich (SHA256:
+ce01bf67a69dc88f05a453f324995e887b10abf210b841d62e3b73eabd309dc8).
+CSS beschneidet den Rasterrand und die kleine eingebettete Tagline nur in der
+Darstellung. Das vollständige Mark und die originale Wortmarke bleiben erhalten.
+Header/Footer nutzen #1F2223; lighten-Blending gleicht die dunkle Rasterfläche
+an. Die Tagline steht im Footer als lesbarer Text. Kein Nachzeichnen,
+keine generierte Logo-Variante und kein Logo.jsx-Textnachbau.
+Aktuelle visuelle Logo-Abnahme ist noch offen.
+
+Blau-Regel
+#3E5AF5 bleibt auf kurze nicht interaktive Markenlinien und Auswahlnummern
+begrenzt. Links, Buttons und Fokus nutzen das vorhandene Action-Blau #0071E3.
+Vorhandene Template-Icons und Prozesslinien behalten ihre bestehende Farbe.
+Kein globaler Designsystem-Import und kein zusätzlicher Bedienungsstil.
+
+Korrigierte oder verworfene Vorschläge
+- Laboratory equipment wird nicht mit Medizintechnik gleichgesetzt.
+- Bildhotspots auf generierten Produktbildern verworfen: Auswahlfragen belegen
+  keine konkreten Anschlüsse, Funktionen oder Bildpositionen. Die bestehende
+  nummerierte Auswahlprioritätenliste bleibt erhalten.
+- Kein Bild mehr als einmal pro Seite ist mit Kimis eigenem Bildplan nicht
+  vereinbar. Wiederholung wurde gezielt reduziert; fachliche Passung hat Vorrang.
+- Nicht alle Industry-Seiten haben zwei gleiche Abschnittsbilder: fünf haben
+  nur ein bebildertes Inhaltsmodul, Automotive zwei. Sinnvolle Prüfmotive dürfen
+  auf mehreren Seiten vorkommen; keine zufällige Bildrotation.
+- Keine Sektion gestrichen und keine neue Website-Architektur eingeführt.
+- Fremd-CDN-Quellen bleiben ein offener Beschaffungs-/Verfügbarkeits-/Rechtepunkt.
+  Der Code allein beweist keine bestimmte Rechtslage. Kein erfundener Lizenzstatus.
+
+Tatsächlich durchgeführte Prüfungen
+- npm run build mit vorhandenem Node 24.21.0 in isolierter Arbeitskopie erfolgreich
+  (TypeScript + Vite 7.3.0). Keine Installation oder Systemänderung.
+- ESLint für alle zehn geänderten TS-/TSX-Dateien erfolgreich.
+- SSR-Quellprüfung: 63 Routen, eine H1 je Route, keine leeren Bildquellen oder
+  undefined-Ausgaben; drei unterschiedliche Automotive-Bilder; erwartete
+  Temperature-controller/PT100/Tubular-heater-Bilder und Herkunftshinweise.
+- 2572 interne Linkvorkommen auf existierende Routen bzw. lokale Downloads
+  geprüft; vier Home-Anwendungsziele und sechs Industry-Detailziele vorhanden.
+- Kategoriefigures/Captions und H2-Abschluss-CTA im gerenderten Markup vorhanden.
+- Unabhängige Code-/Inhaltsgegenprüfung; Fokusregression im Mega-Menü korrigiert.
+- Port 3000 gehört laut Prozess-cwd zum aktiven Downloads-Projekt.
+- Originaldateien vor Übertragung vollständig gegen Sicherungs-Fingerprints
+  abgeglichen; Original-Logo unverändert.
+
+Prüfgrenzen
+Die SSR-Prüfung ist keine Browser-, Layout-, Interaktions- oder Mobile-Abnahme.
+Die Übergabe beschreibt eine gespeicherte localhost:3000-Sperre. Eine Änderung
+ist nicht nachgewiesen; kein erneuter Zugriff und keine Umgehung über andere
+Ports, Hosts oder Browser. Deshalb keine neuen Screenshots und keine behauptete
+visuelle Freigabe. Zu prüfen bleiben 390/768/1024/1200/1280/1440/1920 px,
+Ausschnitte/Logo-Blending, Fokus und Menüs, Galeriebedienung, Sprungnavigation,
+Zurück-Metadaten, Druckansicht, Reduced Motion und PT100 im Browser.
+
+Offene echte Grundlagen
+- Freigegebene Produktfotos, Herstellerdatenblätter, bestätigte Konfigurationen.
+- Kontaktkanal/Versand-/Uploaddienst, rechtliche Firma und GmbH-Vollzugsstand.
+- Reale Projektbelege sowie freigegebene Unternehmens-/Datenschutzinformationen.
+- 33 externe Bild-URLs im SSR-Inventar, einschließlich Template-CDN-Motiven.
+- Domain/Hosting und konkrete Veröffentlichungsfreigabe.
+Keine neuen Produktdatensätze, kein Versandbackend und kein Deployment.
+
+Sicherung und Nachweise
+Sicherung: /Users/julian/.codex/visualizations/2026/10/07/01a116d2-77bc-7e23-b9fa-89cc29a3e34b/komponia-before-kimi-2026-10-07.tar.gz
+Fingerprints: komponia-before-kimi-hashes.json im selben Ordner.
+Geprüfte Arbeitskopie: komponia-kimi-refinement im selben Ordner.
+SSR-/Linkberichte: project-notes/KIMI_CHECKS_2026-10-07.json und
+project-notes/KIMI_LINKS_AND_IMAGES_2026-10-07.json.
+Das Strategie-Repository wurde nicht verändert oder committed.
+
+Abschluss nach Rückübertragung
+- 13 Quelldateien und 3 neue Protokoll-/Prüfdateien konfliktfrei übertragen,
+  jeweils per SHA256 geprüft.
+- npm run build auch im aktiven Downloads-Projekt erfolgreich (Node 24.21.0,
+  TypeScript und Vite 7.3.0). Seine 18 Build-Dateien sind bytegleich zum zuvor
+  geprüften Build der Arbeitskopie.
+- Laufender Port 3000 weiterhin dem richtigen Projekt zugeordnet.
+- Git-Status des separaten Strategie-Repositories unverändert.
+- Keine Browseraktion, keine neuen Screenshots und keine Veröffentlichung.
+
+Aktualisierung nach erfolgreichem Browserzugriff am 7. Oktober 2026
+Die aktuelle Responsive- und Interaktionsprüfung mit Galeriekorrektur ist in
+BROWSER_ACCEPTANCE_2026-10-07.txt/.json dokumentiert. Die ältere Aussage zur
+offenen Browserfreigabe beschreibt den Zustand vor dem neuen Zugriff.
+Druckvorschau, echtes Reduced-Motion-Systemprofil und IAB-Downloadnachweis
+bleiben entsprechend dem neuen Protokoll offen.

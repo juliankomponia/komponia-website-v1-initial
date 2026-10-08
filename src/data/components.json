@@ -1,0 +1,286 @@
+[
+  {
+    "id": "regeltechnik-steuerungen",
+    "title": "Controllers and control systems",
+    "intro": "Controllers and control systems must match the functions, sensors and interfaces of the application. Dimensions, operation and integration into the equipment also matter when selecting a suitable unit.",
+    "products": [
+      {
+        "id": "temperaturregler",
+        "title": "Temperature controllers",
+        "text": "A temperature controller measures temperature and controls the associated process. Its sensor input, control behavior and outputs must match the heating or cooling application.",
+        "selectionParameters": [
+          "What temperature needs to be measured and controlled?",
+          "Which sensor type and control input are planned?",
+          "Which outputs and control functions are required?",
+          "Which dimensions, operating functions and interfaces are specified?"
+        ],
+        "selectionLabels": [
+          "Temperature range",
+          "Sensor and control input",
+          "Outputs and control functions",
+          "Installation and operation"
+        ],
+        "slug": "temperature-controllers"
+      },
+      {
+        "id": "kuehlstellenregler",
+        "title": "Refrigeration controllers",
+        "text": "A refrigeration controller matches temperature control to the functions of the refrigeration equipment. Sensors, outputs and operation are considered alongside the required operating functions.",
+        "selectionParameters": [
+          "Which refrigeration application and operating functions are planned?",
+          "Which temperatures need to be measured and which sensors are required?",
+          "Which outputs does the equipment need?",
+          "Which dimensions, interfaces and operating requirements apply?"
+        ],
+        "selectionLabels": [
+          "Application and functions",
+          "Temperatures and sensors",
+          "Outputs",
+          "Installation and operation"
+        ],
+        "slug": "refrigeration-controllers"
+      },
+      {
+        "id": "steuerungen",
+        "title": "Control systems",
+        "text": "A control system connects equipment functions with the attached sensors and actuators. The required inputs, outputs and operating sequences form the basis for selection.",
+        "selectionParameters": [
+          "Which equipment functions and operating sequences should the control system handle?",
+          "Which sensors, actuators and signals need to be connected?",
+          "Which interfaces and operating functions are required?",
+          "Which dimensions and environmental conditions need to be considered?"
+        ],
+        "selectionLabels": [
+          "Equipment functions and sequences",
+          "Input and output signals",
+          "Interfaces and operation",
+          "Installation and environment"
+        ],
+        "slug": "control-systems"
+      },
+      {
+        "id": "zubehoer",
+        "title": "Accessories",
+        "text": "Accessories are selected to suit the controller or control system and its installation. The existing equipment, connections and required function provide the starting point.",
+        "selectionParameters": [
+          "Which controller or control system requires accessories?",
+          "Which function needs to be added?",
+          "Which connections and interfaces need to be compatible?",
+          "What requirements arise from mounting and the operating environment?"
+        ],
+        "selectionLabels": [
+          "Equipment compatibility",
+          "Additional function",
+          "Connections and interfaces",
+          "Mounting and environment"
+        ],
+        "slug": "accessories"
+      }
+    ],
+    "slug": "controllers-and-control-systems"
+  },
+  {
+    "id": "sensorik-fuehler",
+    "title": "Sensors and probes",
+    "intro": "Temperature probes must suit the measurement range, environment and connected equipment. Probe design, cable and connector determine how the probe is integrated into the application.",
+    "products": [
+      {
+        "id": "ntc-fuehler",
+        "title": "NTC probes",
+        "text": "An NTC probe needs a characteristic curve and connection that match the measurement or control input. Its design is selected according to the measurement location and operating conditions.",
+        "selectionParameters": [
+          "Which NTC characteristic curve does the connected equipment require?",
+          "Which temperature range and measurement location are planned?",
+          "Which probe design and mounting method suit the installation?",
+          "Which cable length, connector and environmental conditions apply?"
+        ],
+        "selectionLabels": [
+          "Sensor characteristic curve",
+          "Temperature range and location",
+          "Design and mounting",
+          "Cable and connection"
+        ],
+        "slug": "ntc-probes"
+      },
+      {
+        "id": "ptc-fuehler",
+        "title": "PTC probes",
+        "text": "A PTC probe needs its characteristic curve to match the signal processing system. The measurement location, installation and connection determine which design suits the application.",
+        "selectionParameters": [
+          "Which PTC characteristic curve and signal processing system are planned?",
+          "Which temperatures should the probe measure?",
+          "Which probe design and mounting method are required?",
+          "Which cable, connector and operating conditions are specified?"
+        ],
+        "selectionLabels": [
+          "Characteristic curve and processing",
+          "Temperature range",
+          "Design and mounting",
+          "Cable and operating conditions"
+        ],
+        "slug": "ptc-probes"
+      },
+      {
+        "id": "pt100-fuehler",
+        "title": "PT100 probes",
+        "text": "A PT100 probe is considered together with the compatible measurement input and connection type. The measurement location, temperature range and measurement requirements determine the appropriate design.",
+        "selectionParameters": [
+          "Is the measurement input designed for a PT100 probe?",
+          "Which connection type is planned?",
+          "Which temperature range and measurement requirements apply?",
+          "Which probe design, cable and mounting method suit the measurement location?"
+        ],
+        "selectionLabels": [
+          "Measurement input",
+          "Connection type",
+          "Temperature range and requirements",
+          "Design and mounting"
+        ],
+        "slug": "pt100-probes"
+      },
+      {
+        "id": "pt1000-fuehler",
+        "title": "PT1000 probes",
+        "text": "A PT1000 probe requires a compatible measurement or control input. Connection, probe design and cable are selected to suit the measurement location and operating conditions.",
+        "selectionParameters": [
+          "Is the connected input designed for a PT1000 probe?",
+          "Which connection type and cable are planned?",
+          "Which temperature range and measurement requirements apply?",
+          "Which probe design, mounting method and environmental conditions need to be considered?"
+        ],
+        "selectionLabels": [
+          "Measurement input",
+          "Connection type and cable",
+          "Temperature range and requirements",
+          "Design and environment"
+        ],
+        "slug": "pt1000-probes"
+      }
+    ],
+    "slug": "sensors-and-probes"
+  },
+  {
+    "id": "heizelemente-heiztechnik",
+    "title": "Heating elements",
+    "intro": "Heating applications require power, geometry and mounting to be considered together. Temperature control and conditions at the installation site are equally important.",
+    "products": [
+      {
+        "id": "rohrheizkoerper",
+        "title": "Tubular heating elements",
+        "text": "Tubular heating elements require the heating application, geometry and installation to be matched. The electrical design and operating conditions determine the remaining requirements.",
+        "selectionParameters": [
+          "Which heating application and power requirement are planned?",
+          "Which geometry and installation space are available?",
+          "How will the heating element be mounted and electrically connected?",
+          "Which temperatures, environmental conditions and control method apply during operation?"
+        ],
+        "selectionLabels": [
+          "Heating application and power",
+          "Geometry and installation space",
+          "Mounting and connection",
+          "Operating conditions and control"
+        ],
+        "slug": "tubular-heating-elements"
+      },
+      {
+        "id": "heizfolien",
+        "title": "Heating foils",
+        "text": "For heating foils, the surface to be heated and integration into the component are central to selection. Power, mounting and temperature control are matched to the application.",
+        "selectionParameters": [
+          "Which surface and geometry need to be heated?",
+          "Which power requirement and electrical supply are planned?",
+          "How will the heating foil be mounted and connected?",
+          "Which operating temperatures, environmental conditions and control method are specified?"
+        ],
+        "selectionLabels": [
+          "Heating surface and geometry",
+          "Power and supply",
+          "Mounting and connection",
+          "Operating conditions and control"
+        ],
+        "slug": "heating-foils"
+      },
+      {
+        "id": "heizkabel",
+        "title": "Heating cables",
+        "text": "A heating cable is selected according to the heating application and planned installation. Length, electrical design and cable routing must suit the application and temperature control.",
+        "selectionParameters": [
+          "Which heating application and power requirement are known?",
+          "Which length and cable route are planned?",
+          "Which electrical supply and connection type apply?",
+          "Which temperatures, operating conditions and control method need to be considered?"
+        ],
+        "selectionLabels": [
+          "Heating application and power",
+          "Length and routing",
+          "Supply and connection",
+          "Operating conditions and control"
+        ],
+        "slug": "heating-cables"
+      }
+    ],
+    "slug": "heating-elements"
+  },
+  {
+    "id": "druck-schalttechnik",
+    "title": "Pressure and switching devices",
+    "intro": "Switching points, measurement ranges and connections must suit the application. When replacing or adapting a component, the technical characteristics and installation conditions of the existing part are relevant.",
+    "products": [
+      {
+        "id": "druckschalter",
+        "title": "Pressure switches",
+        "text": "A pressure switch converts a defined pressure condition into a switching action. Pressure range, switching point and connections must suit the monitored application.",
+        "selectionParameters": [
+          "Which pressure range and switching point are planned?",
+          "Which switching function is required?",
+          "Which pressure and electrical connections are specified?",
+          "Which installation conditions and medium need to be considered?"
+        ],
+        "selectionLabels": [
+          "Pressure range and switching point",
+          "Switching function",
+          "Pressure and electrical connections",
+          "Installation and medium"
+        ],
+        "slug": "pressure-switches"
+      },
+      {
+        "id": "differenzdruckschalter",
+        "title": "Differential pressure switches",
+        "text": "A differential pressure switch responds to the pressure difference between two points. The required switching point and connections are matched to the monitoring application.",
+        "selectionParameters": [
+          "Which differential pressure range and switching point are required?",
+          "Which switching function is planned?",
+          "Which connections and installation conditions are present?",
+          "Which medium and operating conditions apply?"
+        ],
+        "selectionLabels": [
+          "Differential pressure and switching point",
+          "Switching function",
+          "Connections and installation",
+          "Medium and operating conditions"
+        ],
+        "slug": "differential-pressure-switches"
+      },
+      {
+        "id": "thermische-schalter",
+        "title": "Thermal switches",
+        "text": "A thermal switch responds to a defined temperature condition. Switching behavior, electrical integration and conditions at the measurement location are considered during selection.",
+        "selectionParameters": [
+          "At which temperature should switching occur?",
+          "Which switching and reset behavior is required?",
+          "Which electrical integration and connection type are planned?",
+          "Which design, mounting method and operating conditions apply?"
+        ],
+        "selectionLabels": [
+          "Switching temperature",
+          "Switching and reset behavior",
+          "Electrical integration",
+          "Design and mounting"
+        ],
+        "slug": "thermal-switches"
+      }
+    ],
+    "slug": "pressure-and-switching-devices"
+  }
+]

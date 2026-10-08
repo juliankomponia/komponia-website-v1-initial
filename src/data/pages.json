@@ -1,0 +1,1534 @@
+[
+  {
+    "route": "ip-protection",
+    "title": "Confidentiality and technical information",
+    "subtitle": "Drawings, samples and application data can contain sensitive information. Agree the permitted use, recipients and handling requirements before sharing them with Komponia or a project partner.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp",
+    "sections": [
+      {
+        "title": "Agree confidentiality before sharing",
+        "text": "Start by identifying which information is confidential and who may use it. Discuss any required confidentiality agreement before providing files or samples. Where a manufacturer or specialist partner is involved, define what information may be passed on and for which task.\n\nOwnership of drawings, tooling and technical results, together with permitted reuse and return requirements, belongs in the project agreement.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Prepare a controlled handover",
+        "text": "Include the part reference, document revision and a short description of the intended task. Share only the information needed for that task. Flag restrictions on disclosure, storage or reuse so that the handling arrangements can be checked before the project starts. No upload or submission takes place on this information page.",
+        "bullets": [],
+        "img": ""
+      }
+    ]
+  },
+  {
+    "route": "the-protolabs-network-standard",
+    "title": "Quality starts with agreed requirements",
+    "subtitle": "A drawing, component specification and application define what needs to be checked. Komponia helps clarify the required evidence, partner responsibilities and release steps for the agreed scope.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
+    "sections": [
+      {
+        "title": "Define what a suitable part must do",
+        "text": "Begin with the component function, interfaces and operating conditions. Identify the dimensions, material properties and performance characteristics that matter to the application. The agreed specification becomes the reference for selection, samples and acceptance.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Match the source to the requirement",
+        "text": "Component manufacturers and production partners bring different capabilities. Assess the relevant process, material, documentation and capacity for the specific requirement. A suitable source for one part is not automatically suitable for another.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+      },
+      {
+        "title": "Agree the inspection scope",
+        "text": "Discuss which characteristics need verification, how they will be measured and what records are required. Samples, dimensional checks and functional tests serve different purposes. Define the inspection scope and acceptance criteria before committing to supply.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
+      },
+      {
+        "title": "Keep documents tied to the part",
+        "text": "Identify the drawing revision, material specification and any required supplier documents in the order. The availability and scope of inspection reports or declarations need confirmation with the selected source. Specify any traceability requirements before production begins.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Check project-specific certification needs",
+        "text": "If your application requires a certified supplier or a particular standard, state that requirement at the outset. Applicable evidence, certificate scope and validity must be checked for the selected source. No general certification claim replaces this project-specific review.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+      },
+      {
+        "title": "Manage deviations and changes",
+        "text": "When a dimension, material or process differs from the specification, describe the difference and agree the next step before acceptance. Define who may approve changes and how the current revision is communicated to the source and the customer.",
+        "bullets": [],
+        "img": ""
+      }
+    ]
+  },
+  {
+    "route": "partner-network",
+    "title": "Suitable sources for technical requirements",
+    "subtitle": "Komponia combines technical component sourcing with project-specific manufacturing and specialist support. Source selection follows the application, required evidence and agreed commercial conditions.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
+    "sections": [
+      {
+        "title": "Start with the application",
+        "text": "A source must fit the part and its intended use. Clarify the component function, process, material and critical interfaces before comparing manufacturers. Existing manufacturer relationships can provide a starting point; suitability still needs checking for each requirement.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Review capabilities and documentation",
+        "text": "Request the information needed to assess the proposed source: relevant products or processes, material options, available documentation and delivery conditions. Additional qualification work is defined according to the application and the risks of changing the source.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+      },
+      {
+        "title": "Define a proportionate qualification plan",
+        "text": "Qualification may involve document review, samples, inspection or application testing. Agree which steps are necessary and who is responsible for each one. A site visit or audit is a separate task where the project requires it, rather than an assumed feature of every order.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
+      },
+      {
+        "title": "Respond to issues with clear evidence",
+        "text": "A useful issue report identifies the affected part, revision, batch where available and the observed deviation. Agree containment, technical review and corrective action with the source. Keep the acceptance decision and any changed requirements documented.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Confirm standards at the source",
+        "text": "State any required supplier certifications or product documentation before requesting an offer. The selected source needs to confirm the relevant scope and availability. A certification held by one manufacturer does not apply to every source or product.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+      },
+      {
+        "title": "Compare sourcing options in context",
+        "text": "Local and international sources can differ in process options, order quantities, transport and communication. Compare the total supply arrangement against your requirements. Distance alone does not establish quality, delivery performance or environmental impact.",
+        "bullets": [],
+        "img": ""
+      }
+    ]
+  },
+  {
+    "route": "team-account",
+    "title": "Coordinate engineering and purchasing",
+    "subtitle": "Technical selection, approval and procurement involve different responsibilities. Komponia helps structure the handover between the people involved in a component or custom solution project.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp",
+    "sections": [
+      {
+        "title": "Set a shared project brief",
+        "text": "Bring the application, component references, drawings and purchasing requirements into one agreed brief. Identify the technical decision maker and the commercial contact. Agree how the current documents, decisions and open actions will be shared between the people involved.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Agree roles and release steps",
+        "text": "Define who reviews the specification, who assesses samples and who authorises the order. Distinguish a technical release from commercial acceptance. Include any internal approval requirements in the schedule so that supplier commitments can be assessed realistically.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+      },
+      {
+        "title": "Bring colleagues into the same context",
+        "text": "When a new colleague joins the project, provide the current specification, open questions and agreed decisions. Include revision references and outstanding actions. This keeps engineering, quality and purchasing working from the same information.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
+      },
+      {
+        "title": "Clarify the commercial information",
+        "text": "Confirm the ordering entity, delivery destination, required quantity and any procurement conditions. For recurring requirements, discuss call-offs, forecast information and stock responsibilities separately. These details are agreed for the project rather than assumed from shared account settings.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Keep decisions and changes visible",
+        "text": "Record specification changes, sample feedback and agreed next steps in the project correspondence. Identify the current document revision and responsible person for each action. A structured handover helps avoid ordering against an outdated drawing or an unresolved technical assumption.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+      }
+    ]
+  },
+  {
+    "route": "3d-printing/fdm",
+    "title": "FDM parts and process selection",
+    "subtitle": "Fused deposition modelling can support prototypes, fixtures and other thermoplastic parts. Komponia reviews the application and can assess a partner-based production route against the required geometry, material and quantity.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/1wKVgA2sFNVPZBe8SuwsBF/89fc625b457bc018e64070849c6009f7/manufacturing_with_FDM.webp",
+    "sections": [
+      {
+        "title": "How FDM builds a part",
+        "text": "FDM deposits heated thermoplastic in successive layers. It can be useful for checking fit, handling or a design concept. The printed material, build orientation and process settings affect the result, so a prototype should be evaluated against the function it needs to demonstrate.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/1wKVgA2sFNVPZBe8SuwsBF/89fc625b457bc018e64070849c6009f7/manufacturing_with_FDM.webp"
+      },
+      {
+        "title": "Define the required capability",
+        "text": "Provide the overall dimensions, critical interfaces and expected loads. Add temperature, chemical exposure and appearance requirements where relevant. The build envelope, material options and achievable features need confirmation with the proposed production partner.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Compare the process with the task",
+        "text": "FDM, resin printing and powder-bed processes suit different priorities. Compare the required surface, geometry, mechanical behaviour and quantity rather than choosing on process name alone. A machined or standard component may also be worth considering for the application.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/1wKVgA2sFNVPZBe8SuwsBF/89fc625b457bc018e64070849c6009f7/manufacturing_with_FDM.webp"
+      },
+      {
+        "title": "Agree the acceptance criteria",
+        "text": "Define which surfaces and dimensions matter and whether support marks or visible layers are acceptable. Specify any inspection or sample requirements before production. Process parameters are agreed for the part; there is no universal wall thickness or print setting for every application.",
+        "bullets": [
+          "Identify functional surfaces and mating features.",
+          "Agree where support marks and visible layers are acceptable.",
+          "Confirm the inspection scope and sample release process."
+        ],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/1wKVgA2sFNVPZBe8SuwsBF/89fc625b457bc018e64070849c6009f7/manufacturing_with_FDM.webp"
+      },
+      {
+        "title": "Prepare an FDM inquiry",
+        "text": "Include the model, a drawing for critical dimensions and the purpose of the part. Identify threads, inserts and assembly interfaces. State whether the part is a visual model, a fit check or a functional sample so that material and process options can be assessed appropriately.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/1wKVgA2sFNVPZBe8SuwsBF/89fc625b457bc018e64070849c6009f7/manufacturing_with_FDM.webp"
+      }
+    ]
+  },
+  {
+    "route": "3d-printing/sla-dlp",
+    "title": "Resin printing for detailed parts",
+    "subtitle": "SLA and DLP are resin-based processes used for detailed models and selected technical parts. Komponia helps assess geometry, material behaviour and post-processing requirements with a suitable project partner.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2uvc1L3kg50k2a99UebW8H/18882d3aac7c57059546e18ed81f2fa3/manufacturing_with_sla.webp",
+    "sections": [
+      {
+        "title": "How resin printing works",
+        "text": "Resin printing cures selected regions of a liquid photopolymer to build a part in layers. SLA uses a laser; DLP uses projected light. The application determines whether the available material properties, surface and feature detail are suitable.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2uvc1L3kg50k2a99UebW8H/18882d3aac7c57059546e18ed81f2fa3/manufacturing_with_sla.webp"
+      },
+      {
+        "title": "Assess the geometry and application",
+        "text": "Identify small features, thin sections, visible surfaces and assembly interfaces. Build orientation and supports can affect the surface and shape. Confirm the proposed build envelope and inspection requirements with the production partner rather than assuming one capability for every resin system.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2uvc1L3kg50k2a99UebW8H/18882d3aac7c57059546e18ed81f2fa3/manufacturing_with_sla.webp"
+      },
+      {
+        "title": "Select a resin by its requirements",
+        "text": "Describe the expected loads, temperature, environment and intended period of use. Resin grades differ in behaviour and ageing. A material name or visual resemblance to another plastic is not enough to establish suitability for a functional application.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2uvc1L3kg50k2a99UebW8H/18882d3aac7c57059546e18ed81f2fa3/manufacturing_with_sla.webp"
+      },
+      {
+        "title": "Specify post-processing",
+        "text": "Washing, support removal and post-curing form part of the production route. The resin and equipment determine the required procedure. Agree the finished state of the supplied part and any additional surface treatment or inspection before ordering.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2uvc1L3kg50k2a99UebW8H/18882d3aac7c57059546e18ed81f2fa3/manufacturing_with_sla.webp"
+      },
+      {
+        "title": "Compare resin and powder-bed options",
+        "text": "Compare SLA or DLP with FDM, SLS and MJF using the required detail, surface, geometry and material performance. The right choice depends on the task: an appearance model, assembly check and working component can require different priorities.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2uvc1L3kg50k2a99UebW8H/18882d3aac7c57059546e18ed81f2fa3/manufacturing_with_sla.webp"
+      },
+      {
+        "title": "Prepare a complete request",
+        "text": "Provide the model, required quantity and intended use, together with a drawing for critical features. Identify visible surfaces and any finishing requirements. An offer and delivery plan follow the confirmed material, process and acceptance scope; this page does not provide instant pricing.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2uvc1L3kg50k2a99UebW8H/18882d3aac7c57059546e18ed81f2fa3/manufacturing_with_sla.webp"
+      }
+    ]
+  },
+  {
+    "route": "3d-printing/sls",
+    "title": "SLS parts and technical requirements",
+    "subtitle": "Selective laser sintering is a polymer powder-bed process. Komponia can assess its suitability for a technical part together with the material, geometry, finishing and qualification requirements.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/70j09DZWqXBXpsU6wzYlu8/70074571c73374271af21f4aa6ed9f7c/What_is_sls.webp",
+    "sections": [
+      {
+        "title": "How SLS builds a part",
+        "text": "SLS uses a laser to fuse selected regions of polymer powder in successive layers. Surrounding powder supports the geometry during the build. Powder removal and any finishing steps still need to be considered when assessing enclosed features, small openings and the final surface.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/70j09DZWqXBXpsU6wzYlu8/70074571c73374271af21f4aa6ed9f7c/What_is_sls.webp"
+      },
+      {
+        "title": "Confirm the material grade",
+        "text": "Specify the properties the application requires, including loading, temperature and exposure to fluids where relevant. Material availability and production conditions depend on the selected source. Confirm the grade and supporting material data as part of the technical review.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Define the finished surface",
+        "text": "The as-built surface differs from a machined or moulded surface. Agree whether cleaning, colouring or another post-processing step is needed. Identify mating surfaces and cosmetic requirements so that the finishing route can be assessed with the production partner.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Compare SLS with other routes",
+        "text": "Assess SLS alongside MJF, resin printing, FDM and conventional production where relevant. Consider material performance, accessible geometry, finishing and repeat quantity. A process comparison should use the same functional requirements rather than a general ranking of technologies.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/70j09DZWqXBXpsU6wzYlu8/70074571c73374271af21f4aa6ed9f7c/What_is_sls.webp"
+      },
+      {
+        "title": "Agree checks before production",
+        "text": "State the critical dimensions, fit requirements and any sample testing. Confirm how the finished part will be inspected and what records are required. Acceptance is based on the agreed specification and application, not a universal capability claim.",
+        "bullets": [
+          "Identify the critical dimensions and assembly interfaces.",
+          "Agree sample testing and any required production records."
+        ],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/70j09DZWqXBXpsU6wzYlu8/70074571c73374271af21f4aa6ed9f7c/What_is_sls.webp"
+      }
+    ]
+  },
+  {
+    "route": "3d-printing/mjf",
+    "title": "MJF parts for technical applications",
+    "subtitle": "Multi Jet Fusion is a polymer powder-bed process. Komponia assesses partner-based options against your geometry, functional requirements, quantity and agreed acceptance criteria.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/6hzz882nn7SotrQBZXYLEd/6b389815a87cd1f5ff044bd2a2530c77/MJF_printing_service_.webp",
+    "sections": [
+      {
+        "title": "How Multi Jet Fusion works",
+        "text": "MJF applies agents to selected areas of a polymer powder layer and uses heat to fuse the required geometry. Material choice, build preparation and post-processing influence the finished part. Suitability is assessed against the intended function and environment.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6hzz882nn7SotrQBZXYLEd/6b389815a87cd1f5ff044bd2a2530c77/MJF_printing_service_.webp"
+      },
+      {
+        "title": "Check whether MJF fits the requirement",
+        "text": "Describe the part function, mating features and expected loads. MJF may be considered for housings, brackets or other technical geometries, depending on the material and application. The selected partner must confirm the production route and required evidence.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6hzz882nn7SotrQBZXYLEd/6b389815a87cd1f5ff044bd2a2530c77/MJF_printing_service_.webp"
+      },
+      {
+        "title": "Confirm geometry and material limits",
+        "text": "Provide the overall dimensions and identify thin walls, enclosed passages and critical interfaces. Confirm material availability, powder removal access and any finishing constraints with the production partner. Required tolerances belong on the drawing.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6hzz882nn7SotrQBZXYLEd/6b389815a87cd1f5ff044bd2a2530c77/MJF_printing_service_.webp"
+      },
+      {
+        "title": "Prepare the inquiry",
+        "text": "Share the model, current drawing revision, required quantity and delivery preference. Identify material requirements and any permitted alternatives. A technical review establishes the scope for a project-specific offer rather than relying on an automated upload or quote system.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6hzz882nn7SotrQBZXYLEd/6b389815a87cd1f5ff044bd2a2530c77/MJF_printing_service_.webp"
+      },
+      {
+        "title": "From review to part release",
+        "text": "Agree the specification, source and any sample requirements before production. Review sample or inspection results against the defined criteria. Record accepted revisions and any finishing steps so that repeat supply follows the agreed part definition.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6hzz882nn7SotrQBZXYLEd/6b389815a87cd1f5ff044bd2a2530c77/MJF_printing_service_.webp"
+      },
+      {
+        "title": "Design for function, not appearance alone",
+        "text": "Weight, stiffness, assembly and powder removal can influence the geometry. Any proposed design change needs review against the required function. A lighter part is useful only if it still meets the application and acceptance requirements.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6hzz882nn7SotrQBZXYLEd/6b389815a87cd1f5ff044bd2a2530c77/MJF_printing_service_.webp"
+      }
+    ]
+  },
+  {
+    "route": "cnc-machining/cnc-milling-service",
+    "title": "CNC milling for defined requirements",
+    "subtitle": "Komponia helps translate a machined-part requirement into a clear specification and assess suitable production partners. Geometry, material, critical dimensions and inspection scope guide the milling route.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp",
+    "sections": [
+      {
+        "title": "How CNC milling creates a part",
+        "text": "CNC milling removes material from a workpiece with rotating cutting tools. It is used for features such as pockets, profiles and holes. Tool access, workholding and the sequence of operations influence how a drawing can be produced.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
+      },
+      {
+        "title": "Assessing 3-axis and indexed machining",
+        "text": "Provide the part dimensions and identify the faces that need machining. The workpiece, fixture and tool access all affect feasibility. Machine travel alone does not establish a usable part-size limit; the proposed partner must assess the complete setup.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "When additional axes may help",
+        "text": "More complex geometry or access from several directions may call for an indexed or multi-axis route. Discuss the features that require it and the inspection approach. The route is selected for the part rather than treating one machine configuration as universally better.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Specify the surface treatment",
+        "text": "Identify which surfaces need a particular roughness or cosmetic finish. Coatings and other treatments can change dimensions, appearance and contact behaviour. Agree masking, finishing and the condition in which critical features will be inspected.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/55WMaz4rGhh14B7bi5sVoA/63a1ba4a0d4237ff5a554005f92ea5fd/surface_finishes_cnc_machining.webp"
+      },
+      {
+        "title": "Put functional tolerances on the drawing",
+        "text": "Mark dimensions, datums and geometric requirements that control fit or performance. Avoid applying the tightest tolerance to every feature without a functional reason. The proposed source needs to confirm manufacturability and the agreed measurement method.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
+      },
+      {
+        "title": "Prepare a manufacturable part definition",
+        "text": "Supply a model and a drawing that defines critical requirements. Identify deep pockets, small internal features, thin walls and access constraints for review. Include the material grade, quantity and any accepted alternatives to support a meaningful technical assessment.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
+      }
+    ]
+  },
+  {
+    "route": "cnc-machining/cnc-turning-service",
+    "title": "CNC turning for rotational parts",
+    "subtitle": "Komponia assesses turning requirements with suitable manufacturing partners. Material, diameter and length, mating features and the inspection scope define the route for a specific part.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/47yo9mm5760W57xNNdBBFF/4e023e0d093ca163deaf7939bdaf0dde/lathe_what_is_cnc_turning.webp",
+    "sections": [
+      {
+        "title": "How CNC turning creates a part",
+        "text": "In turning, the workpiece rotates while cutting tools remove material. The process is commonly considered for shafts, sleeves and other rotational geometries. Additional operations may be needed for cross-holes, flats or other features.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/47yo9mm5760W57xNNdBBFF/4e023e0d093ca163deaf7939bdaf0dde/lathe_what_is_cnc_turning.webp"
+      },
+      {
+        "title": "Choose material for the application",
+        "text": "Specify the material grade and the properties required in service. Consider loading, temperature, corrosion and any finishing steps. Confirm the stock form and grade availability with the proposed source rather than assuming every material suits the same production route.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Define functional and visible surfaces",
+        "text": "Distinguish bearing seats, sealing surfaces and cosmetic areas. State roughness or treatment requirements where they affect function. Any coating or finishing allowance needs consideration before the final dimensions and inspection plan are agreed.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/55WMaz4rGhh14B7bi5sVoA/63a1ba4a0d4237ff5a554005f92ea5fd/surface_finishes_cnc_machining.webp"
+      },
+      {
+        "title": "Agree dimensional requirements",
+        "text": "Identify critical diameters, fits, concentricity requirements and datums on the drawing. The partner needs to review the geometry, workholding and measurement approach. Achievable tolerance is confirmed for the part rather than promised as a general site-wide value.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/47yo9mm5760W57xNNdBBFF/4e023e0d093ca163deaf7939bdaf0dde/lathe_what_is_cnc_turning.webp"
+      },
+      {
+        "title": "Prepare the turning specification",
+        "text": "Include the model or drawing, material, quantity and current revision. Flag long slender sections, internal features, threads and non-rotational details. Explain how the part mates with its assembly so that functional requirements can guide the review.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/47yo9mm5760W57xNNdBBFF/4e023e0d093ca163deaf7939bdaf0dde/lathe_what_is_cnc_turning.webp"
+      },
+      {
+        "title": "Compare turning with other routes",
+        "text": "Turning can suit rotational features, while milling or combined operations may be needed elsewhere. Consider the full geometry, stock material and repeat quantity. Komponia can help clarify the requirement before a partner-specific production route is proposed.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/47yo9mm5760W57xNNdBBFF/4e023e0d093ca163deaf7939bdaf0dde/lathe_what_is_cnc_turning.webp"
+      }
+    ]
+  },
+  {
+    "route": "production-orders",
+    "title": "From first supply to recurring delivery",
+    "subtitle": "Komponia supports technical components and custom solutions beyond the initial order. Recurring supply is organised around agreed demand, release status, delivery conditions and stock responsibilities.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
+    "sections": [
+      {
+        "title": "Build repeat supply on a clear part definition",
+        "text": "Start with the selected component or released drawing, material and acceptance criteria. Confirm the source and any required documents. A clear baseline helps distinguish repeat orders from a changed specification that needs further technical review.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Choose a supply model for the actual demand",
+        "text": "A standard component and a custom part can both be supplied repeatedly. Discuss order quantities, forecasts, call-offs and replenishment needs. The model should fit consumption, order conditions and the customer’s planning requirements.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Agree the documentation before ordering",
+        "text": "List the records the application requires and confirm their availability with the source. Documentation must refer to the relevant part, revision and supply scope. Additional reports or testing are specified and agreed rather than included automatically.",
+        "bullets": [
+          "Current component or drawing reference and revision.",
+          "Material information and source documents as required.",
+          "Agreed dimensional or functional inspection results.",
+          "Batch or serial traceability where required and available.",
+          "Customer release and change records for the agreed scope."
+        ],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
+      },
+      {
+        "title": "Plan the transition from samples to repeat orders",
+        "text": "Define the purpose of the sample, who reviews it and what constitutes release. Agree the first delivery quantity and any follow-up checks. Record changes before moving into the recurring supply arrangement.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Keep the supply information current",
+        "text": "Review consumption, delivery preferences and changes to the application. For named components, monitoring of supplier changes or discontinuation can be discussed as a defined task. A second source requires its own technical assessment and release.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+      },
+      {
+        "title": "A typical recurring-supply scenario",
+        "text": "An equipment manufacturer needs the same technical component across several production runs. The planning task is to align quantities, call-offs and agreed stock with actual consumption and revision control. This is an illustrative application scenario, not a customer reference or a measured result.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
+      }
+    ]
+  },
+  {
+    "route": "surface-finishing-services",
+    "title": "Surface finishes with a defined purpose",
+    "subtitle": "Appearance, corrosion resistance and functional contact surfaces can require different finishing routes. Komponia helps clarify the required outcome and confirm suitable options with the proposed source.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/55WMaz4rGhh14B7bi5sVoA/63a1ba4a0d4237ff5a554005f92ea5fd/surface_finishes_cnc_machining.webp",
+    "sections": [
+      {
+        "title": "Separate cosmetic and functional requirements",
+        "text": "A visible surface may need a consistent appearance; a mating or sealing surface may need a defined roughness or dimension. Identify the purpose of each finish so that the production and inspection requirements can be assessed together.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Identify visible and non-visible areas",
+        "text": "Mark which surfaces are visible in the final assembly and which are hidden. Define any restrictions on tool marks, handling marks or colour variation where relevant. The agreed requirement should reflect the application and how the part will be assessed.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/55WMaz4rGhh14B7bi5sVoA/63a1ba4a0d4237ff5a554005f92ea5fd/surface_finishes_cnc_machining.webp"
+      },
+      {
+        "title": "Agree how appearance will be evaluated",
+        "text": "A drawing note alone may not define every cosmetic expectation. Discuss a reference sample, the relevant viewing conditions and the surfaces being assessed. Acceptance criteria must be agreed before production rather than assumed from a generic finish name.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Account for the effects of finishing",
+        "text": "Coatings and other treatments can affect dimensions, contact surfaces and assembly. Identify masking needs and the state in which critical features will be measured. Confirm material compatibility, finishing scope and required documentation with the selected source.",
+        "bullets": [],
+        "img": ""
+      }
+    ]
+  },
+  {
+    "route": "industries",
+    "title": "Technical components in industrial applications",
+    "subtitle": "Komponia focuses on requirements where technical selection, component sourcing and ongoing supply belong together. Controls, sensors and heating elements provide a starting point for suitable applications.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500",
+    "sections": [
+      {
+        "title": "Start with the component function",
+        "text": "Heating, cooling, control and monitoring each create different requirements for components and interfaces. Describe the operating conditions, installation and intended function before choosing a product or a manufacturing route. Standard components and custom solutions are both possible starting points.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "What an industry label does not tell you",
+        "text": "The same component family can serve different applications, but suitability is specific to the intended use. Required certification, testing and customer approval must be identified for the actual product. Experience in one sector does not replace a project-specific technical review.",
+        "bullets": [],
+        "img": ""
+      }
+    ]
+  },
+  {
+    "route": "industries/aerospace-manufacturing",
+    "title": "Component requirements for aerospace applications",
+    "subtitle": "An aerospace application requires a defined specification, qualified sources and application-specific approval. Use the questions below to prepare a technical inquiry. The relevant source qualifications and available supply scope need confirmation for the particular application.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp",
+    "sections": [
+      {
+        "title": "Define the part and its approval context",
+        "text": "Identify the part function, installation and applicable customer requirements. Provide the released drawing and specify required source qualifications and traceability. The available technical scope and partner suitability need review before any supply commitment.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Plan evidence before production",
+        "text": "Agree what is required for source approval, samples and inspection. Certification and documentation must apply to the selected source and the specified part. The project schedule follows those requirements; there is no general expedited-delivery promise.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
+      },
+      {
+        "title": "Specify material and finishing requirements",
+        "text": "State the material grade, permitted alternatives and surface treatment in the technical definition. Identify critical features and required records. No material substitution or process change should be assumed acceptable without the appropriate customer approval.",
+        "bullets": [],
+        "img": ""
+      }
+    ]
+  },
+  {
+    "route": "industries/automotive-manufacturing",
+    "title": "Components for automotive applications",
+    "subtitle": "Vehicle development, production equipment and installed parts call for different evidence. We assess the component requirements and source options against the intended use.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/47yo9mm5760W57xNNdBBFF/4e023e0d093ca163deaf7939bdaf0dde/lathe_what_is_cnc_turning.webp",
+    "sections": [
+      {
+        "title": "Development or series use?",
+        "text": "Define the part function, operating environment and approval context. The intended use determines the evidence needed; source qualifications and product requirements must be confirmed for the project.",
+        "bullets": [],
+        "img": "",
+        "table": {
+          "headers": [
+            "Application",
+            "Define first",
+            "Agree before supply"
+          ],
+          "rows": [
+            [
+              "Development sample",
+              "The geometry, assembly or function to assess",
+              "Sample scope and acceptable differences from the production part"
+            ],
+            [
+              "Production equipment",
+              "The component function, interfaces and operating conditions",
+              "Required checks, documentation and release responsibility"
+            ],
+            [
+              "Installed vehicle part",
+              "The released part definition and customer requirements",
+              "Applicable source qualification, evidence and approval steps"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Define the release requirements",
+        "text": "Set out the customer’s documentation, testing and change requirements. Confirm the scope with the proposed source before ordering samples or production parts. Approval applies to the agreed part definition and intended use.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/47yo9mm5760W57xNNdBBFF/4e023e0d093ca163deaf7939bdaf0dde/lathe_what_is_cnc_turning.webp"
+      },
+      {
+        "title": "Give prototypes a clear purpose",
+        "text": "Use the sample to answer a specific question about geometry, assembly or function. Define the test conditions and acceptable differences from the production part. The result informs the next decision; it does not establish suitability for series use.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/47yo9mm5760W57xNNdBBFF/4e023e0d093ca163deaf7939bdaf0dde/lathe_what_is_cnc_turning.webp"
+      }
+    ]
+  },
+  {
+    "route": "industries/industrial-machinery",
+    "title": "Components for machines and equipment",
+    "subtitle": "Controls, sensors, heating elements and custom parts can support machine and equipment applications. Komponia helps clarify technical interfaces and organise a suitable sourcing and supply scope.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
+    "sections": [
+      {
+        "title": "Understand the component in its assembly",
+        "text": "Provide the operating conditions, available installation space and electrical or mechanical interfaces. Existing part numbers, drawings and samples can help define the starting point. Discuss whether a standard product, adaptation or custom part is the appropriate route.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "From selection to a released solution",
+        "text": "Confirm the proposed component against the relevant requirements and define any sample checks. Where adaptation or manufacture is involved, agree the work split between Komponia, the source and the customer. Release criteria should be clear before repeat supply begins.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+      },
+      {
+        "title": "Keep material and environment aligned",
+        "text": "Temperature, moisture, fluids, vibration and loading can affect the selection. Identify the conditions the part will experience and any required protection or finishing. Suitability is assessed for the application rather than assumed from an industry name.",
+        "bullets": [],
+        "img": ""
+      }
+    ]
+  },
+  {
+    "route": "industries/electronics-manufacturing",
+    "title": "Component selection for electronic equipment",
+    "subtitle": "Electronic equipment combines electrical, thermal and mechanical requirements. Komponia helps define the relevant component interfaces and assess standard or custom sourcing options for the agreed application.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500",
+    "sections": [
+      {
+        "title": "Connect the requirements across the assembly",
+        "text": "Describe the required function, electrical connections, thermal conditions and installation details. Controllers, sensors and heating components need assessment within the complete application. Identify critical limits and the information required from the proposed manufacturer.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Plan sample checks around the function",
+        "text": "Define what a sample must demonstrate, such as fit, connection or a specified operating behaviour. Agree the test conditions and release responsibilities before procurement. Required product compliance or source evidence needs confirmation for the selected component.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Specify enclosure and contact requirements",
+        "text": "For custom mechanical parts, identify material, mounting points and any thermal or contact functions. State required surface treatment and cosmetic expectations separately. The technical review should consider both the component and its role in the finished equipment.",
+        "bullets": [],
+        "img": ""
+      }
+    ]
+  },
+  {
+    "route": "industries/robotics-automation",
+    "title": "Components for automation applications",
+    "subtitle": "Automation projects depend on clearly defined sensing, control and mechanical interfaces. Komponia assesses component requirements and partner-based custom options against the intended task.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp",
+    "sections": [
+      {
+        "title": "Define the task and interfaces",
+        "text": "Describe the function, mounting arrangement, signals and environmental conditions. Identify the component references and any interfaces that must remain compatible. A custom bracket or sensor adaptation needs a different scope from the design of a complete automation system.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Agree the technical boundary",
+        "text": "Specify which component, assembly or custom part is included in the inquiry. Confirm responsibilities for integration, testing and release. Any safety-related requirement must be addressed explicitly rather than inferred from a component’s presence in an automation application.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
+      },
+      {
+        "title": "Assess the material and operating conditions",
+        "text": "Loading, movement, wear and exposure can affect the component and its mounting. Provide the relevant conditions and required service behaviour. The source, material and production route are assessed for the specific part and acceptance criteria.",
+        "bullets": [],
+        "img": ""
+      }
+    ]
+  },
+  {
+    "route": "industries/medical",
+    "title": "Technical inquiries for laboratory and medical applications",
+    "subtitle": "Laboratory equipment and medical devices require separate technical assessments. Describe the intended use, required evidence and approval responsibilities. The relevant product requirements, source qualifications and available technical scope need confirmation for the particular application.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500",
+    "sections": [
+      {
+        "title": "Clarify the intended application",
+        "text": "State whether the component is for laboratory equipment, a medical device or supporting production equipment. Describe the function, exposure and required interfaces. Any device-specific requirements and supplier qualifications need review before the project scope is agreed.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Define testing and approval responsibilities",
+        "text": "Provide the required documentation and acceptance criteria at the outset. The available source evidence and any additional testing must be confirmed for the selected component. Product compliance and application release cannot be assumed from a prototype or a general material description.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Specify materials for the actual use",
+        "text": "Identify contact conditions, cleaning methods, temperature and any material restrictions that apply. Confirm the precise grade and supporting evidence with the proposed source. A generic material family does not establish biocompatibility, sterilisation compatibility or regulatory compliance.",
+        "bullets": [],
+        "img": ""
+      }
+    ]
+  },
+  {
+    "route": "materials",
+    "title": "Material selection for technical parts",
+    "subtitle": "The required function and operating environment guide material selection. Komponia helps clarify the specification and confirm suitable grades and availability with the proposed component manufacturer or production partner.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500",
+    "sections": [
+      {
+        "title": "Compare materials against the application",
+        "text": "Describe loading, temperature, fluids and the required service behaviour. Include any material restrictions and the effect of finishing or assembly. Compare candidate grades using relevant data and confirm the proposed material in the agreed part specification.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Materials and components serve different choices",
+        "text": "Use this page for the material of a custom manufactured part. For controllers, probes, heating elements or switching devices, start with the component category and application requirements.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "CNC requirements",
+            "to": "/cnc-machining"
+          },
+          {
+            "label": "Surface finishing",
+            "to": "/surface-finishing-services"
+          },
+          {
+            "label": "Component groups",
+            "to": "/components"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "knowledge-base",
+    "title": "Technical selection and project preparation",
+    "subtitle": "Find preparation guides, component selection questions and the steps used to agree a technical task.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500",
+    "sections": [
+      {
+        "title": "Choose the right starting point",
+        "text": "Start with the relevant component family or use a preparation guide to structure the task. The category pages contain selection questions; confirmed configurations are agreed for the application.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Browse component groups",
+            "to": "/components"
+          },
+          {
+            "label": "Technical guides",
+            "to": "/guides"
+          }
+        ]
+      },
+      {
+        "title": "Connect the technical and commercial decisions",
+        "text": "A useful brief identifies the required function, the evidence used for selection and the purchase or supply scope. See how those decisions fit into the inquiry process.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "How we work",
+            "to": "/how-ordering-works"
+          },
+          {
+            "label": "Application scenarios",
+            "to": "/case-studies"
+          }
+        ]
+      },
+      {
+        "title": "Keep references and decisions clear",
+        "text": "Use the current component or drawing revision when discussing changes, checks and repeat orders. Agree the people responsible for the release decision and ongoing communication.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Project responsibilities",
+            "to": "/team"
+          },
+          {
+            "label": "Project communication",
+            "to": "/newsletter"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "guides",
+    "title": "Technical preparation guides",
+    "subtitle": "Use these checklists to prepare a component selection, replacement assessment or recurring supply discussion. Each guide includes a downloadable text checklist.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp",
+    "sections": [
+      {
+        "title": "Component selection",
+        "text": "Bring the function, interfaces and operating conditions together before comparing a product configuration.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Open the selection guide",
+            "to": "/guides/component-selection"
+          }
+        ]
+      },
+      {
+        "title": "Replacement assessment",
+        "text": "Record the existing configuration, required compatibility and evaluation plan for an alternative.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Open the replacement guide",
+            "to": "/guides/replacement-assessment"
+          }
+        ]
+      },
+      {
+        "title": "Recurring supply",
+        "text": "Define the demand, release arrangement and any proposed stock terms for an existing component or custom part.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Open the supply guide",
+            "to": "/guides/recurring-supply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "case-studies",
+    "title": "Technical application scenarios",
+    "subtitle": "Three illustrative briefs show how a component requirement becomes a defined selection, replacement or supply task. These are hypothetical examples, not customer references or completed projects.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500",
+    "sections": [
+      {
+        "title": "Match a controller to the equipment",
+        "text": "An equipment manufacturer needs a controller for a revised temperature-control application. The useful starting point is the equipment function and its interfaces.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Explore temperature controllers",
+            "to": "/components/controllers-and-control-systems/temperature-controllers"
+          }
+        ],
+        "table": {
+          "headers": [
+            "Brief element",
+            "Information to clarify"
+          ],
+          "rows": [
+            [
+              "Application",
+              "Required control tasks, connected sensors and output functions."
+            ],
+            [
+              "Selection work",
+              "Compare input compatibility, electrical connections, installation space and operating conditions with manufacturer documents."
+            ],
+            [
+              "Proposed result",
+              "A candidate configuration, open questions and any checks needed before the application-specific release."
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Assess a replacement probe",
+        "text": "An existing probe is no longer suitable or available. A similar appearance is only a starting point; the connected equipment and the installation define the comparison.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Read the replacement checklist",
+            "to": "/guides/replacement-assessment"
+          },
+          {
+            "label": "Explore sensors and probes",
+            "to": "/components/sensors-and-probes"
+          }
+        ],
+        "table": {
+          "headers": [
+            "Brief element",
+            "Information to clarify"
+          ],
+          "rows": [
+            [
+              "Existing reference",
+              "Part number, current datasheet, equipment input and probe installation."
+            ],
+            [
+              "Comparison work",
+              "Characteristic curve, connection, dimensions, cable and operating conditions; record relevant differences."
+            ],
+            [
+              "Proposed result",
+              "A documented replacement proposal and an agreed evaluation plan before use."
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Plan recurring component deliveries",
+        "text": "A standard component is needed repeatedly. A supply arrangement can start with the existing product reference; a development project is not a prerequisite.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Read the supply checklist",
+            "to": "/guides/recurring-supply"
+          },
+          {
+            "label": "Prepare a supply inquiry",
+            "to": "/contact?type=supply"
+          }
+        ],
+        "table": {
+          "headers": [
+            "Brief element",
+            "Information to clarify"
+          ],
+          "rows": [
+            [
+              "Demand",
+              "Expected consumption, order quantities and the planning period."
+            ],
+            [
+              "Supply work",
+              "Define releases, preferred dates, documentation and responsibilities for changes."
+            ],
+            [
+              "Proposed result",
+              "An agreed ordering and delivery scope, with stock terms only where appropriate."
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "route": "blog",
+    "title": "Practical notes for component projects",
+    "subtitle": "Short preparation guides connect technical selection, replacement assessment and recurring supply. Open a guide for the checklist and a downloadable text copy.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp",
+    "sections": [
+      {
+        "title": "Start with the application",
+        "text": "A useful component brief connects the required function with the interfaces, operating conditions and intended quantity.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Component selection guide",
+            "to": "/guides/component-selection"
+          }
+        ]
+      },
+      {
+        "title": "Compare a replacement against the requirement",
+        "text": "Record the current reference and the differences that matter to the application before treating an alternative as a usable replacement.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Replacement assessment guide",
+            "to": "/guides/replacement-assessment"
+          }
+        ]
+      },
+      {
+        "title": "Define the recurring supply arrangement",
+        "text": "Consumption, releases and change responsibilities belong in the supply discussion. Stock is an option with its own terms.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Recurring supply guide",
+            "to": "/guides/recurring-supply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "newsletter",
+    "title": "Project communication that supports decisions",
+    "subtitle": "Agree which updates are needed, who receives them and when a decision is required. This page describes project communication; it does not offer a newsletter subscription.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
+    "sections": [
+      {
+        "title": "Agree the recipients and rhythm",
+        "text": "Identify the technical contact, purchasing contact and release authority. The frequency of updates follows the task: a routine reorder needs different coordination from a prototype assessment.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Project responsibilities",
+            "to": "/team"
+          }
+        ]
+      },
+      {
+        "title": "Make each update useful",
+        "text": "Connect the update to a reference and an action. A progress note should explain what changed and what needs to happen next.",
+        "bullets": [],
+        "img": "",
+        "table": {
+          "headers": [
+            "Update",
+            "Include"
+          ],
+          "rows": [
+            [
+              "Technical clarification",
+              "Part or drawing revision, unresolved requirement and person responsible for the answer."
+            ],
+            [
+              "Sample feedback",
+              "Sample reference, agreed check, result and decision still required."
+            ],
+            [
+              "Offer or order change",
+              "Affected quantity, term or version and the decision needed."
+            ],
+            [
+              "Delivery coordination",
+              "Order reference, relevant dates, changed information and next action."
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Separate information from approval",
+        "text": "Receiving an update does not approve a technical change. Agree how decisions are documented and who can approve the next step.",
+        "bullets": [
+          "Record the decision and applicable component version.",
+          "Keep open questions separate from agreed requirements.",
+          "Share drawings and commercial information with the agreed recipients."
+        ],
+        "img": "",
+        "links": [
+          {
+            "label": "Information handling",
+            "to": "/ip-protection"
+          },
+          {
+            "label": "Prepare a project brief",
+            "to": "/contact"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "get",
+    "title": "Information to prepare a technical inquiry",
+    "subtitle": "Use the following topics to organise your component, custom-part or supply requirements. This page provides preparation notes; it does not offer downloadable catalogues, reports or proprietary manufacturing guides.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp",
+    "sections": [
+      {
+        "title": "Component references and technical documents",
+        "text": "Collect the current part number, datasheet, drawing or sample reference. Include the revision and identify any missing information. Explain which features or interfaces must remain compatible and which alternatives may be considered.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Operating and installation requirements",
+        "text": "Describe the function, loading, temperature, fluids and installation conditions relevant to the component. Add electrical or mechanical interface details. Identify requirements that are confirmed and questions that still need clarification.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Samples, inspection and release",
+        "text": "State the purpose of a sample and how it will be evaluated. List required measurements, functional checks and source documents. Identify who approves the solution and how any deviations or changes should be handled.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Quantity and recurring supply",
+        "text": "Provide the first-order quantity and, where relevant, expected consumption or call-off pattern. Discuss stock, delivery preferences and forecast changes as separate decisions. Include any required monitoring of named components or additional source assessment.",
+        "bullets": [],
+        "img": ""
+      }
+    ]
+  },
+  {
+    "route": "become-a-manufacturing-partner",
+    "title": "Discuss a technical supply partnership",
+    "subtitle": "Component manufacturers, production partners and specialists can contribute to a defined Komponia project. A potential collaboration begins with capabilities, suitable applications and clear responsibilities; orders and volumes are not guaranteed.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
+    "sections": [
+      {
+        "title": "Describe your relevant capability",
+        "text": "Provide a concise overview of the products, processes or specialist services you can offer. Identify materials, typical applications and any relevant documentation. A collaboration is assessed against a concrete requirement rather than a general claim of unlimited capacity.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Define how the parties work together",
+        "text": "Discuss quotation information, technical clarification, sample requirements and delivery conditions. Agree who performs and documents each task. Commercial conditions and ownership or use of technical information need to be clear before work begins.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+      },
+      {
+        "title": "A typical partner contribution",
+        "text": "A manufacturer may supply a standard component, a production partner may make a custom part, and a specialist may perform an agreed test. The required contribution depends on the application. This is an illustrative division of work, not a named supplier reference.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Information for an initial assessment",
+        "text": "Provide the company profile, relevant capabilities, available quality evidence and suitable contact roles. State any process or material limitations. Specific qualifications and commercial conditions are reviewed against the project requirements.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Confirm the technical production scope",
+        "text": "For a proposed part, confirm the material, geometry, achievable features and required finishing. Identify the inspection approach and available documents. Any samples, additional testing or source approval steps are agreed before the production commitment.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+      }
+    ]
+  },
+  {
+    "route": "contact",
+    "title": "Start with your requirement",
+    "subtitle": "Prepare a component, custom solution or ongoing supply inquiry. Review, copy or download a local draft for your discussion with Komponia.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500",
+    "sections": [
+      {
+        "title": "What to prepare",
+        "text": "Include the existing part number, datasheet or drawing revision and describe the intended function. Add operating conditions, installation interfaces, quantity and preferred delivery date. For a replacement, explain what must remain compatible. For recurring supply, include expected consumption and any call-off or stock requirements.\n\nIdentify any confidentiality restrictions, required documents and internal approval steps before sharing technical information. Use the contact channel agreed with your Komponia representative; this page has no upload or send function.",
+        "bullets": [],
+        "img": ""
+      }
+    ]
+  },
+  {
+    "route": "jobs",
+    "title": "Working with Komponia",
+    "subtitle": "Technical component work connects application knowledge, purchasing, quality and delivery. Explore the contribution needed for a technical or supplier collaboration.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
+    "sections": [
+      {
+        "title": "Expertise connected to a practical task",
+        "text": "A useful introduction describes what you know, the product or process you work with and the contribution you can provide. Define the scope before presenting a capability as available.",
+        "bullets": [
+          "Product knowledge and application support.",
+          "Engineering, samples and agreed evaluation.",
+          "Sources, purchasing and recurring delivery."
+        ],
+        "img": "",
+        "links": [
+          {
+            "label": "Explore our approach",
+            "to": "/about"
+          }
+        ]
+      },
+      {
+        "title": "Prepare a collaboration brief",
+        "text": "Include the relevant product fields, your own capabilities and the work performed by partners. Add suitable, shareable examples and the documentation available to support your contribution.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Supplier collaboration",
+            "to": "/become-a-manufacturing-partner"
+          },
+          {
+            "label": "Prepare a collaboration inquiry",
+            "to": "/contact?type=cooperation"
+          }
+        ]
+      },
+      {
+        "title": "Vacancies and personal contacts",
+        "text": "No specific vacancies or application contacts are listed on this page. A collaboration brief is an introduction, not an application to an advertised position. Use your existing business contact to discuss the current requirement.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Project responsibilities",
+            "to": "/team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "protolabs-network",
+    "title": "Komponia: components, solutions and supply",
+    "subtitle": "Komponia develops the technical component business built on WTS since 1997. The focus combines standard products and advice, individual solutions and ongoing supply for manufacturers and industrial users.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500",
+    "sections": [
+      {
+        "title": "A technical specialist brand",
+        "text": "Komponia connects component selection and sourcing with application understanding. The WTS component business and existing manufacturer relationships provide the foundation. Standard products and recurring trade are central to the brand alongside custom projects.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Three ways to work together",
+        "text": "Start with a component requirement, an adaptation or custom solution, or an ongoing supply need. These are independent services: a recurring component order does not require a development project. The scope follows the application and the customer’s requirement.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+      },
+      {
+        "title": "Combine own work and suitable partners",
+        "text": "Technical clarification, source coordination, samples and agreed qualification tasks can involve Komponia and specialist partners. Define who performs each task and which evidence is required. No general claim that every process takes place in-house is made.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
+      },
+      {
+        "title": "Keep customer relationships clear",
+        "text": "Komponia is the technical specialist brand. Sourcura is the broader B2B sourcing and platform brand, with its own projects and follow-on business. A complex or recurring requirement does not automatically transfer a customer from one brand to the other.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Begin with the requirement",
+        "text": "Share the component function, current references and intended result. Clarify the quantity, delivery preferences and any required approval or documents. The initial discussion establishes whether selection, adaptation, qualification or a supply arrangement is needed.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+      },
+      {
+        "title": "What is agreed for a project?",
+        "text": "The offer and project agreement define the component or technical work, responsibilities and acceptance requirements. Recurring supply, monitoring, additional testing and stock arrangements are specified where required. General brand statements do not replace the agreed project scope.",
+        "bullets": [],
+        "img": ""
+      }
+    ]
+  },
+  {
+    "route": "sustainability",
+    "title": "Plan resources around actual supply needs",
+    "subtitle": "Consolidation, suitable stock and transport planning can affect costs, availability and resource use. Komponia treats any environmental advantage as a comparison to be evidenced for a defined supply arrangement.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
+    "sections": [
+      {
+        "title": "Define the supply requirement first",
+        "text": "Start with the actual quantity, required availability and period of use. Identify the current ordering, transport and storage arrangement. A meaningful alternative must meet the same requirement; buying more than needed is not automatically a resource improvement.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+      },
+      {
+        "title": "Assess consolidation and delivery options",
+        "text": "Compatible quantities and dates may allow shipments to be consolidated. Consider the onward distribution, packaging and delivery requirements as well as the main transport. The benefit depends on the complete arrangement rather than the size of one order.",
+        "bullets": [],
+        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+      },
+      {
+        "title": "Include the trade-offs of stock",
+        "text": "Suitable stock may reduce urgent procurement, but storage, ageing and unused goods can offset that advantage. Agree consumption, financing and change rules. Evaluate the proposed stock against actual demand rather than assuming that a safety stock always lowers emissions.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Compare alternatives on the same basis",
+        "text": "An environmental comparison needs a documented baseline, defined system boundary and consistent data and assumptions. Distinguish logistics emissions from a complete product footprint. No numerical saving is claimed here because a project-specific comparison has not been established.",
+        "bullets": [],
+        "img": ""
+      },
+      {
+        "title": "Build the evidence for a real decision",
+        "text": "For a defined project, identify available transport, quantity, storage and packaging data and any missing information. Assess costs, availability and resource effects together. A measured environmental comparison is a development objective and requires suitable data and an agreed scope.",
+        "bullets": [],
+        "img": ""
+      }
+    ]
+  },
+  {
+    "route": "team",
+    "title": "Clear responsibilities for technical work",
+    "subtitle": "Define the technical, commercial and approval responsibilities for each task. One person may cover several roles; the project needs clear decisions and handovers.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
+    "sections": [
+      {
+        "title": "A contact for the complete requirement",
+        "text": "Start with the product, application and intended supply arrangement. Agree the coordinating contact and the people who need to be involved when requirements or delivery conditions change.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Prepare the first brief",
+            "to": "/contact"
+          }
+        ]
+      },
+      {
+        "title": "Who handles which decision?",
+        "text": "Use these responsibilities as a project checklist. The assigned people, own contribution and partner work are agreed for the specific requirement.",
+        "bullets": [],
+        "img": "",
+        "table": {
+          "headers": [
+            "Responsibility",
+            "Scope to agree"
+          ],
+          "rows": [
+            [
+              "Technical clarification",
+              "Function, interfaces, proposed configuration and open manufacturer questions."
+            ],
+            [
+              "Purchasing and sources",
+              "Offer scope, source coordination, quantities and commercial terms."
+            ],
+            [
+              "Samples and checks",
+              "Sample revision, evaluation criteria, evidence and reporting."
+            ],
+            [
+              "Application release",
+              "Who evaluates results and authorises the agreed version for use."
+            ],
+            [
+              "Order and delivery",
+              "Order references, required documents, releases and communication of changes."
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Keep the handover traceable",
+        "text": "A handover should identify the current reference, decision status and next action. Record who owns the action and which information they need.",
+        "bullets": [
+          "Use a named part or drawing revision.",
+          "Distinguish a proposed alternative from an approved configuration.",
+          "Agree who receives technical and delivery changes."
+        ],
+        "img": "",
+        "links": [
+          {
+            "label": "Project communication",
+            "to": "/newsletter"
+          },
+          {
+            "label": "How we work",
+            "to": "/how-ordering-works"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "guides/component-selection",
+    "title": "Prepare a component selection brief",
+    "subtitle": "Connect the application, interfaces and supply requirement before comparing products.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp",
+    "sections": [
+      {
+        "title": "Identify the current starting point",
+        "text": "Include an existing part number, datasheet, drawing revision or sample reference. For a new application, describe the function the component must perform. Identify which requirements are confirmed and which are still open.",
+        "bullets": [
+          "Application and required function.",
+          "Existing product or equipment reference.",
+          "Known restrictions and unresolved questions."
+        ],
+        "img": ""
+      },
+      {
+        "title": "Describe the interfaces and conditions",
+        "text": "List the electrical and mechanical connections, installation space and operating conditions that matter to your equipment. Use the relevant manufacturer documents to assess a proposed configuration.",
+        "bullets": [
+          "Sensor or signal input and required outputs, where relevant.",
+          "Dimensions, mounting, cables and connectors.",
+          "Temperature, medium and other applicable operating conditions."
+        ],
+        "img": ""
+      },
+      {
+        "title": "Add the purchase and evaluation scope",
+        "text": "State the intended quantity, preferred date and required documents. Identify whether samples or other agreed checks are needed before release.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Prepare a component inquiry",
+            "to": "/contact"
+          },
+          {
+            "label": "Explore component groups",
+            "to": "/components"
+          }
+        ],
+        "downloads": [
+          {
+            "label": "Download checklist (.txt)",
+            "file": "komponia-component-selection-checklist.txt",
+            "revision": "2026-10-07"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "guides/replacement-assessment",
+    "title": "Prepare a replacement assessment",
+    "subtitle": "Compare a proposed alternative with the actual requirement, current component and application-specific release criteria.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp",
+    "sections": [
+      {
+        "title": "Record the existing configuration",
+        "text": "Identify the current part and document revision. Describe the function, installation and connected equipment. Separate a geometric reconstruction from a functional replacement task.",
+        "bullets": [
+          "Current part number and equipment reference.",
+          "Relevant drawing, datasheet or sample.",
+          "Reason for replacement and constraints on the change."
+        ],
+        "img": ""
+      },
+      {
+        "title": "Compare and document the differences",
+        "text": "Compare function, interfaces, operating conditions and documentation. A similar enclosure or part name does not establish suitability. Identify which differences need manufacturer clarification or evaluation.",
+        "bullets": [],
+        "img": "",
+        "table": {
+          "headers": [
+            "Comparison",
+            "Question"
+          ],
+          "rows": [
+            [
+              "Function",
+              "Does the alternative perform the required task?"
+            ],
+            [
+              "Connections",
+              "Are inputs, outputs, cables and mechanical interfaces suitable?"
+            ],
+            [
+              "Installation",
+              "Which dimensions, mounting and operating conditions apply?"
+            ],
+            [
+              "Evaluation",
+              "Which differences need samples, checks or a new release decision?"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Agree the release decision",
+        "text": "Define the evaluation scope and who approves use in the intended application. Record the assessed configuration and any conditions for use; do not extend the decision automatically to another application.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Prepare a replacement inquiry",
+            "to": "/contact"
+          },
+          {
+            "label": "Quality and qualification",
+            "to": "/the-protolabs-network-standard"
+          }
+        ],
+        "downloads": [
+          {
+            "label": "Download checklist (.txt)",
+            "file": "komponia-replacement-assessment-checklist.txt",
+            "revision": "2026-10-07"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "guides/recurring-supply",
+    "title": "Prepare a recurring supply arrangement",
+    "subtitle": "Standard components and custom parts can both be included in an agreed delivery model. Begin with the actual product reference and demand.",
+    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp",
+    "sections": [
+      {
+        "title": "Describe demand and ordering",
+        "text": "Identify the required component version, expected consumption and the relevant planning period. Distinguish forecast quantities from committed orders or releases.",
+        "bullets": [
+          "Product reference and agreed version.",
+          "Expected consumption and order quantities.",
+          "Preferred delivery rhythm and documents."
+        ],
+        "img": ""
+      },
+      {
+        "title": "Define stock terms where needed",
+        "text": "A proposed stock arrangement needs clear limits and commercial terms. Discuss ownership, financing, acceptance, ageing and treatment of unused or changed parts.",
+        "bullets": [],
+        "img": "",
+        "table": {
+          "headers": [
+            "Topic",
+            "Scope to agree"
+          ],
+          "rows": [
+            [
+              "Quantities",
+              "Stock limits, release quantities and accepted commitments."
+            ],
+            [
+              "Ownership and financing",
+              "Who owns the stock and which terms cover its cost."
+            ],
+            [
+              "Changes",
+              "How revisions, ageing and discontinued items are handled."
+            ],
+            [
+              "Unused stock",
+              "Acceptance and disposition rules."
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Assign change and reorder responsibilities",
+        "text": "Agree how a repeat order refers to the approved product and which changes need review. Additional sources need their own technical assessment and documented switching conditions.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Prepare a supply inquiry",
+            "to": "/contact?type=supply"
+          },
+          {
+            "label": "Production and recurring supply",
+            "to": "/production-orders"
+          }
+        ],
+        "downloads": [
+          {
+            "label": "Download checklist (.txt)",
+            "file": "komponia-recurring-supply-checklist.txt",
+            "revision": "2026-10-07"
+          }
+        ]
+      }
+    ]
+  }
+]

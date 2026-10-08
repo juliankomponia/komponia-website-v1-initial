@@ -1,0 +1,280 @@
+{
+  "provider": "Higgsfield",
+  "model": "gpt_image_2_5",
+  "generated_on": "2026-10-07",
+  "purpose": "Illustrative industrial imagery for the Komponia website.",
+  "provenance_note": "Generated illustrations. These images do not document actual Komponia products, facilities, customers or customer projects.",
+  "prompt_direction": "Plausible mechanics, natural workbench photography, no text, logos, neon, glows or people.",
+  "processing": "Local format and file-size optimization only: WebP quality 86, width at most 1600 px, proportions retained.",
+  "assets": [
+    {
+      "name": "hero-components",
+      "file": "hero-components.webp",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261007_113842_0afbfe49-a95d-459f-be03-0e7001cc89ce.png",
+      "generation_job_id": "0afbfe49-a95d-459f-be03-0e7001cc89ce",
+      "source_format": "PNG",
+      "source_dimensions": [
+        1024,
+        688
+      ],
+      "source_mode": "RGB",
+      "source_bytes": 1013858,
+      "source_sha256": "60809aafdd1615111a05c740ae0222cb12c88055f62835540f26fb0427dc3a94",
+      "source_metadata": {
+        "hf-job-id": "0afbfe49-a95d-459f-be03-0e7001cc89ce"
+      },
+      "output_dimensions": [
+        1024,
+        688
+      ],
+      "output_bytes": 49540,
+      "output_sha256": "93f7f0c67dd3e0da92c11708901fb24cbe36c3cc86b9e2dadc10dcbdec996266"
+    },
+    {
+      "name": "custom-engineering",
+      "file": "custom-engineering.webp",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261007_113842_4808d886-7644-48b1-ac36-67caaff4ccf0.png",
+      "generation_job_id": "4808d886-7644-48b1-ac36-67caaff4ccf0",
+      "source_format": "PNG",
+      "source_dimensions": [
+        1024,
+        688
+      ],
+      "source_mode": "RGB",
+      "source_bytes": 943078,
+      "source_sha256": "01108f9447f6694c70937b373db3fa7e00fdfe9643808a9ab938f0323cfa6888",
+      "source_metadata": {
+        "hf-job-id": "4808d886-7644-48b1-ac36-67caaff4ccf0"
+      },
+      "output_dimensions": [
+        1024,
+        688
+      ],
+      "output_bytes": 40088,
+      "output_sha256": "28e025985430c5c0e6d8064203d701b7f232e51608d0366b366968218fe9ad03"
+    },
+    {
+      "name": "quality-inspection",
+      "file": "quality-inspection.webp",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261007_113842_5aee7dfd-e45a-4fac-8c0f-9258cb34146b.png",
+      "generation_job_id": "5aee7dfd-e45a-4fac-8c0f-9258cb34146b",
+      "source_format": "PNG",
+      "source_dimensions": [
+        1024,
+        688
+      ],
+      "source_mode": "RGB",
+      "source_bytes": 1207332,
+      "source_sha256": "e090ed5798b4b7fe025ecb9aaf16d86e8325c518190c6a903be4414f6a1745b8",
+      "source_metadata": {
+        "hf-job-id": "5aee7dfd-e45a-4fac-8c0f-9258cb34146b"
+      },
+      "output_dimensions": [
+        1024,
+        688
+      ],
+      "output_bytes": 96918,
+      "output_sha256": "15b24bc1eda47222a8ea77aca0fc77c9a83fef5a2e423c8dd2d7ffd77a6ffd02"
+    },
+    {
+      "name": "ongoing-supply",
+      "file": "ongoing-supply.webp",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261007_113842_dd7380c6-70f3-4f5b-911c-5b67ebffab3d.png",
+      "generation_job_id": "dd7380c6-70f3-4f5b-911c-5b67ebffab3d",
+      "source_format": "PNG",
+      "source_dimensions": [
+        1024,
+        688
+      ],
+      "source_mode": "RGB",
+      "source_bytes": 1186765,
+      "source_sha256": "6fa41232a0856acbd6de598a3148fb688cdfcf6fd7502b9fa78fe9c79c1f57a2",
+      "source_metadata": {
+        "hf-job-id": "dd7380c6-70f3-4f5b-911c-5b67ebffab3d"
+      },
+      "output_dimensions": [
+        1024,
+        688
+      ],
+      "output_bytes": 106766,
+      "output_sha256": "cd68ea41c4a413f54968992edcc6f0e57898a28062d2d6b8326c0dc4187a699e"
+    },
+    {
+      "name": "controllers",
+      "file": "controllers.webp",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261007_114304_c437537e-c77e-4d69-b098-6e1cdec1b316.png",
+      "model": "gpt_image_2_5",
+      "generation_job_id": "c437537e-c77e-4d69-b098-6e1cdec1b316",
+      "generated_on": "2026-10-07",
+      "purpose": "Generic illustrative hardware category imagery, not a specific real product or verified stock item.",
+      "prompt_direction": "Generic illustrative hardware category photograph with off-white catalogue-neutral background.",
+      "source_format": "PNG",
+      "source_dimensions": [
+        1024,
+        688
+      ],
+      "source_mode": "RGB",
+      "source_bytes": 818503,
+      "source_sha256": "476d6453bc8ef0a1859d18a65efb08c0c9a2928f880f0bc10cd8b8dde80f8f5c",
+      "source_metadata": {
+        "hf-job-id": "c437537e-c77e-4d69-b098-6e1cdec1b316"
+      },
+      "output_dimensions": [
+        1024,
+        688
+      ],
+      "output_bytes": 14954,
+      "output_sha256": "ba1ba7e85b219d851f384e4f1d820cfdfd345f45e78a9c8e9360fd9f61bb1758"
+    },
+    {
+      "name": "sensors",
+      "file": "sensors.webp",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261007_114303_86e5d574-9ffe-4cbb-9bc8-8ebc886e927f.png",
+      "model": "gpt_image_2_5",
+      "generation_job_id": "86e5d574-9ffe-4cbb-9bc8-8ebc886e927f",
+      "generated_on": "2026-10-07",
+      "purpose": "Generic illustrative hardware category imagery, not a specific real product or verified stock item.",
+      "prompt_direction": "Generic illustrative hardware category photograph with off-white catalogue-neutral background.",
+      "source_format": "PNG",
+      "source_dimensions": [
+        1024,
+        688
+      ],
+      "source_mode": "RGB",
+      "source_bytes": 788872,
+      "source_sha256": "af96bf2cbf471982f45baa7c9c03104b3c65061189326a67f798774ac70478af",
+      "source_metadata": {
+        "hf-job-id": "86e5d574-9ffe-4cbb-9bc8-8ebc886e927f"
+      },
+      "output_dimensions": [
+        1024,
+        688
+      ],
+      "output_bytes": 15548,
+      "output_sha256": "c086de7c87746b7440234e15b5cc271af693cfe7d650cab33528f378e505afb6"
+    },
+    {
+      "name": "heating",
+      "file": "heating.webp",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261007_114304_ac79866d-0c66-4c91-b18e-ffd3bfa9658b.png",
+      "model": "gpt_image_2_5",
+      "generation_job_id": "ac79866d-0c66-4c91-b18e-ffd3bfa9658b",
+      "generated_on": "2026-10-07",
+      "purpose": "Generic illustrative hardware category imagery, not a specific real product or verified stock item.",
+      "prompt_direction": "Generic illustrative hardware category photograph with off-white catalogue-neutral background.",
+      "source_format": "PNG",
+      "source_dimensions": [
+        1024,
+        688
+      ],
+      "source_mode": "RGB",
+      "source_bytes": 818003,
+      "source_sha256": "26cbb024f8c325dadb6d55c5a2e7a7d54c9b3e1d6c70c6cae54b7ff847fd10b0",
+      "source_metadata": {
+        "hf-job-id": "ac79866d-0c66-4c91-b18e-ffd3bfa9658b"
+      },
+      "output_dimensions": [
+        1024,
+        688
+      ],
+      "output_bytes": 20272,
+      "output_sha256": "b58c62ec94dda5a070efd1897bae63fac2d6577a7bc321eb7fd7561be799c921"
+    },
+    {
+      "name": "pressure-switches",
+      "file": "pressure-switches.webp",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261007_114303_88f5bf72-5a0b-42c1-959f-8a5e1ca3c8e5.png",
+      "model": "gpt_image_2_5",
+      "generation_job_id": "88f5bf72-5a0b-42c1-959f-8a5e1ca3c8e5",
+      "generated_on": "2026-10-07",
+      "purpose": "Generic illustrative hardware category imagery, not a specific real product or verified stock item.",
+      "prompt_direction": "Generic illustrative hardware category photograph with off-white catalogue-neutral background.",
+      "source_format": "PNG",
+      "source_dimensions": [
+        1024,
+        688
+      ],
+      "source_mode": "RGB",
+      "source_bytes": 846178,
+      "source_sha256": "0b7d1efe80288bf5a676fa198c2d8201cc28cfb5bea095e458be720b23694335",
+      "source_metadata": {
+        "hf-job-id": "88f5bf72-5a0b-42c1-959f-8a5e1ca3c8e5"
+      },
+      "output_dimensions": [
+        1024,
+        688
+      ],
+      "output_bytes": 25538,
+      "output_sha256": "fe88584e56dce98dc0d80e266f2a595a6c552ada91b46d3cc7ad85ab73f7f6e7"
+    },
+    {
+      "name": "temperature-controller",
+      "file": "temperature-controller.webp",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261007_133059_a0883c0d-44eb-4357-b998-50efa8054a2b.png",
+      "model": "gpt_image_2_5",
+      "generation_job_id": "a0883c0d-44eb-4357-b998-50efa8054a2b",
+      "generated_on": "2026-10-07",
+      "purpose": "Illustrative component category photograph, not a confirmed product configuration or stock item.",
+      "prompt": "Create a restrained premium technical catalogue photograph for an industrial component website. One generic unbranded component only, mechanically plausible, studio daylight from the upper left, soft natural contact shadow, matte pale neutral grey background, no people, no writing, no logos, no decorative gradients, no glows, no dramatic colour lighting. Cool-neutral material tones, realistic proportions, restrained contrast, sharp component detail. Center the complete component with generous margin on all sides in a landscape 3:2 frame. This is an illustrative category example, not an exact commercial product. Subject: a compact rectangular panel-mounted industrial temperature controller. Dark graphite casing, plain blank unlit display, three small plain buttons, restrained blue trim only as a tiny edge detail. Three-quarter view showing the front and side housing with believable rear terminal block, no cables. No screen readings or numbers.",
+      "source_format": "PNG",
+      "source_dimensions": [
+        1024,
+        688
+      ],
+      "source_bytes": 831069,
+      "source_sha256": "f02230e3e2c3acb89a8d3a83e08744e7b12efa66bfd0de92c3ca757b9b85a1cf",
+      "output_dimensions": [
+        1024,
+        688
+      ],
+      "output_bytes": 17948,
+      "output_sha256": "2561d8c70bbc53aef11332702f7845cbee00f50cafcde5b5d08fced489677a83"
+    },
+    {
+      "name": "temperature-probe",
+      "file": "temperature-probe.webp",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261007_133058_5a6bd8a9-e2e4-4590-bed4-63f66db5f35e.png",
+      "model": "gpt_image_2_5",
+      "generation_job_id": "5a6bd8a9-e2e4-4590-bed4-63f66db5f35e",
+      "generated_on": "2026-10-07",
+      "purpose": "Illustrative component category photograph, not a confirmed product configuration or stock item.",
+      "prompt": "Create a restrained premium technical catalogue photograph for an industrial component website. One generic unbranded component only, mechanically plausible, studio daylight from the upper left, soft natural contact shadow, matte pale neutral grey background, no people, no writing, no logos, no decorative gradients, no glows, no dramatic colour lighting. Cool-neutral material tones, realistic proportions, restrained contrast, sharp component detail. Center the complete component with generous margin on all sides in a landscape 3:2 frame. This is an illustrative category example, not an exact commercial product. Subject: one generic stainless-steel temperature probe with a straight cylindrical closed-tip metal sheath and a plain black flexible cable exiting through a credible strain relief. Probe arranged diagonally across the frame, cable in one gentle arc. Brushed metal with fine machining details, no connectors, no labels, no markings. The probe tip, sheath and cable transition all clearly visible.",
+      "source_format": "PNG",
+      "source_dimensions": [
+        1024,
+        688
+      ],
+      "source_bytes": 804316,
+      "source_sha256": "211168101aee4a4ad212dbbccec0a9ccd0300e6b0469ea5794e2b38258cf976e",
+      "output_dimensions": [
+        1024,
+        688
+      ],
+      "output_bytes": 13132,
+      "output_sha256": "0d000a49b49cac1c064f1008a9644f6c2f33df31acea1e5cbded92ebf97c8c42"
+    },
+    {
+      "name": "tubular-heater",
+      "file": "tubular-heater.webp",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261007_133058_b918a400-0676-43a7-a406-6a3d9a267fb5.png",
+      "model": "gpt_image_2_5",
+      "generation_job_id": "b918a400-0676-43a7-a406-6a3d9a267fb5",
+      "generated_on": "2026-10-07",
+      "purpose": "Illustrative component category photograph, not a confirmed product configuration or stock item.",
+      "prompt": "Create a restrained premium technical catalogue photograph for an industrial component website. One generic unbranded component only, mechanically plausible, studio daylight from the upper left, soft natural contact shadow, matte pale neutral grey background, no people, no writing, no logos, no decorative gradients, no glows, no dramatic colour lighting. Cool-neutral material tones, realistic proportions, restrained contrast, sharp component detail. Center the complete component with generous margin on all sides in a landscape 3:2 frame. This is an illustrative category example, not an exact commercial product. Subject: one generic U-shaped stainless-steel tubular heating element, with two parallel smooth metal legs and a continuous rounded bend. Two credible white ceramic terminal insulators and short plain threaded electrical terminals at the open ends. Three-quarter tabletop view, fine brushed metal surface, no cable, no mounting plate, no other parts.",
+      "source_format": "PNG",
+      "source_dimensions": [
+        1024,
+        688
+      ],
+      "source_bytes": 836785,
+      "source_sha256": "81464f12e1f9444a537f00ac0675c8c657240c50465913b393da78e413b641ee",
+      "output_dimensions": [
+        1024,
+        688
+      ],
+      "output_bytes": 15920,
+      "output_sha256": "3292f03a96973196996ba83c812bd1b321582aa7a34b85cba2ea9fe8f3e61a97"
+    }
+  ]
+}

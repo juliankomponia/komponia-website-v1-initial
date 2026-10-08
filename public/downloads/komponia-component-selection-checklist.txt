@@ -1,0 +1,26 @@
+KOMPONIA — PREPARE A COMPONENT SELECTION BRIEF
+Version: 2026-10-07
+General preparation checklist. Not a manufacturer datasheet, specification or offer.
+
+Connect the application, interfaces and supply requirement before comparing products.
+
+IDENTIFY THE CURRENT STARTING POINT
+Include an existing part number, datasheet, drawing revision or sample reference. For a new application, describe the function the component must perform. Identify which requirements are confirmed and which are still open.
+- Application and required function.
+- Existing product or equipment reference.
+- Known restrictions and unresolved questions.
+
+DESCRIBE THE INTERFACES AND CONDITIONS
+List the electrical and mechanical connections, installation space and operating conditions that matter to your equipment. Use the relevant manufacturer documents to assess a proposed configuration.
+- Sensor or signal input and required outputs, where relevant.
+- Dimensions, mounting, cables and connectors.
+- Temperature, medium and other applicable operating conditions.
+
+ADD THE PURCHASE AND EVALUATION SCOPE
+State the intended quantity, preferred date and required documents. Identify whether samples or other agreed checks are needed before release.
+
+YOUR NOTES
+Application / part reference:
+Requirements and open questions:
+Quantity / preferred date:
+Required documents and approvals:

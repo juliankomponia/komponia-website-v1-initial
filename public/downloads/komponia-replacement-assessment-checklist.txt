@@ -1,0 +1,27 @@
+KOMPONIA — PREPARE A REPLACEMENT ASSESSMENT
+Version: 2026-10-07
+General preparation checklist. Not a manufacturer datasheet, specification or offer.
+
+Compare a proposed alternative with the actual requirement, current component and application-specific release criteria.
+
+RECORD THE EXISTING CONFIGURATION
+Identify the current part and document revision. Describe the function, installation and connected equipment. Separate a geometric reconstruction from a functional replacement task.
+- Current part number and equipment reference.
+- Relevant drawing, datasheet or sample.
+- Reason for replacement and constraints on the change.
+
+COMPARE AND DOCUMENT THE DIFFERENCES
+Compare function, interfaces, operating conditions and documentation. A similar enclosure or part name does not establish suitability. Identify which differences need manufacturer clarification or evaluation.
+Function — Does the alternative perform the required task?
+Connections — Are inputs, outputs, cables and mechanical interfaces suitable?
+Installation — Which dimensions, mounting and operating conditions apply?
+Evaluation — Which differences need samples, checks or a new release decision?
+
+AGREE THE RELEASE DECISION
+Define the evaluation scope and who approves use in the intended application. Record the assessed configuration and any conditions for use; do not extend the decision automatically to another application.
+
+YOUR NOTES
+Application / part reference:
+Requirements and open questions:
+Quantity / preferred date:
+Required documents and approvals:

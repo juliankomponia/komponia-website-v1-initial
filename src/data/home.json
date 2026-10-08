@@ -1,0 +1,362 @@
+{
+  "hero": {
+    "title": "Technical components.\nComposed for your application.",
+    "intro": "Select the right component, develop a custom solution or plan ongoing supply. We bring the technical requirements and sourcing decisions together.",
+    "lines": [
+      "Components — Selection, advice and sourcing.",
+      "Custom solutions — Engineering, samples and agreed checks.",
+      "Ongoing supply — Recurring deliveries and defined stock terms."
+    ],
+    "cta": {
+      "label": "Discuss your requirements",
+      "to": null
+    }
+  },
+  "capabilities": {
+    "title": "Manufacturing for custom parts",
+    "intro": "Match geometry, material and quantity to the manufacturing route. We coordinate suitable sources and the agreed checks.",
+    "overviewCta": {
+      "label": "Explore components",
+      "to": "/components"
+    },
+    "cards": [
+      {
+        "title": "CNC machining",
+        "desc": "Milling, turning and finishing options",
+        "specs": [
+          "Define material, geometry and tolerances",
+          "Agree quantities and required documentation"
+        ],
+        "cta": "Explore CNC machining",
+        "to": "/cnc-machining"
+      },
+      {
+        "title": "3D printing",
+        "desc": "Process selection for prototypes and custom parts",
+        "specs": [
+          "Consider geometry, material and intended use",
+          "Agree finish, quantity and evaluation criteria"
+        ],
+        "cta": "Explore 3D printing",
+        "to": "/3d-printing"
+      },
+      {
+        "title": "Sheet metal fabrication",
+        "desc": "Cutting, forming and finishing options",
+        "specs": [
+          "Define sheet material, geometry and interfaces",
+          "Agree tolerances, finish and quantity"
+        ],
+        "cta": "Explore sheet metal fabrication",
+        "to": "/sheet-metal-fabrication"
+      },
+      {
+        "title": "Injection molding",
+        "desc": "Tooling and molded-part requirements",
+        "specs": [
+          "Define material, geometry and expected volumes",
+          "Agree tooling, samples and release criteria"
+        ],
+        "cta": "Explore injection molding",
+        "to": "/injection-molding"
+      }
+    ]
+  },
+  "custom-solutions": {
+    "title": "From application to the right component",
+    "intro": "Function, interfaces and operating conditions define the task. We assess standard components, adaptations and custom parts, then coordinate the technical work and suitable sources.",
+    "cta": {
+      "label": "Explore component options",
+      "to": "/components"
+    }
+  },
+  "partners": {
+    "title": "The right source for each requirement",
+    "intro": "Select sources by component, process and the evidence the application needs. Define responsibilities before the work begins.",
+    "cards": [
+      {
+        "title": "Component selection",
+        "text": "Compare technical requirements, variants and manufacturer information before selecting a component."
+      },
+      {
+        "title": "Custom-part feasibility",
+        "text": "Review geometry, material, interfaces and the proposed manufacturing approach with suitable specialists."
+      },
+      {
+        "title": "Samples & checks",
+        "text": "Define the sample requirements, agreed checks and responsibilities before qualification begins."
+      },
+      {
+        "title": "Series coordination",
+        "text": "Align quantities, documentation, delivery conditions and changes with the chosen supply approach."
+      }
+    ],
+    "cta": {
+      "label": "See how we work",
+      "to": "/how-ordering-works"
+    }
+  },
+  "inquiry": {
+    "title": "Start with what you have",
+    "intro": "A part number, drawing, sample or application description is a useful starting point. We clarify missing details and agree the next step before defining the offer.",
+    "cta": {
+      "label": "Prepare an inquiry",
+      "to": "/contact"
+    },
+    "bullets": [
+      "Describe the required function and installation conditions.",
+      "Include quantities, existing documentation and preferred delivery dates.",
+      "Specify any checks, approvals or supply arrangements that matter."
+    ]
+  },
+  "process": {
+    "title": "From inquiry to agreed supply",
+    "intro": "The scope determines the steps. Standard purchases and repeat orders can use existing specifications; samples and qualification are added where required.",
+    "steps": [
+      {
+        "title": "Share your requirement",
+        "text": "Send a part number, drawing, sample or description, with quantities and preferred dates."
+      },
+      {
+        "title": "Clarify the application",
+        "text": "Clarify function, interfaces, operating conditions and the documentation needed."
+      },
+      {
+        "title": "Select the approach",
+        "text": "Compare standard components, custom solutions and suitable sourcing or manufacturing routes."
+      },
+      {
+        "title": "Agree the offer",
+        "text": "Confirm goods or project scope, price, responsibilities and delivery terms before proceeding."
+      },
+      {
+        "title": "Check and approve",
+        "text": "Where needed, assess samples against agreed criteria and record the approval decision."
+      },
+      {
+        "title": "Arrange supply",
+        "text": "Plan delivery and, if required, recurring orders, call-offs and stock terms."
+      }
+    ]
+  },
+  "technical-questions": {
+    "title": "Typical component requirements",
+    "intro": "Component needs range from selecting an existing product to adapting a design or planning recurring supply. Start with the requirement that matches your application.",
+    "cards": [
+      {
+        "title": "Select a suitable component",
+        "text": "Compare the function, interfaces and operating conditions with the available product information. Clarify variants and manufacturer questions."
+      },
+      {
+        "title": "Adapt an existing part",
+        "text": "A geometry, connector or interface needs to change. Define the differences, samples and qualification required for the application."
+      },
+      {
+        "title": "Assess a replacement",
+        "text": "A component has changed or been discontinued. Compare requirements, technical differences and any renewed approval needed for the replacement."
+      },
+      {
+        "title": "Plan a second source",
+        "text": "Assess an additional source against technical requirements and shared dependencies. Document differences and conditions for switching."
+      }
+    ],
+    "cta": {
+      "label": "Explore component requirements",
+      "to": "/components"
+    }
+  },
+  "quality": {
+    "title": "Agreed requirements. Documented decisions.",
+    "intro": "Agree the checks, documentation and release responsibilities for the component and its intended use.",
+    "cards": [
+      {
+        "title": "Defined requirements",
+        "text": "Specify the function, interfaces, operating conditions and documentation used to assess the component.",
+        "link": "See the inquiry process",
+        "to": "/how-ordering-works"
+      },
+      {
+        "title": "Samples & agreed checks",
+        "text": "Define which samples and checks are needed, including scope, responsibilities and criteria for assessment.",
+        "link": "See the inquiry process",
+        "to": "/how-ordering-works"
+      },
+      {
+        "title": "Documented approval",
+        "text": "Record checked features, differences and the approval status for the agreed component version and application.",
+        "link": "See the inquiry process",
+        "to": "/how-ordering-works"
+      }
+    ]
+  },
+  "component-fields": {
+    "title": "Explore component fields",
+    "intro": "Compare the functions, interfaces and installation details that guide component selection.",
+    "cards": [
+      {
+        "title": "Controllers and control systems",
+        "text": "Match functions, sensor inputs, outputs and interfaces to the equipment.",
+        "to": "/components/controllers-and-control-systems",
+        "table": [
+          [
+            "Functions",
+            "Which control tasks are required?"
+          ],
+          [
+            "Interfaces",
+            "Which inputs, outputs and connections are needed?"
+          ],
+          [
+            "Installation",
+            "Which dimensions and operating conditions apply?"
+          ]
+        ]
+      },
+      {
+        "title": "Sensors and probes",
+        "text": "Consider the measurement range, input compatibility, probe design and connection.",
+        "to": "/components/sensors-and-probes",
+        "table": [
+          [
+            "Measurement",
+            "Which range and sensor characteristic are required?"
+          ],
+          [
+            "Probe design",
+            "How will the probe be mounted?"
+          ],
+          [
+            "Connection",
+            "Which cable and connector are needed?"
+          ]
+        ]
+      },
+      {
+        "title": "Heating elements",
+        "text": "Align the heating task, power, geometry and mounting with the application.",
+        "to": "/components/heating-elements",
+        "table": [
+          [
+            "Heating task",
+            "Which surface or part needs heating?"
+          ],
+          [
+            "Electrical requirements",
+            "Which supply and power requirement are planned?"
+          ],
+          [
+            "Installation",
+            "Which geometry, mounting and control conditions apply?"
+          ]
+        ]
+      },
+      {
+        "title": "Pressure and switching devices",
+        "text": "Define switching points, connections and the conditions at the installation site.",
+        "to": "/components/pressure-and-switching-devices",
+        "table": [
+          [
+            "Switching",
+            "Which pressure or temperature condition should trigger switching?"
+          ],
+          [
+            "Connections",
+            "Which process and electrical connections are required?"
+          ],
+          [
+            "Environment",
+            "Which medium and operating conditions apply?"
+          ]
+        ]
+      }
+    ]
+  },
+  "applications": {
+    "title": "Applications for technical components",
+    "intro": "From temperature control to industrial equipment, component selection starts with the operating conditions and interfaces the component must support.",
+    "cards": [
+      {
+        "title": "Refrigeration & climate control",
+        "text": "Control functions, temperature measurement and interfaces matched to the equipment.",
+        "to": "/components/controllers-and-control-systems",
+        "link": "Explore relevant controls"
+      },
+      {
+        "title": "Heating & thermal equipment",
+        "text": "Heating power, geometry, control and operating conditions considered together.",
+        "to": "/components/heating-elements",
+        "link": "Explore heating components"
+      },
+      {
+        "title": "Machinery & plant engineering",
+        "text": "Component function, installation space and connection requirements for the system.",
+        "to": "/industries/industrial-machinery",
+        "link": "Read application requirements"
+      },
+      {
+        "title": "Laboratory equipment",
+        "text": "Application-specific temperature conditions, interfaces and required documentation.",
+        "to": "/components/sensors-and-probes",
+        "link": "Explore sensors and probes"
+      }
+    ]
+  },
+  "heritage": {
+    "title": "Technical trade experience, rooted in WTS",
+    "intro": "The Komponia offering builds on the technical component experience of WTS since 1997. It brings component selection, individual solutions and ongoing supply together for manufacturers and industrial users.",
+    "cta": {
+      "label": "Explore our component fields",
+      "to": "/components"
+    }
+  },
+  "recurring-supply": {
+    "title": "Supply planned around your demand",
+    "intro": "Plan recurring deliveries for standard components or custom parts. Define quantities, call-offs, suitable stock and change requirements with the selected sources.",
+    "cta": {
+      "label": "See how supply is agreed",
+      "to": "/how-ordering-works"
+    }
+  },
+  "supply-terms": {
+    "title": "Clear terms for recurring supply",
+    "intro": "Agree quantities, call-offs, stock ownership and handling of product changes. Review the arrangement as demand develops.",
+    "topics": [
+      {
+        "title": "Demand & quantities",
+        "text": "Identify expected consumption, order quantities and the relevant planning period."
+      },
+      {
+        "title": "Call-offs & delivery",
+        "text": "Define release quantities, delivery conditions and responsibilities."
+      },
+      {
+        "title": "Stock terms",
+        "text": "Agree ownership, financing, acceptance and handling of unused stock."
+      },
+      {
+        "title": "Changes & alternatives",
+        "text": "Define how product changes, ageing and alternative sources are assessed."
+      }
+    ],
+    "cta": {
+      "label": "See the inquiry process",
+      "to": "/how-ordering-works"
+    }
+  },
+  "reviews": {
+    "title": null,
+    "intro": null
+  },
+  "closing-cta": {
+    "title": "Have a component requirement in mind?",
+    "intro": "Start with a part number, drawing or application description.",
+    "cta": {
+      "label": "Explore components",
+      "to": "/components"
+    },
+    "secondaryCta": {
+      "label": "See the inquiry process",
+      "to": "/how-ordering-works"
+    }
+  }
+}

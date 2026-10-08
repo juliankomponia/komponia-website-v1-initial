@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-07",
+  "project": "/Users/julian/Downloads/komponia-website-v1-initial",
+  "responsive": {
+    "routes": [
+      "#/",
+      "#/about",
+      "#/cnc-machining",
+      "#/components",
+      "#/components/controllers-and-control-systems",
+      "#/components/controllers-and-control-systems/temperature-controllers",
+      "#/components/sensors-and-probes/pt100-probes",
+      "#/guides/component-selection",
+      "#/industries",
+      "#/industries/automotive-manufacturing"
+    ],
+    "checks": 70,
+    "widths": [
+      390,
+      768,
+      1024,
+      1200,
+      1280,
+      1440,
+      1920
+    ],
+    "width_mismatches": [],
+    "horizontal_overflow": [],
+    "broken_loaded_images": [],
+    "header_mismatches": []
+  },
+  "gallery_after_fix": {
+    "cardBottom": 583.5417022705078,
+    "cardHeight": 375,
+    "cardScrollHeight": 375,
+    "cardScrollTop": 0,
+    "chevronClass": "lucide lucide-chevron-up shrink-0 transition-transform duration-300 motion-reduce:transition-none rotate-180",
+    "contentClientHeight": 150,
+    "contentScrollHeight": 250,
+    "contentScrollable": true,
+    "expanded": "true",
+    "panelBottom": 583.5417022705078,
+    "panelHeight": 206.25001525878903,
+    "width": 433
+  },
+  "functional": {
+    "pt100Inquiry": {
+      "reference": "Sensors and probes / PT100 probes",
+      "route": "#/contact?group=sensors-and-probes&component=pt100-probes",
+      "title": "Start with your requirement | Komponia",
+      "type": "component"
+    },
+    "pt100Back": {
+      "description": "A PT100 probe is considered together with the compatible measurement input and connection type. The measurement location, temperature range and measurement requirements determine the appropriate design.",
+      "route": "#/components/sensors-and-probes/pt100-probes",
+      "title": "PT100 probes | Komponia"
+    },
+    "pt100Download": {
+      "eventError": "Error: Timed out after 5000ms waiting for download."
+    },
+    "megaMenuFocus": {
+      "outlineColor": "rgb(0, 113, 227)",
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "tag": "A",
+      "text": "Temperature controllers"
+    },
+    "sectionJump": {
+      "headingTop": 209.4375,
+      "route": "#/"
+    },
+    "semanticDownload": {
+      "eventError": "Error: Timed out after 5000ms waiting for download."
+    }
+  },
+  "verified_browser_interactions": {
+    "gallery_escape": "closed",
+    "gallery_link_focus": "link reached by Tab; inner text region scrolled 100px; outer card scrollTop=0",
+    "desktop_menu_escape": "closed and focus restored to Components trigger",
+    "mobile_inquiry_cta": "navigated to /contact and closed Menu",
+    "section_jump": "route remained #/; Components heading visible at 209.4375px; active underline visible in screenshot"
+  },
+  "limits": {
+    "print_preview": "not verified; source CSS inspected",
+    "reduced_motion_system_profile": "normal profile observed; media emulation unavailable through exposed capabilities; relevant source branches checked",
+    "download": "two IAB download events timed out; no matching PT100 file found in default Downloads; storage location or browser behaviour unresolved",
+    "touch": "no physical touch-device test",
+    "accessibility": "targeted keyboard/focus checks only; no full conformance audit"
+  },
+  "build": "npm run build succeeded in copy and active original after the fix; Node 24.21.0, Vite 7.3.0",
+  "lint": "changed Sections.tsx and Subpage.tsx passed",
+  "strategy_repository": "untouched"
+}

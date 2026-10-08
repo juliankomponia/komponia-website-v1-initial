@@ -1,0 +1,136 @@
+Komponia Website – Arbeitsprotokoll
+Stand: 7. Oktober 2026
+
+Bearbeitetes Original:
+/Users/julian/Downloads/komponia-website-v1-initial
+Vorschau: http://localhost:3000/#/
+Anfrageentwurf: http://localhost:3000/#/contact
+Guides: http://localhost:3000/#/guides
+
+Grundlage und Sicherung
+Übergabe 01, vollständige To-do-Datei 02 und Designregeln 03 gelesen.
+Gültige Stage-13-Grundlagen und die genannten Designquellen gelesen.
+Port 3000 gehörte zum richtigen Downloads-Projekt. Kein eigenes .git vorhanden.
+108 Ausgangsdateien mit SHA-256 erfasst; Sicherung ohne node_modules/dist:
+/Users/julian/.codex/visualizations/2026/10/07/01a1165a-edbc-7e12-b5c5-48be1fe25b8e/komponia-before-2026-10-07.tar.gz
+Änderungen in einer Arbeitskopie vorbereitet und gezielt zurückübertragen.
+Fremde Änderungen im Strategie-Repository nicht verändert oder committed.
+
+Paket 1 – Anfrage und Komponenten
+Erledigt: B2 als lokaler Entwurf; B6; C2 als vorbereitetes Datenmodell.
+- Neues Anfrageformular: Name, Firma, E-Mail und Anforderung erforderlich;
+  Anfrageart, Komponentenreferenz, Menge und bevorzugter Termin ergänzbar.
+- Kategorien und Details übernehmen ihren Bezug in den Entwurf.
+- Pflichtfeldprüfung, E-Mail-Prüfung, Fehlerhinweise und Fokusführung.
+- Entwurf prüfen, kopieren und als echte .txt-Datei herunterladen.
+- Bearbeitung eines Feldes verwirft den bisher geprüften Entwurf.
+- Keine Versand-, Upload- oder Bestellfunktion vorgetäuscht.
+- Home, Header, Footer und Manufacturing-Heros führen zur Vorbereitung.
+- Alle 14 Kategorien bieten eine spezifische Auswahlcheckliste als Textdatei.
+  Diese ist ausdrücklich kein Herstellerdatenblatt.
+- Auswahlfragen und spätere bestätigte Produktdatensätze sind getrennt.
+  Produktreferenz, Hersteller, Quelle, Prüfdatum, Werte/Einheiten/
+  Bezugsbedingungen und Dokumentrevision können separat erfasst werden.
+  Aktuell sind keine bestätigten Produktdatensätze eingetragen.
+
+Offen: B1, B3–B5 und die echten Produktnachweise C1/C3/C4/C5.
+Benötigt: rechtliche Firma, Kontakt-E-Mail, Versand-/Backendlösung,
+zugelassener Testempfänger, tatsächliche Produkte, Fotos und Datenblätter.
+Die Antwort „alles“ wurde als allgemeine Freigabe verstanden, nicht als
+bestätigte E-Mail-Adresse, Firmendaten oder Produktkonfiguration.
+
+Paket 2 – Inhalte und Bilder
+Erledigt: fachliche Vorbereitung D2/D3/D4, sinnvolle Materials-Verknüpfung D7.
+- Fünf bisher leere Seiten mit eigenen Abschnitten ergänzt:
+  Anwendungsszenarien, Insights, Projektkommunikation, Zusammenarbeit,
+  Projektzuständigkeiten.
+- Drei ausdrücklich hypothetische Szenarien mit Anforderung, Arbeit und
+  vorgeschlagenem Ergebnis; keine erfundenen Kundenfälle.
+- Guides und Knowledge base führen zu drei vollständigen Artikeln:
+  /guides/component-selection
+  /guides/replacement-assessment
+  /guides/recurring-supply
+- Drei existierende, versionierte Checklisten unter public/downloads/.
+- Keine Newsletter-Anmeldung, Stellenanzeige oder Mitarbeiter erfunden.
+- /materials bleibt als Materialauswahl für gefertigte Teile sinnvoll erhalten.
+- Fremde Fabrikmotive in About durch lokale illustrative Motive ersetzt;
+  Hinweis auf deren illustrative Herkunft ergänzt.
+- Neue Artikel nutzen vorhandene Higgsfield-Kategoriemotive.
+
+Offen: echte freigegebene Projektfälle (D1), individuelle Produktbilder und
+restliche Template-CDN-Bildserie. Die beobachteten Bildquellen stehen im
+separaten Bildinventar; alte ungenutzte site.ts-Daten sind keine sichtbaren Fehler.
+
+Paket 3 – Gestaltung, Navigation und Metadaten
+Erledigt: lokaler Teil F4/G3/G4.
+- Protolabs-Seitenfamilie, breite Flächen, Poppins, vorhandene Buttons,
+  Karten, vier Manufacturing-Bereiche und Komponenten-Hierarchie erhalten.
+- Ein lokaler 36 × 2 px Komponia-Blau-Akzent im Anfrage-Hinweis.
+  Kein pauschaler Designsystem-Import oder globaler Typografiewechsel.
+- Escape schließt Menüs und bringt den Fokus zum auslösenden Button zurück.
+  Fokus außerhalb des Headers schließt dessen offene Navigation.
+- Unbekannte allgemeine Routen haben eine eigene 404-Ansicht.
+- Titel, Description, Open-Graph-Titel/-Beschreibung/-Bild je Route gesetzt.
+- Lokale Vorschau ausdrücklich noindex; kein erfundener öffentlicher Canonical.
+- HashRouter bewusst beibehalten, bis Domain/Hosting und Direktaufrufe
+  gemeinsam eingerichtet werden. Client-404 ist noch kein HTTP-404 des Hosts.
+
+Prüfungen
+- Produktionsbuild im Original erfolgreich (npm run build, Node 24).
+- ESLint für alle geänderten TS-/TSX-Dateien erfolgreich.
+- Die systemweite Node-26-Installation konnte wegen einer fehlenden
+  simdjson-Bibliothek zeitweise nicht starten; die vorhandene Node-24-Version
+  wurde nur für diese Befehle verwendet, ohne Systeminstallation zu verändern.
+- Alle 61 regulären Seitenpfade geprüft; keine fehlende H1/404-Verwechslung.
+- Vier Gruppen und alle 14 englischen Details erreichbar.
+- Alter deutscher NTC-Pfad und Neuladen geprüft.
+- 49 responsive Prüfungen: Home, CNC, Components, Temperaturregler-Detail,
+  Kontakt, Szenarien und Auswahlguide bei 390, 768, 1024, 1200, 1280,
+  1440 und 1920 px. Kein globaler horizontaler Overflow.
+- Headerwechsel zwischen 1200 und 1280 px korrekt; alle 78 beobachteten
+  Header-Linkvorkommen haben bekannte Seitenziele.
+- Formular: leere Felder, ungültige E-Mail, gültiger Entwurf, Kategorienbezug,
+  Kopieren, Fokus und Verwerfen des Entwurfs nach Bearbeitung geprüft.
+- Chrome: echter Checklisten-Download bytegleich zum Quelldokument;
+  echte Anfrage-Textdatei heruntergeladen und Testinhalt kontrolliert.
+- Der Download-Ereignisnachweis im In-app Browser lief ins Timeout;
+  die tatsächliche Dateispeicherung wurde deshalb zusätzlich in Chrome geprüft.
+- Desktop- und Mobilmenü einschließlich Escape/Fokus geprüft.
+- CNC-Abschnittssprung: Heading sichtbar, aktive Markierung passend,
+  HashRouter-Route unverändert.
+- Galerie: Auf-/Zuklappen, Escape, Vorwärts und deaktivierter Endbutton geprüft.
+
+Prüfgrenzen
+Der letzte zusätzliche Browseraufruf wurde durch die Browserfreigabe abgelehnt.
+Danach keine weiteren Browseraktionen durchgeführt. Zurück-Navigation und
+zusätzliche vollständige PT100-Detailprüfung deshalb noch offen. Der PT100-Pfad
+wurde bereits im Durchlauf aller 61 Seiten auf Erreichbarkeit geprüft.
+Druckansicht, tatsächliches Reduced-Motion-Systemprofil, echter Touch auf einem
+Mobilgerät sowie vollständige Barrierefreiheits- und Rechtsprüfung bleiben offen.
+Versand-Erfolg/Serverfehler sind ohne Backend nicht prüfbar.
+
+Screenshots und Nachweise
+Im Ordner dieser Session:
+komponia-contact-desktop.jpg
+komponia-contact-mobile.jpg
+komponia-application-scenarios.jpg
+contact-before.jpg
+komponia-route-checks.json
+responsive-390-1024.json
+responsive-1200-1920.json
+komponia-rendered-image-inventory.json
+
+Verwendete Strukturquellen (erneut geprüft)
+https://www.hubs.com/how-ordering-works/
+Beobachtung: klarer Einstieg und getrennte Klärungs-/Liefermodule.
+https://www.hubs.com/materials/
+Beobachtung: Übersicht und Navigation zu tieferen Kategorien.
+https://www.hubs.com/cnc-machining/metal/aluminum/aluminum-6061/
+Beobachtung: Breadcrumb, Identität, Bildspalte und technische Eigenschaftstabellen.
+Fremde Leistungswerte und Versandfunktionen wurden nicht übernommen.
+
+Nächster sinnvoller Schritt
+Kontaktkanal und rechtliche Firma bestätigen, dann den konkreten Versandweg
+anbinden. Parallel eine echte Produktfamilie mit freigegebenen Datenblättern und
+Bildern vollständig ergänzen. Danach reale Projektbelege und Hosting vorbereiten.
+Es wurde nichts öffentlich veröffentlicht.
