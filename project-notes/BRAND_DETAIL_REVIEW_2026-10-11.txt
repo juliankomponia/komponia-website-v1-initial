@@ -1,0 +1,32 @@
+Komponia-Markendetails – 11. Oktober 2026
+
+Auftrag
+Den zuletzt abgestimmten Hubs-Aufbau weniger generisch gestalten und das originale Komponia-Designkonzept samt Elementen integrieren.
+
+Quelle
+Komponia_Website_final/Komponia_Design_fin: SKILL.md, readme.md, Farb-, Typografie-, Radien- und Motion-Tokens, Icon-Komponente, Website-Beispiel und Markenblatt.
+Die SVG-Marke wurde unverändert aus assets/logo-mark.svg übernommen. Die vorhandenen Header-/Footer-Wortmarken bleiben erhalten.
+
+Umsetzung
+- Sora lokal für Überschriften, Fließtext und Navigation; Poppins aus dem externen Font-Request entfernt.
+- Vorhandene Hubs-Grids und Seitenabfolge erhalten. Hero weiterhin zweigeteilt, Components/OEM-Schalter weiterhin manuell und per Tastatur bedienbar.
+- Markenlabels: 11 px, Uppercase, 0.22 em, 36 x 2 px blaue Linie.
+- Pillen-Buttons, weiße Karten mit grauer Kontur, 14 px Kartenradius, 20 px Panelradius.
+- Kleine technische Linien-Icons ohne farbige Icon-Kapseln. Homeseite: Branchen-Icons ersetzen wiederholte Produktbilder.
+- Lavendel im OEM-Headline-Teil und als helle Lab-Fläche; Gelb als Akzent auf Ink.
+- Eigener Herkunftsbaustein: unveränderte Originalmarke, offizieller Sign-off und vier Arbeitsbereiche. Keine neue Bildgenerierung.
+- Bildunterschrift im Hero als Text über Lesbarkeitsverlauf, ohne schwebende Kapsel.
+- Kürzere, konkrete Texte in den bestehenden Homepage-Daten; keine neuen Kennzahlen, Zertifizierungen oder Kundenbehauptungen.
+- Hover 140/220 ms mit reduzierter Bewegung bei entsprechender Systemeinstellung. Scrolled-Header ohne Schatten, mit feiner Kontur und leicht durchscheinendem Weiß.
+
+Validierung
+- Produktionsbuild (TypeScript + Vite) erfolgreich; bestehender Hinweis auf JavaScript-Bundle über 500 kB bleibt.
+- ESLint für die geänderten TSX-Dateien ohne Befund; git diff --check ohne Befund.
+- Browser: 1440 px Desktop, 768 px Tablet, 390 px Mobil ohne horizontalen Seitenüberlauf.
+- Desktop: Hero, Kernleistungen, Lab-Bereich und Herkunftsbaustein visuell geprüft; Bilddateien geladen.
+- Mobil: Hero-Umbrüche geprüft, keine abgeschnittenen Überschriften; Menü öffnet/schließt (auch Escape), Angebotsschalter per ArrowRight/Home geprüft.
+- Verlinkte Komponentenübersicht bei 768 px und Kontaktseite bei 390 px geprüft; kein Überlauf, kein überstehendes Formularfeld, Mail-Adresse info@komponia.com korrekt.
+- CSS/Asset-Cache wird wie bisher durch Vite-Hashes im Produktionsbuild erneuert.
+
+Grenzen
+Produktbilder bleiben illustrative Motive aus der bestehenden neutralen Higgsfield-Serie. Das offizielle Designmaterial wird nicht als Foto eines tatsächlichen Komponia-Standorts ausgegeben. Anfragefunktion und Veröffentlichungsvoraussetzungen bleiben wie in PUBLICATION_PREPARATION.txt dokumentiert.

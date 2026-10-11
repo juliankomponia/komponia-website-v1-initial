@@ -2,14 +2,15 @@ import { useRef, useState, type KeyboardEvent } from 'react';
 import { Link } from 'react-router';
 import { ArrowRight, MessageSquare } from 'lucide-react';
 import { HERO_PRODUCT_IMAGE } from '../data/images';
+import BrandLabel from './BrandLabel';
 
 const OPTIONS = [
   {
     label: 'Components',
     points: [
       'Controllers, sensors, heating and switching components',
-      'Technical selection and advice for your application',
-      'Sourcing, documentation and delivery through one contact',
+      'Help choosing the right part for your equipment',
+      'One contact for sourcing, documents and delivery',
     ],
     link: 'Explore components',
     to: '/components',
@@ -18,8 +19,8 @@ const OPTIONS = [
     label: 'OEM & series',
     points: [
       'Custom components, in-house CAD and prototypes',
-      'Agreed checks and sample evaluation in our Lab',
-      'Recurring supply with call-offs and dynamic safety stock',
+      'Samples and defined checks in the Komponia-Lab',
+      'Call-off deliveries and stock planned around demand',
     ],
     link: 'Explore OEM solutions',
     to: '/oem-solutions',
@@ -42,11 +43,12 @@ export default function HomeHero() {
   return <section className="reference-hero" aria-labelledby="home-hero-title">
     <figure className="reference-hero-media">
       <img src={HERO_PRODUCT_IMAGE} alt="Illustrative selection of a controller, temperature probe and heating element" width={1600} height={1600} fetchPriority="high" />
-      <figcaption>Technical components. Selected for your application.</figcaption>
+      <figcaption><span>Selected for your application.</span>Controllers, sensors & heating elements</figcaption>
     </figure>
     <div className="reference-hero-panel">
       <div className="reference-hero-copy">
-        <h1 id="home-hero-title">From components<br />to OEM series supply.</h1>
+        <BrandLabel inverse>Technical procurement</BrandLabel>
+        <h1 id="home-hero-title">From components<br />to <span>OEM series supply.</span></h1>
         <div className="reference-hero-toggle" role="tablist" aria-label="Choose your requirement" onKeyDown={handleKeys}>
           {OPTIONS.map((item, index) => <button key={item.label} ref={element => { controls.current[index] = element; }}
             type="button" role="tab" id={`home-option-${index}`} aria-selected={active === index}
@@ -59,7 +61,7 @@ export default function HomeHero() {
             <Link className="reference-hero-link" to={option.to}>{option.link}<ArrowRight size={17} aria-hidden="true" /></Link>
           </div>
         </div>
-        <p className="reference-hero-note"><MessageSquare size={14} aria-hidden="true" />One personal contact for your requirements.</p>
+        <p className="reference-hero-note"><MessageSquare size={14} strokeWidth={1.7} aria-hidden="true" />Talk directly to the person handling your project.</p>
       </div>
       <div className="reference-hero-proof">
         <p>Built on WTS<br />experience since <strong>1997.</strong></p>

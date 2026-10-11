@@ -11,6 +11,18 @@
   --komponia-ink: #1F1F1D;
   --komponia-lavender: #D4B9F3;
   --komponia-yellow: #F7D44B;
+  --komponia-line: #E1E3E8;
+  --komponia-surface: #F5F6F8;
+  --komponia-ease: cubic-bezier(.2,.6,.2,1);
+}
+.btn, .btn-primary, .btn-primary-l, .btn-outline-primary, .btn-secondary-dark {
+  border-radius: 999px;
+  transition: background-color 140ms var(--komponia-ease), color 140ms var(--komponia-ease), transform 140ms var(--komponia-ease);
+}
+.btn-primary:active, .btn-primary-l:active { transform: translateY(1px); }
+.btn-primary:focus-visible, .btn-primary-l:focus-visible, .btn-outline-primary:focus-visible {
+  outline: 3px solid #BBC5FF;
+  outline-offset: 3px;
 }
 h1, h2, h3, main .h2-orig, main .hero-title, .cap-card .cap-title, main .brand-card-title, .step-title {
   font-family: 'Sora', sans-serif;
@@ -85,8 +97,9 @@ h1, h2, h3, main .h2-orig, main .hero-title, .cap-card .cap-title, main .brand-c
   --header-label: #626770;
   --header-line: rgba(25,25,25,.12);
   --header-hover: #3E5AF5;
-  background-color: #fff;
-  box-shadow: 0 4px 16px rgba(0,0,0,.07);
+  background-color: rgba(255,255,255,.92);
+  backdrop-filter: blur(10px);
+  box-shadow: none;
 }
 .site-header .site-logo-window--adaptive img {
   width: 180.326px;
@@ -140,8 +153,8 @@ h1, h2, h3, main .h2-orig, main .hero-title, .cap-card .cap-title, main .brand-c
 .home-quality .quality-card { background: #fff; }
 .home-quality .quality-card:hover { background: #EFE6FC; }
 .home-quality .quality-card > svg {
-  width: 64px; height: 64px; padding: 12px;
-  color: var(--komponia-ink); background: var(--komponia-lavender); border-radius: 14px;
+  width: 34px; height: 34px;
+  color: var(--komponia-blue);
 }
 .partnership-steps {
   display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -173,3 +186,7 @@ h1, h2, h3, main .h2-orig, main .hero-title, .cap-card .cap-title, main .brand-c
 
 /* Keep complete components visible when category photos are reused in cards. */
 .cap-card.application-card img { object-position: center; }
+@media (prefers-reduced-motion: reduce) {
+  .btn, .btn-primary, .btn-primary-l, .btn-outline-primary, .btn-secondary-dark { transition: none; }
+  .btn-primary:active, .btn-primary-l:active { transform: none; }
+}

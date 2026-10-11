@@ -45,7 +45,7 @@
   },
   "capabilities": {
     "title": "Our component & OEM capabilities.",
-    "intro": "From standard components and custom OEM solutions to recurring series supply. One personal contact brings technical advice, in-house development, manufacturing partners and quality together.",
+    "intro": "Select a standard component, develop a custom part or plan repeat deliveries. We help with the technical details and organise the supply.",
     "overviewCta": {
       "label": "Explore components",
       "to": "/components"
@@ -58,7 +58,7 @@
           "Define material, geometry and tolerances",
           "Agree quantities and required documentation"
         ],
-        "cta": "Explore CNC machining",
+        "cta": "View CNC machining",
         "to": "/cnc-machining"
       },
       {
@@ -68,7 +68,7 @@
           "Consider geometry, material and intended use",
           "Agree finish, quantity and evaluation criteria"
         ],
-        "cta": "Explore 3D printing",
+        "cta": "View 3D printing",
         "to": "/3d-printing"
       },
       {
@@ -78,7 +78,7 @@
           "Define sheet material, geometry and interfaces",
           "Agree tolerances, finish and quantity"
         ],
-        "cta": "Explore sheet metal fabrication",
+        "cta": "View sheet metal",
         "to": "/sheet-metal-fabrication"
       },
       {
@@ -88,7 +88,7 @@
           "Define material, geometry and expected volumes",
           "Agree tooling, samples and release criteria"
         ],
-        "cta": "Explore injection molding",
+        "cta": "View injection molding",
         "to": "/injection-molding"
       }
     ],
@@ -100,7 +100,7 @@
           "Design-in, samples and application release",
           "Recurring supply for your equipment"
         ],
-        "cta": "Explore OEM solutions",
+        "cta": "View OEM solutions",
         "to": "/oem-solutions"
       },
       {
@@ -110,7 +110,7 @@
           "Selection around your application",
           "Technical advice and sourcing"
         ],
-        "cta": "Explore components",
+        "cta": "Find components",
         "to": "/components"
       },
       {
@@ -120,7 +120,7 @@
           "Drawings, samples and custom variants",
           "Agreed checks in the Komponia-Lab"
         ],
-        "cta": "Explore custom solutions",
+        "cta": "View custom development",
         "to": "/custom-solutions"
       },
       {
@@ -130,24 +130,24 @@
           "Call-offs and dynamic safety stock",
           "Import, logistics and ongoing quality"
         ],
-        "cta": "Explore series supply",
+        "cta": "Plan series supply",
         "to": "/production-orders"
       }
     ],
     "processesTitle": "Manufacturing to match your part.",
-    "processesIntro": "For custom parts, we coordinate the right process and manufacturing partner around your material, geometry and quantities."
+    "processesIntro": "We select manufacturing partners for your material, geometry and quantities. These are the main processes for custom parts."
   },
   "custom-solutions": {
-    "title": "OEM components. From your idea to series supply.",
-    "intro": "Build the component around your own device, machine or system. We prepare CAD drawings and sketches in-house, coordinate prototypes with suitable partners and support the path from sample evaluation to recurring supply.",
+    "title": "From your drawing to an OEM component.",
+    "intro": "A different housing, connection or geometry? We develop the details in-house and work with manufacturing partners on prototypes and production.",
     "cta": {
       "label": "Explore OEM solutions",
       "to": "/oem-solutions"
     },
     "bullets": [
-      "Standard components and custom versions for your product.",
-      "In-house technical work combined with suitable manufacturing partners.",
-      "A personal contact through development, supply and ongoing quality."
+      "CAD drawings and sketches prepared in-house.",
+      "Samples checked against your application requirements.",
+      "The same contact from development through repeat orders."
     ]
   },
   "partners": {
@@ -182,7 +182,7 @@
   },
   "inquiry": {
     "title": "Start with what you have.",
-    "intro": "Start with a part number, drawing, sample or application description. Your personal contact clarifies the missing details and coordinates the next steps with engineering, sourcing and quality.",
+    "intro": "A part number, drawing or sample is enough to start. Tell us what the component needs to do. We work through the open questions with you.",
     "cta": {
       "label": "Prepare an inquiry",
       "to": "/contact"
@@ -195,7 +195,7 @@
   },
   "process": {
     "title": "From requirement to reliable supply.",
-    "intro": "Start at the stage that fits your need. Standard purchases and repeat orders can use existing specifications; development, samples and qualification are added where required.",
+    "intro": "Already have a specification? We can start with sourcing. For new developments, we work through the drawing, sample and release stages with you.",
     "steps": [
       {
         "title": "Clarify the need",
@@ -254,25 +254,25 @@
     }
   },
   "quality": {
-    "title": "Our Lab. Your agreed requirements.",
-    "intro": "The Komponia-Lab supports dimensional and functional checks and agreed batch sampling. We define the criteria, scope and records around your component and its application.",
+    "title": "Clear criteria. Documented checks.",
+    "intro": "Dimensions, function and batch samples: we agree what needs checking in the Komponia-Lab before work begins.",
     "cards": [
       {
-        "title": "Requirements & evidence",
-        "text": "We clarify specifications, required certificates and supplier documents so that selection and evaluation use the same technical basis.",
-        "link": "Explore quality support",
+        "title": "Specifications & documents",
+        "text": "We clarify drawings, specifications and required supplier documents before selecting a component.",
+        "link": "View quality support",
         "to": "/quality-and-lab"
       },
       {
-        "title": "Checks in the Komponia-Lab",
-        "text": "Agreed dimensional checks, functional checks and batch samples help identify deviations. Inspection scope, criteria and documentation are defined for the component.",
-        "link": "Explore our Lab",
+        "title": "Samples & Lab checks",
+        "text": "We check dimensions, function and batch samples against the criteria defined for your component.",
+        "link": "Explore the Lab",
         "to": "/quality-and-lab"
       },
       {
-        "title": "Quality through series supply",
-        "text": "We support recurring supply with agreed checks and complaint handling. Your contact coordinates the source, findings and next steps when a deviation occurs.",
-        "link": "Explore ongoing quality",
+        "title": "Quality in series supply",
+        "text": "Your contact follows up deviations and complaints with the supplier and keeps you informed.",
+        "link": "See ongoing support",
         "to": "/quality-and-lab"
       }
     ]
@@ -361,45 +361,45 @@
   },
   "applications": {
     "title": "Applications for technical components.",
-    "intro": "OEMs and industrial users need components that fit their own products. Our starting fields include refrigeration, climate control, thermal equipment and machinery; each application defines its own technical requirements.",
+    "intro": "We support components for refrigeration, thermal equipment, machinery and laboratory devices. Your equipment determines the specification.",
     "cards": [
       {
         "title": "Refrigeration & climate control",
         "text": "Control functions, temperature measurement and interfaces matched to the equipment.",
         "to": "/components/controllers-and-control-systems",
-        "link": "Explore relevant controls"
+        "link": "View control components"
       },
       {
         "title": "Heating & thermal equipment",
         "text": "Heating power, geometry, control and operating conditions considered together.",
         "to": "/components/heating-elements",
-        "link": "Explore heating components"
+        "link": "View heating elements"
       },
       {
         "title": "Machinery & plant engineering",
         "text": "Component function, installation space and connection requirements for the system.",
         "to": "/industries/industrial-machinery",
-        "link": "Read application requirements"
+        "link": "Explore this application"
       },
       {
         "title": "Laboratory equipment",
         "text": "Application-specific temperature conditions, interfaces and required documentation.",
         "to": "/components/sensors-and-probes",
-        "link": "Explore sensors and probes"
+        "link": "View temperature probes"
       }
     ]
   },
   "heritage": {
     "title": "Built on WTS experience since 1997.",
-    "intro": "Komponia continues a process developed through WTS practice: technical component selection, custom solutions, prototypes and ongoing supply. Established manufacturer relationships, import experience and personal support connect these stages.",
+    "intro": "Manufacturer relationships, practical import experience and direct technical support are the foundation of our work. We combine that experience with in-house development and the Komponia-Lab.",
     "cta": {
       "label": "Explore our component fields",
       "to": "/components"
     }
   },
   "recurring-supply": {
-    "title": "Dynamic safety stock. Supply around your demand.",
-    "intro": "We review demand and align safety stock, purchasing and deliveries with your production needs. Standard components and custom parts can both enter an agreed supply arrangement, helping reduce shortages and material-related downtime risk.",
+    "title": "Stock planned around your production.",
+    "intro": "We review consumption and lead times with you, then set purchasing and delivery cycles. Dynamic safety stock adapts as demand changes, within the supply terms we agree.",
     "cta": {
       "label": "See how supply is agreed",
       "to": "/how-ordering-works"
@@ -407,7 +407,7 @@
   },
   "supply-terms": {
     "title": "Agree quantities. Call off what you need.",
-    "intro": "Combine an agreed overall quantity with deliveries in smaller call-offs. We define stock limits, review demand and coordinate replenishment within the agreed commercial terms.",
+    "intro": "Order an overall quantity and receive smaller deliveries as needed. We agree stock limits, replenishment and responsibilities before the first call-off.",
     "topics": [
       {
         "title": "Demand & stock levels",

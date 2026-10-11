@@ -76,3 +76,11 @@ Auf Nutzerwunsch ersetzt ein enger Abgleich mit der aktuellen Hubs-Startseite di
 Acht neutrale Produktfreisteller und ein dunkles Hero-Motiv liegen in `src/assets/industrial/neutral-20261011/`. Diese Serie ist jetzt aktiv, auch in den verlinkten Komponentenseiten. Die älteren Bildserien und Hero-Fotos bleiben als historische Dateien erhalten. Der neue Home-Aufbau und seine Styles liegen in `src/pages/Home.tsx`, `src/components/HomeHero.tsx` und `src/pages/home.css`.
 
 Referenzvergleich und Prüfungen: `project-notes/HUBS_HOME_REVIEW_2026-10-11.txt`.
+
+## Aktueller Stand: Komponia-Details im Hubs-Raster, 11. Oktober 2026
+
+Der abgestimmte Seitenaufbau bleibt erhalten. Die Markenverfeinerung folgt dem offiziellen Paket `Komponia_Design_fin`: lokal eingebundene Sora für die gesamte Website, Pillen-Buttons, 11-px-Labels mit blauer Linie, feine Outline-Icons, weiße Karten mit 14-px-Radius und grauer Kontur. Lavendel hebt den OEM-Teil der Hero-Headline hervor; der Lab-Abschnitt nutzt eine sehr helle Lavendelfläche. Gelb bleibt ein gezielter Akzent auf dunklem Grund.
+
+Die originale, unveränderte SVG-Marke liegt in `src/assets/brand/komponia-mark.svg`. `KomponiaSignature.tsx` verbindet sie mit Sourcing, Engineering, Quality und Supply und ersetzt das wiederholte Produktbild im Herkunftsabschnitt. Die Branchenkarten zeigen passende Linien-Icons. Die neutralen Produktbilder bleiben aktiv; keine neue Bildserie wurde erzeugt. Die Startseitentexte sind kürzer und direkter formuliert.
+
+Prüfungen und Abgrenzung: `project-notes/BRAND_DETAIL_REVIEW_2026-10-11.txt`.

@@ -1,14 +1,14 @@
 import { FeatureRow } from './Subpage';
 import { useRef, useState, useId, useEffect } from 'react';
 import { Link } from 'react-router';
-import { ArrowRight, ChevronLeft, ChevronRight, ChevronUp, ClipboardList, Ruler, FileCheck } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight, ChevronUp, ClipboardList, Ruler, ShieldCheck, Box, Layers, Settings, Truck, Snowflake, Thermometer, Factory, FlaskConical } from 'lucide-react';
 import { IMG } from '../data/site';
 import { HOME_CONTENT as H } from '../data/home';
 import { INDUSTRIAL_IMAGES as I, CORE_SERVICE_IMAGES } from '../data/images';
 import BrandLabel from './BrandLabel';
 
-export function SectionLead({ title, children }: { title: string; children?: React.ReactNode }) {
-  return <div className="section-lead"><h2 className="h2-orig">{title}</h2>{children && <p>{children}</p>}</div>;
+export function SectionLead({ title, children, eyebrow }: { title: string; children?: React.ReactNode; eyebrow?: string }) {
+  return <div className="section-lead">{eyebrow && <BrandLabel>{eyebrow}</BrandLabel>}<h2 className="h2-orig">{title}</h2>{children && <p className="section-intro">{children}</p>}</div>;
 }
 
 export function CapabilitiesCards({ core = false }: { core?: boolean } = {}) {
@@ -16,13 +16,15 @@ export function CapabilitiesCards({ core = false }: { core?: boolean } = {}) {
     ? CORE_SERVICE_IMAGES
     : [IMG.capCnc, IMG.cap3dp, IMG.capSmf, IMG.capIm];
   const cards = core ? H.capabilities.coreCards : H.capabilities.cards;
+  const icons = [Layers, Box, Settings, Truck];
   return <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 justify-center">
-    {cards.map((c, i) => <Link to={c.to} key={c.title} className="cap-card">
+    {cards.map((c, i) => { const Icon = icons[i]; return <Link to={c.to} key={c.title} className="cap-card">
       <img src={images[i]} alt="" loading="lazy" /><div className="cap-text">
-        <span className="cap-title">{c.title}</span><span className="cap-subtitle">{c.desc}</span>
-        <span className="cap-body"><ul>{c.specs.map(s => <li key={s}>{s}</li>)}</ul></span>
+        {core && <Icon size={26} strokeWidth={1.6} className="cap-icon" aria-hidden="true" />}
+        <h3 className="cap-title">{c.title}</h3><span className="cap-subtitle">{c.desc}</span>
+        <div className="cap-body"><ul>{c.specs.map(s => <li key={s}>{s}</li>)}</ul></div>
         <span className="cap-link card-link">{c.cta}</span>
-      </div></Link>)}
+      </div></Link>; })}
   </div>;
 }
 
@@ -100,17 +102,18 @@ export function NetworkGallery(){return <Gallery slides={H.partners.cards.map((c
 export function PartsGallery(){return <Gallery slides={H['component-fields'].cards.map((c,i)=>({...c,img:[I.controllers,I.sensors,I.heating,I.pressureSwitches][i],table:c.table.map(row=>[row[0],row[1]] as [string,string]),link:'Explore this component field'}))} label="Component fields"/>;}
 
 export function QualityStandards(){
-  const icons=[ClipboardList,Ruler,FileCheck];
+  const icons=[ClipboardList,Ruler,ShieldCheck];
   return <div className="grid grid-cols-1 md:grid-cols-3 gap-4">{H.quality.cards.map((c,i)=>{const Icon=icons[i];return <Link to={c.to} key={c.title} className="quality-card rounded-[1rem] p-6 md:p-8 flex flex-col transition-colors bg-black/[0.03] hover:bg-black/[0.08]">
-    <Icon size={104} strokeWidth={1.2} aria-hidden="true" className="h-[6.5rem] max-w-[9rem] text-brand-blue mb-8 self-start"/>
+    <Icon size={34} strokeWidth={1.6} aria-hidden="true" className="text-brand-blue mb-6 self-start"/>
     <span className="brand-card-title font-bold text-black text-[1.25rem] leading-[1.5rem] md:text-[1.375rem] md:leading-[1.625rem]">{c.title}</span>
     <span className="block mt-4 mb-6 text-base md:text-[1.125rem]" style={{color:'#262626'}}>{c.text}</span>
     <span className="mt-auto font-bold text-brand-blue text-base md:text-[1.125rem] inline-flex">{c.link}</span>
   </Link>;})}</div>;
 }
 
-export function IndustriesSection(){
-  return <><div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">{H.applications.cards.map((c,i)=><Link to={c.to} key={c.title} className="cap-card application-card"><img src={[I.controllers,I.heating,I.customEngineering,I.sensors][i]} alt="" loading="lazy"/><div className="cap-text"><span className="cap-title">{c.title}</span><span className="cap-body">{c.text}</span><span className="cap-link card-link">{c.link}</span></div></Link>)}</div></>;
+export function IndustriesSection({ variant = 'photos' }: { variant?: 'photos' | 'compact' } = {}){
+  const icons = [Snowflake, Thermometer, Factory, FlaskConical];
+  return <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">{H.applications.cards.map((c,i)=>{const Icon=icons[i];return <Link to={c.to} key={c.title} className={`cap-card application-card application-card--${variant}`}>{variant === 'photos' && <img src={[I.controllers,I.heating,I.customEngineering,I.sensors][i]} alt="" loading="lazy"/>}<div className="cap-text">{variant === 'compact' && <Icon size={34} strokeWidth={1.6} className="application-icon" aria-hidden="true"/>}<h3 className="cap-title">{c.title}</h3><span className="cap-body">{c.text}</span><span className="cap-link card-link">{c.link}</span></div></Link>;})}</div>;
 }
 
 export function ProtolabsBanner(){return <FeatureRow title={H.heritage.title} text={H.heritage.intro} img={I.pressureSwitches} imgAlt="Illustrative pressure and switching components" link={{label:'About Komponia',to:'/about'}}/>;}
