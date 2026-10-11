@@ -240,3 +240,6 @@ h1, h2, h3, main .h2-orig, main .hero-title, .cap-card .cap-title, main .brand-c
 @media (max-width: 639px) {
   .partnership-steps { grid-template-columns: 1fr; gap: 32px; }
 }
+
+/* Keep complete components visible when category photos are reused in cards. */
+.cap-card.application-card img { object-position: center; }

@@ -1,0 +1,26 @@
+Komponia – fotografische Komponentenbilder
+Stand: 11. Oktober 2026
+
+Auftrag
+Komponenten realistischer zeigen, ohne sichtbare typische KI-Artefakte; Komponia-Farben als Hintergrund verwenden und bestehende Designsprache beibehalten.
+
+Umsetzung
+- Acht Higgsfield-Motive: Temperaturregler, Temperaturfühler, Rohrheizkörper, Druck-/Schaltgerät sowie OEM-Baugruppe, Komponentengruppe, Entwicklung und Serienversorgung.
+- Matte Studiountergründe in Blau #3E5AF5, Lavendel #D4B9F3 und Gelb #F7D44B; neutrale Metallfarben, weiche Schatten, feinere Oberflächendetails.
+- Zwei Motive nach Sichtprüfung gezielt korrigiert: Druck-/Schaltgerät liegt plausibel auf der Fläche; an der OEM-Baugruppe wurden unplausible externe Kabel durch geschlossene Anschlüsse ersetzt.
+- Kategorien und Produktdetails teilen dieselben Bauteilmotive. Bildpositionen für die vorhandenen Karten und Detailansichten zentriert; Seitenlayout und Homepage-Hero-Fotos beibehalten.
+- Acht optimierte WebP-Dateien, maximal 1600 px, zusammen rund 1,08 MB. Herkunft, Prompts, Korrekturen und Prüfsummen in src/assets/industrial/photo-20261011/manifest.json.
+
+Einordnung
+Die Motive sind generierte, illustrative Kategoriebeispiele. Sie dokumentieren keine tatsächlichen Herstellerprodukte oder Komponia-Anlagen. In den vorhandenen lokalen Referenzordnern wurden keine geeigneten Original-Produktfotos gefunden. Spätere Herstellerfotos können die Beispiele ersetzen.
+
+Prüfung
+- Alle acht Bilder einzeln visuell geprüft, inklusive der zwei korrigierten Versionen.
+- Startseite, Komponentenübersicht und Temperaturregler-Detail bei 1440 px und 390 px geprüft; zusätzliche Mobilprüfung der Druck-/Schaltgeräte-Kategorie.
+- Bildausschnitte zeigen die Bauteile einschließlich Anschlüssen. Kein horizontaler Überlauf in den geprüften Ansichten, keine fehlgeschlagenen Bilder oder Browserfehler.
+- Gezielter ESLint-Lauf für die geänderten TS/TSX-Dateien und git diff --check erfolgreich.
+- npm run build erfolgreich. Bestehender Hinweis auf das JavaScript-Paket über 500 kB bleibt; kein Build-Fehler.
+- Vite versieht Produktionsdateien automatisch mit Inhalts-Hashes.
+
+Veröffentlichung
+Lokal unter http://localhost:3000/#/components verfügbar. Hosting und rechtliche Veröffentlichungsvoraussetzungen bleiben wie in PUBLICATION_PREPARATION.txt dokumentiert.

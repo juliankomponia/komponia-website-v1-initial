@@ -11,6 +11,7 @@
 .components-section-title { text-align: center; margin-bottom: 48px; }
 .components-cap-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
 .components-cap-card { display: flex; flex-direction: column; min-width: 0; max-width: none; min-height: 344px; }
+.components-reference .cap-card img, .components-reference .components-resources img { object-position: center; }
 .components-category-hero .components-section { display: flex; }
 .components-hero-column { flex-basis: 50%; min-width: 0; }
 .components-category-media { display: flex; flex-direction: column; min-width: 0; }
@@ -138,3 +139,8 @@
   .components-category-media { display: flex; align-items: center; justify-content: center; padding-left: var(--site-gutter); }
   .components-category-media img { width: 100%; max-height: 420px; object-fit: contain; }
 }
+
+/* Centre the square studio images in the existing landscape image slots. */
+.components-reference .components-category-media img { aspect-ratio: 16/10; object-fit: cover; object-position: center; }
+.components-reference .components-detail-photo,
+.components-reference .components-detail-mobile-photo img { object-fit: cover; object-position: center; }

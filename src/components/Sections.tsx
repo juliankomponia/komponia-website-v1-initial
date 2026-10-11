@@ -110,7 +110,7 @@ export function QualityStandards(){
 }
 
 export function IndustriesSection(){
-  return <><div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">{H.applications.cards.map((c,i)=><Link to={c.to} key={c.title} className="cap-card"><img src={[I.controllers,I.heating,I.customEngineering,I.sensors][i]} alt="" loading="lazy"/><div className="cap-text"><span className="cap-title">{c.title}</span><span className="cap-body">{c.text}</span><span className="cap-link card-link">{c.link}</span></div></Link>)}</div></>;
+  return <><div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">{H.applications.cards.map((c,i)=><Link to={c.to} key={c.title} className="cap-card application-card"><img src={[I.controllers,I.heating,I.customEngineering,I.sensors][i]} alt="" loading="lazy"/><div className="cap-text"><span className="cap-title">{c.title}</span><span className="cap-body">{c.text}</span><span className="cap-link card-link">{c.link}</span></div></Link>)}</div></>;
 }
 
 export function ProtolabsBanner(){return <FeatureRow title={H.heritage.title} text={H.heritage.intro} img={I.pressureSwitches} imgAlt="Illustrative pressure and switching components" link={{label:'About Komponia',to:'/about'}}/>;}

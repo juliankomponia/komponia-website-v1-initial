@@ -1,0 +1,211 @@
+{
+  "date": "2026-10-11",
+  "provider": "Higgsfield",
+  "model": "gpt_image_2_5",
+  "quality": "xhigh",
+  "resolution": "2k",
+  "purpose": "Photographic illustrative component imagery with Komponia-colour physical studio backgrounds.",
+  "provenance": "AI-generated category examples, not exact manufacturer product photos or documentary evidence. Existing references are earlier generated illustrations.",
+  "images": [
+    {
+      "index": 1,
+      "job_id": "24429d5f-2f0e-4da7-946a-2ad31282458d",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_140729_24429d5f-2f0e-4da7-946a-2ad31282458d.png",
+      "name": "controller",
+      "file": "controller.webp",
+      "reference_job_id": "a0883c0d-44eb-4357-b998-50efa8054a2b",
+      "prompt": "Rework the supplied reference into a convincing industrial product-photography style. Use the reference for the component type and basic construction, but replace its smooth synthetic rendering with realistic optical and material detail. It should read as a carefully photographed, new but handled engineering sample: fine machining/tool marks on metal, subtle mould parting lines and moulded matte texture on plastic, realistic ceramic, slightly uneven reflections and physically consistent contact shadows. Calm 70mm product lens, soft large window light from upper left with a white bounce card at right, neutral white balance, moderate contrast, true metal colour, everything important in focus. Restrained unretouched commercial packshot, not a glossy 3D render, not a toy, no excessive polishing, halos, artificial bloom, painterly smoothing, grunge, dramatic spotlight, neon or coloured illumination. Background colour comes from real matte paper / painted studio boards, not from tinting the component. No logos, branding, watermarks, text, numbers or invented technical labels. No props unless explicitly described. Entire subject rests physically on the surface, nothing floating. This is an illustrative generic component scene, not documentation of an actual company's product. One compact rectangular panel-mounted temperature controller, graphite plastic housing, dark unlit glass display with a soft window reflection, three small functional buttons, regular moulded ventilation slots and plausible rear screw-terminal block. Keep the reference blue trim extremely thin. Clear front three-quarter view. Plain matte lavender paper sweep, colour #D4B9F3, flat and seamless with only the natural contact shadow. Center the whole product in the middle 70 percent of the width and middle 48 percent of the height of this SQUARE canvas, generous clean margins above and below for cropping.",
+      "aspect_ratio": "1:1",
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "output_dimensions": [
+        1600,
+        1600
+      ],
+      "output_bytes": 132276,
+      "sha256": "10a99f91e2714ca53c5a8abf05e58cab3254693f02fd2db6a47e19b8eea54270"
+    },
+    {
+      "index": 2,
+      "job_id": "0a42a11f-4fb9-4714-875c-0549c9be37d5",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_140729_0a42a11f-4fb9-4714-875c-0549c9be37d5.png",
+      "name": "probe",
+      "file": "probe.webp",
+      "reference_job_id": "5a6bd8a9-e2e4-4590-bed4-63f66db5f35e",
+      "prompt": "Rework the supplied reference into a convincing industrial product-photography style. Use the reference for the component type and basic construction, but replace its smooth synthetic rendering with realistic optical and material detail. It should read as a carefully photographed, new but handled engineering sample: fine machining/tool marks on metal, subtle mould parting lines and moulded matte texture on plastic, realistic ceramic, slightly uneven reflections and physically consistent contact shadows. Calm 70mm product lens, soft large window light from upper left with a white bounce card at right, neutral white balance, moderate contrast, true metal colour, everything important in focus. Restrained unretouched commercial packshot, not a glossy 3D render, not a toy, no excessive polishing, halos, artificial bloom, painterly smoothing, grunge, dramatic spotlight, neon or coloured illumination. Background colour comes from real matte paper / painted studio boards, not from tinting the component. No logos, branding, watermarks, text, numbers or invented technical labels. No props unless explicitly described. Entire subject rests physically on the surface, nothing floating. This is an illustrative generic component scene, not documentation of an actual company's product. One straight cylindrical closed-tip stainless-steel temperature probe with believable black moulded strain relief and a connected black silicone cable arranged in one relaxed loop beside it. Show faint longitudinal machining marks and realistic brushed silver reflections. Cable ends with exactly two small insulated leads and short metal ferrules, clean and plausible. The entire probe and cable must stay inside the frame. Plain matte blue paper sweep, exact brand blue #3E5AF5, moderately illuminated, no gradient graphic. Center the complete arrangement in the middle 74 percent of the width and middle 48 percent of the height of this SQUARE canvas; probe lies nearly horizontal, slight diagonal, ample clean margin above and below.",
+      "aspect_ratio": "1:1",
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "output_dimensions": [
+        1600,
+        1600
+      ],
+      "output_bytes": 133654,
+      "sha256": "4131abb022a269055051b4d1c2ed822e47cadde12f1d8a81f7a165d42dc23749"
+    },
+    {
+      "index": 3,
+      "job_id": "811f6f20-2aac-4e9a-956a-1c9dbbb3d027",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_140729_811f6f20-2aac-4e9a-956a-1c9dbbb3d027.png",
+      "name": "heater",
+      "file": "heater.webp",
+      "reference_job_id": "b918a400-0676-43a7-a406-6a3d9a267fb5",
+      "prompt": "Rework the supplied reference into a convincing industrial product-photography style. Use the reference for the component type and basic construction, but replace its smooth synthetic rendering with realistic optical and material detail. It should read as a carefully photographed, new but handled engineering sample: fine machining/tool marks on metal, subtle mould parting lines and moulded matte texture on plastic, realistic ceramic, slightly uneven reflections and physically consistent contact shadows. Calm 70mm product lens, soft large window light from upper left with a white bounce card at right, neutral white balance, moderate contrast, true metal colour, everything important in focus. Restrained unretouched commercial packshot, not a glossy 3D render, not a toy, no excessive polishing, halos, artificial bloom, painterly smoothing, grunge, dramatic spotlight, neon or coloured illumination. Background colour comes from real matte paper / painted studio boards, not from tinting the component. No logos, branding, watermarks, text, numbers or invented technical labels. No props unless explicitly described. Entire subject rests physically on the surface, nothing floating. This is an illustrative generic component scene, not documentation of an actual company's product. One U-shaped tubular heating element with exactly two parallel continuous stainless-steel legs and a smooth correctly formed rounded connecting bend. Exactly two off-white ceramic terminal insulators and two short threaded connection studs with real hexagonal nuts at the open ends. No extra branches, wires or plate. Show subtle tube drawing marks and slight natural variations in the brushed steel. Lay it flat, nearly horizontal with a slight diagonal. Plain matte warm yellow paper sweep #F7D44B. Center the whole element in the middle 74 percent of the width and middle 48 percent of the height of this SQUARE canvas with ample crop margin.",
+      "aspect_ratio": "1:1",
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "output_dimensions": [
+        1600,
+        1600
+      ],
+      "output_bytes": 118242,
+      "sha256": "5306d2100b241e0855ae6dfb1accbfcd9146caf64e7c6472f5c07861ddac2f20"
+    },
+    {
+      "index": 4,
+      "job_id": "92b6c712-5dc0-47d7-8c9a-3f0b5fdea7de",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_140922_92b6c712-5dc0-47d7-8c9a-3f0b5fdea7de.png",
+      "name": "pressure-switch",
+      "file": "pressure-switch.webp",
+      "reference_job_id": "88f5bf72-5a0b-42c1-959f-8a5e1ca3c8e5",
+      "prompt": "Correct the physically impossible pose of the pictured pressure switch. The whole device must LIE FLAT ON ITS BROAD REAR METAL FACE, firmly resting on the pale blue tabletop; its front metal cover faces upward and is almost parallel with the tabletop. The brass male threaded pressure port points horizontally LEFT, parallel to the tabletop, NOT downward. The black cable gland points horizontally toward the right. Photograph from high three-quarter/top-down angle so all four lid screws and the continuous contact shadow along the lower metal body are visible. Do not retain the upright tilted/balancing pose. Nothing hovers; do not support the weight on the brass thread. Keep the same realistic die-cast zinc texture, actual hardware, silver metal colour, neutral daylight, pale blue table and blue backboard. Center the entire silhouette with generous crop margin in the square image. No text or labels. It should be a credible ordinary industrial packshot, not a 3D model.",
+      "aspect_ratio": "1:1",
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "output_dimensions": [
+        1600,
+        1600
+      ],
+      "output_bytes": 196362,
+      "sha256": "034f486f903fb459617598e7c80e45608210a37287f4192e0b2d2142669b24cf",
+      "revision_history": [
+        {
+          "job_id": "6e736b81-422d-4ac6-91f6-6e2bbfd1732e",
+          "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_140729_6e736b81-422d-4ac6-91f6-6e2bbfd1732e.png",
+          "prompt": "Rework the supplied reference into a convincing industrial product-photography style. Use the reference for the component type and basic construction, but replace its smooth synthetic rendering with realistic optical and material detail. It should read as a carefully photographed, new but handled engineering sample: fine machining/tool marks on metal, subtle mould parting lines and moulded matte texture on plastic, realistic ceramic, slightly uneven reflections and physically consistent contact shadows. Calm 70mm product lens, soft large window light from upper left with a white bounce card at right, neutral white balance, moderate contrast, true metal colour, everything important in focus. Restrained unretouched commercial packshot, not a glossy 3D render, not a toy, no excessive polishing, halos, artificial bloom, painterly smoothing, grunge, dramatic spotlight, neon or coloured illumination. Background colour comes from real matte paper / painted studio boards, not from tinting the component. No logos, branding, watermarks, text, numbers or invented technical labels. No props unless explicitly described. Entire subject rests physically on the surface, nothing floating. This is an illustrative generic component scene, not documentation of an actual company's product. One compact industrial pressure switch, rough die-cast zinc/aluminium box with a clearly fitted lid, four matching recessed screw heads, one black knurled cable gland and one brass male threaded pressure connection. Photograph it resting on its SIDE on the table so the threaded brass port points toward the lower left and the body is physically supported, not balancing or floating on a thread. Plausible consistent thread pitch, small natural machining marks. Matte very pale blue paper sweep #EEF1FE with a single out-of-focus matte cobalt-blue #3E5AF5 board occupying the upper far background, a quiet straight horizontal division. Center the product in the middle 68 percent of width and middle 48 percent of height of this SQUARE canvas, full visible silhouette.",
+          "sha256": "bcbfd50466b13b3c187568aa1851bd4bea05cf6537b4bfff6b9ffb363f5e198f"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "job_id": "1df7cb44-4c1b-413f-bacd-2e72899be97e",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_140922_1df7cb44-4c1b-413f-bacd-2e72899be97e.png",
+      "name": "core-oem",
+      "file": "core-oem.webp",
+      "reference_job_id": "275aa2b0-5cd8-4f9d-8825-57fea19ef267",
+      "prompt": "Precisely edit this industrial enclosure photograph. REMOVE BOTH BLACK CABLES OUTSIDE THE ENCLOSURE completely, including their faint ends and shadows on the tabletop. Replace the two exterior black cable connectors on the front wall with two short CLOSED SILVER HEXAGONAL BLANKING PLUGS, seated directly in the wall apertures. There must be no black part or cable protruding outside the box at all. Keep all the internal blue/black wiring, controller, terminal strip, enclosure, detached lid, camera composition and blue studio background. Maintain physically realistic fine aluminium machining texture and natural window light. Crisp ordinary hardware, no invented text. Do not change anything else.",
+      "aspect_ratio": "3:2",
+      "source_dimensions": [
+        2048,
+        1360
+      ],
+      "output_dimensions": [
+        1600,
+        1063
+      ],
+      "output_bytes": 133482,
+      "sha256": "124a301a86681de0f701b7abe6ff54462641f3efea8f27a53527f2f90275bd45",
+      "revision_history": [
+        {
+          "job_id": "683082fd-f63e-44e3-9070-b864a7e0c6b2",
+          "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_140730_683082fd-f63e-44e3-9070-b864a7e0c6b2.png",
+          "prompt": "Rework the supplied reference into a convincing industrial product-photography style. Use the reference for the component type and basic construction, but replace its smooth synthetic rendering with realistic optical and material detail. It should read as a carefully photographed, new but handled engineering sample: fine machining/tool marks on metal, subtle mould parting lines and moulded matte texture on plastic, realistic ceramic, slightly uneven reflections and physically consistent contact shadows. Calm 70mm product lens, soft large window light from upper left with a white bounce card at right, neutral white balance, moderate contrast, true metal colour, everything important in focus. Restrained unretouched commercial packshot, not a glossy 3D render, not a toy, no excessive polishing, halos, artificial bloom, painterly smoothing, grunge, dramatic spotlight, neon or coloured illumination. Background colour comes from real matte paper / painted studio boards, not from tinting the component. No logos, branding, watermarks, text, numbers or invented technical labels. No props unless explicitly described. Entire subject rests physically on the surface, nothing floating. This is an illustrative generic component scene, not documentation of an actual company's product. Small open brushed-aluminium equipment enclosure with a simple compact black controller inside, one proper terminal strip, screws and credible short routed blue and black wiring. Preserve the basic assembly reference but make every wire continuous and visibly connected at both ends; no cables fading into the table. A detached fitting lid lies beside it, fully in frame. Real subtle machining grain and ordinary hardware, not overly perfect. Pale blue matte tabletop #EEF1FE and a narrow cobalt-blue #3E5AF5 painted backboard at the very top, soft natural daylight. Compact group centered within the middle 78 percent of the landscape frame.",
+          "sha256": "e3c7a0cbb22a22ee380cc2bf96b661a9e760785fdebb44bc57f7a80f91aea31c"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "job_id": "71faeb9b-36d1-49b6-a818-7c3077b45f7b",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_140730_71faeb9b-36d1-49b6-a818-7c3077b45f7b.png",
+      "name": "core-components",
+      "file": "core-components.webp",
+      "reference_job_id": "f32dc12b-0ac6-4b73-8ec2-1738f6e23c33",
+      "prompt": "Rework the supplied reference into a convincing industrial product-photography style. Use the reference for the component type and basic construction, but replace its smooth synthetic rendering with realistic optical and material detail. It should read as a carefully photographed, new but handled engineering sample: fine machining/tool marks on metal, subtle mould parting lines and moulded matte texture on plastic, realistic ceramic, slightly uneven reflections and physically consistent contact shadows. Calm 70mm product lens, soft large window light from upper left with a white bounce card at right, neutral white balance, moderate contrast, true metal colour, everything important in focus. Restrained unretouched commercial packshot, not a glossy 3D render, not a toy, no excessive polishing, halos, artificial bloom, painterly smoothing, grunge, dramatic spotlight, neon or coloured illumination. Background colour comes from real matte paper / painted studio boards, not from tinting the component. No logos, branding, watermarks, text, numbers or invented technical labels. No props unless explicitly described. Entire subject rests physically on the surface, nothing floating. This is an illustrative generic component scene, not documentation of an actual company's product. Three modest unbranded industrial components arranged naturally on the same surface: one small black panel temperature controller with dark unlit display, one stainless temperature probe with cable resting in a loose loop, and one U-shaped tubular heater with two ceramic terminal ends. Physically credible features, continuous cables, correct separate parts. The equipment should look manufactured, ordinary and tactile, not futuristic or stylized. Matte lavender #D4B9F3 studio tabletop filling the background. Balanced daylight from left. Keep all three parts fully within the central 80 percent, no component overlaps another, no additional props.",
+      "aspect_ratio": "3:2",
+      "source_dimensions": [
+        2048,
+        1360
+      ],
+      "output_dimensions": [
+        1600,
+        1063
+      ],
+      "output_bytes": 142766,
+      "sha256": "3aab0e1a161f6459050f8cc8dd2612c156c82b5b50be355946d523468fd28ca8"
+    },
+    {
+      "index": 7,
+      "job_id": "f77cf50a-5d30-4fa3-b571-1fee4d13e449",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_140738_f77cf50a-5d30-4fa3-b571-1fee4d13e449.png",
+      "name": "core-engineering",
+      "file": "core-engineering.webp",
+      "reference_job_id": "51ff32dd-55f7-409c-af47-3b7779144bab",
+      "prompt": "Rework the supplied reference into a convincing industrial product-photography style. Use the reference for the component type and basic construction, but replace its smooth synthetic rendering with realistic optical and material detail. It should read as a carefully photographed, new but handled engineering sample: fine machining/tool marks on metal, subtle mould parting lines and moulded matte texture on plastic, realistic ceramic, slightly uneven reflections and physically consistent contact shadows. Calm 70mm product lens, soft large window light from upper left with a white bounce card at right, neutral white balance, moderate contrast, true metal colour, everything important in focus. Restrained unretouched commercial packshot, not a glossy 3D render, not a toy, no excessive polishing, halos, artificial bloom, painterly smoothing, grunge, dramatic spotlight, neon or coloured illumination. Background colour comes from real matte paper / painted studio boards, not from tinting the component. No logos, branding, watermarks, text, numbers or invented technical labels. No props unless explicitly described. Entire subject rests physically on the surface, nothing floating. This is an illustrative generic component scene, not documentation of an actual company's product. One modest machined aluminium bracket and one matching white 3D-printed prototype showing very fine layer lines, side by side on a slightly off-white technical drawing sheet. Drawing only simple blue orthographic geometry matching the bracket; no text or dimensions. Remove the caliper from the reference entirely. The two pieces share the same hole layout and geometry, have physically plausible through holes, are not polished trophies. Matte pale yellow studio table #FEFAEA with one restrained warm yellow #F7D44B sheet beneath the drawing, only its straight edge visible. Camera sees real paper edge, soft natural shadows, coherent part scale. Landscape image, keep the complete subject within the central 78 percent.",
+      "aspect_ratio": "3:2",
+      "source_dimensions": [
+        2048,
+        1360
+      ],
+      "output_dimensions": [
+        1600,
+        1063
+      ],
+      "output_bytes": 98942,
+      "sha256": "e11bcfd92ab241cf78013548123b884a8625dbf88ce991dd502aa09f739f3fe3"
+    },
+    {
+      "index": 8,
+      "job_id": "30a583b3-0083-4aca-82bb-36c888e5d416",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_140737_30a583b3-0083-4aca-82bb-36c888e5d416.png",
+      "name": "core-supply",
+      "file": "core-supply.webp",
+      "reference_job_id": "45dd2213-52f8-4c7a-a1a1-e43e4b4e10f3",
+      "prompt": "Rework the supplied reference into a convincing industrial product-photography style. Use the reference for the component type and basic construction, but replace its smooth synthetic rendering with realistic optical and material detail. It should read as a carefully photographed, new but handled engineering sample: fine machining/tool marks on metal, subtle mould parting lines and moulded matte texture on plastic, realistic ceramic, slightly uneven reflections and physically consistent contact shadows. Calm 70mm product lens, soft large window light from upper left with a white bounce card at right, neutral white balance, moderate contrast, true metal colour, everything important in focus. Restrained unretouched commercial packshot, not a glossy 3D render, not a toy, no excessive polishing, halos, artificial bloom, painterly smoothing, grunge, dramatic spotlight, neon or coloured illumination. Background colour comes from real matte paper / painted studio boards, not from tinting the component. No logos, branding, watermarks, text, numbers or invented technical labels. No props unless explicitly described. Entire subject rests physically on the surface, nothing floating. This is an illustrative generic component scene, not documentation of an actual company's product. Two shallow pale-grey packing trays containing three small identical stainless-steel probes each, with connected black cables gently coiled with small natural differences, plus one plain closed kraft carton. Fewer components than reference, each physically separate and legible. Believable practical packaging, not perfect decorative repetition. Real satin metal, slight matte cardboard fibre texture, no lettering or tape graphics. Pale blue studio table #EEF1FE and a cobalt-blue #3E5AF5 background board at the far edge. Ordinary careful small-batch preparation, natural window light, complete composition inside the central 78 percent.",
+      "aspect_ratio": "3:2",
+      "source_dimensions": [
+        2048,
+        1360
+      ],
+      "output_dimensions": [
+        1600,
+        1063
+      ],
+      "output_bytes": 124954,
+      "sha256": "3e8ec49102ddcbddfea95ae1ee829172060e8ff584cfe6f6f677e11a5312a4ed"
+    }
+  ]
+}
