@@ -1,0 +1,90 @@
+KOMPONIA — GESTALTUNGSBRIEF VOR UMSETZUNG
+11. Oktober 2026
+
+Auftrag
+Die bestehende Homepage weiterentwickeln: Hubs/Protolabs bleibt die Grundlage,
+Stripe und Deel inspirieren Rhythmus, Typohierarchie und präzise Interaktionen.
+Der Auftritt soll weniger nach einem generischen KI-/SaaS-Template aussehen.
+Die originalen Favicon-Formen stärker verwenden, insbesondere die Vierecke.
+Aktives Projekt: komponia-website-v1-initial; main, Ausgangspunkt df40cea.
+
+Gestaltungsprompt
+Gestalte die bestehende Komponia-Homepage als technische Unternehmenswebsite
+mit klarer Leserichtung, offenem Raum und nachvollziehbarer Angebotsstruktur.
+Behalte die freigegebene Abschnittsreihenfolge und den geteilten Hubs-Hero.
+Unterscheide Kernleistungen, Fertigungsverfahren und technische Erklärungen
+visuell: offene Leistungsspalten, neutrale Produktbilder, ruhige Diagrammfelder.
+Schaffe Hierarchie durch Größe, Ausrichtung, Abstände und feine Grundlinien.
+Vermeide die Wiederholung von gerundeter Karte, Schatten, Icon und Pastellbox
+in jedem Abschnitt. Keine zusätzlichen Inhalte nur zur Dekoration.
+
+Nutze lokal eingebundene Sora, Komponia-Blau #3E5AF5, Ink #1F1F1D,
+Lavendel #D4B9F3 und Gelb #F7D44B. Buttons bleiben Pillen. Bildflächen haben
+kleine Radien; kompakte Markensymbole erhalten die weicheren Vierecke aus
+dem Original. Farbige Flächen gezielt für Orientierung und aktive Zustände.
+Keine zusätzlichen Verläufe, Glasflächen, Schlagschatten, schwebenden Formen,
+laufenden Zähler, Hintergrundraster oder automatische Endlosschleifen.
+
+Die Originalmarke unverändert einsetzen: blaue vertikale Pille plus zwei
+abgerundete Vierecke. Sie steht für vier Disziplinen, besitzt aber drei sichtbare
+Formen. Keine vierteilige Ersatzmarke zeichnen. Kleine eigenständige Module
+sind eine Ableitung der Formensprache, nicht eine neue Version des Logos.
+
+Konkrete Eingriffe
+1. Das originale App-Icon aus Komponia_Design_fin als echtes Favicon einbinden.
+   Original-SVG als Markenanker im Hero, im Herkunftsabschnitt und beim Abschluss.
+2. Kernleistungen als vier offene Spalten mit kompakten Markenmodulen gestalten.
+   Vorhandene Texte, Leistungen und Ziele behalten. Die redundanten vier
+   Fotos hier entfallen; vier Verfahren behalten ihre neutralen Produktbilder.
+3. Abschnittsüberschriften links ausrichten; Erklärungstext auf breiten Screens
+   daneben stellen. Mobile Lesereihenfolge bleibt Überschrift, Text, Inhalt.
+4. Engineering, Anfrage und Prozess von äußeren Kartenrahmen befreien.
+   Anfrageauswahl als Linienliste, Prozessauswahl als nummerierte Schritte mit
+   unterer Auswahlkante. Unterstrichene Tabs als gemeinsame Bedienungssprache.
+5. Qualitätsgrafiken auf einheitlicher neutraler Fläche, Texte offen darunter.
+   Branchen als kompakte Linkspalten. Hover verändert Akzent und Pfeil, nicht
+   die Position ganzer Container.
+6. Herkunft als durchgehende Ink-Fläche mit größerer Originalmarke und vier
+   klaren Kompetenzzeilen. Supply als offene Zweispaltenanordnung ohne Panel
+   im Panel. FAQ als ruhige Trennlinienliste. Abschluss mit Originalmarke.
+
+Interaktion und Barrierefreiheit
+Alle vorhandenen Auswahlzustände, Linkziele, Tab-/Pfeiltasten-Mechanismen,
+ARIA-Beziehungen und Kontakt-Vorauswahlen erhalten. Sichtbarer Tastaturfokus.
+Keine dekorativen Formen im Accessibility Tree. Kurze Hover-/Zustandswechsel,
+vorhandene Reduced-Motion-Regeln auch auf abgeleitete Markenmodule anwenden.
+Inhalte bleiben auch ohne Animation sichtbar. Kein neuer Abhängigkeitseinbau.
+
+Quellen und Abgrenzung
+https://www.hubs.com/ — Aufbau und technische, produktnahe Darstellung.
+https://stripe.com/ — präzise Hierarchie, offene Flächen und Interaktionsdetails.
+https://www.deel.com/ — klare Leistungsführung und eigenständige Markenformen.
+Komponia_Design_fin/assets/logo-mark.svg und assets/logo-app-icon.png — Originale.
+Keine neuen rasterbasierten Grafiken nötig; native CSS/SVG-Formen sind hierfür
+präziser. Vorhandene neutrale Higgsfield-Serie bleibt aktiv und illustrativ.
+Wortmarken, Fakten, WTS-Bezug seit 1997, lokale Anfragefunktion unverändert.
+Keine neuen Zertifikate, Kunden, Zahlen oder Gründungsbehauptungen.
+
+Prüfung nach Umsetzung
+Build, gezieltes ESLint, unabhängige Codeprüfung, Vorschau bei 1440 / 768 / 390 px,
+Overflow, Interaktionen und Favicon-Auslieferung. Anschließend commit und push.
+
+
+UMGESETZT UND GEPRÜFT
+- Kernleistungen als offene Viererspalte (Tablet zwei, mobil eine), alle Texte
+  und Linkziele erhalten. Originale Neutralbilder verbleiben in den Verfahren,
+  der Komponentenübersicht und den technischen Abschnitten.
+- Gemeinsame Komponenten per optionalem variant="open" bzw. branded erweitert.
+  Aufrufe außerhalb von Home behalten ihre bisherige Darstellung.
+- Hero-Marke 48 px, Herkunft 112 px, Abschluss 64 px; kleinere Größen mobil.
+  Favicon bytegleich aus dem offiziellen Designpaket übernommen.
+- npm run build erfolgreich. Bestehender Hinweis auf JS-Chunk über 500 kB;
+  kein neuer Buildfehler. Gezieltes ESLint und git diff --check erfolgreich.
+- Unabhängiger Code-Review ohne handfeste neue Regressionsbefunde.
+- Browser: 1440/768/390 px ohne horizontalen Seitenüberlauf; alle geladenen
+  Bilder fehlerfrei. Offen gestaltete Leistungen, Prozess, Engineering,
+  Herkunft, Qualität, Supply und Abschluss visuell kontrolliert.
+- Hero-OEM-Auswahl, Engineering per Pfeiltaste, Prozessschritt 04, Anfrage-
+  Vorauswahl Custom (Kontaktformular value=custom), Supply Review, FAQ und
+  mobiles Menü erfolgreich geprüft. Bestehende Reduced-Motion-Regeln erhalten.
+- Keine Veröffentlichung und keine Änderung von Formularversand oder Upload.

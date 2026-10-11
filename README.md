@@ -100,3 +100,12 @@ Ausführlicher Umsetzungsbrief, Quellen, Abgrenzung und Prüfung: `project-notes
 Die zweite Interaktionsrunde ergänzt das vorhandene OEM-Motiv um Function, Interfaces und Installation. Die Auswahl zeigt passende technische Fragen sowie eine feine Bildannotation; das Originalbild und die bisherigen Engineering-Aussagen bleiben erhalten. Im Lab-Abschnitt erhalten die drei bestehenden Karten eigene SVG-Szenen für Spezifikation, Prüfung und laufende Qualität. Ihre Texte und Linkziele bleiben unverändert.
 
 Die neuen Komponenten `EngineeringDetails` und `QualityIllustrations` werden nur auf der Homepage eingesetzt. Keine neuen Bibliotheken oder Bildgenerierungen. Kurze Zustands-/Fokusanimationen, Tastatursteuerung und Reduced Motion sind berücksichtigt. Build, gezieltes ESLint und unabhängiger Review bestanden; Desktop 1440 px, Tablet 768 px und Mobil 390 px ohne horizontalen Überlauf geprüft. Brief und Prüfergebnisse: `project-notes/TECHNICAL_DETAILS_BRIEF_2026-10-11.txt`.
+
+
+## Offene Flächen und Favicon-Formen am 11. Oktober 2026
+
+Die aktuelle Gestaltungsrunde orientiert sich stärker am technischen Hubs-Aufbau, mit offenerer Typohierarchie nach den Stripe-/Deel-Referenzen. Die freigegebene Abschnittsreihenfolge bleibt erhalten. Kernleistungen erscheinen als offene Spalten mit kompakten farbigen Vierecken; die vier Fertigungsverfahren behalten ihre Produktbilder. Abschnittsüberschriften und Einleitung stehen auf Desktop nebeneinander und mobil untereinander.
+
+Engineering, Anfrage, Ablauf, Qualität, Branchen und Supply haben weniger verschachtelte Karten, kleinere Bildradien und klare Trennlinien. Auswahlzustände bleiben sichtbar; große Karten werden beim Hover nicht mehr angehoben. Die Markenherkunft ist eine durchgehende Ink-Fläche mit größerer Originalmarke und vier nummerierten Farbmodulen. Das Original erscheint zusätzlich im Hero und im Abschluss. Die tatsächliche Marke bleibt unverändert: eine blaue Pille und zwei abgerundete Vierecke für die vier Disziplinen. Das originale App-Icon ist nun als Browser-Favicon eingebunden.
+
+Die neutralen Higgsfield-Bilder, Originalwortmarken, bestätigten Fakten und Kontaktfunktionen bleiben erhalten. Keine Bildgenerierung oder neue Bibliothek. Änderungen an den gemeinsam genutzten Komponenten verwenden optionale Homepage-Varianten. Umsetzungsbrief und Prüfungen: `project-notes/BRAND_GEOMETRY_BRIEF_2026-10-11.txt`.

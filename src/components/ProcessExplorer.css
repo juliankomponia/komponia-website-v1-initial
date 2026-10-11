@@ -34,10 +34,11 @@
 
 .k-process__tab {
   min-width: 0;
-  min-height: 125px;
-  padding: 18px 15px 16px;
-  border: 1px solid #E1E3E8;
-  border-radius: 14px;
+  min-height: 108px;
+  padding: 14px 10px 16px;
+  border: 0;
+  border-bottom: 2px solid #E1E3E8;
+  border-radius: 0;
   background: #fff;
   color: var(--k-process-ink);
   text-align: left;
@@ -71,17 +72,17 @@
 }
 
 .k-process__tab[aria-selected="true"] {
-  background: var(--k-process-blue);
+  background: transparent;
   border-color: var(--k-process-blue);
-  color: #fff;
+  color: var(--k-process-blue);
 }
 
 .k-process__tab[aria-selected="true"] .k-process__tab-top {
-  color: #e8ebff;
+  color: var(--k-process-blue);
 }
 
 .k-process__tab[aria-selected="true"] svg {
-  color: #fff;
+  color: var(--k-process-blue);
 }
 
 .k-process__tab:focus-visible,
@@ -95,8 +96,8 @@
   grid-template-columns: 1fr 1.06fr;
   min-height: 380px;
   overflow: hidden;
-  border: 1px solid #E1E3E8;
-  border-radius: 20px;
+  border: 0;
+  border-radius: 0;
   background: #fff;
 }
 
@@ -111,7 +112,7 @@
 
 .k-process__copy {
   align-self: center;
-  padding: 36px;
+  padding: 32px 48px 32px 0;
 }
 
 .k-process__step-label {
@@ -176,8 +177,9 @@
   min-width: 0;
   margin: 0;
   padding: 25px 24px 27px;
-  border-left: 1px solid #E1E3E8;
-  background: #f6f7fb;
+  border: 0;
+  border-radius: 6px;
+  background: #F5F6F8;
 }
 
 .k-process__figure-top {
@@ -303,7 +305,7 @@
   }
 
   .k-process__copy {
-    padding: 28px;
+    padding: 28px 0;
   }
 
   .k-process__figure {
@@ -323,7 +325,7 @@
   }
 
   .k-process__copy {
-    padding: 27px 24px;
+    padding: 27px 0;
   }
 
   .k-process__description {
@@ -354,8 +356,8 @@
   }
 
   .k-process__tab {
-    min-height: 105px;
-    padding: 14px;
+    min-height: 96px;
+    padding: 12px 4px;
   }
 
   .k-process__tab-top {
@@ -399,3 +401,8 @@
   .k-process__details > div { grid-template-columns: 102px 1fr; gap: 14px; }
 }
 @media (prefers-reduced-motion: reduce) { .k-process__panel:not([hidden]) .k-process__connector { animation: none; } }
+
+/* Small numbered modules echo the rounded squares in the original mark. */
+.k-process__tab-top > span { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 7px; background: #F5F6F8; color: #626875; transition: background-color 140ms var(--komponia-ease), color 140ms var(--komponia-ease); }
+.k-process__tab[aria-selected="true"] .k-process__tab-top > span { background: #3E5AF5; color: #fff; }
+@media (prefers-reduced-motion: reduce) { .k-process__tab-top > span { transition: none; } }

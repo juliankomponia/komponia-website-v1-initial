@@ -6,21 +6,23 @@ import { IMG } from '../data/site';
 import { HOME_CONTENT as H } from '../data/home';
 import { INDUSTRIAL_IMAGES as I, CORE_SERVICE_IMAGES } from '../data/images';
 import BrandLabel from './BrandLabel';
+import mark from '../assets/brand/komponia-mark.svg';
 
 export function SectionLead({ title, children, eyebrow }: { title: string; children?: React.ReactNode; eyebrow?: string }) {
   return <div className="section-lead">{eyebrow && <BrandLabel>{eyebrow}</BrandLabel>}<h2 className="h2-orig">{title}</h2>{children && <p className="section-intro">{children}</p>}</div>;
 }
 
-export function CapabilitiesCards({ core = false }: { core?: boolean } = {}) {
+export function CapabilitiesCards({ core = false, variant = 'cards' }: { core?: boolean; variant?: 'cards' | 'open' } = {}) {
+  const open = core && variant === 'open';
   const images = core
     ? CORE_SERVICE_IMAGES
     : [IMG.capCnc, IMG.cap3dp, IMG.capSmf, IMG.capIm];
   const cards = core ? H.capabilities.coreCards : H.capabilities.cards;
   const icons = [Layers, Box, Settings, Truck];
-  return <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 justify-center">
+  return <div className={`grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 justify-center${open ? ' capabilities--open' : ''}`}>
     {cards.map((c, i) => { const Icon = icons[i]; return <Link to={c.to} key={c.title} className="cap-card">
-      <img src={images[i]} alt="" loading="lazy" /><div className="cap-text">
-        {core && <Icon size={26} strokeWidth={1.6} className="cap-icon" aria-hidden="true" />}
+      {!open && <img src={images[i]} alt="" loading="lazy" />}<div className="cap-text">
+        {core && (open ? <span className={`cap-service-symbol cap-service-symbol--${i + 1}`} aria-hidden="true"><Icon size={24} strokeWidth={1.6} /></span> : <Icon size={26} strokeWidth={1.6} className="cap-icon" aria-hidden="true" />)}
         <h3 className="cap-title">{c.title}</h3><span className="cap-subtitle">{c.desc}</span>
         <div className="cap-body"><ul>{c.specs.map(s => <li key={s}>{s}</li>)}</ul></div>
         <span className="cap-link card-link">{c.cta}</span>
@@ -120,4 +122,4 @@ export function ProtolabsBanner(){return <FeatureRow title={H.heritage.title} te
 export function ProductionSection(){const s=H['recurring-supply'];return <FeatureRow eyebrow="Ongoing supply" title={s.title} text={s.intro} img={I.ongoingSupply} imgAlt="Illustrative preparation of recurring component deliveries" flip link={{label:'Explore recurring supply',to:'/production-orders'}}/>;}
 export function ProductionInfographic(){const s=H['supply-terms'];return <div className="grid lg:grid-cols-2 items-stretch" style={{backgroundColor:'#EEF1FE'}}><div className="p-8 md:p-14"><h2 className="text-[1.25rem] leading-[1.5rem] md:text-[1.375rem] md:leading-[1.625rem] font-bold mb-4" style={{color:'rgba(0,0,0,0.85)'}}>{s.title}</h2><p className="text-[15px] leading-relaxed mb-8" style={{color:'rgba(0,0,0,0.69)'}}>{s.intro}</p><Link to={s.cta.to} className="arrow-link">{s.cta.label}<ArrowRight size={20}/></Link></div><div className="p-8 md:p-14 border-t lg:border-t-0 lg:border-l border-black/10"><BrandLabel>Supply terms to agree</BrandLabel><dl className="grid sm:grid-cols-2 gap-x-8 gap-y-6">{s.topics.map(topic=><div key={topic.title}><dt className="font-medium text-brand-heading mb-2">{topic.title}</dt><dd className="text-[14px] leading-relaxed text-brand-body">{topic.text}</dd></div>)}</dl></div></div>;}
 export function ReviewsSection(){return null;}
-export function DarkCta({message='Have a part number, drawing or application in mind?',label='Prepare an inquiry',to='/contact'}:{message?:string;label?:string;to?:string}={}){return <section className="dark-cta text-center" style={{backgroundColor:'#1F1F1D'}}><div className="wrap-orig py-16 md:py-24"><h2 className="h2-orig text-white max-w-[48rem] mx-auto mb-6">{message}</h2><Link to={to} className="btn-primary">{label}</Link></div></section>;}
+export function DarkCta({message='Have a part number, drawing or application in mind?',label='Prepare an inquiry',to='/contact',branded=false}:{message?:string;label?:string;to?:string;branded?:boolean}={}){return <section className={`dark-cta text-center${branded ? ' dark-cta--branded' : ''}`} style={{backgroundColor:'#1F1F1D'}}><div className="wrap-orig py-16 md:py-24">{branded && <img className="closing-mark" src={mark} width={64} height={65} alt="" aria-hidden="true" loading="lazy" />}<h2 className="h2-orig text-white max-w-[48rem] mx-auto mb-6">{message}</h2><Link to={to} className="btn-primary">{label}</Link></div></section>;}

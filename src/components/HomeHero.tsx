@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import { ArrowRight, MessageSquare } from 'lucide-react';
 import { HERO_PRODUCT_IMAGE } from '../data/images';
 import BrandLabel from './BrandLabel';
+import mark from '../assets/brand/komponia-mark.svg';
 
 const OPTIONS = [
   {
@@ -43,7 +44,7 @@ export default function HomeHero() {
   return <section className="reference-hero" aria-labelledby="home-hero-title">
     <figure className="reference-hero-media">
       <img src={HERO_PRODUCT_IMAGE} alt="Illustrative selection of a controller, temperature probe and heating element" width={1600} height={1600} fetchPriority="high" />
-      <figcaption><span>Selected for your application.</span>Controllers, sensors & heating elements</figcaption>
+      <figcaption><img src={mark} width={48} height={49} alt="" aria-hidden="true" /><div><span>Selected for your application.</span>Controllers, sensors & heating elements</div></figcaption>
     </figure>
     <div className="reference-hero-panel">
       <div className="reference-hero-copy">

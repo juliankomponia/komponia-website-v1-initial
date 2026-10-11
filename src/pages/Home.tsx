@@ -18,9 +18,9 @@ export default function Home() {
     <section className="home-capabilities">
       <div className="wrap-orig section-pad">
         <SectionLead eyebrow="Our capabilities" title={H.capabilities.title}>{H.capabilities.intro}</SectionLead>
-        <CapabilitiesCards core />
+        <CapabilitiesCards core variant="open" />
         <div className="home-manufacturing">
-          <SectionLead title={H.capabilities.processesTitle}>{H.capabilities.processesIntro}</SectionLead>
+          <SectionLead eyebrow="Manufacturing processes" title={H.capabilities.processesTitle}>{H.capabilities.processesIntro}</SectionLead>
           <CapabilitiesCards />
         </div>
       </div>
@@ -29,7 +29,7 @@ export default function Home() {
       <EngineeringDetails />
     </div></section>
     <section><div className="wrap-orig section-pad">
-      <SectionLead title={H['component-fields'].title}>{H['component-fields'].intro}</SectionLead>
+      <SectionLead eyebrow="Component fields" title={H['component-fields'].title}>{H['component-fields'].intro}</SectionLead>
       <PartsGallery />
     </div></section>
     <section className="home-band"><div className="wrap-orig section-pad">
@@ -40,11 +40,11 @@ export default function Home() {
       <SectionLead eyebrow="Quality & Lab" title={H.quality.title}>{H.quality.intro}</SectionLead><QualityIllustrations />
     </div></section>
     <section><div className="wrap-orig section-pad">
-      <SectionLead title={H.applications.title}>{H.applications.intro}</SectionLead><IndustriesSection variant="compact" />
+      <SectionLead eyebrow="Applications" title={H.applications.title}>{H.applications.intro}</SectionLead><IndustriesSection variant="compact" />
     </div></section>
-    <section className="home-band"><div className="wrap-orig section-pad"><KomponiaSignature /></div></section>
+    <section className="home-heritage"><div className="wrap-orig section-pad"><KomponiaSignature /></div></section>
     <section><div className="wrap-orig section-pad"><ProductionSection /><div className="home-supply-terms"><SupplyExplorer /></div></div></section>
-    <section className="home-band"><div className="wrap-orig section-pad"><Faq items={H.faq} /></div></section>
-    <DarkCta message={H['closing-cta'].title} label="Prepare an inquiry" to="/contact" />
+    <section className="home-band home-faq"><div className="wrap-orig section-pad"><Faq items={H.faq} /></div></section>
+    <DarkCta branded message={H['closing-cta'].title} label="Prepare an inquiry" to="/contact" />
   </div>;
 }
