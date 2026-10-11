@@ -8,12 +8,21 @@ die folgenden Voraussetzungen für eine öffentliche Website sind weiter offen.
 Lokaler Build: dist/ erfolgreich erstellt. Kein Deployment beauftragt oder erfolgt.
 Die Website nutzt weiter HashRouter und bleibt bis zur Abnahme noindex.
 
+Vom Nutzer am 11. Oktober bestätigt und im Website-Code ergänzt:
+- Komponia GmbH (i. G.), Kaiserstraße 35, 41061 Mönchengladbach, Deutschland.
+- Geschäftsführer: Julian Gilljam.
+- Öffentliches Postfach: info@komponia.com; Telefon: 02161 2944204.
+- Hauptdomain: komponia.com; zusätzlich komponia.de und komponia.eu vorhanden.
+- Hosting noch offen. Die Website bietet jetzt direkte E-Mail-/Telefonlinks und
+  einen lokal vorbereiteten Entwurf zur Übergabe an das eigene Mailprogramm.
+  Die Zustellung des Postfachs wurde nicht getestet; es wurde keine Mail gesendet.
+
 Vor Live-Anbindung festlegen:
-1. Rechtliche Firma und Vollzugsstand, veröffentlichbare Kontaktdaten.
-2. Bestätigtes Empfängerpostfach; Backend-/Formulardienst und Datenfluss.
+1. Impressums- und Datenschutztexte für den tatsächlichen Betriebsstand.
+2. Falls direkter Website-Versand gewünscht: Backend-/Formulardienst und Datenfluss.
 3. Zulässige Dateien, Größen, Prüfung und Verarbeitung für einen echten Upload.
-4. Domain, Host, SSL, Vorschauweg und explizite Veröffentlichungsfreigabe.
-5. Impressum/Datenschutz passend zu Firma und tatsächlicher Verarbeitung.
+4. Host, Domainanbindung/Weiterleitungen, SSL, Vorschauweg und Veröffentlichung.
+5. Ergänzende Register-/Steuerangaben prüfen, soweit für den Stand zutreffend.
 
 Nach Wahl des Hosts konkret umsetzen:
 - Crawlbare Seitenpfade mit Direktaufrufen, Neuladen und Zurück-Navigation;
@@ -26,3 +35,10 @@ Nach Wahl des Hosts konkret umsetzen:
 - noindex erst beim freigegebenen Veröffentlichungsstand entfernen.
 - Verbleibende externe Fonts und Bilder hinsichtlich Hosting und Verarbeitung
   bewusst entscheiden; keine erfundenen Zertifikate oder Produktnachweise.
+
+Hosting-Vorschlag für den bestehenden Vite-Aufbau: Netlify mit GitHub-Anbindung,
+Build `npm run build`, Veröffentlichungsordner `dist`. Noch nicht eingerichtet.
+Die Domainregistrierung und das bestehende E-Mail-Hosting müssen dafür nicht
+umgezogen werden. DNS-Änderungen erst nach Prüfung der vorhandenen Einträge;
+bestehende Mail-Einträge erhalten. Keine DNS-Änderungen vorgenommen.
+Quelle: https://docs.netlify.com/build/frameworks/framework-setup-guides/vite/

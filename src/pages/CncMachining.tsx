@@ -23,7 +23,7 @@ function MaterialsTabs() {
           <button
             key={t}
             onClick={() => setTab(t)}
-            className={`pb-3 text-[15px] font-bold transition-colors ${tab === t ? 'text-brand-heading shadow-[inset_0_-2px_0_#0071E3]' : 'text-brand-body hover:text-brand-heading'}`}
+            className={`pb-3 text-[15px] font-bold transition-colors ${tab === t ? 'text-brand-heading shadow-[inset_0_-2px_0_#3E5AF5]' : 'text-brand-body hover:text-brand-heading'}`}
           >
             {t === 'materials' ? 'Materials' : 'Surface Finishes'}
           </button>

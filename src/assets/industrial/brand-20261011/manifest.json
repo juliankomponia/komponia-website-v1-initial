@@ -1,0 +1,55 @@
+{
+  "generated": "2026-10-11",
+  "provider": "Higgsfield",
+  "model": "gpt_image_2_5",
+  "quality": "high",
+  "resolution": "1k",
+  "brandKitId": "f8f2de78-33c7-4395-924e-8307cb86a1e0",
+  "usage": "Conceptual service illustrations, not documentary evidence of products, premises or testing.",
+  "images": [
+    {
+      "index": 1,
+      "job_id": "275aa2b0-5cd8-4f9d-8825-57fea19ef267",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_135754_275aa2b0-5cd8-4f9d-8825-57fea19ef267.png",
+      "name": "core-oem",
+      "prompt": "Create a premium editorial industrial still-life photograph for one of four matching website cards. Landscape 3:2 composition. Quiet, credible engineering aesthetic. Pale cool-gray smooth workbench and seamless light gray background; soft natural window daylight from upper left, gentle accurate shadows, a 50mm lens at a 35-degree downward angle, realistic machined metal and matte polymer surfaces. Restrained colours: neutral silver and charcoal with one tiny cobalt-blue #3E5AF5 material detail. Main objects arranged as a clear compact group within the central 75 percent, generous empty margins safe for responsive cropping. Same camera, scale and lighting throughout the set. Sharp technically plausible product details. No logos, letters, digits, brand names, hands, people, buildings, interface overlays or advertising graphics. This is a conceptual illustration, not documentary photography of a real company's facility or products. Subject: OEM integration. One small open brushed-aluminium rectangular equipment assembly containing an unbranded compact controller, clearly routed cables with physically connected terminal blocks and two sensor connection ports. A matching lid sits beside it, showing how components fit into an equipment assembly. Keep only a few legible structural parts, no sci-fi complexity.",
+      "file": "core-oem.webp"
+    },
+    {
+      "index": 2,
+      "job_id": "f32dc12b-0ac6-4b73-8ec2-1738f6e23c33",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_135755_f32dc12b-0ac6-4b73-8ec2-1738f6e23c33.png",
+      "name": "core-components",
+      "prompt": "Create a premium editorial industrial still-life photograph for one of four matching website cards. Landscape 3:2 composition. Quiet, credible engineering aesthetic. Pale cool-gray smooth workbench and seamless light gray background; soft natural window daylight from upper left, gentle accurate shadows, a 50mm lens at a 35-degree downward angle, realistic machined metal and matte polymer surfaces. Restrained colours: neutral silver and charcoal with one tiny cobalt-blue #3E5AF5 material detail. Main objects arranged as a clear compact group within the central 75 percent, generous empty margins safe for responsive cropping. Same camera, scale and lighting throughout the set. Sharp technically plausible product details. No logos, letters, digits, brand names, hands, people, buildings, interface overlays or advertising graphics. This is a conceptual illustration, not documentary photography of a real company's facility or products. Subject: technical components. A carefully arranged group of three distinct unbranded products: a compact black rectangular temperature controller with a dark blank display and small buttons, a stainless steel cylindrical temperature probe with a neatly coiled cable, and a small U-shaped stainless steel tubular heating element with insulated terminal ends. Believable industrial components, uncluttered.",
+      "file": "core-components.webp"
+    },
+    {
+      "index": 3,
+      "job_id": "51ff32dd-55f7-409c-af47-3b7779144bab",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_135755_51ff32dd-55f7-409c-af47-3b7779144bab.png",
+      "name": "core-engineering",
+      "prompt": "Create a premium editorial industrial still-life photograph for one of four matching website cards. Landscape 3:2 composition. Quiet, credible engineering aesthetic. Pale cool-gray smooth workbench and seamless light gray background; soft natural window daylight from upper left, gentle accurate shadows, a 50mm lens at a 35-degree downward angle, realistic machined metal and matte polymer surfaces. Restrained colours: neutral silver and charcoal with one tiny cobalt-blue #3E5AF5 material detail. Main objects arranged as a clear compact group within the central 75 percent, generous empty margins safe for responsive cropping. Same camera, scale and lighting throughout the set. Sharp technically plausible product details. No logos, letters, digits, brand names, hands, people, buildings, interface overlays or advertising graphics. This is a conceptual illustration, not documentary photography of a real company's facility or products. Subject: custom engineering. An unbranded machined aluminium mounting bracket and a matte white physical prototype of the same simple shape sit on a sheet with a precise blue technical line drawing showing the matching bracket from three views; drawing contains geometry only, no text, dimensions or numbers. A closed mechanical caliper lies alongside. Strong visual relationship between drawing, prototype and finished part.",
+      "file": "core-engineering.webp"
+    },
+    {
+      "index": 4,
+      "job_id": "45dd2213-52f8-4c7a-a1a1-e43e4b4e10f3",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_135755_45dd2213-52f8-4c7a-a1a1-e43e4b4e10f3.png",
+      "name": "core-supply",
+      "prompt": "Create a premium editorial industrial still-life photograph for one of four matching website cards. Landscape 3:2 composition. Quiet, credible engineering aesthetic. Pale cool-gray smooth workbench and seamless light gray background; soft natural window daylight from upper left, gentle accurate shadows, a 50mm lens at a 35-degree downward angle, realistic machined metal and matte polymer surfaces. Restrained colours: neutral silver and charcoal with one tiny cobalt-blue #3E5AF5 material detail. Main objects arranged as a clear compact group within the central 75 percent, generous empty margins safe for responsive cropping. Same camera, scale and lighting throughout the set. Sharp technically plausible product details. No logos, letters, digits, brand names, hands, people, buildings, interface overlays or advertising graphics. This is a conceptual illustration, not documentary photography of a real company's facility or products. Subject: recurring supply. Three low open pale-gray parts trays in a neat row, each containing a small consistent set of identical stainless-steel probe components with short coiled black cables; one plain folded kraft carton beside them with no label. Controlled repetition, orderly small-batch preparation, no warehouse or automated machinery.",
+      "file": "core-supply.webp"
+    }
+  ]
+}

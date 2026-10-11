@@ -45,7 +45,7 @@
   },
   "capabilities": {
     "title": "OEM solutions, components & manufacturing.",
-    "intro": "Our core is technical components for your equipment: standard products, custom OEM solutions and ongoing series supply. We connect application advice, in-house development and suitable manufacturing partners around your requirements.",
+    "intro": "Technical components for your equipment — from standard products and custom OEM solutions to recurring series supply. One personal contact connects technical advice, in-house development, manufacturing partners and quality.",
     "overviewCta": {
       "label": "Explore components",
       "to": "/components"
@@ -134,8 +134,8 @@
         "to": "/production-orders"
       }
     ],
-    "processesTitle": "Manufacturing processes for your custom parts.",
-    "processesIntro": "The manufacturing route follows the component. We assess geometry, material and quantity with suitable partners and confirm the available process, responsibilities and checks for your project."
+    "processesTitle": "Manufacturing to match your part.",
+    "processesIntro": "For custom parts, we coordinate the right process and manufacturing partner around your material, geometry and quantities."
   },
   "custom-solutions": {
     "title": "OEM components. From your idea to series supply.",
@@ -278,7 +278,7 @@
     ]
   },
   "component-fields": {
-    "title": "Explore component fields",
+    "title": "Explore component fields.",
     "intro": "Compare the functions, interfaces and installation details that guide component selection.",
     "cards": [
       {
@@ -360,7 +360,7 @@
     ]
   },
   "applications": {
-    "title": "Applications for technical components",
+    "title": "Applications for technical components.",
     "intro": "OEMs and industrial users need components that fit their own products. Our starting fields include refrigeration, climate control, thermal equipment and machinery; each application defines its own technical requirements.",
     "cards": [
       {
@@ -500,5 +500,39 @@
       "q": "Can you help with discontinued parts or a second source?",
       "a": "We assess potential replacement routes and additional sources against your application. Technical differences, shared supply dependencies, required samples and approval steps remain part of the evaluation before a change."
     }
-  ]
+  ],
+  "partnership": {
+    "title": "One contact. From requirement to series.",
+    "intro": "Start with a part number, drawing, sample or application. We coordinate the technical and supply work; standard purchases can move directly to the steps they need.",
+    "steps": [
+      {
+        "title": "Define the requirement.",
+        "input": "Your application, reference and expected demand.",
+        "work": "We clarify function, interfaces and operating conditions.",
+        "result": "A shared technical brief."
+      },
+      {
+        "title": "Select or develop.",
+        "input": "Your priorities, existing drawings or sample.",
+        "work": "We compare standard parts or prepare in-house CAD and prototypes.",
+        "result": "A proposed component or custom design."
+      },
+      {
+        "title": "Check and release.",
+        "input": "Your acceptance criteria and application evaluation.",
+        "work": "We coordinate samples, agreed Lab checks and documentation.",
+        "result": "A documented basis for your release."
+      },
+      {
+        "title": "Plan recurring supply.",
+        "input": "Your forecast, call-offs and preferred delivery rhythm.",
+        "work": "We align purchasing, import, dynamic safety stock and ongoing quality.",
+        "result": "An agreed plan for repeat deliveries."
+      }
+    ],
+    "cta": {
+      "label": "See how we work",
+      "to": "/how-ordering-works"
+    }
+  }
 }

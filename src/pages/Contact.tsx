@@ -1,10 +1,12 @@
 import { useRef, useState, type FormEvent } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, Download, Mail } from 'lucide-react';
 import PageSections from '../components/PageSections';
 import { INDUSTRIAL_IMAGES as I } from '../data/images';
 import { COMPONENT_GROUPS } from '../data/components';
 import { downloadText } from '../lib/download';
+import { COMPANY } from '../data/company';
+import CompanyDetails from '../components/CompanyDetails';
 import './contact.css';
 
 const TYPES = {
@@ -53,7 +55,7 @@ function InquiryForm({ reference, type }: { reference: string; type: InquiryType
     }
     setDraft([
       'KOMPONIA — INQUIRY DRAFT',
-      'Prepared locally. Not sent. This is a request for discussion, not an order.',
+      'This is a request for discussion, not an order.',
       '',
       `Name: ${values.name.trim()}`,
       `Company: ${values.company.trim()}`,
@@ -64,7 +66,7 @@ function InquiryForm({ reference, type }: { reference: string; type: InquiryType
       `Preferred date: ${values.date || 'To be clarified'}`,
       '', 'APPLICATION AND REQUIREMENTS', values.requirements.trim(),
       '', 'SUPPORTING DOCUMENTS',
-      'Add the relevant drawing revision or datasheet through your agreed contact channel.',
+      'Please see any relevant drawings or datasheets attached separately to this email.',
     ].join('\n'));
     requestAnimationFrame(() => preview.current?.focus());
   }
@@ -103,7 +105,7 @@ function InquiryForm({ reference, type }: { reference: string; type: InquiryType
 
   return <>
     <form ref={form} className="inquiry-form" noValidate onSubmit={review}>
-      <p className="inquiry-help mb-6">* Required to prepare a complete draft. Your details stay on this page until you copy or download them.</p>
+      <p className="inquiry-help mb-6">* Required to prepare a complete draft. Review it before opening your email app, copying or downloading it.</p>
       {Object.values(errors).some(Boolean) && <p role="alert" className="inquiry-error mb-6">Check the highlighted fields before reviewing your draft.</p>}
       <div className="inquiry-fields">{field('name', 'Name', true)}{field('company', 'Company', true)}{field('email', 'Business email', true)}
         <div className="inquiry-field"><label htmlFor="inquiry-type">Inquiry type</label>
@@ -121,17 +123,19 @@ function InquiryForm({ reference, type }: { reference: string; type: InquiryType
         {errors.requirements && <p id="error-requirements" className="inquiry-error">{errors.requirements}</p>}
       </div>
       <div className="inquiry-fields">{field('quantity', 'Quantity or expected demand')}{field('date', 'Preferred delivery date')}</div>
-      <p className="inquiry-help mb-6">Drawings and files are not uploaded here. List their references above and share the files through your agreed contact channel.</p>
+      <p className="inquiry-help mb-6">List drawing or datasheet references above. You can attach the files in your email app after reviewing the draft.</p>
       <button type="submit" className="btn-primary-l">Review inquiry draft <ArrowRight size={18} aria-hidden="true" /></button>
     </form>
     {draft && <div className="inquiry-preview mt-10" ref={preview} tabIndex={-1} aria-labelledby="draft-title">
       <h3 id="draft-title" className="text-xl font-medium mb-3">Your inquiry draft</h3>
-      <p className="mb-5 text-[14px]">Review the details, then keep a copy for your conversation with Komponia. Nothing has been sent.</p>
+      <p className="mb-5 text-[14px]">Review the details, then open your email app to send them to {COMPANY.email}. Nothing has been sent yet. Add any drawings or datasheets before sending.</p>
       <pre className="inquiry-draft">{draft}</pre>
       <div className="flex flex-wrap gap-3 mt-5">
-        <button type="button" className="btn-primary" onClick={() => downloadText('komponia-inquiry-draft.txt', draft)}><Download size={16} aria-hidden="true" /> Download draft (.txt)</button>
+        <a className="btn-primary" href={`mailto:${COMPANY.email}?subject=${encodeURIComponent(`Component inquiry — ${values.company.trim()}`)}&body=${encodeURIComponent(draft)}`}><Mail size={16} aria-hidden="true" /> Open in email app</a>
+        <button type="button" className="btn-outline-primary" onClick={() => downloadText('komponia-inquiry-draft.txt', draft)}><Download size={16} aria-hidden="true" /> Download draft (.txt)</button>
         <button type="button" className="btn-outline-primary" disabled={copying} onClick={copyDraft}>{copying ? 'Copying…' : 'Copy draft'}</button>
       </div>
+      <p className="inquiry-help mt-4">If your email app does not open or the draft is incomplete, copy or download the full text and email it to {COMPANY.email}.</p>
     </div>}
     <p role="status" className="inquiry-help mt-4">{status}</p>
   </>;
@@ -146,7 +150,7 @@ export default function Contact() {
   const requested = params.get('type');
   const type: InquiryType = requested && Object.hasOwn(TYPES, requested) ? requested as InquiryType : 'component';
   return <div className="contact-page">
-    <section className="bg-[#191919]">
+    <section className="bg-[#1F1F1D]">
       <div className="site-shell section-pad grid lg:grid-cols-2 gap-10 items-center">
         <div className="max-w-[42rem]"><h1 className="hero-title text-white font-medium mb-5">Start with your requirement</h1>
           <p className="text-base md:text-lg text-white/70">A standard component, a custom solution or recurring supply. Prepare a short brief from the information you have.</p>
@@ -159,11 +163,11 @@ export default function Contact() {
       <div><h2 className="h2-orig mb-6">Prepare an inquiry</h2><InquiryForm key={search} reference={reference} type={type} /></div>
       <aside className="inquiry-aside">
         <span className="inquiry-brand-rule" aria-hidden="true" />
-        <h2 className="text-xl font-medium mb-4">Keep the first step simple</h2>
-        <p>A current reference and a short description are enough to begin. You can clarify technical details, quantities and approvals in the next conversation.</p>
-        <div className="border-t border-black/15 mt-7 pt-7"><h3 className="font-medium mb-3">Local preparation only</h3>
-          <p>The website is not connected to a mailbox or submission service yet. Use your existing Komponia or WTS contact to share the draft.</p>
-          <p className="mt-3">This form does not send messages, upload files or place orders. Reloading or leaving the page clears your entries.</p>
+        <h2 className="text-xl font-medium mb-4">Talk to Komponia.</h2>
+        <CompanyDetails director />
+        <div className="border-t border-black/15 mt-7 pt-7"><h3 className="font-medium mb-3">Keep the first step simple.</h3>
+          <p>A current reference and a short description are enough to begin. Call us directly or prepare your inquiry here and send it through your email app.</p>
+          <p className="mt-3">This page prepares a draft; it does not send it automatically. Reloading or leaving the page clears your entries.</p>
         </div>
         <Link to="/how-ordering-works" className="arrow-link mt-7">See the next steps <ArrowRight size={18} aria-hidden="true" /></Link>
       </aside>

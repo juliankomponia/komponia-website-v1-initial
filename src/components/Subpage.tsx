@@ -106,7 +106,7 @@ export function CardGrid({
           <>
             {c.img && <img src={c.img} alt="" loading="lazy" className="w-full object-cover object-top rounded-none" style={{ aspectRatio: '8.4/5' }} />}
             <span className="flex flex-col flex-1 p-6 md:p-8 text-left">
-              <span className="font-bold text-black text-[1.25rem] leading-[1.5rem] md:text-[1.375rem] md:leading-[1.625rem] mb-3">{c.title}</span>
+              <span className="brand-card-title font-bold text-black text-[1.25rem] leading-[1.5rem] md:text-[1.375rem] md:leading-[1.625rem] mb-3">{c.title}</span>
               <span className="block text-base md:text-[1.125rem] mb-6" style={{ color: '#262626' }}>{c.text}</span>
               {c.link && <span className="mt-auto font-bold text-brand-blue text-base md:text-[1.125rem]">{c.link}</span>}
             </span>

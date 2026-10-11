@@ -110,7 +110,7 @@ export default function Header() {
                   onClick={() => setOpen(i)}
                   aria-expanded={open === i}
                   aria-controls={`navigation-panel-${i}`}
-                  className={`header-nav-trigger px-4 h-[64px] text-[15px] font-medium transition-shadow ${open === i ? 'shadow-[inset_0_-3px_0_#0071E3]' : ''}`}
+                  className={`header-nav-trigger px-4 h-[64px] text-[15px] font-medium transition-shadow ${open === i ? 'shadow-[inset_0_-3px_0_#3E5AF5]' : ''}`}
                 >
                   {item.label}
                 </button>

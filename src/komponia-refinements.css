@@ -1,12 +1,32 @@
-/* Selected Komponia details. Template colours, Poppins and component shapes remain authoritative. */
+/* Komponia brand tokens and typography within the established page layouts. */
+@font-face {
+  font-family: 'Sora';
+  src: url('./assets/fonts/sora-var.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+}
+:root {
+  --komponia-blue: #3E5AF5;
+  --komponia-ink: #1F1F1D;
+  --komponia-lavender: #D4B9F3;
+  --komponia-yellow: #F7D44B;
+}
+h1, h2, h3, main .h2-orig, main .hero-title, .cap-card .cap-title, main .brand-card-title, .step-title {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
+.section-lead p { color: #4C5057; line-height: 1.65; }
 .komponia-label {
-  --komponia-rule: #3e5af5;
+  --komponia-rule: var(--komponia-blue);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
   margin: 0 0 24px;
   color: #4c5057;
+  font-family: 'Sora', sans-serif;
   font-size: 11px;
   font-weight: 500;
   line-height: 1.5;
@@ -20,7 +40,7 @@
 /* Home hero: full-width imagery with a quiet, readable text area. */
 .home-page .home-hero {
   --home-hero-accent: #fff;
-  position: relative; isolation: isolate; overflow: hidden; color: #fff; background: #1f2223;
+  position: relative; isolation: isolate; overflow: hidden; color: #fff; background: #1F1F1D;
   min-height: clamp(680px, calc(100svh - 98px), 860px); touch-action: pan-y;
 }
 /* Match the header's scroll state with the approved Komponia lavender accent. */
@@ -67,8 +87,8 @@
 .home-page .home-hero-point svg { flex: 0 0 16px; margin-top: 4px; color: var(--home-hero-accent); transition: color .2s ease; }
 .home-page .home-hero-point strong { color: #fff; font-weight: 500; }
 .home-page .home-hero .hero-actions { gap: 24px; }
-.home-page .home-hero-primary { min-height: 46px; padding: 12px 18px; background: #fff; color: #1f2223; font-size: 14px; }
-.home-page .home-hero-primary:hover { background: #e9eaea; color: #1f2223; }
+.home-page .home-hero-primary { min-height: 46px; padding: 12px 18px; background: #fff; color: #1F1F1D; font-size: 14px; }
+.home-page .home-hero-primary:hover { background: #e9eaea; color: #1F1F1D; }
 .home-page .home-hero-secondary { min-height: 46px; padding: 12px 0; background: transparent; color: #fff; font-size: 14px; }
 .home-page .home-hero-secondary:hover { background: transparent; color: #fff; text-decoration: underline; text-underline-offset: 4px; }
 .home-page .home-hero .hero-actions a:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
@@ -105,7 +125,7 @@
 .generic-page .generic-table-wrap--wide .generic-table { min-width: 600px; }
 /* Keep the supplied raster intact. Crop its sheet edges and small embedded
    tagline in CSS; retain the complete four-colour mark and wordmark. */
-.site-header, .site-footer { background-color: #1f2223; isolation: isolate; }
+.site-header, .site-footer { background-color: #1F1F1D; isolation: isolate; }
 .site-logo { min-height: 48px; }
 .site-logo-window { display: block; position: relative; width: 176px; height: 44px; overflow: hidden; }
 .site-logo-window img {
@@ -116,7 +136,7 @@
 }
 .site-footer .site-logo { width: fit-content; }
 .site-header a:focus-visible, .site-footer a:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
-.site-header .navigation-panel a:focus-visible { outline-color: #0071e3; }
+.site-header .navigation-panel a:focus-visible { outline-color: #3E5AF5; }
 /* Matched transparent lockups from the supplied design package keep the header
    clean in both states. The display filter only inverts the monochrome artwork. */
 .site-header {
@@ -130,11 +150,11 @@
   transition: background-color .22s ease, color .22s ease, border-color .22s ease, box-shadow .22s ease;
 }
 .site-header[data-scrolled="true"] {
-  --header-text: #191919;
+  --header-text: #1F1F1D;
   --header-muted: #4c5057;
   --header-label: #626770;
   --header-line: rgba(25,25,25,.12);
-  --header-hover: #0071e3;
+  --header-hover: #3E5AF5;
   background-color: #fff;
   box-shadow: 0 4px 16px rgba(0,0,0,.07);
 }
@@ -160,7 +180,7 @@
 .header-mobile-link { color: var(--header-muted); }
 .header-mobile-label { color: var(--header-label); }
 .site-header button:focus-visible { outline: 2px solid #fff; outline-offset: -4px; }
-.site-header[data-scrolled="true"] a:focus-visible, .site-header[data-scrolled="true"] button:focus-visible { outline-color: #0071e3; }
+.site-header[data-scrolled="true"] a:focus-visible, .site-header[data-scrolled="true"] button:focus-visible { outline-color: #3E5AF5; }
 @media (prefers-reduced-motion: reduce) {
   .site-header, .header-nav-trigger, .header-menu-trigger, .site-header .site-logo-window--adaptive img { transition: none; }
 }
@@ -182,3 +202,41 @@
   .generic-page .generic-table th, .generic-page .generic-table td { padding-right: 16px; }
 }
 @media print { .komponia-label::before { display: none; } }
+
+/* Colour and rhythm from Komponia; the established grids remain in place. */
+.home-capabilities > .wrap-orig > .komponia-label,
+.home-quality > .wrap-orig > .komponia-label { align-items: center; }
+.home-quality { background: #F8F3FE; }
+.home-quality .quality-card { background: #fff; }
+.home-quality .quality-card:hover { background: #EFE6FC; }
+.home-quality .quality-card > svg {
+  width: 64px; height: 64px; padding: 12px;
+  color: var(--komponia-ink); background: var(--komponia-lavender); border-radius: 14px;
+}
+.partnership-steps {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px; list-style: none; margin: 0; padding: 0;
+}
+.partnership-steps > li { min-width: 0; border-top: 1px solid #D5D8DF; padding-top: 24px; }
+.partnership-number {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; margin-bottom: 20px; border-radius: 10px;
+  background: var(--komponia-yellow); color: var(--komponia-ink); font: 600 13px 'Sora', sans-serif;
+}
+.partnership-steps h3 { color: #1F1F1D; font-size: 19px; line-height: 1.4; margin-bottom: 20px; }
+.partnership-steps dl { display: grid; gap: 18px; }
+.partnership-steps dt { color: #1F1F1D; font-size: 13px; font-weight: 600; margin-bottom: 5px; }
+.partnership-steps dd { color: #4C5057; font-size: 14px; line-height: 1.65; }
+.company-address { font-style: normal; font-size: 14px; line-height: 1.8; }
+.company-address a { text-underline-offset: 4px; }
+.company-address a:hover { text-decoration: underline; }
+@media (min-width: 1280px) {
+  .partnership-steps h3 { min-height: 2.8em; }
+  .partnership-steps dl > div { min-height: 6.5em; }
+}
+@media (max-width: 1023px) {
+  .partnership-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+}
+@media (max-width: 639px) {
+  .partnership-steps { grid-template-columns: 1fr; gap: 32px; }
+}

@@ -9,6 +9,12 @@ import pressureSwitches from '../assets/industrial/pressure-switches.webp';
 import temperatureController from '../assets/industrial/temperature-controller.webp';
 import temperatureProbe from '../assets/industrial/temperature-probe.webp';
 import tubularHeater from '../assets/industrial/tubular-heater.webp';
+import coreOem from '../assets/industrial/brand-20261011/core-oem.webp';
+import coreComponents from '../assets/industrial/brand-20261011/core-components.webp';
+import coreEngineering from '../assets/industrial/brand-20261011/core-engineering.webp';
+import coreSupply from '../assets/industrial/brand-20261011/core-supply.webp';
+
+export const CORE_SERVICE_IMAGES = [coreOem, coreComponents, coreEngineering, coreSupply];
 
 export const INDUSTRIAL_IMAGES = {
   heroComponents,

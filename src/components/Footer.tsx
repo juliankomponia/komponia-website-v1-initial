@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import { Logo } from './Header';
 import { FOOTER_COLUMNS } from '../data/navigation';
+import CompanyDetails from './CompanyDetails';
 
 export default function Footer() {
   return (
@@ -10,6 +11,7 @@ export default function Footer() {
           {/* Logo */}
           <div className="w-full xl:w-auto xl:flex-[2] mt-2 mb-8 xl:mb-0">
             <Logo />
+            <div className="mt-5 pr-6"><CompanyDetails /></div>
           </div>
           {/* Link columns */}
           {FOOTER_COLUMNS.map((col) => (

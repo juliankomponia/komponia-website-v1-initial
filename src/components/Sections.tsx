@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import { ArrowRight, ChevronLeft, ChevronRight, ChevronUp, ClipboardList, Ruler, FileCheck } from 'lucide-react';
 import { IMG } from '../data/site';
 import { HOME_CONTENT as H } from '../data/home';
-import { INDUSTRIAL_IMAGES as I } from '../data/images';
+import { INDUSTRIAL_IMAGES as I, CORE_SERVICE_IMAGES } from '../data/images';
 import BrandLabel from './BrandLabel';
 
 export function SectionLead({ title, children }: { title: string; children?: React.ReactNode }) {
@@ -13,7 +13,7 @@ export function SectionLead({ title, children }: { title: string; children?: Rea
 
 export function CapabilitiesCards({ core = false }: { core?: boolean } = {}) {
   const images = core
-    ? [I.heroComponents, I.controllers, I.customEngineering, I.ongoingSupply]
+    ? CORE_SERVICE_IMAGES
     : [IMG.capCnc, IMG.cap3dp, IMG.capSmf, IMG.capIm];
   const cards = core ? H.capabilities.coreCards : H.capabilities.cards;
   return <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 justify-center">
@@ -33,6 +33,25 @@ export function OrderingProcess() {
     <div className="progress-line">{H.process.steps.map(s => <div key={s.title} className="progress-step">
       <span className="dot"/><div className="step-title">{s.title}</div><div className="step-text">{s.text}</div>
     </div>)}</div>
+  </div>;
+}
+
+export function PartnershipProcess() {
+  const process = H.partnership;
+  return <div className="partnership-process">
+    <SectionLead title={process.title}>{process.intro}</SectionLead>
+    <ol className="partnership-steps">
+      {process.steps.map((step, index) => <li key={step.title}>
+        <span className="partnership-number" aria-hidden="true">0{index + 1}</span>
+        <h3>{step.title}</h3>
+        <dl>
+          <div><dt>You bring</dt><dd>{step.input}</dd></div>
+          <div><dt>We coordinate</dt><dd>{step.work}</dd></div>
+          <div><dt>The result</dt><dd>{step.result}</dd></div>
+        </dl>
+      </li>)}
+    </ol>
+    <div className="text-center mt-8"><Link to={process.cta.to} className="arrow-link">{process.cta.label}<ArrowRight size={20} aria-hidden="true"/></Link></div>
   </div>;
 }
 
@@ -82,9 +101,9 @@ export function PartsGallery(){return <Gallery slides={H['component-fields'].car
 
 export function QualityStandards(){
   const icons=[ClipboardList,Ruler,FileCheck];
-  return <div className="grid grid-cols-1 md:grid-cols-3 gap-4">{H.quality.cards.map((c,i)=>{const Icon=icons[i];return <Link to={c.to} key={c.title} className="rounded-[1rem] p-6 md:p-8 flex flex-col transition-colors hover:bg-black/[0.08]" style={{backgroundColor:'rgba(0,0,0,0.03)'}}>
+  return <div className="grid grid-cols-1 md:grid-cols-3 gap-4">{H.quality.cards.map((c,i)=>{const Icon=icons[i];return <Link to={c.to} key={c.title} className="quality-card rounded-[1rem] p-6 md:p-8 flex flex-col transition-colors bg-black/[0.03] hover:bg-black/[0.08]">
     <Icon size={104} strokeWidth={1.2} aria-hidden="true" className="h-[6.5rem] max-w-[9rem] text-brand-blue mb-8 self-start"/>
-    <span className="font-bold text-black text-[1.25rem] leading-[1.5rem] md:text-[1.375rem] md:leading-[1.625rem]">{c.title}</span>
+    <span className="brand-card-title font-bold text-black text-[1.25rem] leading-[1.5rem] md:text-[1.375rem] md:leading-[1.625rem]">{c.title}</span>
     <span className="block mt-4 mb-6 text-base md:text-[1.125rem]" style={{color:'#262626'}}>{c.text}</span>
     <span className="mt-auto font-bold text-brand-blue text-base md:text-[1.125rem] inline-flex">{c.link}</span>
   </Link>;})}</div>;
@@ -96,6 +115,6 @@ export function IndustriesSection(){
 
 export function ProtolabsBanner(){return <FeatureRow title={H.heritage.title} text={H.heritage.intro} img={I.pressureSwitches} imgAlt="Illustrative pressure and switching components" link={{label:'About Komponia',to:'/about'}}/>;}
 export function ProductionSection(){const s=H['recurring-supply'];return <FeatureRow eyebrow="Ongoing supply" title={s.title} text={s.intro} img={I.ongoingSupply} imgAlt="Illustrative preparation of recurring component deliveries" flip link={{label:'Explore recurring supply',to:'/production-orders'}}/>;}
-export function ProductionInfographic(){const s=H['supply-terms'];return <div className="grid lg:grid-cols-2 items-stretch" style={{backgroundColor:'#E6F1FC'}}><div className="p-8 md:p-14"><h2 className="text-[1.25rem] leading-[1.5rem] md:text-[1.375rem] md:leading-[1.625rem] font-bold mb-4" style={{color:'rgba(0,0,0,0.85)'}}>{s.title}</h2><p className="text-[15px] leading-relaxed mb-8" style={{color:'rgba(0,0,0,0.69)'}}>{s.intro}</p><Link to={s.cta.to} className="arrow-link">{s.cta.label}<ArrowRight size={20}/></Link></div><div className="p-8 md:p-14 border-t lg:border-t-0 lg:border-l border-black/10"><BrandLabel>Supply terms to agree</BrandLabel><dl className="grid sm:grid-cols-2 gap-x-8 gap-y-6">{s.topics.map(topic=><div key={topic.title}><dt className="font-medium text-brand-heading mb-2">{topic.title}</dt><dd className="text-[14px] leading-relaxed text-brand-body">{topic.text}</dd></div>)}</dl></div></div>;}
+export function ProductionInfographic(){const s=H['supply-terms'];return <div className="grid lg:grid-cols-2 items-stretch" style={{backgroundColor:'#EEF1FE'}}><div className="p-8 md:p-14"><h2 className="text-[1.25rem] leading-[1.5rem] md:text-[1.375rem] md:leading-[1.625rem] font-bold mb-4" style={{color:'rgba(0,0,0,0.85)'}}>{s.title}</h2><p className="text-[15px] leading-relaxed mb-8" style={{color:'rgba(0,0,0,0.69)'}}>{s.intro}</p><Link to={s.cta.to} className="arrow-link">{s.cta.label}<ArrowRight size={20}/></Link></div><div className="p-8 md:p-14 border-t lg:border-t-0 lg:border-l border-black/10"><BrandLabel>Supply terms to agree</BrandLabel><dl className="grid sm:grid-cols-2 gap-x-8 gap-y-6">{s.topics.map(topic=><div key={topic.title}><dt className="font-medium text-brand-heading mb-2">{topic.title}</dt><dd className="text-[14px] leading-relaxed text-brand-body">{topic.text}</dd></div>)}</dl></div></div>;}
 export function ReviewsSection(){return null;}
-export function DarkCta({message='Have a part number, drawing or application in mind?',label='Prepare an inquiry',to='/contact'}:{message?:string;label?:string;to?:string}={}){return <section className="dark-cta text-center" style={{backgroundColor:'#191919'}}><div className="wrap-orig py-16 md:py-24"><h2 className="h2-orig text-white max-w-[48rem] mx-auto mb-6">{message}</h2><Link to={to} className="btn-primary">{label}</Link></div></section>;}
+export function DarkCta({message='Have a part number, drawing or application in mind?',label='Prepare an inquiry',to='/contact'}:{message?:string;label?:string;to?:string}={}){return <section className="dark-cta text-center" style={{backgroundColor:'#1F1F1D'}}><div className="wrap-orig py-16 md:py-24"><h2 className="h2-orig text-white max-w-[48rem] mx-auto mb-6">{message}</h2><Link to={to} className="btn-primary">{label}</Link></div></section>;}

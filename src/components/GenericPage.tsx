@@ -114,7 +114,7 @@ export default function GenericPage({ page }: { page: GenericPageData }) {
   return (
     <div className="generic-page">
       {/* dark hero */}
-      <section style={{ backgroundColor: '#191919' }}>
+      <section style={{ backgroundColor: '#1F1F1D' }}>
         <div className="site-shell py-12 md:py-16 grid lg:grid-cols-2 gap-10 items-center">
           <div className="generic-hero-copy">
             <BrandLabel inverse>{industry ? 'Application requirements' : page.route.startsWith('guides') ? 'Technical guides' : 'Komponia'}</BrandLabel>

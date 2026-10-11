@@ -1,0 +1,49 @@
+Komponia – Markenabgleich und Kontakt
+Stand: 11. Oktober 2026
+
+Autorisierung
+Der Nutzer hat dem vorgeschlagenen Paket zugestimmt: Designsystem stärker
+verwenden, Startseite straffen und vier einheitliche Higgsfield-Motive erstellen.
+Firmenangaben, Hauptdomain, E-Mail und Telefon wurden direkt im Chat bestätigt.
+
+Umsetzung
+- Lokale Sora-Schrift für Überschriften; Komponia-Blau/Ink und Zustandsfarben.
+  OFL-Lizenz liegt im Quellpaket und wird unter /fonts/OFL-Sora.txt ausgeliefert.
+- Vier Kernleistungen unter Our capabilities; Fertigungsverfahren weiterhin
+  als zweite Reihe. Doppelte Angebots-/OEM-/Partner-/Anforderungsblöcke entfallen
+  auf der Homepage. Bestehende Unterseiten und Daten bleiben erreichbar.
+- Ablauf in vier Schritten: Kundeninput, Komponia-Arbeit, Ergebnis.
+- Lavendel für Lab/Qualität, Gelb sparsam für Prozessnummern.
+- Vier konzeptionelle Industriebilder über Higgsfield, GPT Image 2.5,
+  Qualität high, 1k. WebP-Dateien zusammen 161104 Bytes. Job-IDs, Quellen und
+  Prompts: src/assets/industrial/brand-20261011/manifest.json.
+- Komponia-Brand-Kit: f8f2de78-33c7-4395-924e-8307cb86a1e0.
+- Firmenangaben zentral in src/data/company.ts, Kontaktseite und Footer.
+- Anfrageentwurf öffnet das eigene Mailprogramm mit Empfänger, Betreff und
+  kodiertem Text. Kopieren/Download als Alternative. Noch kein Website-Backend.
+
+Markenquelle
+Komponia_Design_fin im separaten lokalen Komponia_Website_final-Repository:
+Farben, Typografie, Eyebrows und reduzierte Bildsprache. Bestehende Hero-Bilder,
+Logo, Grundraster, Menüs und Scrollwechsel erhalten. Vite versieht Änderungen
+an CSS, Schrift und Medien automatisch mit neuen Inhalts-Hashes.
+
+Prüfung
+- Produktionsbuild (TypeScript und Vite) erfolgreich.
+- ESLint für alle geänderten TypeScript-/React-Dateien erfolgreich.
+- Homepage und Kontaktseite bei 1440 und 390 Pixeln geprüft.
+- OEM, Komponentenübersicht, Controller-Kategorie, CNC, Qualität/Lab und About
+  bei 1440 und 390 Pixeln: kein horizontaler Überlauf, keine defekten Bilder;
+  neue Sora-Überschriften aktiv. Keine Browser-Konsolenfehler beobachtet.
+- Bildserie, Prozess, Lab-Akzente und Kontaktlayout visuell geprüft.
+- Formular: Pflichtfelder, OEM-Auswahl, Entwurf, Zeilenumbrüche und Sonderzeichen
+  (Umlaut, & und #) im Mail-Link geprüft. Empfänger und Telefonziel korrekt.
+  Testeingaben anschließend gelöscht. Kein Mailprogramm geöffnet, keine Mail
+  gesendet; tatsächliche Zustellung bleibt ungetestet.
+- Bekannter nicht blockierender Build-Hinweis: Haupt-JavaScript über 500 KB
+  unkomprimiert (rund 140 KB gzip). Keine zusätzliche Bibliothek installiert.
+
+Offen für Veröffentlichung
+Siehe PUBLICATION_PREPARATION.txt. Hosting, Domainanbindung, öffentliche
+Rechtstexte und Indexierung sind noch nicht umgesetzt. Keine Veröffentlichung
+oder DNS-Änderung in diesem Arbeitsschritt.

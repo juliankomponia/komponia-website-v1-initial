@@ -43,7 +43,7 @@
   padding: 0 20px;
   border-bottom: 3px solid transparent;
   box-sizing: border-box;
-  color: #191919;
+  color: #1F1F1D;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -56,16 +56,16 @@
 }
 
 .page-sections__link:hover {
-  color: #0071e3;
+  color: #3E5AF5;
 }
 
 .page-sections__link[aria-current='location'] {
-  color: #0071e3;
-  border-bottom-color: #0071e3;
+  color: #3E5AF5;
+  border-bottom-color: #3E5AF5;
 }
 
 .page-sections__link:focus-visible {
-  outline: 2px solid #0071e3;
+  outline: 2px solid #3E5AF5;
   outline-offset: -5px;
 }
 
