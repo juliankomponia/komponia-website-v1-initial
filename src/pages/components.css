@@ -140,7 +140,7 @@
   .components-category-media img { width: 100%; max-height: 420px; object-fit: contain; }
 }
 
-/* Centre the square studio images in the existing landscape image slots. */
-.components-reference .components-category-media img { aspect-ratio: 16/10; object-fit: cover; object-position: center; }
+/* Keep the neutral product cutouts complete in every existing image slot. */
+.components-reference .components-category-media img { aspect-ratio: 16/10; object-fit: contain; object-position: center; background: #f7f7f7; }
 .components-reference .components-detail-photo,
-.components-reference .components-detail-mobile-photo img { object-fit: cover; object-position: center; }
+.components-reference .components-detail-mobile-photo img { object-fit: contain; object-position: center; background: #f7f7f7; }

@@ -1,0 +1,366 @@
+{
+  "date": "2026-10-11",
+  "provider": "Higgsfield",
+  "model": "gpt_image_2_5",
+  "purpose": "Consistent neutral component packshots and a dark product hero following the Hubs homepage visual structure.",
+  "provenance": "Generated illustrative component examples; not exact manufacturer product photos.",
+  "images": [
+    {
+      "index": 1,
+      "job_id": "71a641bd-5cac-431e-8ca4-0f0c7a587faa",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_141629_71a641bd-5cac-431e-8ca4-0f0c7a587faa.png",
+      "name": "controller",
+      "file": "controller.webp",
+      "request": {
+        "model": "gpt_image_2_5",
+        "count": 1,
+        "variant": "flare",
+        "quality": "xhigh",
+        "resolution": "2k",
+        "background": "transparent",
+        "aspect_ratio": "1:1",
+        "medias": [
+          {
+            "role": "image",
+            "value": "24429d5f-2f0e-4da7-946a-2ad31282458d"
+          }
+        ],
+        "prompt": "Edit the supplied component photograph for ONE CONSISTENT industrial catalogue series. Preserve the exact component geometry, connections, physical details and camera perspective. Remove the entire coloured background, floor, back wall and all coloured cast onto the objects. Render the subject isolated on a truly TRANSPARENT alpha background, including a small very soft neutral contact shadow directly beneath it. No opaque background, no horizon line, no colour panels. Neutral 5500K large softbox light from upper left, restrained natural metal highlights, matte black plastic, real machining texture. No dramatic highlights, exaggerated polish, text, logos or added props. The result must look like a professionally photographed real engineering sample, not a CGI rendering. Keep the complete subject inside the central 80 percent of the width and central 58 percent of the height, with equal clear top and bottom margins. Maintain the source object count and all sensible physical connections. "
+      },
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "output_dimensions": [
+        1600,
+        1600
+      ],
+      "output_bytes": 162880,
+      "sha256": "614218f8f7cc54ed5cb4a661b2c78140edb953f070816335035ea58b0c6cad35"
+    },
+    {
+      "index": 2,
+      "job_id": "ac6bebfb-c373-49b4-8c88-bc38cee89e8c",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_141627_ac6bebfb-c373-49b4-8c88-bc38cee89e8c.png",
+      "name": "probe",
+      "file": "probe.webp",
+      "request": {
+        "model": "gpt_image_2_5",
+        "count": 1,
+        "variant": "flare",
+        "quality": "xhigh",
+        "resolution": "2k",
+        "background": "transparent",
+        "aspect_ratio": "1:1",
+        "medias": [
+          {
+            "role": "image",
+            "value": "0a42a11f-4fb9-4714-875c-0549c9be37d5"
+          }
+        ],
+        "prompt": "Edit the supplied component photograph for ONE CONSISTENT industrial catalogue series. Preserve the exact component geometry, connections, physical details and camera perspective. Remove the entire coloured background, floor, back wall and all coloured cast onto the objects. Render the subject isolated on a truly TRANSPARENT alpha background, including a small very soft neutral contact shadow directly beneath it. No opaque background, no horizon line, no colour panels. Neutral 5500K large softbox light from upper left, restrained natural metal highlights, matte black plastic, real machining texture. No dramatic highlights, exaggerated polish, text, logos or added props. The result must look like a professionally photographed real engineering sample, not a CGI rendering. Keep the complete subject inside the central 80 percent of the width and central 58 percent of the height, with equal clear top and bottom margins. Maintain the source object count and all sensible physical connections. "
+      },
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "output_dimensions": [
+        1600,
+        1600
+      ],
+      "output_bytes": 148734,
+      "sha256": "17e2ec6b261bb2a3c2bc60881bad8763021a2548b861495bd2f2749130ab36ba"
+    },
+    {
+      "index": 3,
+      "job_id": "c94d7aeb-784e-49e6-9181-ff20b8eee958",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_141628_c94d7aeb-784e-49e6-9181-ff20b8eee958.png",
+      "name": "heater",
+      "file": "heater.webp",
+      "request": {
+        "model": "gpt_image_2_5",
+        "count": 1,
+        "variant": "flare",
+        "quality": "xhigh",
+        "resolution": "2k",
+        "background": "transparent",
+        "aspect_ratio": "1:1",
+        "medias": [
+          {
+            "role": "image",
+            "value": "811f6f20-2aac-4e9a-956a-1c9dbbb3d027"
+          }
+        ],
+        "prompt": "Edit the supplied component photograph for ONE CONSISTENT industrial catalogue series. Preserve the exact component geometry, connections, physical details and camera perspective. Remove the entire coloured background, floor, back wall and all coloured cast onto the objects. Render the subject isolated on a truly TRANSPARENT alpha background, including a small very soft neutral contact shadow directly beneath it. No opaque background, no horizon line, no colour panels. Neutral 5500K large softbox light from upper left, restrained natural metal highlights, matte black plastic, real machining texture. No dramatic highlights, exaggerated polish, text, logos or added props. The result must look like a professionally photographed real engineering sample, not a CGI rendering. Keep the complete subject inside the central 80 percent of the width and central 58 percent of the height, with equal clear top and bottom margins. Maintain the source object count and all sensible physical connections. "
+      },
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "output_dimensions": [
+        1600,
+        1600
+      ],
+      "output_bytes": 184600,
+      "sha256": "9f6ca82c9040aaccbf6634b93e8eac308aa6eb83e4c5a56668f07a8dbff09689"
+    },
+    {
+      "index": 4,
+      "job_id": "39c9333c-7752-4c97-a6c8-81077d048dd9",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_141628_39c9333c-7752-4c97-a6c8-81077d048dd9.png",
+      "name": "pressure-switch",
+      "file": "pressure-switch.webp",
+      "request": {
+        "model": "gpt_image_2_5",
+        "count": 1,
+        "variant": "flare",
+        "quality": "xhigh",
+        "resolution": "2k",
+        "background": "transparent",
+        "aspect_ratio": "1:1",
+        "medias": [
+          {
+            "role": "image",
+            "value": "92b6c712-5dc0-47d7-8c9a-3f0b5fdea7de"
+          }
+        ],
+        "prompt": "Edit the supplied component photograph for ONE CONSISTENT industrial catalogue series. Preserve the exact component geometry, connections, physical details and camera perspective. Remove the entire coloured background, floor, back wall and all coloured cast onto the objects. Render the subject isolated on a truly TRANSPARENT alpha background, including a small very soft neutral contact shadow directly beneath it. No opaque background, no horizon line, no colour panels. Neutral 5500K large softbox light from upper left, restrained natural metal highlights, matte black plastic, real machining texture. No dramatic highlights, exaggerated polish, text, logos or added props. The result must look like a professionally photographed real engineering sample, not a CGI rendering. Keep the complete subject inside the central 80 percent of the width and central 58 percent of the height, with equal clear top and bottom margins. Maintain the source object count and all sensible physical connections. "
+      },
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "output_dimensions": [
+        1600,
+        1600
+      ],
+      "output_bytes": 259208,
+      "sha256": "01bd970efbdbaa0aff1e8f741d8fd1f07c9413f68cf62e6c157e382aea8013da"
+    },
+    {
+      "index": 5,
+      "job_id": "3d42f942-a2ef-4ba4-8be8-1cb7f231d1ca",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_141630_3d42f942-a2ef-4ba4-8be8-1cb7f231d1ca.png",
+      "name": "core-oem",
+      "file": "core-oem.webp",
+      "request": {
+        "model": "gpt_image_2_5",
+        "count": 1,
+        "variant": "flare",
+        "quality": "xhigh",
+        "resolution": "2k",
+        "background": "transparent",
+        "aspect_ratio": "3:2",
+        "medias": [
+          {
+            "role": "image",
+            "value": "1df7cb44-4c1b-413f-bacd-2e72899be97e"
+          }
+        ],
+        "prompt": "Edit the supplied component photograph for ONE CONSISTENT industrial catalogue series. Preserve the exact component geometry, connections, physical details and camera perspective. Remove the entire coloured background, floor, back wall and all coloured cast onto the objects. Render the subject isolated on a truly TRANSPARENT alpha background, including a small very soft neutral contact shadow directly beneath it. No opaque background, no horizon line, no colour panels. Neutral 5500K large softbox light from upper left, restrained natural metal highlights, matte black plastic, real machining texture. No dramatic highlights, exaggerated polish, text, logos or added props. The result must look like a professionally photographed real engineering sample, not a CGI rendering. Keep the complete subject inside the central 80 percent of the width and central 58 percent of the height, with equal clear top and bottom margins. Maintain the source object count and all sensible physical connections. "
+      },
+      "source_dimensions": [
+        2048,
+        1360
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "output_dimensions": [
+        1600,
+        1063
+      ],
+      "output_bytes": 208834,
+      "sha256": "d7ed5bdad838d057dc2a80bdf478aab7443f4e17c5937709db77dffbf100a2b2"
+    },
+    {
+      "index": 6,
+      "job_id": "c21dc963-7a59-4d59-b286-da164a866b91",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_141628_c21dc963-7a59-4d59-b286-da164a866b91.png",
+      "name": "core-components",
+      "file": "core-components.webp",
+      "request": {
+        "model": "gpt_image_2_5",
+        "count": 1,
+        "variant": "flare",
+        "quality": "xhigh",
+        "resolution": "2k",
+        "background": "transparent",
+        "aspect_ratio": "3:2",
+        "medias": [
+          {
+            "role": "image",
+            "value": "71faeb9b-36d1-49b6-a818-7c3077b45f7b"
+          }
+        ],
+        "prompt": "Edit the supplied component photograph for ONE CONSISTENT industrial catalogue series. Preserve the exact component geometry, connections, physical details and camera perspective. Remove the entire coloured background, floor, back wall and all coloured cast onto the objects. Render the subject isolated on a truly TRANSPARENT alpha background, including a small very soft neutral contact shadow directly beneath it. No opaque background, no horizon line, no colour panels. Neutral 5500K large softbox light from upper left, restrained natural metal highlights, matte black plastic, real machining texture. No dramatic highlights, exaggerated polish, text, logos or added props. The result must look like a professionally photographed real engineering sample, not a CGI rendering. Keep the complete subject inside the central 80 percent of the width and central 58 percent of the height, with equal clear top and bottom margins. Maintain the source object count and all sensible physical connections. "
+      },
+      "source_dimensions": [
+        2048,
+        1360
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "output_dimensions": [
+        1600,
+        1063
+      ],
+      "output_bytes": 379328,
+      "sha256": "0ab7fa4516e86dad9379293ef1ab60b4020702481a8233a479e863c67943bc4c"
+    },
+    {
+      "index": 7,
+      "job_id": "f4cf28f1-32ab-4088-bc06-a56c7fda6d58",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_141637_f4cf28f1-32ab-4088-bc06-a56c7fda6d58.png",
+      "name": "core-engineering",
+      "file": "core-engineering.webp",
+      "request": {
+        "model": "gpt_image_2_5",
+        "count": 1,
+        "variant": "flare",
+        "quality": "xhigh",
+        "resolution": "2k",
+        "background": "transparent",
+        "aspect_ratio": "3:2",
+        "medias": [
+          {
+            "role": "image",
+            "value": "f77cf50a-5d30-4fa3-b571-1fee4d13e449"
+          }
+        ],
+        "prompt": "Edit the supplied component photograph for ONE CONSISTENT industrial catalogue series. Preserve the exact component geometry, connections, physical details and camera perspective. Remove the entire coloured background, floor, back wall and all coloured cast onto the objects. Render the subject isolated on a truly TRANSPARENT alpha background, including a small very soft neutral contact shadow directly beneath it. No opaque background, no horizon line, no colour panels. Neutral 5500K large softbox light from upper left, restrained natural metal highlights, matte black plastic, real machining texture. No dramatic highlights, exaggerated polish, text, logos or added props. The result must look like a professionally photographed real engineering sample, not a CGI rendering. Keep the complete subject inside the central 80 percent of the width and central 58 percent of the height, with equal clear top and bottom margins. Maintain the source object count and all sensible physical connections. Keep the white technical drawing sheet but remove the yellow mat and all coloured studio surfaces. "
+      },
+      "source_dimensions": [
+        2048,
+        1360
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "output_dimensions": [
+        1600,
+        1063
+      ],
+      "output_bytes": 246532,
+      "sha256": "039627429248dd806b49023560c8882532959a4b2345bfd09aa20d0d91d7d0e5"
+    },
+    {
+      "index": 8,
+      "job_id": "edd27677-45c9-453a-8ef7-2a20c0046270",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_141637_edd27677-45c9-453a-8ef7-2a20c0046270.png",
+      "name": "core-supply",
+      "file": "core-supply.webp",
+      "request": {
+        "model": "gpt_image_2_5",
+        "count": 1,
+        "variant": "flare",
+        "quality": "xhigh",
+        "resolution": "2k",
+        "background": "transparent",
+        "aspect_ratio": "3:2",
+        "medias": [
+          {
+            "role": "image",
+            "value": "30a583b3-0083-4aca-82bb-36c888e5d416"
+          }
+        ],
+        "prompt": "Edit the supplied component photograph for ONE CONSISTENT industrial catalogue series. Preserve the exact component geometry, connections, physical details and camera perspective. Remove the entire coloured background, floor, back wall and all coloured cast onto the objects. Render the subject isolated on a truly TRANSPARENT alpha background, including a small very soft neutral contact shadow directly beneath it. No opaque background, no horizon line, no colour panels. Neutral 5500K large softbox light from upper left, restrained natural metal highlights, matte black plastic, real machining texture. No dramatic highlights, exaggerated polish, text, logos or added props. The result must look like a professionally photographed real engineering sample, not a CGI rendering. Keep the complete subject inside the central 80 percent of the width and central 58 percent of the height, with equal clear top and bottom margins. Maintain the source object count and all sensible physical connections. "
+      },
+      "source_dimensions": [
+        2048,
+        1360
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "output_dimensions": [
+        1600,
+        1063
+      ],
+      "output_bytes": 208520,
+      "sha256": "9d816c3fe73317bbf79f1808f121abb59cdc297d578455038bf629e3cabb1ff9"
+    },
+    {
+      "index": 9,
+      "job_id": "0c197b2e-552b-4cb3-ad0b-e17c56aa9e1a",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261011_141637_0c197b2e-552b-4cb3-ad0b-e17c56aa9e1a.png",
+      "name": "hero-components",
+      "file": "hero-components.webp",
+      "request": {
+        "model": "gpt_image_2_5",
+        "count": 1,
+        "variant": "flare",
+        "quality": "xhigh",
+        "resolution": "2k",
+        "background": "opaque",
+        "aspect_ratio": "1:1",
+        "medias": [
+          {
+            "role": "image",
+            "value": "71faeb9b-36d1-49b6-a818-7c3077b45f7b"
+          }
+        ],
+        "prompt": "Rephotograph the exact three engineering components in the reference for a premium industrial website hero. A serious close-up product photograph on a dark matte charcoal tabletop #242626, no horizon, viewed obliquely from above. Temperature controller in rear left, stainless-steel cable probe coiled naturally in rear right, U-shaped heating element prominently in foreground diagonally. Preserve plausible construction and connections, show fine genuine metal grain and matte moulded plastic. Soft broad side light, realistic subdued reflections and short physical contact shadows, strong but natural contrast. The components fill 80 percent of the square frame while remaining fully visible. The only brand colour accent is a very thin cobalt-blue trim on the controller, everything else neutral. No pastel colours, props, logos, people, text, dramatic spotlights, rendered plastic look or decorative 3D shapes. This is an illustrative industrial component still life."
+      },
+      "source_dimensions": [
+        2048,
+        2048
+      ],
+      "alpha_extrema": null,
+      "output_dimensions": [
+        1600,
+        1600
+      ],
+      "output_bytes": 340172,
+      "sha256": "f6e96cb30a945efb55ea6d31b852d285dd82d557ad81a7d54763afc88808b738"
+    }
+  ]
+}

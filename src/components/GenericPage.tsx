@@ -94,7 +94,7 @@ function pageImage(route: string, original: string, sectionIndex?: number, secti
 }
 
 function imageDescription(src: string, fallback: string) {
-  if (src === I.heroComponents) return 'Illustrative technical components on a lavender studio background';
+  if (src === I.heroComponents) return 'Illustrative technical components on a neutral studio background';
   if (src === I.customEngineering) return 'Illustrative review of a custom part and its technical requirements';
   if (src === I.qualityInspection) return 'Illustrative dimensional inspection of a component';
   if (src === I.ongoingSupply) return 'Illustrative preparation of component deliveries';

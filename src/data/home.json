@@ -44,8 +44,8 @@
     }
   },
   "capabilities": {
-    "title": "OEM solutions, components & manufacturing.",
-    "intro": "Technical components for your equipment — from standard products and custom OEM solutions to recurring series supply. One personal contact connects technical advice, in-house development, manufacturing partners and quality.",
+    "title": "Our component & OEM capabilities.",
+    "intro": "From standard components and custom OEM solutions to recurring series supply. One personal contact brings technical advice, in-house development, manufacturing partners and quality together.",
     "overviewCta": {
       "label": "Explore components",
       "to": "/components"
@@ -95,40 +95,40 @@
     "coreCards": [
       {
         "title": "OEM solutions",
-        "desc": "Components and assemblies for your own equipment",
+        "desc": "Standard and custom assemblies",
         "specs": [
-          "Standard and custom versions for devices, machines and systems",
-          "Support from design-in and samples to recurring supply"
+          "Design-in, samples and application release",
+          "Recurring supply for your equipment"
         ],
         "cta": "Explore OEM solutions",
         "to": "/oem-solutions"
       },
       {
         "title": "Technical components",
-        "desc": "Selection, advice and supply for your application",
+        "desc": "Controllers, sensors, heating and switching",
         "specs": [
-          "Controllers, sensors, heating and switching components",
-          "Technical fit, variants and manufacturer questions clarified"
+          "Selection around your application",
+          "Technical advice and sourcing"
         ],
         "cta": "Explore components",
         "to": "/components"
       },
       {
         "title": "Custom development",
-        "desc": "From your requirement to a practical component",
+        "desc": "In-house CAD and prototypes",
         "specs": [
-          "In-house CAD and sketches; prototypes with suitable partners",
-          "Agreed checks in the Komponia-Lab and application release"
+          "Drawings, samples and custom variants",
+          "Agreed checks in the Komponia-Lab"
         ],
         "cta": "Explore custom solutions",
         "to": "/custom-solutions"
       },
       {
         "title": "Series supply",
-        "desc": "Ongoing support beyond the first delivery",
+        "desc": "Planning, stock and recurring deliveries",
         "specs": [
-          "Demand planning, call-offs and dynamic safety stock",
-          "Import, logistics, ongoing quality and complaint handling"
+          "Call-offs and dynamic safety stock",
+          "Import, logistics and ongoing quality"
         ],
         "cta": "Explore series supply",
         "to": "/production-orders"
@@ -181,7 +181,7 @@
     }
   },
   "inquiry": {
-    "title": "Start with what you have",
+    "title": "Start with what you have.",
     "intro": "Start with a part number, drawing, sample or application description. Your personal contact clarifies the missing details and coordinates the next steps with engineering, sourcing and quality.",
     "cta": {
       "label": "Prepare an inquiry",

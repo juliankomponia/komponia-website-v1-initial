@@ -1,0 +1,35 @@
+Komponia – Startseite nach Hubs-Referenz
+Stand: 11. Oktober 2026
+
+Auftrag
+Der Nutzer hat den farbigen Bildmix als uneinheitlich abgelehnt und die Hubs-Startseite als enge Layoutreferenz vorgegeben: „1:1 nur für Komponia“.
+
+Referenz
+https://www.hubs.com/ am 11. Oktober 2026 im Browser angesehen und anhand der gerenderten Elemente vermessen.
+- Geteilter Hero: Bild links, dunkler Inhalt rechts; rund 664 px hoch bei 1440 px Breite.
+- Hero-Titel 48 px / 1,2 Zeilenhöhe; kompakter Umschalter, drei Nutzenpunkte, blauer CTA.
+- Inhaltsbreite 1152 px, Abschnittsabstände 64 px, zentrierte Einleitung maximal 768 px.
+- Vier Karten, 16 px Abstand, 16 px Ecken, 32 px Textpadding, Bildverhältnis 8,4:5.
+- Weiße und hellgraue Abschnitte, neutrale Produktbilder, Text-/Bildblöcke, Prozesslinie und drei Qualitätskarten.
+
+Umsetzung
+- Neuer geteilter Komponia-Hero mit einem dunklen Komponenten-Stillleben. Zwei per Maus, Touch und Pfeiltasten bedienbare Tabs für Components bzw. OEM & series ersetzen den vorherigen Vierer-Slider.
+- Komponia-Logo und Sora bleiben; Komponia-Blau für Aktionen und Linien. Hero und Karten orientieren sich an den Referenzproportionen. Kein Wechsel verschiedenfarbiger Bildhintergründe mehr.
+- Vier Komponia-Kernleistungen vor den vier Fertigungsverfahren. Kartentexte gekürzt und ausgerichtet.
+- OEM-Erklärung, Komponentenfelder, Anfrage-Einstieg, sechs Prozessschritte, Lab/Qualität, Anwendungen, WTS-Herkunft und wiederkehrende Versorgung verwenden die Referenzbausteine.
+- Die Homepage-Zwischennavigation, separaten Eyebrow-Dekorationen und gelben Prozessnummern sind im neuen Home-Aufbau entfernt. Bestehende Seiten und weitere Daten bleiben verfügbar.
+- Acht neue transparente Produktmotive auf einheitlich neutralen CSS-Flächen plus ein dunkles Hero-Bild. Kategorien und Produktdetails verwenden dieselbe neue Bildserie. Bildausschnitte werden vollständig angezeigt.
+- Keine fremden Kundenlogos, Bewertungen, Zertifikate, Lieferzeitversprechen oder fremden Produkttexte übernommen. Die bestehenden fachlichen Komponia-Aussagen bleiben die Grundlage.
+- Die neu generierten Motive sind illustrative Beispiele und keine dokumentarischen Produktfotos. Prompts, Referenzen und Prüfsummen stehen im Asset-Manifest.
+
+Prüfung
+- Referenz und Komponia bei 1440 px visuell verglichen; Hero 664 px, Kartenraster auf 1152 px begrenzt.
+- Homepage bei 390, 768 und 1440 px geprüft: kein horizontaler Überlauf, keine fehlgeschlagenen Bilder oder Browserfehler.
+- Hero-Tabs per Klick und Pfeiltaste geprüft; Inhalte und weiterführender Link wechseln passend. Komponenten-Link geöffnet und Kategorieansicht geprüft.
+- Einen angeschnittenen Produktfoto-Ausschnitt bei 768 px korrigiert und erneut visuell geprüft.
+- Produktionsbuild und ESLint für die geänderten TS-/TSX-Dateien erfolgreich. Der bestehende Vite-Hinweis für ein JavaScript-Paket über 500 kB bleibt ohne Build-Fehler.
+- Vite erstellt neue Inhalts-Hashes für geänderte Styles und Medien.
+
+Veröffentlichung
+Lokal: http://localhost:3000/#/
+Hosting und rechtliche Veröffentlichungsvoraussetzungen bleiben in PUBLICATION_PREPARATION.txt dokumentiert.

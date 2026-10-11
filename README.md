@@ -68,3 +68,11 @@ Aktuelle Prüfung und offene Veröffentlichungsschritte: `project-notes/BRAND_CO
 Die aktive Bildserie liegt jetzt in `src/assets/industrial/photo-20261011/`: vier Komponentenbilder sowie vier Motive für OEM, Komponenten, Entwicklung und Serienversorgung. Mit Higgsfield überarbeitet, mit natürlicheren Materialoberflächen, weichem Studiolicht und physischen Hintergründen in Komponia-Blau, Lavendel und Gelb. Die Serie ersetzt auch wiederverwendete Motive auf Kategorie- und Detailseiten; die vier Homepage-Hero-Fotos bleiben erhalten.
 
 Die Motive sind illustrative Beispiele, keine Fotos konkreter Herstellerprodukte. Prompts, Referenzen, Korrekturen und Dateiprüfsummen sind im zugehörigen `manifest.json` dokumentiert. Prüfung: `project-notes/PHOTO_REVIEW_2026-10-11.txt`.
+
+## Aktueller Stand: Hubs-Referenz am 11. Oktober 2026
+
+Auf Nutzerwunsch ersetzt ein enger Abgleich mit der aktuellen Hubs-Startseite die zuvor farbigen Bildserien und den immersiven Hero. Die Startseite verwendet einen geteilten Produkt-Hero mit den Schaltern „Components“ und „OEM & series“, ein 1152-px-Inhaltsraster bei 1440 px, 64-px-Abschnittsabstände und einheitliche hellgraue Produktkarten. Komponia-Sora, Markenblau, Logo, bestätigte Unternehmensangaben und fachliche Inhalte bleiben erhalten.
+
+Acht neutrale Produktfreisteller und ein dunkles Hero-Motiv liegen in `src/assets/industrial/neutral-20261011/`. Diese Serie ist jetzt aktiv, auch in den verlinkten Komponentenseiten. Die älteren Bildserien und Hero-Fotos bleiben als historische Dateien erhalten. Der neue Home-Aufbau und seine Styles liegen in `src/pages/Home.tsx`, `src/components/HomeHero.tsx` und `src/pages/home.css`.
+
+Referenzvergleich und Prüfungen: `project-notes/HUBS_HOME_REVIEW_2026-10-11.txt`.
