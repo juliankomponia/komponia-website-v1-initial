@@ -7,7 +7,7 @@ import { COMPONENT_GROUPS, componentPath } from './components';
 const LINK_COPY: Record<string, Partial<NavLink>> = {
   '/how-ordering-works': { label: 'How we work', desc: 'From your requirements to an agreed supply route' },
   '/ip-protection': { label: 'Information handling', desc: 'Agree how drawings and technical information are shared' },
-  '/the-protolabs-network-standard': { label: 'Quality & qualification', desc: 'Define specifications, checks and documentation' },
+  '/quality-and-lab': { label: 'Komponia-Lab & quality', desc: 'Agreed checks and ongoing quality support' },
   '/partner-network': { label: 'Supplier coordination', desc: 'Match manufacturers and sources to your requirements' },
   '/team-account': { label: 'Project coordination', desc: 'Align purchasing, engineering and production' },
   '/industries/aerospace-manufacturing': { label: 'Aerospace & aviation', desc: 'Requirements for demanding technical applications' },
@@ -26,7 +26,7 @@ const LINK_COPY: Record<string, Partial<NavLink>> = {
   '/become-a-manufacturing-partner': { label: 'Supplier collaboration', desc: 'Technical capabilities and requirements for cooperation' },
   '/contact': { label: 'Project enquiries', desc: 'Prepare and review a component or supply inquiry draft' },
   '/jobs': { label: 'Working with Komponia', desc: 'Technical, commercial and operational roles' },
-  '/protolabs-network': { label: 'Brand background', desc: 'The relationship between Komponia, Sourcura and WTS' },
+  '/brand-background': { label: 'Brand background', desc: 'The relationship between Komponia, Sourcura and WTS' },
   '/sustainability': { label: 'Supply & resource planning', desc: 'Consider materials, stock and logistics for each project' },
   '/team': { label: 'Project responsibilities', desc: 'How technical and commercial work is coordinated' },
 };
@@ -39,7 +39,7 @@ const GROUP_TITLES: Record<string, string> = {
 
 const SECTION_COPY: Record<string, string> = {
   'How it works': 'Component selection, technical solutions and ongoing supply',
-  Capabilities: 'Manufacturing options for custom components',
+  Capabilities: 'In-house CAD, custom OEM solutions and suitable manufacturing partners',
   Industries: 'Technical requirements differ by application',
   Components: 'Technical components for your application',
   Resources: 'Information for component selection and project preparation',
@@ -60,12 +60,26 @@ export const NAV = TEMPLATE_NAV.map((item) => ({
   ...item,
   image: item.label === 'How it works' ? I.customEngineering : item.label === 'Components' ? I.controllers : item.image,
   sub: SECTION_COPY[item.label] ?? item.sub,
-  groups: item.groups.map((group) => ({
+  groups: item.label === 'Industries' ? [{ title: null, links: [
+    { label: 'OEM solutions', desc: 'Components for your own devices, machines and systems', to: '/oem-solutions' },
+    { label: 'Refrigeration & climate control', desc: 'Control, sensing and switching for your equipment', to: '/industries/refrigeration-climate-control' },
+    { label: 'Thermal & foodservice equipment', desc: 'Heating, measurement and control considered together', to: '/industries/thermal-foodservice' },
+    { label: 'Machinery & plant engineering', desc: 'Parts and components for machines and equipment', to: '/industries/industrial-machinery' },
+    { label: 'Laboratory equipment', desc: 'Application-specific sensing and control requirements', to: '/industries/laboratory-equipment' },
+    { label: 'All applications', desc: 'Explore further application requirements', to: '/industries' },
+  ] }] : item.groups.map((group) => ({
     ...group,
     title: group.title ? GROUP_TITLES[group.title] ?? group.title : null,
     links: group.links.map(adaptLink),
   })),
-  right: item.right ? { ...item.right, title: 'Surface finishes', links: item.right.links.map(adaptLink) } : undefined,
+  right: item.label === 'Capabilities' ? { title: 'Solutions & supply', plain: true, links: [
+    { label: 'Custom solutions & in-house CAD', to: '/custom-solutions' },
+    { label: 'OEM solutions', to: '/oem-solutions' },
+    { label: 'Komponia-Lab & quality', to: '/quality-and-lab' },
+    { label: 'Recurring supply & safety stock', to: '/production-orders' },
+    { label: 'Replacement & second sources', to: '/replacement-and-second-source' },
+    { label: 'Surface finishes', to: '/surface-finishing-services' },
+  ] } : item.right ? { ...item.right, title: 'Surface finishes', links: item.right.links.map(adaptLink) } : undefined,
 }));
 
 export type FooterLinkData = { label: string; to: string };
@@ -75,15 +89,18 @@ export const FOOTER_COLUMNS: { title: string; links: FooterLinkData[] }[] = [
     title: 'About',
     links: [
       { label: 'About Komponia', to: '/about' },
+      { label: 'OEM solutions', to: '/oem-solutions' },
       { label: 'How we work', to: '/how-ordering-works' },
-      { label: 'Quality & qualification', to: '/the-protolabs-network-standard' },
+      { label: 'Quality & qualification', to: '/quality-and-lab' },
       { label: 'Information handling', to: '/ip-protection' },
-      { label: 'Brand background', to: '/protolabs-network' },
+      { label: 'Brand background', to: '/brand-background' },
     ],
   },
   {
-    title: 'Manufacturing',
+    title: 'Solutions & manufacturing',
     links: [
+      { label: 'Custom solutions & CAD', to: '/custom-solutions' },
+      { label: 'Replacement & second sources', to: '/replacement-and-second-source' },
       { label: 'CNC machining', to: '/cnc-machining' },
       { label: 'CNC milling', to: '/cnc-machining/cnc-milling-service' },
       { label: 'CNC turning', to: '/cnc-machining/cnc-turning-service' },

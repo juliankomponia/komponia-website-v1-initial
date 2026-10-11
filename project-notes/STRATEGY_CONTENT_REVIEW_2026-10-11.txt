@@ -1,0 +1,85 @@
+KOMPONIA – STRATEGIEABGLEICH UND INHALTLICHER AUSBAU
+Stand: 11. Oktober 2026
+
+AUFTRAG
+Zuerst Website und aktuelle Strategie analysieren, anschließend fehlende USPs
+und Inhalte ergänzen. Bestehende Designsprache beibehalten. Website Englisch,
+Kommunikation Deutsch. Keine Veröffentlichung beauftragt.
+
+GEPRÜFTE GRUNDLAGE
+Website: juliankomponia/komponia-website-v1-initial, Ausgangscommit 27ac683.
+Strategie: juliankomponia/Unternehmensstrategie, main, Commit 2939a1a.
+Unter Komponia_Sourcura_Strategie:
+- 00_Uebersicht.md: Stage 13 ist aktuell; ältere Strategien sind Referenz.
+- stage13_komponia.md, Version 4, Stand 02.10.2026.
+- stage13_gesamtkonzept.md, insbesondere Positionierung und bestätigte Leistungen.
+- output/pdf/marketing_setup_2026-10-02/06_Texte/Komponia_Website_Texte.txt.
+
+BEFUND VOR DER ÄNDERUNG
+Die Website hatte bereits Komponentenbereiche, Fertigungsverfahren, generische
+Informationsseiten und einen lokalen Anfrageentwurf. Viele Texte beschrieben
+Vorbereitungsaufgaben des Kunden, stellten aber bestätigte eigene Leistungen
+nur allgemein als Koordination dar. Die vier Fertigungsverfahren standen auf
+der Homepage vor der eigentlichen Angebotsarchitektur.
+
+Wesentliche Lücken gegenüber der aktuellen Strategie:
+- Drei gleichberechtigte Einstiege: Komponenten/Beratung, individuelle Lösungen,
+  laufende Versorgung.
+- OEM als Kernkundengruppe einschließlich Standardteilen, Anpassungen und Serie.
+- Eigene CAD-Zeichnungen und Skizzen, Prototypen mit geeigneten Partnern.
+- Vorhandenes Komponia-Lab für vereinbarte Maß-/Funktionsprüfungen und Stichproben.
+- Bedarfsermittlung, dynamischer Safety Stock und laufende Qualitätsbetreuung.
+- Persönlicher Ansprechpartner, Import-/Logistikexpertise und Nachweisklärung.
+- Begleitender Prozess im vereinbarten Liefergeschäft ohne separaten
+  Prozessaufschlag; Umfang und weitergehende Leistungen bleiben zu vereinbaren.
+- Tatsächliche Startbranchen waren gegenüber Template-Branchen unterrepräsentiert.
+- FAQ, direkte Leistungswege und passende Anfragearten fehlten.
+
+UMGESETZT
+- Drei Leistungskarten direkt nach dem bestehenden Hero.
+- Bestehende Homepage-Abschnitte um OEM, Inhouse-CAD, Lab, persönliche Betreuung,
+  Import, Serienqualität, Reklamationen und dynamischen Safety Stock ergänzt.
+- Prozessschritte und FAQ erläutern Leistung, Kundennutzen und vereinbarten Umfang.
+- Neue Detailseiten: /custom-solutions, /oem-solutions,
+  /replacement-and-second-source.
+- Neue Anwendungsseiten: Kälte-/Klimatechnik, thermische/Foodservice-Geräte,
+  Laborgeräte. Labor- und medizinische Anwendungen getrennt beschrieben.
+- About, Arbeitsweise, Qualität, Versorgung, Partner, Projektkoordination,
+  Markenherkunft und Versorgungsleitfaden inhaltlich abgeglichen.
+- Navigation, Footer und passende Karten führen zu den neuen Inhalten.
+- /quality-and-lab und /brand-background ersetzen die beiden sichtbaren
+  Template-Adressen; die alten URLs bleiben als Weiterleitungen erhalten.
+- Anfragearten OEM, Ersatz und Zweitquelle ergänzt; weiterhin kein Versand.
+- Versorgungs-Checkliste und angezeigte Version gemeinsam aktualisiert.
+
+DESIGN
+Keine CSS-Dateien, Schriftarten, Farbtokens, Logo-Dateien, Hero-Bilder oder
+Carousel-/Header-Logik geändert. Zusätzliche Inhalte verwenden vorhandene
+CardGrid-, FeatureRow-, Galerie-, FAQ- und GenericPage-Bausteine. Ausgewählte
+Bildplätze nutzen passende, bereits vorhandene Illustrationen.
+
+INHALTLICHE GRENZEN
+Keine erfundenen Kundenfälle, Zertifikate, Herstellervertretungsrechte,
+Messwerte, garantierten Lieferzeiten, Bestpreise oder CO2-Einsparungen ergänzt.
+Fertigungsverfahren bleiben Optionen zur projektspezifischen Prüfung.
+Zweitquellen werden erst gegen Anforderungen und Abhängigkeiten geprüft.
+Lab-Prüfungen haben vereinbarten Umfang; keine Akkreditierung oder Vollprüfung
+behauptet. Safety Stock ist bedarfsabhängig, keine behauptete KI-Automatik.
+WTS ist der Bezug für „seit 1997“, nicht die rechtliche Gründung Komponias.
+
+OFFENE PUNKTE FÜR LIVEGANG
+Bestätigte rechtliche Firma, öffentliche Kontaktdaten, Impressum und Datenschutz;
+Empfänger/Versandweg samt Dateiverarbeitung; Domain/Hosting und abschließende
+Veröffentlichungsentscheidung. Das Formular versendet derzeit nichts.
+Öffentliche Produktdatensätze, freigegebene Kundenreferenzen und reale Lab-/Team-
+Fotos würden die vorhandenen allgemeinen Leistungsbeschreibungen weiter belegen.
+Sie wurden nicht durch erfundene Angaben ersetzt.
+Externe Template-Bilder und Webfonts sind teilweise weiterhin vorhanden.
+Hash-Routing und noindex bleiben für die lokale Vorschau bestehen.
+
+PRÜFUNGEN
+Produktionsbuild und gezielte Codeprüfung; interne Linkziele und Downloads.
+Browserprüfung der geänderten Seiten bei 1440 und 390 Pixeln Breite:
+Seitenüberschriften vorhanden, keine horizontalen Seitenüberläufe.
+Zusätzlich Navigation, Anfrageentwurf und FAQ interaktiv kontrolliert.
+Die Anfrageprüfung verwendet ausschließlich lokale Testdaten ohne Versand.

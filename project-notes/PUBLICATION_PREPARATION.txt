@@ -1,5 +1,9 @@
 Komponia – Veröffentlichungsvorbereitung (offen)
-Stand: 7. Oktober 2026
+Stand: 11. Oktober 2026
+
+Inhaltlicher Ausbau nach Stage 13 am 11. Oktober umgesetzt. Details und
+Quellen: STRATEGY_CONTENT_REVIEW_2026-10-11.txt. Der Inhalt ist lokal prüfbar;
+die folgenden Voraussetzungen für eine öffentliche Website sind weiter offen.
 
 Lokaler Build: dist/ erfolgreich erstellt. Kein Deployment beauftragt oder erfolgt.
 Die Website nutzt weiter HashRouter und bleibt bis zur Abnahme noindex.

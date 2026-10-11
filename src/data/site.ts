@@ -96,7 +96,7 @@ export const NAV: NavItem[] = [
       {
         title: 'Quality & consistency',
         links: [
-          { label: 'Quality standards', desc: 'Processes and systems for maintaining the highest quality', to: '/the-protolabs-network-standard' },
+          { label: 'Quality standards', desc: 'Processes and systems for maintaining the highest quality', to: '/quality-and-lab' },
           { label: 'Manufacturing partners', desc: 'How we manage our suppliers', to: '/partner-network' },
         ],
       },
@@ -226,7 +226,7 @@ export const NAV: NavItem[] = [
           { label: 'Become a partner', desc: 'How joining our manufacturing network grows your business', to: '/become-a-manufacturing-partner' },
           { label: 'Contact us', desc: 'We have offices in the United States and Europe', to: '/contact' },
           { label: 'Jobs', desc: 'Join our team', to: '/jobs' },
-          { label: 'Protolabs Network', desc: 'Big news! We changed our name to Protolabs Network', to: '/protolabs-network' },
+          { label: 'Protolabs Network', desc: 'Big news! We changed our name to Protolabs Network', to: '/brand-background' },
           { label: 'Sustainability', desc: 'Reducing emissions in manufacturing', to: '/sustainability' },
           { label: 'Team', desc: 'The people behind the platform', to: '/team' },
         ],

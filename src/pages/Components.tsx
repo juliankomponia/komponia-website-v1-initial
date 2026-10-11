@@ -74,7 +74,7 @@ function Overview() {
       <p>The right solution starts with the right component. Explore controllers, sensors, heating elements, and pressure and switching devices for your application.</p>
     </div></section>
     <PageSections /><section data-section-label="Component groups" className="components-section wrap-orig section-pad" aria-label="Product groups"><div className="components-cap-grid">{COMPONENT_GROUPS.map((group) => <GroupCard key={group.id} group={group} />)}</div></section>
-    <section data-section-label="Selection requirements" className="components-section wrap-orig section-pad components-resources"><h2 className="h2-orig components-section-title">Start with your requirement</h2><CardGrid cols={4} cards={H['technical-questions'].cards.map(card => ({ title: card.title, text: card.text, link: 'Prepare an inquiry', to: '/contact' }))} /></section><ComponentFaq /><ContactCta />
+    <section data-section-label="Selection requirements" className="components-section wrap-orig section-pad components-resources"><h2 className="h2-orig components-section-title">Start with your requirement</h2><CardGrid cols={4} cards={H['technical-questions'].cards.map(card => ({ title: card.title, text: card.text, link: 'Explore this requirement', to: card.to }))} /></section><ComponentFaq /><ContactCta />
   </>;
 }
 

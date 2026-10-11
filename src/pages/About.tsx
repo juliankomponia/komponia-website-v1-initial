@@ -5,9 +5,9 @@ import BrandLabel from '../components/BrandLabel';
 
 const FOCUS_AREAS = [
   { value: 'Select', label: 'Components and technical advice' },
-  { value: 'Adapt', label: 'Custom technical solutions' },
-  { value: 'Check', label: 'Qualification to agreed requirements' },
-  { value: 'Supply', label: 'Recurring deliveries and stock terms' },
+  { value: 'Develop', label: 'In-house CAD and custom OEM solutions' },
+  { value: 'Check', label: 'Agreed checks in the Komponia-Lab' },
+  { value: 'Supply', label: 'Recurring delivery and dynamic safety stock' },
 ];
 
 export default function About() {
@@ -15,8 +15,8 @@ export default function About() {
     <>
       <SubHero
         eyebrow="Komponia"
-        title="About Komponia"
-        text="We help manufacturers and industrial users select, adapt and source technical components. Our offering combines components and advice, custom solutions and ongoing supply."
+        title="Technical expertise. Personal responsibility."
+        text="We support manufacturers and industrial users with technical components, custom OEM solutions and ongoing supply. One personal contact brings engineering, sourcing, quality and logistics together."
         img={I.heroComponents}
         cta="Prepare an inquiry"
       />
@@ -49,12 +49,12 @@ export default function About() {
       <section className="bg-white section-pad">
         <div className="wrap-orig">
           <FeatureRow
-            title="Technical work and suitable partners"
-            text="We coordinate component selection, engineering, samples and procurement around the application. Suitable partners are involved where needed, with scope and responsibilities defined for the task."
+            title="In-house CAD. The right manufacturing partners."
+            text="We prepare CAD drawings and sketches in-house and coordinate prototypes and manufacturing with suitable partners. Our established supplier relationships and import expertise connect the technical solution with practical procurement and delivery."
             img={I.customEngineering}
             imgAlt="Illustrative review of a custom part and its technical requirements"
             flip
-            link={{ label: 'Explore components', to: '/components' }}
+            link={{ label: 'Explore custom solutions', to: '/custom-solutions' }}
           />
         </div>
       </section>
@@ -62,11 +62,11 @@ export default function About() {
       <section className="bg-brand-gray section-pad">
         <div className="wrap-orig">
           <FeatureRow
-            title="Checks defined for the application"
-            text="Qualification is specific to the component and its use. We agree which samples, checks and documents are needed, and record the basis for the application-specific approval decision."
+            title="Our Lab. Ongoing quality support."
+            text="Our Komponia-Lab supports agreed dimensional and functional checks and batch sampling. Quality support continues through series supply, including complaint handling. Your personal contact coordinates the findings, manufacturer questions and next steps."
             img={I.qualityInspection}
             imgAlt="Illustrative dimensional inspection of a component"
-            link={{ label: 'See the inquiry process', to: '/how-ordering-works' }}
+            link={{ label: 'Explore Lab and quality support', to: '/quality-and-lab' }}
           />
         </div>
       </section>

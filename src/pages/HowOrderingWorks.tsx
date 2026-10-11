@@ -1,7 +1,6 @@
 import { INDUSTRIAL_IMAGES as I } from '../data/images';
 import { SubHero, FeatureRow } from '../components/Subpage';
 import { OrderingProcess, QualityStandards, DarkCta } from '../components/Sections';
-import { IMG } from '../data/site';
 
 const HOW_IMGS = {
   upload: I.customEngineering,
@@ -14,7 +13,7 @@ export default function HowOrderingWorks() {
       <SubHero
         eyebrow="Technical procurement"
         title="How we work"
-        text="Start with a part number, drawing, sample or application description. We clarify the requirements, compare suitable approaches and agree the scope before arranging supply."
+        text="Start with a part number, drawing, sample or application description. Your personal contact coordinates technical work, sourcing, quality and logistics from the agreed requirement through delivery."
         img={I.customEngineering}
         cta="Prepare an inquiry"
       />
@@ -38,7 +37,7 @@ export default function HowOrderingWorks() {
         <div className="wrap-orig">
           <FeatureRow
             title="2. Compare options and agree the offer"
-            text="The approach may involve an existing component, an adapted design or a new part. We define goods or project scope, responsibilities, price and delivery conditions in the offer."
+            text="We select an existing component or use in-house CAD and sketches to define an adapted or new part. Suitable manufacturers contribute prototypes and production. The accompanying process is included in the agreed supply scope without a separate process surcharge; any work beyond it is agreed separately."
             bullets={[
               'Compare component variants and suitable manufacturing routes.',
               'Agree the technical work, samples and checks needed.',
@@ -54,8 +53,8 @@ export default function HowOrderingWorks() {
         <div className="wrap-orig">
           <FeatureRow
             title="3. Assess samples where required"
-            text="Custom or replacement components may need samples and agreed qualification. Results, differences and the application-specific approval decision are documented before the next agreed step."
-            img={IMG.facUs}
+            text="The Komponia-Lab supports agreed dimensional and functional checks and batch sampling. We coordinate manufacturer documents and any required specialist evidence. Results, differences and the application-specific release are agreed before the next step."
+            img={I.qualityInspection}
           />
         </div>
       </section>
@@ -64,8 +63,8 @@ export default function HowOrderingWorks() {
         <div className="wrap-orig">
           <FeatureRow
             title="4. Arrange delivery and recurring supply"
-            text="Delivery follows the agreed quantities, documentation and conditions. For recurring needs, call-offs, stock, supplier coordination and change rules can be included in a defined supply arrangement."
-            img={IMG.manyCnc}
+            text="We organise procurement, import and logistics. For recurring demand, we coordinate call-offs and dynamic safety stock within agreed limits and commercial terms. Ongoing quality management and complaint handling remain part of the agreed support."
+            img={I.ongoingSupply}
             flip
           />
         </div>

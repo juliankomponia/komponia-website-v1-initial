@@ -47,6 +47,7 @@ function SectionExtras({ section }: { section: GenericPageData['sections'][numbe
 }
 
 function pageImage(route: string, original: string, sectionIndex?: number, sectionTitle?: string) {
+  if (Object.hasOwn(I, original)) return I[original as keyof typeof I];
   // Match the existing requirement text; illustrations do not establish industry approval.
   const industryImages: Record<string, { hero: string; sections: Record<string, string> }> = {
     'industries/automotive-manufacturing': {
@@ -81,14 +82,14 @@ function pageImage(route: string, original: string, sectionIndex?: number, secti
   if (sectionIndex !== undefined) {
     if (['production-orders', 'sustainability', 'guides/recurring-supply', 'newsletter'].includes(route)) return [I.customEngineering, I.ongoingSupply, I.qualityInspection][sectionIndex % 3];
     if (['guides/component-selection', 'guides/replacement-assessment', 'guides', 'knowledge-base', 'blog'].includes(route)) return [I.customEngineering, I.qualityInspection, I.sensors][sectionIndex % 3];
-    if (['the-protolabs-network-standard', 'ip-protection', 'team-account', 'become-a-manufacturing-partner', 'partner-network', 'team', 'jobs'].includes(route)) return [I.customEngineering, I.qualityInspection, I.ongoingSupply][sectionIndex % 3];
+    if (['quality-and-lab', 'ip-protection', 'team-account', 'become-a-manufacturing-partner', 'partner-network', 'team', 'jobs'].includes(route)) return [I.customEngineering, I.qualityInspection, I.ongoingSupply][sectionIndex % 3];
   }
   if (route === 'guides/component-selection') return I.controllers;
   if (route === 'guides/replacement-assessment') return I.sensors;
   if (['guides/recurring-supply', 'production-orders', 'sustainability', 'newsletter'].includes(route)) return I.ongoingSupply;
-  if (['the-protolabs-network-standard', 'ip-protection'].includes(route)) return I.qualityInspection;
+  if (['quality-and-lab', 'ip-protection'].includes(route)) return I.qualityInspection;
   if (['contact', 'get', 'team-account', 'guides', 'knowledge-base', 'blog', 'become-a-manufacturing-partner', 'partner-network', 'team', 'jobs'].includes(route)) return I.customEngineering;
-  if (['protolabs-network', 'case-studies'].includes(route)) return I.heroComponents;
+  if (['brand-background', 'case-studies'].includes(route)) return I.heroComponents;
   return original;
 }
 

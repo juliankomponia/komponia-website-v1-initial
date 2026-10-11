@@ -10,6 +10,9 @@ import './contact.css';
 const TYPES = {
   component: 'Component selection or purchase',
   custom: 'Custom technical solution',
+  oem: 'OEM component or series project',
+  replacement: 'Replacement or discontinued component',
+  'second-source': 'Additional source assessment',
   supply: 'Ongoing supply or repeat order',
   cooperation: 'Technical or supplier cooperation',
 };

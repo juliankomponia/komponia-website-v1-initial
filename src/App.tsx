@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router';
+import { Routes, Route, Navigate } from 'react-router';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -38,6 +38,8 @@ export default function App() {
           <Route path="/injection-molding" element={<InjectionMolding />} />
           <Route path="/how-ordering-works" element={<HowOrderingWorks />} />
           <Route path="/about" element={<About />} />
+          <Route path="/the-protolabs-network-standard" element={<Navigate to="/quality-and-lab" replace />} />
+          <Route path="/protolabs-network" element={<Navigate to="/brand-background" replace />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/contact" element={<Contact />} />
           {genericPages.map((p) => (

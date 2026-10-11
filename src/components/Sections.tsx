@@ -26,6 +26,7 @@ export function CapabilitiesCards() {
 export function OrderingProcess() {
   return <div className="progress-card">
     <h2 className="text-[1.25rem] leading-[1.5rem] md:text-[1.375rem] md:leading-[1.625rem] font-medium" style={{color:'rgba(0,0,0,0.85)'}}>{H.process.title}</h2>
+    <p className="mt-4 mb-6 text-[15px] leading-relaxed">{H.process.intro}</p>
     <div className="progress-line">{H.process.steps.map(s => <div key={s.title} className="progress-step">
       <span className="dot"/><div className="step-title">{s.title}</div><div className="step-text">{s.text}</div>
     </div>)}</div>
@@ -72,17 +73,17 @@ function Gallery({ slides, label }: { slides: Slide[]; label: string }) {
 
 const requirementImages=[I.temperatureController,I.temperatureProbe,I.tubularHeater,I.pressureSwitches];
 const partnerImages=[I.controllers,I.customEngineering,I.qualityInspection,I.ongoingSupply];
-export function CaseStudies(){return <Gallery slides={H['technical-questions'].cards.map((c,i)=>({...c,img:requirementImages[i],to:'/components',link:'Explore components'}))} label="Technical requirements"/>;}
-export function NetworkGallery(){return <Gallery slides={H.partners.cards.map((c,i)=>({...c,img:partnerImages[i],to:'/how-ordering-works',link:'See how we work'}))} label="Partner coordination"/>;}
+export function CaseStudies(){return <Gallery slides={H['technical-questions'].cards.map((c,i)=>({...c,img:requirementImages[i],link:'Explore this requirement'}))} label="Technical requirements"/>;}
+export function NetworkGallery(){return <Gallery slides={H.partners.cards.map((c,i)=>({...c,img:partnerImages[i],link:'See how we support you'}))} label="Partner coordination"/>;}
 export function PartsGallery(){return <Gallery slides={H['component-fields'].cards.map((c,i)=>({...c,img:[I.controllers,I.sensors,I.heating,I.pressureSwitches][i],table:c.table.map(row=>[row[0],row[1]] as [string,string]),link:'Explore this component field'}))} label="Component fields"/>;}
 
 export function QualityStandards(){
   const icons=[ClipboardList,Ruler,FileCheck];
-  return <div className="grid grid-cols-1 md:grid-cols-3 gap-4">{H.quality.cards.map((c,i)=>{const Icon=icons[i];return <Link to="/the-protolabs-network-standard" key={c.title} className="rounded-[1rem] p-6 md:p-8 flex flex-col transition-colors hover:bg-black/[0.08]" style={{backgroundColor:'rgba(0,0,0,0.03)'}}>
+  return <div className="grid grid-cols-1 md:grid-cols-3 gap-4">{H.quality.cards.map((c,i)=>{const Icon=icons[i];return <Link to={c.to} key={c.title} className="rounded-[1rem] p-6 md:p-8 flex flex-col transition-colors hover:bg-black/[0.08]" style={{backgroundColor:'rgba(0,0,0,0.03)'}}>
     <Icon size={104} strokeWidth={1.2} aria-hidden="true" className="h-[6.5rem] max-w-[9rem] text-brand-blue mb-8 self-start"/>
     <span className="font-bold text-black text-[1.25rem] leading-[1.5rem] md:text-[1.375rem] md:leading-[1.625rem]">{c.title}</span>
     <span className="block mt-4 mb-6 text-base md:text-[1.125rem]" style={{color:'#262626'}}>{c.text}</span>
-    <span className="mt-auto font-bold text-brand-blue text-base md:text-[1.125rem] inline-flex">Learn about qualification</span>
+    <span className="mt-auto font-bold text-brand-blue text-base md:text-[1.125rem] inline-flex">{c.link}</span>
   </Link>;})}</div>;
 }
 

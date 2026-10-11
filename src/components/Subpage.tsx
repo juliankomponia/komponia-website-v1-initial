@@ -127,7 +127,7 @@ export function CardGrid({
 export function Faq({ items }: { items: { q: string; a: string }[] }) {
   return (
     <div className="max-w-[900px] mx-auto">
-      <h2 className="h2-orig mb-8">FAQ&rsquo;s</h2>
+      <h2 className="h2-orig mb-8">Frequently asked questions.</h2>
       <div className="space-y-3">
         {items.map((f) => (
           <details key={f.q} className="border border-black/10 rounded-[3px] px-6 py-4 group bg-white">

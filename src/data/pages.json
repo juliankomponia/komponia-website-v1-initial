@@ -20,14 +20,14 @@
     ]
   },
   {
-    "route": "the-protolabs-network-standard",
-    "title": "Quality starts with agreed requirements",
-    "subtitle": "A drawing, component specification and application define what needs to be checked. Komponia helps clarify the required evidence, partner responsibilities and release steps for the agreed scope.",
+    "route": "quality-and-lab",
+    "title": "Komponia-Lab. Quality through series supply.",
+    "subtitle": "Our own Lab supports agreed dimensional and functional checks and batch sampling. Personal coordination connects specifications, supplier documents, application release and ongoing quality support.",
     "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
     "sections": [
       {
         "title": "Define what a suitable part must do",
-        "text": "Begin with the component function, interfaces and operating conditions. Identify the dimensions, material properties and performance characteristics that matter to the application. The agreed specification becomes the reference for selection, samples and acceptance.",
+        "text": "We clarify the component function, interfaces, operating conditions and critical features with your team. The agreed specification gives manufacturers and evaluators a common reference for selection, samples and acceptance.",
         "bullets": [],
         "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
       },
@@ -38,10 +38,14 @@
         "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
       },
       {
-        "title": "Agree the inspection scope",
-        "text": "Discuss which characteristics need verification, how they will be measured and what records are required. Samples, dimensional checks and functional tests serve different purposes. Define the inspection scope and acceptance criteria before committing to supply.",
-        "bullets": [],
-        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
+        "title": "Agreed checks in our own Lab.",
+        "text": "The Komponia-Lab is part of our existing technical process. We carry out agreed dimensional and functional checks and sample inspections from a batch. The inspection plan defines the characteristics, methods, criteria, sample size and records for the component. Specialist tests are coordinated where the application needs them.",
+        "bullets": [
+          "Dimensional checks against defined features.",
+          "Functional checks within the agreed test conditions.",
+          "Batch sampling with a defined sample size and evaluation scope."
+        ],
+        "img": "qualityInspection"
       },
       {
         "title": "Keep documents tied to the part",
@@ -50,30 +54,40 @@
         "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
       },
       {
-        "title": "Check project-specific certification needs",
-        "text": "If your application requires a certified supplier or a particular standard, state that requirement at the outset. Applicable evidence, certificate scope and validity must be checked for the selected source. No general certification claim replaces this project-specific review.",
+        "title": "Certificates and supporting documents.",
+        "text": "We help clarify required certificates and evidence in the procurement and import process. The selected product, source and intended use determine what is needed and who provides it. Our Lab checks do not replace a required external certification or the application release.",
         "bullets": [],
-        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+        "img": "qualityInspection"
       },
       {
-        "title": "Manage deviations and changes",
-        "text": "When a dimension, material or process differs from the specification, describe the difference and agree the next step before acceptance. Define who may approve changes and how the current revision is communicated to the source and the customer.",
+        "title": "Ongoing quality and complaint handling.",
+        "text": "Support continues during recurring supply. Your personal contact coordinates agreed checks, investigates reported deviations with the relevant specialists and manufacturer, and follows up the next steps. A useful complaint identifies the part, revision, batch where available and the observed issue. Acceptance and any changed specification are agreed with the responsible people.",
         "bullets": [],
-        "img": ""
+        "img": "",
+        "links": [
+          {
+            "label": "Explore recurring supply",
+            "to": "/production-orders"
+          },
+          {
+            "label": "Prepare a technical inquiry",
+            "to": "/contact"
+          }
+        ]
       }
     ]
   },
   {
     "route": "partner-network",
-    "title": "Suitable sources for technical requirements",
-    "subtitle": "Komponia combines technical component sourcing with project-specific manufacturing and specialist support. Source selection follows the application, required evidence and agreed commercial conditions.",
+    "title": "Established sources. Coordinated procurement.",
+    "subtitle": "Komponia combines established supplier relationships with technical application knowledge, import expertise and a broad logistics network. Your personal contact coordinates the work from manufacturer questions to delivery.",
     "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
     "sections": [
       {
-        "title": "Start with the application",
-        "text": "A source must fit the part and its intended use. Clarify the component function, process, material and critical interfaces before comparing manufacturers. Existing manufacturer relationships can provide a starting point; suitability still needs checking for each requirement.",
+        "title": "A supplier network built through practice.",
+        "text": "We draw on manufacturer and supplier relationships developed through the WTS business since 1997. Product knowledge and experience guide the search for a suitable source. Each proposed component and manufacturing route is assessed against your application and agreed scope.",
         "bullets": [],
-        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+        "img": "controllers"
       },
       {
         "title": "Review capabilities and documentation",
@@ -100,22 +114,32 @@
         "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
       },
       {
-        "title": "Compare sourcing options in context",
-        "text": "Local and international sources can differ in process options, order quantities, transport and communication. Compare the total supply arrangement against your requirements. Distance alone does not establish quality, delivery performance or environmental impact.",
+        "title": "International sourcing with coordinated import and logistics.",
+        "text": "We organise international procurement, import and transport and help clarify the required certificates and supporting documents. You have a coordinating contact and a contracting partner in Germany, identified in your offer. Delivery conditions and responsibilities are agreed for the actual supply arrangement.",
         "bullets": [],
-        "img": ""
+        "img": "ongoingSupply",
+        "links": [
+          {
+            "label": "How we work",
+            "to": "/how-ordering-works"
+          },
+          {
+            "label": "Discuss recurring supply",
+            "to": "/contact?type=supply"
+          }
+        ]
       }
     ]
   },
   {
     "route": "team-account",
     "title": "Coordinate engineering and purchasing",
-    "subtitle": "Technical selection, approval and procurement involve different responsibilities. Komponia helps structure the handover between the people involved in a component or custom solution project.",
+    "subtitle": "One personal Komponia contact coordinates technical work, sourcing, quality and logistics with your purchasing, engineering and production teams.",
     "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp",
     "sections": [
       {
         "title": "Set a shared project brief",
-        "text": "Bring the application, component references, drawings and purchasing requirements into one agreed brief. Identify the technical decision maker and the commercial contact. Agree how the current documents, decisions and open actions will be shared between the people involved.",
+        "text": "Your personal contact brings application references, technical questions and purchasing requirements together. They coordinate the relevant specialists and sources so that your team does not need to explain the requirement separately to each function.",
         "bullets": [],
         "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
       },
@@ -406,8 +430,8 @@
   },
   {
     "route": "production-orders",
-    "title": "From first supply to recurring delivery",
-    "subtitle": "Komponia supports technical components and custom solutions beyond the initial order. Recurring supply is organised around agreed demand, release status, delivery conditions and stock responsibilities.",
+    "title": "Recurring supply. Planned around your production.",
+    "subtitle": "Demand planning, dynamic safety stock, coordinated deliveries and ongoing quality support for standard components and custom parts. One personal contact connects the full supply process.",
     "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
     "sections": [
       {
@@ -417,10 +441,10 @@
         "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
       },
       {
-        "title": "Choose a supply model for the actual demand",
-        "text": "A standard component and a custom part can both be supplied repeatedly. Discuss order quantities, forecasts, call-offs and replenishment needs. The model should fit consumption, order conditions and the customer’s planning requirements.",
+        "title": "Dynamic safety stock.",
+        "text": "We review demand and adjust agreed safety stock to the supply situation. Consumption, replenishment lead times and expected changes inform the arrangement. Together we define the data, review rhythm and stock limits, with the aim of reducing shortages and material-related downtime risk.",
         "bullets": [],
-        "img": ""
+        "img": "ongoingSupply"
       },
       {
         "title": "Agree the documentation before ordering",
@@ -435,22 +459,70 @@
         "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
       },
       {
-        "title": "Plan the transition from samples to repeat orders",
-        "text": "Define the purpose of the sample, who reviews it and what constitutes release. Agree the first delivery quantity and any follow-up checks. Record changes before moving into the recurring supply arrangement.",
+        "title": "Agreed quantities. Flexible call-offs.",
+        "text": "An agreed overall quantity can be supplied in smaller releases aligned with production. We coordinate purchasing and deliveries around the agreed call-off plan. Quantity pricing, financing, ownership and minimum acceptance depend on the specific arrangement.",
         "bullets": [],
-        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+        "img": "ongoingSupply",
+        "table": {
+          "headers": [
+            "Supply topic",
+            "What we agree together"
+          ],
+          "rows": [
+            [
+              "Demand",
+              "Expected consumption, planning period and review rhythm."
+            ],
+            [
+              "Stock",
+              "Minimum and maximum levels, replenishment and ownership."
+            ],
+            [
+              "Call-offs",
+              "Committed quantities, release sizes and delivery conditions."
+            ],
+            [
+              "Financing & acceptance",
+              "Stock financing, minimum acceptance and unused-stock handling."
+            ],
+            [
+              "Changes",
+              "How revisions, ageing and discontinued components are handled."
+            ]
+          ]
+        }
       },
       {
-        "title": "Keep the supply information current",
-        "text": "Review consumption, delivery preferences and changes to the application. For named components, monitoring of supplier changes or discontinuation can be discussed as a defined task. A second source requires its own technical assessment and release.",
+        "title": "Import, logistics and ongoing quality.",
+        "text": "We coordinate manufacturers, purchasing, import and transport around the agreed deliveries. Ongoing quality management, agreed Lab checks and complaint handling accompany the supply scope. Your personal contact brings the relevant technical and commercial work together.",
         "bullets": [],
-        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+        "img": "ongoingSupply",
+        "links": [
+          {
+            "label": "Supplier and import coordination",
+            "to": "/partner-network"
+          },
+          {
+            "label": "Lab and quality support",
+            "to": "/quality-and-lab"
+          }
+        ]
       },
       {
-        "title": "A typical recurring-supply scenario",
-        "text": "An equipment manufacturer needs the same technical component across several production runs. The planning task is to align quantities, call-offs and agreed stock with actual consumption and revision control. This is an illustrative application scenario, not a customer reference or a measured result.",
+        "title": "Standard components can start here.",
+        "text": "An existing part does not need a development project to enter a supply arrangement. Start with the component reference and demand. If discontinuation or dependence on one source becomes a concern, we can assess replacement routes or additional sources against the agreed requirements.",
         "bullets": [],
-        "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
+        "img": "",
+        "links": [
+          {
+            "label": "Prepare a supply inquiry",
+            "to": "/contact?type=supply"
+          },
+          {
+            "label": "Replacement and additional sources",
+            "to": "/replacement-and-second-source"
+          }
+        ]
       }
     ]
   },
@@ -662,13 +734,13 @@
   },
   {
     "route": "industries/medical",
-    "title": "Technical inquiries for laboratory and medical applications",
-    "subtitle": "Laboratory equipment and medical devices require separate technical assessments. Describe the intended use, required evidence and approval responsibilities. The relevant product requirements, source qualifications and available technical scope need confirmation for the particular application.",
+    "title": "Component requirements for medical applications.",
+    "subtitle": "Medical applications need a project-specific assessment of product suitability, evidence and approval responsibilities. General experience with laboratory equipment does not establish qualification for a medical use.",
     "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500",
     "sections": [
       {
         "title": "Clarify the intended application",
-        "text": "State whether the component is for laboratory equipment, a medical device or supporting production equipment. Describe the function, exposure and required interfaces. Any device-specific requirements and supplier qualifications need review before the project scope is agreed.",
+        "text": "Describe the intended medical use and the role the component performs in the equipment. Identify the applicable requirements and responsible approval functions before selecting a configuration. Laboratory equipment and medical devices must be assessed separately.",
         "bullets": [],
         "img": ""
       },
@@ -1183,7 +1255,7 @@
     ]
   },
   {
-    "route": "protolabs-network",
+    "route": "brand-background",
     "title": "Komponia: components, solutions and supply",
     "subtitle": "Komponia develops the technical component business built on WTS since 1997. The focus combines standard products and advice, individual solutions and ongoing supply for manufacturers and industrial users.",
     "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500",
@@ -1202,13 +1274,13 @@
       },
       {
         "title": "Combine own work and suitable partners",
-        "text": "Technical clarification, source coordination, samples and agreed qualification tasks can involve Komponia and specialist partners. Define who performs each task and which evidence is required. No general claim that every process takes place in-house is made.",
+        "text": "CAD drawings and sketches are prepared in-house. Prototypes and manufacturing combine our own technical work with suitable partners. The Komponia-Lab supports agreed dimensional and functional checks and batch sampling, with the inspection scope and application release defined for the component.",
         "bullets": [],
         "img": "https://images.ctfassets.net/q2hzfkp3j57e/6yyVaq1xC3TD0oiPghvAZn/27f0efb26373e03c32e786ed3fe7a6a7/what_is_cnc_milling.webp"
       },
       {
         "title": "Keep customer relationships clear",
-        "text": "Komponia is the technical specialist brand. Sourcura is the broader B2B sourcing and platform brand, with its own projects and follow-on business. A complex or recurring requirement does not automatically transfer a customer from one brand to the other.",
+        "text": "Komponia supports technical components, custom OEM solutions and ongoing supply. Sourcura supports broader B2B product and manufacturer sourcing, with its own customer relationships. Technical Komponia projects stay with your Komponia contact even when international procurement or recurring orders are involved.",
         "bullets": [],
         "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
       },
@@ -1266,13 +1338,13 @@
   },
   {
     "route": "team",
-    "title": "Clear responsibilities for technical work",
-    "subtitle": "Define the technical, commercial and approval responsibilities for each task. One person may cover several roles; the project needs clear decisions and handovers.",
+    "title": "One personal contact. Connected expertise.",
+    "subtitle": "Your Komponia contact brings engineering, sourcing, quality and logistics together, so you do not have to coordinate every function yourself.",
     "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
     "sections": [
       {
         "title": "A contact for the complete requirement",
-        "text": "Start with the product, application and intended supply arrangement. Agree the coordinating contact and the people who need to be involved when requirements or delivery conditions change.",
+        "text": "Your contact follows the requirement from technical clarification through delivery and recurring supply. They bring the relevant specialists and manufacturers into the discussion, coordinate open questions and remain your route for quality issues and complaints.",
         "bullets": [],
         "img": "",
         "links": [
@@ -1312,6 +1384,10 @@
             [
               "Order and delivery",
               "Order references, required documents, releases and communication of changes."
+            ],
+            [
+              "Ongoing quality and complaints",
+              "Coordinate agreed Lab checks, reported deviations and follow-up with the manufacturer."
             ]
           ]
         }
@@ -1447,7 +1523,7 @@
           },
           {
             "label": "Quality and qualification",
-            "to": "/the-protolabs-network-standard"
+            "to": "/quality-and-lab"
           }
         ],
         "downloads": [
@@ -1478,7 +1554,7 @@
       },
       {
         "title": "Define stock terms where needed",
-        "text": "A proposed stock arrangement needs clear limits and commercial terms. Discuss ownership, financing, acceptance, ageing and treatment of unused or changed parts.",
+        "text": "Dynamic safety stock is adjusted to the agreed demand and supply situation. Define the data, review rhythm, stock limits, ownership, financing and acceptance terms together. Agree how ageing, changed parts and unused stock will be handled.",
         "bullets": [],
         "img": "",
         "table": {
@@ -1525,7 +1601,337 @@
           {
             "label": "Download checklist (.txt)",
             "file": "komponia-recurring-supply-checklist.txt",
-            "revision": "2026-10-07"
+            "revision": "2026-10-11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "custom-solutions",
+    "title": "Custom components. Developed around your application.",
+    "subtitle": "When a standard part does not fit, Komponia connects in-house technical work with suitable manufacturers, prototypes and agreed checks. One personal contact supports the path to a component you can use and reorder.",
+    "heroImg": "customEngineering",
+    "sections": [
+      {
+        "title": "From requirement to a practical design.",
+        "text": "We work from your application, drawing, sketch or sample. Function, installation space, interfaces and operating conditions define the task. Depending on the requirement, the solution may be a standard variant, a targeted adaptation or a newly developed component.",
+        "bullets": [
+          "Select an existing configuration where it fits.",
+          "Adapt dimensions, connections or other defined features.",
+          "Develop a new solution where the application requires it."
+        ],
+        "img": "customEngineering"
+      },
+      {
+        "title": "CAD and sketches in-house.",
+        "text": "We prepare CAD drawings and sketches in-house to turn the application into a clear technical basis. The agreed work defines what needs to be designed, which information the manufacturer needs and who approves the resulting configuration.",
+        "bullets": [],
+        "img": "customEngineering",
+        "links": [
+          {
+            "label": "OEM development and series supply",
+            "to": "/oem-solutions"
+          }
+        ]
+      },
+      {
+        "title": "Prototypes with the right manufacturing partners.",
+        "text": "Prototypes and samples are part of the development process. We combine our own technical contribution with suitable manufacturers and specialist partners. The component determines the manufacturing route, material, quantity and evaluation scope.",
+        "bullets": [],
+        "img": "qualityInspection",
+        "links": [
+          {
+            "label": "CNC machining requirements",
+            "to": "/cnc-machining"
+          },
+          {
+            "label": "3D printing options",
+            "to": "/3d-printing"
+          },
+          {
+            "label": "Sheet metal requirements",
+            "to": "/sheet-metal-fabrication"
+          },
+          {
+            "label": "Injection molding requirements",
+            "to": "/injection-molding"
+          }
+        ]
+      },
+      {
+        "title": "Checks before the next step.",
+        "text": "We agree the dimensional and functional checks needed for the application. The Komponia-Lab can support these checks and agreed batch sampling; manufacturers and specialist partners contribute the evidence required for their scope. Results and open differences form the basis for the agreed release decision.",
+        "bullets": [],
+        "img": "qualityInspection",
+        "links": [
+          {
+            "label": "Komponia-Lab and quality support",
+            "to": "/quality-and-lab"
+          }
+        ]
+      },
+      {
+        "title": "A solution you can keep sourcing.",
+        "text": "Technical development and procurement belong together. We coordinate the selected manufacturer, import and logistics, then support recurring quantities, dynamic safety stock and ongoing quality within an agreed supply arrangement.",
+        "bullets": [],
+        "img": "ongoingSupply",
+        "links": [
+          {
+            "label": "Plan recurring supply",
+            "to": "/production-orders"
+          }
+        ]
+      },
+      {
+        "title": "Support included in the agreed supply scope.",
+        "text": "The accompanying process is part of our agreed supply business without a separate process surcharge. The offer defines what is included. Work beyond that scope, including any additional development, tooling or external certification, is agreed separately.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Prepare a custom-solution inquiry",
+            "to": "/contact?type=custom"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "oem-solutions",
+    "title": "OEM solutions. From component to series supply.",
+    "subtitle": "For manufacturers building their own devices, machines and systems. Komponia supports standard components, custom versions and technical solutions from selection and design-in to samples, release and recurring supply.",
+    "heroImg": "heroComponents",
+    "sections": [
+      {
+        "title": "Built around your product.",
+        "text": "Your component must work within a larger system. We clarify the required function, installation space, connections and operating conditions with purchasing and engineering. Standard products and customer-specific versions are both valid starting points.",
+        "bullets": [
+          "Controllers, sensors and heating elements as starting component fields.",
+          "Standard selection, adaptations and custom components or assemblies.",
+          "Sample quantities, first orders and expected series demand."
+        ],
+        "img": "controllers"
+      },
+      {
+        "title": "Your team and ours, working from one requirement.",
+        "text": "A personal contact coordinates the technical, sourcing, quality and logistics work. In-house CAD drawings and sketches help define the solution, while prototypes and samples combine our own contribution with suitable manufacturing partners.",
+        "bullets": [],
+        "img": "customEngineering",
+        "links": [
+          {
+            "label": "Explore custom development",
+            "to": "/custom-solutions"
+          }
+        ]
+      },
+      {
+        "title": "Qualification for the intended application.",
+        "text": "We clarify required documents, sample criteria and release responsibilities. Agreed dimensional and functional checks in the Komponia-Lab support evaluation. The configuration and intended use determine which additional checks or approvals are needed.",
+        "bullets": [],
+        "img": "qualityInspection",
+        "links": [
+          {
+            "label": "Explore Lab and quality support",
+            "to": "/quality-and-lab"
+          }
+        ]
+      },
+      {
+        "title": "Series demand deserves ongoing attention.",
+        "text": "After release, we coordinate procurement, import and logistics for the agreed quantities. Demand planning and dynamic safety stock support recurring deliveries. Stock limits, call-offs, financing and acceptance terms are defined together.",
+        "bullets": [],
+        "img": "ongoingSupply",
+        "links": [
+          {
+            "label": "Explore series supply",
+            "to": "/production-orders"
+          }
+        ]
+      },
+      {
+        "title": "Quality support beyond the first order.",
+        "text": "Ongoing quality management and complaint handling accompany the agreed supply scope. Your contact brings findings back to the manufacturer and coordinates the next steps. Changes to components or sources are reviewed against the application before use.",
+        "bullets": [],
+        "img": "qualityInspection"
+      },
+      {
+        "title": "Start with the information you have.",
+        "text": "A part number, sketch, sample or application description is enough to begin. Add your product context, sample and annual quantities, desired timing and any required documentation. We clarify the remaining work together.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Prepare an OEM inquiry",
+            "to": "/contact?type=oem"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "replacement-and-second-source",
+    "title": "Replacement options. Assessed for your application.",
+    "subtitle": "A discontinued part or dependence on one source creates a technical and supply question. We assess potential replacement routes and additional sources against the actual component, application and approval requirements.",
+    "heroImg": "sensors",
+    "sections": [
+      {
+        "title": "Understand the existing component.",
+        "text": "We start with the part reference, datasheet, drawing or sample and the role it performs in your equipment. A geometric reconstruction, functional replacement and new development are different tasks; the assessment identifies which route fits your need.",
+        "bullets": [],
+        "img": "customEngineering"
+      },
+      {
+        "title": "Compare the differences that matter.",
+        "text": "Function, electrical and mechanical interfaces, materials and operating conditions need to be compared. We clarify open manufacturer questions and identify differences that need sample evaluation or renewed approval. Similar appearance alone does not establish interchangeability.",
+        "bullets": [],
+        "img": "qualityInspection",
+        "links": [
+          {
+            "label": "Replacement preparation guide",
+            "to": "/guides/replacement-assessment"
+          }
+        ]
+      },
+      {
+        "title": "Assess a second source beyond the supplier name.",
+        "text": "A potential additional source must meet the agreed requirements. We also examine shared dependencies where relevant: two sellers may rely on the same factory, tooling or upstream supplier. Technical suitability and source independence are separate questions.",
+        "bullets": [],
+        "img": "ongoingSupply"
+      },
+      {
+        "title": "Agree the checks and switching conditions.",
+        "text": "Define the sample, inspection and documentation needed to evaluate the alternative. Record the assessed configuration and application-specific approval before switching. Any monitoring is agreed for named components, sources and a defined review rhythm.",
+        "bullets": [],
+        "img": "",
+        "links": [
+          {
+            "label": "Prepare a replacement inquiry",
+            "to": "/contact?type=replacement"
+          },
+          {
+            "label": "Prepare a second-source inquiry",
+            "to": "/contact?type=second-source"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "industries/refrigeration-climate-control",
+    "title": "Components for refrigeration and climate control.",
+    "subtitle": "Controllers, sensors and switching requirements for manufacturers of refrigeration and climate equipment.",
+    "heroImg": "controllers",
+    "sections": [
+      {
+        "title": "Start with the function.",
+        "text": "We match the control task, sensor inputs, outputs and interfaces to your equipment. Standard components, suitable variants and custom versions are assessed against the installation and operating conditions.",
+        "bullets": [],
+        "img": "controllers",
+        "links": [
+          {
+            "label": "Explore controllers",
+            "to": "/components/controllers-and-control-systems"
+          },
+          {
+            "label": "Explore sensors",
+            "to": "/components/sensors-and-probes"
+          }
+        ]
+      },
+      {
+        "title": "From selection to repeat demand.",
+        "text": "We connect technical selection, manufacturer clarification and, where needed, custom development with samples and agreed checks. For recurring requirements, quantities, call-offs, dynamic safety stock and ongoing quality are defined in the supply arrangement.",
+        "bullets": [],
+        "img": "ongoingSupply",
+        "links": [
+          {
+            "label": "OEM components and series supply",
+            "to": "/oem-solutions"
+          },
+          {
+            "label": "Prepare an application inquiry",
+            "to": "/contact?type=oem"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "industries/thermal-foodservice",
+    "title": "Components for thermal and foodservice equipment.",
+    "subtitle": "Heating, sensing and control functions considered together for your device or system.",
+    "heroImg": "heating",
+    "sections": [
+      {
+        "title": "Start with the function.",
+        "text": "Heating power, geometry, control and operating conditions define the component task. We clarify mounting, electrical connections and the evidence needed for the intended equipment.",
+        "bullets": [],
+        "img": "heating",
+        "links": [
+          {
+            "label": "Explore heating elements",
+            "to": "/components/heating-elements"
+          },
+          {
+            "label": "Explore OEM support",
+            "to": "/oem-solutions"
+          }
+        ]
+      },
+      {
+        "title": "From selection to repeat demand.",
+        "text": "We connect technical selection, manufacturer clarification and, where needed, custom development with samples and agreed checks. For recurring requirements, quantities, call-offs, dynamic safety stock and ongoing quality are defined in the supply arrangement.",
+        "bullets": [],
+        "img": "ongoingSupply",
+        "links": [
+          {
+            "label": "OEM components and series supply",
+            "to": "/oem-solutions"
+          },
+          {
+            "label": "Prepare an application inquiry",
+            "to": "/contact?type=oem"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "industries/laboratory-equipment",
+    "title": "Components for laboratory equipment.",
+    "subtitle": "Application-specific temperature, sensing and control requirements for laboratory devices.",
+    "heroImg": "sensors",
+    "sections": [
+      {
+        "title": "Start with the function.",
+        "text": "Describe the required function, measurement conditions, interfaces and documentation for your laboratory device. We assess component options against these requirements. A laboratory application does not automatically establish suitability or approval for a medical use.",
+        "bullets": [],
+        "img": "sensors",
+        "links": [
+          {
+            "label": "Explore sensors and probes",
+            "to": "/components/sensors-and-probes"
+          },
+          {
+            "label": "Explore quality support",
+            "to": "/quality-and-lab"
+          }
+        ]
+      },
+      {
+        "title": "From selection to repeat demand.",
+        "text": "We connect technical selection, manufacturer clarification and, where needed, custom development with samples and agreed checks. For recurring requirements, quantities, call-offs, dynamic safety stock and ongoing quality are defined in the supply arrangement.",
+        "bullets": [],
+        "img": "ongoingSupply",
+        "links": [
+          {
+            "label": "OEM components and series supply",
+            "to": "/oem-solutions"
+          },
+          {
+            "label": "Prepare an application inquiry",
+            "to": "/contact?type=oem"
           }
         ]
       }

@@ -1,5 +1,5 @@
 KOMPONIA — PREPARE A RECURRING SUPPLY ARRANGEMENT
-Version: 2026-10-07
+Version: 2026-10-11
 General preparation checklist. Not a manufacturer datasheet, specification or offer.
 
 Standard components and custom parts can both be included in an agreed delivery model. Begin with the actual product reference and demand.
@@ -11,7 +11,8 @@ Identify the required component version, expected consumption and the relevant p
 - Preferred delivery rhythm and documents.
 
 DEFINE STOCK TERMS WHERE NEEDED
-A proposed stock arrangement needs clear limits and commercial terms. Discuss ownership, financing, acceptance, ageing and treatment of unused or changed parts.
+Dynamic safety stock is adjusted to the agreed demand and supply situation. Define the data, review rhythm, stock limits, ownership, financing and acceptance terms together. Agree how ageing, changed parts and unused stock will be handled.
+Demand review — Consumption, replenishment lead times and the agreed review rhythm.
 Quantities — Stock limits, release quantities and accepted commitments.
 Ownership and financing — Who owns the stock and which terms cover its cost.
 Changes — How revisions, ageing and discontinued items are handled.

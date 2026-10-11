@@ -40,8 +40,12 @@ Die ältere statische Referenzseite liegt weiterhin im separaten Repository `jul
 
 Auf einem weiteren Rechner dieses Repository klonen. Vor weiteren Änderungen den lokalen Git-Status prüfen und den aktuellen Stand abrufen; Änderungen nach Abschluss committen und pushen.
 
-Als nächster inhaltlicher Schritt sollen die Hauptpunkte im Manufacturing-Abschnitt anhand der gültigen Komponia-Strategie und der tatsächlichen Leistungen gemeinsam geklärt werden. Die aktuellen vier Karten sind CNC machining, 3D printing, Sheet metal fabrication und Injection molding. Zunächst Inhalte prüfen und Vorschläge abstimmen, erst nach Zustimmung umsetzen.
+## Inhaltlicher Ausbau am 11. Oktober 2026
 
-Der Startprompt dafür liegt in [project-notes/STARTPROMPT_MANUFACTURING_2026-10-08.txt](project-notes/STARTPROMPT_MANUFACTURING_2026-10-08.txt). Frühere Reviews, Prompts und Roadmaps sind Referenzmaterial. Zusätzliche Elemente aus dem Designsystem werden vor der Übernahme mit dem Nutzer abgestimmt.
+Die aktuelle Stage-13-Strategie ist in Homepage, Kernleistungen und Navigation eingearbeitet. Neue Seiten erläutern individuelle Lösungen, OEM-Betreuung, Ersatz/Zweitquellen sowie Kälte-/Klimatechnik, thermische/Foodservice-Geräte und Laborgeräte. Das Komponia-Lab, Inhouse-CAD, persönlicher Ansprechpartner, Import/Logistik und dynamischer Safety Stock werden ausdrücklich beschrieben. Das bestehende Design, die vier Hero-Bilder, Logo und Scroll-Verhalten sind erhalten; es wurden keine CSS-Dateien geändert.
+
+Qualität und Markenherkunft verwenden jetzt `/quality-and-lab` und `/brand-background`. Die früheren Template-Adressen leiten weiterhin auf diese Seiten weiter. Das Anfrageformular bietet zusätzlich OEM-, Ersatz- und Zweitquellen-Anfragen, bleibt aber eine lokale Entwurfsvorbereitung ohne Versand.
+
+Analyse, Quellen, Abgrenzungen und Prüfungen stehen in `project-notes/STRATEGY_CONTENT_REVIEW_2026-10-11.txt`. Die Veröffentlichungsvoraussetzungen stehen in `project-notes/PUBLICATION_PREPARATION.txt`. Die bisherige Manufacturing-Notiz vom 8. Oktober ist historische Referenz, kein aktueller Arbeitsauftrag.
 
 Die gültigen Strategiedokumente liegen im getrennten privaten Repository `juliankomponia/Unternehmensstrategie` im Ordner `Komponia_Sourcura_Strategie`: `stage13_komponia.md` und `stage13_gesamtkonzept.md`.

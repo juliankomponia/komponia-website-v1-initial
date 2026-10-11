@@ -16,7 +16,7 @@ const PAGE_TITLES: Record<string, string> = {
 };
 
 const PAGE_DESCRIPTIONS: Record<string, string> = {
-  '/': 'Technical components, custom solutions and ongoing supply for manufacturers and industrial users. Explore component groups and manufacturing options.',
+  '/': 'Technical components and OEM solutions with in-house CAD, Komponia-Lab checks, personal support and recurring supply with dynamic safety stock.',
   '/about': 'Komponia builds on WTS technical component experience since 1997. Components and advice, custom solutions and agreed ongoing supply.',
   '/how-ordering-works': 'Start with your component or application requirement. Clarify the scope, agree the offer and define any samples, checks and delivery arrangements.',
   '/cnc-machining': 'Prepare a CNC machining requirement with material, geometry, interfaces, tolerances and quantities. Coordinate a suitable process and agreed checks.',
