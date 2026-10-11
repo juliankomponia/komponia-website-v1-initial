@@ -1,0 +1,38 @@
+.k-engineering { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px; align-items: center; }
+.k-engineering-copy { max-width: 464px; min-width: 0; }
+.k-engineering-copy h2 { margin-bottom: 20px; }
+.k-engineering-copy > p:not(.komponia-label) { color: #4C5057; font-size: 16px; line-height: 1.7; margin-bottom: 24px; }
+.k-engineering-copy ul { display: grid; gap: 14px; margin: 0 0 28px; padding: 0; list-style: none; }
+.k-engineering-copy li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.65; }
+.k-engineering-copy li > svg { flex-shrink: 0; color: #3E5AF5; margin-top: 3px; }
+.k-engineering-copy .arrow-link { gap: 10px; align-items: center; font-size: 14px; }
+.k-engineering-explorer { min-width: 0; border: 1px solid #E1E3E8; border-radius: 20px; background: #fff; }
+.k-engineering-figure { margin: 0; }
+.k-engineering-image { position: relative; aspect-ratio: 1600 / 1063; overflow: hidden; border-radius: 19px 19px 0 0; background: #F5F6F8; }
+.k-engineering-image > img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.k-engineering-annotation { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.k-engineering-annotation-label { position: absolute; left: 5%; top: 5%; color: #3E5AF5; }
+.k-engineering-annotation-label span { display: block; color: #626875; font-size: 9px; letter-spacing: .06em; line-height: 1.6; }
+.k-engineering-annotation-label strong { display: block; font-size: 13px; font-weight: 500; line-height: 1.5; }
+.k-engineering-leader { stroke: #3E5AF5; stroke-width: 1.4; stroke-linejoin: round; stroke-linecap: round; stroke-dasharray: 1; animation: k-engineering-line 400ms var(--komponia-ease); }
+.k-engineering-target { fill: #fff; stroke: #3E5AF5; stroke-width: 1.5; }
+.k-engineering-target-center { fill: #3E5AF5; }
+.k-engineering-figure figcaption { padding: 12px 24px; border-top: 1px solid #E1E3E8; color: #626875; font-size: 10px; line-height: 1.65; }
+.k-engineering-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 8px 24px 0; gap: 4px; border-bottom: 1px solid #E1E3E8; }
+.k-engineering-tabs button { position: relative; display: flex; justify-content: center; align-items: center; gap: 8px; min-height: 50px; min-width: 0; padding: 8px 4px; color: #626875; background: transparent; font-size: 12px; font-weight: 500; line-height: 1.5; transition: color 140ms var(--komponia-ease), background-color 140ms var(--komponia-ease); }
+.k-engineering-tabs button > svg { flex-shrink: 0; }
+.k-engineering-tabs button::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 2px; background: transparent; transition: background-color 220ms var(--komponia-ease); }
+.k-engineering-tabs button:hover { color: #3E5AF5; background: #F5F6F8; }
+.k-engineering-tabs button[aria-selected="true"] { color: #3E5AF5; }
+.k-engineering-tabs button[aria-selected="true"]::after { background: #3E5AF5; }
+.k-engineering-panel { padding: 22px 24px 26px; min-height: 137px; }
+.k-engineering-panel[hidden] { display: none; }
+.k-engineering-panel:not([hidden]) { animation: k-engineering-detail 220ms var(--komponia-ease); }
+.k-engineering-panel h3 { color: #1F1F1D; font-size: 15px; line-height: 1.5; font-weight: 600; letter-spacing: -.015em; margin-bottom: 8px; }
+.k-engineering-panel p { color: #4C5057; font-size: 12px; line-height: 1.7; margin: 0; }
+.k-engineering :is(button, a, [role="tabpanel"]):focus-visible { outline: 2px solid #3E5AF5; outline-offset: 4px; border-radius: 3px; }
+@keyframes k-engineering-line { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes k-engineering-detail { from { opacity: .5; } to { opacity: 1; } }
+@media (max-width: 1023px) { .k-engineering { grid-template-columns: minmax(0, 1fr); gap: 32px; } .k-engineering-copy { max-width: 680px; } .k-engineering-explorer { width: 100%; max-width: 680px; } }
+@media (max-width: 639px) { .k-engineering-copy > p:not(.komponia-label) { font-size: 15px; } .k-engineering-tabs { margin-inline: 16px; gap: 0; } .k-engineering-tabs button { flex-direction: column; gap: 5px; min-height: 65px; font-size: 11px; } .k-engineering-panel { padding: 20px; min-height: 160px; } .k-engineering-figure figcaption { padding-inline: 20px; } .k-engineering-annotation-label span { font-size: 9px; } .k-engineering-annotation-label strong { font-size: 11px; } }
+@media (prefers-reduced-motion: reduce) { .k-engineering-leader, .k-engineering-panel:not([hidden]) { animation: none; } .k-engineering-tabs button, .k-engineering-tabs button::after { transition: none; } }

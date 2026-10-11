@@ -93,3 +93,10 @@ Die vorhandenen Hubs-Grids und die Reihenfolge bleiben erhalten. Inspiration von
 Die neuen Komponenten heißen `InquiryGuide`, `ProcessExplorer` und `SupplyExplorer`; ihre Styles sind jeweils gekapselt. `useHomeReveal` ergänzt einmalige dezente Einblendungen ohne anfängliches Verstecken der Inhalte. Tastaturbedienung, sichtbarer Fokus und reduzierte Bewegung sind berücksichtigt. Die bestehende neutrale Bildserie und der Hero bleiben erhalten; keine neue Bildgenerierung oder Bibliothek war erforderlich.
 
 Ausführlicher Umsetzungsbrief, Quellen, Abgrenzung und Prüfung: `project-notes/INTERACTION_DESIGN_BRIEF_2026-10-11.txt`. Build und gezieltes ESLint bestanden; Desktop 1440 px, Tablet 768 px und Mobil 390 px geprüft. Alle drei Anfrage-Vorauswahlen im Formular verifiziert. Keine Veröffentlichung oder Änderung der Versandfunktion.
+
+
+## Engineering-Details und Qualitätsgrafiken am 11. Oktober 2026
+
+Die zweite Interaktionsrunde ergänzt das vorhandene OEM-Motiv um Function, Interfaces und Installation. Die Auswahl zeigt passende technische Fragen sowie eine feine Bildannotation; das Originalbild und die bisherigen Engineering-Aussagen bleiben erhalten. Im Lab-Abschnitt erhalten die drei bestehenden Karten eigene SVG-Szenen für Spezifikation, Prüfung und laufende Qualität. Ihre Texte und Linkziele bleiben unverändert.
+
+Die neuen Komponenten `EngineeringDetails` und `QualityIllustrations` werden nur auf der Homepage eingesetzt. Keine neuen Bibliotheken oder Bildgenerierungen. Kurze Zustands-/Fokusanimationen, Tastatursteuerung und Reduced Motion sind berücksichtigt. Build, gezieltes ESLint und unabhängiger Review bestanden; Desktop 1440 px, Tablet 768 px und Mobil 390 px ohne horizontalen Überlauf geprüft. Brief und Prüfergebnisse: `project-notes/TECHNICAL_DETAILS_BRIEF_2026-10-11.txt`.

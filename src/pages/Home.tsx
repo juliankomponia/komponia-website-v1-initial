@@ -1,8 +1,9 @@
-import { Faq, FeatureRow } from '../components/Subpage';
-import { SectionLead, CapabilitiesCards, QualityStandards, PartsGallery, IndustriesSection, ProductionSection, DarkCta } from '../components/Sections';
+import { Faq } from '../components/Subpage';
+import { SectionLead, CapabilitiesCards, PartsGallery, IndustriesSection, ProductionSection, DarkCta } from '../components/Sections';
 import { HOME_CONTENT as H } from '../data/home';
-import { CORE_SERVICE_IMAGES } from '../data/images';
 import HomeHero from '../components/HomeHero';
+import EngineeringDetails from '../components/EngineeringDetails';
+import QualityIllustrations from '../components/QualityIllustrations';
 import KomponiaSignature from '../components/KomponiaSignature';
 import InquiryGuide from '../components/InquiryGuide';
 import ProcessExplorer from '../components/ProcessExplorer';
@@ -11,7 +12,6 @@ import useHomeReveal from '../hooks/useHomeReveal';
 import './home.css';
 
 export default function Home() {
-  const oem = H['custom-solutions'];
   const revealRef = useHomeReveal();
   return <div className="home-page home-reference" ref={revealRef}>
     <HomeHero />
@@ -26,7 +26,7 @@ export default function Home() {
       </div>
     </section>
     <section className="home-band"><div className="wrap-orig section-pad">
-      <FeatureRow eyebrow="In-house engineering" title={oem.title} text={oem.intro} bullets={oem.bullets} img={CORE_SERVICE_IMAGES[0]} imgAlt="Illustrative OEM component assembly" link={oem.cta} />
+      <EngineeringDetails />
     </div></section>
     <section><div className="wrap-orig section-pad">
       <SectionLead title={H['component-fields'].title}>{H['component-fields'].intro}</SectionLead>
@@ -37,7 +37,7 @@ export default function Home() {
     </div></section>
     <section><div className="wrap-orig section-pad"><ProcessExplorer /></div></section>
     <section className="home-quality"><div className="wrap-orig section-pad">
-      <SectionLead eyebrow="Quality & Lab" title={H.quality.title}>{H.quality.intro}</SectionLead><QualityStandards />
+      <SectionLead eyebrow="Quality & Lab" title={H.quality.title}>{H.quality.intro}</SectionLead><QualityIllustrations />
     </div></section>
     <section><div className="wrap-orig section-pad">
       <SectionLead title={H.applications.title}>{H.applications.intro}</SectionLead><IndustriesSection variant="compact" />

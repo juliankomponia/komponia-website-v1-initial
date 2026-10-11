@@ -1,0 +1,31 @@
+Komponia – zweite Interaktionsrunde
+11. Oktober 2026
+Ausgangspunkt: e613edf auf main; Git-Status sauber und Pull aktuell.
+
+Auftrag
+Der Nutzer bestätigt die erste Interaktionsrunde und bittet weiterzumachen. Fortsetzung der bereits recherchierten Richtung: Leistungen verständlicher zeigen, mit eigenen technischen Elementen aus dem offiziellen Designsystem. Bestehendes Layout, Hero, Marke und Bildserie erhalten.
+
+Ausführlicher Gestaltungsbrief vor Umsetzung
+ENGINEERING: Ersetze auf der Homepage nur das bestehende Engineering-Feature durch ein gleich aufgebautes zweispaltiges Element. Die linke Spalte behält Überschrift, Einführung, drei vorhandene Aussagen und CTA aus home.json. Rechts bleibt das neutrale OEM-Assembly-Motiv aus CORE_SERVICE_IMAGES[0]. Zeige das Bild unverzerrt mit gleichem Seitenverhältnis. Darüber eine native technische Linienannotation für die gewählte Perspektive: Function markiert den dargestellten Controller, Interfaces die äußeren Anschlüsse, Installation einen Montagepunkt. Keine Bemaßungen oder behaupteten Eigenschaften des abgebildeten Produkts. Eine kompakte Reihe echter Tabs Function / Interfaces / Installation steuert die Annotation und einen kurzen Bereich mit einer konkreten Leitfrage sowie vorhandenen Auslegungskriterien. Beispiele: benötigte Regel-/Schaltfunktion und Betriebsbedingungen; elektrische und mechanische Verbindungen; Einbauraum und Befestigung. Native Buttons, mindestens 44 px hoch, Pfeiltasten/Home/End, sinnvoll zugeordnetes sichtbares Panel. Auswahl darf keine Anfrage absenden oder zum Formular navigieren. Bild bleibt als illustrative OEM-Baugruppe bezeichnet. Drei Zustände, kein automatischer Wechsel, kein Hover-only-Inhalt.
+
+QUALITY: Verbessere die vorhandenen drei Qualitätskarten am selben Ort, ohne zusätzlichen langen Seitenabschnitt. Überschrift, Einführung, alle drei Kartentexte und Links aus H.quality bleiben erhalten. Ersetze die kleinen Einzelicons durch drei eigene technische SVG-Szenen: Dokument mit definierter Merkmalslinie, Bauteil mit Maß-/Prüfkontur ohne Zahlen, Dokumentation und Rückkopplung in der Serienversorgung. Die Zeichnungen beschreiben Arbeitsarten und sind keine echten Prüfergebnisse. In jeder Karte wird bei Hover oder Tastaturfokus ein fachliches Detail kurz hervorgehoben; alle Textinhalte sind immer sichtbar. Auf Touch bleiben die Karten direkte Links. Keine grünen Zertifikatssiegel, Prüfnummern, Toleranzwerte, Status-Dashboards oder erfundenen Garantien.
+
+GESTALTUNG: Lokale Sora, Blau #3E5AF5, Ink #1F1F1D, Lavendel #D4B9F3, Gelb #F7D44B; Weiß und kühles Grau. 1 px Kontur, 14 px Kartenradius, 20 px Panelradius, offene Linienicons in vorhandener Strichstärke. Keine dekorativen Verläufe, Muster, Texturen, neue Bildserie, fremde Assets oder Bibliotheken. Bestehende Wortmarken und Claim-Regeln beachten. Zusätzliche Linien/Symbole nativ in SVG umsetzen, dadurch skalierbar und sauber an Interaktion gebunden.
+
+BEWEGUNG: 140 ms Hover, 220 ms Zustand, maximal 400 ms Linienzeichnung. Keine Endlosschleife, kein Parallax, keine schwebenden Objekte. Reduced-motion entfernt Bewegung; Fokus bleibt deutlich. Kein initiales Unsichtbarmachen von Inhalt.
+
+PRÜFUNG: Gezielte TypeScript/Vite- und ESLint-Prüfung. Browser 1440, 768 und 390 px: keine Überläufe oder abgeschnittenen Texte; Bild bleibt unverzerrt, Zustände entsprechen der Auswahl; Tastatursteuerung und Links prüfen. Unabhängiger Code-Review, Dokumentation, Commit und Push. Keine Veröffentlichung oder Änderung der Kontaktfunktion.
+
+
+Umsetzung und tatsächliche Prüfung
+- EngineeringDetails ersetzt das bisherige Engineering-Feature ausschließlich auf Home. Inhalt/CTA aus H['custom-solutions'] und das vorhandene neutrale OEM-Motiv bleiben erhalten. Die drei Tabs steuern jeweils eigene Leitfrage, Erläuterung und Bildannotation.
+- Bild, SVG-viewBox und CSS-Seitenverhältnis auf die tatsächlichen 1600 x 1063 Pixel abgestimmt. Die Punkte markieren Controller, äußeren Anschluss und Montagepunkt; keine Maße oder realen Produkteigenschaften ergänzt.
+- QualityIllustrations ersetzt nur die Homepage-Verwendung von QualityStandards. Alle Titel, Texte und drei Linkziele stammen weiterhin aus H.quality.cards. Die gemeinsam genutzte ursprüngliche Komponente bleibt für andere Seiten bestehen.
+- Drei eigene SVG-Szenen illustrieren Merkmalsdefinition, Musterprüfung und Dokumentation/Rückkopplung. Keine Werte, Zertifikate oder scheinbaren Prüfergebnisse.
+- TypeScript/Vite-Build und gezieltes ESLint für Home, EngineeringDetails und QualityIllustrations bestanden. Bestehende Bundlegrößenwarnung über 500 kB bleibt; keine zusätzlichen Bibliotheken oder Bilddateien.
+- Unabhängiger Code-Review: Bildhöhe korrigiert; danach keine handfesten Befunde. Fokusrahmen in Markenblau, Reduced-motion-Regeln vorhanden; Systemeinstellung nicht verändert.
+- Browser bei 1440 x 1000, 768 x 1024 und 390 x 844 geprüft: scrollWidth entspricht jeweils der Fensterbreite; keine Überläufe in neuen Controls oder Qualitätskarten.
+- Function/Interfaces/Installation jeweils angeklickt: passender Text und Markierung. Pfeiltaste mit Wraparound sowie Home/End geprüft. Mobile Tabflächen 65 px hoch, Beschriftungen vollständig sichtbar.
+- Qualitätskarten bei 1440 nebeneinander, bei 768 als breite Bild-/Textzeilen und bei 390 gestapelt geprüft. Tastaturfokus sichtbar und animierte Detailmarkierung aktiv. Link tatsächlich per Enter geöffnet: /quality-and-lab, Überschrift Komponia-Lab. Quality through series supply.
+- Keine defekten geladenen Bilder, keine Fehler in den Browserlogs.
+- Hero, bestehende Prozess-/Supply-/Inquiry-Interaktionen und ursprüngliche Abschnittsfolge bleiben erhalten. Keine Änderung an Kontaktversand, Veröffentlichung oder Hosting.
