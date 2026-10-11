@@ -84,3 +84,12 @@ Der abgestimmte Seitenaufbau bleibt erhalten. Die Markenverfeinerung folgt dem o
 Die originale, unveränderte SVG-Marke liegt in `src/assets/brand/komponia-mark.svg`. `KomponiaSignature.tsx` verbindet sie mit Sourcing, Engineering, Quality und Supply und ersetzt das wiederholte Produktbild im Herkunftsabschnitt. Die Branchenkarten zeigen passende Linien-Icons. Die neutralen Produktbilder bleiben aktiv; keine neue Bildserie wurde erzeugt. Die Startseitentexte sind kürzer und direkter formuliert.
 
 Prüfungen und Abgrenzung: `project-notes/BRAND_DETAIL_REVIEW_2026-10-11.txt`.
+
+
+## Interaktive Homepage-Elemente am 11. Oktober 2026
+
+Die vorhandenen Hubs-Grids und die Reihenfolge bleiben erhalten. Inspiration von Deel, Stripe, Hubs, Xometry und FACTUREE wurde in drei eigene Komponia-Elemente übersetzt: bedarfsorientierter Anfrageeinstieg mit Vorauswahl im Kontaktformular, sechs erkundbare Beschaffungsschritte mit technischen SVG-Grafiken sowie eine Lieferlogik mit Plan, Call off und Review. Die vier vorhandenen Supply-Abstimmungspunkte bleiben sichtbar.
+
+Die neuen Komponenten heißen `InquiryGuide`, `ProcessExplorer` und `SupplyExplorer`; ihre Styles sind jeweils gekapselt. `useHomeReveal` ergänzt einmalige dezente Einblendungen ohne anfängliches Verstecken der Inhalte. Tastaturbedienung, sichtbarer Fokus und reduzierte Bewegung sind berücksichtigt. Die bestehende neutrale Bildserie und der Hero bleiben erhalten; keine neue Bildgenerierung oder Bibliothek war erforderlich.
+
+Ausführlicher Umsetzungsbrief, Quellen, Abgrenzung und Prüfung: `project-notes/INTERACTION_DESIGN_BRIEF_2026-10-11.txt`. Build und gezieltes ESLint bestanden; Desktop 1440 px, Tablet 768 px und Mobil 390 px geprüft. Alle drei Anfrage-Vorauswahlen im Formular verifiziert. Keine Veröffentlichung oder Änderung der Versandfunktion.

@@ -135,3 +135,14 @@
   .home-reference .cap-card, .home-reference .quality-card { transition: none; }
   .home-reference .cap-card:hover, .home-reference .quality-card:hover { transform: none; }
 }
+
+/* Content remains visible by default; motion runs only once as a section enters. */
+.home-reference .k-reveal-in { animation: k-home-reveal 640ms cubic-bezier(.16,1,.3,1); }
+@keyframes k-home-reveal { from { opacity: .55; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.home-reference .arrow-link svg { transition: transform 140ms var(--komponia-ease); }
+.home-reference .arrow-link:is(:hover, :focus-visible) svg { transform: translateX(3px); }
+@media (prefers-reduced-motion: reduce) {
+  .home-reference .k-reveal-in { animation: none; }
+  .home-reference .arrow-link svg { transition: none; }
+  .home-reference .arrow-link:is(:hover, :focus-visible) svg { transform: none; }
+}
