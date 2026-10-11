@@ -44,8 +44,8 @@
     }
   },
   "capabilities": {
-    "title": "Manufacturing options for custom parts.",
-    "intro": "A manufacturing process follows the part, material and intended use. We assess these options with suitable manufacturers; the available capability and agreed checks are confirmed for your project.",
+    "title": "OEM solutions, components & manufacturing.",
+    "intro": "Our core is technical components for your equipment: standard products, custom OEM solutions and ongoing series supply. We connect application advice, in-house development and suitable manufacturing partners around your requirements.",
     "overviewCta": {
       "label": "Explore components",
       "to": "/components"
@@ -91,7 +91,51 @@
         "cta": "Explore injection molding",
         "to": "/injection-molding"
       }
-    ]
+    ],
+    "coreCards": [
+      {
+        "title": "OEM solutions",
+        "desc": "Components and assemblies for your own equipment",
+        "specs": [
+          "Standard and custom versions for devices, machines and systems",
+          "Support from design-in and samples to recurring supply"
+        ],
+        "cta": "Explore OEM solutions",
+        "to": "/oem-solutions"
+      },
+      {
+        "title": "Technical components",
+        "desc": "Selection, advice and supply for your application",
+        "specs": [
+          "Controllers, sensors, heating and switching components",
+          "Technical fit, variants and manufacturer questions clarified"
+        ],
+        "cta": "Explore components",
+        "to": "/components"
+      },
+      {
+        "title": "Custom development",
+        "desc": "From your requirement to a practical component",
+        "specs": [
+          "In-house CAD and sketches; prototypes with suitable partners",
+          "Agreed checks in the Komponia-Lab and application release"
+        ],
+        "cta": "Explore custom solutions",
+        "to": "/custom-solutions"
+      },
+      {
+        "title": "Series supply",
+        "desc": "Ongoing support beyond the first delivery",
+        "specs": [
+          "Demand planning, call-offs and dynamic safety stock",
+          "Import, logistics, ongoing quality and complaint handling"
+        ],
+        "cta": "Explore series supply",
+        "to": "/production-orders"
+      }
+    ],
+    "processesTitle": "Manufacturing processes for your custom parts.",
+    "processesIntro": "The manufacturing route follows the component. We assess geometry, material and quantity with suitable partners and confirm the available process, responsibilities and checks for your project."
   },
   "custom-solutions": {
     "title": "OEM components. From your idea to series supply.",

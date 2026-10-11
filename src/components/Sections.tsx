@@ -11,10 +11,13 @@ export function SectionLead({ title, children }: { title: string; children?: Rea
   return <div className="section-lead"><h2 className="h2-orig">{title}</h2>{children && <p>{children}</p>}</div>;
 }
 
-export function CapabilitiesCards() {
-  const images = [IMG.capCnc, IMG.cap3dp, IMG.capSmf, IMG.capIm];
+export function CapabilitiesCards({ core = false }: { core?: boolean } = {}) {
+  const images = core
+    ? [I.heroComponents, I.controllers, I.customEngineering, I.ongoingSupply]
+    : [IMG.capCnc, IMG.cap3dp, IMG.capSmf, IMG.capIm];
+  const cards = core ? H.capabilities.coreCards : H.capabilities.cards;
   return <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 justify-center">
-    {H.capabilities.cards.map((c, i) => <Link to={c.to} key={c.title} className="cap-card">
+    {cards.map((c, i) => <Link to={c.to} key={c.title} className="cap-card">
       <img src={images[i]} alt="" loading="lazy" /><div className="cap-text">
         <span className="cap-title">{c.title}</span><span className="cap-subtitle">{c.desc}</span>
         <span className="cap-body"><ul>{c.specs.map(s => <li key={s}>{s}</li>)}</ul></span>
