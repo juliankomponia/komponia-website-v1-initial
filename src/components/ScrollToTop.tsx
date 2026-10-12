@@ -6,7 +6,6 @@ import { INDUSTRIAL_IMAGES as I } from '../data/images';
 
 const PAGE_TITLES: Record<string, string> = {
   '/': 'Technical components, custom solutions & ongoing supply',
-  '/design-preview': 'Opening design preview',
   '/about': 'About Komponia',
   '/how-ordering-works': 'How we work',
   '/cnc-machining': 'CNC machining',
@@ -18,7 +17,6 @@ const PAGE_TITLES: Record<string, string> = {
 
 const PAGE_DESCRIPTIONS: Record<string, string> = {
   '/': 'Technical components and OEM solutions with in-house CAD, Komponia-Lab checks, personal support and recurring supply with dynamic safety stock.',
-  '/design-preview': 'A Komponia design study for the homepage hero, capabilities and in-house engineering.',
   '/about': 'Komponia builds on WTS technical component experience since 1997. Components and advice, custom solutions and agreed ongoing supply.',
   '/how-ordering-works': 'Start with your component or application requirement. Clarify the scope, agree the offer and define any samples, checks and delivery arrangements.',
   '/cnc-machining': 'Prepare a CNC machining requirement with material, geometry, interfaces, tolerances and quantities. Coordinate a suitable process and agreed checks.',
