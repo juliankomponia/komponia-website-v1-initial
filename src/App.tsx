@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react';
 import { Routes, Route, Navigate } from 'react-router';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -16,6 +17,8 @@ import GenericPage, { type GenericPageData } from './components/GenericPage';
 import ScrollToTop from './components/ScrollToTop';
 import pagesData from './data/pages.json';
 
+const HomeOpeningPreview = lazy(() => import('./pages/HomeOpeningPreview'));
+
 const genericPages = (pagesData as GenericPageData[]).filter((p) => !['industries', 'contact'].includes(p.route));
 
 export default function App() {
@@ -26,6 +29,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/design-preview" element={<Suspense fallback={<p className="p-8" role="status">Loading preview…</p>}><HomeOpeningPreview /></Suspense>} />
           <Route path="/components" element={<Components />} />
           <Route path="/components/:groupId" element={<Components />} />
           <Route path="/components/:groupId/:productId" element={<Components />} />

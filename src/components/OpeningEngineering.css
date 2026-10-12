@@ -1,0 +1,125 @@
+.opening-preview .op-engineering {
+  background: #F5F6F8;
+  color: #1F1F1D;
+  font-family: 'Sora', sans-serif;
+}
+
+.opening-preview .op-engineering-wrap {
+  width: 100%;
+  max-width: 1248px;
+  margin-inline: auto;
+  padding: 88px 40px 64px;
+}
+
+.opening-preview .op-engineering-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 1fr);
+  column-gap: 88px;
+  align-items: end;
+  margin-bottom: 40px;
+}
+
+.opening-preview .op-engineering-eyebrow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0 0 24px;
+  color: #4C5057;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.opening-preview .op-engineering-eyebrow::before { content: ''; width: 36px; height: 2px; background: #3E5AF5; }
+.opening-preview .op-engineering-heading h2 { max-width: 540px; margin: 0; color: #1F1F1D; font-size: 40px; font-weight: 600; line-height: 1.16; letter-spacing: -.035em; text-wrap: balance; }
+.opening-preview .op-engineering-intro { padding-bottom: 2px; }
+.opening-preview .op-engineering-intro > p { margin: 0 0 22px; color: #4C5057; font-size: 15px; line-height: 1.75; }
+.opening-preview .op-engineering-link { display: inline-flex; align-items: center; gap: 10px; color: #3E5AF5; font-size: 14px; font-weight: 500; line-height: 1.6; text-decoration: none; }
+.opening-preview .op-engineering-link svg { flex-shrink: 0; }
+.opening-preview .op-engineering-link:hover { color: #2A44D8; text-decoration: underline; text-underline-offset: 4px; }
+.opening-preview .op-engineering-link:focus-visible { outline: 3px solid #3E5AF5; outline-offset: 5px; }
+
+.opening-preview .op-engineering-spread {
+  display: grid;
+  grid-template-columns: minmax(0, 1.94fr) minmax(0, 1fr);
+  gap: 36px;
+  align-items: start;
+}
+
+.opening-preview .op-engineering-assembly, .opening-preview .op-engineering-detail { min-width: 0; margin: 0; }
+.opening-preview .op-engineering-stage { position: relative; min-width: 0; aspect-ratio: 1600 / 1063; }
+.opening-preview .op-engineering-stage > img { display: block; width: 100%; height: auto; }
+.opening-preview .op-engineering-leaders { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.opening-preview .op-engineering-leaders path, .opening-preview .op-engineering-leaders circle { stroke: #3E5AF5; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.opening-preview .op-engineering-leaders circle { fill: #F5F6F8; fill-opacity: .18; }
+.opening-preview .op-engineering-reference { position: absolute; display: inline-flex; width: 28px; height: 28px; align-items: center; justify-content: center; transform: translate(-50%, -50%); border-radius: 7px; background: #3E5AF5; color: #fff; font-size: 11px; font-weight: 500; line-height: 1; }
+.opening-preview .op-engineering-reference--interfaces { left: 22%; top: 9.972%; }
+.opening-preview .op-engineering-reference--mounting { left: 81%; top: 14.957%; }
+.opening-preview .op-engineering-assembly > figcaption, .opening-preview .op-engineering-detail > figcaption { margin: 14px 0 0; color: #626875; font-size: 11px; line-height: 1.65; }
+
+.opening-preview .op-engineering-details { min-width: 0; padding-top: 14px; }
+.opening-preview .op-engineering-crop { position: relative; width: 100%; aspect-ratio: 19 / 16; overflow: hidden; border-radius: 20px; background: #ECEEF1; }
+/* The 380 × 320 source window starts at (520, 300) in the original
+   1600 × 1063 image. It enlarges the visible connections without resampling
+   or introducing a second asset. */
+.opening-preview .op-engineering-crop > img { position: absolute; display: block; width: 421.052632%; max-width: none; height: auto; left: -136.842105%; top: -93.75%; }
+.opening-preview .op-engineering-points { display: grid; gap: 18px; margin: 25px 0 0; }
+.opening-preview .op-engineering-points > div { min-width: 0; }
+.opening-preview .op-engineering-points dt { display: flex; align-items: center; gap: 12px; margin: 0 0 6px; color: #1F1F1D; font-size: 14px; font-weight: 500; line-height: 1.5; }
+.opening-preview .op-engineering-points dt > span { color: #3E5AF5; font-size: 10px; font-weight: 500; }
+.opening-preview .op-engineering-points dd { margin: 0; padding-left: 26px; color: #4C5057; font-size: 13px; line-height: 1.6; }
+
+.opening-preview .op-engineering-support { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; margin-top: 48px; padding-top: 27px; border-top: 1px solid #D5D9E1; }
+.opening-preview .op-engineering-support > div { min-width: 0; }
+.opening-preview .op-engineering-support h3 { margin: 0 0 9px; color: #1F1F1D; font-size: 14px; font-weight: 600; line-height: 1.5; letter-spacing: -.01em; }
+.opening-preview .op-engineering-support p { max-width: 310px; margin: 0; color: #4C5057; font-size: 13px; line-height: 1.7; }
+
+@media (max-width: 1119px) {
+  .opening-preview .op-engineering-heading { column-gap: 48px; }
+  .opening-preview .op-engineering-spread { gap: 28px; }
+}
+
+@media (max-width: 899px) {
+  .opening-preview .op-engineering-wrap { padding: 64px 28px; }
+  .opening-preview .op-engineering-heading { grid-template-columns: minmax(0, 1fr); row-gap: 24px; margin-bottom: 32px; }
+  .opening-preview .op-engineering-heading h2 { max-width: 620px; font-size: 36px; }
+  .opening-preview .op-engineering-intro { max-width: 620px; }
+  .opening-preview .op-engineering-intro > p { margin-bottom: 16px; }
+  .opening-preview .op-engineering-spread { grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr); gap: 24px; }
+  .opening-preview .op-engineering-details { padding-top: 8px; }
+  .opening-preview .op-engineering-points { gap: 15px; margin-top: 20px; }
+  .opening-preview .op-engineering-points dt { gap: 9px; font-size: 13px; }
+  .opening-preview .op-engineering-points dd { padding-left: 23px; font-size: 12px; }
+  .opening-preview .op-engineering-support { gap: 24px; margin-top: 36px; }
+}
+
+@media (max-width: 639px) {
+  .opening-preview .op-engineering-wrap { padding: 48px 20px; }
+  .opening-preview .op-engineering-heading { row-gap: 20px; margin-bottom: 24px; }
+  .opening-preview .op-engineering-heading h2 { max-width: 420px; font-size: 28px; line-height: 1.2; }
+  .opening-preview .op-engineering-eyebrow { margin-bottom: 22px; font-size: 10px; letter-spacing: .14em; }
+  .opening-preview .op-engineering-intro > p { font-size: 14px; line-height: 1.7; }
+  .opening-preview .op-engineering-spread { grid-template-columns: minmax(0, 1fr); gap: 25px; }
+  .opening-preview .op-engineering-reference { width: 24px; height: 24px; border-radius: 6px; font-size: 10px; }
+  .opening-preview .op-engineering-assembly > figcaption { margin-top: 12px; }
+  .opening-preview .op-engineering-details { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: start; padding-top: 0; }
+  .opening-preview .op-engineering-crop { border-radius: 16px; }
+  .opening-preview .op-engineering-detail > figcaption { margin-top: 9px; font-size: 10px; }
+  .opening-preview .op-engineering-points { gap: 19px; margin-top: 0; }
+  .opening-preview .op-engineering-points dt { gap: 8px; font-size: 13px; }
+  .opening-preview .op-engineering-points dd { padding-left: 0; font-size: 12px; }
+  .opening-preview .op-engineering-support { grid-template-columns: minmax(0, 1fr); gap: 22px; margin-top: 32px; padding-top: 24px; }
+  .opening-preview .op-engineering-support > div { display: grid; grid-template-columns: 105px minmax(0, 1fr); gap: 16px; }
+  .opening-preview .op-engineering-support h3 { margin-bottom: 0; font-size: 13px; }
+  .opening-preview .op-engineering-support p { font-size: 12px; }
+}
+
+@media (max-width: 359px) {
+  .opening-preview .op-engineering-details { grid-template-columns: minmax(0, 1fr); }
+  .opening-preview .op-engineering-detail { max-width: 230px; }
+  .opening-preview .op-engineering-points { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .opening-preview .op-engineering-support > div { grid-template-columns: minmax(0, 1fr); gap: 5px; }
+}

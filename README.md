@@ -109,3 +109,12 @@ Die aktuelle Gestaltungsrunde orientiert sich stärker am technischen Hubs-Aufba
 Engineering, Anfrage, Ablauf, Qualität, Branchen und Supply haben weniger verschachtelte Karten, kleinere Bildradien und klare Trennlinien. Auswahlzustände bleiben sichtbar; große Karten werden beim Hover nicht mehr angehoben. Die Markenherkunft ist eine durchgehende Ink-Fläche mit größerer Originalmarke und vier nummerierten Farbmodulen. Das Original erscheint zusätzlich im Hero und im Abschluss. Die tatsächliche Marke bleibt unverändert: eine blaue Pille und zwei abgerundete Vierecke für die vier Disziplinen. Das originale App-Icon ist nun als Browser-Favicon eingebunden.
 
 Die neutralen Higgsfield-Bilder, Originalwortmarken, bestätigten Fakten und Kontaktfunktionen bleiben erhalten. Keine Bildgenerierung oder neue Bibliothek. Änderungen an den gemeinsam genutzten Komponenten verwenden optionale Homepage-Varianten. Umsetzungsbrief und Prüfungen: `project-notes/BRAND_GEOMETRY_BRIEF_2026-10-11.txt`.
+
+
+## Separater Eröffnungsentwurf am 12. Oktober 2026
+
+Unter `http://localhost:3000/#/design-preview` liegt der freigegebene visuelle Entwurf für Hero, Leistungsübersicht und Engineering. Die bisherige Homepage bleibt unter `/#/` zum Vergleich erhalten. Die Vorschau wird als eigener React-/CSS-Chunk geladen und verwendet den bestehenden Header und Footer.
+
+Der Hero verbindet eine große neutrale Produktbühne mit einer Ink-Textfläche; „Components / OEM & series“ wechselt nun auch das Motiv. Vier offene Kernleistungsspalten stehen vor einer kompakten Reihe der Fertigungsverfahren. Engineering zeigt eine große OEM-Baugruppe, einen vergrößerten Ausschnitt derselben Bilddatei sowie zwei statische Hinweise zu Anschlüssen und Befestigung. Originalmarke, neutrale illustrative Bilder und bestätigte Inhalte bleiben erhalten.
+
+Ausführlicher Umsetzungsbrief und Prüfung: `project-notes/OPENING_DESIGN_PREVIEW_2026-10-12.txt`. Screenshots: `project-notes/previews/opening-2026-10-12/`. Build, gezieltes ESLint und unabhängiger Review bestanden. Desktop 1440/1111 px, Tablet 768 px und Mobil 390 px ohne horizontalen Überlauf geprüft. Noch keine Übernahme des Entwurfs in die Hauptseite und keine Veröffentlichung.
