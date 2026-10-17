@@ -500,7 +500,7 @@
       },
       {
         "title": "Smarter packing. Lower freight cost per component.",
-        "text": "In recurring supply, packing and freight contribute to the cost of every delivered component. Our AI-designed packing and shipping process considers part geometry, protective packaging, shipment quantities and delivery timing together. We compare suitable packing and transport options to find a cost-efficient arrangement for your requirements.\n\nReducing unnecessary empty space can lower the chargeable volume or volumetric weight. Coordinating compatible shipments can also spread transport costs across more parts. The result depends on the route, carrier tariff, actual weight and required service level.",
+        "text": "In recurring supply, packing and freight contribute to the cost of every delivered component. For context, transport costs averaged 4.1% of turnover in Finnish industry and trade in 2025.* Our AI-designed packing and shipping process considers part geometry, protective packaging, shipment quantities and delivery timing together. We compare suitable packing and transport options to find a cost-efficient arrangement for your requirements.\n\nReducing unnecessary empty space can lower the chargeable volume or volumetric weight. Coordinating compatible shipments can also spread transport costs across more parts. The result depends on the route, carrier tariff, actual weight and required service level.",
         "bullets": [
           "Define dimensions, weight, quantities and protection requirements for each part.",
           "Plan part orientation, packing units, cartons and pallet layouts to use space efficiently.",
@@ -514,7 +514,12 @@
             "label": "Environment and resource use",
             "to": "/sustainability"
           }
-        ]
+        ],
+        "footnote": {
+          "text": "University of Turku, National Logistics Survey Finland 2025, Table 2 (published 2 June 2026). Result for industrial companies, including construction, and trading companies operating in Finland. This is a share of turnover, not a surcharge on component prices or a measured Komponia saving.",
+          "label": "Read the study",
+          "href": "https://urn.fi/URN:ISBN:978-952-02-0744-1"
+        }
       },
       {
         "title": "Import, logistics and ongoing quality.",

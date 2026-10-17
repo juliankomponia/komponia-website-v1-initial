@@ -4,12 +4,13 @@ import { SectionLead, CapabilitiesCards, OrderingProcess, CaseStudies, NetworkGa
 import { HOME_CONTENT as H } from '../data/home-stand2';
 import { INDUSTRIAL_IMAGES as I } from '../data/home-stand2-images';
 import HomeHero from '../components/HomeHero';
+import SourceNote from '../components/SourceNote';
 
 export default function Home(){return <div className="home-page">
   <HomeHero/>
   <PageSections/>
   <section data-section-label="Capabilities" className="bg-white"><div className="wrap-orig section-pad"><SectionLead title={H.capabilities.title}>{H.capabilities.intro}</SectionLead><CapabilitiesCards/></div></section>
-  <section data-section-label="Why Komponia" className="bg-white"><div className="wrap-orig section-pad"><SectionLead title={H['why-komponia'].title}>{H['why-komponia'].intro}</SectionLead><CardGrid cards={H['why-komponia'].cards}/></div></section>
+  <section data-section-label="Why Komponia" className="bg-white"><div className="wrap-orig section-pad"><SectionLead title={H['why-komponia'].title}>{H['why-komponia'].intro}</SectionLead><CardGrid cards={H['why-komponia'].cards}/><SourceNote note={H['why-komponia'].footnote}/></div></section>
   <section data-section-label="Custom solutions" className="bg-brand-gray"><div className="wrap-orig section-pad"><FeatureRow eyebrow="Custom solutions" title={H['custom-solutions'].title} text={H['custom-solutions'].intro} img={I.customEngineering} imgAlt="Illustrative custom-part assessment on a workbench" link={H['custom-solutions'].cta}/></div></section>
   <section data-section-label="Components" className="bg-white"><div className="wrap-orig section-pad"><SectionLead title={H['component-fields'].title}>{H['component-fields'].intro}</SectionLead><PartsGallery/></div></section>
   <section data-section-label="How we work" className="bg-brand-gray"><div className="wrap-orig section-pad"><FeatureRow title={H.inquiry.title} text={H.inquiry.intro} bullets={H.inquiry.bullets} img={I.qualityInspection} imgAlt="Illustrative dimensional inspection of a component" link={H.inquiry.cta}/></div></section>

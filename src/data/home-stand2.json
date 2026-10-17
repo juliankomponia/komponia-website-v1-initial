@@ -500,11 +500,16 @@
       },
       {
         "title": "Smarter packing. Lower freight costs.",
-        "text": "Our AI-designed packing and shipping process considers dimensions, protection and delivery quantities together. Less empty space and coordinated shipments help lower freight cost per component.",
+        "text": "Transport costs averaged 4.1% of turnover in Finnish industry and trade in 2025.* Our AI-designed packing and shipping process combines dimensions, protection and delivery planning to reduce empty space and freight cost per component.",
         "link": "Explore packing & shipping",
         "to": "/production-orders"
       }
-    ]
+    ],
+    "footnote": {
+      "text": "University of Turku, National Logistics Survey Finland 2025, Table 2 (published 2 June 2026). Result for industrial companies, including construction, and trading companies operating in Finland. This is a share of turnover, not a surcharge on component prices or a measured Komponia saving.",
+      "label": "Read the study",
+      "href": "https://urn.fi/URN:ISBN:978-952-02-0744-1"
+    }
   },
   "environment": {
     "title": "Less empty space. More considered resource use.",

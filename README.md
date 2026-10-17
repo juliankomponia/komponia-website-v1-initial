@@ -14,6 +14,9 @@ Eine allgemeingültige Versandkostenquote für industrielle Serienkomponenten li
 sich nicht belegen. OECD- und finnische Studienwerte haben andere Bezugsgrößen und
 werden nicht als pauschaler Aufschlag auf den Teilepreis dargestellt. Quellen,
 Abgrenzung und Prüfstand: `project-notes/PRICE_SHIPPING_ENVIRONMENT_2026-10-17.txt`.
+Auf Wunsch ergänzt: Die finnischen 4,1 % Transportkosten am Umsatz stehen als
+explizit abgegrenzter Studienwert mit Sternchen und Quellenlink auf der Startseite
+und im Versandabschnitt von `/production-orders`.
 Die zugehörigen Stage-13-Strategiedokumente wurden im Repository
 `juliankomponia/Unternehmensstrategie` ergänzt.
 

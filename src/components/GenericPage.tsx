@@ -4,6 +4,7 @@ import { FeatureRow } from './Subpage';
 import { DarkCta } from './Sections';
 import { Link } from 'react-router';
 import BrandLabel from './BrandLabel';
+import SourceNote, { type SourceNoteData } from './SourceNote';
 
 export type GenericPageData = {
   route: string;
@@ -12,6 +13,7 @@ export type GenericPageData = {
   heroImg: string;
   sections: { title: string; text: string; bullets: string[]; img: string | null;
     links?: { label: string; to: string }[];
+    footnote?: SourceNoteData;
     table?: { headers: string[]; rows: string[][] };
     downloads?: { label: string; file: string; revision: string }[];
   }[];
@@ -39,6 +41,7 @@ function SectionExtras({ section }: { section: GenericPageData['sections'][numbe
     </table></div>}
     {section.links && <div className="flex flex-wrap gap-x-7 gap-y-3 mt-6">{section.links.map(link =>
       <Link key={link.to} to={link.to} className="arrow-link">{link.label}<span aria-hidden="true"> →</span></Link>)}</div>}
+    {section.footnote && <SourceNote note={section.footnote}/>}
     {section.downloads && <div className="mt-6 space-y-3">{section.downloads.map(item => <div key={item.file}>
       <a href={`${import.meta.env.BASE_URL}downloads/${item.file}`} download className="btn-outline-primary">{item.label}</a>
       <p className="text-[12px] mt-2">General preparation checklist · Version {item.revision}</p>

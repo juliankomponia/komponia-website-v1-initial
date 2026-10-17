@@ -59,3 +59,9 @@ Abschnittsnavigation, Verlinkungen und Company-Menü funktionieren; kein horizon
 Seitenüberlauf und keine Browserfehler. Neue Karten und Umweltabschnitt visuell geprüft.
 JSON-Abgleich: nur drei vorgesehene Unterseiten verändert, Hero und alle zwölf
 Capability-Karten unverändert. Strategie-Commit:4d8f469.
+
+Ergänzung auf ausdrücklichen Nutzerwunsch: Finnische Studie mit4,1%Transportkosten
+am Umsatz für2025 aufStartseite undVersandabschnitt eingebaut. Sternchen-Fußnote
+nennt UniversitätTurku,Tabelle2,Publikationsdatum,Industrie inkl.Bau undHandel,
+Abgrenzung zu Teilepreisaufschlag/eigenerErsparnis.
+StabilerPublikationslink:https://urn.fi/URN:ISBN:978-952-02-0744-1 .
