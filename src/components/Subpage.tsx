@@ -1,5 +1,8 @@
+'use client';
+
 import PageSections from './PageSections';
-import { Link } from 'react-router';
+import Link from 'next/link';
+
 import { ArrowRight, Check, Lock } from 'lucide-react';
 import BrandLabel from './BrandLabel';
 
@@ -32,7 +35,7 @@ export function SubHero({
             <h1 className="hero-title text-white font-medium mb-4">{title}</h1>
             <p className="text-base md:text-[1.125rem] leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.62)' }}>{text}</p>
             <div>
-              <Link to="/contact" className="btn-primary-l">{cta}</Link>
+              <Link href="/contact" className="btn-primary-l">{cta}</Link>
               <LockNote />
             </div>
           </div>
@@ -78,7 +81,7 @@ export function FeatureRow({
           </ul>
         )}
         {link && (
-          <Link to={link.to} className="arrow-link">
+          <Link href={link.to} className="arrow-link">
             {link.label} <ArrowRight size={20} />
           </Link>
         )}
@@ -115,7 +118,7 @@ export function CardGrid({
         const cls = 'flex flex-col overflow-hidden rounded-[1rem] transition-colors hover:bg-black/[0.08]';
         const style = { backgroundColor: 'rgba(0,0,0,0.03)' };
         return c.to ? (
-          <Link key={c.title} to={c.to} className={cls} style={style}>{inner}</Link>
+          <Link key={c.title} href={c.to} className={cls} style={style}>{inner}</Link>
         ) : (
           <div key={c.title} className={cls} style={style}>{inner}</div>
         );

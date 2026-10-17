@@ -1,0 +1,171 @@
+KOMPONIA / NEXT.JS HOMEPAGE
+Art direction and implementation prompt
+Prepared before homepage implementation on 17 October 2026
+
+USER OBJECTIVE
+The previous homepage looks too generic and too AI-generated. Rebuild the visual
+experience using Next.js, Tailwind and shadcn/ui, following kill-ai-slop and the
+Komponia design system. Research visual references first, write the full prompt,
+then implement and inspect the result in the browser. This is a local repository
+change and GitHub synchronization, not publication.
+
+CREATIVE DIRECTION: ENGINEERING, MADE VISIBLE
+Design the homepage as an industrial product editorial, with the confidence of
+a well-designed component catalogue. Visitors should see the physical subject
+before they read a service pitch. A large, isolated component photograph carries
+the opening, not a dimmed office scene. Type establishes an unmistakable focal
+point. Contrast comes from scale, proportion, light and dark, and the relationship
+between a physical object and its explanation. The page must have its own rhythm.
+
+The opening headline is “The part that fits.” Set it in Sora, sentence case,
+solid Ink, in two deliberate lines. The supporting sentence explains the actual
+business: component selection, custom OEM work and ongoing supply for equipment
+manufacturers. Keep this explanation at a normal reading size. One blue primary
+inquiry button and one quiet components link suffice. The hero image is large,
+unobscured and recognizably industrial. Under the opening, offer three clear
+paths: choose a component, develop an OEM part, plan ongoing supply. Use open
+rows and thin rules, not three marketing cards with icons and matching copy.
+
+VISUAL REFERENCES AND WHAT TO TRANSFER
+Higgsfield: https://higgsfield.ai/ (observed redirect /de)
+- Media leads. The viewer sees an outcome before being asked to absorb a pitch.
+- Transfer this to physical component imagery and immediate category selection.
+- Do not copy promotional badges, effects, discounts or the site's dense menus.
+
+Hubs / Protolabs Network: https://www.hubs.com/
+- Clear routes into technical capabilities and stages of manufacturing.
+- Keep components and OEM work concrete, with direct paths to detailed pages.
+- Do not borrow tolerance, speed, pricing or certification claims.
+
+Linear: https://linear.app/ and https://linear.app/quality
+- Product views and concise explanations belong together.
+- Transfer the discipline of showing what a feature means through an actual
+  relevant image, not through a decorative icon or a fictional dashboard.
+
+Instrument: https://www.instrument.com/
+- Prioritize a strong composition and substantial media over repetitive boxes.
+- Transfer editorial contrast and whitespace, not its exact layout or copy.
+
+Stripe: https://stripe.com/en-ch
+- Explain a capability next to its specific representation.
+- Komponia has physical components, CAD, samples and inspection work: use those
+  subjects, not payment UI, fictitious charts or made-up operational metrics.
+
+Sandvik: https://www.home.sandvik/en/offerings/manufacturing-and-machining-solutions/
+- Alternate close component views and practical manufacturing context.
+- Remain a procurement/engineering partner; do not imply that partner production
+  is Komponia-owned manufacturing.
+
+ANTI-SLOP RULESET AND INITIAL AUDIT
+Source: https://github.com/yetone/kill-ai-slop/tree/main/skill
+Pinned source commit: f6e2ae32b30443ec7bd0da4da971ee18d8f8ffcb
+Installed locally: .agents/skills/kill-ai-slop/
+Read SKILL.md, taxonomy, detection patterns and remediation directions.
+Initial source scan: 101 files, 12 signal groups, 76 candidate hits. These are
+signals, not 76 confirmed defects; much is existing shadcn or historical code.
+
+Confirmed visual issues in the active baseline:
+- src/pages/Home.tsx: repeated BrandLabel above nearly every section, including
+  capabilities (line 40), components (60), engineering (78), lab (99), process
+  (115), supply (133), applications (147) and closing (154). They often restate
+  the heading instead of adding information. Remove the automatic label rhythm.
+- src/pages/homepage.css: service/product grids and repeated title/body patterns
+  assign similar emphasis to different subjects. Replace with a dominant hero,
+  category explorer, one engineering story and a contrasting lab section.
+- Several paired slogans (“Quality work. Beyond the first sample.” etc.) sound
+  mechanically balanced. Use concrete titles and plain technical explanations.
+- Hero copy is layered over a darkened office photo; the component itself loses
+  priority. Move text into clear space and give the image its own full area.
+
+Intentional elements to keep despite generic scanner signals:
+- Sora, original logos, blue/lavender/yellow/Ink come from the user's design system.
+- Pill action buttons are a stated brand rule, not decorative badge spam.
+- Underlines on real links are useful interaction states.
+- Neutral image protection scrims are acceptable when text needs protection;
+  no atmosphere gradients, glow fields or gradient headings are allowed.
+- Numbers may label a real ordered process; do not number unordered marketing
+  sections merely to give them an editorial costume.
+
+The user has already requested implementation of the redesign. Apply the
+confirmed cleanup within that scope. The user's explicit Next.js requirement
+also authorizes the dependencies necessary for that migration.
+
+COMPOSITION AND PAGE CONTENT
+1. Navigation: one white header, original color wordmark, concise native links,
+   blue inquiry action. A shadcn Sheet provides a keyboard-accessible mobile
+   menu. Retain all existing routes in the site. No second sticky heading rail.
+2. Opening: large two-line headline and component photograph, split unevenly.
+   The image must not look like a small card. Keep the physical product whole
+   where possible. Add one accurate WTS-origin sentence without a statistic row.
+3. Task links: three open links, each describing a customer task. Direct paths
+   to component catalogue, OEM and supply. No decorative ordinals or icons.
+4. Component explorer: shadcn Tabs with four actual categories—controllers,
+   sensors, heating, pressure/switching. Selecting a category changes a large
+   product image, application explanation and the correct detail-page link.
+   Keyboard navigation and touch must work. The first category is useful without
+   interaction. These are illustrative category images, not saleable SKU claims.
+5. Engineering: a large drawing/sample/finished-part image with an asymmetric
+   text column. Explain in-house CAD, partner manufacturing, samples and an
+   agreed series specification. A shadcn Accordion presents the real sequence
+   without flooding the initial view. Supporting manufacturing routes are quiet
+   links, not promoted as four equal primary businesses.
+6. Komponia Lab: an Ink section with strong image/text contrast. Show the existing
+   inspection illustration and explain dimensions, function and agreed batch
+   sampling. Identify the scene as illustrative. No accreditation/certification
+   claims. No invented outcomes or rejection rates.
+7. Supply: express demand, agreed safety stock, call-offs and review as an actual
+   sequence. Plain language and a useful visual relationship replace an invented
+   dashboard. Commercial terms remain individually agreed. Include a direct
+   supply inquiry link with the existing supported query parameter.
+8. Closing: a short invitation to start with a drawing, part number or application.
+   Inquiry link, confirmed email and telephone. The contact page still prepares
+   a draft for the user's email application; never imply automatic transmission.
+9. Footer: original wordmark, confirmed company identity/address and relevant
+   routes. Information is grouped with alignment and whitespace, not panels.
+
+DESIGN TOKENS AND DETAIL
+Use local Sora throughout. Display 64–88px on desktop, 44–56px on small screens;
+section headings 36–52px; body 16–18px; functional labels 12–14px. Headlines use
+weight 500–600 and -0.03em tracking, not crushed extra-bold letterspacing. Keep
+one typographic voice. No serif insertions, decorative monospace or colored words.
+Blue #3E5AF5 is the action accent; hover #2A44D8. Ink #1F1F1D, white and neutral
+surfaces dominate. Lavender #D4B9F3 and yellow #F7D44B remain restrained and earned
+by brand imagery or a small inverse accent. No new palette.
+Content width approximately 1200px, 40px wide gutters, 24px mobile. Major sections
+have 96–120px space; closely related content uses much less. Do not apply one gap
+everywhere. Use open regions, thin borders and very few card surfaces. Standard
+media may keep the brand's 14px radius; full-bleed images do not need a frame.
+Buttons remain pills. No resting shadows, floating badges, glass content cards,
+continuous marquees, noise backgrounds, fake diagrams or cursor-following art.
+Use the original logo assets; never redraw or typeset an approximate wordmark.
+
+IMAGES AND MOTION
+Use the strongest existing local component photographs and engineering scenes.
+Keep all original image series and historical versions. Do not claim generated
+illustrations show actual Komponia premises, employees, inspection records or
+specific production products. Do not generate more media merely to add motion.
+Higgsfield is a visual reference in this scope, not a paid generation order.
+Transitions support actual state changes: tabs, accordion, menu. Keep them short
+and eased. No automatic cycling is necessary to understand the page. Respect
+prefers-reduced-motion. Avoid animation that makes the layout jump.
+
+TECHNICAL DELIVERABLE
+Use real Next.js App Router, native Link and routing, static generation where
+appropriate, Tailwind utilities and genuine existing shadcn/ui components.
+Preserve all existing subpages. Move legacy src/pages out of Next's reserved pages
+directory. Scope legacy styles so they cannot override the new homepage.
+Support old #/ URLs through a narrow compatibility redirect. Keep the confirmed
+content/data and existing contact behavior. Serve local assets and fonts.
+No fake progress dashboards, artificial counters or unimplemented controls.
+
+ACCEPTANCE
+- At the first viewport, Komponia's industrial subject and next action are clear.
+- The result is materially different from the previous card-and-label layout.
+- No repeated eyebrow above every heading, no identical three-card feature rows.
+- Tabs, accordion, mobile navigation and enquiry links work by keyboard and touch.
+- Layout works at 320, 390, 768 and 1280+ widths without horizontal page overflow.
+- All public legacy routes remain reachable; unknown routes produce a proper 404.
+- Type checking, build, lint and meaningful migration checks pass or limitations
+  are explicitly recorded. Inspect the rendered page, not just scanner output.
+- Re-run the kill-ai-slop scan on new design sources, triage remaining signals.
+- Save a screenshot, commit explicit changes and push main. Do not publish.

@@ -1,6 +1,8 @@
+'use client';
+
 import { useEffect, useRef, useState, type MouseEvent } from 'react';
-import { useLocation } from 'react-router';
-import './PageSections.css';
+import { usePathname } from 'next/navigation';
+
 
 type SectionLink = { id: string; label: string };
 type NavigationState = { pathname: string; items: SectionLink[]; activeId: string };
@@ -41,7 +43,7 @@ function collectSections() {
 }
 
 export default function PageSections() {
-  const { pathname } = useLocation();
+  const pathname = usePathname();
   const bar = useRef<HTMLElement>(null);
   const [navigation, setNavigation] = useState<NavigationState>({ pathname: '', items: [], activeId: '' });
   const current = navigation.pathname === pathname ? navigation : null;
@@ -54,7 +56,8 @@ export default function PageSections() {
 
     function updateActive() {
       if (disposed || scanned.length < 2) return;
-      const offset = 64 + (bar.current?.offsetHeight ?? 56) + 16;
+      const headerHeight = document.querySelector<HTMLElement>('.site-header-next')?.offsetHeight ?? 88;
+      const offset = headerHeight + (bar.current?.offsetHeight ?? 56) + 16;
       const passed = scanned.filter(({ element }) => element.getBoundingClientRect().top <= offset + 1);
       const active = passed.at(-1) ?? scanned[0];
       setNavigation((previous) => previous.pathname !== pathname || previous.activeId === active.link.id

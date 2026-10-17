@@ -10,3 +10,8 @@ coverage/
 !.env.example
 !.env.sample
 
+
+.next/
+out/
+next-env.d.ts
+src/app/legacy.generated.css

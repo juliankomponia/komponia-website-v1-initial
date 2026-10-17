@@ -1,6 +1,7 @@
 import { Box, Settings, ShieldCheck, Truck, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router';
-import mark from '../assets/brand/komponia-mark.svg';
+import Link from 'next/link';
+
+const mark = '/assets/brand/komponia-mark.svg';
 import BrandLabel from './BrandLabel';
 import { HOME_CONTENT as H } from '../data/home';
 
@@ -17,7 +18,7 @@ export default function KomponiaSignature() {
       <BrandLabel>Our background</BrandLabel>
       <h2 className="h2-orig mb-4">{H.heritage.title}</h2>
       <p className="lead-orig mb-6">{H.heritage.intro}</p>
-      <Link to="/about" className="arrow-link">Meet Komponia <ArrowRight size={20} aria-hidden="true" /></Link>
+      <Link href="/about" className="arrow-link">Meet Komponia <ArrowRight size={20} aria-hidden="true" /></Link>
     </div>
     <div className="komponia-signature">
       <div className="signature-heading">

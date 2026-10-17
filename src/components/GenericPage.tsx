@@ -1,8 +1,11 @@
+'use client';
+
 import PageSections from './PageSections';
 import { INDUSTRIAL_IMAGES as I } from '../data/images';
 import { FeatureRow } from './Subpage';
 import { DarkCta } from './Sections';
-import { Link } from 'react-router';
+import Link from 'next/link';
+
 import BrandLabel from './BrandLabel';
 
 export type GenericPageData = {
@@ -38,9 +41,9 @@ function SectionExtras({ section }: { section: GenericPageData['sections'][numbe
         : <td key={j} className="border-b border-black/10 py-4 pr-5 align-top">{cell}</td>)}</tr>)}</tbody>
     </table></div>}
     {section.links && <div className="flex flex-wrap gap-x-7 gap-y-3 mt-6">{section.links.map(link =>
-      <Link key={link.to} to={link.to} className="arrow-link">{link.label}<span aria-hidden="true"> →</span></Link>)}</div>}
+      <Link key={link.to} href={link.to} className="arrow-link">{link.label}<span aria-hidden="true"> →</span></Link>)}</div>}
     {section.downloads && <div className="mt-6 space-y-3">{section.downloads.map(item => <div key={item.file}>
-      <a href={`${import.meta.env.BASE_URL}downloads/${item.file}`} download className="btn-outline-primary">{item.label}</a>
+      <a href={`/downloads/${item.file}`} download className="btn-outline-primary">{item.label}</a>
       <p className="text-[12px] mt-2">General preparation checklist · Version {item.revision}</p>
     </div>)}</div>}
   </>;
