@@ -1,14 +1,14 @@
-const heroComponents = '/assets/industrial/hero-components.webp';
-const customEngineering = '/assets/industrial/custom-engineering.webp';
-const qualityInspection = '/assets/industrial/quality-inspection.webp';
-const ongoingSupply = '/assets/industrial/ongoing-supply.webp';
-const controllers = '/assets/industrial/controllers.webp';
-const sensors = '/assets/industrial/sensors.webp';
-const heating = '/assets/industrial/heating.webp';
-const pressureSwitches = '/assets/industrial/pressure-switches.webp';
-const temperatureController = '/assets/industrial/temperature-controller.webp';
-const temperatureProbe = '/assets/industrial/temperature-probe.webp';
-const tubularHeater = '/assets/industrial/tubular-heater.webp';
+import heroComponents from '../assets/industrial/hero-components.webp';
+import customEngineering from '../assets/industrial/custom-engineering.webp';
+import qualityInspection from '../assets/industrial/quality-inspection.webp';
+import ongoingSupply from '../assets/industrial/ongoing-supply.webp';
+import controllers from '../assets/industrial/controllers.webp';
+import sensors from '../assets/industrial/sensors.webp';
+import heating from '../assets/industrial/heating.webp';
+import pressureSwitches from '../assets/industrial/pressure-switches.webp';
+import temperatureController from '../assets/industrial/temperature-controller.webp';
+import temperatureProbe from '../assets/industrial/temperature-probe.webp';
+import tubularHeater from '../assets/industrial/tubular-heater.webp';
 
 export const INDUSTRIAL_IMAGES = {
   heroComponents,

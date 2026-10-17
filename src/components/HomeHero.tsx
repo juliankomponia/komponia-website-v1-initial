@@ -1,14 +1,11 @@
-'use client';
-
 import { useEffect, useRef, useState, useSyncExternalStore, type KeyboardEvent, type PointerEvent } from 'react';
-import Link from 'next/link';
-
+import { Link } from 'react-router';
 import { ArrowRight, ArrowUpRight, Check, Pause, Play } from 'lucide-react';
 import { HERO_CONTENT as H } from '../data/homepage';
-const procurement = '/assets/hero-slides/procurement.jpg';
-const engineered = '/assets/hero-slides/engineered.jpg';
-const supplyChain = '/assets/hero-slides/supply-chain.jpg';
-const series = '/assets/hero-slides/series.jpg';
+import procurement from '../assets/hero-slides/procurement.jpg';
+import engineered from '../assets/hero-slides/engineered.jpg';
+import supplyChain from '../assets/hero-slides/supply-chain.jpg';
+import series from '../assets/hero-slides/series.jpg';
 
 const SLIDES = [
   { label: 'Procurement', image: procurement, alt: 'Illustrative technical procurement scene', width: 2000, height: 1116, ...H.slides.procurement },
@@ -138,8 +135,8 @@ export default function HomeHero() {
             ))}
           </div>
           <div className="hero-actions">
-            <Link href="/contact" className="btn-primary-l home-hero-primary">Prepare an inquiry <ArrowUpRight size={17} aria-hidden="true" /></Link>
-            <Link href="/components" className="btn-secondary-dark btn-l home-hero-secondary">Explore components <ArrowRight size={17} aria-hidden="true" /></Link>
+            <Link to="/contact" className="btn-primary-l home-hero-primary">Prepare an inquiry <ArrowUpRight size={17} aria-hidden="true" /></Link>
+            <Link to="/components" className="btn-secondary-dark btn-l home-hero-secondary">Explore components <ArrowRight size={17} aria-hidden="true" /></Link>
           </div>
         </div></div>
       </div>

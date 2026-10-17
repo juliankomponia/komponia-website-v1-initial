@@ -1,5 +1,4 @@
-import Link from 'next/link';
-
+import { Link } from 'react-router';
 import { Logo } from './Header';
 import { FOOTER_COLUMNS } from '../data/navigation';
 import CompanyDetails from './CompanyDetails';
@@ -21,7 +20,7 @@ export default function Footer() {
               <ul className="list-none mt-1 space-y-[0.6rem] text-[14px] leading-[20px]">
                 {col.links.map((link) => (
                   <li key={link.label}>
-                    <Link href={link.to} className="hover:text-white transition-colors">{link.label}</Link>
+                    <Link to={link.to} className="hover:text-white transition-colors">{link.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -36,7 +35,7 @@ export default function Footer() {
             <p className="flex-1 basis-[240px] min-w-0 text-[14px] leading-[20px]">
               Start with your application, required quantities and preferred delivery schedule.
             </p>
-            <Link href="/contact" className="shrink-0 min-h-[38px] px-4 py-2 rounded-[3px] bg-brand-blue hover:bg-brand-bluehover text-white text-[14px] font-bold transition-colors">
+            <Link to="/contact" className="shrink-0 min-h-[38px] px-4 py-2 rounded-[3px] bg-brand-blue hover:bg-brand-bluehover text-white text-[14px] font-bold transition-colors">
               Prepare an inquiry
             </Link>
           </div>

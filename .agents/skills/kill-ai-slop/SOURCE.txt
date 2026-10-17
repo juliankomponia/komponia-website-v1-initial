@@ -1,5 +1,0 @@
-Upstream: https://github.com/yetone/kill-ai-slop/tree/main/skill
-Pinned commit: f6e2ae32b30443ec7bd0da4da971ee18d8f8ffcb
-Installed: 2026-10-17
-License: Apache-2.0 (upstream repository)
-Scope: project-local skill; user-requested homepage redesign

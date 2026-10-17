@@ -1,6 +1,6 @@
 .page-sections {
   position: sticky;
-  top: var(--site-header-height, 88px);
+  top: 64px;
   z-index: 40;
   width: 100%;
   max-width: none;
@@ -69,8 +69,8 @@
   outline-offset: -5px;
 }
 
-section[data-page-section-target] {
-  scroll-margin-top: calc(var(--site-header-height, 88px) + 73px);
+main section[data-page-section-target] {
+  scroll-margin-top: 137px;
 }
 
 @media (max-width: 767px) {
@@ -79,7 +79,7 @@ section[data-page-section-target] {
     padding-inline: 16px;
   }
 
-  section[data-page-section-target] {
-    scroll-margin-top: calc(var(--site-header-height, 72px) + 69px);
+  main section[data-page-section-target] {
+    scroll-margin-top: 133px;
   }
 }

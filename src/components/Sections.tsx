@@ -1,9 +1,6 @@
-'use client';
-
 import { FeatureRow } from './Subpage';
 import { useRef, useState, useId, useEffect } from 'react';
-import Link from 'next/link';
-
+import { Link } from 'react-router';
 import { ArrowRight, ChevronLeft, ChevronRight, ChevronUp, ClipboardList, Ruler, ShieldCheck, Box, Layers, Settings, Truck, Snowflake, Thermometer, Factory, FlaskConical } from 'lucide-react';
 import { IMG } from '../data/site';
 import { HOME_CONTENT as H } from '../data/home';
@@ -21,7 +18,7 @@ export function CapabilitiesCards({ core = false }: { core?: boolean } = {}) {
   const cards = core ? H.capabilities.coreCards : H.capabilities.cards;
   const icons = [Layers, Box, Settings, Truck];
   return <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 justify-center">
-    {cards.map((c, i) => { const Icon = icons[i]; return <Link href={c.to} key={c.title} className="cap-card">
+    {cards.map((c, i) => { const Icon = icons[i]; return <Link to={c.to} key={c.title} className="cap-card">
       <img src={images[i]} alt="" loading="lazy" /><div className="cap-text">
         {core && <Icon size={26} strokeWidth={1.6} className="cap-icon" aria-hidden="true" />}
         <h3 className="cap-title">{c.title}</h3><span className="cap-subtitle">{c.desc}</span>
@@ -56,7 +53,7 @@ export function PartnershipProcess() {
         </dl>
       </li>)}
     </ol>
-    <div className="text-center mt-8"><Link href={process.cta.to} className="arrow-link">{process.cta.label}<ArrowRight size={20} aria-hidden="true"/></Link></div>
+    <div className="text-center mt-8"><Link to={process.cta.to} className="arrow-link">{process.cta.label}<ArrowRight size={20} aria-hidden="true"/></Link></div>
   </div>;
 }
 
@@ -86,7 +83,7 @@ function Gallery({ slides, label }: { slides: Slide[]; label: string }) {
           <div id={`${id}-${i}`} hidden={!open} className="min-h-0 flex-1 overflow-y-auto pb-4 text-[0.875rem]" style={{color:'rgba(0,0,0,0.85)'}}>
             {s.text&&<p className="leading-relaxed">{s.text}</p>}
             {s.table&&<table className="w-full text-[0.875rem]"><tbody>{s.table.map(([k,v])=><tr key={k} className="border-b border-black/10 last:border-0"><th scope="row" className="font-normal text-left py-2 pr-2 align-top">{k}</th><td className="py-2 align-top">{v}</td></tr>)}</tbody></table>}
-            {s.to&&<Link href={s.to} className="inline-block mt-3 font-bold text-brand-blue">{s.link??'See details'}</Link>}
+            {s.to&&<Link to={s.to} className="inline-block mt-3 font-bold text-brand-blue">{s.link??'See details'}</Link>}
           </div>
         </div>
       </div>;})}
@@ -106,7 +103,7 @@ export function PartsGallery(){return <Gallery slides={H['component-fields'].car
 
 export function QualityStandards(){
   const icons=[ClipboardList,Ruler,ShieldCheck];
-  return <div className="grid grid-cols-1 md:grid-cols-3 gap-4">{H.quality.cards.map((c,i)=>{const Icon=icons[i];return <Link href={c.to} key={c.title} className="quality-card rounded-[1rem] p-6 md:p-8 flex flex-col transition-colors bg-black/[0.03] hover:bg-black/[0.08]">
+  return <div className="grid grid-cols-1 md:grid-cols-3 gap-4">{H.quality.cards.map((c,i)=>{const Icon=icons[i];return <Link to={c.to} key={c.title} className="quality-card rounded-[1rem] p-6 md:p-8 flex flex-col transition-colors bg-black/[0.03] hover:bg-black/[0.08]">
     <Icon size={34} strokeWidth={1.6} aria-hidden="true" className="text-brand-blue mb-6 self-start"/>
     <span className="brand-card-title font-bold text-black text-[1.25rem] leading-[1.5rem] md:text-[1.375rem] md:leading-[1.625rem]">{c.title}</span>
     <span className="block mt-4 mb-6 text-base md:text-[1.125rem]" style={{color:'#262626'}}>{c.text}</span>
@@ -116,11 +113,11 @@ export function QualityStandards(){
 
 export function IndustriesSection({ variant = 'photos' }: { variant?: 'photos' | 'compact' } = {}){
   const icons = [Snowflake, Thermometer, Factory, FlaskConical];
-  return <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">{H.applications.cards.map((c,i)=>{const Icon=icons[i];return <Link href={c.to} key={c.title} className={`cap-card application-card application-card--${variant}`}>{variant === 'photos' && <img src={[I.controllers,I.heating,I.customEngineering,I.sensors][i]} alt="" loading="lazy"/>}<div className="cap-text">{variant === 'compact' && <Icon size={34} strokeWidth={1.6} className="application-icon" aria-hidden="true"/>}<h3 className="cap-title">{c.title}</h3><span className="cap-body">{c.text}</span><span className="cap-link card-link">{c.link}</span></div></Link>;})}</div>;
+  return <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">{H.applications.cards.map((c,i)=>{const Icon=icons[i];return <Link to={c.to} key={c.title} className={`cap-card application-card application-card--${variant}`}>{variant === 'photos' && <img src={[I.controllers,I.heating,I.customEngineering,I.sensors][i]} alt="" loading="lazy"/>}<div className="cap-text">{variant === 'compact' && <Icon size={34} strokeWidth={1.6} className="application-icon" aria-hidden="true"/>}<h3 className="cap-title">{c.title}</h3><span className="cap-body">{c.text}</span><span className="cap-link card-link">{c.link}</span></div></Link>;})}</div>;
 }
 
 export function ProtolabsBanner(){return <FeatureRow title={H.heritage.title} text={H.heritage.intro} img={I.pressureSwitches} imgAlt="Illustrative pressure and switching components" link={{label:'About Komponia',to:'/about'}}/>;}
 export function ProductionSection(){const s=H['recurring-supply'];return <FeatureRow eyebrow="Ongoing supply" title={s.title} text={s.intro} img={I.ongoingSupply} imgAlt="Illustrative preparation of recurring component deliveries" flip link={{label:'Explore recurring supply',to:'/production-orders'}}/>;}
-export function ProductionInfographic(){const s=H['supply-terms'];return <div className="grid lg:grid-cols-2 items-stretch" style={{backgroundColor:'#EEF1FE'}}><div className="p-8 md:p-14"><h2 className="text-[1.25rem] leading-[1.5rem] md:text-[1.375rem] md:leading-[1.625rem] font-bold mb-4" style={{color:'rgba(0,0,0,0.85)'}}>{s.title}</h2><p className="text-[15px] leading-relaxed mb-8" style={{color:'rgba(0,0,0,0.69)'}}>{s.intro}</p><Link href={s.cta.to} className="arrow-link">{s.cta.label}<ArrowRight size={20}/></Link></div><div className="p-8 md:p-14 border-t lg:border-t-0 lg:border-l border-black/10"><BrandLabel>Supply terms to agree</BrandLabel><dl className="grid sm:grid-cols-2 gap-x-8 gap-y-6">{s.topics.map(topic=><div key={topic.title}><dt className="font-medium text-brand-heading mb-2">{topic.title}</dt><dd className="text-[14px] leading-relaxed text-brand-body">{topic.text}</dd></div>)}</dl></div></div>;}
+export function ProductionInfographic(){const s=H['supply-terms'];return <div className="grid lg:grid-cols-2 items-stretch" style={{backgroundColor:'#EEF1FE'}}><div className="p-8 md:p-14"><h2 className="text-[1.25rem] leading-[1.5rem] md:text-[1.375rem] md:leading-[1.625rem] font-bold mb-4" style={{color:'rgba(0,0,0,0.85)'}}>{s.title}</h2><p className="text-[15px] leading-relaxed mb-8" style={{color:'rgba(0,0,0,0.69)'}}>{s.intro}</p><Link to={s.cta.to} className="arrow-link">{s.cta.label}<ArrowRight size={20}/></Link></div><div className="p-8 md:p-14 border-t lg:border-t-0 lg:border-l border-black/10"><BrandLabel>Supply terms to agree</BrandLabel><dl className="grid sm:grid-cols-2 gap-x-8 gap-y-6">{s.topics.map(topic=><div key={topic.title}><dt className="font-medium text-brand-heading mb-2">{topic.title}</dt><dd className="text-[14px] leading-relaxed text-brand-body">{topic.text}</dd></div>)}</dl></div></div>;}
 export function ReviewsSection(){return null;}
-export function DarkCta({message='Have a part number, drawing or application in mind?',label='Prepare an inquiry',to='/contact'}:{message?:string;label?:string;to?:string}={}){return <section className="dark-cta text-center" style={{backgroundColor:'#1F1F1D'}}><div className="wrap-orig py-16 md:py-24"><h2 className="h2-orig text-white max-w-[48rem] mx-auto mb-6">{message}</h2><Link href={to} className="btn-primary">{label}</Link></div></section>;}
+export function DarkCta({message='Have a part number, drawing or application in mind?',label='Prepare an inquiry',to='/contact'}:{message?:string;label?:string;to?:string}={}){return <section className="dark-cta text-center" style={{backgroundColor:'#1F1F1D'}}><div className="wrap-orig py-16 md:py-24"><h2 className="h2-orig text-white max-w-[48rem] mx-auto mb-6">{message}</h2><Link to={to} className="btn-primary">{label}</Link></div></section>;}

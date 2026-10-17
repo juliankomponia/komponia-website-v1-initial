@@ -1,18 +1,15 @@
-'use client';
-
 import { useRef, useState, useSyncExternalStore } from 'react';
-import Link from 'next/link';
-
+import { Link } from 'react-router';
 import { Menu, X } from 'lucide-react';
 import { type NavGroup } from '../data/site';
 import { NAV } from '../data/navigation';
-const logoWhite = '/assets/komponia-logo-reversed.png';
-const logoColor = '/assets/komponia-header-color.png';
-const logoHeaderMono = '/assets/komponia-header-monochrome.png';
+import logoWhite from '../assets/komponia-logo-reversed.png';
+import logoColor from '../assets/komponia-header-color.png';
+import logoHeaderMono from '../assets/komponia-header-monochrome.png';
 
 export function Logo({ adaptive = false }: { adaptive?: boolean }) {
   return (
-    <Link href="/" className="site-logo flex items-center shrink-0" aria-label="Komponia homepage">
+    <Link to="/" className="site-logo flex items-center shrink-0" aria-label="Komponia homepage">
       <span className={`site-logo-window${adaptive ? ' site-logo-window--adaptive' : ''}`} aria-hidden="true">
         <img className={adaptive ? 'site-logo-variant--white' : undefined} src={adaptive ? logoHeaderMono : logoWhite} alt="" width={adaptive ? 1584 : 470} height={adaptive ? 358 : 172} />
         {adaptive && <img className="site-logo-variant--color" src={logoColor} alt="" width={1584} height={358} />}
@@ -52,7 +49,7 @@ function NavColumn({ group, bordered = false, compact = false, onNavigate }: { g
       <ul className={group.plain ? 'space-y-3' : 'space-y-6'}>
         {group.links.map((l) => (
           <li key={`${l.label}-${l.to}`}>
-            <Link href={l.to} onClick={onNavigate} className="group block">
+            <Link to={l.to} onClick={onNavigate} className="group block">
               {l.desc !== undefined ? (
                 <>
                   <span className="block text-[15px] font-medium group-hover:text-brand-blue" style={{ color: 'rgba(0,0,0,0.85)' }}>
@@ -87,7 +84,7 @@ export default function Header() {
       {/* Top banner */}
       <div className="bg-brand-banner min-h-[2rem] flex items-center text-[12px]" style={{ color: 'rgba(0,0,0,0.69)' }}>
         <div className="site-shell flex items-center justify-end gap-5">
-          <Link href="/how-ordering-works" className="hover:text-brand-blue">How we work</Link>
+          <Link to="/how-ordering-works" className="hover:text-brand-blue">How we work</Link>
           <span className="flex items-center gap-1.5 font-medium" style={{ color: 'rgba(0,0,0,0.85)' }}>
             EN
           </span>
@@ -122,7 +119,7 @@ export default function Header() {
           </nav>
           {/* Right side */}
           <div className="hidden xl:flex items-center gap-6 ml-auto">
-            <Link href="/contact" className="btn-primary text-[14px] !py-2">Prepare an inquiry</Link>
+            <Link to="/contact" className="btn-primary text-[14px] !py-2">Prepare an inquiry</Link>
           </div>
           {/* Mobile toggle */}
           <button ref={mobileTrigger} className="header-menu-trigger xl:hidden ml-auto p-2" onClick={() => setMobile(!mobile)} aria-label="Menu" aria-expanded={mobile} aria-controls="mobile-navigation">
@@ -140,7 +137,7 @@ export default function Header() {
                 <div className="relative p-6">
                   <div className="text-[19px] font-medium text-white">{NAV[open].label}</div>
                   <div className="text-[14px] mt-1 leading-snug" style={{ color: 'rgba(255,255,255,0.62)' }}>{NAV[open].sub}</div>
-                  {NAV[open].overview && <Link href={NAV[open].overview!.to} onClick={() => setOpen(null)} className="inline-block mt-6 text-[14px] font-medium text-white underline underline-offset-4">{NAV[open].overview!.label}</Link>}
+                  {NAV[open].overview && <Link to={NAV[open].overview!.to} onClick={() => setOpen(null)} className="inline-block mt-6 text-[14px] font-medium text-white underline underline-offset-4">{NAV[open].overview!.label}</Link>}
                 </div>
               </div>
               {/* link columns */}
@@ -164,24 +161,24 @@ export default function Header() {
                 </summary>
                 {item.compact ? (
                   <div className="pl-3 pb-2">
-                    {item.overview && <Link href={item.overview.to} onClick={() => setMobile(false)} className="header-mobile-link block py-2 text-[14px]">{item.overview.label}</Link>}
+                    {item.overview && <Link to={item.overview.to} onClick={() => setMobile(false)} className="header-mobile-link block py-2 text-[14px]">{item.overview.label}</Link>}
                     {item.groups.map((group) => (
                       <div key={group.title} className="mt-4">
                         <p className="header-mobile-label text-[13px] mb-1">{group.title}</p>
-                        <ul>{group.links.map((link) => <li key={link.to}><Link href={link.to} onClick={() => setMobile(false)} className="header-mobile-link block py-1.5 text-[14px]">{link.label}</Link></li>)}</ul>
+                        <ul>{group.links.map((link) => <li key={link.to}><Link to={link.to} onClick={() => setMobile(false)} className="header-mobile-link block py-1.5 text-[14px]">{link.label}</Link></li>)}</ul>
                       </div>
                     ))}
                   </div>
                 ) : (
                   <ul className="pl-3 pb-2 space-y-1">
                     {item.groups.flatMap((g) => g.links).concat(item.right ? item.right.links : []).map((l) => (
-                      <li key={`${l.label}-${l.to}`}><Link href={l.to} onClick={() => setMobile(false)} className="header-mobile-link block py-1.5 text-[14px]">{l.label}</Link></li>
+                      <li key={`${l.label}-${l.to}`}><Link to={l.to} onClick={() => setMobile(false)} className="header-mobile-link block py-1.5 text-[14px]">{l.label}</Link></li>
                     ))}
                   </ul>
                 )}
               </details>
             ))}
-            <Link href="/contact" onClick={() => setMobile(false)} className="btn-primary btn-l w-full mt-4">Prepare an inquiry</Link>
+            <Link to="/contact" onClick={() => setMobile(false)} className="btn-primary btn-l w-full mt-4">Prepare an inquiry</Link>
           </div>
         )}
       </header>

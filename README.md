@@ -1,51 +1,57 @@
 # Komponia Website
 
-## Aktueller Stand: Next.js und neue Startseite, 17. Oktober 2026
+## Aktive Startseite: Komponia-Leistungen im Hubs-Raster, 17. Oktober 2026
 
-Englischsprachige Komponia-Website mit Next.js 16 App Router, TypeScript, Tailwind CSS 3 und shadcn/ui. Die Startseite wurde nach der Kritik am bisherigen Entwurf neu gestaltet: großes Produktmotiv, offene Leistungszeilen, interaktive Komponentenauswahl, Engineering-Accordion, Komponia Lab und nachvollziehbare Serienversorgung. Sora, Originalwortmarken, Komponia-Blau und Ink folgen dem offiziellen Designsystem.
+Auf Basis von `a71bb4a` (wiederhergestellter Stand 2 / `27ac683`) ist die Startseite
+inhaltlich und gestalterisch weiterentwickelt. Vier Original-Hero-Bilder, Wortmarken,
+Abschnittsnavigation, Firmenangaben und Kontaktformular bleiben erhalten.
 
-Der ausführliche Entwurfsauftrag wurde vor der Umsetzung gespeichert:
-`project-notes/NEXT_HOMEPAGE_DESIGN_BRIEF_2026-10-17.txt`.
-Das ausdrücklich gewünschte Anti-Slop-Skill liegt versioniert unter `.agents/skills/kill-ai-slop/`; Herkunft und Revision stehen in `SOURCE.txt`.
+- Drei Kernleistungen zuerst: Komponenten und Beratung, individuelle OEM-Lösungen, laufende Versorgung.
+- Sichtbare Komponentenlinks; Engineering mit Inhouse-CAD und zugeordneten Fertigungsoptionen.
+- Eigenes Komponia Lab, persönlicher Ansprechpartner, vereinbarte Prüfungen und Betreuung der Serie.
+- Kürzerer Hero, vierstufiger Ablauf und verständliches Bestands-/Abrufmodell.
+- Sora lokal, Komponia-Blau, Ink, zurückhaltendes Lavendel und Pillen-Buttons.
+- Aktive Homepage: `src/pages/Home.tsx`, `src/pages/homepage.css`, `src/data/homepage.ts`.
+- Gemeinsame Markengrundlagen: `src/brand.css`; historische Inhalte/Bildserien bleiben erhalten.
 
-### Lokal starten
+Referenzen, Inhaltsgrundlagen und Prüfungen:
+`project-notes/HOMEPAGE_REFINEMENT_2026-10-17.txt`.
+Keine Veröffentlichung; das Kontaktformular bereitet weiterhin einen E-Mail-Entwurf vor.
 
-Getestet mit Node.js 24:
+## Historische Grundlage: Stand 2, wiederhergestellt am 17. Oktober 2026
+
+Die Startseite verwendet wieder Gestaltung, Vier-Bilder-Hero, Abschnittsnavigation,
+vollständige Gliederung, Texte und Bildzuordnungen aus `27ac683`.
+Die Wiederherstellung erfolgt mit einem neuen Commit auf `main`; die komplette
+Historie einschließlich aller späteren Entwürfe bleibt erhalten.
+
+Die historischen Homepage-Inhalte liegen separat in `src/data/home-stand2.json`,
+`src/data/home-stand2-images.ts` und `src/components/HomeSectionsStand2.tsx`.
+Die neueren Inhaltsdateien und Unterseiten bleiben als Fundus unverändert.
+Bestätigte Unternehmensangaben, Footer und lokales Anfrageformular mit Mail-Link
+bleiben erhalten. Die gemeinsamen Gestaltungsdateien entsprechen wieder Stand 2.
+Keine Veröffentlichung. Details: `project-notes/STAND_2_RESTORATION_2026-10-17.txt`.
+
+Aktuelle englischsprachige Komponia-Website auf Basis des bestehenden Protolabs-Templates mit React, TypeScript und Vite. Kommunikation und inhaltliche Abstimmung erfolgen auf Deutsch.
+
+## Lokal starten
+
+Getestet mit Node.js 24. Nach dem Klonen im Projektordner:
 
 ```sh
 npm ci
-npm run dev -- --hostname 127.0.0.1 --port 3000
+npm run dev -- --host 127.0.0.1
 ```
 
-Vorschau: http://127.0.0.1:3000/ . Alte `#/…`-Links werden auf die entsprechenden Next-Routen weitergeleitet.
+Die Vorschau läuft unter http://localhost:3000/#/.
 
-### Prüfen und exportieren
+Produktionsbuild prüfen:
 
 ```sh
-npm run typecheck
-npm run lint
 npm run build
-npm run verify:export
-npm run preview
 ```
 
-`out/` enthält den statischen Export; `preview` zeigt ihn auf Port 3001. Build-Dateien, Abhängigkeiten, Umgebungsdateien und Caches bleiben ausgeschlossen. Next erzeugt Hash-Dateinamen für CSS/JS.
-
-### Struktur
-
-- `src/app/`: App Router, Metadaten, Startseite, statisch erzeugte Unterseiten und 404.
-- `src/components/home/KomponiaHome.tsx`, `home-design.css`: aktive Startseite.
-- `src/components/SiteHeader.tsx`, `SiteFooter.tsx`: gemeinsamer Seitenrahmen.
-- `src/components/ui/`: shadcn/ui mit Radix, auf der Startseite unter anderem Tabs, Accordion, Button und Sheet.
-- `src/views/`: bestehende Unterseiten und historische Homepage; bisherige Inhalte bleiben erhalten.
-- `src/data/`: Inhalte, Routen und bestätigte Firmenangaben.
-- `public/assets/`: auslieferbare Bilder, Originalmarken und lokale Schriften; Herkunftsnotizen bleiben in `src/assets/`.
-- `scripts/build-legacy-styles.mjs`: kapselt ältere Unterseiten-Styles in `.legacy-pages`; die Startseite verwendet eigene Styles.
-- `project-notes/vite-entrypoints/`: archivierte Einstiegspunkte der früheren Vite-Version.
-
-Das Anfrageformular bereitet weiterhin lokal einen E-Mail-Entwurf vor. Es versendet keine Nachricht und lädt keine Dateien hoch. Kein Deployment; die Website bleibt auf `noindex`.
-
-Die vier historischen Hero-Bilder und früheren Entwürfe sind erhalten. Die heutige Startseite ersetzt den Vier-Bilder-Slider durch ein großes Komponentenmotiv. Ältere Notizen unten beschreiben frühere Versionen, nicht den aktuellen Aufbau.
+Abhängigkeiten, Build-Dateien, lokale Umgebungsdateien und Caches werden nicht eingecheckt. `package-lock.json` ist enthalten.
 
 ## Historische Arbeitsnotizen
 
