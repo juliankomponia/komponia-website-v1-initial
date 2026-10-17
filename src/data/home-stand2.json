@@ -55,7 +55,10 @@
         "media": "components",
         "title": "Industrial Components",
         "desc": "Technical components selected and sourced for your application.",
-        "specs": [],
+        "specs": [
+          "Define function, interfaces and operating conditions",
+          "Agree specifications, quantities and documentation"
+        ],
         "cta": "Explore industrial components",
         "to": "/components"
       },
@@ -107,7 +110,10 @@
         "media": "cables",
         "title": "Cable Assemblies",
         "desc": "Custom cables and wiring harnesses matched to your connections.",
-        "specs": [],
+        "specs": [
+          "Define connectors, pin assignments and cable lengths",
+          "Agree materials, quantities and electrical checks"
+        ],
         "cta": "Discuss cable assemblies",
         "to": "/contact?type=custom&reference=Cable+Assemblies"
       },
@@ -115,7 +121,10 @@
         "media": "assembly",
         "title": "Assembly & Subassemblies",
         "desc": "Mechanical and electromechanical assemblies, ready for integration.",
-        "specs": [],
+        "specs": [
+          "Define parts, interfaces and assembly requirements",
+          "Agree functional checks and delivery condition"
+        ],
         "cta": "Discuss your assembly",
         "to": "/contact?type=custom&reference=Assembly+%26+Subassemblies"
       },
@@ -123,7 +132,10 @@
         "media": "rubber",
         "title": "Rubber & Silicone",
         "desc": "Custom seals, membranes and molded elastomer parts.",
-        "specs": [],
+        "specs": [
+          "Define material, hardness and operating conditions",
+          "Agree geometry, tooling and sample evaluation"
+        ],
         "cta": "Discuss rubber & silicone parts",
         "to": "/contact?type=custom&reference=Rubber+%26+Silicone"
       },
@@ -131,7 +143,10 @@
         "media": "casting",
         "title": "Die Casting",
         "desc": "Aluminum and zinc castings for your production requirements.",
-        "specs": [],
+        "specs": [
+          "Define alloy, geometry and expected volumes",
+          "Agree tooling, machining and surface finish"
+        ],
         "cta": "Discuss die casting",
         "to": "/contact?type=custom&reference=Die+Casting"
       },
@@ -139,7 +154,10 @@
         "media": "extrusion",
         "title": "Extrusion",
         "desc": "Custom metal and plastic profiles with the required finishing.",
-        "specs": [],
+        "specs": [
+          "Define material, profile geometry and cut lengths",
+          "Agree tolerances, finishing and quantities"
+        ],
         "cta": "Discuss extrusion",
         "to": "/contact?type=custom&reference=Extrusion"
       },
@@ -147,7 +165,10 @@
         "media": "sensors",
         "title": "Sensors & Measurement",
         "desc": "Sensors, probes and measurement components matched to your application.",
-        "specs": [],
+        "specs": [
+          "Define measurement range, interfaces and conditions",
+          "Agree accuracy, connections and documentation"
+        ],
         "cta": "Explore sensors & probes",
         "to": "/components/sensors-and-probes"
       },
@@ -155,7 +176,10 @@
         "media": "vacuum",
         "title": "Vacuum Casting",
         "desc": "Cast polyurethane parts for prototypes and small production runs.",
-        "specs": [],
+        "specs": [
+          "Define geometry, material properties and quantities",
+          "Agree master pattern, finish and sample evaluation"
+        ],
         "cta": "Discuss vacuum casting",
         "to": "/contact?type=custom&reference=Vacuum+Casting"
       }

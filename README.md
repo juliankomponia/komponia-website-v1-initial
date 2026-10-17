@@ -6,11 +6,16 @@ Auf dem wiederhergestellten Ausgangsstand `a71bb4a` zeigt „Our capabilities.�
 jetzt die zwölf bestätigten Bereiche mit Industrial Components an erster Stelle.
 OEM solutions, engineering, quality und supply chain coordination stehen im
 Einleitungstext als gemeinsamer Leistungsumfang aller Bereiche.
-Die vier vorhandenen Fertigungsbilder bleiben zugeordnet; Industrial Components
-und Sensors & Measurement verwenden vorhandene Komponia-Motive. Sechs neue
-Bereiche zeigen bis zur Bildauswahl schlichte Symbole. Ihre CTAs öffnen das
-bestehende Anfrageformular mit vorausgefülltem Bereich; vorhandene Detailseiten
-bleiben verlinkt. Hero, allgemeines Layout und übrige Abschnitte bleiben erhalten.
+Alle zwölf Karten verwenden den ursprünglichen Aufbau: freigestelltes Produktbild,
+Titel, Kurztext, zwei Stichpunkte und Link. Die vier vorhandenen Fertigungsbilder
+bleiben zugeordnet. Acht ergänzende, KI-generierte Produktmotive orientieren sich
+an deren Bildstil und liegen lokal als transparente WebP-Dateien in
+`src/assets/industrial/capabilities-20261017/`. Bildzuordnung und vollständige
+Prompts: `project-notes/CAPABILITY_IMAGES_2026-10-17.json` (integriertes Imagegen).
+Die Motive zeigen illustrative, generische Bauteile. Die sechs neuen Bereiche
+öffnen das bestehende Anfrageformular mit vorausgefülltem Bereich; vorhandene
+Detailseiten bleiben verlinkt. Hero, Kartenstile, Raster und übrige Abschnitte
+bleiben erhalten.
 Produktionsbuild und ESLint der geänderten Komponenten erfolgreich. Kartenfolge,
 mobile Darstellung und vorausgefüllte Anfragen im Browser geprüft.
 

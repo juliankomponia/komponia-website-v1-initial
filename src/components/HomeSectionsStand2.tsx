@@ -1,8 +1,8 @@
 import { FeatureRow } from './Subpage';
 import { useRef, useState, useId, useEffect } from 'react';
 import { Link } from 'react-router';
-import { ArrowRight, ChevronLeft, ChevronRight, ChevronUp, ClipboardList, Ruler, FileCheck, Cable, Component, Circle, Box, Columns3, Layers, type LucideIcon } from 'lucide-react';
-import { IMG } from '../data/site';
+import { ArrowRight, ChevronLeft, ChevronRight, ChevronUp, ClipboardList, Ruler, FileCheck } from 'lucide-react';
+import { CAPABILITY_IMAGES } from '../data/capability-images';
 import { HOME_CONTENT as H } from '../data/home-stand2';
 import { INDUSTRIAL_IMAGES as I } from '../data/home-stand2-images';
 import BrandLabel from './BrandLabel';
@@ -11,41 +11,16 @@ export function SectionLead({ title, children }: { title: string; children?: Rea
   return <div className="section-lead"><h2 className="h2-orig">{title}</h2>{children && <p>{children}</p>}</div>;
 }
 
-const capabilityImages: Record<string, string> = {
-  components: I.heroComponents,
-  cnc: IMG.capCnc,
-  printing: IMG.cap3dp,
-  sheetMetal: IMG.capSmf,
-  injection: IMG.capIm,
-  sensors: I.sensors,
-};
-
-// Neutral symbols keep the existing media area until category photos are selected.
-const capabilityIcons: Record<string, LucideIcon> = {
-  cables: Cable,
-  assembly: Component,
-  rubber: Circle,
-  casting: Box,
-  extrusion: Columns3,
-  vacuum: Layers,
-};
-
 export function CapabilitiesCards() {
   return <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 justify-center">
-    {H.capabilities.cards.map(c => {
-      const image = capabilityImages[c.media];
-      const Icon = capabilityIcons[c.media] ?? Box;
-      return <Link to={c.to} key={c.media} className="cap-card">
-        {image
-          ? <img src={image} alt="" loading="lazy" />
-          : <div className="flex aspect-[8.4/5] w-full items-center justify-center text-black/25" aria-hidden="true"><Icon size={72} strokeWidth={1} /></div>}
-        <div className="cap-text">
-          <h3 className="cap-title">{c.title}</h3><span className="cap-subtitle">{c.desc}</span>
-          {c.specs.length > 0 && <div className="cap-body"><ul>{c.specs.map(s => <li key={s}>{s}</li>)}</ul></div>}
-          <span className="cap-link card-link">{c.cta}</span>
-        </div>
-      </Link>;
-    })}
+    {H.capabilities.cards.map(c => <Link to={c.to} key={c.media} className="cap-card">
+      <img src={CAPABILITY_IMAGES[c.media]} alt="" loading="lazy" />
+      <div className="cap-text">
+        <h3 className="cap-title">{c.title}</h3><span className="cap-subtitle">{c.desc}</span>
+        <div className="cap-body"><ul>{c.specs.map(s => <li key={s}>{s}</li>)}</ul></div>
+        <span className="cap-link card-link">{c.cta}</span>
+      </div>
+    </Link>)}
   </div>;
 }
 
