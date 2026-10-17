@@ -7,6 +7,8 @@ import CncMachining from './pages/CncMachining';
 import ThreeDPrinting from './pages/ThreeDPrinting';
 import SheetMetal from './pages/SheetMetal';
 import InjectionMolding from './pages/InjectionMolding';
+import Capability from './pages/Capability';
+import { CAPABILITY_PAGES } from './data/capability-pages';
 import HowOrderingWorks from './pages/HowOrderingWorks';
 import About from './pages/About';
 import Industries from './pages/Industries';
@@ -36,6 +38,7 @@ export default function App() {
           <Route path="/3d-printing" element={<ThreeDPrinting />} />
           <Route path="/sheet-metal-fabrication" element={<SheetMetal />} />
           <Route path="/injection-molding" element={<InjectionMolding />} />
+          {CAPABILITY_PAGES.map(page => <Route key={page.route} path={page.route} element={<Capability page={page} />} />)}
           <Route path="/how-ordering-works" element={<HowOrderingWorks />} />
           <Route path="/about" element={<About />} />
           <Route path="/the-protolabs-network-standard" element={<Navigate to="/quality-and-lab" replace />} />

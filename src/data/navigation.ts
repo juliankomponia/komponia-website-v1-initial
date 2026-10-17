@@ -1,5 +1,5 @@
 import { INDUSTRIAL_IMAGES as I } from './images';
-import { NAV as TEMPLATE_NAV, type NavLink } from './site';
+import { NAV as TEMPLATE_NAV, type NavLink, type NavGroup } from './site';
 import { COMPONENT_GROUPS, componentPath } from './components';
 
 // Preserve the template's navigation structure and existing page routes.
@@ -39,7 +39,7 @@ const GROUP_TITLES: Record<string, string> = {
 
 const SECTION_COPY: Record<string, string> = {
   'How it works': 'Component selection, technical solutions and ongoing supply',
-  Capabilities: 'In-house CAD, custom OEM solutions and suitable manufacturing partners',
+  Capabilities: 'Industrial components and custom parts for your application',
   Industries: 'Technical requirements differ by application',
   Components: 'Technical components for your application',
   Resources: 'Information for component selection and project preparation',
@@ -56,11 +56,47 @@ function adaptLink(link: NavLink): NavLink {
   return updated;
 }
 
+const CAPABILITY_GROUPS: NavGroup[] = [
+  {
+    title: 'Components & assemblies', plain: true,
+    links: [
+      { label: 'Industrial Components', to: '/industrial-components' },
+      { label: 'Cable Assemblies', to: '/cable-assemblies' },
+      { label: 'Assembly & Subassemblies', to: '/assembly-and-subassemblies' },
+      { label: 'Sensors & Measurement', to: '/sensors-and-measurement' },
+    ],
+  },
+  {
+    title: 'Machining & metal', plain: true,
+    links: [
+      { label: 'CNC Machining', to: '/cnc-machining' },
+      { label: 'CNC milling', to: '/cnc-machining/cnc-milling-service' },
+      { label: 'CNC turning', to: '/cnc-machining/cnc-turning-service' },
+      { label: 'Sheet Metal Fabrication', to: '/sheet-metal-fabrication' },
+      { label: 'Die Casting', to: '/die-casting' },
+      { label: 'Extrusion', to: '/extrusion' },
+    ],
+  },
+  {
+    title: 'Printing & molding', plain: true,
+    links: [
+      { label: '3D Printing', to: '/3d-printing' },
+      { label: 'Fused Deposition Modeling (FDM)', to: '/3d-printing/fdm' },
+      { label: 'Stereolithography (SLA)', to: '/3d-printing/sla-dlp' },
+      { label: 'Selective Laser Sintering (SLS)', to: '/3d-printing/sls' },
+      { label: 'Multi Jet Fusion (MJF)', to: '/3d-printing/mjf' },
+      { label: 'Injection Molding', to: '/injection-molding' },
+      { label: 'Rubber & Silicone', to: '/rubber-and-silicone' },
+      { label: 'Vacuum Casting', to: '/vacuum-casting' },
+    ],
+  },
+];
+
 export const NAV = TEMPLATE_NAV.map((item) => ({
   ...item,
   image: item.label === 'How it works' ? I.customEngineering : item.label === 'Components' ? I.controllers : item.image,
   sub: SECTION_COPY[item.label] ?? item.sub,
-  groups: item.label === 'Industries' ? [{ title: null, links: [
+  groups: item.label === 'Capabilities' ? CAPABILITY_GROUPS : item.label === 'Industries' ? [{ title: null, links: [
     { label: 'OEM solutions', desc: 'Components for your own devices, machines and systems', to: '/oem-solutions' },
     { label: 'Refrigeration & climate control', desc: 'Control, sensing and switching for your equipment', to: '/industries/refrigeration-climate-control' },
     { label: 'Thermal & foodservice equipment', desc: 'Heating, measurement and control considered together', to: '/industries/thermal-foodservice' },

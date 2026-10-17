@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router';
 import pages from '../data/pages.json';
+import { CAPABILITY_PAGES } from '../data/capability-pages';
 import { COMPONENT_GROUPS } from '../data/components';
 import { INDUSTRIAL_IMAGES as I } from '../data/images';
 
@@ -39,6 +40,8 @@ function routeMetadata(pathname: string) {
       image: group ? [I.controllers, I.sensors, I.heating, I.pressureSwitches][COMPONENT_GROUPS.indexOf(group)] : I.heroComponents,
     };
   }
+  const capability = CAPABILITY_PAGES.find(page => page.route === path);
+  if (capability) return { title: capability.title, description: capability.intro, image: capability.hero };
   const generic = pages.find(page => `/${page.route}` === path);
   return {
     title: PAGE_TITLES[path] ?? generic?.title ?? 'Page not found',

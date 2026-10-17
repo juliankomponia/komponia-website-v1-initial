@@ -12,12 +12,37 @@ bleiben zugeordnet. Acht ergänzende, KI-generierte Produktmotive orientieren si
 an deren Bildstil und liegen lokal als transparente WebP-Dateien in
 `src/assets/industrial/capabilities-20261017/`. Bildzuordnung und vollständige
 Prompts: `project-notes/CAPABILITY_IMAGES_2026-10-17.json` (integriertes Imagegen).
-Die Motive zeigen illustrative, generische Bauteile. Die sechs neuen Bereiche
-öffnen das bestehende Anfrageformular mit vorausgefülltem Bereich; vorhandene
-Detailseiten bleiben verlinkt. Hero, Kartenstile, Raster und übrige Abschnitte
+Die Motive zeigen illustrative, generische Bauteile. Alle Karten führen zu einer
+Leistungsseite. Der Anfrage-Link auf den ergänzten Seiten öffnet das bestehende
+Formular mit vorausgefülltem Bereich. Hero, Kartenstile und Raster der Startseite
 bleiben erhalten.
 Produktionsbuild und ESLint der geänderten Komponenten erfolgreich. Kartenfolge,
 mobile Darstellung und vorausgefüllte Anfragen im Browser geprüft.
+
+## Capabilities-Menü und Leistungsseiten – 17. Oktober 2026
+
+Das Capabilities-Menü enthält alle zwölf Bereiche mit Industrial Components zuerst.
+Die vorhandenen CNC- und 3D-Unterverfahren bleiben erreichbar; die drei Linkspalten
+und die zusätzliche Spalte „Solutions & supply“ verwenden die bisherigen Stile.
+Acht neue Einstiegsseiten ergänzen die bestehenden vier Fertigungsseiten:
+`/industrial-components`, `/cable-assemblies`, `/assembly-and-subassemblies`,
+`/rubber-and-silicone`, `/die-casting`, `/extrusion`, `/sensors-and-measurement`
+und `/vacuum-casting`. Die Komponentenkategorien bleiben unter `/components`
+erreichbar und sind von den passenden Einstiegsseiten verlinkt.
+
+`src/pages/Capability.tsx` übernimmt Abschnittsaufbau und Stilklassen von
+`SheetMetal.tsx` sowie die bestehenden Bausteine SubHero, SectionLead, OrderingProcess,
+Faq und DarkCta. Die Inhalte liegen in `src/data/capability-pages.json`.
+Kategorien, Anforderungen, Optionen, Ablauf, FAQ und verwandte Leistungen sind
+ausgearbeitet. Die Anfrage-CTAs übernehmen Bereich und Anfragetyp ins Formular.
+Die ursprünglichen vier Seiten und gemeinsamen CSS-Dateien bleiben unverändert.
+Die acht ergänzenden Titelbilder wurden mit dem integrierten Imagegen im Stil des
+vorhandenen Sheet-Metal-Titelbildes erstellt. Dateien und Prompts sind in
+`project-notes/CAPABILITY_HEROES_2026-10-17.json` dokumentiert.
+Produktionsbuild, ESLint und Routen-/Kategorieabgleich erfolgreich. Im Browser
+sind alle acht Seiten, das mobile Menü, Startseitenlinks, FAQ und die beiden
+Anfragetypen (component/custom) mit Bereichsvorbelegung geprüft. Bei 790 px
+Viewportbreite kein horizontaler Überlauf; keine Browserfehler.
 
 ## Aktive Startseite: Stand 2, wiederhergestellt am 17. Oktober 2026
 

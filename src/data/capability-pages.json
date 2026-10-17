@@ -1,0 +1,820 @@
+[
+  {
+    "media": "components",
+    "route": "/industrial-components",
+    "title": "Industrial Components",
+    "heading": "Industrial components for your application",
+    "eyebrow": "Components",
+    "type": "component",
+    "intro": "Technical components selected around function, interfaces and operating conditions. We bring component selection, technical advice and sourcing together for your application.",
+    "overview": {
+      "title": "Component fields and selection requirements",
+      "intro": "Start with the function your equipment needs. Explore the component groups, then define the specifications, interfaces and quantities for a focused inquiry.",
+      "cards": [
+        {
+          "title": "Controllers & control systems",
+          "text": "Match control functions, inputs, outputs and installation requirements.",
+          "bullets": [
+            "Define the control task and connections",
+            "Agree configuration and documentation"
+          ],
+          "image": "controllers",
+          "to": "/components/controllers-and-control-systems"
+        },
+        {
+          "title": "Sensors & probes",
+          "text": "Define the measurement task and the connection to your equipment.",
+          "bullets": [
+            "Specify range, installation and conditions",
+            "Agree the signal and required accuracy"
+          ],
+          "image": "sensors",
+          "to": "/components/sensors-and-probes"
+        },
+        {
+          "title": "Heating elements",
+          "text": "Match the heating requirement, geometry and connection details to the application.",
+          "bullets": [
+            "Define heating power and installation",
+            "Agree material and operating conditions"
+          ],
+          "image": "heating",
+          "to": "/components/heating-elements"
+        },
+        {
+          "title": "Pressure & switching devices",
+          "text": "Clarify the switching function and the mechanical and electrical interfaces.",
+          "bullets": [
+            "Define switching points and connections",
+            "Agree operating conditions and checks"
+          ],
+          "image": "pressureSwitches",
+          "to": "/components/pressure-and-switching-devices"
+        }
+      ]
+    },
+    "selection": {
+      "title": "Define the component requirement",
+      "intro": "A part number, datasheet or application description is a useful starting point. We clarify the required characteristics before selecting a source.",
+      "cards": [
+        {
+          "title": "Function",
+          "text": "Describe the task, operating range and interaction with the equipment."
+        },
+        {
+          "title": "Interfaces",
+          "text": "Specify installation space, mounting, connections and compatible signals."
+        },
+        {
+          "title": "Operating conditions",
+          "text": "Identify temperature, media, environment and documentation requirements."
+        }
+      ]
+    },
+    "requirements": {
+      "title": "Match the component to the application",
+      "text": "Selection brings function, interfaces and operating conditions together. Share existing references, drawings and any critical characteristics. We agree the component version, sample evaluation and documentation needed before release."
+    },
+    "options": {
+      "title": "Selection and supply options",
+      "intro": "Choose the route around the application and the information already available.",
+      "cards": [
+        {
+          "title": "Standard components",
+          "text": "Compare available component categories with the required function.",
+          "to": "/components"
+        },
+        {
+          "title": "Adapted components",
+          "text": "Discuss changes to geometry, interfaces or configuration.",
+          "to": "/custom-solutions"
+        },
+        {
+          "title": "Replacement assessment",
+          "text": "Review an existing reference and the requirements for a suitable alternative.",
+          "to": "/replacement-and-second-source"
+        },
+        {
+          "title": "Recurring demand",
+          "text": "Define repeat quantities, delivery schedules and stock arrangements.",
+          "to": "/production-orders"
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Can I start with an existing part number?",
+        "a": "Yes. Share the reference, manufacturer information if available, and the application. Drawings, datasheets and quantities help clarify the requirement."
+      },
+      {
+        "q": "Where can I browse component categories?",
+        "a": "The component catalogue groups controllers, sensors, heating elements and switching devices. Each category helps you prepare the relevant selection requirements."
+      },
+      {
+        "q": "Can a standard component be adapted?",
+        "a": "Describe the required change and its purpose. We assess the technical scope and source options, then agree feasibility, samples and release requirements for the application."
+      }
+    ],
+    "related": [
+      "sensors",
+      "cables",
+      "assembly",
+      "cnc"
+    ],
+    "cta": "Have an industrial component requirement?"
+  },
+  {
+    "media": "cables",
+    "route": "/cable-assemblies",
+    "title": "Cable Assemblies",
+    "heading": "Cable assemblies for your connections",
+    "eyebrow": "Manufacturing",
+    "type": "custom",
+    "intro": "Custom cables and wiring harnesses matched to your equipment. Define connectors, pin assignments, cable lengths and operating conditions for an agreed assembly and checking scope.",
+    "overview": {
+      "title": "Cable assemblies and harness requirements",
+      "intro": "The connection task determines the cable, termination and routing requirements. Share drawings, connector references or a sample to define the assembly.",
+      "cards": [
+        {
+          "title": "Cable assemblies",
+          "text": "Prepare a defined connection between components or devices.",
+          "bullets": [
+            "Specify connectors, pin assignments and length",
+            "Agree cable type, termination and strain relief"
+          ],
+          "image": "product"
+        },
+        {
+          "title": "Wiring harnesses",
+          "text": "Bring multiple connections and branches into a coordinated assembly.",
+          "bullets": [
+            "Define branch lengths, routing and identification",
+            "Agree protection, fixing points and checks"
+          ],
+          "image": "hero"
+        }
+      ]
+    },
+    "selection": {
+      "title": "Cable and connection selection",
+      "intro": "Select the construction around the electrical task, installation and operating conditions. Specific materials and references are agreed for the assembly.",
+      "cards": [
+        {
+          "title": "Cable construction",
+          "text": "Define conductor count, cross-section, shielding and flexibility requirements."
+        },
+        {
+          "title": "Connectors & contacts",
+          "text": "Specify mating references, contact assignment and termination details."
+        },
+        {
+          "title": "Protection & routing",
+          "text": "Clarify sleeving, strain relief, bend space and installation conditions."
+        }
+      ]
+    },
+    "requirements": {
+      "title": "Define the connection and checking requirements",
+      "text": "Record the wiring diagram, pin assignments, branch lengths and connector orientation. Agree continuity, insulation or other electrical checks where required, together with acceptance criteria, identification and documentation."
+    },
+    "options": {
+      "title": "Assembly and delivery details",
+      "intro": "Define the details that make the cable assembly ready for your installation.",
+      "cards": [
+        {
+          "title": "Identification",
+          "text": "Agree labels, part references and branch identification."
+        },
+        {
+          "title": "Termination",
+          "text": "Define contact assembly and the required termination method."
+        },
+        {
+          "title": "Protection",
+          "text": "Discuss sleeving, shielding connections and strain relief."
+        },
+        {
+          "title": "Packing & supply",
+          "text": "Agree packaging, quantities and recurring delivery needs."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "q": "What information is needed for a cable assembly?",
+        "a": "Provide connector references, a wiring diagram or pin list, cable lengths and quantities. Include the operating conditions and any electrical checks needed."
+      },
+      {
+        "q": "Can a sample be used as a starting point?",
+        "a": "Yes. A sample can help clarify layout and interfaces. The agreed drawing, component references and checking criteria define the assembly to be supplied."
+      },
+      {
+        "q": "How are electrical checks agreed?",
+        "a": "Specify the checks required for the application and the acceptance criteria. The scope, test records and responsibilities are confirmed with the offer."
+      }
+    ],
+    "related": [
+      "assembly",
+      "sensors",
+      "components",
+      "injection"
+    ],
+    "cta": "Have a cable or harness requirement?"
+  },
+  {
+    "media": "assembly",
+    "route": "/assembly-and-subassemblies",
+    "title": "Assembly & Subassemblies",
+    "heading": "Assemblies ready for integration",
+    "eyebrow": "Manufacturing",
+    "type": "custom",
+    "intro": "Mechanical and electromechanical assemblies coordinated around your interfaces. Define the parts, assembly requirements and functional checks for an agreed delivery condition.",
+    "overview": {
+      "title": "Assembly scope and integration requirements",
+      "intro": "Start with a bill of materials, assembly drawing or functional description. We clarify the supplied parts, interfaces and work needed for the subassembly.",
+      "cards": [
+        {
+          "title": "Mechanical assemblies",
+          "text": "Bring manufactured and purchased parts together as a defined unit.",
+          "bullets": [
+            "Specify fits, fasteners and assembly sequence",
+            "Agree alignment, movement and dimensional checks"
+          ],
+          "image": "product"
+        },
+        {
+          "title": "Integration-ready subassemblies",
+          "text": "Coordinate mechanical interfaces and any electrical components needed for installation.",
+          "bullets": [
+            "Define wiring, mounting and connection interfaces",
+            "Agree functional checks and delivery condition"
+          ],
+          "image": "hero"
+        }
+      ]
+    },
+    "selection": {
+      "title": "Define the assembly inputs",
+      "intro": "Clear part references and interface requirements create the basis for repeatable assembly and supply.",
+      "cards": [
+        {
+          "title": "Parts & references",
+          "text": "Provide the bill of materials, drawings and required revisions."
+        },
+        {
+          "title": "Joining & mounting",
+          "text": "Specify fasteners, fits, joining requirements and any critical assembly settings."
+        },
+        {
+          "title": "Electrical interfaces",
+          "text": "Define connections, routing, device references and functional requirements."
+        }
+      ]
+    },
+    "requirements": {
+      "title": "Agree how the assembly is assessed",
+      "text": "Identify critical dimensions, movement, alignment and functional requirements. Agree the inspection scope, any application-specific tests and the records needed. Define the released assembly version and how changes are handled."
+    },
+    "options": {
+      "title": "Preparation for installation and supply",
+      "intro": "Specify the condition in which the assembly needs to reach your production or installation team.",
+      "cards": [
+        {
+          "title": "Parts coordination",
+          "text": "Agree which parts are sourced, supplied or provided by you."
+        },
+        {
+          "title": "Assembly instructions",
+          "text": "Record the sequence, references and critical work steps."
+        },
+        {
+          "title": "Functional checks",
+          "text": "Define the checks and acceptance criteria for the completed unit."
+        },
+        {
+          "title": "Identification & packing",
+          "text": "Agree assembly references, protection and delivery units."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Can you work from a bill of materials?",
+        "a": "Yes. Include part references, revisions, quantities and assembly drawings where available. We clarify missing interfaces and the scope of sourcing and assembly."
+      },
+      {
+        "q": "Can customer-supplied parts be included?",
+        "a": "Discuss which parts you will provide and in what condition. Incoming checks, responsibility for shortages and the assembly scope are agreed for the project."
+      },
+      {
+        "q": "How are assembly changes handled?",
+        "a": "Define the released drawings and bill of materials, then agree how proposed changes are reviewed, approved and reflected in subsequent deliveries."
+      }
+    ],
+    "related": [
+      "cnc",
+      "sheetMetal",
+      "cables",
+      "components"
+    ],
+    "cta": "Have an assembly requirement?"
+  },
+  {
+    "media": "rubber",
+    "route": "/rubber-and-silicone",
+    "title": "Rubber & Silicone",
+    "heading": "Rubber and silicone parts for your application",
+    "eyebrow": "Manufacturing",
+    "type": "custom",
+    "intro": "Custom seals, membranes and molded elastomer components. Define geometry, material properties and operating conditions for a suitable tooling, sampling and production approach.",
+    "overview": {
+      "title": "Elastomer parts and requirements",
+      "intro": "The function and operating environment guide the material and geometry. Discuss the contact surfaces, movement and sealing requirements for your component.",
+      "cards": [
+        {
+          "title": "Seals & gaskets",
+          "text": "Define the geometry and contact conditions for sealing interfaces.",
+          "bullets": [
+            "Specify dimensions, compression and mating surfaces",
+            "Agree material, hardness and evaluation criteria"
+          ],
+          "image": "product"
+        },
+        {
+          "title": "Membranes & molded parts",
+          "text": "Prepare custom flexible components around their installation and function.",
+          "bullets": [
+            "Define movement, wall sections and fixing details",
+            "Agree tooling, samples and dimensional checks"
+          ],
+          "image": "hero"
+        }
+      ]
+    },
+    "selection": {
+      "title": "Material properties to define",
+      "intro": "Material family and compound selection are assessed against the application. The selected grade and required evidence are confirmed in the offer.",
+      "cards": [
+        {
+          "title": "Rubber compounds",
+          "text": "Discuss compound requirements for the intended media, temperature and mechanical loading."
+        },
+        {
+          "title": "Silicone compounds",
+          "text": "Define the required flexibility, hardness, appearance and operating conditions."
+        },
+        {
+          "title": "Application requirements",
+          "text": "Specify any contact, cleanliness, traceability or documentation requirements."
+        }
+      ]
+    },
+    "requirements": {
+      "title": "Define geometry and functional checks",
+      "text": "Share drawings, sealing interfaces and the required hardness or other material properties. Agree the dimensions, sample evaluation and application-specific checks used to assess the component. Tooling and release conditions are defined before production."
+    },
+    "options": {
+      "title": "Tooling and finishing details",
+      "intro": "Clarify the details that affect the fit, appearance and assessment of the finished part.",
+      "cards": [
+        {
+          "title": "Tooling",
+          "text": "Agree the mold approach, parting lines and tool responsibilities."
+        },
+        {
+          "title": "Surface & edges",
+          "text": "Specify flash limits, trimming and relevant contact surfaces."
+        },
+        {
+          "title": "Color & identification",
+          "text": "Define color references and marking requirements where needed."
+        },
+        {
+          "title": "Samples & release",
+          "text": "Agree sample quantities, evaluation criteria and approval records."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "q": "How is the elastomer material selected?",
+        "a": "Start with the intended media, temperature, movement and sealing conditions. Specify required hardness and documentation so a suitable compound can be assessed."
+      },
+      {
+        "q": "Can parts be developed from a sample?",
+        "a": "A sample can support the discussion. Geometry, material requirements and the criteria for evaluating a new component still need to be defined and agreed."
+      },
+      {
+        "q": "What should a sealing drawing include?",
+        "a": "Show the part geometry, mating surfaces, installation space and critical dimensions. Include relevant compression, media and operating requirements."
+      }
+    ],
+    "related": [
+      "injection",
+      "vacuum",
+      "components",
+      "assembly"
+    ],
+    "cta": "Have a rubber or silicone part requirement?"
+  },
+  {
+    "media": "casting",
+    "route": "/die-casting",
+    "title": "Die Casting",
+    "heading": "Die casting for custom metal components",
+    "eyebrow": "Manufacturing",
+    "type": "custom",
+    "intro": "Aluminum and zinc castings matched to your production requirements. Define alloy, geometry, tooling, machining and surface requirements from samples through recurring supply.",
+    "overview": {
+      "title": "Cast components and production requirements",
+      "intro": "The component geometry, alloy and expected quantities form the basis for the casting approach. We coordinate tooling, secondary operations and agreed checks.",
+      "cards": [
+        {
+          "title": "Custom castings",
+          "text": "Prepare the part geometry and functional requirements for a tooling review.",
+          "bullets": [
+            "Define alloy, wall sections and critical interfaces",
+            "Agree tooling, samples and expected volumes"
+          ],
+          "image": "product"
+        },
+        {
+          "title": "Finished cast components",
+          "text": "Coordinate casting with machining and finishing for the required delivery condition.",
+          "bullets": [
+            "Identify machined features and surface requirements",
+            "Agree dimensional checks and documentation"
+          ],
+          "image": "hero"
+        }
+      ]
+    },
+    "selection": {
+      "title": "Alloy and component selection",
+      "intro": "The specific alloy and process are assessed against the part. Material suitability and source availability are confirmed with the offer.",
+      "cards": [
+        {
+          "title": "Aluminum castings",
+          "text": "Discuss the alloy, geometry, machining and surface requirements for the component."
+        },
+        {
+          "title": "Zinc castings",
+          "text": "Define material requirements, functional features and the required finish."
+        },
+        {
+          "title": "Secondary operations",
+          "text": "Identify holes, threads, mating surfaces and other features requiring further work."
+        }
+      ]
+    },
+    "requirements": {
+      "title": "Agree casting and machining tolerances",
+      "text": "Distinguish as-cast features from machined interfaces on the drawing. Define critical dimensions, surface requirements and any inspection needs. Tooling feasibility, sample assessment and release criteria are agreed for the specific component."
+    },
+    "options": {
+      "title": "Tooling and finishing scope",
+      "intro": "Include the operations needed to turn the casting into a component ready for your assembly.",
+      "cards": [
+        {
+          "title": "Tooling",
+          "text": "Define tool scope, ownership, maintenance and change requirements."
+        },
+        {
+          "title": "Trimming & deburring",
+          "text": "Specify edge condition and the removal of process-related features."
+        },
+        {
+          "title": "Machining",
+          "text": "Agree the final dimensions of holes, threads and mating surfaces.",
+          "to": "/cnc-machining"
+        },
+        {
+          "title": "Surface finishing",
+          "text": "Discuss coating, appearance and functional surface requirements.",
+          "to": "/surface-finishing-services"
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Which information is needed for a casting inquiry?",
+        "a": "Provide a model or drawing, alloy requirements, quantities and critical interfaces. Include any machining, finish and inspection requirements."
+      },
+      {
+        "q": "Can machining be included after casting?",
+        "a": "Yes. Identify the features that require machining and their final dimensions. The combined casting and machining scope is agreed in the offer."
+      },
+      {
+        "q": "How are tooling and samples handled?",
+        "a": "Tool design, ownership, sampling and approval responsibilities are agreed before work proceeds. Samples are evaluated against the defined component requirements."
+      }
+    ],
+    "related": [
+      "cnc",
+      "extrusion",
+      "sheetMetal",
+      "assembly"
+    ],
+    "cta": "Have a die-cast component requirement?"
+  },
+  {
+    "media": "extrusion",
+    "route": "/extrusion",
+    "title": "Extrusion",
+    "heading": "Extruded profiles for your application",
+    "eyebrow": "Manufacturing",
+    "type": "custom",
+    "intro": "Custom metal and plastic profiles with the required cutting, machining and finishing. Define the cross-section, material, lengths and interfaces for your component.",
+    "overview": {
+      "title": "Profiles and finishing requirements",
+      "intro": "Start with the profile drawing and its role in the assembly. The material, cross-section and secondary operations guide the manufacturing scope.",
+      "cards": [
+        {
+          "title": "Custom profiles",
+          "text": "Prepare the section geometry and metal or plastic material requirements for a custom profile.",
+          "bullets": [
+            "Define cross-section, material and cut lengths",
+            "Agree tolerances, tooling and surface condition"
+          ],
+          "image": "product"
+        },
+        {
+          "title": "Cut & finished profiles",
+          "text": "Coordinate the profile with the secondary operations needed for installation.",
+          "bullets": [
+            "Specify cut lengths, holes and local features",
+            "Agree finish, inspection and delivery condition"
+          ],
+          "image": "hero"
+        }
+      ]
+    },
+    "selection": {
+      "title": "Profile material and geometry",
+      "intro": "The material and section are selected together. Specific grades, tolerances and process suitability are assessed for the application.",
+      "cards": [
+        {
+          "title": "Metal requirements",
+          "text": "Define alloy, surface condition and the mechanical role of the profile."
+        },
+        {
+          "title": "Plastic requirements",
+          "text": "Discuss rigidity, flexibility, appearance and the operating environment."
+        },
+        {
+          "title": "Section & interfaces",
+          "text": "Show wall sections, channels, mating parts and critical dimensions."
+        }
+      ]
+    },
+    "requirements": {
+      "title": "Define profile tolerances and cut lengths",
+      "text": "Identify critical cross-section dimensions, straightness, length and interface requirements. Agree tooling, sample assessment and the scope of any machining or finishing. Final specifications and checking criteria form part of the offer."
+    },
+    "options": {
+      "title": "Secondary operations and delivery",
+      "intro": "Coordinate the profile with the additional work required for your installation.",
+      "cards": [
+        {
+          "title": "Cutting",
+          "text": "Specify finished lengths, end condition and length tolerances."
+        },
+        {
+          "title": "Machining",
+          "text": "Define holes, slots, threads and other local features.",
+          "to": "/cnc-machining"
+        },
+        {
+          "title": "Finishing",
+          "text": "Agree surface appearance, coatings and protected interfaces.",
+          "to": "/surface-finishing-services"
+        },
+        {
+          "title": "Packing & supply",
+          "text": "Define handling protection, delivery units and recurring quantities."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "q": "What should a profile drawing show?",
+        "a": "Provide the complete cross-section, critical dimensions and the intended material. Include cut lengths, mating components and any secondary operations."
+      },
+      {
+        "q": "Can profiles be supplied cut and machined?",
+        "a": "Yes. Define the finished lengths, local features and tolerances. Cutting, machining and finishing are included in the agreed scope."
+      },
+      {
+        "q": "How is a new profile assessed?",
+        "a": "The material, section geometry and tooling requirements are reviewed for the intended application. Agree samples and checking criteria before release."
+      }
+    ],
+    "related": [
+      "cnc",
+      "sheetMetal",
+      "casting",
+      "assembly"
+    ],
+    "cta": "Have a custom profile requirement?"
+  },
+  {
+    "media": "sensors",
+    "route": "/sensors-and-measurement",
+    "title": "Sensors & Measurement",
+    "heading": "Sensors and measurement for your application",
+    "eyebrow": "Components",
+    "type": "component",
+    "intro": "Sensors, probes and measurement components matched to the task. Define the measurement range, accuracy, installation and signal interfaces for your equipment.",
+    "overview": {
+      "title": "Measurement components and interfaces",
+      "intro": "Selection starts with what needs to be measured and how the result is used. Explore the component categories and clarify the connection to your equipment.",
+      "cards": [
+        {
+          "title": "Sensors & probes",
+          "text": "Match the sensing element, probe construction and connection to the application.",
+          "bullets": [
+            "Define measurement range and operating conditions",
+            "Agree installation, signal and accuracy requirements"
+          ],
+          "image": "product",
+          "to": "/components/sensors-and-probes"
+        },
+        {
+          "title": "Measurement integration",
+          "text": "Coordinate sensing with the receiving device and required connection.",
+          "bullets": [
+            "Specify compatible inputs, outputs and wiring",
+            "Agree configuration, checks and documentation"
+          ],
+          "image": "controllers",
+          "to": "/components/controllers-and-control-systems"
+        }
+      ]
+    },
+    "selection": {
+      "title": "Selection parameters to define",
+      "intro": "A datasheet, existing reference or description of the measurement task provides a starting point for selection.",
+      "cards": [
+        {
+          "title": "Range & accuracy",
+          "text": "Define the measurement range, required accuracy and relevant evaluation conditions."
+        },
+        {
+          "title": "Installation",
+          "text": "Specify probe dimensions, mounting, process connections and contact materials."
+        },
+        {
+          "title": "Signal & connection",
+          "text": "Identify output requirements, supply, cable construction and connector references."
+        }
+      ]
+    },
+    "requirements": {
+      "title": "Agree the measurement and documentation scope",
+      "text": "Define how the component is assessed in the intended application. Specify any calibration, traceability or test documentation you need. Required evidence, responsibilities and acceptance criteria are agreed for the selected component."
+    },
+    "options": {
+      "title": "Configuration and integration details",
+      "intro": "Bring the sensing component and its installation requirements together before the offer.",
+      "cards": [
+        {
+          "title": "Probe construction",
+          "text": "Define stem length, diameter, mounting and contact surfaces."
+        },
+        {
+          "title": "Cables & connectors",
+          "text": "Match wiring, connector references and required cable lengths.",
+          "to": "/cable-assemblies"
+        },
+        {
+          "title": "Controls & readout",
+          "text": "Identify the receiving device and compatible signal interfaces.",
+          "to": "/components/controllers-and-control-systems"
+        },
+        {
+          "title": "Documentation",
+          "text": "Agree identification, datasheets and any required measurement records."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "q": "What information helps select a sensor?",
+        "a": "Describe the measurement task, range, required accuracy, mounting and operating conditions. Include the receiving device and any existing references."
+      },
+      {
+        "q": "Can probe geometry and cable connections be adapted?",
+        "a": "Describe the required dimensions and interfaces. We assess the available or custom options, then agree the component specification and evaluation criteria."
+      },
+      {
+        "q": "Is calibration documentation included?",
+        "a": "Specify the documentation and traceability requirements for your application. The available evidence and any agreed calibration scope are confirmed with the offer."
+      }
+    ],
+    "related": [
+      "components",
+      "cables",
+      "assembly",
+      "cnc"
+    ],
+    "cta": "Have a sensor or measurement requirement?"
+  },
+  {
+    "media": "vacuum",
+    "route": "/vacuum-casting",
+    "title": "Vacuum Casting",
+    "heading": "Vacuum casting for prototypes and small runs",
+    "eyebrow": "Manufacturing",
+    "type": "custom",
+    "intro": "Cast polyurethane parts for prototype evaluation and small production runs. Define geometry, material properties, finish and quantities for a suitable master, mold and sampling approach.",
+    "overview": {
+      "title": "Prototype and small-run requirements",
+      "intro": "Start with a model or drawing and explain how the parts will be evaluated. Material properties and appearance requirements guide the casting scope.",
+      "cards": [
+        {
+          "title": "Prototype parts",
+          "text": "Prepare representative parts for fit, handling and agreed application checks.",
+          "bullets": [
+            "Define geometry, interfaces and intended evaluation",
+            "Agree material properties, finish and samples"
+          ],
+          "image": "product"
+        },
+        {
+          "title": "Small production runs",
+          "text": "Plan a limited quantity around the agreed part and mold requirements.",
+          "bullets": [
+            "Specify quantities and repeat requirements",
+            "Agree molds, checking criteria and delivery condition"
+          ],
+          "image": "hero"
+        }
+      ]
+    },
+    "selection": {
+      "title": "Material properties and master requirements",
+      "intro": "The casting material and master are selected around the part's intended use. Specific material characteristics and suitability are confirmed in the offer.",
+      "cards": [
+        {
+          "title": "Rigid polyurethane",
+          "text": "Define the required rigidity, appearance and functional properties."
+        },
+        {
+          "title": "Flexible polyurethane",
+          "text": "Specify flexibility, hardness and the way the part will be evaluated."
+        },
+        {
+          "title": "Master pattern",
+          "text": "Agree geometry, surface condition and the data needed to prepare the master."
+        }
+      ]
+    },
+    "requirements": {
+      "title": "Define the purpose of the cast part",
+      "text": "Describe whether the part is intended for appearance, fit or functional evaluation. Agree the critical dimensions, material properties and checking conditions. The casting material must be assessed for the intended use; resemblance to another plastic does not establish equivalent performance."
+    },
+    "options": {
+      "title": "Mold and finishing details",
+      "intro": "Agree the production and finishing scope around the required quantity and delivery condition.",
+      "cards": [
+        {
+          "title": "Master & mold",
+          "text": "Define the master, parting approach and mold requirements."
+        },
+        {
+          "title": "Appearance",
+          "text": "Agree color, texture and visible surface expectations."
+        },
+        {
+          "title": "Inserts & interfaces",
+          "text": "Specify any inserts, connection features and mating components."
+        },
+        {
+          "title": "Samples & repeat runs",
+          "text": "Agree sample evaluation, quantities and the scope of repeat orders."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "q": "What files are needed for a vacuum-casting inquiry?",
+        "a": "Provide a model or drawing with critical dimensions, intended use, material-property requirements and quantities. Add appearance and finishing requirements where relevant."
+      },
+      {
+        "q": "Are cast polyurethane parts equivalent to injection-molded parts?",
+        "a": "Material properties and process characteristics must be assessed for the intended use. A cast prototype should be evaluated against agreed requirements rather than assumed to match an injection-molded material."
+      },
+      {
+        "q": "Can small repeat runs be planned?",
+        "a": "Discuss the expected quantities and timing alongside the mold and material requirements. The production scope, checking criteria and delivery conditions are confirmed in the offer."
+      }
+    ],
+    "related": [
+      "printing",
+      "injection",
+      "rubber",
+      "assembly"
+    ],
+    "cta": "Have a vacuum-cast part requirement?"
+  }
+]

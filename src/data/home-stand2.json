@@ -60,7 +60,7 @@
           "Agree specifications, quantities and documentation"
         ],
         "cta": "Explore industrial components",
-        "to": "/components"
+        "to": "/industrial-components"
       },
       {
         "media": "cnc",
@@ -114,8 +114,8 @@
           "Define connectors, pin assignments and cable lengths",
           "Agree materials, quantities and electrical checks"
         ],
-        "cta": "Discuss cable assemblies",
-        "to": "/contact?type=custom&reference=Cable+Assemblies"
+        "cta": "Explore cable assemblies",
+        "to": "/cable-assemblies"
       },
       {
         "media": "assembly",
@@ -125,8 +125,8 @@
           "Define parts, interfaces and assembly requirements",
           "Agree functional checks and delivery condition"
         ],
-        "cta": "Discuss your assembly",
-        "to": "/contact?type=custom&reference=Assembly+%26+Subassemblies"
+        "cta": "Explore assembly & subassemblies",
+        "to": "/assembly-and-subassemblies"
       },
       {
         "media": "rubber",
@@ -136,8 +136,8 @@
           "Define material, hardness and operating conditions",
           "Agree geometry, tooling and sample evaluation"
         ],
-        "cta": "Discuss rubber & silicone parts",
-        "to": "/contact?type=custom&reference=Rubber+%26+Silicone"
+        "cta": "Explore rubber & silicone",
+        "to": "/rubber-and-silicone"
       },
       {
         "media": "casting",
@@ -147,8 +147,8 @@
           "Define alloy, geometry and expected volumes",
           "Agree tooling, machining and surface finish"
         ],
-        "cta": "Discuss die casting",
-        "to": "/contact?type=custom&reference=Die+Casting"
+        "cta": "Explore die casting",
+        "to": "/die-casting"
       },
       {
         "media": "extrusion",
@@ -158,8 +158,8 @@
           "Define material, profile geometry and cut lengths",
           "Agree tolerances, finishing and quantities"
         ],
-        "cta": "Discuss extrusion",
-        "to": "/contact?type=custom&reference=Extrusion"
+        "cta": "Explore extrusion",
+        "to": "/extrusion"
       },
       {
         "media": "sensors",
@@ -169,8 +169,8 @@
           "Define measurement range, interfaces and conditions",
           "Agree accuracy, connections and documentation"
         ],
-        "cta": "Explore sensors & probes",
-        "to": "/components/sensors-and-probes"
+        "cta": "Explore sensors & measurement",
+        "to": "/sensors-and-measurement"
       },
       {
         "media": "vacuum",
@@ -180,8 +180,8 @@
           "Define geometry, material properties and quantities",
           "Agree master pattern, finish and sample evaluation"
         ],
-        "cta": "Discuss vacuum casting",
-        "to": "/contact?type=custom&reference=Vacuum+Casting"
+        "cta": "Explore vacuum casting",
+        "to": "/vacuum-casting"
       }
     ]
   },

@@ -11,9 +11,9 @@ export function SectionLead({ title, children }: { title: string; children?: Rea
   return <div className="section-lead"><h2 className="h2-orig">{title}</h2>{children && <p>{children}</p>}</div>;
 }
 
-export function CapabilitiesCards() {
+export function CapabilitiesCards({ cards = H.capabilities.cards }: { cards?: typeof H.capabilities.cards } = {}) {
   return <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 justify-center">
-    {H.capabilities.cards.map(c => <Link to={c.to} key={c.media} className="cap-card">
+    {cards.map(c => <Link to={c.to} key={c.media} className="cap-card">
       <img src={CAPABILITY_IMAGES[c.media]} alt="" loading="lazy" />
       <div className="cap-text">
         <h3 className="cap-title">{c.title}</h3><span className="cap-subtitle">{c.desc}</span>

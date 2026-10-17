@@ -15,9 +15,9 @@ export function LockNote() {
 
 /* Dark split hero for service pages: image left, dark panel right */
 export function SubHero({
-  title, text, img, cta = 'Prepare an inquiry', anchors = [], eyebrow,
+  title, text, img, cta = 'Prepare an inquiry', ctaTo = '/contact', anchors = [], eyebrow,
 }: {
-  title: string; text: React.ReactNode; img: string; cta?: string; anchors?: string[]; eyebrow?: string;
+  title: string; text: React.ReactNode; img: string; cta?: string; ctaTo?: string; anchors?: string[]; eyebrow?: string;
 }) {
   return (
     <>
@@ -32,7 +32,7 @@ export function SubHero({
             <h1 className="hero-title text-white font-medium mb-4">{title}</h1>
             <p className="text-base md:text-[1.125rem] leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.62)' }}>{text}</p>
             <div>
-              <Link to="/contact" className="btn-primary-l">{cta}</Link>
+              <Link to={ctaTo} className="btn-primary-l">{cta}</Link>
               <LockNote />
             </div>
           </div>

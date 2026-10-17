@@ -1,0 +1,52 @@
+{
+  "provider": "OpenAI built-in image_gen",
+  "date": "2026-10-17",
+  "prompt": "Create a photorealistic header photograph for a Komponia industrial capability page. Reference 1 is the exact subject/product example to preserve. Reference 2 (sheet metal parts on charcoal) is ONLY the photographic styling reference; do not copy its sheet-metal objects. Restage the subject from reference 1 on a dark graphite matte studio surface with a soft directional light from upper left, realistic material textures and soft contact shadows. Arrange one main product/group centrally and optionally one additional matching example partially visible at an outer edge, as in the style reference. Restrained industrial product photography, no people, no tools, no labels, logos, text or watermark. Opaque background. Landscape 4:3 composition. Keep the main recognizable product/group within the central 65% of the width and central 60% of the height so it remains clear in both square desktop and wide mobile crops. Show physically plausible connections and geometry. This is generic illustrative product imagery, not a specific manufacturer's item.",
+  "assets": [
+    {
+      "key": "components",
+      "file": "src/assets/industrial/capability-heroes-20261017/components.webp",
+      "generation_id": "exec-15f11926-67d2-4269-9860-5be02d631d31"
+    },
+    {
+      "key": "cables",
+      "file": "src/assets/industrial/capability-heroes-20261017/cables.webp",
+      "generation_id": "exec-d49305bb-d1c8-44c7-9cdb-318ad2030c95"
+    },
+    {
+      "key": "assembly",
+      "file": "src/assets/industrial/capability-heroes-20261017/assembly.webp",
+      "generation_id": "exec-4db2ab33-4a2c-49f9-a095-2073605c82e2"
+    },
+    {
+      "key": "rubber",
+      "file": "src/assets/industrial/capability-heroes-20261017/rubber.webp",
+      "generation_id": "exec-a10fae80-a9bf-4713-8bf8-0c05f2c3fd23"
+    },
+    {
+      "key": "casting",
+      "file": "src/assets/industrial/capability-heroes-20261017/casting.webp",
+      "generation_id": "exec-7a86fadc-529f-4e06-98f7-0b4790d10f3a"
+    },
+    {
+      "key": "extrusion",
+      "file": "src/assets/industrial/capability-heroes-20261017/extrusion.webp",
+      "generation_id": "exec-4faae328-97b5-485a-a1a4-3a1494005e10"
+    },
+    {
+      "key": "sensors",
+      "file": "src/assets/industrial/capability-heroes-20261017/sensors.webp",
+      "generation_id": "exec-7a4384e3-24a5-44c2-bafb-f22d04263fff"
+    },
+    {
+      "key": "vacuum",
+      "file": "src/assets/industrial/capability-heroes-20261017/vacuum.webp",
+      "generation_id": "exec-fd3ac030-c917-4062-82a7-3743fc7b00f7"
+    }
+  ],
+  "note": "Generic illustrative product scenes. Built-in image_gen restaged the corresponding capability card product on a charcoal background, using the original SheetMetal hero as a style reference. WebP encoding quality 88, no crop.",
+  "references": [
+    "Corresponding product image in src/assets/industrial/capabilities-20261017/",
+    "IMG.heroSmf in src/data/site.ts"
+  ]
+}
