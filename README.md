@@ -1,5 +1,19 @@
 # Komponia Website
 
+## Aktive Startseite: Stand 2, wiederhergestellt am 17. Oktober 2026
+
+Die Startseite verwendet wieder Gestaltung, Vier-Bilder-Hero, Abschnittsnavigation,
+vollständige Gliederung, Texte und Bildzuordnungen aus `27ac683`.
+Die Wiederherstellung erfolgt mit einem neuen Commit auf `main`; die komplette
+Historie einschließlich aller späteren Entwürfe bleibt erhalten.
+
+Die historischen Homepage-Inhalte liegen separat in `src/data/home-stand2.json`,
+`src/data/home-stand2-images.ts` und `src/components/HomeSectionsStand2.tsx`.
+Die neueren Inhaltsdateien und Unterseiten bleiben als Fundus unverändert.
+Bestätigte Unternehmensangaben, Footer und lokales Anfrageformular mit Mail-Link
+bleiben erhalten. Die gemeinsamen Gestaltungsdateien entsprechen wieder Stand 2.
+Keine Veröffentlichung. Details: `project-notes/STAND_2_RESTORATION_2026-10-17.txt`.
+
 Aktuelle englischsprachige Komponia-Website auf Basis des bestehenden Protolabs-Templates mit React, TypeScript und Vite. Kommunikation und inhaltliche Abstimmung erfolgen auf Deutsch.
 
 ## Lokal starten
@@ -20,6 +34,10 @@ npm run build
 ```
 
 Abhängigkeiten, Build-Dateien, lokale Umgebungsdateien und Caches werden nicht eingecheckt. `package-lock.json` ist enthalten.
+
+## Historische Arbeitsnotizen
+
+Die folgenden Abschnitte dokumentieren frühere Arbeitsschritte; maßgeblich ist die aktive Grundlage oben.
 
 ## Gesicherter Stand am 8. Oktober 2026
 

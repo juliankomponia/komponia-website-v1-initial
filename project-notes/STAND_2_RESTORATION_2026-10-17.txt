@@ -1,0 +1,67 @@
+Stand 2 als aktive Homepage — 17. Oktober 2026
+
+Ausgang: main / af4fa72, sauber; git pull --ff-only: Already up to date.
+Quelle: 27ac683 (Stand 2). Neuer Commit; kein Reset, kein Force-Push.
+
+Wiederhergestellt:
+- Home.tsx und HomeHero.tsx: Vier-Bilder-Hero und gesamte alte Abschnittsfolge.
+- PageSections.css, orig.css, komponia-refinements.css, index.html und Tailwind:
+  damalige Gestaltung, Poppins, Bildlayout, Farben und Scroll-Akzente.
+- Historische Homepage-Daten und Bilder separat in home-stand2.json,
+  home-stand2.ts und home-stand2-images.ts; alte Sections in HomeSectionsStand2.tsx.
+- Homepage-Metabeschreibung passend zur historischen Fassung.
+
+Bewahrt und per Bytevergleich geschützt:
+- company.ts, CompanyDetails.tsx, Footer.tsx.
+- Contact.tsx und contact.css: lokale Entwurfsvorbereitung, Mailprogramm nur auf
+  Nutzeraktion, kein automatischer Versand und kein Datei-Upload.
+- Neuere home.json, images.ts, pages.json, navigation.ts, site.ts, Sections.tsx.
+- Neuere Unterseiten und sämtliche Bilder/Versionen bleiben verfügbar.
+- Nur die Homepage importiert die historischen Daten und Abschnittskomponenten.
+- Bestehende PageSections.tsx und Wortmarken sind identisch mit Stand 2.
+- Kleine Formatierung für die bestätigte Firmenanschrift beibehalten.
+
+Historische Stände / Inhaltsfundus (keine automatische Übernahme):
+5ed2b5b ältester Entwurf; 27ac683 bevorzugte Grundlage;
+8bfff91 Strategie/Leistungen; 59e280c vier Kernleistungen;
+196e409 Farben/Bilder/Firmenangaben; ad17952 farbige Komponentenfotos;
+dfc7bce Hubs-Umbau; 1b3f456 Markenverfeinerung;
+e613edf Anfrage/Ablauf/Lieferplanung; df40cea Engineering/Qualitätsgrafiken;
+d128a7d offene Leistungsflächen; 68578f3 verworfene /design-preview;
+af4fa72 vorheriger Hauptstand.
+
+Verbindlich:
+Keine ungefragte Neugestaltung oder Übernahme späterer Homepage-Inhalte.
+Originalwortmarken erhalten; entfernten Claim nicht wieder einführen.
+WTS-Erfahrung seit 1997, nicht Gründung von Komponia.
+Keine erfundenen Zertifikate, Kunden oder Kennzahlen.
+Keine Bildgenerierung ohne Anlass; keine Veröffentlichung.
+Aktives React-Projekt: komponia-website-v1-initial.
+Komponia_Website_final ist ausschließlich Markenreferenz.
+
+Prüfung:
+- Stand 2 unter localhost:3010/vier-bilder/#/ im Browser gelesen und visuell
+  vom Hero über die Abschnitte bis zum Footer geprüft; relevante Quellen gelesen.
+- npm run build erfolgreich (TypeScript + Vite). Vite weist auf einen JS-Chunk
+  über 500 kB hin; kein Buildfehler.
+- ESLint für alle geänderten/neuen TypeScript-Dateien erfolgreich.
+- git diff --check erfolgreich.
+- Quellvergleich: Home, HomeHero und HomeSectionsStand2 entsprechen 27ac683
+  bis auf getrennte Imports; historische Daten, Bilder und Gestaltungsdateien
+  entsprechen dem Commit. Die Firmenanschrift ergänzt nur ihre Formatierung.
+- Geschützte neuere Inhalts-/Kontakt-/Firmendateien unverändert (Bytevergleich).
+- Hero-Fotos und Originalwortmarken unverändert gegenüber 27ac683.
+- Alle 13 genannten Versionen sind weiterhin Vorfahren des neuen Stands.
+- Aktive Vorschau localhost:3000/#/ im Browser geprüft: alle vier Hero-Schalter,
+  Abschnittssprünge, Manufacturing-/Qualifikationskarten, Weiterleitung zur
+  Qualitätsdetailseite, Kontakt-CTA und sichtbare bestätigte Firmenangaben.
+- Kontaktformular-Code unverändert; kein Mailprogramm geöffnet, keine Nachricht
+  verschickt und keine Dateien hochgeladen. Keine Veröffentlichung.
+- Lokale Prüfansichten liegen außerhalb des Repositories im Visualisierungsordner
+  dieser Sitzung: komponia-stand2-hero.png und komponia-stand2-sections.png.
+
+Hinweis zur weiteren Arbeit:
+Die Startseite ist Stand 2. Neuere Detailseiten, Hauptmenü-/Footer-Inhalte und
+Inhaltsdateien bleiben erhalten. Ihre Übernahme in die Startseite erfordert eine
+konkrete Auswahl des Nutzers. Gemeinsame Farben und Typografie verwenden wieder
+Stand 2; keine neue Gestaltung hinzugefügt.

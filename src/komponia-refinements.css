@@ -1,44 +1,12 @@
-/* Komponia brand tokens and typography within the established page layouts. */
-@font-face {
-  font-family: 'Sora';
-  src: url('./assets/fonts/sora-var.woff2') format('woff2');
-  font-style: normal;
-  font-weight: 100 800;
-  font-display: swap;
-}
-:root {
-  --komponia-blue: #3E5AF5;
-  --komponia-ink: #1F1F1D;
-  --komponia-lavender: #D4B9F3;
-  --komponia-yellow: #F7D44B;
-  --komponia-line: #E1E3E8;
-  --komponia-surface: #F5F6F8;
-  --komponia-ease: cubic-bezier(.2,.6,.2,1);
-}
-.btn, .btn-primary, .btn-primary-l, .btn-outline-primary, .btn-secondary-dark {
-  border-radius: 999px;
-  transition: background-color 140ms var(--komponia-ease), color 140ms var(--komponia-ease), transform 140ms var(--komponia-ease);
-}
-.btn-primary:active, .btn-primary-l:active { transform: translateY(1px); }
-.btn-primary:focus-visible, .btn-primary-l:focus-visible, .btn-outline-primary:focus-visible {
-  outline: 3px solid #BBC5FF;
-  outline-offset: 3px;
-}
-h1, h2, h3, main .h2-orig, main .hero-title, .cap-card .cap-title, main .brand-card-title, .step-title {
-  font-family: 'Sora', sans-serif;
-  font-weight: 600;
-  letter-spacing: -.025em;
-}
-.section-lead p { color: #4C5057; line-height: 1.65; }
+/* Selected Komponia details. Template colours, Poppins and component shapes remain authoritative. */
 .komponia-label {
-  --komponia-rule: var(--komponia-blue);
+  --komponia-rule: #3e5af5;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
   margin: 0 0 24px;
   color: #4c5057;
-  font-family: 'Sora', sans-serif;
   font-size: 11px;
   font-weight: 500;
   line-height: 1.5;
@@ -49,6 +17,76 @@ h1, h2, h3, main .h2-orig, main .hero-title, .cap-card .cap-title, main .brand-c
 .komponia-label--inverse { color: rgba(255,255,255,.72); }
 .hero-title { letter-spacing: -.025em; text-wrap: balance; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+/* Home hero: full-width imagery with a quiet, readable text area. */
+.home-page .home-hero {
+  --home-hero-accent: #fff;
+  position: relative; isolation: isolate; overflow: hidden; color: #fff; background: #1f2223;
+  min-height: clamp(680px, calc(100svh - 98px), 860px); touch-action: pan-y;
+}
+/* Match the header's scroll state with the approved Komponia lavender accent. */
+.site-header[data-scrolled="true"] ~ main .home-page .home-hero { --home-hero-accent: #d4b9f3; }
+.home-page .home-hero-media { position: absolute; inset: 0; z-index: 0; margin: 0; overflow: hidden; }
+.home-page .home-hero-media::after {
+  content: ''; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  background: linear-gradient(90deg, rgba(22,25,27,.97) 0%, rgba(22,25,27,.88) 36%, rgba(22,25,27,.64) 52%, rgba(22,25,27,.22) 76%, rgba(22,25,27,.10) 100%);
+}
+.home-hero-slide { position: absolute; inset: 0; opacity: 0; pointer-events: none; transition: opacity .7s ease; }
+.home-hero-slide[data-active="true"] { opacity: 1; z-index: 1; }
+.home-hero-slide img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 65% center; }
+.home-page .home-hero-panel {
+  position: relative; z-index: 1; min-height: inherit; display: flex; align-items: center;
+  padding: 56px var(--site-gutter); pointer-events: none;
+}
+.home-page .home-hero .home-hero-copy { width: 100%; max-width: 620px; padding: 0; pointer-events: auto; }
+.home-page .home-hero-copy-inner { max-width: none; }
+.home-page .home-hero .hero-title {
+  margin: 0 0 28px; color: #fff; font-size: clamp(32px, 3.3vw, 48px); line-height: 1.13;
+  font-weight: 600; letter-spacing: -.035em; text-wrap: initial;
+}
+/* Reserve the largest copy at each width so the choices and actions stay in place. */
+.home-page .home-hero-copy-stack { display: grid; }
+.home-page .home-hero-copy-stack > [data-active] {
+  grid-area: 1 / 1; min-width: 0; align-self: start; opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity .35s ease, visibility 0s linear .35s;
+}
+.home-page .home-hero-copy-stack > [data-active="true"] { opacity: 1; visibility: visible; pointer-events: auto; transition-delay: 0s; }
+.home-page .home-hero-switcher { display: flex; flex-wrap: wrap; width: fit-content; max-width: 100%; gap: 0 28px; margin: 0 0 28px; }
+.home-page .home-hero-switcher button {
+  min-height: 44px; padding: 10px 0; border: 0; border-bottom: 2px solid rgba(255,255,255,.24); border-radius: 0;
+  color: #c2c5c6; background: transparent; font-size: 14px; line-height: 1.5; font-weight: 500; white-space: nowrap;
+  transition: color .2s ease, border-color .2s ease;
+}
+.home-page .home-hero-switcher button:hover { color: #fff; border-bottom-color: rgba(255,255,255,.6); }
+.home-page .home-hero-switcher button.selected { color: #fff; border-bottom-color: var(--home-hero-accent); }
+.home-page .home-hero-switcher button:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+.home-page .home-hero-intro-stack { margin-bottom: 24px; }
+.home-page .home-hero .hero-intro { max-width: 34rem; margin: 0; color: #c2c5c6; font-size: 16px; line-height: 1.65; }
+.home-page .home-hero-details-stack { margin-bottom: 32px; }
+.home-page .home-hero-points { display: grid; gap: 18px; list-style: none; margin: 0; padding: 0; }
+.home-page .home-hero-point { display: flex; align-items: flex-start; gap: 12px; color: #c2c5c6; font-size: 15px; line-height: 1.65; }
+.home-page .home-hero-point svg { flex: 0 0 16px; margin-top: 4px; color: var(--home-hero-accent); transition: color .2s ease; }
+.home-page .home-hero-point strong { color: #fff; font-weight: 500; }
+.home-page .home-hero .hero-actions { gap: 24px; }
+.home-page .home-hero-primary { min-height: 46px; padding: 12px 18px; background: #fff; color: #1f2223; font-size: 14px; }
+.home-page .home-hero-primary:hover { background: #e9eaea; color: #1f2223; }
+.home-page .home-hero-secondary { min-height: 46px; padding: 12px 0; background: transparent; color: #fff; font-size: 14px; }
+.home-page .home-hero-secondary:hover { background: transparent; color: #fff; text-decoration: underline; text-underline-offset: 4px; }
+.home-page .home-hero .hero-actions a:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+@media (max-width: 1023px) {
+  .home-page .home-hero-media::after { background: linear-gradient(90deg, rgba(22,25,27,.96) 0%, rgba(22,25,27,.86) 56%, rgba(22,25,27,.55) 100%); }
+}
+@media (max-width: 639px) {
+  .home-page .home-hero { min-height: 0; }
+  .home-page .home-hero-panel { padding-block: 44px; }
+  .home-page .home-hero .hero-title { font-size: 32px; margin-bottom: 24px; }
+  .home-page .home-hero-switcher { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; gap: 0 20px; margin-bottom: 24px; }
+  .home-page .home-hero-switcher button { text-align: left; }
+  .home-page .home-hero-media::after { background: linear-gradient(90deg, rgba(22,25,27,.96), rgba(22,25,27,.78)); }
+  .home-page .home-hero .hero-actions { gap: 8px 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-hero-slide, .home-page .home-hero-copy-stack > [data-active], .home-page .home-hero-switcher button, .home-page .home-hero-point svg { transition: none; }
+}
 .feature-copy > .lead-orig { font-size: 16px; line-height: 1.7; }
 .feature-image img { display: block; }
 .media-caption { margin: 12px 0 0; color: #4c5057; font-size: 12px; line-height: 1.6; }
@@ -56,7 +94,7 @@ h1, h2, h3, main .h2-orig, main .hero-title, .cap-card .cap-title, main .brand-c
 .generic-page .generic-hero-copy { min-width: 0; max-width: 42rem; }
 .generic-page .hero-title { font-size: clamp(2rem, 3.2vw, 3rem); line-height: 1.16; }
 .generic-page .generic-hero-copy > p:not(.komponia-label) { max-width: 38rem; color: rgba(255,255,255,.72); }
-.generic-page .generic-hero-image img { width: 100%; aspect-ratio: 16/10; max-height: 480px; object-fit: cover; border-radius: 3px; background: #f7f7f7; }
+.generic-page .generic-hero-image img { width: 100%; aspect-ratio: 16/10; max-height: 480px; object-fit: cover; border-radius: 3px; }
 .generic-page .generic-body { font-size: 16px; line-height: 1.7; }
 .generic-page .generic-table-wrap { overflow-x: auto; overscroll-behavior-x: contain; }
 .generic-page .generic-table { width: 100%; text-align: left; border-collapse: collapse; font-size: 15px; line-height: 1.65; }
@@ -67,7 +105,7 @@ h1, h2, h3, main .h2-orig, main .hero-title, .cap-card .cap-title, main .brand-c
 .generic-page .generic-table-wrap--wide .generic-table { min-width: 600px; }
 /* Keep the supplied raster intact. Crop its sheet edges and small embedded
    tagline in CSS; retain the complete four-colour mark and wordmark. */
-.site-header, .site-footer { background-color: #1F1F1D; isolation: isolate; }
+.site-header, .site-footer { background-color: #1f2223; isolation: isolate; }
 .site-logo { min-height: 48px; }
 .site-logo-window { display: block; position: relative; width: 176px; height: 44px; overflow: hidden; }
 .site-logo-window img {
@@ -78,7 +116,7 @@ h1, h2, h3, main .h2-orig, main .hero-title, .cap-card .cap-title, main .brand-c
 }
 .site-footer .site-logo { width: fit-content; }
 .site-header a:focus-visible, .site-footer a:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
-.site-header .navigation-panel a:focus-visible { outline-color: #3E5AF5; }
+.site-header .navigation-panel a:focus-visible { outline-color: #0071e3; }
 /* Matched transparent lockups from the supplied design package keep the header
    clean in both states. The display filter only inverts the monochrome artwork. */
 .site-header {
@@ -92,14 +130,13 @@ h1, h2, h3, main .h2-orig, main .hero-title, .cap-card .cap-title, main .brand-c
   transition: background-color .22s ease, color .22s ease, border-color .22s ease, box-shadow .22s ease;
 }
 .site-header[data-scrolled="true"] {
-  --header-text: #1F1F1D;
+  --header-text: #191919;
   --header-muted: #4c5057;
   --header-label: #626770;
   --header-line: rgba(25,25,25,.12);
-  --header-hover: #3E5AF5;
-  background-color: rgba(255,255,255,.92);
-  backdrop-filter: blur(10px);
-  box-shadow: none;
+  --header-hover: #0071e3;
+  background-color: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,.07);
 }
 .site-header .site-logo-window--adaptive img {
   width: 180.326px;
@@ -123,7 +160,7 @@ h1, h2, h3, main .h2-orig, main .hero-title, .cap-card .cap-title, main .brand-c
 .header-mobile-link { color: var(--header-muted); }
 .header-mobile-label { color: var(--header-label); }
 .site-header button:focus-visible { outline: 2px solid #fff; outline-offset: -4px; }
-.site-header[data-scrolled="true"] a:focus-visible, .site-header[data-scrolled="true"] button:focus-visible { outline-color: #3E5AF5; }
+.site-header[data-scrolled="true"] a:focus-visible, .site-header[data-scrolled="true"] button:focus-visible { outline-color: #0071e3; }
 @media (prefers-reduced-motion: reduce) {
   .site-header, .header-nav-trigger, .header-menu-trigger, .site-header .site-logo-window--adaptive img { transition: none; }
 }
@@ -146,47 +183,7 @@ h1, h2, h3, main .h2-orig, main .hero-title, .cap-card .cap-title, main .brand-c
 }
 @media print { .komponia-label::before { display: none; } }
 
-/* Colour and rhythm from Komponia; the established grids remain in place. */
-.home-capabilities > .wrap-orig > .komponia-label,
-.home-quality > .wrap-orig > .komponia-label { align-items: center; }
-.home-quality { background: #F8F3FE; }
-.home-quality .quality-card { background: #fff; }
-.home-quality .quality-card:hover { background: #EFE6FC; }
-.home-quality .quality-card > svg {
-  width: 34px; height: 34px;
-  color: var(--komponia-blue);
-}
-.partnership-steps {
-  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 24px; list-style: none; margin: 0; padding: 0;
-}
-.partnership-steps > li { min-width: 0; border-top: 1px solid #D5D8DF; padding-top: 24px; }
-.partnership-number {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 40px; height: 40px; margin-bottom: 20px; border-radius: 10px;
-  background: var(--komponia-yellow); color: var(--komponia-ink); font: 600 13px 'Sora', sans-serif;
-}
-.partnership-steps h3 { color: #1F1F1D; font-size: 19px; line-height: 1.4; margin-bottom: 20px; }
-.partnership-steps dl { display: grid; gap: 18px; }
-.partnership-steps dt { color: #1F1F1D; font-size: 13px; font-weight: 600; margin-bottom: 5px; }
-.partnership-steps dd { color: #4C5057; font-size: 14px; line-height: 1.65; }
+/* Retain the confirmed company address in the restored visual baseline. */
 .company-address { font-style: normal; font-size: 14px; line-height: 1.8; }
 .company-address a { text-underline-offset: 4px; }
 .company-address a:hover { text-decoration: underline; }
-@media (min-width: 1280px) {
-  .partnership-steps h3 { min-height: 2.8em; }
-  .partnership-steps dl > div { min-height: 6.5em; }
-}
-@media (max-width: 1023px) {
-  .partnership-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
-}
-@media (max-width: 639px) {
-  .partnership-steps { grid-template-columns: 1fr; gap: 32px; }
-}
-
-/* Keep complete components visible when category photos are reused in cards. */
-.cap-card.application-card img { object-position: center; }
-@media (prefers-reduced-motion: reduce) {
-  .btn, .btn-primary, .btn-primary-l, .btn-outline-primary, .btn-secondary-dark { transition: none; }
-  .btn-primary:active, .btn-primary-l:active { transform: none; }
-}
