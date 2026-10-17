@@ -1,0 +1,61 @@
+Komponia – Preis, Verpackung/Versand und Umwelt
+Stand: 17.10.2026
+
+Auftrag und Grundlage
+Julian bestätigt als Unternehmensangaben: Einkaufsvolumen verschiedener Kunden und
+Komponenten bei Herstellern bündeln; größere Produktionslose über vereinbarten
+Safety Stock, kleine Kundenabrufe; KI beim Entwurf des Pack-/Versandprozesses.
+Diese Maßnahmen bilden Preisargumente auch bei OEM-Lösungen. Konkrete Einsparungen
+hängen vom Lieferfall ab. KI-Prozessentwurf bedeutet keinen autonomen SourcuraAI-Betrieb.
+Umwelt war bereits Bestandteil der kanonischen Stage-13-Unternehmensstrategie.
+
+Umsetzung
+- Aktive Startseite: bestehendes CardGrid für drei Kaufargumente, bestehendes
+  FeatureRow für Umwelt. Acht Einträge in der Abschnittsnavigation.
+- Serienversorgung: Einkauf, Produktionslose/Abrufe, vollständige Kosten und fünf
+  Schritte von Teiledaten/Schutz über Packlayout/Tarife bis Versandkoordination.
+- OEM: wettbewerbsfähiger Preis einschließlich technischer Betreuung.
+- Umwelt: weniger unnötiges Material/Volumen, kompatible Sendungen, passende
+  Bestände, Schutz gegen Schäden und messbare Vergleiche.
+- Bestehende CSS-Dateien, Bilder, zwölf Capability-Karten und Hero unverändert.
+
+Rechercheergebnis
+Keine belastbare allgemeine Aussage „auf industrielle Serienkomponenten kommen
+X Prozent Versand“ gefunden. Aufschlag auf Teilewert, Anteil an Gesamtbeschaffung,
+Umsatzquote und Anteil an Logistikkosten sind verschiedene Kennzahlen.
+
+Aktuelle Kontextwerte, nicht auf der Website als Versandquote verwendet:
+1. OECD ITIC, Datenstand Februar2026, Zeitraum1995–2024:
+   4,8% internationale Transport-/Versicherungsmarge im über den gesamten Zeitraum
+   nach CIF-Importwert gewichteten Durchschnitt;2022 Spitze5,4%. Weltweiter
+   Warenhandel inkl.Versicherung, kein Serienkomponenten- oder Inlandsversandwert.
+   https://www.oecd.org/en/data/datasets/international-transport-and-insurance-costs-of-merchandise-trade-itic.html
+2. UniversitätTurku, National Logistics SurveyFinland2025, Veröffentlichung02.06.2026:
+   4,1% Transportkosten/Umsatz;14,4% gesamteLogistik/Umsatz. Kostenkennzahlen für
+   finnische Industrie inkl.Bau und Handel. Keine Quote bezogen auf Teilepreise.
+   https://www.utu.fi/en/news/news/national-logistics-survey-finland-2025-supply-chain-risks-increasing-and-businesses
+   Bericht,Tabelle2: https://www.utupub.fi/server/api/core/bitstreams/cd0def2c-f749-4898-8f4a-c2905a739b27/content
+
+Primärquellen für Wirkmechanismen, keine Komponia-Leistungsnachweise:
+- DHL, chargeable weight: tatsächliches vs.Volumengewicht, mode-/tarifabhängig.
+  https://www.dhl.com/au-en/home/global-forwarding/freight-forwarding-education-center/calculating-chargeable-weights.html
+- Fraunhofer,01.03.2024: Karton-/Packoptimierung, Leerraum und Material.
+  https://www.fraunhofer.de/en/press/research-news/2024/march-2024/optimal-shipping-carton-utilization.html
+- FraunhoferSCAI,August2026: Packoptimierung für industrielle Bauteile/Ladungsträger.
+  https://www.izb.fraunhofer.de/de/presse/news-06-08-2026.html
+- MIT,Inventory2016: Losgrößen/Rüstkosten/Bestandskosten gemeinsam betrachten.
+  https://live.ocw.mit.edu/courses/2-854-introduction-to-manufacturing-systems-fall-2016/6c8fec8f99bcf7059b73b82e96d43901_MIT2_854F16_Inventory.pdf
+
+Nicht übertragen: DHL-OptiCarton-Prozentersparnisse aus E-Commerce-Piloten;
+Logistikquoten statt Versand; historische China-Einkaufsstudie2007/2008 als
+heutiger Industriewert. Keine kombinierte Spanne aus unterschiedlichen Nennern.
+Keine allgemeine Bestpreisgarantie, CO2-Quote oder eigene Prozentersparnis.
+
+Prüfstand
+Produktionsbuild, TypeScript und ESLint der geänderten TS/TSX-Dateien erfolgreich.
+Bekannte Vite-Warnung: Hauptbundle über500kB, kein neuer Buildfehler.
+Browser: Startseite, OEM, Serienversorgung und Umweltseite bei1280px geprüft.
+Abschnittsnavigation, Verlinkungen und Company-Menü funktionieren; kein horizontaler
+Seitenüberlauf und keine Browserfehler. Neue Karten und Umweltabschnitt visuell geprüft.
+JSON-Abgleich: nur drei vorgesehene Unterseiten verändert, Hero und alle zwölf
+Capability-Karten unverändert. Strategie-Commit:4d8f469.

@@ -1,5 +1,22 @@
 # Komponia Website
 
+## Preis, Versand und Umweltschutz – 17. Oktober 2026
+
+Die aktive Startseite erklärt unter „Why Komponia“ den Preisvorteil durch gemeinsames
+Einkaufsvolumen, größere Produktionslose mit Safety Stock und kleinen Teilabrufen
+sowie den mit KI entworfenen Verpackungs- und Versandprozess. Ein Umweltabschnitt
+verlinkt die überarbeitete Seite `/sustainability`; Menü und Footer nennen sie jetzt
+„Environment & resource use“. `/production-orders` erläutert die Kostenmechanik und
+fünf Schritte der Pack-/Versandplanung, `/oem-solutions` den Preisvorteil bei OEM-Betreuung.
+Bestehende Komponenten und Stilklassen werden wiederverwendet.
+
+Eine allgemeingültige Versandkostenquote für industrielle Serienkomponenten ließ
+sich nicht belegen. OECD- und finnische Studienwerte haben andere Bezugsgrößen und
+werden nicht als pauschaler Aufschlag auf den Teilepreis dargestellt. Quellen,
+Abgrenzung und Prüfstand: `project-notes/PRICE_SHIPPING_ENVIRONMENT_2026-10-17.txt`.
+Die zugehörigen Stage-13-Strategiedokumente wurden im Repository
+`juliankomponia/Unternehmensstrategie` ergänzt.
+
 ## Leistungsbereich – 17. Oktober 2026
 
 Auf dem wiederhergestellten Ausgangsstand `a71bb4a` zeigt „Our capabilities.“

@@ -27,7 +27,7 @@ const LINK_COPY: Record<string, Partial<NavLink>> = {
   '/contact': { label: 'Project enquiries', desc: 'Prepare and review a component or supply inquiry draft' },
   '/jobs': { label: 'Working with Komponia', desc: 'Technical, commercial and operational roles' },
   '/brand-background': { label: 'Brand background', desc: 'The relationship between Komponia, Sourcura and WTS' },
-  '/sustainability': { label: 'Supply & resource planning', desc: 'Consider materials, stock and logistics for each project' },
+  '/sustainability': { label: 'Environment & resource use', desc: 'Reduce unnecessary packaging and coordinate transport and stock' },
   '/team': { label: 'Project responsibilities', desc: 'How technical and commercial work is coordinated' },
 };
 
@@ -171,7 +171,7 @@ export const FOOTER_COLUMNS: { title: string; links: FooterLinkData[] }[] = [
       { label: 'Supplier collaboration', to: '/become-a-manufacturing-partner' },
       { label: 'Supplier coordination', to: '/partner-network' },
       { label: 'Project responsibilities', to: '/team' },
-      { label: 'Supply & resource planning', to: '/sustainability' },
+      { label: 'Environment & resource use', to: '/sustainability' },
     ],
   },
 ];

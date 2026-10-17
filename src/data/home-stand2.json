@@ -433,8 +433,8 @@
     }
   },
   "recurring-supply": {
-    "title": "Supply planned around your demand",
-    "intro": "Plan recurring deliveries for standard components or custom parts. Define quantities, call-offs, suitable stock and change requirements with the selected sources.",
+    "title": "Production-scale pricing. Deliveries that fit.",
+    "intro": "Produce in economical quantities and take delivery in smaller call-offs. We connect larger production lots with agreed safety stock, demand planning and recurring deliveries. Setup costs are spread across more parts, while release quantities follow your production schedule.",
     "cta": {
       "label": "See how supply is agreed",
       "to": "/how-ordering-works"
@@ -442,15 +442,15 @@
   },
   "supply-terms": {
     "title": "Clear terms for recurring supply",
-    "intro": "Agree quantities, call-offs, stock ownership and handling of product changes. Review the arrangement as demand develops.",
+    "intro": "Compare the complete supply cost: parts, packaging, freight and stock. Agree quantities, call-offs, stock ownership and change handling so that larger production lots remain aligned with your actual demand.",
     "topics": [
       {
         "title": "Demand & quantities",
-        "text": "Identify expected consumption, order quantities and the relevant planning period."
+        "text": "Plan economical production lots against expected consumption and the agreed planning period."
       },
       {
         "title": "Call-offs & delivery",
-        "text": "Define release quantities, delivery conditions and responsibilities."
+        "text": "Match release quantities, packing and delivery frequency to your production needs."
       },
       {
         "title": "Stock terms",
@@ -480,6 +480,43 @@
     "secondaryCta": {
       "label": "See the inquiry process",
       "to": "/how-ordering-works"
+    }
+  },
+  "why-komponia": {
+    "title": "Technical expertise. Competitive prices.",
+    "intro": "OEM support and competitive pricing belong together. We combine purchasing power, efficient production quantities and smarter shipping to reduce the cost of your component supply.",
+    "cards": [
+      {
+        "title": "Shared purchasing power.",
+        "text": "We bring together orders for different components across customers. The combined business with our manufacturing partners creates scope for better purchasing terms, including custom parts.",
+        "link": "Explore OEM solutions",
+        "to": "/oem-solutions"
+      },
+      {
+        "title": "Larger runs. Smaller call-offs.",
+        "text": "Agreed safety stock lets us plan larger production batches and spread setup costs across more parts. You call off smaller quantities to match your production needs.",
+        "link": "Explore recurring supply",
+        "to": "/production-orders"
+      },
+      {
+        "title": "Smarter packing. Lower freight costs.",
+        "text": "Our AI-designed packing and shipping process considers dimensions, protection and delivery quantities together. Less empty space and coordinated shipments help lower freight cost per component.",
+        "link": "Explore packing & shipping",
+        "to": "/production-orders"
+      }
+    ]
+  },
+  "environment": {
+    "title": "Less empty space. More considered resource use.",
+    "intro": "Environmental protection is part of how we plan supply. We work to reduce unnecessary packaging and transport volume, consolidate compatible deliveries and keep stock aligned with actual demand.",
+    "bullets": [
+      "Size packaging around the parts and the protection they need.",
+      "Use available transport space more efficiently through coordinated shipments.",
+      "Review stock to limit unused parts and avoidable urgent deliveries."
+    ],
+    "cta": {
+      "label": "Explore our environmental approach",
+      "to": "/sustainability"
     }
   }
 }

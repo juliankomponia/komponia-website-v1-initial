@@ -431,7 +431,7 @@
   {
     "route": "production-orders",
     "title": "Recurring supply. Planned around your production.",
-    "subtitle": "Demand planning, dynamic safety stock, coordinated deliveries and ongoing quality support for standard components and custom parts. One personal contact connects the full supply process.",
+    "subtitle": "Competitive component pricing, larger production lots and smaller call-offs. We combine purchasing across customers, agreed safety stock and an AI-designed packing and shipping process around your recurring demand.",
     "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
     "sections": [
       {
@@ -441,8 +441,14 @@
         "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
       },
       {
-        "title": "Dynamic safety stock.",
-        "text": "We review demand and adjust agreed safety stock to the supply situation. Consumption, replenishment lead times and expected changes inform the arrangement. Together we define the data, review rhythm and stock limits, with the aim of reducing shortages and material-related downtime risk.",
+        "title": "Combined demand. Stronger purchasing power.",
+        "text": "We bring together business for different components across customers when working with our manufacturing partners. This combined purchasing volume creates scope for better commercial terms, including OEM and custom requirements. Compatible materials and manufacturing processes can also create opportunities to coordinate production. Each part keeps its own specification and release requirements.",
+        "bullets": [],
+        "img": "customEngineering"
+      },
+      {
+        "title": "Larger production lots. Dynamic safety stock.",
+        "text": "Agreed safety stock allows us to separate the production batch from your individual delivery quantities. Larger runs spread setup costs across more parts and can improve unit pricing. You release smaller quantities as your production needs them.\n\nWe review consumption, replenishment lead times and expected changes to keep stock aligned with demand. Batch savings are considered together with financing, storage and the risk of unused parts. Stock limits, review intervals and acceptance terms are agreed with you.",
         "bullets": [],
         "img": "ongoingSupply"
       },
@@ -491,6 +497,24 @@
             ]
           ]
         }
+      },
+      {
+        "title": "Smarter packing. Lower freight cost per component.",
+        "text": "In recurring supply, packing and freight contribute to the cost of every delivered component. Our AI-designed packing and shipping process considers part geometry, protective packaging, shipment quantities and delivery timing together. We compare suitable packing and transport options to find a cost-efficient arrangement for your requirements.\n\nReducing unnecessary empty space can lower the chargeable volume or volumetric weight. Coordinating compatible shipments can also spread transport costs across more parts. The result depends on the route, carrier tariff, actual weight and required service level.",
+        "bullets": [
+          "Define dimensions, weight, quantities and protection requirements for each part.",
+          "Plan part orientation, packing units, cartons and pallet layouts to use space efficiently.",
+          "Compare actual weight, volumetric weight, loading space and relevant carrier charges.",
+          "Coordinate compatible consignments and delivery dates within your call-off requirements.",
+          "Evaluate packaging, handling, freight and stock costs together before selecting the arrangement."
+        ],
+        "img": "ongoingSupply",
+        "links": [
+          {
+            "label": "Environment and resource use",
+            "to": "/sustainability"
+          }
+        ]
       },
       {
         "title": "Import, logistics and ongoing quality.",
@@ -1300,39 +1324,59 @@
   },
   {
     "route": "sustainability",
-    "title": "Plan resources around actual supply needs",
-    "subtitle": "Consolidation, suitable stock and transport planning can affect costs, availability and resource use. Komponia treats any environmental advantage as a comparison to be evidenced for a defined supply arrangement.",
-    "heroImg": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp",
+    "title": "Environmental protection. Built into supply planning.",
+    "subtitle": "Use less unnecessary packaging, make better use of transport space and plan stock around actual demand. We connect these practical measures with component protection, reliable supply and cost-efficient deliveries.",
+    "heroImg": "ongoingSupply",
     "sections": [
       {
-        "title": "Define the supply requirement first",
-        "text": "Start with the actual quantity, required availability and period of use. Identify the current ordering, transport and storage arrangement. A meaningful alternative must meet the same requirement; buying more than needed is not automatically a resource improvement.",
-        "bullets": [],
-        "img": "https://images.ctfassets.net/q2hzfkp3j57e/4YS2NWMKShUhMo34dWJ8nw/83dd1c70321134ab46aa26b82cbefec7/Main_Nav_Materials.webp?w=500"
+        "title": "Pack the parts. Reduce the empty space.",
+        "text": "Our AI-designed packing process considers component dimensions, orientation and protection together. Suitable cartons, internal arrangements and pallet layouts help reduce unused space and unnecessary filler while keeping parts protected in transit.",
+        "bullets": [
+          "Match packing dimensions and quantities to the actual components.",
+          "Retain the cushioning, surface protection and handling requirements the parts need.",
+          "Assess reusable packaging where return routes and repeated use make it practical."
+        ],
+        "img": "ongoingSupply"
       },
       {
-        "title": "Assess consolidation and delivery options",
-        "text": "Compatible quantities and dates may allow shipments to be consolidated. Consider the onward distribution, packaging and delivery requirements as well as the main transport. The benefit depends on the complete arrangement rather than the size of one order.",
+        "title": "Coordinate shipments. Use transport space well.",
+        "text": "We assess whether compatible orders and delivery dates can share a shipment. Better use of cartons, pallets and transport capacity can reduce the shipping effort per component. We consider the full route, onward distribution and your delivery requirements when comparing options.",
         "bullets": [],
-        "img": "https://images.ctfassets.net/q2hzfkp3j57e/2ihFMf4Vvz05juGQlv1wh/7d1b697554cc77a62d905dd06569d02a/production_order_cnc_machining.webp"
+        "img": "ongoingSupply"
       },
       {
-        "title": "Include the trade-offs of stock",
-        "text": "Suitable stock may reduce urgent procurement, but storage, ageing and unused goods can offset that advantage. Agree consumption, financing and change rules. Evaluate the proposed stock against actual demand rather than assuming that a safety stock always lowers emissions.",
+        "title": "Keep stock connected to real demand.",
+        "text": "Larger production runs and safety stock can support economical production and reduce the need for urgent replenishment. We review consumption, lead times and product changes so that stock remains useful. Storage, financing and the risk of obsolete parts are part of the decision.",
         "bullets": [],
-        "img": ""
+        "img": "customEngineering",
+        "links": [
+          {
+            "label": "Explore recurring supply and safety stock",
+            "to": "/production-orders"
+          }
+        ]
       },
       {
-        "title": "Compare alternatives on the same basis",
-        "text": "An environmental comparison needs a documented baseline, defined system boundary and consistent data and assumptions. Distinguish logistics emissions from a complete product footprint. No numerical saving is claimed here because a project-specific comparison has not been established.",
+        "title": "Protect components. Avoid unnecessary replacements.",
+        "text": "Packaging must suit the component and the journey. The right protection helps avoid damaged parts, replacement production and additional deliveries. We consider material use and product protection together when defining the packing arrangement.",
         "bullets": [],
-        "img": ""
+        "img": "qualityInspection"
       },
       {
-        "title": "Build the evidence for a real decision",
-        "text": "For a defined project, identify available transport, quantity, storage and packaging data and any missing information. Assess costs, availability and resource effects together. A measured environmental comparison is a development objective and requires suitable data and an agreed scope.",
-        "bullets": [],
-        "img": ""
+        "title": "Make environmental improvements measurable.",
+        "text": "Packaging material per delivered part, shipment volume, transport mode and delivery frequency provide practical measures for comparison. A CO₂ reduction needs a defined baseline, consistent transport and storage data, and a clear scope. We distinguish logistics emissions from the footprint of the complete component.",
+        "bullets": [
+          "Compare equivalent quantities, destinations, delivery times and protection requirements.",
+          "Include storage and onward distribution when assessing a supply arrangement.",
+          "Use project data for savings claims rather than applying a general percentage."
+        ],
+        "img": "",
+        "links": [
+          {
+            "label": "Discuss your supply requirements",
+            "to": "/contact?type=supply"
+          }
+        ]
       }
     ]
   },
@@ -1700,7 +1744,7 @@
   {
     "route": "oem-solutions",
     "title": "OEM solutions. From component to series supply.",
-    "subtitle": "For manufacturers building their own devices, machines and systems. Komponia supports standard components, custom versions and technical solutions from selection and design-in to samples, release and recurring supply.",
+    "subtitle": "Technical support and competitive pricing for manufacturers of devices, machines and systems. Komponia connects standard components, custom versions and OEM solutions with purchasing volume, efficient production lots and recurring supply.",
     "heroImg": "heroComponents",
     "sections": [
       {
@@ -1712,6 +1756,18 @@
           "Sample quantities, first orders and expected series demand."
         ],
         "img": "controllers"
+      },
+      {
+        "title": "Custom requirements. Competitive prices.",
+        "text": "OEM support is part of our component offering. We combine orders across customers and component categories to strengthen purchasing with suitable manufacturing partners. Where the process and material allow it, production planning can create further efficiencies.\n\nFor recurring demand, larger production lots and agreed safety stock can reduce unit costs while you take delivery in smaller call-offs. Our AI-designed packing and shipping process addresses the delivery cost as well. Together, these levers help make a custom supply solution commercially attractive.",
+        "bullets": [],
+        "img": "ongoingSupply",
+        "links": [
+          {
+            "label": "Explore pricing and recurring supply",
+            "to": "/production-orders"
+          }
+        ]
       },
       {
         "title": "Your team and ours, working from one requirement.",
