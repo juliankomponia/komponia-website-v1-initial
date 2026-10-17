@@ -1,15 +1,15 @@
 /* Hubs section grid with the official Komponia type, surfaces and details. */
-.home-reference { --section-space: 72px; background: #fff; }
+.home-reference { --section-space: 64px; background: #fff; }
 .home-reference .wrap-orig { max-width: 1200px; padding-inline: 24px; }
-.home-reference .section-lead { display: grid; grid-template-columns: 1fr 1fr; column-gap: 64px; max-width: none; margin: 0 0 40px; text-align: left; align-items: start; }
-.home-reference .section-lead .section-intro { margin-top: 0; font-size: 16px; line-height: 1.65; color: #4C5057; }
-.home-reference .section-lead .komponia-label { grid-column: 1 / -1; align-items: flex-start; font-size: 11px; line-height: 1.5; margin: 0 0 24px; }
+.home-reference .section-lead { max-width: 768px; margin-bottom: 48px; }
+.home-reference .section-lead .section-intro { margin-top: 16px; font-size: 16px; line-height: 1.65; color: #4C5057; }
+.home-reference .section-lead .komponia-label { align-items: center; font-size: 11px; line-height: 1.5; margin: 0 0 24px; }
 .home-reference h2.h2-orig { font-size: 32px; line-height: 1.2; letter-spacing: -.025em; }
 .home-reference .home-band { background: var(--komponia-surface); }
 .home-reference .home-manufacturing { margin-top: 64px; }
 .home-reference .home-supply-terms { margin-top: 64px; }
-.home-reference .cap-card { background: #fff; border: 1px solid var(--komponia-line); border-radius: 6px; transition: border-color 140ms var(--komponia-ease); }
-.home-reference .cap-card:hover { background: #fff; border-color: var(--komponia-blue); transform: none; box-shadow: none; }
+.home-reference .cap-card { background: #fff; border: 1px solid var(--komponia-line); border-radius: 14px; transition: transform 220ms var(--komponia-ease), box-shadow 220ms var(--komponia-ease), border-color 140ms var(--komponia-ease); }
+.home-reference .cap-card:hover { background: #fff; border-color: #C3C9D5; transform: translateY(-2px); box-shadow: 0 8px 20px #1F1F1D0A; }
 .home-reference .cap-card img { aspect-ratio: 8.4 / 5; object-position: center; background: var(--komponia-surface); }
 .home-reference .cap-card:hover > img { transform: none; }
 .home-reference .cap-card .cap-text { padding: 28px 24px; }
@@ -24,8 +24,8 @@
 .home-reference .feature-copy > .lead-orig { font-size: 16px; line-height: 1.65; }
 .home-reference .feature-copy ul { font-size: 16px; }
 .home-reference .feature-image { margin: 0; }
-.home-reference .feature-image img { aspect-ratio: 1.2; object-fit: contain; border-radius: 6px; }
-.home-reference .home-quality { background: #F5F6F8; }
+.home-reference .feature-image img { aspect-ratio: 1.2; object-fit: contain; border-radius: 20px; }
+.home-reference .home-quality { background: #F8F3FE; }
 .home-reference .home-quality .quality-card { background: #fff; border: 1px solid var(--komponia-line); border-radius: 14px; transition: transform 220ms var(--komponia-ease), box-shadow 220ms var(--komponia-ease); }
 .home-reference .home-quality .quality-card:hover { background: #fff; transform: translateY(-2px); box-shadow: 0 8px 20px #1F1F1D0A; }
 .home-reference .home-quality .quality-card > svg { width: 34px; height: 34px; padding: 0; border-radius: 0; background: none; color: #3E5AF5; }
@@ -37,7 +37,7 @@
 .home-reference .progress-step .step-title { font-size: 14px; line-height: 1.4; }
 .home-reference .application-icon { color: var(--komponia-blue); margin-bottom: 32px; }
 .home-reference .application-card--compact .cap-title { min-height: 3.9em; }
-.home-reference .home-supply-terms > div { border-radius: 0; }
+.home-reference .home-supply-terms > div { border-radius: 20px; overflow: hidden; }
 .home-reference details { border-radius: 14px; border-color: var(--komponia-line); }
 .home-reference .dark-cta > .wrap-orig { padding-block: 64px; }
 .home-reference [aria-label="Component fields"] > div > img { object-fit: contain; padding: 12px; }
@@ -46,8 +46,8 @@
 .reference-hero-media { position: relative; min-width: 0; margin: 0; background: #242626; }
 .reference-hero-media > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .reference-hero-media::after { content: ''; position: absolute; inset: 55% 0 0; background: linear-gradient(transparent, #141615d9); pointer-events: none; }
-.reference-hero-media figcaption { display: flex; gap: 20px; align-items: center; position: absolute; z-index: 1; bottom: 32px; left: 32px; right: 32px; color: #ddd; font-size: 11px; line-height: 1.6; }
-.reference-hero-media figcaption > img { width: 48px; height: auto; flex-shrink: 0; }
+.reference-hero-media figcaption { position: absolute; z-index: 1; bottom: 32px; left: 32px; right: 32px; color: #ddd; font-size: 11px; line-height: 1.6; }
+.reference-hero-media figcaption::before { content: ''; display: block; width: 36px; height: 2px; margin-bottom: 14px; background: var(--komponia-yellow); }
 .reference-hero-media figcaption span { display: block; margin-bottom: 6px; color: #fff; font-size: 15px; font-weight: 500; }
 .reference-hero-panel { display: flex; flex-direction: column; padding: 64px 32px 40px 80px; min-width: 0; }
 .reference-hero-copy { max-width: 560px; }
@@ -72,6 +72,19 @@
 .reference-hero-proof > span { font-size: 11px; line-height: 1.6; }
 .reference-hero-proof > span strong { font-size: 20px; font-weight: 500; color: #eee; }
 .reference-hero button:focus-visible, .reference-hero a:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+
+/* The original mark and four disciplines, in place of a repeated stock motif. */
+.komponia-signature { padding: 40px; border-radius: 20px; color: #fff; background: var(--komponia-ink); }
+.signature-heading { display: flex; align-items: center; gap: 28px; margin-bottom: 32px; }
+.signature-heading img { width: 72px; height: auto; flex-shrink: 0; }
+.signature-heading p { font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: -.025em; }
+.signature-heading p span { color: var(--komponia-yellow); }
+.signature-disciplines > div { border-top: 1px solid #ffffff26; padding: 18px 0; }
+.signature-disciplines > div:last-child { padding-bottom: 0; }
+.signature-disciplines dt { display: flex; align-items: center; gap: 12px; font-size: 15px; font-weight: 500; }
+.signature-disciplines dt svg { color: var(--komponia-lavender); }
+.signature-disciplines dt small { margin-left: auto; color: #A9ADB5; font-size: 11px; font-weight: 400; }
+.signature-disciplines dd { padding-left: 34px; margin-top: 7px; color: #BEC1C7; font-size: 12px; line-height: 1.65; }
 
 @media (min-width: 1600px) {
   .reference-hero-panel { padding-right: max(32px, calc((100vw - 1440px) / 2)); }
@@ -113,93 +126,12 @@
   .reference-hero-media figcaption { bottom: 20px; left: 20px; right: 20px; max-width: calc(100% - 40px); font-size: 10px; }
   .reference-hero-media figcaption span { font-size: 14px; }
   .home-reference .application-card--compact .cap-title { min-height: 0; }
+  .komponia-signature { padding: 28px 24px; }
+  .signature-heading { gap: 20px; }
+  .signature-heading img { width: 52px; }
+  .signature-heading p { font-size: 17px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .home-reference .cap-card, .home-reference .quality-card { transition: none; }
   .home-reference .cap-card:hover, .home-reference .quality-card:hover { transform: none; }
-}
-
-/* Content remains visible by default; motion runs only once as a section enters. */
-.home-reference .k-reveal-in { animation: k-home-reveal 640ms cubic-bezier(.16,1,.3,1); }
-@keyframes k-home-reveal { from { opacity: .55; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-.home-reference .arrow-link svg { transition: transform 140ms var(--komponia-ease); }
-.home-reference .arrow-link:is(:hover, :focus-visible) svg { transform: translateX(3px); }
-@media (prefers-reduced-motion: reduce) {
-  .home-reference .k-reveal-in { animation: none; }
-  .home-reference .arrow-link svg { transition: none; }
-  .home-reference .arrow-link:is(:hover, :focus-visible) svg { transform: none; }
-}
-
-/* Open service columns keep the offer distinct from the manufacturing cards. */
-.home-reference .capabilities--open { gap: 28px; }
-.home-reference .capabilities--open .cap-card,
-.home-reference .application-card--compact { border: 0; border-top: 1px solid #CACDD4; border-radius: 0; background: transparent; box-shadow: none; }
-.home-reference .capabilities--open .cap-card:hover,
-.home-reference .application-card--compact:hover { border-top-color: #3E5AF5; background: transparent; }
-.home-reference .capabilities--open .cap-text,
-.home-reference .application-card--compact .cap-text { padding: 28px 0 0; }
-.home-reference .capabilities--open .cap-title { min-height: 2.6em; }
-.home-reference .capabilities--open .cap-subtitle { font-size: 14px; }
-.cap-service-symbol { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; flex-shrink: 0; margin-bottom: 28px; border-radius: 14px; background: #3E5AF5; color: #fff; }
-.cap-service-symbol--2 { background: #EEF1FE; color: #3E5AF5; }
-.cap-service-symbol--3 { background: #D4B9F3; color: #1F1F1D; }
-.cap-service-symbol--4 { background: #F7D44B; color: #1F1F1D; }
-.home-reference .application-icon { width: 44px; height: 44px; padding: 9px; border: 1px solid #D9DCE3; border-radius: 12px; margin-bottom: 24px; }
-.home-reference .application-card--compact .cap-body { max-width: 32em; }
-.home-reference .cap-card:is(:hover, :focus-visible) .cap-link { text-decoration: underline; text-underline-offset: 4px; }
-
-/* A single Ink section presents the original mark and its four disciplines. */
-.home-reference .home-heritage { background: #1F1F1D; color: #fff; }
-.home-reference .komponia-heritage { align-items: start; }
-.home-reference .komponia-heritage .feature-copy { padding-top: 8px; }
-.home-reference .komponia-heritage h2.h2-orig { color: #fff; }
-.home-reference .komponia-heritage .feature-copy > .lead-orig,
-.home-reference .komponia-heritage .komponia-label { color: #C7C9CE; }
-.signature-about-link { color: #fff; }
-.signature-about-link:hover { color: #D4B9F3; }
-.signature-about-link:focus-visible { outline: 2px solid #fff; outline-offset: 5px; }
-.komponia-signature { padding: 0; border: 0; border-radius: 0; background: transparent; color: #fff; }
-.signature-heading { display: flex; align-items: center; gap: 28px; margin-bottom: 36px; }
-.signature-heading img { width: 112px; height: auto; flex-shrink: 0; }
-.signature-heading p { margin: 0; font-size: 21px; font-weight: 500; line-height: 1.5; letter-spacing: -.025em; }
-.signature-heading p span { color: #F7D44B; }
-.signature-disciplines > div { border-top: 1px solid #FFFFFF26; padding: 18px 0; }
-.signature-disciplines > div:last-child { padding-bottom: 0; }
-.signature-disciplines dt { display: flex; align-items: center; gap: 14px; font-size: 15px; font-weight: 500; line-height: 1.5; }
-.signature-module { display: inline-flex; flex: 0 0 30px; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 7px; color: #1F1F1D; font-size: 10px; font-weight: 600; line-height: 1; }
-.signature-module--blue { background: #3E5AF5; color: #fff; }
-.signature-module--lavender { background: #D4B9F3; }
-.signature-module--yellow { background: #F7D44B; }
-.signature-disciplines dd { margin: 7px 0 0; padding-left: 44px; color: #C7C9CE; font-size: 13px; line-height: 1.65; }
-
-.home-reference .home-faq details { padding: 22px 0; border-width: 0 0 1px; border-radius: 0; background: transparent; }
-.home-reference .home-faq details + details { margin-top: 0; }
-.home-reference .home-faq summary { gap: 20px; }
-.home-reference .home-faq summary > span { flex-shrink: 0; }
-.home-reference .home-faq summary:focus-visible { outline: 2px solid #3E5AF5; outline-offset: 6px; }
-.home-reference .dark-cta--branded > .wrap-orig { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 40px; align-items: center; text-align: left; }
-.home-reference .dark-cta--branded h2 { margin: 0; max-width: 600px; }
-.closing-mark { display: block; width: 64px; height: auto; }
-
-@media (max-width: 1023px) {
-  .home-reference .section-lead { grid-template-columns: 1fr; max-width: 680px; }
-  .home-reference .section-lead .section-intro { margin-top: 16px; }
-  .home-reference .komponia-heritage { gap: 40px; }
-  .home-reference .dark-cta--branded > .wrap-orig { grid-template-columns: 64px minmax(0, 1fr); gap: 24px; }
-  .home-reference .dark-cta--branded .btn-primary { grid-column: 2; justify-self: start; }
-}
-@media (max-width: 639px) {
-  .home-reference .capabilities--open .cap-title,
-  .home-reference .capabilities--open .cap-subtitle { min-height: 0; }
-  .home-reference .capabilities--open .cap-text { position: relative; padding-left: 64px; }
-  .home-reference .capabilities--open .cap-service-symbol { position: absolute; left: 0; top: 28px; width: 42px; height: 42px; border-radius: 12px; }
-  .home-reference .capabilities--open .cap-link { font-size: 13px; }
-  .signature-heading { gap: 24px; margin-bottom: 28px; }
-  .signature-heading img { width: 96px; }
-  .signature-heading p { font-size: 17px; }
-  .reference-hero-media figcaption { gap: 16px; }
-  .reference-hero-media figcaption > img { width: 36px; }
-  .home-reference .dark-cta--branded > .wrap-orig { grid-template-columns: 1fr; }
-  .home-reference .dark-cta--branded .btn-primary { grid-column: 1; }
-  .closing-mark { width: 52px; }
 }

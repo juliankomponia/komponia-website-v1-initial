@@ -84,28 +84,3 @@ Der abgestimmte Seitenaufbau bleibt erhalten. Die Markenverfeinerung folgt dem o
 Die originale, unveränderte SVG-Marke liegt in `src/assets/brand/komponia-mark.svg`. `KomponiaSignature.tsx` verbindet sie mit Sourcing, Engineering, Quality und Supply und ersetzt das wiederholte Produktbild im Herkunftsabschnitt. Die Branchenkarten zeigen passende Linien-Icons. Die neutralen Produktbilder bleiben aktiv; keine neue Bildserie wurde erzeugt. Die Startseitentexte sind kürzer und direkter formuliert.
 
 Prüfungen und Abgrenzung: `project-notes/BRAND_DETAIL_REVIEW_2026-10-11.txt`.
-
-
-## Interaktive Homepage-Elemente am 11. Oktober 2026
-
-Die vorhandenen Hubs-Grids und die Reihenfolge bleiben erhalten. Inspiration von Deel, Stripe, Hubs, Xometry und FACTUREE wurde in drei eigene Komponia-Elemente übersetzt: bedarfsorientierter Anfrageeinstieg mit Vorauswahl im Kontaktformular, sechs erkundbare Beschaffungsschritte mit technischen SVG-Grafiken sowie eine Lieferlogik mit Plan, Call off und Review. Die vier vorhandenen Supply-Abstimmungspunkte bleiben sichtbar.
-
-Die neuen Komponenten heißen `InquiryGuide`, `ProcessExplorer` und `SupplyExplorer`; ihre Styles sind jeweils gekapselt. `useHomeReveal` ergänzt einmalige dezente Einblendungen ohne anfängliches Verstecken der Inhalte. Tastaturbedienung, sichtbarer Fokus und reduzierte Bewegung sind berücksichtigt. Die bestehende neutrale Bildserie und der Hero bleiben erhalten; keine neue Bildgenerierung oder Bibliothek war erforderlich.
-
-Ausführlicher Umsetzungsbrief, Quellen, Abgrenzung und Prüfung: `project-notes/INTERACTION_DESIGN_BRIEF_2026-10-11.txt`. Build und gezieltes ESLint bestanden; Desktop 1440 px, Tablet 768 px und Mobil 390 px geprüft. Alle drei Anfrage-Vorauswahlen im Formular verifiziert. Keine Veröffentlichung oder Änderung der Versandfunktion.
-
-
-## Engineering-Details und Qualitätsgrafiken am 11. Oktober 2026
-
-Die zweite Interaktionsrunde ergänzt das vorhandene OEM-Motiv um Function, Interfaces und Installation. Die Auswahl zeigt passende technische Fragen sowie eine feine Bildannotation; das Originalbild und die bisherigen Engineering-Aussagen bleiben erhalten. Im Lab-Abschnitt erhalten die drei bestehenden Karten eigene SVG-Szenen für Spezifikation, Prüfung und laufende Qualität. Ihre Texte und Linkziele bleiben unverändert.
-
-Die neuen Komponenten `EngineeringDetails` und `QualityIllustrations` werden nur auf der Homepage eingesetzt. Keine neuen Bibliotheken oder Bildgenerierungen. Kurze Zustands-/Fokusanimationen, Tastatursteuerung und Reduced Motion sind berücksichtigt. Build, gezieltes ESLint und unabhängiger Review bestanden; Desktop 1440 px, Tablet 768 px und Mobil 390 px ohne horizontalen Überlauf geprüft. Brief und Prüfergebnisse: `project-notes/TECHNICAL_DETAILS_BRIEF_2026-10-11.txt`.
-
-
-## Offene Flächen und Favicon-Formen am 11. Oktober 2026
-
-Die aktuelle Gestaltungsrunde orientiert sich stärker am technischen Hubs-Aufbau, mit offenerer Typohierarchie nach den Stripe-/Deel-Referenzen. Die freigegebene Abschnittsreihenfolge bleibt erhalten. Kernleistungen erscheinen als offene Spalten mit kompakten farbigen Vierecken; die vier Fertigungsverfahren behalten ihre Produktbilder. Abschnittsüberschriften und Einleitung stehen auf Desktop nebeneinander und mobil untereinander.
-
-Engineering, Anfrage, Ablauf, Qualität, Branchen und Supply haben weniger verschachtelte Karten, kleinere Bildradien und klare Trennlinien. Auswahlzustände bleiben sichtbar; große Karten werden beim Hover nicht mehr angehoben. Die Markenherkunft ist eine durchgehende Ink-Fläche mit größerer Originalmarke und vier nummerierten Farbmodulen. Das Original erscheint zusätzlich im Hero und im Abschluss. Die tatsächliche Marke bleibt unverändert: eine blaue Pille und zwei abgerundete Vierecke für die vier Disziplinen. Das originale App-Icon ist nun als Browser-Favicon eingebunden.
-
-Die neutralen Higgsfield-Bilder, Originalwortmarken, bestätigten Fakten und Kontaktfunktionen bleiben erhalten. Keine Bildgenerierung oder neue Bibliothek. Änderungen an den gemeinsam genutzten Komponenten verwenden optionale Homepage-Varianten. Umsetzungsbrief und Prüfungen: `project-notes/BRAND_GEOMETRY_BRIEF_2026-10-11.txt`.
