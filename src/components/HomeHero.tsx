@@ -1,17 +1,17 @@
 import { useEffect, useRef, useState, useSyncExternalStore, type KeyboardEvent, type PointerEvent } from 'react';
 import { Link } from 'react-router';
-import { ArrowRight, ArrowUpRight, Check, Pause, Play } from 'lucide-react';
-import { HERO_CONTENT as H } from '../data/homepage';
+import { ArrowRight, ArrowUpRight, Check } from 'lucide-react';
+import { HOME_CONTENT as H } from '../data/home-stand2';
 import procurement from '../assets/hero-slides/procurement.jpg';
 import engineered from '../assets/hero-slides/engineered.jpg';
 import supplyChain from '../assets/hero-slides/supply-chain.jpg';
 import series from '../assets/hero-slides/series.jpg';
 
 const SLIDES = [
-  { label: 'Procurement', image: procurement, alt: 'Illustrative technical procurement scene', width: 2000, height: 1116, ...H.slides.procurement },
-  { label: 'Engineered', image: engineered, alt: 'Illustrative custom engineering scene', width: 1536, height: 1024, ...H.slides.engineered },
-  { label: 'Supply chain', image: supplyChain, alt: 'Illustrative component supply scene', width: 2400, height: 1339, ...H.slides.supplyChain },
-  { label: 'Series', image: series, alt: 'Illustrative recurring series supply scene', width: 2400, height: 1600, ...H.slides.series },
+  { label: 'Procurement', image: procurement, alt: 'Illustrative technical procurement scene', width: 2000, height: 1116, ...H.hero.slides.procurement },
+  { label: 'Engineered', image: engineered, alt: 'Illustrative custom engineering scene', width: 1536, height: 1024, ...H.hero.slides.engineered },
+  { label: 'Supply chain', image: supplyChain, alt: 'Illustrative component supply scene', width: 2400, height: 1339, ...H.hero.slides.supplyChain },
+  { label: 'Series', image: series, alt: 'Illustrative recurring series supply scene', width: 2400, height: 1600, ...H.hero.slides.series },
 ];
 const REDUCED_MOTION = '(prefers-reduced-motion: reduce)';
 
@@ -34,18 +34,17 @@ export default function HomeHero() {
   const [hovered, setHovered] = useState(false);
   const [focused, setFocused] = useState(false);
   const [gesturing, setGesturing] = useState(false);
-  const [paused, setPaused] = useState(false);
   const reducedMotion = useSyncExternalStore(subscribeToMotionPreference, prefersReducedMotion, serverMotionPreference);
   const gestureStart = useRef<{ x: number; y: number; pointerId: number } | null>(null);
   const controls = useRef<(HTMLButtonElement | null)[]>([]);
 
   useEffect(() => {
-    if (reducedMotion || hovered || focused || gesturing || paused) return;
+    if (reducedMotion || hovered || focused || gesturing) return;
     const timer = window.setInterval(() => {
       if (document.visibilityState === 'visible') setActive(index => (index + 1) % SLIDES.length);
     }, 7000);
     return () => window.clearInterval(timer);
-  }, [active, reducedMotion, hovered, focused, gesturing, paused]);
+  }, [active, reducedMotion, hovered, focused, gesturing]);
 
   function handleGestureStart(event: PointerEvent<HTMLElement>) {
     if (!event.isPrimary || event.button !== 0) return;
@@ -107,14 +106,12 @@ export default function HomeHero() {
               </span>
             ))}
           </h1>
-          <div className="home-hero-control-row"><div className="home-hero-switcher" role="group" aria-label="Choose a capability" onKeyDown={handleControlKeys}>
+          <div className="home-hero-switcher" role="group" aria-label="Choose a capability" onKeyDown={handleControlKeys}>
             {SLIDES.map((slide, index) => (
               <button key={slide.label} type="button" ref={element => { controls.current[index] = element; }}
                 className={active === index ? 'selected' : undefined} aria-pressed={active === index}
                 aria-controls="home-hero-images home-hero-title home-hero-intro home-hero-details" onClick={() => setActive(index)}>{slide.label}</button>
             ))}
-          </div>
-          {!reducedMotion && <button type="button" className="home-hero-pause" onClick={() => setPaused(value => !value)} aria-label={paused ? 'Resume slideshow' : 'Pause slideshow'}>{paused ? <Play size={13} aria-hidden="true" /> : <Pause size={13} aria-hidden="true" />}</button>}
           </div>
           <span className="sr-only" aria-live={focused ? 'polite' : 'off'}>{SLIDES[active].label}, {active + 1} of {SLIDES.length}</span>
           <div id="home-hero-intro" className="home-hero-copy-stack home-hero-intro-stack">
@@ -129,7 +126,7 @@ export default function HomeHero() {
                 aria-hidden={active !== index}>
                 {slide.lines.map(line => <li key={line} className="home-hero-point">
                   <Check size={16} strokeWidth={1.8} aria-hidden="true" />
-                  <span>{line}</span>
+                  <span><strong>{line.split(' — ')[0]}</strong><br />{line.split(' — ')[1]}</span>
                 </li>)}
               </ul>
             ))}

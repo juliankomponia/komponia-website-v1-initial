@@ -1,24 +1,6 @@
 # Komponia Website
 
-## Aktive Startseite: Komponia-Leistungen im Hubs-Raster, 17. Oktober 2026
-
-Auf Basis von `a71bb4a` (wiederhergestellter Stand 2 / `27ac683`) ist die Startseite
-inhaltlich und gestalterisch weiterentwickelt. Vier Original-Hero-Bilder, Wortmarken,
-Abschnittsnavigation, Firmenangaben und Kontaktformular bleiben erhalten.
-
-- Drei Kernleistungen zuerst: Komponenten und Beratung, individuelle OEM-Lösungen, laufende Versorgung.
-- Sichtbare Komponentenlinks; Engineering mit Inhouse-CAD und zugeordneten Fertigungsoptionen.
-- Eigenes Komponia Lab, persönlicher Ansprechpartner, vereinbarte Prüfungen und Betreuung der Serie.
-- Kürzerer Hero, vierstufiger Ablauf und verständliches Bestands-/Abrufmodell.
-- Sora lokal, Komponia-Blau, Ink, zurückhaltendes Lavendel und Pillen-Buttons.
-- Aktive Homepage: `src/pages/Home.tsx`, `src/pages/homepage.css`, `src/data/homepage.ts`.
-- Gemeinsame Markengrundlagen: `src/brand.css`; historische Inhalte/Bildserien bleiben erhalten.
-
-Referenzen, Inhaltsgrundlagen und Prüfungen:
-`project-notes/HOMEPAGE_REFINEMENT_2026-10-17.txt`.
-Keine Veröffentlichung; das Kontaktformular bereitet weiterhin einen E-Mail-Entwurf vor.
-
-## Historische Grundlage: Stand 2, wiederhergestellt am 17. Oktober 2026
+## Aktive Startseite: Stand 2, wiederhergestellt am 17. Oktober 2026
 
 Die Startseite verwendet wieder Gestaltung, Vier-Bilder-Hero, Abschnittsnavigation,
 vollständige Gliederung, Texte und Bildzuordnungen aus `27ac683`.

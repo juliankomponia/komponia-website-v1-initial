@@ -1,4 +1,4 @@
-/* Established Komponia layout and image treatments. Shared brand foundations are in brand.css. */
+/* Selected Komponia details. Template colours, Poppins and component shapes remain authoritative. */
 .komponia-label {
   --komponia-rule: #3e5af5;
   display: flex;
@@ -116,7 +116,7 @@
 }
 .site-footer .site-logo { width: fit-content; }
 .site-header a:focus-visible, .site-footer a:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
-.site-header .navigation-panel a:focus-visible { outline-color: #3e5af5; }
+.site-header .navigation-panel a:focus-visible { outline-color: #0071e3; }
 /* Matched transparent lockups from the supplied design package keep the header
    clean in both states. The display filter only inverts the monochrome artwork. */
 .site-header {
@@ -134,7 +134,7 @@
   --header-muted: #4c5057;
   --header-label: #626770;
   --header-line: rgba(25,25,25,.12);
-  --header-hover: #3e5af5;
+  --header-hover: #0071e3;
   background-color: #fff;
   box-shadow: 0 4px 16px rgba(0,0,0,.07);
 }
@@ -160,7 +160,7 @@
 .header-mobile-link { color: var(--header-muted); }
 .header-mobile-label { color: var(--header-label); }
 .site-header button:focus-visible { outline: 2px solid #fff; outline-offset: -4px; }
-.site-header[data-scrolled="true"] a:focus-visible, .site-header[data-scrolled="true"] button:focus-visible { outline-color: #3e5af5; }
+.site-header[data-scrolled="true"] a:focus-visible, .site-header[data-scrolled="true"] button:focus-visible { outline-color: #0071e3; }
 @media (prefers-reduced-motion: reduce) {
   .site-header, .header-nav-trigger, .header-menu-trigger, .site-header .site-logo-window--adaptive img { transition: none; }
 }
