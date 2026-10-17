@@ -5,21 +5,21 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'Circular', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Sora', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
         mono: ['"IBM Plex Mono"', 'monospace'],
       },
       colors: {
         brand: {
-          blue: '#0071E3',
-          bluehover: '#2563BE',
-          blueactive: '#16417F',
-          banner: '#E6F1FC',
+          blue: '#3E5AF5',
+          bluehover: '#2A44D8',
+          blueactive: '#1E33A8',
+          banner: '#EEF1FE',
           red: '#D80027',
           black: '#000000',
-          dark: '#191919',
+          dark: '#1F1F1D',
           gray: '#F7F7F7',
-          heading: 'rgba(0,0,0,0.85)',
-          body: 'rgba(0,0,0,0.69)',
+          heading: '#1F1F1D',
+          body: '#4C5057',
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -1,0 +1,90 @@
+KOMPONIA – HOMEPAGE REFINEMENT
+Stand: 17. Oktober 2026
+
+AUFTRAG UND GRUNDLAGE
+Die bestätigte Homepage auf Basis 27ac683 / Wiederherstellung a71bb4a wird
+verfeinert. Vertraute Hubs-Strukturen bleiben erkennbar; das Komponia-
+Designsystem und die aktuelle Unternehmensstrategie bestimmen Marke und Inhalt.
+Die vier vorhandenen Hero-Fotografien und die originalen Komponia-Wortmarken
+bleiben erhalten. Vorhandene industrielle Bildsprache wird weiterverwendet.
+
+Inhaltliche Grundlage: Stage 13, insbesondere stage13_komponia.md (Version 4,
+02.10.2026) und stage13_gesamtkonzept.md. Nachvollziehbarer Abgleich im Projekt:
+STRATEGY_CONTENT_REVIEW_2026-10-11.txt (Strategie-Commit 2939a1a).
+Bestätigt sind eigene CAD-Zeichnungen/Skizzen, das eigene Komponia-Lab für
+vereinbarte Maß-/Funktionsprüfungen und Stichproben, bedarfsabhängiger dynamischer
+Safety Stock sowie laufende Qualitätsbetreuung. WTS trägt die Herkunft
+„seit 1997“; dies ist kein Gründungsdatum der heutigen Komponia-Gesellschaft.
+
+RECHERCHE – OFFIZIELLE QUELLEN, ABGERUFEN AM 17.10.2026
+- Hubs / Protolabs Network: https://www.hubs.com/
+  Klare Leistungsgruppen, konkrete Bauteilbilder, technische Details und
+  direkte Wege zu Fertigungsverfahren. Übernommen wird die verständliche
+  Gliederung; fremde Toleranzen, Lieferzeiten und Zertifikate bleiben außen vor.
+- RS UK: https://uk.rs-online.com/web/
+  Sichtbare Produktkategorien und Einstieg über Teile-/Anwendungsbedarf;
+  ergänzende Dienstleistungen werden getrennt erklärt. Für Komponia bedeutet
+  das: Komponenten früh zeigen und Auswahlhilfe unmittelbar danebenstellen.
+- Xometry Europe: https://xometry.eu/en/
+  Fertigungsverfahren und Anwendungsfälle haben erkennbare Einstiege;
+  Projektstart und Lieferung bilden eine verständliche Folge. Komponia
+  beschreibt persönliche Abstimmung, keine fremde Sofortangebotsfunktion.
+- Deel: https://www.deel.com/
+  Aufgabenorientierter Einstieg, Produktfamilien, verständlicher Ablauf und
+  wiederkehrende Hauptaktion. Übertragen wird die inhaltliche Orientierung,
+  nicht die Kundenzahl, Referenzen oder die Behauptungen des Anbieters.
+- Stripe: https://stripe.com/en-ch
+  Vom Leistungsversprechen über Lösungsfamilien zu konkreten Belegen und
+  nächsten Schritten. Aussagen werden im Kontext erklärt statt nur addiert.
+  Für Komponia stehen bestätigte eigene Fähigkeiten an der jeweiligen Stelle.
+
+UMSETZUNG IN DER AKTIVEN HOMEPAGE
+src/pages/Home.tsx verwendet eigene Homepage-Daten aus src/data/homepage.ts
+und erhält einen eigenen Style-Einstieg src/pages/homepage.css.
+
+Reihenfolge:
+1. Bestehender Vier-Bilder-Hero und kompakte Herkunfts-/Leistungszeile:
+   WTS seit 1997, Inhouse-CAD, Komponia Lab, persönlicher Ansprechpartner.
+2. Drei Kernangebote zuerst: Komponenten & Beratung, individuelle OEM-Lösungen,
+   laufende Versorgung. Fertigungsverfahren sind nachgeordnete Optionen.
+3. Vier sichtbare Komponentenfelder mit Beschreibung und direktem Link;
+   zentrale Information ist nicht mehr ausschließlich in Hover-Galerien.
+4. Bild-Text-Abschnitte zu OEM/Engineering und Lab. CNC, 3D-Druck, Blech und
+   Spritzguss erscheinen als kompakte Fertigungswege beim Engineering.
+5. Vier Prozessschritte zeigen Kundeneingabe, Komponias Arbeit und Ergebnis;
+   freigegebene Teile und Wiederholbestellungen können passend einsteigen.
+6. Eigenständiger Versorgungsabschnitt: Bedarf, Bestand, Abruf und Anpassung.
+   Mengen, Eigentum und Abrufkonditionen bleiben ausdrücklich zu vereinbaren.
+7. Kompakte Anwendungen und Abschluss mit Anfrage, E-Mail und Telefon.
+
+GESTALTERISCHE BEGRÜNDUNG
+Bekannte Raster und großzügige Bild-Text-Zeilen erhalten die Vertrautheit.
+Wechselnde Inhaltsformate geben dem langen Verlauf eine klare Gewichtung;
+zusätzliche gleichförmige Kartengalerien entfallen. Das Komponia-System liefert
+Sora, Blau #3E5AF5, Ink #1F1F1D, feine Linien, ruhige Radien und Pillen-Buttons.
+Fotografien bleiben die zentrale Bildsprache. Keine dekorativen Farbverlaufs-
+Flächen, erfundenen Kennzahlen, übernommenen Testimonials oder Fremdlogos als
+Komponia-Referenz. Illustrative Produkt-/Prüfbilder werden als solche bezeichnet.
+Lab-Aussagen bedeuten vereinbarten Prüfumfang, keine Akkreditierungsbehauptung.
+
+VERIFIKATION
+- Produktionsbuild (TypeScript + Vite): erfolgreich. Vite weist auf den
+  vorhandenen gemeinsamen JavaScript-Chunk über 500 kB hin (rund 526 kB roh,
+  143 kB gzip); kein Buildfehler.
+- ESLint für geänderte TS/TSX-Dateien: erfolgreich.
+- Vollständiges npm run lint: acht bereits im Ausgangsstand enthaltene Fehler
+  in unveränderten src/components/ui-Dateien (Fast Refresh Exportregeln und
+  Math.random im Sidebar-Skeleton). Nicht Teil dieses Homepage-Auftrags.
+- 26 Homepage-Linkverwendungen / 18 unterschiedliche Ziele geprüft:
+  Routen und Komponentengruppen vorhanden. Kontakt-Vorauswahl type=supply
+  im Browser bestätigt. Telefonlink nutzt tel:, E-Mail mailto:.
+- Browserprüfung bei 1280, 768, 390 und 320 Pixeln: Sora geladen, kein
+  horizontaler Seitenüberlauf, keine fehlenden Homepage-Bilder; Desktop-
+  Seitenverlauf und mobile Karten geprüft. Mobile Hero-Wahl und Produktkarten
+  für bessere Lesbarkeit nachgeschärft.
+- Hero-Chipwechsel, Pfeiltaste, Pause/Fortsetzen, mobile Menüübersicht und
+  Abschnittsnavigation geprüft. Reduced Motion ist in Carousel und CSS
+  berücksichtigt (Codeprüfung; Betriebssystemeinstellung nicht geändert).
+- Keine Browserfehler in der lokalen Vorschau. Unabhängiger Diff-Review ohne
+  wesentliche Findings. Bestätigte Firmendaten und Kontaktformular unverändert.
+- Keine Veröffentlichung. GitHub bleibt der Synchronisationsstand.

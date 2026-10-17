@@ -1,0 +1,30 @@
+/* Shared Komponia foundations. Original supplied wordmarks remain image assets. */
+@font-face {
+  font-family: 'Sora';
+  src: url('./assets/fonts/sora-var.woff2') format('woff2');
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --komponia-blue: #3e5af5;
+  --komponia-blue-hover: #2a44d8;
+  --komponia-ink: #1f1f1d;
+  --komponia-line: #e1e3e8;
+  --komponia-lavender: #d4b9f3;
+}
+body { font-family: 'Sora', sans-serif; }
+.btn, .btn-primary, .btn-primary-l, .btn-secondary-dark, .btn-outline-primary { border-radius: 999px; }
+.btn-primary, .btn-primary-l { background-color: var(--komponia-blue); color: #fff; }
+.btn-primary:hover, .btn-primary-l:hover { background-color: var(--komponia-blue-hover); }
+.btn:active { transform: translateY(1px); }
+.btn:focus-visible { outline: 3px solid #b8c4fb; outline-offset: 3px; }
+.site-header, .site-footer { background-color: var(--komponia-ink); }
+.site-header[data-scrolled='true'] { --header-hover: var(--komponia-blue); background: #fffffff0; backdrop-filter: blur(10px); box-shadow: none; }
+.site-header .header-nav-trigger { font-size: 13px; }
+.site-header a:focus-visible, .site-header button:focus-visible { outline-offset: -3px; }
+.page-sections__link:hover, .page-sections__link[aria-current='location'] { color: var(--komponia-blue); }
+.page-sections__link[aria-current='location'] { border-bottom-color: var(--komponia-blue); }
+.page-sections__link:focus-visible { outline-color: var(--komponia-blue); }
+.komponia-label { color: #4c5057; }
+.komponia-label--inverse { color: #d4b9f3; }
