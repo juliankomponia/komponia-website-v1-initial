@@ -146,7 +146,7 @@ export default function Contact() {
   const { search } = useLocation();
   const group = COMPONENT_GROUPS.find(entry => entry.slug === params.get('group'));
   const product = group?.products.find(entry => entry.slug === params.get('component'));
-  const reference = product ? `${group!.title} / ${product.title}` : group?.title ?? '';
+  const reference = product ? `${group!.title} / ${product.title}` : group?.title ?? (params.get('reference') ?? '').slice(0, 200);
   const requested = params.get('type');
   const type: InquiryType = requested && Object.hasOwn(TYPES, requested) ? requested as InquiryType : 'component';
   return <div className="contact-page">

@@ -1,5 +1,19 @@
 # Komponia Website
 
+## Leistungsbereich – 17. Oktober 2026
+
+Auf dem wiederhergestellten Ausgangsstand `a71bb4a` zeigt „Our capabilities.“
+jetzt die zwölf bestätigten Bereiche mit Industrial Components an erster Stelle.
+OEM solutions, engineering, quality und supply chain coordination stehen im
+Einleitungstext als gemeinsamer Leistungsumfang aller Bereiche.
+Die vier vorhandenen Fertigungsbilder bleiben zugeordnet; Industrial Components
+und Sensors & Measurement verwenden vorhandene Komponia-Motive. Sechs neue
+Bereiche zeigen bis zur Bildauswahl schlichte Symbole. Ihre CTAs öffnen das
+bestehende Anfrageformular mit vorausgefülltem Bereich; vorhandene Detailseiten
+bleiben verlinkt. Hero, allgemeines Layout und übrige Abschnitte bleiben erhalten.
+Produktionsbuild und ESLint der geänderten Komponenten erfolgreich. Kartenfolge,
+mobile Darstellung und vorausgefüllte Anfragen im Browser geprüft.
+
 ## Aktive Startseite: Stand 2, wiederhergestellt am 17. Oktober 2026
 
 Die Startseite verwendet wieder Gestaltung, Vier-Bilder-Hero, Abschnittsnavigation,

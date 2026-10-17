@@ -44,16 +44,25 @@
     }
   },
   "capabilities": {
-    "title": "Manufacturing for custom parts",
-    "intro": "Match geometry, material and quantity to the manufacturing route. We coordinate suitable sources and the agreed checks.",
+    "title": "Our capabilities.",
+    "intro": "Industrial components and custom parts for your application. OEM solutions, engineering, quality and supply chain coordination are standard across every area.",
     "overviewCta": {
       "label": "Explore components",
       "to": "/components"
     },
     "cards": [
       {
-        "title": "CNC machining",
-        "desc": "Milling, turning and finishing options",
+        "media": "components",
+        "title": "Industrial Components",
+        "desc": "Technical components selected and sourced for your application.",
+        "specs": [],
+        "cta": "Explore industrial components",
+        "to": "/components"
+      },
+      {
+        "media": "cnc",
+        "title": "CNC Machining",
+        "desc": "Precision milled and turned parts made to your specifications.",
         "specs": [
           "Define material, geometry and tolerances",
           "Agree quantities and required documentation"
@@ -62,8 +71,9 @@
         "to": "/cnc-machining"
       },
       {
-        "title": "3D printing",
-        "desc": "Process selection for prototypes and custom parts",
+        "media": "printing",
+        "title": "3D Printing",
+        "desc": "Additive manufacturing for prototypes, functional parts and series production.",
         "specs": [
           "Consider geometry, material and intended use",
           "Agree finish, quantity and evaluation criteria"
@@ -72,8 +82,9 @@
         "to": "/3d-printing"
       },
       {
-        "title": "Sheet metal fabrication",
-        "desc": "Cutting, forming and finishing options",
+        "media": "sheetMetal",
+        "title": "Sheet Metal Fabrication",
+        "desc": "Cut, formed and finished sheet metal parts.",
         "specs": [
           "Define sheet material, geometry and interfaces",
           "Agree tolerances, finish and quantity"
@@ -82,14 +93,71 @@
         "to": "/sheet-metal-fabrication"
       },
       {
-        "title": "Injection molding",
-        "desc": "Tooling and molded-part requirements",
+        "media": "injection",
+        "title": "Injection Molding",
+        "desc": "Custom plastic parts, from tooling and sampling to series production.",
         "specs": [
           "Define material, geometry and expected volumes",
           "Agree tooling, samples and release criteria"
         ],
         "cta": "Explore injection molding",
         "to": "/injection-molding"
+      },
+      {
+        "media": "cables",
+        "title": "Cable Assemblies",
+        "desc": "Custom cables and wiring harnesses matched to your connections.",
+        "specs": [],
+        "cta": "Discuss cable assemblies",
+        "to": "/contact?type=custom&reference=Cable+Assemblies"
+      },
+      {
+        "media": "assembly",
+        "title": "Assembly & Subassemblies",
+        "desc": "Mechanical and electromechanical assemblies, ready for integration.",
+        "specs": [],
+        "cta": "Discuss your assembly",
+        "to": "/contact?type=custom&reference=Assembly+%26+Subassemblies"
+      },
+      {
+        "media": "rubber",
+        "title": "Rubber & Silicone",
+        "desc": "Custom seals, membranes and molded elastomer parts.",
+        "specs": [],
+        "cta": "Discuss rubber & silicone parts",
+        "to": "/contact?type=custom&reference=Rubber+%26+Silicone"
+      },
+      {
+        "media": "casting",
+        "title": "Die Casting",
+        "desc": "Aluminum and zinc castings for your production requirements.",
+        "specs": [],
+        "cta": "Discuss die casting",
+        "to": "/contact?type=custom&reference=Die+Casting"
+      },
+      {
+        "media": "extrusion",
+        "title": "Extrusion",
+        "desc": "Custom metal and plastic profiles with the required finishing.",
+        "specs": [],
+        "cta": "Discuss extrusion",
+        "to": "/contact?type=custom&reference=Extrusion"
+      },
+      {
+        "media": "sensors",
+        "title": "Sensors & Measurement",
+        "desc": "Sensors, probes and measurement components matched to your application.",
+        "specs": [],
+        "cta": "Explore sensors & probes",
+        "to": "/components/sensors-and-probes"
+      },
+      {
+        "media": "vacuum",
+        "title": "Vacuum Casting",
+        "desc": "Cast polyurethane parts for prototypes and small production runs.",
+        "specs": [],
+        "cta": "Discuss vacuum casting",
+        "to": "/contact?type=custom&reference=Vacuum+Casting"
       }
     ]
   },
