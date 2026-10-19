@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react';
 import { Routes, Route, Navigate } from 'react-router';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -18,6 +19,11 @@ import GenericPage, { type GenericPageData } from './components/GenericPage';
 import ScrollToTop from './components/ScrollToTop';
 import pagesData from './data/pages.json';
 
+// Isolated, development-only sample; the homepage remains unchanged.
+const ComponentSwitchPreview = import.meta.env.DEV
+  ? lazy(() => import('./previews/component-switch/ComponentSwitchPreview'))
+  : null;
+
 const genericPages = (pagesData as GenericPageData[]).filter((p) => !['industries', 'contact'].includes(p.route));
 
 export default function App() {
@@ -27,6 +33,7 @@ export default function App() {
       <Header />
       <main>
         <Routes>
+          {ComponentSwitchPreview && <Route path="/vorschau/komponia-echt" element={<Suspense fallback={<p className="wrap-orig section-pad">Vorschau wird geladen …</p>}><ComponentSwitchPreview /></Suspense>} />}
           <Route path="/" element={<Home />} />
           <Route path="/components" element={<Components />} />
           <Route path="/components/:groupId" element={<Components />} />
