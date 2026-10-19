@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router';
 import ComponentSwitch from './ComponentSwitch';
-import { componentPairs } from './component-pairs';
+import { componentPairs } from '../../data/component-pairs';
 
 export default function ComponentSwitchPreview() {
   useEffect(() => { document.title = 'Komponia ↔ Echt – Vorschau | Komponia'; }, []);
@@ -20,7 +20,7 @@ export default function ComponentSwitchPreview() {
             <p className="component-switch-preview__eyebrow">Komponenten</p>
             <h1 id="component-switch-title">Vom Konzept<br />zum echten Teil.</h1>
             <p className="component-switch-preview__intro">Entdecken Sie den Wechsel vom Komponia-Stil zum realistischen Bauteil – direkt am Beispiel eines Scrollverdichters.</p>
-            <p className="component-switch-preview__instruction"><span aria-hidden="true">↔</span> Wischen oder antippen.</p>
+            <p className="component-switch-preview__instruction"><span aria-hidden="true">↔</span> Maus darüberhalten oder antippen.</p>
           </div>
           <ComponentSwitch pair={componentPairs[0]} />
         </div>

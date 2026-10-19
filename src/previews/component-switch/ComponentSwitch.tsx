@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import type { CSSProperties, PointerEvent } from 'react';
-import type { ComponentPair } from './component-pairs';
+import type { ComponentPair } from '../../data/component-pairs';
 import './component-switch.css';
 
 type Mode = 'scan' | 'slider' | 'fade';
@@ -17,6 +17,7 @@ export default function ComponentSwitch({ pair, mode = 'scan' }: { pair: Compone
   const animation = useRef(0);
   const drag = useRef<Drag | null>(null);
   const suppressClick = useRef(false);
+  const hovered = useRef(false);
   const stage = useRef<HTMLButtonElement>(null);
   const realImage = useRef<HTMLImageElement>(null);
   const hintId = useId();
@@ -65,7 +66,7 @@ export default function ComponentSwitch({ pair, mode = 'scan' }: { pair: Compone
   }, []);
 
   function pointerDown(event: PointerEvent<HTMLButtonElement>) {
-    if (!ready || !event.isPrimary || event.button !== 0) return;
+    if (!ready || !event.isPrimary || event.button !== 0 || event.pointerType === 'mouse') return;
     suppressClick.current = false;
     drag.current = {
       id: event.pointerId, x: event.clientX, y: event.clientY,
@@ -127,12 +128,23 @@ export default function ComponentSwitch({ pair, mode = 'scan' }: { pair: Compone
           ref={stage} type="button" className="component-switch__stage"
           aria-label={`${pair.name}: zwischen Komponia-Stil und realistischem Teil wechseln`}
           aria-pressed={isReal} aria-describedby={hintId} disabled={!ready}
+          onPointerEnter={event => {
+            hovered.current = event.pointerType === 'mouse';
+            if (hovered.current && ready) animateTo(1);
+          }}
           onPointerDown={pointerDown} onPointerMove={pointerMove}
           onPointerUp={event => endPointer(event)}
           onPointerCancel={event => endPointer(event, true)}
           onLostPointerCapture={event => endPointer(event, true)}
-          onPointerLeave={() => { if (!drag.current?.active) drag.current = null; }}
+          onPointerLeave={event => {
+            if (!drag.current?.active) drag.current = null;
+            if (event.pointerType === 'mouse') {
+              hovered.current = false;
+              if (ready) animateTo(0);
+            }
+          }}
           onClick={() => {
+            if (hovered.current) return;
             if (suppressClick.current) { suppressClick.current = false; return; }
             toggle();
           }}
@@ -164,7 +176,7 @@ export default function ComponentSwitch({ pair, mode = 'scan' }: { pair: Compone
           <span className="component-switch__badge" data-real={isReal} aria-live="polite">{isReal ? 'Echt' : 'Komponia'}</span>
         </figcaption>
       </figure>
-      <p id={hintId} className="component-switch__hint">Wischen oder antippen <span aria-hidden="true">·</span> Tastatur: Enter oder Leertaste</p>
+      <p id={hintId} className="component-switch__hint">Maus darüberhalten oder antippen <span aria-hidden="true">·</span> Tastatur: Enter oder Leertaste</p>
     </div>
   );
 }
