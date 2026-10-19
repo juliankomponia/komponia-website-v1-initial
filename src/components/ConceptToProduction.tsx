@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router';
 import ComponentSwitch from './ComponentSwitch';
+import { BrandConstruction } from './HomeBrandMotifs';
 import { componentPairs } from '../data/component-pairs';
 import { HOME_CONTENT } from '../data/home-stand2';
 import './ConceptToProduction.css';
@@ -27,10 +28,11 @@ export default function ConceptToProduction() {
             </div>
           </div>
           {component && <div className="home-concept__visual">
+            <div className="home-concept__construction"><BrandConstruction /></div>
             <ComponentSwitch
               pair={{ ...component, name: content.component.name }}
               locale="en"
-              imageSizes="(max-width: 767px) 90vw, (max-width: 1199px) 42vw, 480px"
+              imageSizes="(max-width: 767px) 90vw, (max-width: 1199px) 42vw, 500px"
               hintText={content.component.hint}
             />
             <p className="home-concept__caption">{content.component.caption}</p>

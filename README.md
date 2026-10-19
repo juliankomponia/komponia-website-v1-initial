@@ -1,16 +1,21 @@
 # Komponia Website
 
-## Aktive Startseite – Markenfeinschliff, 19. Oktober 2026
+## Aktive Startseite – Komponia-Handschrift, 19. Oktober 2026
 
-Die Startseite verwendet `Home.tsx`, `HomeExperience.tsx` und
-`home-experience.css`: den bestehenden, bildbetonten Fictiv-orientierten Aufbau
-mit Vier-Bilder-Hero und radialem Komponentenwechsel. Der freigegebene
-„Komponia-Feinschliff“ ergänzt lokal eingebundene Sora, einheitliche Markenfarben,
-kleine Abschnittslabels mit blauer Linie sowie ruhige Produktkarten.
-Die Regeln gelten nur auf der Homepage, einschließlich Header und Footer.
+Die Startseite behält ihren bildbetonten, Fictiv-orientierten Aufbau, den
+Vier-Bilder-Hero und den radialen Komponentenwechsel. Auf den ersten Markenfeinschliff
+folgt eine aus den Komponia-LinkedIn-Bannern abgeleitete Umsetzung: technische
+Markenkonturen am Komponentenwechsel, ein WTS-Erfahrungsband seit 1997, ein
+Modulnetzwerk für Sourcing/Qualität/Supply, Lavender für Qualität und Gelb für
+Versorgung. Ein neues, illustratives Higgsfield-Bauteilmotiv ergänzt Custom solutions.
+Die aktuelle gestalterische Fassung steht zur Nutzerprüfung bereit.
 
-Das angepasste Website-Designkonzept steht in
-`project-notes/HOMEPAGE_BRAND_REFINEMENT_2026-10-19.txt`.
+Aktive Dateien: `Home.tsx`, `HomeExperience.tsx`, `home-experience.css`,
+`home-brand-expression.css` und `HomeBrandMotifs.tsx/.css`. Die Änderungen sind auf
+die Homepage begrenzt. Das aktualisierte Designkonzept samt Recherche und Grenzen
+steht in `project-notes/HOMEPAGE_BRAND_EXPRESSION_2026-10-19.txt`; Bildherkunft und
+Prompt in `project-notes/HOMEPAGE_BRAND_IMAGE_2026-10-19.json`.
+Der erste Feinschliff bleibt in `HOMEPAGE_BRAND_REFINEMENT_2026-10-19.txt` dokumentiert.
 Frühere Stände unten sind historische Arbeitsnotizen; insbesondere `home.css`
 und `HomeSectionsStand2.tsx` sind nicht die aktive Startseite.
 

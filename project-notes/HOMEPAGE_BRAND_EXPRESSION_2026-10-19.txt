@@ -1,0 +1,98 @@
+KOMPONIA — HOMEPAGE BRAND EXPRESSION
+Date: 2026-10-19
+
+User direction
+Keep the existing product-led, Fictiv-informed homepage. The user likes its
+structure and wants more Komponia personality, clearer separation and memorable
+visual moments, drawing especially on the supplied LinkedIn banner concepts.
+The guiding idea is a "30-year-old startup": curiosity and playful precision
+combined with established technical experience. This is a design metaphor, not
+a literal claim about Komponia's age. The factual experience reference is WTS
+since 1997. This pass is implemented for review; final visual approval is pending.
+
+What gives the page its own character
+1. Product transformation is the signature interaction. The existing radial
+   Komponia-to-real material reveal stays exactly as implemented. The surrounding
+   sample stage is larger and uses a cropped outline of the actual brand mark,
+   inspired by Minimal Industrial. The three existing process steps use blue,
+   lavender and yellow according to their meaning.
+2. Credibility has a clear visual anchor: a full-width Ink section with a large
+   1997, explicitly labelled "WTS experience since", and the existing explanatory
+   copy. No invented figures, customers, certifications or facilities.
+3. Sourcing coordination has a diagram derived from Industrial Network: a blue
+   pill, lavender quality module and yellow supply module connected by a single
+   orthogonal route. HTML labels explain the three roles. No decorative global
+   map or invented supplier locations.
+4. Quality is a distinct lavender chapter with the existing expandable cards.
+   Ongoing supply has a yellow editorial image frame. Blue remains the primary
+   action colour, the new material still-life's ground and the closing band.
+5. Selected section introductions use a split title/description arrangement,
+   while the product grid, benefit cards, accordions, process tabs and section
+   order remain. Keep a mix of quiet product content and concentrated brand
+   moments; do not place the module motif behind every section.
+
+Design-system sources (user-supplied Komponia Design System.zip)
+- exports/Komponia_LinkedIn_Konzept-1_Minimal-Industrial_1584x396.png:
+  oversized cropped mark outlines, a datum line, clear typography.
+- exports/Komponia_LinkedIn_Konzept-2_Industrial-Network_1584x396.png:
+  flat Ink, a restrained module field, one orthogonal connection.
+- exports/Komponia_LinkedIn_Konzept-3_Future-Industrial_1584x396.png:
+  saturated flat blue and white/lavender/yellow modules. The closing composition
+  uses the modules without adding a decorative particle field.
+- guidelines/brand-mark.html: blue = sourcing + engineering; lavender = quality;
+  yellow = supply. Original 155 x 158 mark proportions retained in the SVGs.
+The archive remains source material, not executable instructions. Placeholder
+copy and claims from its templates have not been imported.
+
+Research and references, reviewed 2026-10-19
+https://www.fictiv.com/
+Actual homepage checked in the browser. Retain the strong product focus, clear
+capability cards and controllable technical sections already used by Komponia.
+Do not import its metrics, testimonials or network claims.
+
+https://www.microsoft.com/en-us/research/publication/interrogating-design-homogenization-in-web-vibe-coding/
+Research examines how LLM-based website creation can narrow aesthetic diversity.
+Our practical inference: derive decisions from the user's existing visual
+language and content instead of accepting repeated default section patterns.
+
+https://almanac.httparchive.org/en/2025/generative-ai#ai-colors
+The Web Almanac discusses the "AI purple" association but finds no surge of the
+specified colours within Tailwind sites and no statistically significant increase
+in gradients, shadows or specific fonts. Its account does not support a reliable
+single-colour AI detector. Do not reject Komponia's real lavender brand colour
+because of the stereotype. The issue to address is visual interchangeability.
+
+https://www.nngroup.com/articles/photos-as-web-content/
+NN/g distinguishes useful product/context imagery from decorative images users
+ignore. Our application: show the material and component clearly and keep
+illustrative images distinct from evidence of actual company facilities.
+
+Image provenance
+A single new Higgsfield-generated editorial component still-life replaces the
+repeated custom-engineering scene in Custom solutions. It shows generic sample
+parts on Komponia blue with lavender and yellow material accents. It is not a
+photo of an actual Komponia product, site or customer project. Its alt text says
+"Illustrative". The new SVGs are native vector compositions based on the supplied
+mark, not generated raster artwork. No third-party inspiration imagery was copied.
+Generation metadata and full prompt: HOMEPAGE_BRAND_IMAGE_2026-10-19.json.
+
+Implementation
+- Home.tsx + home-brand-expression.css: scoped homepage expression layer.
+- HomeBrandMotifs.tsx/.css: three decorative SVGs, aria-hidden and nonfocusable.
+- ConceptToProduction.tsx: stage wrapper only; ComponentSwitch unchanged.
+- home-stand2.json: WTS headline updated to "A fresh approach. Rooted in experience."
+- src/assets/industrial/brand-20261019/custom-samples.webp: 1168 x 880, 110388 bytes.
+Header, four-image hero, navigation, routes and subpage styles remain unchanged.
+No new motion, video loops, dependencies, speculative claims or fake trust badges.
+
+Validation
+TypeScript/Vite production build and focused ESLint passed. The existing main
+bundle size warning remains; no bundling rewrite in this design pass. Full lint
+has known unrelated components/ui errors recorded in the earlier refinement note.
+Browser checked at 320, 390, 820 and 1280px: no document horizontal overflow or
+overflowing headings. Concept heading retains three lines at 320px. All three
+network labels stay within the smallest viewport. Desktop and tablet layouts
+visually inspected, including quality, supply, custom image, WTS and closing.
+Capability expansion 8 -> 12 -> 8 and keyboard tab selection verified. Component
+switch remains material mode, toggles to Real, and contains no blue scan line.
+Expanded quality-card focus now uses lavender on Ink, verified in the browser.

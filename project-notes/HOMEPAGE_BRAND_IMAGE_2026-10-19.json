@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-19",
+  "provider": "Higgsfield",
+  "model": "gpt_image_2_5",
+  "job_id": "ee52d43b-3108-4524-b74b-f2c62437e667",
+  "cost_preflight_credits": 0.25,
+  "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261019_180552_ee52d43b-3108-4524-b74b-f2c62437e667.png",
+  "output_file": "src/assets/industrial/brand-20261019/custom-samples.webp",
+  "dimensions": [
+    1168,
+    880
+  ],
+  "purpose": "Illustrative editorial sample still-life for homepage Custom solutions. Not evidence of actual Komponia products or facilities.",
+  "processing": "WebP export at quality 88; no crop or compositing.",
+  "prompt": "Create a premium editorial industrial still-life photograph for a German technical components company called Komponia, but NO text and NO logos in the image. Landscape 4:3. A single physically plausible CNC-machined aluminium valve manifold / open precision housing, with simple clean cylindrical bores, two mounting holes, crisp milled edges and visible subtle circular tool marks, sits diagonally across a matte saturated ultramarine blue (#3E5AF5) work surface. Beside it a small brass cylindrical sleeve and a single dark rubber O-ring. A low rounded-corner lavender (#D4B9F3) rectangular sample block is partially cropped into the upper right edge; a very small warm yellow (#F7D44B) sample tab at bottom left. Tight close-up, aluminium part dominates 65 percent of composition; physically grounded objects, tactile metal, slight brushed finish and real tiny surface variations. Strong controlled daylight from upper left, honest cast shadows, editorial product photographer, medium format, 80mm macro, clear optical precision, slightly off-centre composition, attractive industrial colour blocking. This is an illustrative studio arrangement of generic component samples, not a factory, not evidence of a company's facilities. No people, no hands, no equipment background, no labels or numbers, no UI, no technical diagrams, no floating objects, no impossible internal geometry, no chrome sci-fi render, no fog, no glow, no neon, no decorative gradients. Leave room around all metal parts so a modest crop does not cut them."
+}
