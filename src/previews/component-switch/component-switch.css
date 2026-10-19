@@ -35,32 +35,6 @@
 .component-switch-preview__intro { max-width: 420px; margin: 0; font-size: 15px; line-height: 1.8; color: #4c5057; }
 .component-switch-preview__instruction { display: flex; align-items: center; gap: 12px; margin: 30px 0 0; font-size: 13px; font-weight: 500; }
 .component-switch-preview__instruction span { font-size: 24px; color: #3e5af5; }
-.component-switch-demo { min-width: 0; }
-.component-switch { margin: 0; background: white; border: 1px solid #e1e3e8; border-radius: 20px; overflow: hidden; transition: transform .22s, box-shadow .22s; }
-.component-switch[data-ready="true"]:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(31,31,29,.08); }
-.component-switch__stage {
-  position: relative; display: block; width: 100%; aspect-ratio: 1; padding: 0; margin: 0;
-  border: 0; border-radius: 0; overflow: hidden; background: white; color: #4c5057;
-  touch-action: pan-y; cursor: pointer; user-select: none; -webkit-user-select: none; outline: none;
-}
-.component-switch__stage:disabled { cursor: default; }
-@media (hover: none) { .component-switch__stage:active { cursor: grabbing; } }
-.component-switch__stage:focus-visible { box-shadow: inset 0 0 0 3px #b8c4fb; }
-.component-switch__images, .component-switch__layer, .component-switch__line { position: absolute; inset: 0; pointer-events: none; }
-/* Isolate the image pair from the white stage for a true alpha crossfade. */
-.component-switch__images { isolation: isolate; }
-.component-switch[data-mode="material"] .component-switch__layer { mix-blend-mode: plus-lighter; }
-.component-switch[data-mode="material"]:hover { transform: none; }
-.component-switch__layer img { position: absolute; inset: 6%; width: 88%; height: 88%; object-fit: contain; pointer-events: none; -webkit-user-drag: none; }
-.component-switch[data-ready="false"] .component-switch__layer { visibility: hidden; }
-.component-switch__handle { position: absolute; top: 50%; transform: translate(-50%, -50%); display: grid; place-items: center; width: 38px; height: 38px; background: #3e5af5; border-radius: 50%; color: white; pointer-events: none; }
-.component-switch__handle::before { content: ''; position: absolute; top: -600px; bottom: -600px; width: 2px; background: #3e5af5; z-index: -1; }
-.component-switch__loading { position: absolute; inset: 0; display: grid; place-items: center; font-size: 14px; }
-.component-switch__caption { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 20px; border-top: 1px solid #eceef1; font-size: 14px; font-weight: 500; }
-.component-switch__badge { flex: none; padding: 8px 11px; border-radius: 999px; background: #eef1fe; color: #3e5af5; font-size: 10px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; transition: color .15s, background .15s; }
-.component-switch__badge[data-real="true"] { background: #3e5af5; color: white; }
-.component-switch__hint { margin: 16px 0 0; text-align: center; font-size: 10px; line-height: 1.7; color: #4c5057; }
-.component-switch__hint span { padding-inline: 4px; }
 @media (max-width: 720px) {
   .component-switch-preview__bar-inner { padding: 16px 20px; font-size: 10px; }
   .component-switch-preview__bar-inner > span { gap: 8px; }
@@ -70,8 +44,4 @@
   .component-switch-preview__eyebrow { margin-bottom: 22px; }
   .component-switch-preview__copy h1 { font-size: 36px; }
   .component-switch-preview__instruction { margin-top: 20px; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .component-switch, .component-switch__badge { transition: none; }
-  .component-switch[data-ready="true"]:hover { transform: none; }
 }

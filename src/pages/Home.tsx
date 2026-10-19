@@ -4,11 +4,13 @@ import { SectionLead, CapabilitiesCards, OrderingProcess, CaseStudies, NetworkGa
 import { HOME_CONTENT as H } from '../data/home-stand2';
 import { INDUSTRIAL_IMAGES as I } from '../data/home-stand2-images';
 import HomeHero from '../components/HomeHero';
+import ConceptToProduction from '../components/ConceptToProduction';
 import SourceNote from '../components/SourceNote';
 
 export default function Home(){return <div className="home-page">
   <HomeHero/>
   <PageSections/>
+  <ConceptToProduction/>
   <section data-section-label="Capabilities" className="bg-white"><div className="wrap-orig section-pad"><SectionLead title={H.capabilities.title}>{H.capabilities.intro}</SectionLead><CapabilitiesCards/></div></section>
   <section data-section-label="Why Komponia" className="bg-white"><div className="wrap-orig section-pad"><SectionLead title={H['why-komponia'].title}>{H['why-komponia'].intro}</SectionLead><CardGrid cards={H['why-komponia'].cards}/><SourceNote note={H['why-komponia'].footnote}/></div></section>
   <section data-section-label="Custom solutions" className="bg-brand-gray"><div className="wrap-orig section-pad"><FeatureRow eyebrow="Custom solutions" title={H['custom-solutions'].title} text={H['custom-solutions'].intro} img={I.customEngineering} imgAlt="Illustrative custom-part assessment on a workbench" link={H['custom-solutions'].cta}/></div></section>

@@ -1,14 +1,50 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import type { CSSProperties, PointerEvent } from 'react';
-import type { ComponentPair } from '../../data/component-pairs';
-import './component-switch.css';
+import type { ComponentPair } from '../data/component-pairs';
+import './ComponentSwitch.css';
 
 type Mode = 'material' | 'scan' | 'slider' | 'fade';
+type ComponentSwitchProps = {
+  pair: ComponentPair;
+  mode?: Mode;
+  locale?: 'de' | 'en';
+  imageSizes?: string;
+  hintText?: string;
+};
+const labels = {
+  de: {
+    switchLabel: 'zwischen Komponia-Stil und realistischem Teil wechseln',
+    brandAlt: 'im Komponia-Stil',
+    realAlt: 'realistische Darstellung',
+    realBadge: 'Echt',
+    loading: 'Bilder werden geladen …',
+    unavailable: 'Das Bildpaar fehlt noch.',
+    hint: 'Maus darüberhalten oder antippen',
+    keyboardHint: 'Tastatur: Enter oder Leertaste',
+  },
+  en: {
+    switchLabel: 'switch between Komponia style and the realistic component',
+    brandAlt: 'in Komponia style',
+    realAlt: 'realistic view',
+    realBadge: 'Real',
+    loading: 'Loading images …',
+    unavailable: 'The image pair is unavailable.',
+    hint: 'Hover or tap to explore',
+    keyboardHint: 'Keyboard: Enter or Space',
+  },
+};
 type Drag = { id: number; x: number; y: number; start: number; width: number; active: boolean; vertical: boolean };
 const clamp = (value: number) => Math.max(0, Math.min(1, value));
 const ease = (value: number) => value < 0.5 ? 2 * value * value : 1 - (-2 * value + 2) ** 2 / 2;
 
-export default function ComponentSwitch({ pair, mode = 'material' }: { pair: ComponentPair; mode?: Mode }) {
+export default function ComponentSwitch({
+  pair,
+  mode = 'material',
+  locale = 'de',
+  imageSizes = '(max-width: 720px) 90vw, 420px',
+  hintText,
+}: ComponentSwitchProps) {
+  const copy = labels[locale];
   const [progress, setProgress] = useState(0);
   const [origin, setOrigin] = useState({ x: 50, y: 50 });
   const [loaded, setLoaded] = useState({ brand: false, real: false });
@@ -154,11 +190,11 @@ export default function ComponentSwitch({ pair, mode = 'material' }: { pair: Com
   };
 
   return (
-    <div className="component-switch-demo">
+    <div className="component-switch-demo" lang={locale}>
       <figure className="component-switch" data-mode={mode} data-ready={ready}>
         <button
           ref={stage} type="button" className="component-switch__stage"
-          aria-label={`${pair.name}: zwischen Komponia-Stil und realistischem Teil wechseln`}
+          aria-label={`${pair.name}: ${copy.switchLabel}`}
           aria-pressed={isReal} aria-describedby={hintId} disabled={!ready}
           onPointerEnter={event => {
             hovered.current = event.pointerType === 'mouse';
@@ -195,29 +231,31 @@ export default function ComponentSwitch({ pair, mode = 'material' }: { pair: Com
           }}
         >
           <span className="component-switch__images">
-          <span className="component-switch__layer" style={brandStyle}>
-            <img src={`${directory}/brand.webp`} srcSet={`${directory}/brand-600.webp 600w, ${directory}/brand.webp 1200w`}
-              sizes="(max-width: 720px) 90vw, 420px" width="1200" height="1200"
-              alt={`${pair.name} im Komponia-Stil`} decoding="async" draggable={false}
-              onLoad={() => setLoaded(current => ({ ...current, brand: true }))} onError={() => setFailed(true)} />
-          </span>
-          <span className="component-switch__layer" style={realStyle}>
-            <img ref={realImage} src={`${directory}/real.webp`} srcSet={`${directory}/real-600.webp 600w, ${directory}/real.webp 1200w`}
-              sizes="(max-width: 720px) 90vw, 420px" width="1200" height="1200"
-              alt={`${pair.name}, realistische Darstellung`} decoding="async" loading="lazy" draggable={false}
-              onLoad={() => setLoaded(current => ({ ...current, real: true }))} onError={() => setFailed(true)} />
-          </span>
+            <span className="component-switch__layer" style={brandStyle}>
+              <img src={`${directory}/brand.webp`} srcSet={`${directory}/brand-600.webp 600w, ${directory}/brand.webp 1200w`}
+                sizes={imageSizes} width="1200" height="1200"
+                alt={`${pair.name} ${copy.brandAlt}`} decoding="async" loading="lazy" draggable={false}
+                onLoad={() => setLoaded(current => ({ ...current, brand: true }))} onError={() => setFailed(true)} />
+            </span>
+            <span className="component-switch__layer" style={realStyle}>
+              <img ref={realImage} src={`${directory}/real.webp`} srcSet={`${directory}/real-600.webp 600w, ${directory}/real.webp 1200w`}
+                sizes={imageSizes} width="1200" height="1200"
+                alt={`${pair.name}, ${copy.realAlt}`} decoding="async" loading="lazy" draggable={false}
+                onLoad={() => setLoaded(current => ({ ...current, real: true }))} onError={() => setFailed(true)} />
+            </span>
           </span>
           {mode === 'scan' && <span className="component-switch__line" style={lineStyle} aria-hidden="true" />}
           {mode === 'slider' && <span className="component-switch__handle" style={{ left: `${progress * 100}%` }} aria-hidden="true">‹ ›</span>}
-          {!ready && <span className="component-switch__loading">{failed ? 'Das Bildpaar fehlt noch.' : 'Bilder werden geladen …'}</span>}
+          {!ready && <span className="component-switch__loading">{failed ? copy.unavailable : copy.loading}</span>}
         </button>
         <figcaption className="component-switch__caption">
           <span>{pair.name}</span>
-          <span className="component-switch__badge" data-real={isReal} aria-live="polite">{isReal ? 'Echt' : 'Komponia'}</span>
+          <span className="component-switch__badge" data-real={isReal} aria-live="polite">{isReal ? copy.realBadge : 'Komponia'}</span>
         </figcaption>
       </figure>
-      <p id={hintId} className="component-switch__hint">Maus darüberhalten oder antippen <span aria-hidden="true">·</span> Tastatur: Enter oder Leertaste</p>
+      <p id={hintId} className="component-switch__hint">
+        {hintText ?? <>{copy.hint} <span aria-hidden="true">·</span> {copy.keyboardHint}</>}
+      </p>
     </div>
   );
 }

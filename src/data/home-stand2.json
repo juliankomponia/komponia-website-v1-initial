@@ -43,6 +43,40 @@
       }
     }
   },
+  "concept-to-production": {
+    "eyebrow": "Engineering & series supply",
+    "title": "From concept to\nproduction-ready\ncomponents.",
+    "intro": "Bring us a drawing, a sample or an application requirement. We coordinate the technical work, samples and agreed checks to prepare your component for series production.",
+    "cta": {
+      "label": "Discuss your component",
+      "to": "/contact"
+    },
+    "secondaryCta": {
+      "label": "See how we work",
+      "to": "/how-ordering-works"
+    },
+    "component": {
+      "slug": "scrollverdichter",
+      "name": "Scroll compressor",
+      "hint": "Hover or tap to explore the component.",
+      "caption": "Illustrative component. Specifications are agreed for your application."
+    },
+    "stepsLabel": "From requirement to series supply",
+    "steps": [
+      {
+        "title": "Define the component",
+        "text": "Clarify function, interfaces, materials and target quantities."
+      },
+      {
+        "title": "Review samples",
+        "text": "Assess the agreed checks and document release criteria."
+      },
+      {
+        "title": "Prepare series supply",
+        "text": "Confirm specifications, order volumes and delivery terms."
+      }
+    ]
+  },
   "capabilities": {
     "title": "Our capabilities.",
     "intro": "Industrial components and custom parts for your application. OEM solutions, engineering, quality and supply chain coordination are standard across every area.",

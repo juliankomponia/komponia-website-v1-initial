@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router';
-import ComponentSwitch from './ComponentSwitch';
+import ComponentSwitch from '../../components/ComponentSwitch';
 import { componentPairs } from '../../data/component-pairs';
+import './component-switch.css';
 
 export default function ComponentSwitchPreview() {
   useEffect(() => { document.title = 'Komponia ↔ Echt – Vorschau | Komponia'; }, []);
