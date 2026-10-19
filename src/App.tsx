@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { Routes, Route, Navigate } from 'react-router';
+import { Routes, Route, Navigate, useLocation } from 'react-router';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -27,8 +27,10 @@ const ComponentSwitchPreview = import.meta.env.DEV
 const genericPages = (pagesData as GenericPageData[]).filter((p) => !['industries', 'contact'].includes(p.route));
 
 export default function App() {
+  const { pathname } = useLocation();
+
   return (
-    <div className="min-h-screen bg-white font-sans text-brand-body antialiased">
+    <div className="site-app min-h-screen bg-white font-sans text-brand-body antialiased" data-page={pathname === '/' ? 'home' : undefined}>
       <ScrollToTop />
       <Header />
       <main>

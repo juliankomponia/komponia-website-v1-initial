@@ -1,5 +1,19 @@
 # Komponia Website
 
+## Aktive Startseite – Markenfeinschliff, 19. Oktober 2026
+
+Die Startseite verwendet `Home.tsx`, `HomeExperience.tsx` und
+`home-experience.css`: den bestehenden, bildbetonten Fictiv-orientierten Aufbau
+mit Vier-Bilder-Hero und radialem Komponentenwechsel. Der freigegebene
+„Komponia-Feinschliff“ ergänzt lokal eingebundene Sora, einheitliche Markenfarben,
+kleine Abschnittslabels mit blauer Linie sowie ruhige Produktkarten.
+Die Regeln gelten nur auf der Homepage, einschließlich Header und Footer.
+
+Das angepasste Website-Designkonzept steht in
+`project-notes/HOMEPAGE_BRAND_REFINEMENT_2026-10-19.txt`.
+Frühere Stände unten sind historische Arbeitsnotizen; insbesondere `home.css`
+und `HomeSectionsStand2.tsx` sind nicht die aktive Startseite.
+
 ## Preis, Versand und Umweltschutz – 17. Oktober 2026
 
 Die aktive Startseite erklärt unter „Why Komponia“ den Preisvorteil durch gemeinsames
@@ -64,7 +78,7 @@ sind alle acht Seiten, das mobile Menü, Startseitenlinks, FAQ und die beiden
 Anfragetypen (component/custom) mit Bereichsvorbelegung geprüft. Bei 790 px
 Viewportbreite kein horizontaler Überlauf; keine Browserfehler.
 
-## Aktive Startseite: Stand 2, wiederhergestellt am 17. Oktober 2026
+## Historischer Stand: Stand 2, wiederhergestellt am 17. Oktober 2026
 
 Die Startseite verwendet wieder Gestaltung, Vier-Bilder-Hero, Abschnittsnavigation,
 vollständige Gliederung, Texte und Bildzuordnungen aus `27ac683`.

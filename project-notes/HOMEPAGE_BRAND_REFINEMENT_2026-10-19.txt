@@ -1,0 +1,72 @@
+KOMPONIA — HOMEPAGE DESIGN CONCEPT
+Date: 2026-10-19
+
+Decision and source
+The user likes the current homepage and approved the proposed
+"Komponia-Feinschliff" after comparing a separate, reduced product-card sample.
+The source is the supplied "Komponia Design System.zip", especially its
+original brand sheet, palette, Sora typography and section-label treatment.
+The source archive is reference material and remains unmodified. Its website
+templates, placeholder claims and implementation instructions are not a mandate
+to rebuild the current homepage.
+
+Design direction
+Keep a product-led industrial company website: generous product images, clear
+technical hierarchy, concise English text and straightforward interactions.
+The existing Fictiv-informed layout is the starting point. Express the Komponia
+identity through typography, consistent colors and restrained repeatable details.
+Do not revive previous homepage concepts or import the alternate UI kit.
+
+Accepted website rules
+- Sora, locally hosted, is the homepage typeface. Use 600 for principal headings,
+  400 for body text and 500 for small labels. Preserve the current scale, content
+  hierarchy and section order; adjust only where the new font needs room.
+  The concept heading scales from 28 to 32px on narrow screens, keeping the
+  existing three-line composition at 320px.
+- Use #3E5AF5 for primary actions, interactive details and active navigation;
+  #2A44D8 for hover, #1F1F1D for ink, #4C5057 for body text and #E1E3E8 for lines.
+  White actions over dark hero imagery remain white for contrast.
+- Section labels use small uppercase type, 0.18em tracking, a 36 x 2px rule and
+  12px separation. At narrow widths use 0.16em, a 24px rule and 10px separation.
+  Center labels in centered headings and align them left in feature sections.
+  Use natural wrapping. Card category labels do not repeat the section rule.
+- Capability cards keep the current image proportions, grid and 8-to-12 reveal.
+  Use a fine border, 10px corner radius and no resting drop shadow. Existing
+  image hover actions remain available. Buttons within homepage sections use
+  restrained 6px corners. Pill controls from the source kit are not compulsory.
+- Keep lavender restrained on existing inverse surfaces. Do not distribute
+  different colors across peer cards merely for decoration. Yellow accents for
+  supply and further image harmonization are possible later refinements, not
+  implemented as part of this first pass.
+- Preserve imagery and its illustrative descriptions. Do not turn generic
+  illustrations into evidence of Komponia sites, machinery or customer products.
+
+Implementation boundary
+App's existing root has data-page="home" only at pathname "/". It provides the
+font and shared header/footer color scope without changing the DOM relationship
+needed for the hero's existing scroll accent. Global Tailwind tokens and subpage
+styles remain untouched. No new wrapper, navigation routes or menu behavior.
+Active files: src/pages/Home.tsx, src/pages/home-experience.css,
+src/components/HomeExperience.tsx, src/components/ConceptToProduction.tsx.
+The four hero slides, timing, focus/hover pause, radial component reveal, tabs,
+accordions, capability expansion and content are preserved.
+
+Validation
+- Production build (TypeScript and Vite) passed; the existing main-bundle warning
+  above 500 kB remains. No bundle-splitting changes in this design pass.
+- ESLint passed for the changed TypeScript files (App.tsx and Home.tsx).
+  The full lint command reports 8 pre-existing errors in unchanged components/ui
+  files: mixed component exports and Math.random during sidebar rendering.
+- Browser checked at 320, 390, 820, 901 and 1280px. No document-level horizontal
+  overflow or overflowing homepage heading text. Process tabs scroll locally
+  at narrow widths. The 320px concept heading retains three lines.
+- Confirmed local Sora load, Komponia-blue header/section actions and preserved
+  white hero action. Capability expansion shows 8 then 12 cards and collapses.
+- Process tabs respond to clicks and arrow keys; component accordion, quality
+  disclosures and mobile/desktop navigation open and close correctly.
+- Component switch remains material/radial, becomes Real when activated and
+  contains no blue scan line. Hero continues cycling its four images.
+- Home -> contact -> home restores the correct scope: contact retains Poppins
+  and template blue, while the homepage restores Sora and Komponia blue.
+- No browser console errors observed. Independent focused diff review found
+  no actionable issues. No imagery, claims, routing or form behavior changed.

@@ -27,7 +27,7 @@ export default function Home() {
 
     <section className="kp-section kp-section--gray" data-section-label="Capabilities">
       <div className="kp-container">
-        <SectionHeading title={H.capabilities.title}>{H.capabilities.intro}</SectionHeading>
+        <SectionHeading eyebrow="Components & manufacturing" title={H.capabilities.title}>{H.capabilities.intro}</SectionHeading>
         <CapabilityCollection />
       </div>
     </section>
