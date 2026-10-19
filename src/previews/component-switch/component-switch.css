@@ -46,7 +46,11 @@
 .component-switch__stage:disabled { cursor: default; }
 @media (hover: none) { .component-switch__stage:active { cursor: grabbing; } }
 .component-switch__stage:focus-visible { box-shadow: inset 0 0 0 3px #b8c4fb; }
-.component-switch__layer, .component-switch__line { position: absolute; inset: 0; pointer-events: none; }
+.component-switch__images, .component-switch__layer, .component-switch__line { position: absolute; inset: 0; pointer-events: none; }
+/* Isolate the image pair from the white stage for a true alpha crossfade. */
+.component-switch__images { isolation: isolate; }
+.component-switch[data-mode="material"] .component-switch__layer { mix-blend-mode: plus-lighter; }
+.component-switch[data-mode="material"]:hover { transform: none; }
 .component-switch__layer img { position: absolute; inset: 6%; width: 88%; height: 88%; object-fit: contain; pointer-events: none; -webkit-user-drag: none; }
 .component-switch[data-ready="false"] .component-switch__layer { visibility: hidden; }
 .component-switch__handle { position: absolute; top: 50%; transform: translate(-50%, -50%); display: grid; place-items: center; width: 38px; height: 38px; background: #3e5af5; border-radius: 50%; color: white; pointer-events: none; }

@@ -3,13 +3,14 @@ import type { CSSProperties, PointerEvent } from 'react';
 import type { ComponentPair } from '../../data/component-pairs';
 import './component-switch.css';
 
-type Mode = 'scan' | 'slider' | 'fade';
+type Mode = 'material' | 'scan' | 'slider' | 'fade';
 type Drag = { id: number; x: number; y: number; start: number; width: number; active: boolean; vertical: boolean };
 const clamp = (value: number) => Math.max(0, Math.min(1, value));
 const ease = (value: number) => value < 0.5 ? 2 * value * value : 1 - (-2 * value + 2) ** 2 / 2;
 
-export default function ComponentSwitch({ pair, mode = 'scan' }: { pair: ComponentPair; mode?: Mode }) {
+export default function ComponentSwitch({ pair, mode = 'material' }: { pair: ComponentPair; mode?: Mode }) {
   const [progress, setProgress] = useState(0);
+  const [origin, setOrigin] = useState({ x: 50, y: 50 });
   const [loaded, setLoaded] = useState({ brand: false, real: false });
   const [failed, setFailed] = useState(false);
   const position = useRef(0);
@@ -38,10 +39,14 @@ export default function ComponentSwitch({ pair, mode = 'scan' }: { pair: Compone
       return;
     }
     const from = position.current;
+    const duration = mode === 'material'
+      ? Math.max(120, (target === 1 ? 620 : 480) * Math.abs(target - from))
+      : 720;
     const start = performance.now();
     function step(now: number) {
-      const elapsed = clamp((now - start) / 720);
-      update(from + (target - from) * ease(elapsed));
+      const elapsed = clamp((now - start) / duration);
+      const eased = mode === 'material' ? 1 - (1 - elapsed) ** 3 : ease(elapsed);
+      update(from + (target - from) * eased);
       if (elapsed < 1) animation.current = requestAnimationFrame(step);
     }
     animation.current = requestAnimationFrame(step);
@@ -65,9 +70,21 @@ export default function ComponentSwitch({ pair, mode = 'scan' }: { pair: Compone
     };
   }, []);
 
+  function setPointerOrigin(event: PointerEvent<HTMLButtonElement>) {
+    // Preserve the reveal's centre when a transition reverses midway.
+    if (position.current > 0 && position.current < 1) return;
+    const bounds = event.currentTarget.getBoundingClientRect();
+    if (!bounds.width || !bounds.height) return;
+    setOrigin({
+      x: clamp((event.clientX - bounds.left) / bounds.width) * 100,
+      y: clamp((event.clientY - bounds.top) / bounds.height) * 100,
+    });
+  }
+
   function pointerDown(event: PointerEvent<HTMLButtonElement>) {
     if (!ready || !event.isPrimary || event.button !== 0 || event.pointerType === 'mouse') return;
     suppressClick.current = false;
+    setPointerOrigin(event);
     drag.current = {
       id: event.pointerId, x: event.clientX, y: event.clientY,
       start: position.current, width: event.currentTarget.getBoundingClientRect().width,
@@ -113,7 +130,22 @@ export default function ComponentSwitch({ pair, mode = 'scan' }: { pair: Compone
     : mode === 'slider'
       ? `linear-gradient(90deg, #000 ${progress * 100}%, transparent ${progress * 100}%)`
       : 'none';
-  const realStyle: CSSProperties = {
+  // Percentages are relative to the farthest corner, including an off-centre origin.
+  const feather = 44;
+  const inner = progress * (100 + feather) - feather;
+  const radial = `circle farthest-corner at ${origin.x}% ${origin.y}%`;
+  const realMask = `radial-gradient(${radial}, #000 ${inner}%, rgba(0,0,0,.95) ${inner + feather * .2}%, rgba(0,0,0,.5) ${inner + feather * .5}%, rgba(0,0,0,.05) ${inner + feather * .8}%, transparent ${inner + feather}%)`;
+  const brandMask = `radial-gradient(${radial}, transparent ${inner}%, rgba(0,0,0,.05) ${inner + feather * .2}%, rgba(0,0,0,.5) ${inner + feather * .5}%, rgba(0,0,0,.95) ${inner + feather * .8}%, #000 ${inner + feather}%)`;
+  const inTransition = progress > 0 && progress < 1;
+  const materialMask = inTransition ? realMask : 'none';
+  const brandStyle: CSSProperties | undefined = mode === 'material' ? {
+    maskImage: inTransition ? brandMask : 'none',
+    WebkitMaskImage: inTransition ? brandMask : 'none',
+    opacity: progress === 1 ? 0 : 1,
+  } : undefined;
+  const realStyle: CSSProperties = mode === 'material' ? {
+    maskImage: materialMask, WebkitMaskImage: materialMask, opacity: progress === 0 ? 0 : 1,
+  } : {
     maskImage: mask, WebkitMaskImage: mask, opacity: mode === 'fade' ? progress : 1,
   };
   const lineStyle: CSSProperties = {
@@ -130,7 +162,10 @@ export default function ComponentSwitch({ pair, mode = 'scan' }: { pair: Compone
           aria-pressed={isReal} aria-describedby={hintId} disabled={!ready}
           onPointerEnter={event => {
             hovered.current = event.pointerType === 'mouse';
-            if (hovered.current && ready) animateTo(1);
+            if (hovered.current && ready) {
+              setPointerOrigin(event);
+              animateTo(1);
+            }
           }}
           onPointerDown={pointerDown} onPointerMove={pointerMove}
           onPointerUp={event => endPointer(event)}
@@ -151,11 +186,16 @@ export default function ComponentSwitch({ pair, mode = 'scan' }: { pair: Compone
           onKeyDown={event => {
             if (event.key === 'Enter' || event.key === ' ') {
               event.preventDefault();
-              if (!event.repeat) { suppressClick.current = false; toggle(); }
+              if (!event.repeat) {
+                suppressClick.current = false;
+                if (position.current === 0 || position.current === 1) setOrigin({ x: 50, y: 50 });
+                toggle();
+              }
             }
           }}
         >
-          <span className="component-switch__layer">
+          <span className="component-switch__images">
+          <span className="component-switch__layer" style={brandStyle}>
             <img src={`${directory}/brand.webp`} srcSet={`${directory}/brand-600.webp 600w, ${directory}/brand.webp 1200w`}
               sizes="(max-width: 720px) 90vw, 420px" width="1200" height="1200"
               alt={`${pair.name} im Komponia-Stil`} decoding="async" draggable={false}
@@ -167,7 +207,8 @@ export default function ComponentSwitch({ pair, mode = 'scan' }: { pair: Compone
               alt={`${pair.name}, realistische Darstellung`} decoding="async" loading="lazy" draggable={false}
               onLoad={() => setLoaded(current => ({ ...current, real: true }))} onError={() => setFailed(true)} />
           </span>
-          <span className="component-switch__line" style={lineStyle} aria-hidden="true" />
+          </span>
+          {mode === 'scan' && <span className="component-switch__line" style={lineStyle} aria-hidden="true" />}
           {mode === 'slider' && <span className="component-switch__handle" style={{ left: `${progress * 100}%` }} aria-hidden="true">‹ ›</span>}
           {!ready && <span className="component-switch__loading">{failed ? 'Das Bildpaar fehlt noch.' : 'Bilder werden geladen …'}</span>}
         </button>
