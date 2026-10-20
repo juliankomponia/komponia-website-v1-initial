@@ -1,4 +1,7 @@
-import { IMG } from './site';
+import cnc from '../assets/industrial/capabilities-20261020/cnc.webp';
+import printing from '../assets/industrial/capabilities-20261020/printing.webp';
+import sheetMetal from '../assets/industrial/capabilities-20261020/sheetMetal.webp';
+import injection from '../assets/industrial/capabilities-20261020/injection.webp';
 import components from '../assets/industrial/capabilities-20261017/components.webp';
 import cables from '../assets/industrial/capabilities-20261017/cables.webp';
 import assembly from '../assets/industrial/capabilities-20261017/assembly.webp';
@@ -10,10 +13,10 @@ import vacuum from '../assets/industrial/capabilities-20261017/vacuum.webp';
 
 export const CAPABILITY_IMAGES: Record<string, string> = {
   components,
-  cnc: IMG.capCnc,
-  printing: IMG.cap3dp,
-  sheetMetal: IMG.capSmf,
-  injection: IMG.capIm,
+  cnc,
+  printing,
+  sheetMetal,
+  injection,
   cables,
   assembly,
   rubber,

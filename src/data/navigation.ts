@@ -92,9 +92,18 @@ const CAPABILITY_GROUPS: NavGroup[] = [
   },
 ];
 
+const NAV_IMAGES: Record<string, string> = {
+  'How it works': I.customEngineering,
+  Capabilities: I.heroComponents,
+  Industries: I.controllers,
+  Components: I.controllers,
+  Resources: I.qualityInspection,
+  Company: I.customEngineering,
+};
+
 export const NAV = TEMPLATE_NAV.map((item) => ({
   ...item,
-  image: item.label === 'How it works' ? I.customEngineering : item.label === 'Components' ? I.controllers : item.image,
+  image: NAV_IMAGES[item.label] ?? I.heroComponents,
   sub: SECTION_COPY[item.label] ?? item.sub,
   groups: item.label === 'Capabilities' ? CAPABILITY_GROUPS : item.label === 'Industries' ? [{ title: null, links: [
     { label: 'OEM solutions', desc: 'Components for your own devices, machines and systems', to: '/oem-solutions' },

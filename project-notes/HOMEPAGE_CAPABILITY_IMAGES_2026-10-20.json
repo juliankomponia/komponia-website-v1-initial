@@ -1,0 +1,140 @@
+{
+  "provider": "Higgsfield",
+  "model": "gpt_image_2_5",
+  "date": "2026-10-20",
+  "mode": "Illustrative transparent catalogue photography matching capabilities-20261017; no real products or facilities represented.",
+  "processing": "WebP quality 86, width at most 1600 px, proportions and transparency retained.",
+  "assets": [
+    {
+      "key": "cnc",
+      "prompt": "Photorealistic industrial catalogue photograph of ONE CNC-milled aluminium mounting plate. Simple low rectangular satin silver block with four round counterbored fixing holes, one at each corner, and one shallow rectangular central machined pocket with generous rounded inside corners. Fine circular milling toolpaths visible on the pocket floor, clean chamfered outside edges. All holes vertical, coherent perspective and geometry, no raised ears, no complicated mechanism. Close three-quarter view from about 30 degrees above, soft diffuse studio light from upper left, realistic metal texture and subtle contact shadow. Whole object centered filling 80 percent of a 27:16 landscape composition with clear margins. Transparent background for placement on a light neutral surface. Illustrative generic component. No text, logos, markings, numbers, watermark, people, neon, glow, tools or decorations.",
+      "parameters": {
+        "model": "gpt_image_2_5",
+        "quality": "high",
+        "resolution": "1k",
+        "background": "transparent",
+        "aspect_ratio": "27:16",
+        "count": 1,
+        "prompt": "Photorealistic industrial catalogue photograph of ONE CNC-milled aluminium mounting plate. Simple low rectangular satin silver block with four round counterbored fixing holes, one at each corner, and one shallow rectangular central machined pocket with generous rounded inside corners. Fine circular milling toolpaths visible on the pocket floor, clean chamfered outside edges. All holes vertical, coherent perspective and geometry, no raised ears, no complicated mechanism. Close three-quarter view from about 30 degrees above, soft diffuse studio light from upper left, realistic metal texture and subtle contact shadow. Whole object centered filling 80 percent of a 27:16 landscape composition with clear margins. Transparent background for placement on a light neutral surface. Illustrative generic component. No text, logos, markings, numbers, watermark, people, neon, glow, tools or decorations."
+      },
+      "file": "src/assets/industrial/capabilities-20261020/cnc.webp",
+      "generation_job_id": "5fd8cbab-3243-4a9c-be19-86b27769ecf4",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261020_165948_5fd8cbab-3243-4a9c-be19-86b27769ecf4.png",
+      "source_dimensions": [
+        1296,
+        768
+      ],
+      "source_mode": "RGBA",
+      "source_sha256": "0beb1487659fc024e7e0f039e8057b698022255e7dc33ff115f7b32de2c40019",
+      "output_bytes": 72412,
+      "output_sha256": "d5ca21817c780fc9e8aa8b9289179cc9ae7712b16b12198d6f9befba5717f7bb",
+      "output_dimensions": [
+        1296,
+        768
+      ]
+    },
+    {
+      "key": "printing",
+      "prompt": "Photorealistic industrial catalogue photograph for a capability card. Generic illustrative part, not a real branded product. Match a restrained series of neutral silver and graphite components photographed at a close three-quarter view from about 30 degrees above, with soft diffuse light from upper left, realistic material texture and subtle contact shadow. Whole object centered, filling about 80 percent of a 27:16 landscape composition with clear margins. Transparent background for placement on a light neutral surface. Mechanically plausible, no text, logos, numbers, watermarks, people, tools, neon or glows. One functional 3D-printed PA12 mounting bracket, matte medium grey, gently grainy powder-bed surface. A flat rectangular base with two fixing holes, a reinforced upright rib and an open circular clip for a small tube. Realistic uniform wall thickness and slight rounded edges. No glossy plastic and no markings.",
+      "parameters": {
+        "model": "gpt_image_2_5",
+        "quality": "high",
+        "resolution": "1k",
+        "background": "transparent",
+        "aspect_ratio": "27:16",
+        "count": 1,
+        "prompt": "Photorealistic industrial catalogue photograph for a capability card. Generic illustrative part, not a real branded product. Match a restrained series of neutral silver and graphite components photographed at a close three-quarter view from about 30 degrees above, with soft diffuse light from upper left, realistic material texture and subtle contact shadow. Whole object centered, filling about 80 percent of a 27:16 landscape composition with clear margins. Transparent background for placement on a light neutral surface. Mechanically plausible, no text, logos, numbers, watermarks, people, tools, neon or glows. One functional 3D-printed PA12 mounting bracket, matte medium grey, gently grainy powder-bed surface. A flat rectangular base with two fixing holes, a reinforced upright rib and an open circular clip for a small tube. Realistic uniform wall thickness and slight rounded edges. No glossy plastic and no markings."
+      },
+      "file": "src/assets/industrial/capabilities-20261020/printing.webp",
+      "generation_job_id": "ef105816-1a83-46d8-a115-b48a789bbdfd",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261020_165655_ef105816-1a83-46d8-a115-b48a789bbdfd.png",
+      "source_dimensions": [
+        1296,
+        768
+      ],
+      "source_mode": "RGBA",
+      "source_sha256": "6a8b2e3ccc35370e9c7a72c3af852942fda78cb91f84b63b5828ab625617a681",
+      "output_bytes": 101634,
+      "output_sha256": "7f0ebaaa9d4e6af96b2e4b67258a6ccadc3d3b7ebe38c85046c0075b80bde2f7",
+      "output_dimensions": [
+        1296,
+        768
+      ]
+    },
+    {
+      "key": "sheetMetal",
+      "prompt": "Photorealistic industrial catalogue photograph for a capability card. Generic illustrative part, not a real branded product. Match a restrained series of neutral silver and graphite components photographed at a close three-quarter view from about 30 degrees above, with soft diffuse light from upper left, realistic material texture and subtle contact shadow. Whole object centered, filling about 80 percent of a 27:16 landscape composition with clear margins. Transparent background for placement on a light neutral surface. Mechanically plausible, no text, logos, numbers, watermarks, people, tools, neon or glows. One laser-cut and bent sheet-metal mounting tray, satin silver steel, consistent thin wall thickness, rectangular flat base and two folded 90-degree side flanges with four simple circular mounting holes. Plausible bend radii, clean deburred edges and subtle brushed texture. The complete single piece is visible.",
+      "parameters": {
+        "model": "gpt_image_2_5",
+        "quality": "high",
+        "resolution": "1k",
+        "background": "transparent",
+        "aspect_ratio": "27:16",
+        "count": 1,
+        "prompt": "Photorealistic industrial catalogue photograph for a capability card. Generic illustrative part, not a real branded product. Match a restrained series of neutral silver and graphite components photographed at a close three-quarter view from about 30 degrees above, with soft diffuse light from upper left, realistic material texture and subtle contact shadow. Whole object centered, filling about 80 percent of a 27:16 landscape composition with clear margins. Transparent background for placement on a light neutral surface. Mechanically plausible, no text, logos, numbers, watermarks, people, tools, neon or glows. One laser-cut and bent sheet-metal mounting tray, satin silver steel, consistent thin wall thickness, rectangular flat base and two folded 90-degree side flanges with four simple circular mounting holes. Plausible bend radii, clean deburred edges and subtle brushed texture. The complete single piece is visible."
+      },
+      "file": "src/assets/industrial/capabilities-20261020/sheetMetal.webp",
+      "generation_job_id": "a1ad5800-958e-45ad-ac37-7884def4a103",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261020_165655_a1ad5800-958e-45ad-ac37-7884def4a103.png",
+      "source_dimensions": [
+        1296,
+        768
+      ],
+      "source_mode": "RGBA",
+      "source_sha256": "86c297a4743b07814a01cb7585235a85de45924a8acef7078dfc7b87f62ec24f",
+      "output_bytes": 80344,
+      "output_sha256": "9f7200384eef0b7817a8846af4eb206b208bce0dfd1abb0928bf3cd8b0b8c277",
+      "output_dimensions": [
+        1296,
+        768
+      ]
+    },
+    {
+      "key": "injection",
+      "prompt": "Photorealistic industrial catalogue photograph for a capability card. Generic illustrative part, not a real branded product. Match a restrained series of neutral silver and graphite components photographed at a close three-quarter view from about 30 degrees above, with soft diffuse light from upper left, realistic material texture and subtle contact shadow. Whole object centered, filling about 80 percent of a 27:16 landscape composition with clear margins. Transparent background for placement on a light neutral surface. Mechanically plausible, no text, logos, numbers, watermarks, people, tools, neon or glows. One injection-moulded light-grey plastic enclosure half, viewed into the open inner side. Simple rectangular shape with uniform walls, rounded corners, four screw bosses and restrained reinforcing ribs. Show a small realistic trimmed gate vestige on the outside edge facing the camera, and subtle circular ejector marks inside. Smooth matte moulded surface, credible draft and fillets.",
+      "parameters": {
+        "model": "gpt_image_2_5",
+        "quality": "high",
+        "resolution": "1k",
+        "background": "transparent",
+        "aspect_ratio": "27:16",
+        "count": 1,
+        "prompt": "Photorealistic industrial catalogue photograph for a capability card. Generic illustrative part, not a real branded product. Match a restrained series of neutral silver and graphite components photographed at a close three-quarter view from about 30 degrees above, with soft diffuse light from upper left, realistic material texture and subtle contact shadow. Whole object centered, filling about 80 percent of a 27:16 landscape composition with clear margins. Transparent background for placement on a light neutral surface. Mechanically plausible, no text, logos, numbers, watermarks, people, tools, neon or glows. One injection-moulded light-grey plastic enclosure half, viewed into the open inner side. Simple rectangular shape with uniform walls, rounded corners, four screw bosses and restrained reinforcing ribs. Show a small realistic trimmed gate vestige on the outside edge facing the camera, and subtle circular ejector marks inside. Smooth matte moulded surface, credible draft and fillets."
+      },
+      "file": "src/assets/industrial/capabilities-20261020/injection.webp",
+      "generation_job_id": "35a357b8-4a40-44a1-9749-b6bef3744fb0",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261020_165656_35a357b8-4a40-44a1-9749-b6bef3744fb0.png",
+      "source_dimensions": [
+        1296,
+        768
+      ],
+      "source_mode": "RGBA",
+      "source_sha256": "ddd6ffac162d48007a7f3a6a79053053dc85c1aca2c9ae98a63ddb241254a0c9",
+      "output_bytes": 41888,
+      "output_sha256": "2bf69c1179ab7bf317c3c37a52eabe53f8f75655d76abf2bf9829b40fffe568d",
+      "output_dimensions": [
+        1296,
+        768
+      ]
+    }
+  ],
+  "rejected_assets": [
+    {
+      "key": "cnc",
+      "prompt": "Photorealistic industrial catalogue photograph for a capability card. Generic illustrative part, not a real branded product. Match a restrained series of neutral silver and graphite components photographed at a close three-quarter view from about 30 degrees above, with soft diffuse light from upper left, realistic material texture and subtle contact shadow. Whole object centered, filling about 80 percent of a 27:16 landscape composition with clear margins. Transparent background for placement on a light neutral surface. Mechanically plausible, no text, logos, numbers, watermarks, people, tools, neon or glows. One CNC-milled aluminium bracket, with a rectangular base, two raised parallel ears, a clean bored through-hole aligned across the ears, and two countersunk fixing holes in the base. Satin silver aluminium with subtle milling toolpaths, credible fillets and chamfered edges. Simple coherent manufacturable geometry.",
+      "parameters": {
+        "model": "gpt_image_2_5",
+        "quality": "high",
+        "resolution": "1k",
+        "background": "transparent",
+        "aspect_ratio": "27:16",
+        "count": 1,
+        "prompt": "Photorealistic industrial catalogue photograph for a capability card. Generic illustrative part, not a real branded product. Match a restrained series of neutral silver and graphite components photographed at a close three-quarter view from about 30 degrees above, with soft diffuse light from upper left, realistic material texture and subtle contact shadow. Whole object centered, filling about 80 percent of a 27:16 landscape composition with clear margins. Transparent background for placement on a light neutral surface. Mechanically plausible, no text, logos, numbers, watermarks, people, tools, neon or glows. One CNC-milled aluminium bracket, with a rectangular base, two raised parallel ears, a clean bored through-hole aligned across the ears, and two countersunk fixing holes in the base. Satin silver aluminium with subtle milling toolpaths, credible fillets and chamfered edges. Simple coherent manufacturable geometry."
+      },
+      "file": "src/assets/industrial/capabilities-20261020/cnc.webp",
+      "generation_job_id": "0a09b97e-4bbe-4efc-a5fb-16697ef33ef5",
+      "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Iaj8LjdxCKY32Y9FSPgw0uK0nF/hf_20261020_165655_0a09b97e-4bbe-4efc-a5fb-16697ef33ef5.png",
+      "reason": "Rejected during visual inspection: only one of two bracket ears had a visible bore, creating ambiguous mechanical geometry."
+    }
+  ]
+}
