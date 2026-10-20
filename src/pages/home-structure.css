@@ -60,7 +60,7 @@
 .kp-home .kp-capability__specs dt { margin-bottom: 5px; font-size: 10px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: #626665; }
 .kp-home .kp-capability__specs dd { margin: 0; color: var(--kp-ink); font-size: 12px; line-height: 1.6; }
 
-/* Experience remains in place, with a neutral surface and strong typography. */
+/* Experience begins the final chapter, with a neutral surface and strong typography. */
 .kp-home .kp-heritage { padding-block: 48px; background: #fff; border-bottom: 1px solid var(--kp-line); }
 .kp-home .kp-heritage__banner { background: transparent; grid-template-columns: var(--kp-grid); gap: 24px; }
 .kp-home .kp-heritage__date { grid-column: span 4; border-color: var(--kp-line); }
@@ -71,10 +71,9 @@
 .kp-home .kp-heritage__copy > p:not(.kp-eyebrow) { color: var(--kp-body); }
 .kp-home .kp-heritage .kp-text-link { color: var(--kp-ink); }
 .kp-home .kp-heritage__date-line { height: 1px; background: var(--kp-ink); border-radius: 0; }
-.kp-home #page-section-why-komponia .kp-eyebrow { color: var(--kp-ink); }
-.kp-home #page-section-why-komponia .kp-eyebrow::before,
 .kp-home .kp-supply .kp-eyebrow::before,
 .kp-home .kp-environment .kp-eyebrow::before { height: 16px; width: 18px; flex-basis: 18px; border-radius: 5px; background: var(--kp-yellow); }
+.kp-home .kp-supply-benefits { margin-top: 36px; scroll-margin-top: 137px; }
 .kp-home .kp-benefit__toggle { color: var(--kp-ink); }
 .kp-home .kp-benefit[data-open="true"] .kp-text-link { color: var(--kp-yellow); }
 .kp-home .kp-network .kp-eyebrow { color: #fff; }
@@ -113,7 +112,6 @@
 .kp-home .kp-procurement h4 { margin: 0 0 10px; color: var(--kp-ink); font-size: 14px; font-weight: 600; }
 .kp-home .kp-procurement__item p { margin: 0 0 14px; font-size: 12px; line-height: 1.7; }
 .kp-home .kp-procurement .kp-text-link { font-size: 11px; gap: 8px; }
-.kp-home .kp-closing .kp-chapter { color: #fff; }
 .kp-home .kp-closing__experience { display: flex; width: fit-content; color: #fff; margin-top: 22px; }
 .kp-home .kp-closing .kp-button--white { background: #fff; border-color: #fff; color: var(--kp-blue); }
 
@@ -124,6 +122,7 @@
   .kp-home .kp-feature__copy { padding-right: 0; }
 }
 @media (max-width: 767px) {
+  .kp-home .kp-supply-benefits { scroll-margin-top: 133px; }
   .site-app[data-page="home"] { --kp-gutter: 20px; }
   .kp-home > section:not(.home-hero)::before { left: 8px; }
   .kp-home .kp-chapter { margin-bottom: 28px; gap: 9px; font-size: 10px; letter-spacing: .1em; }

@@ -18,13 +18,11 @@ import './home-graphics.css';
 
 const NetworkDiagram = lazy(() => import('../components/home-graphics/NetworkDiagram'));
 const SupplyRhythm = lazy(() => import('../components/home-graphics/SupplyRhythm'));
-const ConnectionLine = lazy(() => import('../components/home-graphics/ConnectionLine'));
 const TechnicalDrawing = lazy(() => import('../components/home-graphics/TechnicalDrawing'));
 const ExplodedAssembly = lazy(() => import('../components/home-graphics/ExplodedAssembly'));
 const ClosingAssembly = lazy(() => import('../components/home-graphics/ClosingAssembly'));
 const HeritageTimeline = lazy(() => import('../components/home-graphics/HeritageTimeline'));
 const InquiryRoutes = lazy(() => import('../components/home-graphics/InquiryRoutes'));
-const ProcessBand = lazy(() => import('../components/home-graphics/ProcessBand'));
 const applicationDrawings = ['controller', 'connector', 'machined', 'sensor'] as const;
 
 function SectionHeading({ title, children, eyebrow, split = false }: { title: string; children: ReactNode; eyebrow?: string; split?: boolean }) {
@@ -47,28 +45,6 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="kp-heritage" id="wts-experience" aria-label="The experience behind Komponia">
-      <div className="kp-container">
-        <div className="kp-heritage__banner">
-          <div className="kp-heritage__date"><span>WTS experience since</span><strong>1997</strong><DeferredGraphic className="kp-graphic--heritage"><HeritageTimeline /></DeferredGraphic></div>
-          <div className="kp-heritage__copy">
-            <p className="kp-eyebrow">The experience behind Komponia</p>
-            <h2>{H.heritage.title}</h2><p>{H.heritage.intro}</p>
-            <Link to="/about" className="kp-text-link">About Komponia <ArrowRight size={18} aria-hidden="true" /></Link>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section className="kp-section" id="page-section-why-komponia">
-      <div className="kp-container">
-        <SectionHeading split eyebrow="Purchasing volume & call-offs" title={H['why-komponia'].title}>{H['why-komponia'].intro}</SectionHeading>
-        <BenefitStories />
-        <div className="kp-actions"><Link to="/contact" className="kp-button">Prepare an inquiry <ArrowRight size={18} aria-hidden="true" /></Link></div>
-        <details className="kp-source"><summary>Transport-cost reference</summary><SourceNote note={H['why-komponia'].footnote} /></details>
-      </div>
-    </section>
-
     <section className="kp-section kp-custom" id="page-section-custom-solutions">
       <div className="kp-container kp-feature">
         <div className="kp-feature__copy">
@@ -88,15 +64,12 @@ export default function Home() {
       </div>
     </section>
 
-    <div className="kp-container kp-process-band-container"><DeferredGraphic className="kp-graphic--band" label="CNC milling, sheet metal, sensors, controllers, connectors and custom assemblies."><ProcessBand /></DeferredGraphic></div>
-
     <section className="kp-section" id="page-section-how-we-work" data-section-label="03 How we work">
       <div className="kp-container">
         <HomeChapter number="03" title="How we work" />
         <SectionHeading split title={H.process.title}>{H.process.intro}</SectionHeading>
         <LifecycleTabs />
         <ProcurementReadiness />
-        <DeferredGraphic className="kp-graphic--connection"><ConnectionLine /></DeferredGraphic>
       </div>
     </section>
 
@@ -119,6 +92,47 @@ export default function Home() {
       </div>
     </section>
 
+    <section className="kp-section kp-supply-section" id="page-section-ongoing-supply" data-section-label="04 How we deliver">
+      <div className="kp-container"><HomeChapter number="04" title="How we deliver" discipline="supply" /></div>
+      <div className="kp-container kp-feature kp-supply">
+        <figure className="kp-feature__media kp-supply__media"><figcaption>Series quantities.<br />Flexible call-offs.</figcaption><img src={I.ongoingSupply} alt="Illustrative preparation and packing of component deliveries" loading="lazy" /></figure>
+        <div className="kp-feature__copy">
+          <p className="kp-eyebrow">Ongoing supply</p>
+          <h2>{H['recurring-supply'].title}</h2><p>{H['recurring-supply'].intro}</p>
+          <SupplyDetails />
+          <Link to="/production-orders" className="kp-text-link">Explore recurring supply <ArrowRight size={18} aria-hidden="true" /></Link>
+        </div>
+      </div>
+      <div className="kp-container kp-supply-benefits" id="page-section-why-komponia">
+        <BenefitStories />
+        <div className="kp-actions"><Link to="/contact" className="kp-button">Prepare an inquiry <ArrowRight size={18} aria-hidden="true" /></Link></div>
+        <details className="kp-source"><summary>Transport-cost reference</summary><SourceNote note={H['why-komponia'].footnote} /></details>
+      </div>
+      <div className="kp-container"><DeferredGraphic className="kp-graphic--supply" label="A larger production batch divided into agreed call-offs; schematic only."><SupplyRhythm /></DeferredGraphic></div>
+    </section>
+
+    <section className="kp-section kp-environment" id="page-section-environment">
+      <div className="kp-container">
+        <SectionHeading split eyebrow="Environment & resources" title={H.environment.title}>{H.environment.intro}</SectionHeading>
+        <ul className="kp-environment__points">{H.environment.bullets.map(text => <li key={text}><Check size={20} aria-hidden="true"/><span>{text}</span></li>)}</ul>
+        <div className="kp-actions"><Link to={H.environment.cta.to} className="kp-text-link">{H.environment.cta.label}<ArrowRight size={18} aria-hidden="true" /></Link></div>
+      </div>
+    </section>
+
+    <section className="kp-heritage" id="wts-experience" data-section-label="05 Experience & inquiry" aria-label="The experience behind Komponia">
+      <div className="kp-container">
+        <HomeChapter number="05" title="Experience & inquiry" discipline="neutral" />
+        <div className="kp-heritage__banner">
+          <div className="kp-heritage__date"><span>WTS experience since</span><strong>1997</strong><DeferredGraphic className="kp-graphic--heritage"><HeritageTimeline /></DeferredGraphic></div>
+          <div className="kp-heritage__copy">
+            <p className="kp-eyebrow">The experience behind Komponia</p>
+            <h2>{H.heritage.title}</h2><p>{H.heritage.intro}</p>
+            <Link to="/about" className="kp-text-link">About Komponia <ArrowRight size={18} aria-hidden="true" /></Link>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section className="kp-section kp-applications">
       <div className="kp-container">
         <SectionHeading split eyebrow="Built around your application" title={H.applications.title}>{H.applications.intro}</SectionHeading>
@@ -132,30 +146,7 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="kp-section kp-supply-section" id="page-section-ongoing-supply" data-section-label="04 How we deliver">
-      <div className="kp-container"><HomeChapter number="04" title="How we deliver" discipline="supply" /></div>
-      <div className="kp-container kp-feature kp-supply">
-        <figure className="kp-feature__media kp-supply__media"><figcaption>Series quantities.<br />Flexible call-offs.</figcaption><img src={I.ongoingSupply} alt="Illustrative preparation and packing of component deliveries" loading="lazy" /></figure>
-        <div className="kp-feature__copy">
-          <p className="kp-eyebrow">Ongoing supply</p>
-          <h2>{H['recurring-supply'].title}</h2><p>{H['recurring-supply'].intro}</p>
-          <SupplyDetails />
-          <Link to="/production-orders" className="kp-text-link">Explore recurring supply <ArrowRight size={18} aria-hidden="true" /></Link>
-        </div>
-      </div>
-      <div className="kp-container"><DeferredGraphic className="kp-graphic--supply" label="A larger production batch divided into agreed call-offs; schematic only."><SupplyRhythm /></DeferredGraphic></div>
-    </section>
-
-    <section className="kp-section kp-environment" id="page-section-environment">
-      <div className="kp-container">
-        <SectionHeading split eyebrow="Environment & resources" title={H.environment.title}>{H.environment.intro}</SectionHeading>
-        <ul className="kp-environment__points">{H.environment.bullets.map(text => <li key={text}><Check size={20} aria-hidden="true"/><span>{text}</span></li>)}</ul>
-        <div className="kp-actions"><Link to={H.environment.cta.to} className="kp-text-link">{H.environment.cta.label}<ArrowRight size={18} aria-hidden="true" /></Link></div>
-      </div>
-    </section>
-
-    <section className="kp-closing" id="experience-and-inquiry" data-section-label="05 Experience & inquiry">
-      <div className="kp-container"><HomeChapter number="05" title="Experience & inquiry" discipline="neutral" /></div>
+    <section className="kp-closing" id="experience-and-inquiry">
       <div className="kp-container kp-closing__inner">
         <div className="kp-closing__copy">
           <h2>{H['closing-cta'].title}</h2><p>{H['closing-cta'].intro}</p>

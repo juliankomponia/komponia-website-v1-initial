@@ -43,6 +43,8 @@
 }
 
 .kp-closing-assembly [data-discipline='engineering'] {
+  --module-color: #fff;
+  fill: #fff;
   stroke: #fff;
 }
 

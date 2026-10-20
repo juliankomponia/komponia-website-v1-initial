@@ -87,49 +87,9 @@
   letter-spacing: 0.08em;
 }
 
-.kp-connection-line {
-  width: 100%;
-  height: 52px;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.kp-connection-line svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.kp-connection-line path {
-  fill: none;
-  stroke: var(--connection-color, #3e5af5);
-  stroke-width: 1.5;
-  stroke-linecap: butt;
-  stroke-linejoin: miter;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  vector-effect: non-scaling-stroke;
-  transition: stroke-dashoffset 900ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.kp-connection-line[data-revealed='true'] path {
-  stroke-dashoffset: 0;
-}
-
-@media (max-width: 760px) {
-  .kp-connection-line path {
-    stroke-dashoffset: 0;
-    transition: none;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .kp-graphic-module {
     transition: none;
   }
 
-  .kp-connection-line path {
-    stroke-dashoffset: 0;
-    transition: none;
-  }
 }

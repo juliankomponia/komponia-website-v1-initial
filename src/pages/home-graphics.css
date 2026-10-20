@@ -1,11 +1,9 @@
 /* Technical graphics share a datum, a 1.5 px stroke and discipline colours. */
 .kp-home .kp-deferred-graphic { min-width: 0; }
-.kp-home .kp-graphic--process { min-height: 116px; }
 .kp-home .kp-graphic--network { min-height: 380px; align-self: center; }
 .kp-home .kp-graphic--supply { min-height: 240px; margin-top: 36px; }
 .kp-home .kp-graphic--exploded { min-height: 540px; }
 .kp-home .kp-graphic--heritage { width: 100%; min-height: 35px; margin-top: 18px; }
-.kp-home .kp-graphic--band { min-height: 148px; }
 .kp-home .kp-graphic--inquiry { min-height: 410px; margin-top: 64px; }
 .kp-home .inquiry-routes__intro p { margin: 0; font-size: 13px; }
 .kp-home .kp-closing .kp-closing-assembly { margin: 0; }
@@ -51,7 +49,6 @@
 }
 @media (max-width: 767px) {
   .kp-home .kp-hero-datum { display: none; }
-  .kp-home .kp-graphic--process { min-height: 90px; }
   .kp-home .kp-graphic--network { min-height: 360px; order: 2; }
   .kp-home .kp-graphic--supply { min-height: 220px; }
   .kp-home .kp-closing__mark { max-width: 240px; min-height: 240px; }

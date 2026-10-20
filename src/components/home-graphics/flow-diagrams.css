@@ -11,33 +11,6 @@
 .kp-flow--quality { color: #d4b9f3; }
 .kp-flow--supply { color: #f7d44b; }
 
-/* A graphic companion to the existing keyboard-operated lifecycle tabs. */
-.kp-process-diagram {
-  width: 100%;
-  min-width: 0;
-  margin: 0 0 20px;
-  color: #1f1f1d;
-}
-
-.kp-process-diagram__track { position: relative; padding-bottom: 18px; }
-.kp-process-diagram__lines { position: absolute; inset: 0 0 auto; width: 100%; height: 48px; }
-.kp-process-diagram__baseline { color: #d9d9d1; }
-.kp-process-diagram__progress { transition: stroke-dashoffset 340ms ease; }
-.kp-process-diagram__nodes { position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
-.kp-process-diagram__node { display: flex; flex-direction: column; align-items: center; gap: 8px; }
-.kp-process-diagram__module { display: grid; place-items: center; width: 48px; height: 48px; background: #fff; }
-.kp-process-diagram__module > svg { display: block; width: 30px; height: 30px; opacity: .28; transition: opacity 200ms ease, transform 200ms ease; }
-.kp-process-diagram__node[data-passed="true"] .kp-process-diagram__module > svg { opacity: .65; }
-.kp-process-diagram__node[data-active="true"] .kp-process-diagram__module > svg { opacity: 1; transform: scale(1.12); }
-.kp-process-diagram__number { color: #777970; font-size: 11px; font-variant-numeric: tabular-nums; }
-.kp-process-diagram__node[data-active="true"] .kp-process-diagram__number { color: #1f1f1d; font-weight: 600; }
-.kp-process-diagram__caption { display: flex; align-items: baseline; justify-content: space-between; gap: 12px 24px; padding-block: 12px; border-top: 1px solid #deded6; font-size: 12px; line-height: 1.65; }
-.kp-process-diagram__caption > span:first-child { color: #76786f; font-variant-numeric: tabular-nums; }
-.kp-process-diagram__current, .kp-process-diagram__caption strong { color: #1f1f1d; font-weight: 500; }
-.kp-process-diagram__caption strong { margin-left: 14px; }
-.kp-process-diagram__scope { color: #65675f; text-align: right; }
-.kp-process-diagram[data-revealed="false"] .kp-process-diagram__progress { stroke-dashoffset: 1; }
-
 /* Six process nodes and one point of coordination; no geographic or scale claims. */
 .kp-network-diagram {
   width: 100%;
@@ -90,9 +63,6 @@
 .kp-supply-rhythm > figcaption { margin-top: 18px; color: #64675d; font-size: 10px; line-height: 1.7; }
 
 @media (max-width: 767px) {
-  .kp-process-diagram__caption { align-items: flex-start; flex-direction: column; gap: 4px; }
-  .kp-process-diagram__scope { text-align: left; }
-  .kp-process-diagram__module { width: 40px; }
   .kp-network-diagram__canvas { gap: 55px 10px; }
   .kp-network-diagram__node { font-size: 11px; }
   .kp-network-diagram__hub { width: 66%; }
@@ -103,8 +73,6 @@
   .kp-supply-rhythm__connections path { stroke-dashoffset: 0; transition: none; }
   .kp-supply-rhythm__batch > svg,
   .kp-supply-rhythm__delivery { transform: none; opacity: 1; transition: none; }
-  .kp-process-diagram__progress,
-  .kp-process-diagram__module > svg { transition: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -112,6 +80,4 @@
   .kp-supply-rhythm__connections path { stroke-dashoffset: 0; transition: none; }
   .kp-supply-rhythm__batch > svg,
   .kp-supply-rhythm__delivery { transform: none; opacity: 1; transition: none; }
-  .kp-process-diagram__progress,
-  .kp-process-diagram__module > svg { transition: none; }
 }

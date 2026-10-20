@@ -12,7 +12,6 @@ import DeferredGraphic from './DeferredGraphic';
 import type { TechnicalDrawingVariant } from './home-graphics/TechnicalDrawing';
 
 const TechnicalDrawing = lazy(() => import('./home-graphics/TechnicalDrawing'));
-const ProcessDiagram = lazy(() => import('./home-graphics/ProcessDiagram'));
 const capabilityDrawings: Record<string, TechnicalDrawingVariant> = {
   components: 'connector', cnc: 'machined', printing: 'machined', sheetMetal: 'sheet',
   injection: 'controller', cables: 'connector', assembly: 'controller', rubber: 'connector',
@@ -194,7 +193,6 @@ export function LifecycleTabs() {
   }
 
   return <div className="kp-lifecycle">
-    <DeferredGraphic className="kp-graphic--process" label="Requirement, technical review, quotation, samples and release, series supply."><ProcessDiagram activeStep={active} /></DeferredGraphic>
     <div className="kp-lifecycle__tabs" role="tablist" aria-label="From inquiry to series supply">
       {lifecycleStages.map((stage, index) => <button
         ref={element => { tabs.current[index] = element; }}
