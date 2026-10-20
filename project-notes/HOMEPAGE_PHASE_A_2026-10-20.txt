@@ -1,0 +1,128 @@
+KOMPONIA HOMEPAGE — PHASE A
+20. Oktober 2026
+Branch: codex/homepage-structure-wow
+Ausgangsstand: 9ef599c / codex/component-switch-preview
+Status: Phase A implementiert; visuelle Zustimmung ausstehend. Phase B/C nicht begonnen.
+
+UMGESETZT, NACH KAPITEL
+01 Einstieg: Engineered steht zuerst, Procurement danach. Vier Bilder und vorhandene
+Bedienung bleiben. Das erfundene WEDER-Logo wurde per built-in Imagegen retuschiert.
+Das Procurement-Bild mit Bildschirm wurde durch das vorhandene illustrative Teilemotiv
+ersetzt. Primärer CTA: Prepare an inquiry. Statischer Kapitelmarker und Bezugslinie.
+
+02 Bauteile: Kapitelstart am Materialwechsel. Radialer Übergang unverändert; beide
+ComponentSwitch-Dateien sind identisch zu 9ef599c. Die zwölf Fähigkeiten zeigen
+Process / Application / To specify, ohne neue numerische Leistungsversprechen.
+8→12-Erweiterung und sämtliche Kartenlinks bleiben. Custom solutions ist knapper;
+sekundäre Links sind optisch von Anfrage-Buttons unterschieden.
+
+03 Zusammenarbeit: Kapitelstart beim bestehenden Prozess. Kompakte Einkaufsleiste
+mit persönlichem Ansprechpartner, Klärung der Dokumentationsanforderungen sowie
+Abrufen/Safety Stock. Qualität liegt auf Weiß, mit Lavendel-Modul und feinen Akzenten.
+Das Netzwerk bleibt auf Ink. Bestehende Tabs, Akkordeons und Qualitätskarten bleiben.
+
+04 Versorgung: Gelber Kapitelmarker und Bildrahmen. Das frühe Why-Komponia-Kapitel
+heißt jetzt Production quantities. Agreed call-offs.; Bündelung und Abrufe liefern
+den Kontext für das Preisargument. Umwelt bleibt mit Versorgung verbunden.
+
+05 Erfahrung und Anfrage: Kapitelmarker im blauen Abschluss, einheitlicher Anfrage-CTA
+und Link zum WTS-Hintergrund. Das 1997-Band bleibt an seiner ursprünglichen Stelle,
+jetzt auf neutralem Hintergrund. Die Aussage lautet weiterhin WTS experience since 1997.
+
+STRUKTUR UND ZUSAMMENLEGUNGEN
+Keine Abschnitte entfernt oder zusammengelegt. Bestehende Reihenfolge unverändert.
+Die im Brief gewünschte thematische Kapitelzuordnung kollidiert mit der ebenfalls
+vorgegebenen Reihenfolge. Deshalb fünf fortlaufende Kapitelstarts bei Hero, Concept,
+Prozess, Supply und Abschluss; WTS, Why Komponia und Anwendungen bleiben an ihren
+bisherigen Stellen als thematische Verbindungen. Die Seitennavigation hat fünf
+Kapitelziele; frühere Abschnitts-IDs bleiben vorhanden. Hauptnavigation unverändert.
+Das 12-Spalten-Raster und gemeinsame Außenabstände werden in der neuen, ausschließlich
+für die Homepage geltenden home-structure.css geführt.
+
+GRAFIKEN UND ANIMATIONEN
+Phase A ergänzt statische Kapitelmodule, Bezugslinien und disziplinbezogene Marker.
+Keine neuen tragenden Animationen, keine Bibliothek, kein Video, kein Lottie.
+Plan für spätere Phasen, noch NICHT implementiert:
+01 angeschnittene Markenkontur / gezeichnete Bezugslinie am Hero;
+02 technische Konturen und Explosionsdarstellung;
+03 Prozessdiagramm und abstraktes Verfahrensnetz;
+04 schematischer Supply-Rhythmus;
+05 einmalige Modul-Zusammensetzung und Anfrage-Weiche; Verfahrensband zwischen Kapiteln.
+Der bewusst verworfene blaue Scan-Strich wurde nicht aktiviert.
+
+BELEGE UND INHALTSGRENZEN
+Stärkste interne Quelle: ../Unternehmensstrategie/Komponia_Sourcura_Strategie/
+stage13_komponia.md, insbesondere Zeilen 18, 24–38, 48–54.
+Dort sind von Julian bestätigte Leistungen ausdrücklich von offenen Leistungsgrenzen
+getrennt. Persönlicher Ansprechpartner: Zeile 37. Klärung von Unterlagen: Zeile 33.
+Safety Stock/Abrufe: Zeilen 34, 48, 53. Keine pauschale Dokumentenlieferung versprochen.
+Die Kartenzeilen verdichten bestehende Angaben in home-stand2.json, capability-pages.json,
+CncMachining.tsx, ThreeDPrinting.tsx, SheetMetal.tsx und InjectionMolding.tsx. Sie sind
+Prozessbeschreibungen und Anfrageanforderungen, keine unabhängig geprüften Leistungsdaten.
+Die ursprünglichen Beschreibungen bleiben in home-stand2.json und den Unterseiten.
+
+Referenzen, am 20.10.2026 gelesen: https://www.hubs.com/, https://www.fictiv.com/,
+https://xometry.eu/en/. Übernommen wurden nur Muster: Spezifikationszeilen, klare
+Prozessschritte, einheitliche CTA-Hierarchie und konkrete Einkaufsinformationen.
+Keine fremden Texte, Fotos, Layouts, Kennzahlen oder Zertifizierungen kopiert.
+
+VON JULIAN ZU BESTÄTIGEN — NICHT ALS NEUE ZUSAGEN VERÖFFENTLICHT
+- Toleranzbereiche, Maßgrenzen, Mindestwandstärken und konkrete Prozess-/Materialfreigaben.
+- Standardlieferzeiten, garantierte Reaktionszeiten, Mindestmengen und Zahlenbereiche.
+- Interne versus Partnerfertigung und nachweisbar verfügbare Verfahren je Produkt.
+- Lieferantenaufnahme-Unterlagen: Inhalt, Verfügbarkeit und Zuständigkeit.
+- Standard-NDA, verbindliche Zeichnungsvertraulichkeit und Freigaben für Partnerzugriff.
+- Automatisch mit jeder Lieferung enthaltene Dokumente, Prüf- oder Materialzeugnisse.
+- Durchgängige Chargenrückverfolgung und etablierte Serien-/Änderungsdokumentation.
+- Akkreditierungen, Zertifizierungen, Vollprüfung oder konkrete Prüfumfänge.
+- Garantierte Einsparungen, Ausfallsicherheit oder autonome/AI-Bestandssteuerung.
+- Veröffentlichbare Kundenbelege, Logos, Partnerstandorte und Maschinen-/Netzwerkzahlen.
+
+PRÜFUNGEN
+Letzter Quellstand: TypeScript + Vite-Produktion-Build erfolgreich; ESLint aller sieben
+geänderten/neuen TS/TSX-Dateien erfolgreich; git diff --check erfolgreich.
+Kein neuer Dependency-Eintrag. Vollständiges ESLint nicht als fehlerfrei behauptet;
+bekannte unabhängige Fehler in components/ui bestehen laut Übergabe.
+
+Browserprüfungen vor der letzten kleinen Rasterangleichung:
+1280, 820, 390 und 320 px: keine Seitenüberbreite, keine überlaufenden Überschriften,
+keine defekten geladenen Bilder, keine erfassten Browserfehler. Visuelle Kontrolle
+von Hero, Bauteilstufe, Karten, Prozess, Einkaufsleiste, Qualität und Mobil-Hero.
+8→12→8 getestet, Prozesstabs per Pfeiltaste, Materialwechsel per Enter bis Real,
+Qualitätskarte geöffnet/geschlossen, sichtbarer Lavendel-Fokus auf dunklem Hintergrund.
+Interne neue Links anhand registrierter Routen geprüft, einschließlich /team-account.
+Eine Kollision des Netzwerkrasters bei 820 px wurde korrigiert und danach gemessen.
+
+OFFENE ABSCHLUSSPRÜFUNG
+Nach diesen Screenshots wurde das gemeinsame 12-Spalten-Raster auch auf Concept,
+Komponenten-Explorer und Prozesspanel angewendet und die Tab-Farbzuordnung präzisiert.
+Dieser letzte CSS-Schritt ist gebaut und im Code geprüft, aber nicht erneut visuell:
+Die Browser-Freigabe für localhost:3000 wurde anschließend ausdrücklich abgelehnt.
+Keine Umgehung oder weitere Browserabfrage durchgeführt.
+
+Reduced Motion ist im Code geprüft: Hero-Autoplay pausiert; Materialwechsel springt
+zum Endzustand; CSS-Animationen/Transitions und Smooth Scrolling sind abgeschaltet.
+Ein tatsächlicher Browserlauf mit emulierter reduzierter Bewegung ist noch offen.
+Der separate Chrome-Test kam nicht über Einrichtung/Browserfreigabe hinaus.
+Keine ungeprüfte Behauptung eines bestandenen Reduced-Motion-Browsertests.
+
+MESSWERTE
+JS Haupt-Bundle vor/nach: 600,06 / 606,58 kB (gzip 161,47 / 162,81 kB).
+Zuwachs JS: 6,52 kB unkomprimiert, 1,34 kB gzip. Bekannter >500-kB-Hinweis bleibt.
+CSS vor/nach: 154,49 / 163,81 kB (gzip 27,00 / 28,43 kB).
+
+Zuletzt gemessene Seitenlänge inkl. Header/Footer, acht Fähigkeiten geschlossen:
+1280 px: vorher 11.644 px, nachher 12.187 px (+543 px / ca. 4,7 %).
+390 px: vorher 20.777 px, nachher 22.458 px (+1.681 px / ca. 8,1 %).
+820 px nachher: 14.139 px; 320 px nachher: 23.215 px.
+Diese Seitenlängen/Screenshots stammen vor der oben genannten letzten Rasterangleichung;
+finale Nachmessung steht zusammen mit der Browserfreigabe aus.
+
+ARTEFAKTE
+homepage-phase-a-2026-10-20/ enthält Vorher-Screenshots bei 1280/390,
+Nachher-Screenshots bei 1280/820/390/320, Qualitätsausschnitt, Layoutmessungen
+und Build-Protokolle. "after" bezeichnet den geprüften Zwischenstand wie oben erläutert.
+HOMEPAGE_PHASE_A_IMAGE_2026-10-20.json enthält Bildherkunft, exakten Imagegen-Prompt,
+Abmessungen, Dateipfad und Hash. Originalbild bleibt erhalten.
+
+Phase B/C warten auf Julians Feedback. Keine abschließende Designfreigabe unterstellt.

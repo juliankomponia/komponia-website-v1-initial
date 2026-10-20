@@ -2,16 +2,17 @@ import { useEffect, useRef, useState, useSyncExternalStore, type KeyboardEvent, 
 import { Link } from 'react-router';
 import { ArrowRight, ArrowUpRight, Check } from 'lucide-react';
 import { HOME_CONTENT as H } from '../data/home-stand2';
-import procurement from '../assets/hero-slides/procurement.jpg';
-import engineered from '../assets/hero-slides/engineered.jpg';
+import HomeChapter from './HomeChapter';
+import procurement from '../assets/industrial/hero-components.webp';
+import engineered from '../assets/hero-slides/engineered-unbranded.jpg';
 import supplyChain from '../assets/hero-slides/supply-chain.jpg';
 import series from '../assets/hero-slides/series.jpg';
 
 const SLIDES = [
-  { label: 'Procurement', image: procurement, alt: 'Illustrative technical procurement scene', width: 2000, height: 1116, ...H.hero.slides.procurement },
-  { label: 'Engineered', image: engineered, alt: 'Illustrative custom engineering scene', width: 1536, height: 1024, ...H.hero.slides.engineered },
-  { label: 'Supply chain', image: supplyChain, alt: 'Illustrative component supply scene', width: 2400, height: 1339, ...H.hero.slides.supplyChain },
-  { label: 'Series', image: series, alt: 'Illustrative recurring series supply scene', width: 2400, height: 1600, ...H.hero.slides.series },
+  { label: 'Engineered', discipline: 'engineering', image: engineered, alt: 'Illustrative custom engineering scene; not a Komponia facility or team', width: 1536, height: 1024, ...H.hero.slides.engineered },
+  { label: 'Procurement', discipline: 'engineering', image: procurement, alt: 'Illustrative selection of metal sleeves, washers and a threaded knob', width: 1024, height: 688, ...H.hero.slides.procurement },
+  { label: 'Supply chain', discipline: 'supply', image: supplyChain, alt: 'Illustrative component supply scene', width: 2400, height: 1339, ...H.hero.slides.supplyChain },
+  { label: 'Series', discipline: 'supply', image: series, alt: 'Illustrative recurring series supply scene', width: 2400, height: 1600, ...H.hero.slides.series },
 ];
 const REDUCED_MOTION = '(prefers-reduced-motion: reduce)';
 
@@ -81,7 +82,7 @@ export default function HomeHero() {
   }
 
   return (
-    <section className="home-hero home-hero--immersive" aria-labelledby="home-hero-title"
+    <section className="home-hero home-hero--immersive" id="homepage-overview" data-section-label="01 Overview" data-discipline={SLIDES[active].discipline} aria-labelledby="home-hero-title"
       onPointerDown={handleGestureStart} onPointerUp={handleGestureEnd}
       onPointerCancel={() => { gestureStart.current = null; setGesturing(false); }}
       onMouseEnter={() => { if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) setHovered(true); }}
@@ -99,6 +100,7 @@ export default function HomeHero() {
       </figure>
       <div className="home-hero-panel">
         <div className="home-hero-copy"><div className="home-hero-copy-inner">
+          <HomeChapter number="01" title="Engineering. Components. Supply." />
           <h1 id="home-hero-title" className="hero-title home-hero-copy-stack">
             {SLIDES.map((slide, index) => (
               <span key={slide.label} data-active={active === index} aria-hidden={active !== index}>

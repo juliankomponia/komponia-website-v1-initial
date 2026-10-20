@@ -1,8 +1,8 @@
 {
   "hero": {
     "cta": {
-      "label": "Discuss your requirements",
-      "to": null
+      "label": "Prepare an inquiry",
+      "to": "/contact"
     },
     "slides": {
       "procurement": {
@@ -48,7 +48,7 @@
     "title": "From concept to\nproduction-ready\ncomponents.",
     "intro": "Bring us a drawing, a sample or an application requirement. We coordinate the technical work, samples and agreed checks to prepare your component for series production.",
     "cta": {
-      "label": "Discuss your component",
+      "label": "Prepare an inquiry",
       "to": "/contact"
     },
     "secondaryCta": {
@@ -220,15 +220,15 @@
     ]
   },
   "custom-solutions": {
-    "title": "From application to the right component",
-    "intro": "Function, interfaces and operating conditions define the task. We assess standard components, adaptations and custom parts, then coordinate the technical work and suitable sources.",
+    "title": "From application to the right component.",
+    "intro": "Start with function, interfaces and operating conditions. We assess standard components, adaptations and custom parts, then coordinate the technical work and suitable sources.",
     "cta": {
       "label": "Explore component options",
       "to": "/components"
     }
   },
   "partners": {
-    "title": "The right source for each requirement",
+    "title": "The right source for each requirement.",
     "intro": "Select sources by component, process and the evidence the application needs. Define responsibilities before the work begins.",
     "cards": [
       {
@@ -267,7 +267,7 @@
     ]
   },
   "process": {
-    "title": "From inquiry to agreed supply",
+    "title": "From inquiry to agreed supply.",
     "intro": "The scope determines the steps. Standard purchases and repeat orders can use existing specifications; samples and qualification are added where required.",
     "steps": [
       {
@@ -347,7 +347,7 @@
     ]
   },
   "component-fields": {
-    "title": "Explore component fields",
+    "title": "Explore component fields.",
     "intro": "Compare the functions, interfaces and installation details that guide component selection.",
     "cards": [
       {
@@ -429,7 +429,7 @@
     ]
   },
   "applications": {
-    "title": "Applications for technical components",
+    "title": "Applications for technical components.",
     "intro": "From temperature control to industrial equipment, component selection starts with the operating conditions and interfaces the component must support.",
     "cards": [
       {
@@ -517,8 +517,8 @@
     }
   },
   "why-komponia": {
-    "title": "Technical expertise. Competitive prices.",
-    "intro": "OEM support and competitive pricing belong together. We combine purchasing power, efficient production quantities and smarter shipping to reduce the cost of your component supply.",
+    "title": "Production quantities. Agreed call-offs.",
+    "intro": "Combine purchasing volume, economical production lots and planned deliveries. Agree larger quantities, then call off what your production needs.",
     "cards": [
       {
         "title": "Shared purchasing power.",

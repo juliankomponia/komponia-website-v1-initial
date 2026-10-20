@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-20",
+  "tool": "built-in image_gen (not CLI)",
+  "operation": "Logo removal from existing illustrative hero image",
+  "input": "src/assets/hero-slides/engineered.jpg",
+  "output": "src/assets/hero-slides/engineered-unbranded.jpg",
+  "width": 1536,
+  "height": 1024,
+  "encoding": "JPEG quality 86 via macOS sips",
+  "sha256": "68bacefec162d574b1154af59bb91f893d1f192e79e865d1a82c1a709cb3aa53",
+  "prompt": "Use case: precise-object-edit.\nAsset type: existing Komponia homepage hero photograph; surgical brand-removal retouch.\nInput image 1 is the EDIT TARGET.\nPrimary request: Remove the complete fictional WEDER embroidered logo on the front chest of the foreground man's navy-blue work jacket: remove the blue/red geometric mark, the white WEDER lettering, the smaller red TRADING & SERVICE text, and the small white decorative line. Replace ONLY those embroidered pixels and their immediate edges with seamless plain navy-blue jacket fabric matching the surrounding weave, folds, lighting, and shading. Preserve the pocket seam beneath the logo.\nConstraints: Change only the logo/text area. Keep every other part of this photograph unchanged: all three people, their exact faces, expressions, hair, safety glasses, pose, anatomy, clothing shape, workshop, machinery, tools, foreground objects, composition, crop, depth of field, colors, exposure, and lighting. Preserve original 1536 by 1024 landscape dimensions and 3:2 aspect ratio. Do not add or replace any branding. No new objects, no added text, no watermark. The result should look identical to the supplied image except that the navy jacket is completely unbranded.",
+  "scope": "Illustrative scene; not evidence of Komponia facilities, staff or customer products. Original retained.",
+  "procurementReplacement": {
+    "asset": "src/assets/industrial/hero-components.webp",
+    "operation": "Existing project illustration reused; no generation",
+    "replaces": "src/assets/hero-slides/procurement.jpg",
+    "reason": "Remove people-at-monitor motif while retaining four hero slides."
+  }
+}

@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router';
 import ComponentSwitch from './ComponentSwitch';
+import HomeChapter from './HomeChapter';
 import { BrandConstruction } from './HomeBrandMotifs';
 import { componentPairs } from '../data/component-pairs';
 import { HOME_CONTENT } from '../data/home-stand2';
@@ -11,8 +12,9 @@ const component = componentPairs.find(pair => pair.slug === content.component.sl
 
 export default function ConceptToProduction() {
   return (
-    <section className="home-concept" id="concept-to-production" aria-labelledby="concept-to-production-title">
+    <section className="home-concept" id="concept-to-production" data-section-label="02 What we build" aria-labelledby="concept-to-production-title">
       <div className="wrap-orig home-concept__inner">
+        <HomeChapter number="02" title="What we build" />
         <div className="home-concept__main">
           <div className="home-concept__copy">
             <p className="komponia-label">{content.eyebrow}</p>

@@ -2,6 +2,7 @@ import { useId, useRef, useState, type KeyboardEvent } from 'react';
 import { ArrowRight, Minus, Plus } from 'lucide-react';
 import { Link } from 'react-router';
 import { CAPABILITY_IMAGES } from '../data/capability-images';
+import { CAPABILITY_SPECIFICATIONS } from '../data/capability-specifications';
 import { HOME_CONTENT as H } from '../data/home-stand2';
 import { INDUSTRIAL_IMAGES as I } from '../data/home-stand2-images';
 import benefitComponents from '../assets/industrial/capability-heroes-20261017/components.webp';
@@ -22,7 +23,11 @@ export function CapabilityCollection() {
         </figure>
         <div className="kp-capability__copy">
           <h3>{card.title}<ArrowRight size={16} aria-hidden="true" /></h3>
-          <p>{card.desc}</p>
+          <dl className="kp-capability__specs">
+            <div><dt>Process</dt><dd>{CAPABILITY_SPECIFICATIONS[card.media].process}</dd></div>
+            <div><dt>Application</dt><dd>{CAPABILITY_SPECIFICATIONS[card.media].application}</dd></div>
+            <div><dt>To specify</dt><dd>{CAPABILITY_SPECIFICATIONS[card.media].specify}</dd></div>
+          </dl>
         </div>
       </Link>)}
     </div>
@@ -31,7 +36,7 @@ export function CapabilityCollection() {
         {expanded ? 'View fewer capabilities' : `View all ${H.capabilities.cards.length} capabilities`}
         {expanded ? <Minus size={17} aria-hidden="true" /> : <Plus size={17} aria-hidden="true" />}
       </button>
-      <Link className="kp-button" to="/contact">Discuss your component <ArrowRight size={17} aria-hidden="true" /></Link>
+      <Link className="kp-button" to="/contact">Prepare an inquiry <ArrowRight size={17} aria-hidden="true" /></Link>
     </div>
   </>;
 }
