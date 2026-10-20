@@ -1,4 +1,4 @@
-import { useId, useRef, useState, type KeyboardEvent } from 'react';
+import { lazy, useId, useRef, useState, type KeyboardEvent } from 'react';
 import { ArrowRight, Minus, Plus } from 'lucide-react';
 import { Link } from 'react-router';
 import { CAPABILITY_IMAGES } from '../data/capability-images';
@@ -8,18 +8,31 @@ import { INDUSTRIAL_IMAGES as I } from '../data/home-stand2-images';
 import benefitComponents from '../assets/industrial/capability-heroes-20261017/components.webp';
 import benefitAssembly from '../assets/industrial/capability-heroes-20261017/assembly.webp';
 import benefitCables from '../assets/industrial/capability-heroes-20261017/cables.webp';
+import DeferredGraphic from './DeferredGraphic';
+import type { TechnicalDrawingVariant } from './home-graphics/TechnicalDrawing';
+
+const TechnicalDrawing = lazy(() => import('./home-graphics/TechnicalDrawing'));
+const ProcessDiagram = lazy(() => import('./home-graphics/ProcessDiagram'));
+const capabilityDrawings: Record<string, TechnicalDrawingVariant> = {
+  components: 'connector', cnc: 'machined', printing: 'machined', sheetMetal: 'sheet',
+  injection: 'controller', cables: 'connector', assembly: 'controller', rubber: 'connector',
+  casting: 'machined', extrusion: 'sheet', sensors: 'sensor', vacuum: 'connector',
+};
+const componentDrawings: TechnicalDrawingVariant[] = ['controller', 'sensor', 'connector', 'controller'];
 
 export function CapabilityCollection() {
   const [expanded, setExpanded] = useState(false);
+  const [drawing, setDrawing] = useState<string | null>(null);
   const gridId = useId();
   const cards = expanded ? H.capabilities.cards : H.capabilities.cards.slice(0, 8);
 
   return <>
     <div id={gridId} className="kp-capabilities">
-      {cards.map(card => <Link className="kp-capability" to={card.to} key={card.media}>
+      {cards.map(card => <article className="kp-capability" key={card.media} data-drawing={drawing === card.media}>
+        <Link className="kp-capability__link" to={card.to}>
         <figure>
           <img src={CAPABILITY_IMAGES[card.media]} alt="" loading="lazy" />
-          <span className="kp-capability__hover" aria-hidden="true">Take a closer look <ArrowRight size={17} /></span>
+          <DeferredGraphic className="kp-capability__drawing"><TechnicalDrawing variant={capabilityDrawings[card.media]} /></DeferredGraphic>
         </figure>
         <div className="kp-capability__copy">
           <h3>{card.title}<ArrowRight size={16} aria-hidden="true" /></h3>
@@ -29,7 +42,11 @@ export function CapabilityCollection() {
             <div><dt>To specify</dt><dd>{CAPABILITY_SPECIFICATIONS[card.media].specify}</dd></div>
           </dl>
         </div>
-      </Link>)}
+        </Link>
+        <button className="kp-capability__drawing-toggle" type="button" aria-pressed={drawing === card.media}
+          aria-label={`Show schematic for ${card.title}`}
+          onClick={() => setDrawing(current => current === card.media ? null : card.media)}>Schematic</button>
+      </article>)}
     </div>
     <div className="kp-actions">
       <button className="kp-button kp-button--outline" type="button" aria-expanded={expanded} aria-controls={gridId} onClick={() => setExpanded(!expanded)}>
@@ -116,6 +133,7 @@ export function ComponentExplorer() {
   return <div className="kp-explorer">
     <div className="kp-explorer__media">
       <img src={componentImages[selected]} alt={`Illustrative ${cards[selected].title.toLowerCase()}`} loading="lazy" />
+      <DeferredGraphic className="kp-drawing-inset"><TechnicalDrawing variant={componentDrawings[selected]} /></DeferredGraphic>
     </div>
     <div className="kp-explorer__items">
       {cards.map((card, index) => {
@@ -176,6 +194,7 @@ export function LifecycleTabs() {
   }
 
   return <div className="kp-lifecycle">
+    <DeferredGraphic className="kp-graphic--process" label="Requirement, technical review, quotation, samples and release, series supply."><ProcessDiagram activeStep={active} /></DeferredGraphic>
     <div className="kp-lifecycle__tabs" role="tablist" aria-label="From inquiry to series supply">
       {lifecycleStages.map((stage, index) => <button
         ref={element => { tabs.current[index] = element; }}
@@ -234,6 +253,7 @@ export function QualificationCards() {
           <span className="sr-only"> about {card.title.toLowerCase()}</span>
         </button>
         <div className="kp-expertise-card__body" id={bodyId} hidden={!open}>
+          <svg className="kp-quality-check" viewBox="0 0 32 32" aria-hidden="true"><path d="m5 16 7 7L27 7" pathLength="1" /></svg>
           <p>{card.text}</p>
           <Link className="kp-text-link" to="/quality-and-lab">About qualification <ArrowRight size={16} aria-hidden="true" /></Link>
         </div>

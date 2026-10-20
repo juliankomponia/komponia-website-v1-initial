@@ -1,0 +1,117 @@
+.kp-flow-line {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
+.kp-flow--engineering { color: #3e5af5; }
+.kp-flow--quality { color: #d4b9f3; }
+.kp-flow--supply { color: #f7d44b; }
+
+/* A graphic companion to the existing keyboard-operated lifecycle tabs. */
+.kp-process-diagram {
+  width: 100%;
+  min-width: 0;
+  margin: 0 0 20px;
+  color: #1f1f1d;
+}
+
+.kp-process-diagram__track { position: relative; padding-bottom: 18px; }
+.kp-process-diagram__lines { position: absolute; inset: 0 0 auto; width: 100%; height: 48px; }
+.kp-process-diagram__baseline { color: #d9d9d1; }
+.kp-process-diagram__progress { transition: stroke-dashoffset 340ms ease; }
+.kp-process-diagram__nodes { position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.kp-process-diagram__node { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.kp-process-diagram__module { display: grid; place-items: center; width: 48px; height: 48px; background: #fff; }
+.kp-process-diagram__module > svg { display: block; width: 30px; height: 30px; opacity: .28; transition: opacity 200ms ease, transform 200ms ease; }
+.kp-process-diagram__node[data-passed="true"] .kp-process-diagram__module > svg { opacity: .65; }
+.kp-process-diagram__node[data-active="true"] .kp-process-diagram__module > svg { opacity: 1; transform: scale(1.12); }
+.kp-process-diagram__number { color: #777970; font-size: 11px; font-variant-numeric: tabular-nums; }
+.kp-process-diagram__node[data-active="true"] .kp-process-diagram__number { color: #1f1f1d; font-weight: 600; }
+.kp-process-diagram__caption { display: flex; align-items: baseline; justify-content: space-between; gap: 12px 24px; padding-block: 12px; border-top: 1px solid #deded6; font-size: 12px; line-height: 1.65; }
+.kp-process-diagram__caption > span:first-child { color: #76786f; font-variant-numeric: tabular-nums; }
+.kp-process-diagram__current, .kp-process-diagram__caption strong { color: #1f1f1d; font-weight: 500; }
+.kp-process-diagram__caption strong { margin-left: 14px; }
+.kp-process-diagram__scope { color: #65675f; text-align: right; }
+.kp-process-diagram[data-revealed="false"] .kp-process-diagram__progress { stroke-dashoffset: 1; }
+
+/* Six process nodes and one point of coordination; no geographic or scale claims. */
+.kp-network-diagram {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.kp-network-diagram__caption { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 22px; color: #f5f5f1; font-size: 11px; line-height: 1.5; }
+.kp-network-diagram__caption > span:last-child { color: #b5b8ae; }
+.kp-network-diagram__canvas { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: 90px 82px 90px; gap: 55px 16px; }
+.kp-network-diagram__connections { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.kp-network-diagram__routes path { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 900ms cubic-bezier(.25, .65, .25, 1); }
+.kp-network-diagram[data-revealed="true"] .kp-network-diagram__routes path { stroke-dashoffset: 0; }
+.kp-network-diagram__node { z-index: 1; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; min-width: 0; padding: 10px 6px; border: 1px solid #ffffff30; background: #1f1f1d; text-align: center; font-size: 12px; line-height: 1.5; }
+.kp-network-diagram__node > svg { display: block; width: 22px; height: 24px; flex: none; }
+.kp-network-diagram__node abbr { text-decoration: none; cursor: default; }
+.kp-network-diagram__hub { z-index: 1; grid-column: 1 / -1; display: flex; justify-self: center; align-items: center; justify-content: center; gap: 12px; width: 56%; min-width: 0; padding: 12px; border: 1px solid #ffffff65; background: #1f1f1d; }
+.kp-network-diagram__hub > svg { display: block; width: 36px; height: 38px; flex: none; }
+.kp-network-diagram__hub strong { display: block; font-size: clamp(17px, 1.8vw, 23px); font-weight: 700; letter-spacing: -.045em; line-height: 1.2; }
+.kp-network-diagram__hub span { display: block; margin-top: 5px; color: #cdd0c5; font-size: 10px; line-height: 1.5; }
+.kp-home .kp-network-diagram__note { margin: 22px 0 0; color: #b5b8ae; font-size: 11px; line-height: 1.8; }
+
+/* A production bar branches into illustrative call-offs; only signal colour is used. */
+.kp-supply-rhythm {
+  min-width: 0;
+  width: 100%;
+  margin: 32px 0 0;
+  padding-top: 24px;
+  border-top: 1px solid #d9d9d1;
+  color: #1f1f1d;
+}
+
+.kp-supply-rhythm__canvas { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: 68px 54px; row-gap: 76px; }
+.kp-supply-rhythm__connections { position: absolute; inset: 0; width: 100%; height: 100%; }
+.kp-supply-rhythm__connections path { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 650ms ease 180ms; }
+.kp-supply-rhythm__batch { z-index: 1; grid-column: 1 / -1; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; font-size: 12px; line-height: 1.5; }
+.kp-supply-rhythm__batch > svg { display: block; width: 100%; height: 34px; overflow: visible; transform-origin: left center; transform: scaleX(.08); opacity: .15; transition: transform 520ms ease, opacity 350ms ease; }
+.kp-supply-rhythm__batch rect { fill: #f7d44b; stroke: #1f1f1d; stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.kp-supply-rhythm__delivery { display: grid; place-items: center; min-width: 0; opacity: 0; transform: translateY(-7px); transition: opacity 350ms ease 650ms, transform 350ms ease 650ms; }
+.kp-supply-rhythm__delivery[data-delivery="1"] { transition-delay: 780ms; }
+.kp-supply-rhythm__delivery[data-delivery="2"] { transition-delay: 910ms; }
+.kp-supply-rhythm__delivery > svg { display: block; width: 62px; height: 54px; overflow: visible; }
+.kp-supply-rhythm__package { fill: #f7d44b; }
+.kp-supply-rhythm[data-revealed="true"] .kp-supply-rhythm__batch > svg { transform: scaleX(1); opacity: 1; }
+.kp-supply-rhythm[data-revealed="true"] .kp-supply-rhythm__connections path { stroke-dashoffset: 0; }
+.kp-supply-rhythm[data-revealed="true"] .kp-supply-rhythm__delivery { opacity: 1; transform: none; }
+.kp-supply-rhythm__release { display: flex; align-items: baseline; justify-content: space-between; gap: 10px 20px; margin-top: 16px; font-size: 12px; line-height: 1.65; }
+.kp-supply-rhythm__release > span:last-child { color: #64675d; font-size: 11px; text-align: right; }
+.kp-supply-rhythm > figcaption { margin-top: 18px; color: #64675d; font-size: 10px; line-height: 1.7; }
+
+@media (max-width: 767px) {
+  .kp-process-diagram__caption { align-items: flex-start; flex-direction: column; gap: 4px; }
+  .kp-process-diagram__scope { text-align: left; }
+  .kp-process-diagram__module { width: 40px; }
+  .kp-network-diagram__canvas { gap: 55px 10px; }
+  .kp-network-diagram__node { font-size: 11px; }
+  .kp-network-diagram__hub { width: 66%; }
+  .kp-network-diagram__hub strong { font-size: 20px; }
+  .kp-supply-rhythm__release { align-items: flex-start; flex-direction: column; gap: 3px; }
+  .kp-supply-rhythm__release > span:last-child { text-align: left; }
+  .kp-network-diagram__routes path,
+  .kp-supply-rhythm__connections path { stroke-dashoffset: 0; transition: none; }
+  .kp-supply-rhythm__batch > svg,
+  .kp-supply-rhythm__delivery { transform: none; opacity: 1; transition: none; }
+  .kp-process-diagram__progress,
+  .kp-process-diagram__module > svg { transition: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kp-network-diagram__routes path,
+  .kp-supply-rhythm__connections path { stroke-dashoffset: 0; transition: none; }
+  .kp-supply-rhythm__batch > svg,
+  .kp-supply-rhythm__delivery { transform: none; opacity: 1; transition: none; }
+  .kp-process-diagram__progress,
+  .kp-process-diagram__module > svg { transition: none; }
+}

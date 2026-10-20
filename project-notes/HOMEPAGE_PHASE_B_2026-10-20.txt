@@ -1,0 +1,46 @@
+KOMPONIA HOMEPAGE — PHASE B
+20. Oktober 2026
+Fortsetzung nach Julians „ok weiter“, Ausgangsstand Phase A: 823a1eb.
+
+UMSETZUNG
+SVG-Modul-Kit mit originalen Modulproportionen und vier Zuständen. Fünf
+schematische Komponentenzeichnungen: Regler, Fühler, Frästeil, Blechteil,
+Steckverbinder. Bemaßungs-/Bezugslinien ohne erfundene Maßangaben.
+
+01: angeschnittene Markenkontur und einmalig zeichnende Bezugslinie am Hero.
+Die Signalfarbe folgt dem aktiven Tab; Bilder und Karussellsteuerung bleiben.
+02: Zeichnungen über den Fähigkeitenfotos bei Hover/Fokus sowie über einen
+separaten „Schematic“-Button per Tastatur oder Touch. Kartenlinks und
+8→12-Erweiterung bleiben. Kleine Konturen ergänzen Explorer und Anwendungen.
+03: Prozessmodule folgen dem aktiven Lifecycle-Tab; bestehende Tastatursteuerung
+bleibt. Eine rechtwinklige Bezugslinie verbindet den Prozessbereich visuell mit
+dem Netzwerk. Abstraktes Netzwerk mit CNC, Blech, 3D-Druck, Normteilen,
+Elektrik/Sensorik und QC. Keine Standorte, Partnerzahlen oder Größenbehauptungen.
+Lavendel-Häkchen in geöffneten Qualitätskarten.
+04: eine Fertigungscharge verzweigt sich in Abrufe; ausdrücklich schematisch,
+ohne konkrete Mengen/Termine. Auf Mobilgeräten statisch.
+
+LADE- UND BEWEGUNGSVERHALTEN
+React.lazy und ein IntersectionObserver laden die Grafikmodule erst in der Nähe
+des Viewports. Gemeinsamer Reduced-Motion-Hook reagiert auf Änderungen; Reveal
+läuft pro Mount einmal. Grafiken sind dekorativ oder haben sichtbare textliche
+Erklärungen. Keine neue Dependency, kein Canvas, Lottie, Video oder three.js.
+Keine Abschnitte gelöscht/zusammengelegt und keine neuen Leistungszusagen.
+Die „Von Julian zu bestätigen“-Liste aus Phase A gilt unverändert.
+
+PRÜFUNGEN UND GRENZEN
+TypeScript/Vite und gezieltes ESLint der Phase-B-Dateien erfolgreich.
+Unabhängige Codeprüfung hat Fokus-Clipping, den mobilen Netzwerkplatz und
+Bildformatregeln nach der Grafik-Integration erkannt; korrigiert.
+ComponentSwitch.tsx/.css werden nicht geändert.
+
+Browserprüfung weiterhin offen: Die Freigabe für http://localhost:3000 wurde
+von Julian geändert. Die lokale config.toml enthält tatsächlich access="allow".
+Der Browserzugriff meldet dennoch eine gespeicherte Sperre/verwaltete Richtlinie.
+Codex-App-Selbstbedienung ist ebenfalls ausdrücklich gesperrt. Keine Umgehung.
+Empfohlener nächster Schritt: App neu starten, um die Konfiguration neu zu laden.
+Keine neuen Browser-Screenshots, Seitenhöhen, Mobil-/Reduced-Motion-Ergebnisse
+behauptet. Referenzbilder aus Phase A sind keine Prüfung dieses Standes.
+
+Der bestehende >500-kB-Bundlehinweis bleibt. Exakte Build-Messwerte und
+abschließende Prüfungen folgen im Phase-C-Bericht für den Gesamtstand.

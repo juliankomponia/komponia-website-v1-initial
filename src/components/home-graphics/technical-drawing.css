@@ -1,0 +1,135 @@
+.kp-graphic-module {
+  --module-color: #3e5af5;
+  fill: none;
+  stroke: var(--module-color);
+  stroke-width: 1.5;
+  transition: opacity 240ms ease;
+}
+
+.kp-graphic-module[data-discipline='quality'] {
+  --module-color: #d4b9f3;
+}
+
+.kp-graphic-module[data-discipline='supply'] {
+  --module-color: #f7d44b;
+}
+
+.kp-graphic-module rect {
+  vector-effect: non-scaling-stroke;
+}
+
+.kp-graphic-module[data-state='active'],
+.kp-graphic-module[data-state='connected'],
+.kp-graphic-module[data-state='assembled'] {
+  fill: var(--module-color);
+}
+
+.kp-graphic-module[data-state='resting'] {
+  opacity: 0.72;
+}
+
+.kp-graphic-module[data-state='connected'] {
+  stroke: var(--graphic-ink, #1f1f1d);
+}
+
+.kp-graphic-module-icon,
+.kp-graphic-brand-mark {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.kp-technical-drawing {
+  --drawing-ink: #1f1f1d;
+  --drawing-accent: #3e5af5;
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  fill: none;
+  stroke: var(--drawing-ink);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  shape-rendering: geometricPrecision;
+}
+
+.kp-technical-drawing path,
+.kp-technical-drawing rect,
+.kp-technical-drawing circle,
+.kp-technical-drawing ellipse {
+  vector-effect: non-scaling-stroke;
+}
+
+.kp-technical-drawing__datum {
+  opacity: 0.3;
+  stroke-dasharray: 3 5;
+}
+
+.kp-technical-drawing__callout {
+  stroke: var(--drawing-accent);
+}
+
+.kp-technical-drawing__callout circle {
+  fill: var(--drawing-accent);
+  stroke: none;
+}
+
+.kp-technical-drawing__callout text {
+  fill: var(--drawing-ink);
+  stroke: none;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.08em;
+}
+
+.kp-connection-line {
+  width: 100%;
+  height: 52px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.kp-connection-line svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.kp-connection-line path {
+  fill: none;
+  stroke: var(--connection-color, #3e5af5);
+  stroke-width: 1.5;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  vector-effect: non-scaling-stroke;
+  transition: stroke-dashoffset 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.kp-connection-line[data-revealed='true'] path {
+  stroke-dashoffset: 0;
+}
+
+@media (max-width: 760px) {
+  .kp-connection-line path {
+    stroke-dashoffset: 0;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kp-graphic-module {
+    transition: none;
+  }
+
+  .kp-connection-line path {
+    stroke-dashoffset: 0;
+    transition: none;
+  }
+}
