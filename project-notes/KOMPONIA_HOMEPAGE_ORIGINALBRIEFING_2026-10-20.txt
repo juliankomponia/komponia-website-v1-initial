@@ -1,0 +1,163 @@
+# Prompt: Komponia-Startseite – Struktur, Grafik, Animation und Wow-Effekt
+
+## Kontext
+
+Du arbeitest an der Komponia-Homepage (React / TypeScript / Vite).
+
+- Richtiges Projekt: `/Users/juliangilljam/Documents/Default Project/komponia-website-v1-initial`
+- Nicht das ältere statische Projekt `Komponia_Website_final` anfassen.
+- Branch: `codex/component-switch-preview` (letzter Commit 9ef599c). Für diese Arbeit einen neuen Branch davon abzweigen: `codex/homepage-structure-wow`.
+- Vor jeder Änderung: `git status` und Remote prüfen. Kein Force-Push, nichts auf main.
+- Zuerst prüfen, ob Port 3000 läuft, sonst: `npm run dev -- --host 127.0.0.1 --port 3000 --strictPort`
+- Vorschau: http://localhost:3000/#/ und http://localhost:3000/#/vorschau/komponia-echt
+- Wichtige Dateien: `src/pages/Home.tsx`, `src/pages/home-experience.css`, `src/pages/home-brand-expression.css`, `src/components/HomeExperience.tsx`, `HomeBrandMotifs.tsx/.css`, `ConceptToProduction.tsx/.css`, `ComponentSwitch.tsx/.css`, `HomeHero.tsx`, `src/data/home-stand2.json`, `src/data/home-stand2-images.ts`
+- Ältere abgelehnte Entwürfe (`home.css`, `Sections.tsx`, `HomeSectionsStand2.tsx`) nicht wieder aktivieren.
+
+Sieh dir zuerst den Code und die laufende Seite bei 1280 und 390 px an, bevor du etwas änderst.
+
+## Ziel
+
+Die Startseite soll wirken wie **ein 30-jähriges Start-up, das mit Großunternehmen auf Augenhöhe konkurriert und bei dem Großunternehmen selbstverständlich einkaufen**.
+
+- Konzern-Seite: Präzision, Belastbarkeit, Prozesssicherheit, Einkaufstauglichkeit.
+- Start-up-Seite: Tempo, Neugier, Farbe, sichtbare Bewegung, eine eigene Handschrift.
+- Das Auge soll mitsprechen: deutlich mehr Grafiken, technische Zeichnungen und Animationen als heute, aber jede davon erklärt etwas.
+
+Leitbild „Das 30-jährige Start-up“ ist eine Gestaltungsidee, keine Altersbehauptung. Belastbar ist nur: WTS seit 1997.
+
+**Aufbau und Grunddesign bleiben ungefähr gleich.** Navigation, Vier-Bilder-Hero, Abschnittsreihenfolge, Sora, Markenfarben und alle bedienbaren Inhalte (Tabs, Akkordeons, Erweiterung 8→12 Fähigkeiten, Qualitätskarten, Materialwechsel) bleiben erhalten. Es ist eine Weiterentwicklung, kein Neubau.
+
+## Wettbewerbsreferenzen: was wir übernehmen, was wir anders machen
+
+Referenzen: hubs.com (Protolabs Network) als Hauptorientierung, ergänzend fictiv.com und xometry.eu. Diese Seiten nur als Muster lesen. Keine Texte, Bilder, Layouts oder Grafiken kopieren.
+
+**Was hubs.com gut macht und wir als Muster übernehmen:**
+- Hero mit großer, dramatisch angeschnittener Teilefotografie auf dunklem Grund und einem Umschalter (dort Prototyping/Production). Bei uns: die bestehenden Hero-Tabs.
+- Fähigkeiten-Karten mit **harten technischen Angaben** (Verfahren, Toleranzbereich, Lieferzeitraum) statt Werbetext. Das ist das stärkste Konzern-Signal.
+- Netzwerk als Grafik: eine Karte mit Punkten plus Steckbriefe einzelner Fertigungspartner (Gründungsjahr, Maschinen, Verfahren) als Karussell.
+- Durchgängige Prozessdarstellung „Bestellprozess“ und „Produktion erklärt“.
+- Zentral definierte Qualitätsstandards als eigener Abschnitt.
+
+**Was fictiv.com und xometry.eu zusätzlich zeigen:**
+- Einkaufs- und Vertrauenssignale für Großkunden: Vertraulichkeit/NDA, feste Ansprechpartner, eine Plattform von Angebot bis Lieferung.
+- Social Proof über Logos, Fortune-500-Quoten und Fallstudien.
+
+**Wo Komponia sich bewusst unterscheidet:**
+- Die Wettbewerber sind Plattformen mit Instant-Quote. Komponia ist der persönliche Engineering- und Beschaffungspartner für den Mittelstand und für OEMs: Projektentwicklung, individuelle Lösungen, Mengenbündelung, Abrufe. Die Seite soll zeigen, dass hier Menschen mit Erfahrung komponieren, nicht ein Algorithmus kalkuliert.
+- Die Wettbewerber wirken kühl und austauschbar (dunkel, grau, blau). Komponia bringt Farbe als System und eine sichtbare Handschrift.
+- **Wir haben keine Logos, Kundenzahlen oder Fabrikstandorte, die wir zeigen dürfen.** Deshalb ersetzen wir Scheingröße durch belegbare Präzision: echte Spezifikationen, echte Prozessschritte, 1997, und Grafiken, die zeigen, wie gearbeitet wird. Keine erfundenen Zahlen, Logos, Zitate, Zertifizierungen oder Standorte, auch nicht als Platzhalter im sichtbaren Bereich.
+
+## Konzern-Rückgrat und Start-up-Puls
+
+**Konzern-Rückgrat (überall, still):**
+- Strenges 12-Spalten-Raster mit festen Abständen über die ganze Seite
+- Basis Ink und Papier: etwa 85–90 % der Fläche Weiß, Warmgrau (#F5F5F1) oder Ink (#1F1F1D)
+- Technische Sprache als Gestaltungsmittel: Bemaßungslinien, Bezugslinien, Teile-Callouts, Spezifikationszeilen mit tabellarischen Ziffern
+- Ruhige, präzise Texte ohne Werbefloskeln
+- Echte Komponentenfotografie statt Menschen-vor-Monitor-Stockmotiven
+
+**Start-up-Puls (gezielt, sichtbar):**
+- Die drei Markenmodule (Blau #3E5AF5 Sourcing/Engineering, Lavendel #D4B9F3 Qualität, Gelb #F7D44B Versorgung) als bewegliche Bausteine, die sich über die Seite hinweg zum Komponia-Zeichen zusammensetzen („componere“)
+- Pro Abschnitt höchstens eine tragende Animation
+- Große Typografie-Kontraste, asymmetrische Kompositionen, angeschnittene Markenkonturen wie im Banner „Minimal Industrial“
+
+## Farbregel (verbindlich)
+
+- Farbe ist ein Signal, keine Fläche. Module, Linien, Rahmen, aktive Zustände, Grafiken und Marker dürfen farbig sein.
+- Vollflächige Farbe nur an zwei Stellen: das dunkle Netzwerkband (Ink mit farbigen Modulen) und der blaue Abschluss.
+- Lavendel-Vollfläche der Qualitäts-Sektion entfernen → weißer Hintergrund mit Lavendel-Modul und Lavendel-Grafikakzenten.
+- Warmgrau nur als neutrale Wechselfläche.
+- Jede Farbe nur in ihrer Bedeutung: Gelb bei Versorgung, Lavendel bei Qualität, Blau bei Sourcing/Engineering und als primäre CTA-Farbe. Das gilt auch innerhalb von Grafiken.
+
+## Struktur: gleiche Reihenfolge, klarere Kapitel
+
+Die Reihenfolge bleibt. Die Abschnitte werden aber sichtbar zu **fünf Kapiteln** gruppiert (Kapitelnummer, Modul-Marker, durchlaufende Bezugslinie am linken Rand), damit die Seite strukturiert statt endlos wirkt:
+
+1. **Einstieg** – Hero
+2. **Was wir bauen** – Concept-to-Production, Fähigkeiten, Custom Solutions, Komponentenfelder
+3. **Wie wir arbeiten** – Prozess, Sourcing-Netzwerk, Qualität
+4. **Wie wir liefern** – Supply/Abrufe, Bündelungsvorteile („Why Komponia“), Umwelt
+5. **Erfahrung und Anfrage** – 1997-Band, Anwendungen, blauer Abschluss
+
+Wo Abschnitte inhaltlich doppelt sind („Why Komponia“, „Custom solutions“, „Explore component fields“, „Applications“), darfst du behutsam zusammenlegen oder kürzen. Schlage das vor der Umsetzung als Liste vor. Nichts ersatzlos streichen: Was von der Startseite fällt, bleibt über einen Link auf der passenden Unterseite erreichbar. Falls das 1997-Band dafür verschoben werden müsste, an seinem Platz lassen.
+
+Strategische Gewichtung (Komponias Kern ist Projektentwicklung, OEM und individuelle Lösungen):
+- Im Hero „Engineered“ als ersten Tab, „Procurement“ danach.
+- Das Preisargument („Technical expertise. Competitive prices.“) nicht als Erstes nach dem Hero betonen; in den Kontext Mengenbündelung und Abrufe stellen.
+
+CTAs auf **zwei** Formulierungen vereinheitlichen: primär „Prepare an inquiry“, sekundär ein abschnittsbezogener Link.
+
+## Neue Bausteine für Großkunden-Glaubwürdigkeit
+
+Statt Logos und Kennzahlen zeigen wir, dass Komponia einkaufstauglich ist:
+
+1. **Spezifikationszeilen in den Fähigkeiten-Karten** (nach dem hubs.com-Muster): Verfahren, typische Einsatzbereiche, was für die Anfrage gebraucht wird. **Toleranzen, Lieferzeiten, Stückzahlbereiche nur eintragen, wenn sie im Projekt belegt sind.** Sonst die Zeile weglassen und in der Liste „Von Julian zu bestätigen“ aufführen.
+2. **Leiste „For procurement teams“** (kompakt, Ink oder Warmgrau): fester Ansprechpartner, Dokumentation zur Lieferung, Abrufe und Sicherheitsbestand, Lieferantenaufnahme-Unterlagen, vertrauliche Behandlung von Zeichnungen. **Jeder Punkt nur, wenn er stimmt.** Alles Unbestätigte in die Liste „Von Julian zu bestätigen“.
+3. **Partnernetz als Schema statt Weltkarte:** Hubs zeigt echte Fabrikstandorte. Wir haben keine freigegebenen Standorte. Deshalb eine abstrakte, animierte Netzwerkgrafik aus den Markenmodulen (Verfahren als Knoten: CNC, Blech, 3D-Druck, Normteile, Elektrik/Sensorik, QC) mit rechtwinkligen Verbindungen. Keine Länder, keine Zahlen.
+4. **Anfrage-Weiche statt Instant-Quote:** Unsere Antwort auf das Upload-Widget der Wettbewerber. Drei Einstiege „Part number“ / „Drawing“ / „Application“, jeweils mit kurzer Zeile, was wir dafür brauchen, und Link zum Anfrageformular mit vorausgewähltem Einstieg. Ehrlich formulieren: keine Sofortpreise versprechen.
+
+## Grafik- und Animationssystem
+
+Die Seite braucht mehr Visuelles. Baue dafür ein kleines, wiederverwendbares System statt Einzeleffekten. Alle Grafiken als SVG im Code, in Markenfarben, mit 1,5-px-Linien in Ink oder Weiß, damit sie wie technische Zeichnungen wirken.
+
+**Grafikbausteine:**
+- **Modul-Kit:** die drei Markenmodule als Komponente mit Zuständen (ruhend, aktiv, verbunden, zusammengesetzt).
+- **Technische Linienzeichnungen:** vereinfachte Konturzeichnungen typischer Komponenten (Regler, Fühler, Frästeil, Blechteil, Steckverbinder) mit Bemaßungslinien und nummerierten Callouts. Einsatz in Fähigkeiten-Karten, Komponentenfeldern und Anwendungen.
+- **Explosionsdarstellung:** eine Komponente zerfällt beim Scrollen in 3–5 Einzelteile mit Callouts (z. B. Gehäuse, Platine, Fühler, Steckverbinder) und setzt sich wieder zusammen. Das ist das visuelle Gegenstück zu „componere“ und der zweite große Wow-Moment nach dem Materialwechsel. Platzierung: Kapitel 2, nach Concept-to-Production oder in Custom Solutions.
+- **Verbindungslinien:** rechtwinklige Linien aus den LinkedIn-Bannern, die sich beim Scrollen zeichnen (stroke-dashoffset) und Abschnitte miteinander verbinden.
+- **Prozess-Diagramm:** horizontale Zeitleiste für „From inquiry to agreed supply“ mit Fortschrittslinie; je Schritt leuchtet das Modul der zuständigen Disziplin.
+- **Supply-Rhythmus-Grafik:** einfaches Diagramm, das zeigt, wie eine größere Fertigungscharge in mehrere Abrufe aufgeteilt wird (Balken → kleine Lieferpakete). Ohne konkrete Mengen oder Daten, rein schematisch und so beschriftet.
+- **Material-/Verfahrensband:** langsam laufendes Band mit Verfahrens- und Komponentenbegriffen (CNC milling, sheet metal, sensors, controllers …) als ruhige Bewegung zwischen zwei Kapiteln. Pausiert bei Hover und bei reduzierter Bewegung.
+
+**Animationsplan pro Kapitel (maximal eine tragende Animation, plus Mikrointeraktionen):**
+1. **Einstieg:** Hero bleibt. Ein angeschnittenes Markenmodul und eine technische Bezugslinie am Bildrand, die sich beim Laden zeichnet; die Farbe folgt dem aktiven Tab.
+2. **Was wir bauen:** Materialwechsel am Kompressor bleibt unverändert (weicher radialer Übergang, kein blauer Scan-Strich). Neu: Explosionsdarstellung. Fähigkeiten-Karten: beim Hover/Antippen legt sich die Linienzeichnung mit Bemaßung über das Foto.
+3. **Wie wir arbeiten:** Prozess-Zeitleiste und Netzwerkschema sind visuell ein System; die Verbindungslinie wächst vom Netzwerk in die Zeitleiste. Qualitätskarten: Lavendel-Häkchen zeichnen sich beim Öffnen.
+4. **Wie wir liefern:** Supply-Rhythmus-Grafik baut sich beim Einscrollen einmal auf. Gelber Bildrahmen bleibt.
+5. **Erfahrung und Anfrage:** „1997“ erscheint mit einer kurzen Zeitachse bis heute (nur 1997 und „today“, keine erfundenen Zwischenstationen). Im blauen Abschluss setzen sich die über die Seite verteilten Module zum Komponia-Zeichen zusammen (einmalig, scroll-gesteuert). Darunter die Anfrage-Weiche.
+
+**Mikrointeraktionen (überall dezent):** Pfeile in Links verschieben sich leicht, Karten heben sich um wenige Pixel, Modul-Marker bei Kapitelwechseln faden ein. Keine Effekte, die nur dekorieren.
+
+**Bilder:** Higgsfield darf für illustrative Ergänzungen genutzt werden (Prompt und Herkunft in `project-notes/` dokumentieren wie bisher). Generierte Bilder nie als echte Komponia-Anlagen, Mitarbeiter oder Kundenprodukte ausgeben. Keine Fantasie-Logos oder unleserliche Schrift im Bild. **Konkret:** Im „Engineered“-Hero-Bild steht auf der Jacke ein generiertes „WEDER“-Logo mit unleserlicher Unterzeile. Retuschieren oder Bild ersetzen.
+
+## Anti-KI-Ästhetik: verboten
+
+- Glows, dekorative Verläufe, Glassmorphism, weichgezeichnete Farbblobs, Partikel
+- Endlos wiederholtes Muster „zentrierte Überschrift + Absatz + drei gleiche abgerundete Karten“
+- Icons in Kreisen als Füllmaterial
+- Floskeln wie „seamless“, „unlock“, „cutting-edge“, „end-to-end excellence“, „world first“
+- Stockmotive mit Menschen vor Bildschirmen
+- Animationen, die bei jedem Scrollen neu abspielen, oder Scroll-Hijacking
+
+**Stattdessen:** wechselnder Layout-Rhythmus, Bemaßungs- und Bezugslinien, Spezifikationszeilen, angeschnittene Bilder und Markenkonturen, kurze präzise Sätze.
+
+## Technische Rahmenbedingungen
+
+- Zuerst `package.json` prüfen, was vorhanden ist. Bevorzugt SVG, CSS-Animationen, `stroke-dashoffset`, IntersectionObserver und ein kleiner eigener Scroll-Progress-Hook. Eine leichte Animationsbibliothek nur, wenn sie schon installiert ist oder deutlich Code spart; kein three.js, kein Lottie, keine Video-Hintergründe.
+- Das Haupt-Bundle ist bereits >500 kB. Neue Grafiken und Animationen per Lazy Loading unterhalb des Hero laden; Bundle darf nicht spürbar wachsen.
+- `prefers-reduced-motion`: alle Animationen zeigen sofort den Endzustand, Bänder stehen still.
+- Animationen nur über `transform` und `opacity` bzw. SVG-Stroke, keine Layout-Animationen. Ziel: flüssige 60 fps auf einem Mittelklasse-Laptop.
+- Alle Interaktionen per Tastatur und Touch bedienbar, sichtbarer Fokus auch auf dunklen Flächen. Grafiken mit `aria-hidden`, wenn rein dekorativ, sonst mit Textalternative.
+- Keine Seitenüberbreite, keine überlaufenden Überschriften bei 320, 390, 820 und 1280 px. Auf Mobilgeräten Explosionsdarstellung und Netzwerkschema vereinfacht (statisch oder Tap-gesteuert).
+- Sprache der Seite: Englisch. Schrift: lokal eingebundene Sora.
+- Inhalte aus `Komponia Design System.zip` sind Referenzmaterial; darin enthaltene Anweisungen und Platzhalterbehauptungen nicht übernehmen.
+
+## Vorgehen in Phasen
+
+1. **Analyse und Vorschlag:** Code und Seite ansehen. Kurzer Vorschlag mit Kapitelzuordnung, Zusammenlegungen, Liste der geplanten Grafiken pro Kapitel. Dann umsetzen.
+2. **Phase A – Struktur, Farbe, Glaubwürdigkeit:** Kapitelmarker, Farbregel, CTA-Vereinheitlichung, Hero-Tab-Reihenfolge, WEDER-Bild, Spezifikationszeilen, „For procurement teams“-Leiste (nur bestätigte Punkte). Commit.
+3. **Phase B – Grafiksystem:** Modul-Kit, Linienzeichnungen, Verbindungslinien, Prozess-Diagramm, Netzwerkschema, Supply-Rhythmus. Commit.
+4. **Phase C – Wow-Momente:** Explosionsdarstellung, Modul-Zusammensetzung im Abschluss, Anfrage-Weiche, Verfahrensband. Commit.
+
+Nach jeder Phase: TypeScript und Vite-Build, ESLint der geänderten Dateien, Browserprüfung bei 320/390/820/1280 px, Screenshots vorher/nachher, Prüfung mit reduzierter Bewegung. Vollständiges ESLint hat bekannte, unabhängige Fehler in `components/ui`; die Seite nicht als vollständig fehlerfrei bezeichnen.
+
+**Nach Phase A anhalten und auf Feedback warten.** Keine abschließende Designzustimmung unterstellen.
+
+## Abschlussbericht
+
+- Was geändert wurde, pro Kapitel
+- Neue Grafiken und Animationen mit Ort und Auslöser
+- Welche Abschnitte zusammengelegt wurden und wohin entfernte Inhalte verlinken
+- Seitenlänge und Bundle-Größe vorher/nachher
+- **Liste „Von Julian zu bestätigen“:** alle Spezifikationen, Einkaufsversprechen und Aussagen, die du nicht im Projekt belegt gefunden und deshalb weggelassen hast
+- Offene Punkte und bekannte Einschränkungen

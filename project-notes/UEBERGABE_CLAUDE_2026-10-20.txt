@@ -1,0 +1,251 @@
+ÜBERGABE AN CLAUDE — KOMPONIA-HOMEPAGE ANALYSIEREN UND VERBESSERN
+Stand: 20. Oktober 2026
+
+AKTUELLER AUFTRAG
+Analysiere den bestehenden Stand kritisch und entwickle gezielte Verbesserungen
+für Gestaltung, Verständlichkeit, Bedienung und technische Qualität.
+Prüfe zuerst, was tatsächlich funktioniert und wie die Seite wirkt. Die bisherige
+Implementierung ist eine Arbeitsfassung, keine abschließend abgenommene Gestaltung.
+Übernimm die bisherigen Abschlussberichte nicht als Beweis für gute Gestaltung.
+
+Liefere zunächst eine kurze, priorisierte Diagnose mit konkreten Fundstellen und
+Verbesserungen. Behebe anschließend belegte Fehler und arbeite die sinnvollen
+Verbesserungen in den vorhandenen Aufbau ein. Keine komplette Neugestaltung.
+Strukturelle Zusammenlegungen oder Umstellungen vor der Umsetzung als konkrete
+Liste vorschlagen; nichts ersatzlos streichen. Keine neuen Leistungsversprechen.
+
+1. RICHTIGES PROJEKT UND GIT
+React / TypeScript / Vite:
+/Users/juliangilljam/Documents/Default Project/komponia-website-v1-initial
+
+NICHT bearbeiten: das ältere statische Projekt
+/Users/juliangilljam/Documents/Default Project/Komponia_Website_final
+
+Branch: codex/homepage-structure-wow
+Remote: https://github.com/juliankomponia/komponia-website-v1-initial.git (privat)
+Letzter Website-Code: 36092fb.
+Diese Übergabe und die Kopie des Originalbriefings folgen als Dokumentationscommit.
+Bei Erstellung der Übergabe war das Repository sauber und mit origin synchron.
+
+Relevante Commits:
+- 9ef599c: Ausgangsstand vor der Arbeit an Struktur/Grafik.
+- 823a1eb: Phase A — Struktur, Farben, Glaubwürdigkeit, Hero-Retusche.
+- 7f03503: Phase B — SVG-System und Prozess-/Netzwerk-/Supply-Grafiken.
+- 36092fb: Phase C — Explosionsansicht, Abschluss, Verfahrensband, Anfrage-Weiche.
+
+Vor Änderungen git status und Remote prüfen, dann git pull --ff-only.
+Bei Konflikten anhalten, nicht resetten oder force-pushen.
+Auf dem Arbeitsbranch weiterarbeiten; kein Push/Merge nach main.
+Am Ende Änderungen nachvollziehbar committen und pushen, da mehrere Rechner
+über GitHub synchronisiert werden.
+Identität: juliankomponia <325582059+juliankomponia@users.noreply.github.com>
+
+2. VORSCHAU
+http://localhost:3000/#/
+http://localhost:3000/#/vorschau/komponia-echt
+
+Port 3000 war bei Erstellung dieser Übergabe aktiv (Vite/Node).
+Erst prüfen; falls nicht aktiv:
+cd "/Users/juliangilljam/Documents/Default Project/komponia-website-v1-initial"
+npm run dev -- --host 127.0.0.1 --port 3000 --strictPort
+
+3. DESIGNZIEL UND FESTE GRENZEN
+Die Seite soll wie ein „30-jähriges Start-up“ wirken: präzise und für professionelle
+Einkäufer belastbar, zugleich beweglich und eigenständig. Das ist eine Gestaltungsidee.
+Die belegte historische Aussage ist ausschließlich „WTS since 1997“.
+Komponia ist persönlicher Engineering-/Beschaffungspartner, keine Instant-Quote-Plattform.
+Schwerpunkt: Projektentwicklung, OEM, individuelle Lösungen, Mengenbündelung und Abrufe.
+
+Beibehalten:
+- Navigation, Vier-Bilder-Hero, Abschnittsreihenfolge und lokal eingebundene Sora.
+- Alle Tabs, Akkordeons, Qualitätskarten, Fähigkeiten-Erweiterung 8→12.
+- Den weichen radialen Materialwechsel. Kein blauer Scan-Strich.
+- Englisch auf der Website. Primär-CTA „Prepare an inquiry“.
+- Markenfarben: Blau #3E5AF5 Engineering/Beschaffung, Lavendel #D4B9F3 Qualität,
+  Gelb #F7D44B Versorgung, Ink #1F1F1D, Warmgrau #F5F5F1.
+- Farbe überwiegend als Signal. Ganze starke Abschnittsflächen nur beim dunklen
+  Netzwerkband und blauen Abschluss; Qualität auf Weiß.
+- Keine erfundenen Toleranzen, Lieferzeiten, Mengen, Zertifikate, Standorte,
+  Kundenlogos, Testimonials oder Erfolgszahlen.
+- Generierte Bilder bleiben als illustrativ eingeordnet.
+- Keine Glows, Farbblobs, Glassmorphism, Partikel, Video-Hintergründe oder Lottie.
+- Keine neue Animationsbibliothek ohne nachvollziehbaren Bedarf.
+
+Die alten abgelehnten Entwürfe home.css, Sections.tsx und HomeSectionsStand2.tsx
+nicht reaktivieren.
+
+Die fünf Kapitel beginnen bei Hero, Concept-to-Production, Prozess, Supply und
+Abschluss. WTS-Band, Why Komponia und Anwendungen bleiben an ihren ursprünglichen
+Stellen. Das ist der bisherige Umgang mit dem Zielkonflikt „thematisch gruppieren,
+aber Reihenfolge bewahren“; keine Abschnitte wurden bisher zusammengelegt.
+
+4. WAS SCHON UMGESETZT IST
+Phase A:
+Kapitelmarker/Bezugslinie, gemeinsames Raster, neutralere Flächen, Engineered als
+erster Hero-Tab, vereinheitlichte CTAs, Retusche des erfundenen WEDER-Jackenlogos.
+Fähigkeiten mit Process / Application / To specify. Einkaufsleiste nur mit
+persönlichem Kontakt, Klärung der Dokumentation und vereinbarten Abrufen/Safety Stock.
+
+Phase B:
+Wiederverwendbare drei Markenmodule, fünf technische SVG-Konturen mit Callouts.
+Fähigkeiten: Zeichnung bei Hover/Fokus oder per „Schematic“-Button.
+Explorer und Anwendungen: kleine technische Zeichnungen neben/über Produktbildern.
+Prozessgrafik folgt den vorhandenen Tabs. Abstraktes Netz mit CNC, Blech, 3D-Druck,
+Normteilen, Elektrik/Sensorik und QC. Supply-Rhythmus ohne Mengen-/Zeitversprechen.
+Hero-Bezugslinie und Lavendel-Häkchen in den Qualitätskarten.
+
+Phase C:
+Custom-Foto durch illustrative Explosionsansicht mit vier Teilen ersetzt;
+Originalasset bleibt. Desktop einmal scrollgesteuert auseinander und zusammen,
+manuell wählbare Zustände. Mobil statisch getrennt, Reduced Motion zusammengesetzt.
+Pausierbares Verfahrensband, Zeitleiste nur 1997/today, Modul-Zusammensetzung im Abschluss.
+Drei Anfragewege Part number / Drawing / Application führen zum bestehenden Formular:
+/#/contact?entry=part-number
+/#/contact?entry=drawing
+/#/contact?entry=application
+Der Einstieg ist vorausgewählt und änderbar, wird in den Entwurf übernommen.
+Das Formular erstellt einen prüfbaren Entwurf; es sendet nicht automatisch.
+Keine echte Anfrage beim Testen versenden.
+
+5. ZUERST PRÜFEN — VERBESSERUNGSFRAGEN, KEINE BESTÄTIGTEN FEHLER
+Priorität 1 — tatsächliche Darstellung und Bedienung:
+- 320, 390, 820 und 1280 px: Überbreite, abgeschnittene Überschriften, Karten,
+  SVG-Beschriftungen, Fokus, mobile Reihenfolge und Abstände.
+- Materialwechsel weiterhin weich/radial, Hero-Umschalter, Tab-Pfeiltasten,
+  8→12→8, Akkordeons, Qualitätskarten und drei Anfragewege vollständig bedienen.
+- Explosionsansicht bei normalem Scrollen, schnellem Scrollen und Zurückscrollen:
+  Ist die Erklärung sichtbar, verständlich und zeitlich passend?
+- Reduced Motion vor dem Laden und im laufenden Betrieb; Wechsel Desktop/Mobil.
+- Lazy Loading: Platzhalter, Layoutsprünge, Nachladen bei schnellem Scrollen.
+
+Priorität 2 — gestalterische Qualität und Informationsdichte:
+- Helfen die Zeichnungen tatsächlich oder wirken sie wie austauschbare Dekoration?
+- Passen die fünf schematischen Konturen zu den jeweils zugeordneten Fähigkeiten?
+- Sind die Callouts verständlich, ausreichend groß und fachlich plausibel?
+- Ist das wiederholte Foto-/Zeichnungssystem zu kleinteilig oder zu repetitiv?
+- Sind Prozess und Netz verständlich verbunden oder nur zwei weitere Grafiken?
+- Ist das Verfahrensband inhaltlich hilfreich und seine Bewegung angemessen?
+- Wirken Kapitel, Weißraum und Typokontraste zusammenhängend?
+- Ist der Abschluss samt Weiche zu lang? Welche Wiederholungen lassen sich
+  behutsam kürzen, ohne Inhalte/Navigation zu verlieren?
+- Wirkt das Ergebnis nach Engineering/OEM und professionellem Einkauf?
+
+Priorität 3 — technische Robustheit:
+- CSS-Überschreibungen und Spezifität zwischen den vier Homepage-Stylesheets.
+- Scroll-/Resize-/Observer-Cleanup, Resize während Animation, manuelle Zustände.
+- Kontrast und wirklich sichtbarer Fokus auf Fotos, Ink und Blau.
+- Bundle-Aufteilung und reale Lade-/Animationsleistung.
+- Sichere Anfrageparameter, bestehende Parameter und Entwurfsfunktionen erhalten.
+
+6. BROWSERSPERRE — BEFUND UND GRENZEN
+Die abschließende visuelle Kontrolle konnte Codex NICHT durchführen.
+Auch der letzte Zugriff auf http://localhost:3000 wurde durch den Browserdienst
+abgewiesen: „A saved user permission setting blocks this action“, möglicherweise
+gespeicherte Berechtigung oder verwaltete Richtlinie.
+
+Julian bestätigte, die Adresse ausdrücklich erlaubt zu haben.
+Read-only geprüft: ~/.codex/config.toml enthält
+[browser_use.origins."http://localhost:3000"]
+access = "allow"
+In den zusätzlich geprüften lokalen requirements-Dateien wurde keine Sperre gefunden.
+Das beweist nicht, dass keine andere verwaltete Richtlinie wirksam ist.
+Codex verweigert außerdem Computer Use seiner eigenen App-Oberfläche.
+Ein vollständiger App-Neustart wurde empfohlen; seine Durchführung und Wirksamkeit
+sind nicht bestätigt. Die Ursache ist NICHT abschließend diagnostiziert.
+
+Keine Zugriffssperre über andere Ports, Hostnamen, Browseroberflächen oder versteckte
+Browsersteuerung umgehen. Browserarbeit nur mit tatsächlich freigegebenem Zugriff.
+Wenn Claude keinen autorisierten Browserzugriff hat: Quellcodeanalyse fortführen,
+visuelle Aussagen klar als ungeprüft kennzeichnen und konkrete erforderliche Freigabe
+benennen. Nicht wiederholt denselben abgewiesenen Zugriff versuchen.
+
+7. BELEGE UND RELEVANTE DATEIEN
+Alle folgenden Pfade relativ zum richtigen React-Projekt:
+
+Einstieg/Integration:
+- src/pages/Home.tsx
+- src/components/HomeHero.tsx
+- src/components/HomeExperience.tsx
+- src/components/ConceptToProduction.tsx und .css
+- src/components/ComponentSwitch.tsx und .css (bewusst unverändert)
+- src/components/HomeChapter.tsx
+- src/components/ProcurementReadiness.tsx
+- src/components/PageSections.tsx
+
+Styles in dieser Import-Reihenfolge:
+- src/pages/home-experience.css
+- src/pages/home-brand-expression.css
+- src/pages/home-structure.css
+- src/pages/home-graphics.css
+
+Neues Grafiksystem:
+- src/components/DeferredGraphic.tsx
+- src/hooks/useGraphicMotion.ts
+- src/components/home-graphics/ (SVG-Komponenten + jeweilige CSS-Dateien)
+
+Inhalte/Formular:
+- src/data/home-stand2.json, home-stand2-images.ts, capability-specifications.ts
+- src/pages/Contact.tsx, src/data/inquiry-entry.ts
+
+Dokumentation:
+- project-notes/HOMEPAGE_PHASE_A_2026-10-20.txt
+- project-notes/HOMEPAGE_PHASE_B_2026-10-20.txt
+- project-notes/HOMEPAGE_PHASE_C_2026-10-20.txt
+- project-notes/HOMEPAGE_PHASE_BC_METRICS_2026-10-20.json
+- project-notes/HOMEPAGE_PHASE_A_IMAGE_2026-10-20.json (Retusche/Prompt/Herkunft)
+- project-notes/homepage-phase-a-2026-10-20/ (historische Screenshots/Messungen)
+
+Originalbriefing als portable Kopie:
+- project-notes/KOMPONIA_HOMEPAGE_ORIGINALBRIEFING_2026-10-20.txt
+Das Original enthält historische Arbeitsanweisungen, insbesondere „nach Phase A
+anhalten“ und „neuen Branch erstellen“. Diese Schritte sind bereits erledigt.
+Es dient jetzt als Designreferenz; der aktuelle Auftrag steht oben in dieser Übergabe.
+
+8. PRÜFSTAND — NICHT MIT VISUELLER ABNAHME VERWECHSELN
+Bestanden:
+- npm run build (TypeScript + Vite), zuletzt am Code von 36092fb.
+- Gezieltes ESLint aller neuen/geänderten TS-/TSX-Dateien.
+- git diff --check.
+- Isolierter Build von Phase-B-Commit 7f03503.
+- Unabhängige Quellprüfung und React-Serverrendering der neuen Komponenten,
+  inklusive gültiger/ungültiger Anfrageparameter und Reduced-Motion-Startzustand.
+Diese SSR-Prüfungen waren ad hoc; sie sind keine eingecheckte Browser-Testsuite.
+
+Nicht bestanden/ungeprüft auseinanderhalten:
+- Kein bekannter Buildfehler im aktuellen Stand.
+- Vollständiges ESLint hat bekannte unabhängige Probleme in components/ui;
+  es wurde nicht als fehlerfrei abgenommen.
+- Vite meldet weiterhin das bestehende Haupt-Bundle über 500 kB.
+- Browser-Layouts, neue Screenshots, reale Performance, Touch/Tastatur und
+  tatsächliche Reduced-Motion-Umschaltung von B/C sind ungeprüft.
+- Phase-A-Screenshots sind ältere Zwischenstände, auch vor deren letzter
+  Rasterangleichung; nicht als Nachweis für B/C verwenden.
+
+Gezielter Prüfaufruf:
+npx eslint src/components/HomeExperience.tsx src/components/HomeHero.tsx src/components/DeferredGraphic.tsx src/pages/Home.tsx src/pages/Contact.tsx src/hooks/useGraphicMotion.ts src/data/inquiry-entry.ts src/components/home-graphics/*.tsx
+
+Bundle (Vite, dezimale kB):
+Phase A Haupt-JS 606,58 / gzip 162,81; Phase C 612,44 / gzip 165,13.
+Phase C zusätzliche verzögert geladene Grafik-JS-Chunks zusammen 42,49 kB roh.
+Haupt-CSS Phase A 163,81 / gzip 28,43; Phase C 168,10 / gzip 29,29.
+Alle aktuellen JS-Dateien zusammen 654,93 kB, alle CSS-Dateien 186,75 kB roh.
+
+Seitenhöhe nach B/C nicht gemessen. Historische Phase-A-Werte:
+1280 px Breite → 12.187 px Höhe; 390 px Breite → 22.458 px Höhe.
+Diese bereits große Länge ist ein wichtiger Prüfpunkt, keine aktuelle Messung.
+
+9. OFFENE SACHLICHE ZUSAGEN
+Die Liste „Von Julian zu bestätigen“ steht vollständig im Phase-C-Bericht.
+Bis zur Bestätigung keine Zahlen/Versprechen zu Toleranzen, Lieferzeiten, Mengen,
+NDA, Lieferantenaufnahme, automatisch mitgelieferten Dokumenten, Rückverfolgung,
+Zertifizierungen, garantierten Einsparungen oder veröffentlichtem Kundennachweis.
+Grafiken dürfen diese Aussagen auch nicht indirekt suggerieren.
+
+10. ERWARTETES ERGEBNIS VON CLAUDE
+- Priorisierte Befunde mit konkreter Stelle und Begründung, getrennt nach
+  beobachtetem Fehler, gestalterischer Einschätzung und ungeprüfter Vermutung.
+- Gezielte Verbesserungen im bestehenden Projekt, nachvollziehbare Commits.
+- Bei erlaubtem Browserzugriff: Vorher/Nachher bei 320/390/820/1280,
+  Interaktionsprüfung, Reduced Motion, neue Seitenhöhen und Konsolenprüfung.
+- Build/gezieltes ESLint, Bundlevergleich, verbleibende Grenzen dokumentieren.
+- Kurzer deutscher Abschlussbericht. Website-Inhalte bleiben Englisch.
