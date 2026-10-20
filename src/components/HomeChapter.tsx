@@ -9,6 +9,5 @@ export default function HomeChapter({ number, title, discipline = 'engineering' 
     <span className="kp-chapter__module" aria-hidden="true" />
     <span className="kp-chapter__number">{number}</span>
     <span className="kp-chapter__title">{title}</span>
-    <span className="kp-chapter__rule" aria-hidden="true" />
   </div>;
 }

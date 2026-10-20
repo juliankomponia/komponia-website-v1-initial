@@ -98,10 +98,6 @@ export default function HomeHero() {
           </div>
         ))}
       </figure>
-      <svg className="kp-hero-datum" viewBox="0 0 450 190" aria-hidden="true" focusable="false">
-        <rect className="kp-hero-datum__module" x="334" y="-62" width="134" height="316" rx="66" />
-        <path className="kp-hero-datum__line" pathLength="1" d="M0 164H290V36H450M284 158l12 12M284 30l12 12" />
-      </svg>
       <div className="home-hero-panel">
         <div className="home-hero-copy"><div className="home-hero-copy-inner">
           <HomeChapter number="01" title="Engineering. Components. Supply." />

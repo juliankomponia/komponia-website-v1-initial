@@ -81,7 +81,7 @@
   fill: var(--drawing-ink);
   stroke: none;
   font-family: inherit;
-  font-size: 10px;
+  font-size: var(--kp-type-label, 12px);
   font-weight: 500;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.08em;

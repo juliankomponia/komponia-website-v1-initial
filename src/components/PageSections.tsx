@@ -43,8 +43,10 @@ function collectSections() {
 export default function PageSections() {
   const { pathname } = useLocation();
   const bar = useRef<HTMLElement>(null);
+  const list = useRef<HTMLUListElement>(null);
   const [navigation, setNavigation] = useState<NavigationState>({ pathname: '', items: [], activeId: '' });
   const current = navigation.pathname === pathname ? navigation : null;
+  const activeId = current?.activeId;
 
   useEffect(() => {
     let disposed = false;
@@ -98,6 +100,21 @@ export default function PageSections() {
     };
   }, [pathname]);
 
+  useEffect(() => {
+    const element = list.current;
+    const activeLink = element?.querySelector<HTMLAnchorElement>('[aria-current="location"]');
+    if (!activeId || !element || !activeLink) return;
+
+    const viewport = element.getBoundingClientRect();
+    const link = activeLink.getBoundingClientRect();
+    // Move only this horizontal list; avoid moving the page or adding motion.
+    if (link.width > element.clientWidth || link.left < viewport.left) {
+      element.scrollLeft += link.left - viewport.left;
+    } else if (link.right > viewport.right) {
+      element.scrollLeft += link.right - viewport.right;
+    }
+  }, [activeId]);
+
   function jumpToSection(event: MouseEvent<HTMLAnchorElement>, id: string) {
     event.preventDefault();
     const section = document.getElementById(id);
@@ -112,7 +129,7 @@ export default function PageSections() {
   return (
     <nav ref={bar} className="page-sections" aria-label="On this page">
       <div className="site-shell page-sections__inner">
-        <ul className="page-sections__list">
+        <ul ref={list} className="page-sections__list">
           {current.items.map(({ id, label }) => (
             <li key={id} className="page-sections__item">
               <a

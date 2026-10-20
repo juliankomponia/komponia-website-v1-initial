@@ -1,63 +1,24 @@
-/* Technical graphics share a datum, a 1.5 px stroke and discipline colours. */
+/* Functional graphics retain their own animation, with shared presentation here. */
 .kp-home .kp-deferred-graphic { min-width: 0; }
 .kp-home .kp-graphic--network { min-height: 380px; align-self: center; }
-.kp-home .kp-graphic--supply { min-height: 240px; margin-top: 36px; }
-.kp-home .kp-graphic--exploded { min-height: 540px; }
-.kp-home .kp-graphic--heritage { width: 100%; min-height: 35px; margin-top: 18px; }
-.kp-home .kp-graphic--inquiry { min-height: 410px; margin-top: 64px; }
-.kp-home .inquiry-routes__intro p { margin: 0; font-size: 13px; }
+.kp-home .kp-graphic--supply { min-height: 220px; margin-top: 20px; }
+.kp-home .kp-graphic--exploded { min-height: 480px; width: 100%; max-width: 500px; justify-self: center; }
+.kp-home .kp-graphic--heritage { width: 100%; min-height: 35px; margin-top: 8px; }
+.kp-home .kp-graphic--inquiry { min-height: 410px; margin-top: 28px; }
 .kp-home .kp-closing .kp-closing-assembly { margin: 0; }
-.kp-home .kp-closing__mark { aspect-ratio: auto; min-height: 290px; }
-.kp-home .kp-capability { position: relative; transition: transform .2s ease; }
-.kp-home .kp-capability__link { display: block; height: 100%; }
-.kp-home .kp-section .kp-capability__link:focus-visible { outline-color: var(--kp-blue); outline-offset: -3px; }
-.kp-home .kp-capability:focus-within { border-color: var(--kp-blue); }
-.kp-home .kp-capability__drawing {
-  position: absolute; inset: 0; opacity: 0; pointer-events: none;
-  background: #ffffffed; transition: opacity .2s ease;
-}
-.kp-home .kp-capability__drawing svg { width: 100%; height: 100%; }
-.kp-home .kp-capability[data-drawing="true"] .kp-capability__drawing,
-.kp-home .kp-capability__link:focus-visible .kp-capability__drawing { opacity: 1; }
-.kp-home .kp-capability__drawing-toggle {
-  position: absolute; top: 8px; right: 8px; z-index: 2; min-height: 44px;
-  padding: 8px 10px; background: #fff; color: var(--kp-ink);
-  border: 1px solid #d6d7d2; font-size: 10px; letter-spacing: .05em;
-}
-.kp-home .kp-capability__drawing-toggle[aria-pressed="true"] { border-color: var(--kp-blue); }
-.kp-home .kp-drawing-inset { position: absolute; right: 12px; bottom: 12px; width: 35%; max-width: 180px; aspect-ratio: 4 / 3; background: #fffffff2; border: 1px solid #d6d7d2; pointer-events: none; }
-.kp-home .kp-explorer__media, .kp-home .kp-application__media { position: relative; }
-.kp-home .kp-application__media > img { width: 100%; aspect-ratio: 1.4; object-fit: cover; border-radius: 4px; }
-.kp-home .kp-application__media .kp-drawing-inset { width: 38%; right: 6px; bottom: 6px; }
+.kp-home .kp-closing__mark { min-height: 240px; }
+.kp-home .kp-capability__drawing { aspect-ratio: 1.6; background: var(--kp-paper); border: 1px solid var(--kp-line); border-radius: var(--kp-radius); }
+.kp-home .kp-capability__drawing svg { display: block; width: 100%; height: 100%; }
+.kp-home .kp-drawing-inset { position: absolute; right: 12px; bottom: 12px; width: 35%; max-width: 160px; aspect-ratio: 4 / 3; background: #fffffff2; border: 1px solid var(--kp-line); border-radius: var(--kp-radius); pointer-events: none; }
+.kp-home .kp-explorer__media { position: relative; }
+.kp-home .kp-application__media > img { display: block; width: 100%; aspect-ratio: 1.65; object-fit: cover; border: 1px solid var(--kp-line); border-radius: var(--kp-radius); }
 .kp-home .kp-drawing-inset svg { display: block; width: 100%; height: 100%; }
-.kp-home .kp-quality-check { width: 30px; height: 30px; margin: 0 auto 18px; color: var(--kp-lavender); }
-.kp-home .kp-quality-check path { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: square; stroke-dasharray: 1; stroke-dashoffset: 1; }
-.kp-home .kp-expertise-card:has([aria-expanded="true"]) .kp-quality-check path { animation: kp-datum-draw .5s ease forwards; }
-.kp-home .kp-section-connection { width: 100%; height: 52px; display: block; color: var(--kp-ink); }
-.kp-home .kp-section-connection path { fill: none; stroke: currentColor; stroke-width: 1.5; vector-effect: non-scaling-stroke; }
-.kp-home .kp-hero-datum { position: absolute; z-index: 1; right: 0; bottom: 30px; width: min(38vw, 450px); height: 190px; pointer-events: none; color: var(--home-hero-accent); overflow: hidden; }
-.kp-home .kp-hero-datum path, .kp-home .kp-hero-datum rect { fill: none; stroke: currentColor; stroke-width: 1.5; vector-effect: non-scaling-stroke; }
-.kp-home .kp-hero-datum__line { stroke-dasharray: 1; stroke-dashoffset: 1; animation: kp-datum-draw 1s .2s ease forwards; }
-.kp-home .kp-hero-datum__module { opacity: .7; }
-.kp-home .kp-text-link > svg { transition: transform .2s ease; }
-.kp-home .kp-text-link:hover > svg { transform: translateX(3px); }
-.kp-home .kp-closing .inquiry-routes__link:focus-visible { outline-color: #fff; }
-@keyframes kp-datum-draw { to { stroke-dashoffset: 0; } }
-@media (hover: hover) and (pointer: fine) {
-  .kp-home .kp-capability:hover { transform: translateY(-3px); }
-  .kp-home .kp-capability:hover .kp-capability__drawing { opacity: 1; }
-}
+.kp-home .kp-closing-assembly > figcaption, .kp-home .kp-heritage-timeline > div { font-size: var(--kp-type-label); }
 @media (max-width: 767px) {
-  .kp-home .kp-hero-datum { display: none; }
-  .kp-home .kp-graphic--network { min-height: 360px; order: 2; }
+  .kp-home .kp-graphic--network { min-height: 320px; order: 2; }
   .kp-home .kp-graphic--supply { min-height: 220px; }
-  .kp-home .kp-closing__mark { max-width: 240px; min-height: 240px; }
-  .kp-home .kp-graphic--inquiry { min-height: 530px; margin-top: 44px; }
-}
-@media (max-width: 480px) {
-  .kp-home .kp-application__media > img { aspect-ratio: 1.6; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .kp-home .kp-hero-datum__line, .kp-home .kp-quality-check path { animation: none; stroke-dashoffset: 0; }
-  .kp-home .kp-capability, .kp-home .kp-capability__drawing, .kp-home .kp-text-link > svg { transition: none; transform: none; }
+  .kp-home .kp-closing__mark { min-height: 140px; }
+  .kp-home .kp-graphic--inquiry { min-height: 530px; margin-top: 32px; }
+  .kp-home .kp-graphic--heritage { margin: 0; }
+  .kp-home .kp-application__media > img { aspect-ratio: 1; }
 }

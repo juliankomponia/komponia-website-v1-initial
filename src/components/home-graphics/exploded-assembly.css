@@ -2,8 +2,9 @@
   min-width: 0;
   width: 100%;
   margin: 0;
-  padding: clamp(16px, 2.2vw, 28px);
-  border: 1px solid #d8d9d0;
+  padding: 20px;
+  border: 1px solid var(--kp-line, #dcded8);
+  border-radius: var(--kp-radius, 4px);
   background: #fff;
   color: #1f1f1d;
 }
@@ -13,12 +14,11 @@
   justify-content: space-between;
   gap: 12px;
   color: #1f1f1d;
-  font-size: 10px;
+  font-size: var(--kp-type-label, 12px);
   font-weight: 500;
   line-height: 1.65;
 }
 
-.kp-assembly__heading > span:last-child { color: #707368; font-weight: 400; text-align: right; }
 .kp-assembly__stage { --assembly-spread: 0; min-width: 0; width: 100%; margin-top: 6px; }
 .kp-assembly__stage[data-static="true"] { --assembly-spread: 1; }
 .kp-assembly__stage[data-reduced-motion="true"] { --assembly-spread: 0; }
@@ -39,24 +39,24 @@
 .kp-assembly__connector { transform: translate(calc(var(--assembly-spread) * -120px), calc(var(--assembly-spread) * 18px)); }
 .kp-assembly__callout { opacity: var(--assembly-spread); stroke: #1f1f1d; }
 .kp-assembly__callout circle { fill: #fff; }
-.kp-assembly__callout text { fill: #1f1f1d; stroke: none; font-family: inherit; font-size: 14px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.kp-assembly__callout text { fill: #1f1f1d; stroke: none; font-family: inherit; font-size: var(--kp-type-label, 12px); font-weight: 500; font-variant-numeric: tabular-nums; }
 .kp-assembly__stage[data-manual="true"] .kp-assembly__part { transition: transform 360ms ease; }
 .kp-assembly__stage[data-manual="true"] .kp-assembly__callout { transition: opacity 250ms ease; }
-.kp-assembly__controls { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 22px; }
-.kp-assembly__controls button { flex: 1 1 auto; min-height: 44px; padding: 10px 14px; border: 1px solid #d2d4ca; background: #fff; color: #1f1f1d; font: inherit; font-size: 11px; line-height: 1.5; cursor: pointer; }
+.kp-assembly__controls { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 16px; }
+.kp-assembly__controls button { flex: 1 1 auto; min-height: 44px; padding: 10px 14px; border: 1px solid #d2d4ca; background: #fff; color: #1f1f1d; font: inherit; font-size: var(--kp-type-label, 12px); line-height: 1.5; cursor: pointer; border-radius: var(--kp-radius, 4px); }
 .kp-assembly__controls button:hover { border-color: #3e5af5; }
 .kp-assembly__controls button[aria-pressed="true"] { border-color: #3e5af5; box-shadow: inset 0 -2px #3e5af5; }
 .kp-assembly__controls button:focus-visible { outline: 3px solid #3e5af5; outline-offset: 3px; }
-.kp-assembly__parts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 20px; list-style: none; margin: 0; padding: 18px 0 0; border-top: 1px solid #dedfd7; }
+.kp-assembly__parts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 20px; list-style: none; margin: 0; padding: 16px 0 0; border-top: 1px solid #dedfd7; }
 .kp-assembly__parts li { display: flex; align-items: flex-start; gap: 9px; min-width: 0; }
-.kp-assembly__parts li > span { padding-top: 2px; color: #3e5af5; font-size: 10px; font-weight: 500; line-height: 1.5; font-variant-numeric: tabular-nums; }
-.kp-assembly__parts strong { display: block; color: #1f1f1d; font-size: 11px; font-weight: 600; line-height: 1.6; }
-.kp-home .kp-assembly__parts p { margin: 4px 0 0; color: #64675c; font-size: 10px; line-height: 1.7; }
-.kp-assembly > figcaption { margin-top: 20px; color: #64675c; font-size: 10px; line-height: 1.7; }
+.kp-assembly__parts li > span { padding-top: 2px; color: #3e5af5; font-size: var(--kp-type-label, 12px); font-weight: 500; line-height: 1.5; font-variant-numeric: tabular-nums; }
+.kp-assembly__parts strong { display: block; color: #1f1f1d; font-size: var(--kp-type-label, 12px); font-weight: 600; line-height: 1.6; }
+.kp-home .kp-assembly__parts p { margin: 4px 0 0; color: #64675c; font-size: var(--kp-type-label, 12px); line-height: 1.7; }
+.kp-assembly > figcaption { margin-top: 16px; color: #64675c; font-size: var(--kp-type-label, 12px); line-height: 1.7; }
 
 @media (max-width: 767px) {
   .kp-assembly__stage { --assembly-spread: 1; }
-  .kp-assembly__callout text { font-size: 18px; }
+  .kp-assembly__callout text { font-size: var(--kp-type-title, 18px); }
   .kp-assembly__parts { gap: 16px; }
   .kp-assembly__stage[data-manual="true"] .kp-assembly__part,
   .kp-assembly__stage[data-manual="true"] .kp-assembly__callout { transition: none; }
@@ -64,9 +64,8 @@
 
 @media (max-width: 359px) {
   .kp-assembly__heading { flex-direction: column; gap: 3px; }
-  .kp-assembly__heading > span:last-child { text-align: left; }
   .kp-assembly__parts { grid-template-columns: 1fr; gap: 14px; }
-  .kp-assembly__controls button { font-size: 10px; padding-inline: 10px; }
+  .kp-assembly__controls button { font-size: var(--kp-type-label, 12px); padding-inline: 10px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

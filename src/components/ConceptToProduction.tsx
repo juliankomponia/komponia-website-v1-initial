@@ -2,7 +2,6 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router';
 import ComponentSwitch from './ComponentSwitch';
 import HomeChapter from './HomeChapter';
-import { BrandConstruction } from './HomeBrandMotifs';
 import { componentPairs } from '../data/component-pairs';
 import { HOME_CONTENT } from '../data/home-stand2';
 import './ConceptToProduction.css';
@@ -17,20 +16,18 @@ export default function ConceptToProduction() {
         <HomeChapter number="02" title="What we build" />
         <div className="home-concept__main">
           <div className="home-concept__copy">
-            <p className="komponia-label">{content.eyebrow}</p>
             <h2 id="concept-to-production-title">{content.title}</h2>
             <p className="home-concept__intro">{content.intro}</p>
             <div className="home-concept__actions">
-              <Link className="btn-primary btn-l" to={content.cta.to}>
+              <Link className="kp-button" to={content.cta.to}>
                 {content.cta.label}<ArrowRight size={17} aria-hidden="true" />
               </Link>
-              <Link className="home-concept__text-link" to={content.secondaryCta.to}>
+              <Link className="kp-text-link" to={content.secondaryCta.to}>
                 {content.secondaryCta.label}<ArrowRight size={16} aria-hidden="true" />
               </Link>
             </div>
           </div>
           {component && <div className="home-concept__visual">
-            <div className="home-concept__construction"><BrandConstruction /></div>
             <ComponentSwitch
               pair={{ ...component, name: content.component.name }}
               locale="en"

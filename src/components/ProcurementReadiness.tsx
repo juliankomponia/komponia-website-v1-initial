@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 const items = [
   {
     title: 'One personal contact',
-    text: 'Engineering, sourcing, quality and logistics coordinated through one contact.',
+    text: 'One contact coordinates engineering, sourcing, quality and logistics, including questions across suppliers.',
     to: '/team-account',
     link: 'How coordination works',
     discipline: 'engineering',
@@ -18,8 +18,8 @@ const items = [
     discipline: 'quality',
   },
   {
-    title: 'Call-offs & safety stock',
-    text: 'Production quantities, smaller call-offs and stock terms agreed around your demand.',
+    title: 'Supply planning',
+    text: 'We agree production quantities, call-offs and stock terms around your demand and planning requirements.',
     to: '/production-orders',
     link: 'Explore supply arrangements',
     discipline: 'supply',
@@ -30,7 +30,7 @@ export default function ProcurementReadiness() {
   return <aside className="kp-procurement" aria-labelledby="procurement-title">
     <div className="kp-procurement__heading">
       <h3 id="procurement-title">For procurement teams</h3>
-      <p>Technical requirements. Clear responsibilities.</p>
+      <p>Coordinate requirements, documentation and recurring supply.</p>
     </div>
     <div className="kp-procurement__items">
       {items.map(item => <div className="kp-procurement__item" data-discipline={item.discipline} key={item.title}>

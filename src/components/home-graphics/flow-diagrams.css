@@ -19,35 +19,35 @@
   color: #fff;
 }
 
-.kp-network-diagram__caption { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 22px; color: #f5f5f1; font-size: 11px; line-height: 1.5; }
+.kp-network-diagram__caption { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 22px; color: #f5f5f1; font-size: var(--kp-type-label, 12px); line-height: 1.5; }
 .kp-network-diagram__caption > span:last-child { color: #b5b8ae; }
 .kp-network-diagram__canvas { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: 90px 82px 90px; gap: 55px 16px; }
 .kp-network-diagram__connections { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
 .kp-network-diagram__routes path { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 900ms cubic-bezier(.25, .65, .25, 1); }
 .kp-network-diagram[data-revealed="true"] .kp-network-diagram__routes path { stroke-dashoffset: 0; }
-.kp-network-diagram__node { z-index: 1; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; min-width: 0; padding: 10px 6px; border: 1px solid #ffffff30; background: #1f1f1d; text-align: center; font-size: 12px; line-height: 1.5; }
+.kp-network-diagram__node { z-index: 1; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; min-width: 0; padding: 10px 6px; border: 1px solid #ffffff30; background: #1f1f1d; text-align: center; font-size: var(--kp-type-label, 12px); line-height: 1.5; }
 .kp-network-diagram__node > svg { display: block; width: 22px; height: 24px; flex: none; }
 .kp-network-diagram__node abbr { text-decoration: none; cursor: default; }
 .kp-network-diagram__hub { z-index: 1; grid-column: 1 / -1; display: flex; justify-self: center; align-items: center; justify-content: center; gap: 12px; width: 56%; min-width: 0; padding: 12px; border: 1px solid #ffffff65; background: #1f1f1d; }
 .kp-network-diagram__hub > svg { display: block; width: 36px; height: 38px; flex: none; }
-.kp-network-diagram__hub strong { display: block; font-size: clamp(17px, 1.8vw, 23px); font-weight: 700; letter-spacing: -.045em; line-height: 1.2; }
-.kp-network-diagram__hub span { display: block; margin-top: 5px; color: #cdd0c5; font-size: 10px; line-height: 1.5; }
-.kp-home .kp-network-diagram__note { margin: 22px 0 0; color: #b5b8ae; font-size: 11px; line-height: 1.8; }
+.kp-network-diagram__hub strong { display: block; font-size: var(--kp-type-title, 18px); font-weight: 700; letter-spacing: -.045em; line-height: 1.2; }
+.kp-network-diagram__hub span { display: block; margin-top: 5px; color: #cdd0c5; font-size: var(--kp-type-label, 12px); line-height: 1.5; }
+.kp-home .kp-network-diagram__note { margin: 22px 0 0; color: #b5b8ae; font-size: var(--kp-type-label, 12px); line-height: 1.8; }
 
 /* A production bar branches into illustrative call-offs; only signal colour is used. */
 .kp-supply-rhythm {
   min-width: 0;
   width: 100%;
-  margin: 32px 0 0;
+  margin: 0;
   padding-top: 24px;
   border-top: 1px solid #d9d9d1;
   color: #1f1f1d;
 }
 
-.kp-supply-rhythm__canvas { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: 68px 54px; row-gap: 76px; }
+.kp-supply-rhythm__canvas { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: 68px 54px; row-gap: 48px; }
 .kp-supply-rhythm__connections { position: absolute; inset: 0; width: 100%; height: 100%; }
 .kp-supply-rhythm__connections path { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 650ms ease 180ms; }
-.kp-supply-rhythm__batch { z-index: 1; grid-column: 1 / -1; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; font-size: 12px; line-height: 1.5; }
+.kp-supply-rhythm__batch { z-index: 1; grid-column: 1 / -1; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; font-size: var(--kp-type-label, 12px); line-height: 1.5; }
 .kp-supply-rhythm__batch > svg { display: block; width: 100%; height: 34px; overflow: visible; transform-origin: left center; transform: scaleX(.08); opacity: .15; transition: transform 520ms ease, opacity 350ms ease; }
 .kp-supply-rhythm__batch rect { fill: #f7d44b; stroke: #1f1f1d; stroke-width: 1.5; vector-effect: non-scaling-stroke; }
 .kp-supply-rhythm__delivery { display: grid; place-items: center; min-width: 0; opacity: 0; transform: translateY(-7px); transition: opacity 350ms ease 650ms, transform 350ms ease 650ms; }
@@ -58,15 +58,16 @@
 .kp-supply-rhythm[data-revealed="true"] .kp-supply-rhythm__batch > svg { transform: scaleX(1); opacity: 1; }
 .kp-supply-rhythm[data-revealed="true"] .kp-supply-rhythm__connections path { stroke-dashoffset: 0; }
 .kp-supply-rhythm[data-revealed="true"] .kp-supply-rhythm__delivery { opacity: 1; transform: none; }
-.kp-supply-rhythm__release { display: flex; align-items: baseline; justify-content: space-between; gap: 10px 20px; margin-top: 16px; font-size: 12px; line-height: 1.65; }
-.kp-supply-rhythm__release > span:last-child { color: #64675d; font-size: 11px; text-align: right; }
-.kp-supply-rhythm > figcaption { margin-top: 18px; color: #64675d; font-size: 10px; line-height: 1.7; }
+.kp-supply-rhythm__release { display: flex; align-items: baseline; justify-content: space-between; gap: 10px 20px; margin-top: 16px; font-size: var(--kp-type-label, 12px); line-height: 1.65; }
+.kp-supply-rhythm__release > span:last-child { color: #64675d; font-size: var(--kp-type-label, 12px); text-align: right; }
+.kp-supply-rhythm > figcaption { margin-top: 18px; color: #64675d; font-size: var(--kp-type-label, 12px); line-height: 1.7; }
 
 @media (max-width: 767px) {
-  .kp-network-diagram__canvas { gap: 55px 10px; }
-  .kp-network-diagram__node { font-size: 11px; }
+  .kp-network-diagram__canvas { grid-template-rows: 84px 76px 84px; gap: 36px 10px; }
+  .kp-network-diagram__node { gap: 6px; padding-block: 8px; }
+  .kp-network-diagram__node { font-size: var(--kp-type-label, 12px); }
   .kp-network-diagram__hub { width: 66%; }
-  .kp-network-diagram__hub strong { font-size: 20px; }
+  .kp-network-diagram__hub strong { font-size: var(--kp-type-title, 18px); }
   .kp-supply-rhythm__release { align-items: flex-start; flex-direction: column; gap: 3px; }
   .kp-supply-rhythm__release > span:last-child { text-align: left; }
   .kp-network-diagram__routes path,

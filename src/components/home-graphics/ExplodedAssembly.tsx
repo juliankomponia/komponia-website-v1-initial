@@ -120,7 +120,6 @@ export default function ExplodedAssembly() {
   return <figure className="kp-assembly">
     <div className="kp-assembly__heading">
       <span>Material. Geometry. Function.</span>
-      <span>Assembly study</span>
     </div>
     <div
       ref={ref}

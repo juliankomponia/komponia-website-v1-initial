@@ -1,119 +1,70 @@
-/* LinkedIn banner language adapted to the existing homepage, not a new template. */
-.site-app[data-page="home"] { --kp-yellow: #f7d44b; }
+/* Brand moments: material, network, WTS experience and the blue close. */
+.kp-home .home-hero { --home-hero-accent: var(--kp-blue); --kp-focus: #fff; }
+.kp-home .home-hero[data-discipline="supply"] { --home-hero-accent: var(--kp-yellow); }
+.kp-home .home-hero .hero-title { font-size: var(--kp-type-hero); }
+.kp-home .home-hero .hero-intro, .kp-home .home-hero-point, .kp-home .home-hero .hero-actions a { font-size: var(--kp-type-body); }
+.kp-home .home-hero .home-hero-switcher button { font-size: var(--kp-type-label); }
+.kp-home .home-hero .hero-actions a { min-height: 48px; border-radius: var(--kp-radius); }
+.kp-home .home-hero .home-hero-primary { background: var(--kp-blue); color: #fff; }
+.kp-home .home-hero .home-hero-primary:hover { background: var(--kp-blue-hover); }
+.kp-home .home-hero .home-hero-secondary { padding-inline: 8px; border-color: transparent; background: transparent; }
+.kp-home .home-hero .home-hero-point svg { color: #fff; }
 
-/* Editorial section openings break up the repeated centred card introductions. */
-.kp-home .kp-heading--split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 64px; max-width: none; text-align: left; align-items: end; }
-.kp-home .kp-heading--split .kp-eyebrow { grid-column: 1 / -1; justify-content: flex-start; margin: 0 0 4px; }
-.kp-home .kp-heading--split > p:not(.kp-eyebrow) { margin: 0; max-width: 570px; }
-.kp-home .kp-heading--split h2 { max-width: 600px; font-size: clamp(30px, 3.3vw, 44px); }
-
-/* Minimal Industrial: a larger material sample on an outlined brand construction. */
-.kp-home .home-concept { border-bottom: 1px solid var(--kp-line); }
-.kp-home .home-concept__main { gap: clamp(32px, 4vw, 72px); }
-.kp-home .home-concept__visual { position: relative; isolation: isolate; max-width: 500px; padding: 16px 24px 20px; background: #f5f5f1; }
-.kp-home .home-concept__construction { position: absolute; z-index: -1; inset: 0 0 85px; overflow: hidden; pointer-events: none; }
-.kp-home .home-concept__construction .kp-brand-construction { width: 114%; height: 100%; }
-.kp-home .home-concept .component-switch__caption { border-color: #d9dbd4; }
-.kp-home .home-concept .component-switch__badge { background: var(--kp-blue); color: #fff; }
+.kp-home .home-concept { background: #fff; border-bottom: 1px solid var(--kp-line); }
+.kp-home .home-concept__inner { padding-block: var(--kp-section-space); }
+.kp-home .home-concept__main { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 48px; }
+.kp-home .home-concept h2 { white-space: normal; }
+.kp-home .home-concept__intro { max-width: 68ch; margin-top: 20px; font-size: var(--kp-type-body); }
+.kp-home .home-concept__actions { gap: 8px 24px; margin-top: 24px; }
+.kp-home .home-concept__visual { max-width: 300px; padding: 12px; background: var(--kp-paper); border: 1px solid var(--kp-line); border-radius: var(--kp-radius); }
+.kp-home .home-concept .component-switch__caption { padding-block: 12px; font-size: var(--kp-type-body); }
+.kp-home .home-concept .component-switch__badge { background: var(--kp-blue); color: #fff; font-size: var(--kp-type-label); }
 .kp-home .home-concept .component-switch__badge[data-real="true"] { background: var(--kp-ink); }
-.kp-home .home-concept__caption { margin-top: 10px; color: #595e61; }
-.kp-home .home-concept__steps { margin-top: 44px; padding-top: 32px; }
-.kp-home .home-concept__steps li { align-items: flex-start; }
-.kp-home .home-concept__step-number { display: grid; place-items: center; width: 34px; height: 38px; background: var(--kp-blue); border-radius: 17px; color: #fff; font-size: 11px; }
-.kp-home .home-concept__steps li:nth-child(2) .home-concept__step-number { background: var(--kp-lavender); border-radius: 10px; color: var(--kp-ink); }
-.kp-home .home-concept__steps li:nth-child(3) .home-concept__step-number { background: var(--kp-yellow); border-radius: 10px; color: var(--kp-ink); }
+.kp-home .home-concept .component-switch__hint, .kp-home .home-concept__caption { font-size: var(--kp-type-label); line-height: 1.6; }
+.kp-home .home-concept__steps { margin-top: 24px; padding-top: 20px; border-color: var(--kp-line); }
+.kp-home .home-concept__steps li { gap: 12px; padding-inline: 20px; border-color: var(--kp-line); }
+.kp-home .home-concept__steps li:first-child { padding-left: 0; }
+.kp-home .home-concept__steps li:last-child { padding-right: 0; }
+.kp-home .home-concept__step-number { color: var(--kp-blue); font-size: var(--kp-type-label); }
+.kp-home .home-concept__steps h3 { font-size: var(--kp-type-title); }
+.kp-home .home-concept__steps p { font-size: var(--kp-type-body); }
 
-/* The date belongs to WTS. No invented company age or scale metrics. */
-.kp-home .kp-heritage { background: var(--kp-ink); padding: 64px 0; }
-.kp-home .kp-heritage__banner { display: grid; grid-template-columns: .75fr 1.25fr; align-items: center; gap: 64px; min-height: 0; overflow: visible; border-radius: 0; }
-.kp-home .kp-heritage__banner::after { content: none; }
-.kp-home .kp-heritage__date { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding-right: 40px; border-right: 1px solid #ffffff30; }
-.kp-home .kp-heritage__date > span:first-child { color: var(--kp-lavender); text-transform: uppercase; font-size: 11px; letter-spacing: .16em; }
-.kp-home .kp-heritage__date strong { color: #fff; font-size: clamp(76px, 10vw, 136px); font-weight: 500; letter-spacing: -.065em; line-height: 1.1; }
-.kp-home .kp-heritage__date-line { width: 72px; height: 5px; margin-top: 16px; background: var(--kp-blue); border-radius: 3px; }
-.kp-home .kp-heritage__copy { padding: 0; max-width: 680px; }
-.kp-home .kp-heritage h2 { text-wrap: balance; max-width: 570px; font-size: clamp(28px, 3vw, 40px); }
-.kp-home .kp-heritage .kp-eyebrow { color: #c3c6cc; }
-.kp-home .kp-heritage__copy > p:not(.kp-eyebrow) { margin: 18px 0 22px; }
-
-/* A bespoke sample still-life provides a distinct material and colour moment. */
-.kp-home .kp-custom { padding-block: 80px; background: #f5f5f1; border-block: 1px solid #e3e4de; }
-.kp-home .kp-custom__media { background: var(--kp-blue); }
-.kp-home .kp-custom__media img { border-radius: 0; aspect-ratio: 1.32; }
-.kp-home .kp-custom__media figcaption { padding: 22px 28px; color: #fff; font-size: 15px; font-weight: 500; letter-spacing: -.01em; }
-
-/* Industrial Network: a small, legible route in the actual brand module shapes. */
-.kp-home .kp-network { padding-block: 80px; background: var(--kp-ink); }
-.kp-home .kp-network__visual { position: relative; width: 100%; aspect-ratio: 1.5; margin: 0; min-width: 0; }
-.kp-home .kp-network__label { position: absolute; color: #fff; font-size: clamp(12px, 1.3vw, 17px); line-height: 1.5; font-weight: 500; }
-.kp-home .kp-network__label--engineering { left: 22%; top: 56%; }
-.kp-home .kp-network__label--quality { left: 50.3%; top: 39%; color: var(--kp-lavender); }
-.kp-home .kp-network__label--supply { left: 76.5%; top: 84%; color: var(--kp-yellow); }
+.kp-home .kp-network { background: var(--kp-ink); --kp-focus: #fff; }
 .kp-home .kp-network .kp-feature__copy h2 { color: #fff; }
-.kp-home .kp-network .kp-feature__copy > p:not(.kp-eyebrow), .kp-home .kp-network__points dd { color: #cdd0d5; }
-.kp-home .kp-network .kp-eyebrow { color: var(--kp-lavender); }
-.kp-home .kp-network__points { gap: 24px 28px; }
-.kp-home .kp-network__points dt { color: #fff; font-size: 15px; }
-.kp-home .kp-network .kp-button { border-color: #fff; color: var(--kp-ink); background: #fff; }
-.kp-home .kp-network .kp-button:hover { background: var(--kp-lavender); border-color: var(--kp-lavender); }
+.kp-home .kp-network .kp-feature__copy > p:not(.kp-eyebrow), .kp-home .kp-network__points dd { color: #d3d6cf; }
+.kp-home .kp-network .kp-eyebrow { color: #d3d6cf; }
+.kp-home .kp-network .kp-text-link { color: #fff; }
+.kp-home .kp-network__points { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; margin: 24px 0 16px; }
+.kp-home .kp-network__points dt { margin-bottom: 8px; color: #fff; font-size: var(--kp-type-title); font-weight: 500; line-height: 1.4; }
+.kp-home .kp-network__points dd { margin: 0; font-size: var(--kp-type-body); line-height: 1.6; }
 
-/* Quality is lavender; Supply uses the yellow module. */
-.kp-home .kp-quality { background: var(--kp-lavender); }
-.kp-home .kp-quality .kp-eyebrow { color: var(--kp-ink); }
-.kp-home .kp-quality .kp-heading > p:not(.kp-eyebrow) { color: #3e3548; }
-.kp-home .kp-quality .kp-expertise-card { border-radius: 4px; }
-.kp-home .kp-quality .kp-expertise-card > .kp-eyebrow { color: var(--kp-blue); }
-.kp-home .kp-quality .kp-expertise-card:has([aria-expanded="true"]) > .kp-eyebrow { color: var(--kp-lavender); }
-.kp-home .kp-quality a:focus-visible, .kp-home .kp-quality button:focus-visible { outline-color: var(--kp-ink); }
-.kp-home .kp-quality .kp-expertise-card:has([aria-expanded="true"]) a:focus-visible,
-.kp-home .kp-quality .kp-expertise-card:has([aria-expanded="true"]) button:focus-visible { outline-color: var(--kp-lavender); }
-.kp-home .kp-supply-section { background: #f5f5f1; border-block: 1px solid #e3e4de; }
-.kp-home .kp-supply__media { background: var(--kp-yellow); padding: 28px; }
-.kp-home .kp-supply__media figcaption { margin-bottom: 28px; color: var(--kp-ink); font-size: clamp(24px, 2.6vw, 34px); line-height: 1.2; font-weight: 600; letter-spacing: -.035em; }
-.kp-home .kp-supply .kp-supply__media img { aspect-ratio: 1.2; border-radius: 0; }
+.kp-home .kp-heritage { padding-block: var(--kp-section-space); background: #fff; border-bottom: 1px solid var(--kp-line); }
+.kp-home .kp-heritage__banner { display: grid; grid-template-columns: .6fr 1.4fr; align-items: center; gap: 48px; }
+.kp-home .kp-heritage__date { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.kp-home .kp-heritage__date > span:first-child { color: var(--kp-body); font-size: var(--kp-type-label); text-transform: uppercase; letter-spacing: .12em; }
+.kp-home .kp-heritage__date strong { color: var(--kp-ink); font-size: var(--kp-type-hero); line-height: 1.1; letter-spacing: -.05em; font-weight: 600; }
+.kp-home .kp-heritage__copy > p { max-width: 68ch; margin: 16px 0 12px; font-size: var(--kp-type-body); line-height: 1.6; }
 
-/* Future Industrial, reduced to one bold composition at the end of the page. */
-.kp-home .kp-closing { text-align: left; }
+.kp-home .kp-closing { padding-block: var(--kp-section-space); color: #fff; background: var(--kp-blue); --kp-focus: #fff; }
 .kp-home .kp-closing__inner { display: grid; grid-template-columns: 1.5fr .65fr; align-items: center; gap: 48px; }
-.kp-home .kp-closing h2 { margin: 0; max-width: 780px; text-wrap: balance; }
-.kp-home .kp-closing__mark { width: 100%; max-width: 300px; justify-self: end; aspect-ratio: 310 / 280; }
+.kp-home .kp-closing h2 { max-width: 780px; color: #fff; }
+.kp-home .kp-closing__copy > p { max-width: 68ch; margin: 20px 0 24px; font-size: var(--kp-type-body); line-height: 1.6; }
+.kp-home .kp-closing__mark { width: 100%; max-width: 260px; justify-self: end; }
+.kp-home .kp-closing__experience { display: flex; width: fit-content; color: #fff; margin-top: 12px; }
+.kp-home .kp-button--white { background: #fff; border-color: #fff; color: var(--kp-blue); }
+.kp-home .kp-button--white:hover { background: var(--kp-paper); border-color: var(--kp-paper); }
 
-@media (max-width: 1100px) {
-  .kp-home .kp-heading--split { gap: 12px 36px; }
-  .kp-home .kp-heritage__banner { gap: 36px; }
-  .kp-home .kp-heritage__date { padding-right: 20px; }
-  .kp-home .home-concept__visual { padding-inline: 16px; }
-}
-@media (max-width: 900px) {
-  .kp-home .kp-network { padding-block: 60px; }
-  .kp-home .kp-network .kp-feature { grid-template-columns: .85fr 1.15fr; }
-  .kp-home .kp-network__label { font-size: 11px; }
-  .kp-home .kp-heritage__banner { grid-template-columns: .7fr 1.3fr; }
-  .kp-home .kp-heritage__date strong { font-size: 86px; }
-}
 @media (max-width: 767px) {
-  .kp-home .kp-heading--split { grid-template-columns: 1fr; gap: 14px; }
-  .kp-home .kp-heading--split h2 { font-size: 30px; }
-  .kp-home .kp-heading--split > p:not(.kp-eyebrow) { margin-top: 0; }
-  .kp-home .home-concept__visual { max-width: 440px; padding: 10px 16px 16px; }
-  .kp-home .home-concept__steps { margin-top: 32px; padding-top: 24px; }
-  .kp-home .kp-heritage { padding-block: 44px; }
-  .kp-home .kp-heritage__banner { grid-template-columns: 1fr; gap: 32px; }
-  .kp-home .kp-heritage__date { padding: 0 0 24px; border-right: 0; border-bottom: 1px solid #ffffff30; }
-  .kp-home .kp-heritage__date strong { font-size: clamp(88px, 22vw, 120px); }
-  .kp-home .kp-heritage__date-line { position: absolute; right: 0; bottom: 34px; width: 56px; }
-  .kp-home .kp-heritage h2 { font-size: 30px; }
-  .kp-home .kp-custom__media figcaption { padding: 18px 20px; font-size: 14px; }
-  .kp-home .kp-network .kp-feature { grid-template-columns: 1fr; gap: 32px; }
-  .kp-home .kp-network__visual { max-width: 500px; justify-self: center; order: 2; }
-  .kp-home .kp-network__label { font-size: clamp(11px, 3vw, 16px); }
-  .kp-home .kp-network__points { grid-template-columns: 1fr 1fr; }
-  .kp-home .kp-supply__media { padding: 24px; }
-  .kp-home .kp-supply__media figcaption { margin-bottom: 22px; }
-  .kp-home .kp-closing__inner { grid-template-columns: 1fr; gap: 32px; }
-  .kp-home .kp-closing__mark { max-width: 150px; justify-self: start; }
+  .kp-home .home-concept__main, .kp-home .kp-heritage__banner { grid-template-columns: minmax(0,1fr); gap: 24px; }
+  .kp-home .home-concept__visual { max-width: 280px; }
+  .kp-home .home-concept__steps { gap: 16px; }
+  .kp-home .home-concept__steps li { padding: 0; }
+  .kp-home .kp-network__points { gap: 20px; }
+  .kp-home .kp-heritage__date { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 8px 20px; }
+  .kp-home .kp-heritage__date > span:first-child { grid-column: 1 / -1; }
+  .kp-home .kp-closing__inner { grid-template-columns: minmax(0,1fr); gap: 24px; }
+  .kp-home .kp-closing__mark { max-width: 140px; justify-self: start; }
 }
-@media (max-width: 390px) {
-  .kp-home .kp-network__points { grid-template-columns: 1fr; }
-  .kp-home .kp-supply__media { padding: 20px; }
+@media (max-width: 359px) {
+  .kp-home .kp-network__points { grid-template-columns: minmax(0,1fr); }
 }

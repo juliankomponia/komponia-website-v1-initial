@@ -459,7 +459,7 @@
     ]
   },
   "heritage": {
-    "title": "A fresh approach. Rooted in experience.",
+    "title": "Technical experience behind every component.",
     "intro": "The Komponia offering builds on the technical component experience of WTS since 1997. It brings component selection, individual solutions and ongoing supply together for manufacturers and industrial users.",
     "cta": {
       "label": "Explore our component fields",
@@ -467,8 +467,8 @@
     }
   },
   "recurring-supply": {
-    "title": "Production-scale pricing. Deliveries that fit.",
-    "intro": "Produce in economical quantities and take delivery in smaller call-offs. We connect larger production lots with agreed safety stock, demand planning and recurring deliveries. Setup costs are spread across more parts, while release quantities follow your production schedule.",
+    "title": "Plan production and recurring deliveries.",
+    "intro": "We coordinate production quantities, demand planning and agreed stock terms. Call-off quantities and delivery schedules are defined around your production needs.",
     "cta": {
       "label": "See how supply is agreed",
       "to": "/how-ordering-works"
@@ -521,20 +521,20 @@
     "intro": "Combine purchasing volume, economical production lots and planned deliveries. Agree larger quantities, then call off what your production needs.",
     "cards": [
       {
-        "title": "Shared purchasing power.",
-        "text": "We bring together orders for different components across customers. The combined business with our manufacturing partners creates scope for better purchasing terms, including custom parts.",
+        "title": "Coordinate purchasing volume.",
+        "text": "We bring together demand for different components across customers when discussing quantities and commercial terms with manufacturing partners. Each component retains its agreed specification.",
         "link": "Explore OEM solutions",
         "to": "/oem-solutions"
       },
       {
-        "title": "Larger runs. Smaller call-offs.",
-        "text": "Agreed safety stock lets us plan larger production batches and spread setup costs across more parts. You call off smaller quantities to match your production needs.",
+        "title": "Agree batches and call-offs.",
+        "text": "We plan production batches and smaller releases together with agreed stock arrangements. Quantities, delivery schedules and responsibilities are defined around expected demand.",
         "link": "Explore recurring supply",
         "to": "/production-orders"
       },
       {
-        "title": "Smarter packing. Lower freight costs.",
-        "text": "Transport costs averaged 4.1% of turnover in Finnish industry and trade in 2025.* Our AI-designed packing and shipping process combines dimensions, protection and delivery planning to reduce empty space and freight cost per component.",
+        "title": "Review the total supply cost.",
+        "text": "Our packing and shipping process considers component dimensions, protection, shipment quantities and delivery timing together. We review packaging and freight as part of the complete supply arrangement.",
         "link": "Explore packing & shipping",
         "to": "/production-orders"
       }
@@ -546,7 +546,7 @@
     }
   },
   "environment": {
-    "title": "Less empty space. More considered resource use.",
+    "title": "Consider resources throughout supply.",
     "intro": "Environmental protection is part of how we plan supply. We work to reduce unnecessary packaging and transport volume, consolidate compatible deliveries and keep stock aligned with actual demand.",
     "bullets": [
       "Size packaging around the parts and the protection they need.",

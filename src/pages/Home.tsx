@@ -18,12 +18,10 @@ import './home-graphics.css';
 
 const NetworkDiagram = lazy(() => import('../components/home-graphics/NetworkDiagram'));
 const SupplyRhythm = lazy(() => import('../components/home-graphics/SupplyRhythm'));
-const TechnicalDrawing = lazy(() => import('../components/home-graphics/TechnicalDrawing'));
 const ExplodedAssembly = lazy(() => import('../components/home-graphics/ExplodedAssembly'));
 const ClosingAssembly = lazy(() => import('../components/home-graphics/ClosingAssembly'));
 const HeritageTimeline = lazy(() => import('../components/home-graphics/HeritageTimeline'));
 const InquiryRoutes = lazy(() => import('../components/home-graphics/InquiryRoutes'));
-const applicationDrawings = ['controller', 'connector', 'machined', 'sensor'] as const;
 
 function SectionHeading({ title, children, eyebrow, split = false }: { title: string; children: ReactNode; eyebrow?: string; split?: boolean }) {
   return <header className={`kp-heading${split ? ' kp-heading--split' : ''}`}>
@@ -95,9 +93,11 @@ export default function Home() {
     <section className="kp-section kp-supply-section" id="page-section-ongoing-supply" data-section-label="04 How we deliver">
       <div className="kp-container"><HomeChapter number="04" title="How we deliver" discipline="supply" /></div>
       <div className="kp-container kp-feature kp-supply">
-        <figure className="kp-feature__media kp-supply__media"><figcaption>Series quantities.<br />Flexible call-offs.</figcaption><img src={I.ongoingSupply} alt="Illustrative preparation and packing of component deliveries" loading="lazy" /></figure>
+        <div className="kp-supply__visual">
+          <figure className="kp-feature__media kp-supply__media"><img src={I.ongoingSupply} alt="Illustrative preparation and packing of component deliveries" loading="lazy" /></figure>
+          <DeferredGraphic className="kp-graphic--supply" label="A larger production batch divided into agreed call-offs; schematic only."><SupplyRhythm /></DeferredGraphic>
+        </div>
         <div className="kp-feature__copy">
-          <p className="kp-eyebrow">Ongoing supply</p>
           <h2>{H['recurring-supply'].title}</h2><p>{H['recurring-supply'].intro}</p>
           <SupplyDetails />
           <Link to="/production-orders" className="kp-text-link">Explore recurring supply <ArrowRight size={18} aria-hidden="true" /></Link>
@@ -108,7 +108,6 @@ export default function Home() {
         <div className="kp-actions"><Link to="/contact" className="kp-button">Prepare an inquiry <ArrowRight size={18} aria-hidden="true" /></Link></div>
         <details className="kp-source"><summary>Transport-cost reference</summary><SourceNote note={H['why-komponia'].footnote} /></details>
       </div>
-      <div className="kp-container"><DeferredGraphic className="kp-graphic--supply" label="A larger production batch divided into agreed call-offs; schematic only."><SupplyRhythm /></DeferredGraphic></div>
     </section>
 
     <section className="kp-section kp-environment" id="page-section-environment">
@@ -125,7 +124,6 @@ export default function Home() {
         <div className="kp-heritage__banner">
           <div className="kp-heritage__date"><span>WTS experience since</span><strong>1997</strong><DeferredGraphic className="kp-graphic--heritage"><HeritageTimeline /></DeferredGraphic></div>
           <div className="kp-heritage__copy">
-            <p className="kp-eyebrow">The experience behind Komponia</p>
             <h2>{H.heritage.title}</h2><p>{H.heritage.intro}</p>
             <Link to="/about" className="kp-text-link">About Komponia <ArrowRight size={18} aria-hidden="true" /></Link>
           </div>
@@ -139,7 +137,6 @@ export default function Home() {
         <div className="kp-applications__grid">{H.applications.cards.map((card, index) => <Link to={card.to} className="kp-application" key={card.title}>
           <div className="kp-application__media">
             <img src={[I.controllers, I.heating, I.customEngineering, I.sensors][index]} alt="" loading="lazy" />
-            <DeferredGraphic className="kp-drawing-inset"><TechnicalDrawing variant={applicationDrawings[index]} /></DeferredGraphic>
           </div>
           <h3>{card.title}</h3><p>{card.text}</p><span className="kp-text-link">{card.link}<ArrowRight size={17} aria-hidden="true" /></span>
         </Link>)}</div>

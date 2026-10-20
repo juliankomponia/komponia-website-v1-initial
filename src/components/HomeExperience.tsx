@@ -5,9 +5,6 @@ import { CAPABILITY_IMAGES } from '../data/capability-images';
 import { CAPABILITY_SPECIFICATIONS } from '../data/capability-specifications';
 import { HOME_CONTENT as H } from '../data/home-stand2';
 import { INDUSTRIAL_IMAGES as I } from '../data/home-stand2-images';
-import benefitComponents from '../assets/industrial/capability-heroes-20261017/components.webp';
-import benefitAssembly from '../assets/industrial/capability-heroes-20261017/assembly.webp';
-import benefitCables from '../assets/industrial/capability-heroes-20261017/cables.webp';
 import DeferredGraphic from './DeferredGraphic';
 import type { TechnicalDrawingVariant } from './home-graphics/TechnicalDrawing';
 
@@ -19,36 +16,48 @@ const capabilityDrawings: Record<string, TechnicalDrawingVariant> = {
 };
 const componentDrawings: TechnicalDrawingVariant[] = ['controller', 'sensor', 'connector', 'controller'];
 
+const capabilityDescriptions: Record<string, string> = {
+  components: 'Technical components.', cnc: 'Milled & turned parts.',
+  printing: 'Additive parts.', sheetMetal: 'Cut & formed parts.',
+  injection: 'Molded plastic parts.', cables: 'Cables & harnesses.',
+  assembly: 'Mechanical assemblies.', rubber: 'Molded elastomers.',
+  casting: 'Metal castings.', extrusion: 'Custom profiles.',
+  sensors: 'Sensors & probes.', vacuum: 'Polyurethane parts.',
+};
+
 export function CapabilityCollection() {
   const [expanded, setExpanded] = useState(false);
-  const [drawing, setDrawing] = useState<string | null>(null);
   const gridId = useId();
   const cards = expanded ? H.capabilities.cards : H.capabilities.cards.slice(0, 8);
 
   return <>
     <div id={gridId} className="kp-capabilities">
-      {cards.map(card => <article className="kp-capability" key={card.media} data-drawing={drawing === card.media}>
-        <Link className="kp-capability__link" to={card.to}>
-        <figure>
-          <img src={CAPABILITY_IMAGES[card.media]} alt="" loading="lazy" />
-          <DeferredGraphic className="kp-capability__drawing"><TechnicalDrawing variant={capabilityDrawings[card.media]} /></DeferredGraphic>
-        </figure>
-        <div className="kp-capability__copy">
-          <h3>{card.title}<ArrowRight size={16} aria-hidden="true" /></h3>
-          <dl className="kp-capability__specs">
-            <div><dt>Process</dt><dd>{CAPABILITY_SPECIFICATIONS[card.media].process}</dd></div>
-            <div><dt>Application</dt><dd>{CAPABILITY_SPECIFICATIONS[card.media].application}</dd></div>
-            <div><dt>To specify</dt><dd>{CAPABILITY_SPECIFICATIONS[card.media].specify}</dd></div>
-          </dl>
-        </div>
-        </Link>
-        <button className="kp-capability__drawing-toggle" type="button" aria-pressed={drawing === card.media}
-          aria-label={`Show schematic for ${card.title}`}
-          onClick={() => setDrawing(current => current === card.media ? null : card.media)}>Schematic</button>
+      {cards.map(card => <article className="kp-capability" key={card.media}>
+        <details className="kp-capability__details">
+          <summary className="kp-capability__summary">
+            <figure><img src={CAPABILITY_IMAGES[card.media]} alt="" loading="lazy" /></figure>
+            <div className="kp-capability__copy">
+              <h3>{card.title}</h3>
+              <p>{capabilityDescriptions[card.media]}</p>
+            </div>
+            <ArrowRight className="kp-capability__arrow" size={18} aria-hidden="true" />
+          </summary>
+          <div className="kp-capability__body">
+            <p>{card.desc}</p>
+            <DeferredGraphic className="kp-capability__drawing" label={`Illustrative schematic for ${card.title.toLowerCase()}.`}><TechnicalDrawing variant={capabilityDrawings[card.media]} /></DeferredGraphic>
+            <dl className="kp-capability__specs">
+              <div><dt>Process</dt><dd>{CAPABILITY_SPECIFICATIONS[card.media].process}</dd></div>
+              <div><dt>Application</dt><dd>{CAPABILITY_SPECIFICATIONS[card.media].application}</dd></div>
+              <div><dt>To specify</dt><dd>{CAPABILITY_SPECIFICATIONS[card.media].specify}</dd></div>
+            </dl>
+            <Link className="kp-text-link" to={card.to}>{card.cta}<ArrowRight size={16} aria-hidden="true" /></Link>
+          </div>
+        </details>
       </article>)}
     </div>
+    <p className="kp-capability-note">Illustrative component images.</p>
     <div className="kp-actions">
-      <button className="kp-button kp-button--outline" type="button" aria-expanded={expanded} aria-controls={gridId} onClick={() => setExpanded(!expanded)}>
+      <button className="kp-text-link" type="button" aria-expanded={expanded} aria-controls={gridId} onClick={() => setExpanded(!expanded)}>
         {expanded ? 'View fewer capabilities' : `View all ${H.capabilities.cards.length} capabilities`}
         {expanded ? <Minus size={17} aria-hidden="true" /> : <Plus size={17} aria-hidden="true" />}
       </button>
@@ -57,12 +66,10 @@ export function CapabilityCollection() {
   </>;
 }
 
-const benefitImages = [CAPABILITY_IMAGES.components, CAPABILITY_IMAGES.assembly, CAPABILITY_IMAGES.cables];
-const benefitPhotos = [benefitComponents, benefitAssembly, benefitCables];
 const benefitSummaries = [
-  'Combined component orders support better purchasing terms.',
-  'Plan larger production batches and call off the quantities you need.',
-  'Coordinate packaging and deliveries to reduce unused space.',
+  'We combine component demand when discussing quantities and purchasing terms.',
+  'Production batches, call-off quantities and stock terms are agreed together.',
+  'Packaging and delivery plans are considered as part of the total cost.',
 ];
 
 export function BenefitStories() {
@@ -102,11 +109,9 @@ export function BenefitStories() {
           setExpanded(null);
         }}
       >
-        <img className="kp-benefit__photo" src={benefitPhotos[index]} alt="" loading="lazy" />
-        <figure className="kp-benefit__image"><img src={benefitImages[index]} alt="" loading="lazy" /></figure>
         <div className="kp-benefit__copy">
           <h3>{card.title}</h3>
-          <p className="kp-benefit__summary" hidden={open}>{benefitSummaries[index]}</p>
+          <p className="kp-benefit__summary">{benefitSummaries[index]}</p>
           <button ref={element => { toggles.current[index] = element; }} className="kp-benefit__toggle" type="button" aria-expanded={open} aria-controls={bodyId} onClick={() => setExpanded(open ? null : index)}>
             {open ? <Minus size={21} aria-hidden="true" /> : <Plus size={21} aria-hidden="true" />}
             <span className="sr-only">{open ? 'Read less' : 'Read more'} about {card.title.toLowerCase()}</span>
@@ -220,17 +225,18 @@ export function LifecycleTabs() {
       <div className="kp-lifecycle__copy">
         <h3>{H.process.steps[stage.steps[0]].title}</h3>
         {stage.steps.map(step => <p key={H.process.steps[step].title}>{H.process.steps[step].text}</p>)}
-        {index === 0 && <ul>{H.inquiry.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}</ul>}
         {index === 4 && <ul>{H['supply-terms'].topics.slice(0, 2).map(topic => <li key={topic.title}>{topic.text}</li>)}</ul>}
-        <Link className="kp-button" to="/contact">{H.inquiry.cta.label} <ArrowRight size={17} aria-hidden="true" /></Link>
+        {index !== 0 && <Link className="kp-button" to="/contact">{H.inquiry.cta.label} <ArrowRight size={17} aria-hidden="true" /></Link>}
       </div>
-      <div className="kp-lifecycle__media"><img src={stage.image} alt={stage.alt} loading="lazy" /></div>
+      <div className="kp-lifecycle__media">
+        {index === 0 ? <ul className="kp-lifecycle__checklist">{H.inquiry.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}</ul> : <img src={stage.image} alt={stage.alt} loading="lazy" />}
+      </div>
+      {index === 0 && <Link className="kp-button kp-lifecycle__inquiry" to="/contact">{H.inquiry.cta.label} <ArrowRight size={17} aria-hidden="true" /></Link>}
     </div>)}
   </div>;
 }
 
 const qualificationImages = [I.customEngineering, I.qualityInspection, I.ongoingSupply];
-const qualificationLabels = ['Requirements', 'Samples & checks', 'Approval'];
 
 export function QualificationCards() {
   const [expanded, setExpanded] = useState<number[]>([]);
@@ -242,7 +248,6 @@ export function QualificationCards() {
       const bodyId = `${id}-body-${index}`;
 
       return <article className="kp-expertise-card" key={card.title}>
-        <p className="kp-eyebrow">{qualificationLabels[index]}</p>
         <h3>{card.title}</h3>
         <img className="kp-expertise-card__image" src={qualificationImages[index]} alt="" loading="lazy" />
         <button className="kp-expertise-card__toggle" type="button" aria-expanded={open} aria-controls={bodyId} onClick={() => setExpanded(previous => open ? previous.filter(item => item !== index) : [...previous, index])}>
@@ -251,7 +256,6 @@ export function QualificationCards() {
           <span className="sr-only"> about {card.title.toLowerCase()}</span>
         </button>
         <div className="kp-expertise-card__body" id={bodyId} hidden={!open}>
-          <svg className="kp-quality-check" viewBox="0 0 32 32" aria-hidden="true"><path d="m5 16 7 7L27 7" pathLength="1" /></svg>
           <p>{card.text}</p>
           <Link className="kp-text-link" to="/quality-and-lab">About qualification <ArrowRight size={16} aria-hidden="true" /></Link>
         </div>
