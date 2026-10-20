@@ -2,12 +2,9 @@ import { useState } from 'react';
 import { SubHero, FeatureRow } from '../components/Subpage';
 import { SectionLead, OrderingProcess, QualityStandards, IndustriesSection, ProtolabsBanner, DarkCta } from '../components/Sections';
 import { Link } from 'react-router';
-import { IMG } from '../data/site';
+import { CAPABILITY_IMAGES as C } from '../data/capability-images';
+import { INDUSTRIAL_IMAGES as I } from '../data/images';
 
-const CNC_IMGS = {
-  milling: 'https://images.ctfassets.net/q2hzfkp3j57e/30YVqCmw3LC51a3EFRzc1R/8ba564107fa95002110f3e7d89444512/cnc_milling_anodized_def.webp?fit=thumb&fm=png&q=82',
-  turning: 'https://images.ctfassets.net/q2hzfkp3j57e/78Ppw0OmfJ3yRrVPbnxBrU/ac3771c044f27e0a7e204434b7a0e9c0/cnc_turning_def.webp?fit=thumb&fm=png&q=82',
-};
 
 const METALS = ['Alloy steel', 'Aluminum', 'Brass', 'Bronze', 'Copper', 'Inconel', 'Invar 36', 'Mild steel', 'Stainless steel', 'Titanium', 'Tool steel'];
 const PLASTICS = ['ABS', 'FR4', 'G-10', 'Nylon', 'PEEK', 'PEI', 'PET', 'PMMA (Acrylic)', 'Polycarbonate', 'Polyethylene', 'Polypropylene', 'POM (Delrin/Acetal)', 'PPSU', 'PTFE (Teflon)', 'PVC'];
@@ -76,7 +73,10 @@ export default function CncMachining() {
           </>
         }
         cta="Prepare an inquiry"
-        img={IMG.heroCnc}
+        img={C.cnc}
+        imgAlt="Illustrative component example"
+        imageCaption="Illustrative component example."
+        imageFit="contain"
       />
 
       {/* capabilities */}
@@ -89,7 +89,6 @@ export default function CncMachining() {
           </SectionLead>
           <div className="grid md:grid-cols-2 gap-4">
             <Link to="/cnc-machining/cnc-milling-service" className="cap-card">
-              <img src={CNC_IMGS.milling} alt="CNC machined part, CNC milling, anodized surface finish" loading="lazy" />
               <div className="cap-text">
                 <span className="cap-title">CNC milling</span>
                 <span className="cap-body">
@@ -100,7 +99,6 @@ export default function CncMachining() {
               </div>
             </Link>
             <Link to="/cnc-machining/cnc-turning-service" className="cap-card">
-              <img src={CNC_IMGS.turning} alt="CNC machined part, CNC turning, smooth surface finish" loading="lazy" />
               <div className="cap-text">
                 <span className="cap-title">CNC turning</span>
                 <span className="cap-body">Consider rotational geometry, interfaces, material and surface requirements. Dimensions and checks are agreed for the component.</span>
@@ -147,7 +145,8 @@ export default function CncMachining() {
           <FeatureRow
             title="Coordinate the source around the part"
             text="A machining source is assessed against the component requirements and the agreed work. We clarify responsibilities for manufacturing, checks, documentation and delivery before proceeding."
-            img={IMG.facIn}
+            img={I.customEngineering}
+            imgAlt="Illustrative review of a component and its technical requirements"
           />
         </div>
       </section>

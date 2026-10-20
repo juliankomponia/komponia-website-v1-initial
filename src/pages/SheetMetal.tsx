@@ -1,20 +1,18 @@
 import { SubHero, Faq } from '../components/Subpage';
 import { SectionLead, OrderingProcess, ProtolabsBanner, DarkCta, CapabilitiesCards } from '../components/Sections';
 import { Link } from 'react-router';
-import { IMG } from '../data/site';
+import { CAPABILITY_IMAGES as C } from '../data/capability-images';
 
 const PROCESSES = [
   {
     title: 'Laser cutting',
     text: 'This manufacturing process uses a high-power laser beam to cut a material sheet.',
     bullets: ['Define material, thickness and required geometry', 'Confirm process suitability and agreed checks'],
-    img: 'https://images.ctfassets.net/q2hzfkp3j57e/2A5cRcJ92w6QHfPIpDdOSe/a66ebe9b2db7da0d3512d79c35a08f5f/laser_cutting_process.webp?w=800&h=800&fm=png',
   },
   {
     title: 'Bending',
     text: 'This manufacturing process uses dies to produce a U-shape, V-shape or channel shape along a straight axis in ductile materials.',
     bullets: ['Define material, thickness and required geometry', 'Confirm process suitability and agreed checks'],
-    img: 'https://images.ctfassets.net/q2hzfkp3j57e/7boBBvhAbceUj6VtisJY9L/fba37c8983fa47f10994578a3becfdb0/metal_bending_process.webp?w=800&h=800&fm=png',
   },
 ];
 
@@ -50,7 +48,10 @@ export default function SheetMetal() {
           </>
         }
         cta="Prepare an inquiry"
-        img={IMG.heroSmf}
+        img={C.sheetMetal}
+        imgAlt="Illustrative component example"
+        imageCaption="Illustrative component example."
+        imageFit="contain"
       />
 
       {/* capabilities */}
@@ -63,7 +64,6 @@ export default function SheetMetal() {
           <div className="grid md:grid-cols-2 gap-4">
             {PROCESSES.map((p) => (
               <div key={p.title} className="cap-card">
-                <img src={p.img} alt={p.title} loading="lazy" />
                 <div className="cap-text">
                   <span className="cap-title">{p.title}</span>
                   <span className="cap-body">{p.text}</span>

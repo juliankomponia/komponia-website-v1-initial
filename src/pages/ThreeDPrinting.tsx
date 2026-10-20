@@ -5,35 +5,32 @@ import {
 } from '../components/Sections';
 import { Link } from 'react-router';
 import { Check } from 'lucide-react';
-import { IMG } from '../data/site';
+import { CAPABILITY_IMAGES as C } from '../data/capability-images';
+import { INDUSTRIAL_IMAGES as I } from '../data/images';
 
 const TECHS = [
   {
     title: 'FDM — Fused Deposition Modeling',
     desc: 'Filament-based printing',
     specs: ['Consider layer direction, geometry and intended use', 'Confirm material, dimensions and assessment criteria'],
-    img: 'https://images.ctfassets.net/q2hzfkp3j57e/3vq5CaEYGhwH2gtQZCn7oQ/9905796dd08e464cc05c8f76c53c161e/fdm_capabilities.webp?fit=thumb&fm=png&q=82',
     to: '/3d-printing/fdm',
   },
   {
     title: 'SLS — Selective Laser Sintering',
     desc: 'Powder-based polymer printing',
     specs: ['Consider geometry, material and intended use', 'Agree finish, quantity and evaluation criteria'],
-    img: 'https://images.ctfassets.net/q2hzfkp3j57e/4U0hbO2DaDK0ikTJC3DOd4/e8c6604e0203eb4c78f991cd2dc068a4/sls_capabilities.webp?fit=thumb&fm=png&q=82',
     to: '/3d-printing/sls',
   },
   {
     title: 'MJF — Multi Jet Fusion',
     desc: 'Powder-based polymer printing',
     specs: ['Consider geometry, material and intended use', 'Agree finish, quantity and evaluation criteria'],
-    img: 'https://images.ctfassets.net/q2hzfkp3j57e/54nsXHICMJEjYLtzjr63Gy/0253cca2a404ec56ef89e1618fbe54aa/mjf_capabilities.webp?fit=thumb&fm=png&q=82',
     to: '/3d-printing/mjf',
   },
   {
     title: 'SLA — Stereolithography',
     desc: 'Resin-based printing',
     specs: ['Consider detail, surface and intended use', 'Confirm resin, dimensions and assessment criteria'],
-    img: 'https://images.ctfassets.net/q2hzfkp3j57e/4lb7tM2wQ6xuHYTHdhYhhe/c710535fe86666b75628cd4ac48d3084/sla_capabilities.webp?fit=thumb&fm=png&q=82',
     to: '/3d-printing/sla-dlp',
   },
 ];
@@ -64,7 +61,10 @@ export default function ThreeDPrinting() {
           </>
         }
         cta="Prepare an inquiry"
-        img={IMG.hero3dp}
+        img={C.printing}
+        imgAlt="Illustrative component example"
+        imageCaption="Illustrative component example."
+        imageFit="contain"
       />
 
       {/* techniques */}
@@ -77,7 +77,6 @@ export default function ThreeDPrinting() {
           <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-4">
             {TECHS.map((t) => (
               <Link to={t.to} key={t.title} className="cap-card">
-                <img src={t.img} alt={t.title} loading="lazy" />
                 <div className="cap-text">
                   <span className="cap-title !text-[1.05rem] !leading-snug md:!text-[1.15rem]">{t.title}</span>
                   <span className="cap-subtitle !text-[15px]">{t.desc}</span>
@@ -100,7 +99,7 @@ export default function ThreeDPrinting() {
       <section className="bg-brand-gray">
         <div className="wrap-orig section-pad grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
-            <img src={IMG.interface} alt="Manufacturing interface reference" loading="lazy" className="w-full rounded-[3px]" />
+            <img src={I.customEngineering} alt="Illustrative review of a component requirement" loading="lazy" className="w-full rounded-[3px]" />
           </div>
           <div>
             <h2 className="h2-orig mb-4">Define the requirement before the offer</h2>
@@ -163,7 +162,8 @@ export default function ThreeDPrinting() {
           <FeatureRow
             title="Match the process and source to the part"
             text="We coordinate the component requirements with suitable sources. Process, material, evaluation criteria and delivery conditions are defined for the task rather than assumed from a general capability list."
-            img={IMG.facNl}
+            img={I.qualityInspection}
+            imgAlt="Illustrative component inspection; no production location is depicted"
           />
         </div>
       </section>

@@ -1,0 +1,86 @@
+[
+  {
+    "active": "01 Overview",
+    "expected": "01",
+    "section": "hero",
+    "width": 1280
+  },
+  {
+    "active": "02 What we build",
+    "expected": "02",
+    "section": "capabilities",
+    "width": 1280
+  },
+  {
+    "active": "02 What we build",
+    "expected": "02",
+    "section": "assembly",
+    "width": 1280
+  },
+  {
+    "active": "03 How we work",
+    "expected": "03",
+    "section": "process",
+    "width": 1280
+  },
+  {
+    "active": "04 How we deliver",
+    "expected": "04",
+    "section": "supply",
+    "width": 1280
+  },
+  {
+    "active": "05 Experience & inquiry",
+    "expected": "05",
+    "section": "closing",
+    "width": 1280
+  },
+  {
+    "active": "01 Overview",
+    "activeLeft": 20,
+    "activeRight": 113.03125,
+    "expected": "01",
+    "section": "hero",
+    "width": 390
+  },
+  {
+    "active": "02 What we build",
+    "activeLeft": 113.03125,
+    "activeRight": 251.046875,
+    "expected": "02",
+    "section": "capabilities",
+    "width": 390
+  },
+  {
+    "active": "02 What we build",
+    "activeLeft": 113.03125,
+    "activeRight": 251.046875,
+    "expected": "02",
+    "section": "assembly",
+    "width": 390
+  },
+  {
+    "active": "03 How we work",
+    "activeLeft": 237.046875,
+    "activeRight": 369.671875,
+    "expected": "03",
+    "section": "process",
+    "width": 390
+  },
+  {
+    "active": "04 How we deliver",
+    "activeLeft": 225.671875,
+    "activeRight": 369.859375,
+    "expected": "04",
+    "section": "supply",
+    "width": 390
+  },
+  {
+    "active": "05 Experience & inquiry",
+    "activeLeft": 193.859375,
+    "activeRight": 369.921875,
+    "expected": "05",
+    "section": "closing",
+    "width": 390
+  }
+]

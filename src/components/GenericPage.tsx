@@ -1,5 +1,6 @@
 import PageSections from './PageSections';
 import { INDUSTRIAL_IMAGES as I } from '../data/images';
+import { CAPABILITY_IMAGES as C } from '../data/capability-images';
 import { FeatureRow } from './Subpage';
 import { DarkCta } from './Sections';
 import { Link } from 'react-router';
@@ -49,54 +50,19 @@ function SectionExtras({ section }: { section: GenericPageData['sections'][numbe
   </>;
 }
 
-function pageImage(route: string, original: string, sectionIndex?: number, sectionTitle?: string) {
-  if (Object.hasOwn(I, original)) return I[original as keyof typeof I];
-  // Match the existing requirement text; illustrations do not establish industry approval.
-  const industryImages: Record<string, { hero: string; sections: Record<string, string> }> = {
-    'industries/automotive-manufacturing': {
-      hero: I.heroComponents,
-      sections: { 'Define the release requirements': I.qualityInspection, 'Give prototypes a clear purpose': I.customEngineering },
-    },
-    'industries/aerospace-manufacturing': {
-      hero: I.customEngineering,
-      sections: { 'Plan evidence before production': I.qualityInspection },
-    },
-    'industries/industrial-machinery': {
-      hero: I.controllers,
-      sections: { 'From selection to a released solution': I.customEngineering },
-    },
-    'industries/electronics-manufacturing': {
-      hero: I.temperatureController,
-      sections: { 'Plan sample checks around the function': I.qualityInspection },
-    },
-    'industries/robotics-automation': {
-      hero: I.sensors,
-      sections: { 'Agree the technical boundary': I.customEngineering },
-    },
-    'industries/medical': {
-      hero: I.temperatureProbe,
-      sections: { 'Define testing and approval responsibilities': I.qualityInspection },
-    },
-  };
-  const industry = industryImages[route];
-  if (industry) {
-    return sectionIndex === undefined ? industry.hero : industry.sections[sectionTitle ?? ''] ?? I.qualityInspection;
-  }
-  if (sectionIndex !== undefined) {
-    if (['production-orders', 'sustainability', 'guides/recurring-supply', 'newsletter'].includes(route)) return [I.customEngineering, I.ongoingSupply, I.qualityInspection][sectionIndex % 3];
-    if (['guides/component-selection', 'guides/replacement-assessment', 'guides', 'knowledge-base', 'blog'].includes(route)) return [I.customEngineering, I.qualityInspection, I.sensors][sectionIndex % 3];
-    if (['quality-and-lab', 'ip-protection', 'team-account', 'become-a-manufacturing-partner', 'partner-network', 'team', 'jobs'].includes(route)) return [I.customEngineering, I.qualityInspection, I.ongoingSupply][sectionIndex % 3];
-  }
-  if (route === 'guides/component-selection') return I.controllers;
-  if (route === 'guides/replacement-assessment') return I.sensors;
-  if (['guides/recurring-supply', 'production-orders', 'sustainability', 'newsletter'].includes(route)) return I.ongoingSupply;
-  if (['quality-and-lab', 'ip-protection'].includes(route)) return I.qualityInspection;
-  if (['contact', 'get', 'team-account', 'guides', 'knowledge-base', 'blog', 'become-a-manufacturing-partner', 'partner-network', 'team', 'jobs'].includes(route)) return I.customEngineering;
-  if (['brand-background', 'case-studies'].includes(route)) return I.heroComponents;
-  return original;
+const PAGE_IMAGES: Record<string, string> = {
+  ...I,
+  manufacturingCnc: C.cnc,
+  manufacturingPrinting: C.printing,
+};
+
+function pageImage(key: string) {
+  return PAGE_IMAGES[key];
 }
 
 function imageDescription(src: string, fallback: string) {
+  if (src === C.cnc) return 'Illustrative CNC-machined component example';
+  if (src === C.printing) return 'Illustrative polymer component example';
   if (src === I.heroComponents) return 'Illustrative technical components on a neutral studio background';
   if (src === I.customEngineering) return 'Illustrative review of a custom part and its technical requirements';
   if (src === I.qualityInspection) return 'Illustrative dimensional inspection of a component';
@@ -112,7 +78,7 @@ function imageDescription(src: string, fallback: string) {
 }
 
 export default function GenericPage({ page }: { page: GenericPageData }) {
-  const heroImage = pageImage(page.route, page.heroImg);
+  const heroImage = pageImage(page.heroImg);
   const industry = page.route.startsWith('industries/');
   return (
     <div className="generic-page">
@@ -140,7 +106,7 @@ export default function GenericPage({ page }: { page: GenericPageData }) {
         <section key={s.title + i} data-section-label={s.title} className={i % 2 === 1 ? 'bg-brand-gray' : 'bg-white'}>
           <div className="wrap-orig section-pad">
             {s.img ? (
-              <FeatureRow title={s.title} text={s.text.split(/\n\s*\n/)[0]} img={pageImage(page.route, s.img, i, s.title)} imgAlt={imageDescription(pageImage(page.route, s.img, i, s.title), s.title)} flip={i % 2 === 1}>
+              <FeatureRow title={s.title} text={s.text.split(/\n\s*\n/)[0]} img={pageImage(s.img)} imgAlt={imageDescription(pageImage(s.img), s.title)} flip={i % 2 === 1}>
                 {s.text.split(/\n\s*\n/).length > 1 && (
                   <div className="mt-4">
                     <Paragraphs text={s.text.split(/\n\s*\n/).slice(1).join('\n\n')} />

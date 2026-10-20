@@ -1,0 +1,57 @@
+Komponia – Abschlussbericht zur freigegebenen Überarbeitung
+20.10.2026
+
+Projekt: komponia-website-v1-initial
+Branch: codex/homepage-structure-wow
+
+Änderungen nach Arbeitsschritt
+1. a0eebd5 – Vier lokale Fähigkeitenbilder per Higgsfield erzeugt und visuell geprüft; Startseite und Mega-Menüs auf lokale Bilder umgestellt. Herkunft, Prompts, Job-IDs und verworfener erster CNC-Versuch sind im Manifest dokumentiert.
+2. 87b435d – Why-Komponia-Inhalte samt Quellenhinweis in Supply zusammengeführt; Anker erhalten. WTS seit 1997 und Anwendungen nach Kapitel 05 verschoben. Laufband, doppelte Prozessanzeige und verwaiste Verbindungslinie entfernt. Engineering-Modul im blauen Abschluss weiß gefüllt.
+3. 23d8160 – Label-Hierarchie, fünf Schriftrollen, kompakte Fähigkeiten-Details und Abstände vereinheitlicht; Einkaufsformulierungen präzisiert. 8/12/8, Materialwechsel, Explosionsansicht, Netzwerk, Supply-Rhythmus und Anfragewege erhalten. Tablet-Karten, Ankerabstand und Kontrast der aktiven Prozess-Tabs korrigiert. Die mobile Kapitelleiste hält den aktiven Eintrag horizontal sichtbar.
+4. Der zu diesem Bericht gehörende Commit „Remove remaining external imagery and document verification“ – Restliche Fremdbilder aus site.ts, pages.json und Verfahrensseiten entfernt; lokale Bildschlüssel eingesetzt. Die vier Verfahrens-Heros zeigen die neuen Bauteile vollständig und kennzeichnen sie als Illustration. Unpassende Prozessfotos entfallen, Texte und Links bleiben erhalten. Der endgültige Hash dieses Commits steht im Chat-Abschluss.
+
+Seitenhöhen (Pixel)
+Breite    Vorher    Nachher
+1280      13508      9763
+820       15301     11933
+390       24296     16507
+320       25188     17668
+
+Messung im lokalen Browser bei jeweils 900 px Fensterhöhe nach Durchlaufen der Seite, damit verzögert geladene Grafiken berücksichtigt sind. Deshalb weichen die Ausgangswerte leicht von älteren Messungen in der Übergabe ab. Beide Längenziele sind erreicht: unter 10000 px bei 1280 und unter 17000 px bei 390. Keine Seitenüberbreite an den vier geprüften Breiten.
+
+Haupt-Bundle
+Referenz: 612,44 kB / 165,13 kB gzip.
+Finaler Build: 592,82 kB / 160,42 kB gzip.
+Keine neuen Abhängigkeiten. Der bestehende Vite-Hinweis für Pakete über 500 kB bleibt bestehen.
+
+Neue Bilder
+src/assets/industrial/capabilities-20261020/
+- cnc.webp
+- printing.webp
+- sheetMetal.webp
+- injection.webp
+
+Alle vier: 1296 x 768 px, WebP Qualität 86. Die acht vorhandenen Vergleichsbilder sind freigestellte Katalogmotive auf neutralem Grund; die neue Serie wurde daran angeglichen. Keine Fabrikstandorte, Kundenlogos oder Zertifizierungen erfunden.
+Manifest: project-notes/HOMEPAGE_CAPABILITY_IMAGES_2026-10-20.json
+
+Verifikation
+- Produktions-Build, gezieltes ESLint aller geänderten TS/TSX-Dateien und git diff --check bestanden.
+- 41 Einträge in pages.json mit 133 Bildzuordnungen geprüft: keine ungelösten Schlüssel und keine fehlenden zugeordneten Dateien. 49 statische Medienimporte geprüft: alle vorhanden.
+- Suche in src: keine ctfassets-Verweise, keine verbliebenen IMG.-Zugriffe.
+- Startseite einschließlich Mega-Menüs: keine ctfassets-Bilder in document.images; keine defekten geladenen Bilder.
+- Die vier Verfahrensseiten sowie quality-and-lab und ip-protection vollständig durchlaufen: Bilder geladen, keine defekten oder externen ctfassets-Bilder.
+- Keine neuen Konsolenfehler in der Browserprüfung.
+- Je sechs Kapitelpositionen bei 1280 und 390 px geprüft; aktive Zuordnung jeweils korrekt. Mobile aktive Einträge bleiben sichtbar.
+- Hero-Tabs mit Pfeiltaste, Home und End; Materialwechsel mit Enter/Leertaste; Fähigkeiten 8 → 12 → 8 sowie Details mit Enter/Leertaste; Komponenten-Akkordeon; Lifecycle-Tabs mit Pfeiltaste/Home/End; Qualitätskarten und Supply-Details geprüft.
+- Explosionsansicht bei normalem und schnellem Scrollen, Rückwärtsbewegung sowie manuellem Wechsel zwischen Exploded und Assembled geprüft.
+- Fokusrahmen auf dunklem Netzwerk und blauem Abschluss: sichtbar, weiß, 3 px. Aktiver Lifecycle-Tab hat zusätzlich dunkle Linie, Hintergrund und kräftige Schrift.
+- Drei Anfragewege per tatsächlichem Link geprüft: part-number, drawing und application übernehmen jeweils die korrekte Formularauswahl. Keine Anfrage abgeschickt.
+- Fünf Schriftgrößen in geladenen Homepage-Inhalten geprüft: Desktop 12/15/18/39,68/56,32 px; mobil 12/15/18/30/36 px.
+- Vergleichsbilder: before/ und after/ enthalten je sechs Kernansichten für 320, 390, 820 und 1280 px. after/ enthält zusätzlich mobile Detailansichten, Übersichten und JSON-Prüfwerte.
+
+Prüfgrenzen
+Die responsive Prüfung erfolgte im Desktop-Browser, nicht auf physischer Touch-Hardware. Die vorhandenen Regeln für reduzierte Bewegung wurden im Code geprüft; ein Live-Wechsel der Betriebssystem-Einstellung wurde nicht getestet. Kein vollständiges ESLint-Ergebnis behauptet: unabhängige bekannte Fehler in components/ui gehören nicht zu diesem Auftrag. Nicht jede der 41 Datenseiten wurde einzeln visuell geprüft; ihre Bildzuordnungen sind vollständig statisch geprüft. Die abschließende Designbewertung bleibt bei Julian.
+
+Bewusst offen / Vorschläge
+- Ein früher kompakter Verweis auf die Anfrage-Weiche bleibt ein Vorschlag; er wurde wie vereinbart nicht ergänzt oder verschoben.
+- Echte WTS-Werkstatt- oder Lagerfotos könnten später vorhandene Illustrationen ergänzen, sobald geeignetes Material vorliegt.

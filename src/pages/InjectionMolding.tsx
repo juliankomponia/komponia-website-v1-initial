@@ -1,27 +1,23 @@
 import { SubHero, CardGrid, Faq } from '../components/Subpage';
 import { SectionLead, QualityStandards, CapabilitiesCards, DarkCta } from '../components/Sections';
-import { IMG } from '../data/site';
+import { CAPABILITY_IMAGES as C } from '../data/capability-images';
 
 const SERVICES = [
   {
     title: 'Injection molding',
     text: 'Consider the part geometry, thermoplastic material and tooling needed to produce the component.',
-    img: 'https://images.ctfassets.net/q2hzfkp3j57e/1C8IVPd1qr2WLbFFhyZuTi/312409dfd4762a55cd7438adcfa9dd9b/Plastic_injection_molding.webp?w=800&h=800&fm=png',
   },
   {
     title: 'Insert molding',
     text: 'Define the insert, interfaces and molding requirements when a component is formed around an existing part.',
-    img: 'https://images.ctfassets.net/q2hzfkp3j57e/1dyvotL8544yOgFLwcYqRS/a9dad8b5e25980256439a711951d8dde/Insert-molding.webp?w=800&h=800&fm=png',
   },
   {
     title: 'Overmolding',
     text: 'Assess material compatibility, interfaces and the requirements for molding one material over another.',
-    img: 'https://images.ctfassets.net/q2hzfkp3j57e/u3amq2siK6oON0uViY0Ht/fcca28f9f898338e56f59a48f863f305/Overmolding.webp?w=800&h=800&fm=png',
   },
   {
     title: 'Liquid silicone rubber molding',
     text: 'Discuss silicone material, part geometry, curing and the assessment criteria for the intended application.',
-    img: 'https://images.ctfassets.net/q2hzfkp3j57e/3YP2A32e416FFvCKLyePUc/5b77b8a19c2dc6f78ebc826a484e30f7/Liquid-silicone-rubber-molding.webp?w=800&h=800&fm=png',
   },
 ];
 
@@ -69,7 +65,10 @@ export default function InjectionMolding() {
         eyebrow="Manufacturing"
         title="Injection molding for custom components"
         text="Discuss molded components and tooling around your application. Material, geometry, samples and qualification are defined for the part and confirmed with the offer."
-        img={IMG.heroIm}
+        img={C.injection}
+        imgAlt="Illustrative component example"
+        imageCaption="Illustrative component example."
+        imageFit="contain"
         cta="Prepare an inquiry"
       />
 

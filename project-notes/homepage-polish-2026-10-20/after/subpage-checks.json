@@ -1,0 +1,52 @@
+[
+  {
+    "broken": [],
+    "caption": "Illustrative component example.",
+    "external": 0,
+    "heroFit": "contain",
+    "title": "CNC machining for custom components",
+    "unloaded": [],
+    "url": "http://localhost:3000/#/cnc-machining"
+  },
+  {
+    "broken": [],
+    "caption": "Illustrative component example.",
+    "external": 0,
+    "heroFit": "contain",
+    "title": "3D printing for prototypes and custom parts",
+    "unloaded": [],
+    "url": "http://localhost:3000/#/3d-printing"
+  },
+  {
+    "broken": [],
+    "caption": "Illustrative component example.",
+    "external": 0,
+    "heroFit": "contain",
+    "title": "Sheet metal for custom components",
+    "unloaded": [],
+    "url": "http://localhost:3000/#/sheet-metal-fabrication"
+  },
+  {
+    "broken": [],
+    "caption": "Illustrative component example.",
+    "external": 0,
+    "heroFit": "contain",
+    "title": "Injection molding for custom components",
+    "unloaded": [],
+    "url": "http://localhost:3000/#/injection-molding"
+  },
+  {
+    "broken": [],
+    "external": 0,
+    "title": "Komponia-Lab. Quality through series supply.",
+    "unloaded": [],
+    "url": "http://localhost:3000/#/quality-and-lab"
+  },
+  {
+    "broken": [],
+    "external": 0,
+    "title": "Confidentiality and technical information",
+    "unloaded": [],
+    "url": "http://localhost:3000/#/ip-protection"
+  }
+]

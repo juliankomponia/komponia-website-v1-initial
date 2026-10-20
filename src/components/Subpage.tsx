@@ -15,16 +15,18 @@ export function LockNote() {
 
 /* Dark split hero for service pages: image left, dark panel right */
 export function SubHero({
-  title, text, img, cta = 'Prepare an inquiry', ctaTo = '/contact', anchors = [], eyebrow,
+  title, text, img, cta = 'Prepare an inquiry', ctaTo = '/contact', anchors = [], eyebrow, imgAlt, imageCaption, imageFit = 'cover',
 }: {
   title: string; text: React.ReactNode; img: string; cta?: string; ctaTo?: string; anchors?: string[]; eyebrow?: string;
+  imgAlt?: string; imageCaption?: string; imageFit?: 'cover' | 'contain';
 }) {
   return (
     <>
     <section className="relative">
       <div className="flex flex-col-reverse lg:flex-row lg:items-stretch">
         <figure className="relative service-hero-media lg:w-1/2 h-[300px] lg:h-auto">
-          <img src={img} alt={title} className="absolute inset-0 w-full h-full object-cover" />
+          <img src={img} alt={imgAlt ?? title} className={`absolute inset-0 w-full h-full ${imageFit === 'contain' ? 'object-contain p-6 lg:p-10' : 'object-cover'}`} />
+          {imageCaption && <figcaption className="absolute bottom-3 left-3 bg-white px-3 py-1 text-[12px] text-brand-body">{imageCaption}</figcaption>}
         </figure>
         <div className="hero-panel lg:w-1/2 flex flex-col justify-center">
           <div className="service-hero-copy">

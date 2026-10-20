@@ -2,7 +2,7 @@ import { FeatureRow } from './Subpage';
 import { useRef, useState, useId, useEffect } from 'react';
 import { Link } from 'react-router';
 import { ArrowRight, ChevronLeft, ChevronRight, ChevronUp, ClipboardList, Ruler, ShieldCheck, Box, Layers, Settings, Truck, Snowflake, Thermometer, Factory, FlaskConical } from 'lucide-react';
-import { IMG } from '../data/site';
+import { CAPABILITY_IMAGES as C } from '../data/capability-images';
 import { HOME_CONTENT as H } from '../data/home';
 import { INDUSTRIAL_IMAGES as I, CORE_SERVICE_IMAGES } from '../data/images';
 import BrandLabel from './BrandLabel';
@@ -14,7 +14,7 @@ export function SectionLead({ title, children, eyebrow }: { title: string; child
 export function CapabilitiesCards({ core = false }: { core?: boolean } = {}) {
   const images = core
     ? CORE_SERVICE_IMAGES
-    : [IMG.capCnc, IMG.cap3dp, IMG.capSmf, IMG.capIm];
+    : [C.cnc, C.printing, C.sheetMetal, C.injection];
   const cards = core ? H.capabilities.coreCards : H.capabilities.cards;
   const icons = [Layers, Box, Settings, Truck];
   return <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 justify-center">
