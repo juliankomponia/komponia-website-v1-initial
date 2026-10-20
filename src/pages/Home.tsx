@@ -10,9 +10,7 @@ import SourceNote from '../components/SourceNote';
 import { CapabilityCollection, BenefitStories, ComponentExplorer, LifecycleTabs, QualificationCards, SupplyDetails, TechnicalQuestions } from '../components/HomeExperience';
 import { HOME_CONTENT as H } from '../data/home-stand2';
 import { INDUSTRIAL_IMAGES as I } from '../data/home-stand2-images';
-import { BrandModules } from '../components/HomeBrandMotifs';
 import DeferredGraphic from '../components/DeferredGraphic';
-import customSamples from '../assets/industrial/brand-20261019/custom-samples.webp';
 import './home-experience.css';
 import './home-brand-expression.css';
 import './home-structure.css';
@@ -22,6 +20,11 @@ const NetworkDiagram = lazy(() => import('../components/home-graphics/NetworkDia
 const SupplyRhythm = lazy(() => import('../components/home-graphics/SupplyRhythm'));
 const ConnectionLine = lazy(() => import('../components/home-graphics/ConnectionLine'));
 const TechnicalDrawing = lazy(() => import('../components/home-graphics/TechnicalDrawing'));
+const ExplodedAssembly = lazy(() => import('../components/home-graphics/ExplodedAssembly'));
+const ClosingAssembly = lazy(() => import('../components/home-graphics/ClosingAssembly'));
+const HeritageTimeline = lazy(() => import('../components/home-graphics/HeritageTimeline'));
+const InquiryRoutes = lazy(() => import('../components/home-graphics/InquiryRoutes'));
+const ProcessBand = lazy(() => import('../components/home-graphics/ProcessBand'));
 const applicationDrawings = ['controller', 'connector', 'machined', 'sensor'] as const;
 
 function SectionHeading({ title, children, eyebrow, split = false }: { title: string; children: ReactNode; eyebrow?: string; split?: boolean }) {
@@ -47,7 +50,7 @@ export default function Home() {
     <section className="kp-heritage" id="wts-experience" aria-label="The experience behind Komponia">
       <div className="kp-container">
         <div className="kp-heritage__banner">
-          <div className="kp-heritage__date"><span>WTS experience since</span><strong>1997</strong><span className="kp-heritage__date-line" aria-hidden="true" /></div>
+          <div className="kp-heritage__date"><span>WTS experience since</span><strong>1997</strong><DeferredGraphic className="kp-graphic--heritage"><HeritageTimeline /></DeferredGraphic></div>
           <div className="kp-heritage__copy">
             <p className="kp-eyebrow">The experience behind Komponia</p>
             <h2>{H.heritage.title}</h2><p>{H.heritage.intro}</p>
@@ -74,7 +77,7 @@ export default function Home() {
           <TechnicalQuestions />
           <Link to={H['custom-solutions'].cta.to} className="kp-text-link">{H['custom-solutions'].cta.label}<ArrowRight size={18} aria-hidden="true" /></Link>
         </div>
-        <figure className="kp-feature__media kp-custom__media"><img src={customSamples} alt="Illustrative machined aluminium housing, brass sleeve and seal on a Komponia-blue surface" loading="lazy" width="1168" height="880" /><figcaption>Material. Geometry. Function.</figcaption></figure>
+        <DeferredGraphic className="kp-graphic--exploded" label="Illustrative assembly of a housing, circuit board, sensor and connector."><ExplodedAssembly /></DeferredGraphic>
       </div>
     </section>
 
@@ -84,6 +87,8 @@ export default function Home() {
         <ComponentExplorer />
       </div>
     </section>
+
+    <div className="kp-container kp-process-band-container"><DeferredGraphic className="kp-graphic--band" label="CNC milling, sheet metal, sensors, controllers, connectors and custom assemblies."><ProcessBand /></DeferredGraphic></div>
 
     <section className="kp-section" id="page-section-how-we-work" data-section-label="03 How we work">
       <div className="kp-container">
@@ -157,8 +162,9 @@ export default function Home() {
           <Link to="/contact" className="kp-button kp-button--white">Prepare an inquiry <ArrowRight size={18} aria-hidden="true" /></Link>
           <Link to="/about" className="kp-text-link kp-closing__experience">Explore the WTS background <ArrowRight size={16} aria-hidden="true" /></Link>
         </div>
-        <div className="kp-closing__mark"><BrandModules /></div>
+        <DeferredGraphic className="kp-closing__mark"><ClosingAssembly /></DeferredGraphic>
       </div>
+      <div className="kp-container"><DeferredGraphic className="kp-graphic--inquiry" label="Prepare an inquiry from a part number, drawing or application."><InquiryRoutes /></DeferredGraphic></div>
     </section>
   </div>;
 }

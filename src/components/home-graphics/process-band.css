@@ -1,0 +1,20 @@
+.kp-process-band { padding-block: 24px 28px; border-block: 1px solid #d6d7d2; color: #1f1f1d; }
+.kp-process-band__top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.kp-process-band__top > span { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+.kp-process-band__top button { display: inline-flex; gap: 8px; align-items: center; min-height: 44px; font-size: 11px; padding: 8px; }
+.kp-process-band__top button:focus-visible { outline: 2px solid #3e5af5; outline-offset: 2px; }
+.kp-process-band__window { overflow: hidden; }
+.kp-process-band__track { display: flex; width: max-content; animation: kp-process-travel 52s linear infinite; }
+.kp-process-band__set { display: flex; flex: none; }
+.kp-process-band__set > span { display: flex; align-items: center; gap: 36px; padding-right: 36px; font-size: clamp(24px, 3vw, 40px); line-height: 1.4; font-weight: 500; letter-spacing: -.04em; white-space: nowrap; }
+.kp-process-band__set i { width: 8px; height: 20px; border: 1.5px solid #3e5af5; border-radius: 4px; }
+.kp-process-band[data-paused="true"] .kp-process-band__track,
+.kp-process-band:hover .kp-process-band__track,
+.kp-process-band:focus-within .kp-process-band__track { animation-play-state: paused; }
+@keyframes kp-process-travel { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .kp-process-band__track { width: auto; animation: none; transform: none; }
+  .kp-process-band__set { flex-wrap: wrap; gap: 14px 20px; }
+  .kp-process-band__set > span { font-size: 20px; gap: 20px; padding: 0; }
+  .kp-process-band__set + .kp-process-band__set { display: none; }
+}

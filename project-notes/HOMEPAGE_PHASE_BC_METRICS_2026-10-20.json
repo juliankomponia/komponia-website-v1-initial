@@ -1,0 +1,141 @@
+{
+  "compression": "Node zlib gzip default level (same runtime as Vite); byte counts of production files",
+  "phase_a_main_vite_kb": {
+    "js": 606.58,
+    "js_gzip": 162.81,
+    "css": 163.81,
+    "css_gzip": 28.43
+  },
+  "phase_b_committed_main_vite_kb": {
+    "js": 610.01,
+    "js_gzip": 164.4,
+    "css": 167.38,
+    "css_gzip": 29.13
+  },
+  "js": {
+    "main": [
+      {
+        "file": "index-DABqFfdL.js",
+        "bytes": 612444,
+        "gzip_bytes": 165126
+      }
+    ],
+    "lazy": [
+      {
+        "file": "BrandModule-4wjLEktg.js",
+        "bytes": 1668,
+        "gzip_bytes": 572
+      },
+      {
+        "file": "ClosingAssembly-Ck2MfSy_.js",
+        "bytes": 3217,
+        "gzip_bytes": 765
+      },
+      {
+        "file": "ConnectionLine-D37Yo8na.js",
+        "bytes": 680,
+        "gzip_bytes": 395
+      },
+      {
+        "file": "ExplodedAssembly-b3PlRJb8.js",
+        "bytes": 9300,
+        "gzip_bytes": 2420
+      },
+      {
+        "file": "HeritageTimeline-z1SHJN5s.js",
+        "bytes": 840,
+        "gzip_bytes": 361
+      },
+      {
+        "file": "InquiryRoutes-CoaOTAl6.js",
+        "bytes": 2882,
+        "gzip_bytes": 860
+      },
+      {
+        "file": "NetworkDiagram-CAAmvkyv.js",
+        "bytes": 4211,
+        "gzip_bytes": 965
+      },
+      {
+        "file": "ProcessBand-D8HFok5N.js",
+        "bytes": 2293,
+        "gzip_bytes": 872
+      },
+      {
+        "file": "ProcessDiagram-CapUkELp.js",
+        "bytes": 3000,
+        "gzip_bytes": 960
+      },
+      {
+        "file": "SupplyRhythm-D67nDo6k.js",
+        "bytes": 3072,
+        "gzip_bytes": 837
+      },
+      {
+        "file": "TechnicalDrawing-CsD0R-f-.js",
+        "bytes": 10557,
+        "gzip_bytes": 2314
+      },
+      {
+        "file": "useGraphicMotion-C2S5E4Kr.js",
+        "bytes": 769,
+        "gzip_bytes": 431
+      }
+    ],
+    "total_bytes": 654933,
+    "total_gzip_bytes": 176878
+  },
+  "css": {
+    "main": [
+      {
+        "file": "index-UUmLn2BM.css",
+        "bytes": 168099,
+        "gzip_bytes": 29294
+      }
+    ],
+    "lazy": [
+      {
+        "file": "ExplodedAssembly-CliiMKRM.css",
+        "bytes": 3925,
+        "gzip_bytes": 1189
+      },
+      {
+        "file": "InquiryRoutes-DjTfrWE5.css",
+        "bytes": 2500,
+        "gzip_bytes": 862
+      },
+      {
+        "file": "ProcessBand-KzAvsZFB.css",
+        "bytes": 1522,
+        "gzip_bytes": 626
+      },
+      {
+        "file": "closing-assembly-DWwk91Be.css",
+        "bytes": 1729,
+        "gzip_bytes": 657
+      },
+      {
+        "file": "flow-diagrams-O430215J.css",
+        "bytes": 6800,
+        "gzip_bytes": 1681
+      },
+      {
+        "file": "technical-drawing-B4ZnR4Ex.css",
+        "bytes": 2176,
+        "gzip_bytes": 725
+      }
+    ],
+    "total_bytes": 186751,
+    "total_gzip_bytes": 35034
+  },
+  "validation": {
+    "build": "pass",
+    "focused_eslint": "pass",
+    "component_switch_unchanged": true,
+    "source_ssr": "pass",
+    "browser": "blocked by origin permission despite explicit local allow",
+    "viewports_verified": [],
+    "reduced_motion_browser_verified": false,
+    "height_after": null
+  }
+}

@@ -7,6 +7,7 @@ import { COMPONENT_GROUPS } from '../data/components';
 import { downloadText } from '../lib/download';
 import { COMPANY } from '../data/company';
 import CompanyDetails from '../components/CompanyDetails';
+import { INQUIRY_ENTRIES, parseInquiryEntry, type InquiryStartingPoint } from '../data/inquiry-entry';
 import './contact.css';
 
 const TYPES = {
@@ -19,17 +20,18 @@ const TYPES = {
   cooperation: 'Technical or supplier cooperation',
 };
 type InquiryType = keyof typeof TYPES;
-type Values = { name: string; company: string; email: string; type: InquiryType; reference: string; requirements: string; quantity: string; date: string };
+type Values = { name: string; company: string; email: string; type: InquiryType; entry: InquiryStartingPoint; reference: string; requirements: string; quantity: string; date: string };
 type Errors = Partial<Record<keyof Values, string>>;
 
-function InquiryForm({ reference, type }: { reference: string; type: InquiryType }) {
-  const [values, setValues] = useState<Values>({ name: '', company: '', email: '', type, reference, requirements: '', quantity: '', date: '' });
+function InquiryForm({ reference, type, entry }: { reference: string; type: InquiryType; entry: InquiryStartingPoint }) {
+  const [values, setValues] = useState<Values>({ name: '', company: '', email: '', type, entry, reference, requirements: '', quantity: '', date: '' });
   const [errors, setErrors] = useState<Errors>({});
   const [draft, setDraft] = useState<string | null>(null);
   const [status, setStatus] = useState('');
   const [copying, setCopying] = useState(false);
   const form = useRef<HTMLFormElement>(null);
   const preview = useRef<HTMLDivElement>(null);
+  const startingPoint = values.entry ? INQUIRY_ENTRIES[values.entry] : null;
 
   function update<K extends keyof Values>(key: K, value: Values[K]) {
     setValues(previous => ({ ...previous, [key]: value }));
@@ -61,6 +63,7 @@ function InquiryForm({ reference, type }: { reference: string; type: InquiryType
       `Company: ${values.company.trim()}`,
       `Business email: ${values.email.trim()}`,
       `Inquiry type: ${TYPES[values.type]}`,
+      `Starting point: ${startingPoint?.label ?? 'To be clarified'}`,
       `Component / part reference: ${values.reference.trim() || 'To be clarified'}`,
       `Quantity / demand: ${values.quantity.trim() || 'To be clarified'}`,
       `Preferred date: ${values.date || 'To be clarified'}`,
@@ -90,7 +93,7 @@ function InquiryForm({ reference, type }: { reference: string; type: InquiryType
   }
 
   function field(key: 'name' | 'company' | 'email' | 'reference' | 'quantity' | 'date', label: string, required = false) {
-    const help = key === 'reference' ? 'A part number, drawing revision or component category is enough.' : key === 'quantity' ? 'For example: sample quantity, first order or expected annual demand.' : undefined;
+    const help = key === 'reference' ? startingPoint?.referenceHelp ?? 'A part number, drawing revision or component category is enough.' : key === 'quantity' ? 'For example: sample quantity, first order or expected annual demand.' : undefined;
     return <div className="inquiry-field">
       <label htmlFor={`inquiry-${key}`}>{label}{required ? ' *' : ' (optional)'}</label>
       <input id={`inquiry-${key}`} name={key} type={key === 'email' ? 'email' : key === 'date' ? 'date' : 'text'}
@@ -107,6 +110,14 @@ function InquiryForm({ reference, type }: { reference: string; type: InquiryType
     <form ref={form} className="inquiry-form" noValidate onSubmit={review}>
       <p className="inquiry-help mb-6">* Required to prepare a complete draft. Review it before opening your email app, copying or downloading it.</p>
       {Object.values(errors).some(Boolean) && <p role="alert" className="inquiry-error mb-6">Check the highlighted fields before reviewing your draft.</p>}
+      <div className="inquiry-field">
+        <label htmlFor="inquiry-entry">Starting point</label>
+        <select id="inquiry-entry" name="entry" value={values.entry} onChange={event => update('entry', parseInquiryEntry(event.target.value))} aria-describedby="help-entry">
+          <option value="">Choose what you have (optional)</option>
+          {Object.entries(INQUIRY_ENTRIES).map(([value, details]) => <option key={value} value={value}>{details.label}</option>)}
+        </select>
+        <p id="help-entry" className="inquiry-help">{startingPoint?.needs ?? 'A part number, a drawing or an application brief. Start with the information available to you.'}</p>
+      </div>
       <div className="inquiry-fields">{field('name', 'Name', true)}{field('company', 'Company', true)}{field('email', 'Business email', true)}
         <div className="inquiry-field"><label htmlFor="inquiry-type">Inquiry type</label>
           <select id="inquiry-type" name="type" value={values.type} onChange={event => update('type', event.target.value as InquiryType)}>
@@ -119,7 +130,7 @@ function InquiryForm({ reference, type }: { reference: string; type: InquiryType
         <textarea id="inquiry-requirements" name="requirements" rows={5} required maxLength={5000} value={values.requirements}
           onChange={event => update('requirements', event.target.value)} aria-invalid={Boolean(errors.requirements)}
           aria-describedby={`help-requirements${errors.requirements ? ' error-requirements' : ''}`} />
-        <p id="help-requirements" className="inquiry-help">What should the component do? Include known interfaces, operating conditions and the result you need. Open questions are welcome.</p>
+        <p id="help-requirements" className="inquiry-help">{startingPoint?.requirementsHelp ?? INQUIRY_ENTRIES.application.requirementsHelp}</p>
         {errors.requirements && <p id="error-requirements" className="inquiry-error">{errors.requirements}</p>}
       </div>
       <div className="inquiry-fields">{field('quantity', 'Quantity or expected demand')}{field('date', 'Preferred delivery date')}</div>
@@ -149,6 +160,7 @@ export default function Contact() {
   const reference = product ? `${group!.title} / ${product.title}` : group?.title ?? (params.get('reference') ?? '').slice(0, 200);
   const requested = params.get('type');
   const type: InquiryType = requested && Object.hasOwn(TYPES, requested) ? requested as InquiryType : 'component';
+  const entry = parseInquiryEntry(params.get('entry'));
   return <div className="contact-page">
     <section className="bg-[#1F1F1D]">
       <div className="site-shell section-pad grid lg:grid-cols-2 gap-10 items-center">
@@ -160,7 +172,7 @@ export default function Contact() {
     </section>
     <PageSections />
     <section className="bg-white" data-section-label="Prepare an inquiry"><div className="site-shell section-pad inquiry-layout">
-      <div><h2 className="h2-orig mb-6">Prepare an inquiry</h2><InquiryForm key={search} reference={reference} type={type} /></div>
+      <div><h2 className="h2-orig mb-6">Prepare an inquiry</h2><InquiryForm key={search} reference={reference} type={type} entry={entry} /></div>
       <aside className="inquiry-aside">
         <span className="inquiry-brand-rule" aria-hidden="true" />
         <h2 className="text-xl font-medium mb-4">Talk to Komponia.</h2>

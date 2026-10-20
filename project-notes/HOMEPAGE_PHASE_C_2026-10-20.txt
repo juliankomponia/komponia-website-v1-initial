@@ -1,0 +1,128 @@
+KOMPONIA HOMEPAGE — PHASE C UND ABSCHLUSS B/C
+20. Oktober 2026
+Projekt: komponia-website-v1-initial
+Branch: codex/homepage-structure-wow
+Phase A: 823a1eb. Phase B: 7f03503.
+Fortsetzung durch Julians „ok weiter“ autorisiert. Visuelle Abnahme steht aus.
+
+ÄNDERUNGEN NACH KAPITEL
+01 — Einstieg
+Vier-Bilder-Hero und Tab-Reihenfolge aus Phase A bleiben. Phase B ergänzt eine
+angeschnittene Markenkontur und eine einmalig gezeichnete Bezugslinie.
+Die Linie folgt Blau für Engineering/Beschaffung und Gelb für Versorgung.
+
+02 — Was wir bauen
+Der weiche radiale Materialwechsel ist unverändert; beide ComponentSwitch-Dateien
+sind bytegleich zum Stand vor B/C.
+Fünf Arten von technischen SVG-Zeichnungen ergänzen Fähigkeiten, Explorer und
+Anwendungen. Bemaßungslinien und nummerierte Bezugspunkte zeigen Konstruktion,
+ohne reale Maße oder Leistungswerte zu behaupten.
+Über Fähigkeitenfotos erscheinen die Zeichnungen bei Hover oder Link-Fokus;
+ein separater Schematic-Button erlaubt Auswahl per Touch/Tastatur. Die Kartenlinks
+und die Erweiterung 8→12 bleiben.
+Custom solutions erhält anstelle des bisherigen illustrativen Teilefotos eine
+Explosionsansicht: Gehäuse, Platine, Sensor und Steckverbinder.
+Desktop: einmalige Abfolge zusammengesetzt → getrennt → zusammengesetzt während
+des Scrollens. Passiver Listener plus requestAnimationFrame; keine Scrollsteuerung,
+keine React-Renders pro Frame. Der Fortschritt nimmt nur zu, kein wiederholtes
+Abspielen beim Zurückscrollen. Abschluss/Unmount/manuelle Wahl entfernen Listener.
+Mobil: statische getrennte Ansicht. Reduced Motion: sofort zusammengesetzter
+Endzustand. Zwei manuelle Ansichten sind immer per 44-px-Buttons wählbar.
+Beschriftung ausdrücklich „Illustrative assembly schematic“.
+Zwischen Komponentenfeldern und Prozess ein langsames Verfahrensband. Pause
+bei Hover, Fokus, außerhalb des Viewports sowie über einen sichtbaren Button.
+Reduced Motion: statisch umgebrochene, vollständig lesbare Begriffe.
+
+03 — Wie wir arbeiten
+Phase B: Prozesslinie folgt den vorhandenen fünf Tabs. Verfahrensnetz mit
+rechtwinkligen Verbindungen und Komponia als Koordination; keine Weltkarte,
+Standorte oder Netzwerkzahlen. Gemeinsame Module und Bezugslinie verbinden
+beide Darstellungen. Lavendel-Häkchen zeichnen sich beim Öffnen einer
+Qualitätskarte. Bestehende Texte, Tabs und Akkordeons bleiben.
+
+04 — Wie wir liefern
+Eine schematische Fertigungscharge wird auf mehrere Abrufe aufgeteilt.
+Einmaliger Aufbau beim Einscrollen; mobil/reduziert statisch.
+Mengen und Zeitpunkte sind ausdrücklich projektabhängig, ohne Zahlenbeispiel.
+
+05 — Erfahrung und Anfrage
+Das WTS-Band bleibt an seiner bisherigen Stelle; ergänzt wird eine kurze
+statische Linie „1997 – today“. Keine zusätzlichen Zwischenstationen.
+Im blauen Abschluss setzen sich die drei originalen Markenmodule beim ersten
+Einscrollen zusammen. Engineering bleibt blau mit weißer Kontur für Kontrast,
+Qualität lavendel, Versorgung gelb. Mobil/reduziert sofort Endzustand.
+Darunter drei offen gestaltete Anfrage-Einstiege: Part number, Drawing,
+Application. Links übergeben entry=part-number/drawing/application an /contact.
+Das Formular wählt den Einstieg vor, zeigt passende Hinweise, erlaubt Wechsel
+und übernimmt die Auswahl in den prüfbaren Anfrageentwurf. Bisherige Parameter
+type/reference/group/component bleiben erhalten. Keine Sofortpreise, kein
+automatischer Versand und kein neuer Datei-Upload versprochen.
+
+STRUKTUR UND HERKUNFT
+Keine Abschnitte zusammengelegt oder entfernt. Navigation, Abschnittsreihenfolge,
+Sora und alle bisherigen interaktiven Inhalte bleiben. Nur das Custom-Foto wurde
+durch eine illustrative technische Zeichnung ersetzt; die Asset-Datei bleibt.
+Neue Grafiken sind selbst erstellte SVG-Komponenten im Code, keine generierten
+oder fremden Fotos. Keine zusätzlichen Bibliotheken/Dependencies.
+Kapitelzuordnung und inhaltliche Grenzen aus dem Phase-A-Bericht gelten weiter.
+
+MESSWERTE
+Vite-Werte, dezimale kB:
+                        Haupt-JS     gzip JS     Haupt-CSS    gzip CSS
+Phase A                  606,58      162,81       163,81       28,43
+Phase B (Commit allein)  610,01      164,40       167,38       29,13
+Phase C final            612,44      165,13       168,10       29,29
+Haupt-JS seit A: +5,86 kB roh / +2,32 kB gzip.
+Zusätzliche Grafik-JS-Chunks: zusammen 42,49 kB roh, erst nahe am Viewport geladen.
+Alle JS-Dateien zusammen: 654,93 kB roh. Alle CSS-Dateien: 186,75 kB roh.
+Einzeldateien/Kompression: HOMEPAGE_PHASE_BC_METRICS_2026-10-20.json.
+Der bestehende Warnhinweis für das Haupt-Bundle über 500 kB bleibt.
+
+Neue Seitenhöhen sind nicht gemessen. Letzte Phase-A-Messung (vor deren letzter
+Rasterkorrektur): 1280 px → 12.187 px hoch; 390 px → 22.458 px hoch.
+Diese Zahlen sind ausdrücklich keine Messung von Phase B/C.
+
+PRÜFUNGEN
+- Phase B: isolierter Build aus dem committed Git-Snapshot erfolgreich.
+- Finaler Stand: TypeScript/Vite-Build und gezieltes ESLint aller neuen/geänderten
+  TS-/TSX-Dateien erfolgreich, git diff --check erfolgreich.
+- Unabhängige Quellprüfung: Fokus-Spezifität, mobile Bildformate und
+  Netzwerkreihenfolge korrigiert. Neue Grafiken ohne gefundene P1/P2-Codeprobleme.
+- React-Serverrendering: alle fünf Konturen, sechs Netzwerkknoten, Prozessindizes
+  einschließlich ungültiger Werte, eindeutige Assembly-IDs und Controls,
+  Reduced-Motion-Endzustand und drei Anfrageziele geprüft.
+- Anfrageparameter: gültige Einstiege korrekt, fehlende/ungültige/prototype-/
+  Script-Werte neutral; bestehende type/reference-Werte bleiben erhalten.
+- Scroll-/rAF-Cleanup, Live-Motion-Präferenz und Lazy-Imports im Code geprüft.
+- Kein Versand einer Anfrage oder externer Formulardaten.
+Vollständiges ESLint wird nicht als fehlerfrei bezeichnet; bekannte unabhängige
+Fehler in components/ui sind nicht Gegenstand dieser Änderung.
+
+BROWSERSPERRE UND OFFENE ABNAHME
+Julian hat den Browserzugriff in den App-Einstellungen explizit erlaubt.
+Read-only bestätigt: ~/.codex/config.toml enthält für http://localhost:3000
+access="allow". Keine Browserregel in den geprüften lokalen requirements-Dateien.
+Dennoch meldet der Browserzugriff eine gespeicherte Sperre oder verwaltete
+Richtlinie. Ob veralteter Laufzeitstand oder zusätzliche verwaltete Regel,
+ist nicht festgestellt. Die App sperrt außerdem Computer Use ihrer eigenen
+Oberfläche. Keine Konfiguration verändert und keine Zugriffssperre umgangen.
+Nächster Schritt: Codex-App vollständig neu starten, danach Zugriff erneut prüfen.
+Bei weiterhin bestehender Sperre muss die wirksame verwaltete Richtlinie bzw.
+der App-Fehler geklärt werden.
+
+Noch offen: Browserkontrolle 320/390/820/1280 px, neue Screenshots,
+Überbreiten-/Überschriften-/Seitenhöhenmessung, echte Tastatur-/Touch-Probe und
+Browserlauf mit reduzierter Bewegung. Source-/SSR-Checks ersetzen diese nicht.
+Die Screenshots von Phase A wurden nicht als neue Nachher-Bilder ausgegeben.
+
+VON JULIAN ZU BESTÄTIGEN — WEITERHIN NICHT ALS NEUE ZUSAGEN EINGETRAGEN
+- Toleranzen, Maßgrenzen, Wandstärken, Material-/Verfahrensfreigaben.
+- Lieferzeiten, Reaktionszeiten, Mindestmengen und Stückzahlbereiche.
+- Interne/Partnerfertigung und belegte Verfügbarkeit pro Produkt.
+- Inhalt und Verfügbarkeit von Lieferantenaufnahme-Unterlagen.
+- Standard-NDA und verbindliche Zeichnungsvertraulichkeit/Partnerzugriffe.
+- Dokumente, Prüf- und Materialzeugnisse, die mit jeder Lieferung mitgehen.
+- Chargenrückverfolgung sowie Serien-/Änderungsdokumentation.
+- Akkreditierungen, Zertifizierungen, Vollprüfung und konkrete Prüfumfänge.
+- Garantierte Einsparungen, Ausfallsicherheit oder autonome Bestandssteuerung.
+- Veröffentlichbare Kundenbelege, Logos, Standorte und Maschinen-/Netzwerkzahlen.

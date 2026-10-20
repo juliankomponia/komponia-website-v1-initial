@@ -3,9 +3,16 @@
 .kp-home .kp-graphic--process { min-height: 116px; }
 .kp-home .kp-graphic--network { min-height: 380px; align-self: center; }
 .kp-home .kp-graphic--supply { min-height: 240px; margin-top: 36px; }
+.kp-home .kp-graphic--exploded { min-height: 540px; }
+.kp-home .kp-graphic--heritage { width: 100%; min-height: 35px; margin-top: 18px; }
+.kp-home .kp-graphic--band { min-height: 148px; }
+.kp-home .kp-graphic--inquiry { min-height: 410px; margin-top: 64px; }
+.kp-home .inquiry-routes__intro p { margin: 0; font-size: 13px; }
+.kp-home .kp-closing .kp-closing-assembly { margin: 0; }
+.kp-home .kp-closing__mark { aspect-ratio: auto; min-height: 290px; }
 .kp-home .kp-capability { position: relative; transition: transform .2s ease; }
 .kp-home .kp-capability__link { display: block; height: 100%; }
-.kp-home .kp-capability__link:focus-visible { outline-offset: -3px; }
+.kp-home .kp-section .kp-capability__link:focus-visible { outline-color: var(--kp-blue); outline-offset: -3px; }
 .kp-home .kp-capability:focus-within { border-color: var(--kp-blue); }
 .kp-home .kp-capability__drawing {
   position: absolute; inset: 0; opacity: 0; pointer-events: none;
@@ -36,6 +43,7 @@
 .kp-home .kp-hero-datum__module { opacity: .7; }
 .kp-home .kp-text-link > svg { transition: transform .2s ease; }
 .kp-home .kp-text-link:hover > svg { transform: translateX(3px); }
+.kp-home .kp-closing .inquiry-routes__link:focus-visible { outline-color: #fff; }
 @keyframes kp-datum-draw { to { stroke-dashoffset: 0; } }
 @media (hover: hover) and (pointer: fine) {
   .kp-home .kp-capability:hover { transform: translateY(-3px); }
@@ -46,6 +54,8 @@
   .kp-home .kp-graphic--process { min-height: 90px; }
   .kp-home .kp-graphic--network { min-height: 360px; order: 2; }
   .kp-home .kp-graphic--supply { min-height: 220px; }
+  .kp-home .kp-closing__mark { max-width: 240px; min-height: 240px; }
+  .kp-home .kp-graphic--inquiry { min-height: 530px; margin-top: 44px; }
 }
 @media (max-width: 480px) {
   .kp-home .kp-application__media > img { aspect-ratio: 1.6; }
