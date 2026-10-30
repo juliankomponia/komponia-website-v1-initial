@@ -557,5 +557,40 @@
       "label": "Explore our environmental approach",
       "to": "/sustainability"
     }
+  },
+  "one-contact": {
+    "eyebrow": "Sourcing & coordination",
+    "title": "One contact instead of many suppliers.",
+    "intro": "Your contact keeps technical requirements and decisions together – and coordinates the manufacturers, checks and supply behind your project.",
+    "without": "Without Komponia",
+    "with": "With Komponia",
+    "nodes": [
+      "Manufacturers",
+      "Specialist processes",
+      "Import & logistics",
+      "Checks & documents",
+      "Stock & call-offs"
+    ],
+    "cta": {
+      "label": "How we work with manufacturers",
+      "to": "/partner-network"
+    },
+    "points": [
+      {
+        "title": "Requirements kept together",
+        "text": "Your contact keeps specifications, questions and decisions in view throughout your project."
+      },
+      {
+        "title": "Questions clarified for you",
+        "text": "Technical questions, documents and certificate requirements are clarified with suitable manufacturers."
+      },
+      {
+        "title": "Supply coordinated with you",
+        "text": "Purchasing, import, logistics and stock are planned together. Responsibilities and delivery terms are agreed in your offer."
+      }
+    ],
+    "company": "Your company",
+    "noteWithout": "Your company coordinates every party and every handover itself.",
+    "noteWith": "One Komponia contact coordinates the parties for your company."
   }
 }

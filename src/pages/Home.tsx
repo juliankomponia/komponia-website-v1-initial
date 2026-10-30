@@ -1,158 +1,77 @@
-import { lazy, type ReactNode } from 'react';
+import { lazy } from 'react';
 import { Link } from 'react-router';
-import { ArrowRight, Check } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, FileText, Hash, Workflow } from 'lucide-react';
 import PageSections from '../components/PageSections';
-import HomeHero from '../components/HomeHero';
-import HomeChapter from '../components/HomeChapter';
-import ProcurementReadiness from '../components/ProcurementReadiness';
-import ConceptToProduction from '../components/ConceptToProduction';
-import SourceNote from '../components/SourceNote';
-import { CapabilityCollection, BenefitStories, ComponentExplorer, LifecycleTabs, QualificationCards, SupplyDetails, TechnicalQuestions } from '../components/HomeExperience';
-import { HOME_CONTENT as H } from '../data/home-stand2';
-import { INDUSTRIAL_IMAGES as I } from '../data/home-stand2-images';
 import DeferredGraphic from '../components/DeferredGraphic';
+import HeroV10 from '../components/v10/HeroV10';
+import CapsBento from '../components/v10/CapsBento';
+import ProcessStory from '../components/v7/ProcessStory';
+import ComponentStage from '../components/v7/ComponentStage';
+import { HOME_CONTENT as H } from '../data/home-stand2';
+import { INQUIRY_ENTRIES, type InquiryEntry } from '../data/inquiry-entry';
 import './home-experience.css';
 import './home-brand-expression.css';
 import './home-structure.css';
 import './home-graphics.css';
+import './home-v7.css';
+import './home-v8.css';
+import './home-v9.css';
+import './home-v10.css';
+import './home-process.css';
 
-const NetworkDiagram = lazy(() => import('../components/home-graphics/NetworkDiagram'));
-const SupplyRhythm = lazy(() => import('../components/home-graphics/SupplyRhythm'));
-const ExplodedAssembly = lazy(() => import('../components/home-graphics/ExplodedAssembly'));
-const ClosingAssembly = lazy(() => import('../components/home-graphics/ClosingAssembly'));
-const HeritageTimeline = lazy(() => import('../components/home-graphics/HeritageTimeline'));
-const InquiryRoutes = lazy(() => import('../components/home-graphics/InquiryRoutes'));
+const OneContactDiagram = lazy(() => import('../components/home-graphics/OneContactDiagram'));
+const ENTRY_ICON = { 'part-number': Hash, drawing: FileText, application: Workflow } as const;
 
-function SectionHeading({ title, children, eyebrow, split = false }: { title: string; children: ReactNode; eyebrow?: string; split?: boolean }) {
-  return <header className={`kp-heading${split ? ' kp-heading--split' : ''}`}>
-    {eyebrow && <p className="kp-eyebrow">{eyebrow}</p>}
-    <h2>{title}</h2><p>{children}</p>
-  </header>;
-}
-
+/** Grok homepage structure adapted to Komponia typography, surfaces and interaction patterns. */
 export default function Home() {
-  return <div className="home-page kp-home">
-    <HomeHero />
+  return <div className="home-page kp-home kp7 kp10">
+    <HeroV10 />
     <PageSections />
-    <ConceptToProduction />
+    <ComponentStage />
+    <ProcessStory />
+    <CapsBento />
 
-    <section className="kp-section kp-section--gray" id="page-section-capabilities">
-      <div className="kp-container">
-        <SectionHeading split eyebrow="Components & manufacturing" title={H.capabilities.title}>{H.capabilities.intro}</SectionHeading>
-        <CapabilityCollection />
-      </div>
-    </section>
-
-    <section className="kp-section kp-custom" id="page-section-custom-solutions">
-      <div className="kp-container kp-feature">
-        <div className="kp-feature__copy">
-          <p className="kp-eyebrow">Custom solutions</p>
-          <h2>{H['custom-solutions'].title}</h2><p>{H['custom-solutions'].intro}</p>
-          <TechnicalQuestions />
-          <Link to={H['custom-solutions'].cta.to} className="kp-text-link">{H['custom-solutions'].cta.label}<ArrowRight size={18} aria-hidden="true" /></Link>
+    <section className="kp10-one" id="page-section-one-contact" data-section-label="05 One contact" aria-labelledby="kp10-one-title">
+      <div className="kp-container kp10-one__grid">
+        <div className="kp10-one__copy">
+          <p className="kp10-eyebrow"><span aria-hidden="true" />{H['one-contact'].eyebrow}</p>
+          <h2 id="kp10-one-title">{H['one-contact'].title}</h2>
+          <p className="kp10-head__intro">{H['one-contact'].intro}</p>
+          <dl className="kp10-one__points">{H['one-contact'].points.map(p => <div key={p.title}><dt>{p.title}</dt><dd>{p.text}</dd></div>)}</dl>
+          <Link to={H['one-contact'].cta.to} className="kp-text-link kp10-link">{H['one-contact'].cta.label}<ArrowRight size={18} aria-hidden="true" /></Link>
         </div>
-        <DeferredGraphic className="kp-graphic--exploded" label="Illustrative assembly of a housing, circuit board, sensor and connector."><ExplodedAssembly /></DeferredGraphic>
+        <DeferredGraphic className="kp-graphic--network kp10-one__graphic" label="Before and after: coordinating manufacturers, processes, logistics, documents and stock yourself, compared with one Komponia contact who coordinates them."><OneContactDiagram /></DeferredGraphic>
       </div>
-    </section>
-
-    <section className="kp-section kp-section--gray" id="page-section-components">
       <div className="kp-container">
-        <SectionHeading split eyebrow="Find your component" title={H['component-fields'].title}>{H['component-fields'].intro}</SectionHeading>
-        <ComponentExplorer />
+        <p className="kp10-heritage"><strong>WTS experience since 1997.</strong>The Komponia offering builds on the technical component experience of WTS. <Link to="/about" className="kp-text-link kp10-link">About Komponia <ArrowRight size={16} aria-hidden="true" /></Link></p>
       </div>
     </section>
 
-    <section className="kp-section" id="page-section-how-we-work" data-section-label="03 How we work">
+    <section className="kp10-start" id="experience-and-inquiry" data-section-label="06 Inquiry" aria-labelledby="kp10-start-title">
       <div className="kp-container">
-        <HomeChapter number="03" title="How we work" />
-        <SectionHeading split title={H.process.title}>{H.process.intro}</SectionHeading>
-        <LifecycleTabs />
-        <ProcurementReadiness />
-      </div>
-    </section>
-
-    <section className="kp-section kp-network">
-      <div className="kp-container kp-feature">
-        <DeferredGraphic className="kp-graphic--network" label="A schematic of manufacturing processes coordinated through Komponia."><NetworkDiagram /></DeferredGraphic>
-        <div className="kp-feature__copy">
-          <p className="kp-eyebrow">Sourcing & coordination</p>
-          <h2>{H.partners.title}</h2><p>{H.partners.intro}</p>
-          <dl className="kp-network__points">{H.partners.cards.map(card => <div key={card.title}><dt>{card.title}</dt><dd>{card.text}</dd></div>)}</dl>
-          <Link to={H.partners.cta.to} className="kp-text-link">{H.partners.cta.label}<ArrowRight size={18} aria-hidden="true" /></Link>
-        </div>
-      </div>
-    </section>
-
-    <section className="kp-section kp-quality" id="page-section-qualification">
-      <div className="kp-container">
-        <SectionHeading split eyebrow="Quality & qualification" title={H.quality.title}>{H.quality.intro}</SectionHeading>
-        <QualificationCards />
-      </div>
-    </section>
-
-    <section className="kp-section kp-supply-section" id="page-section-ongoing-supply" data-section-label="04 How we deliver">
-      <div className="kp-container"><HomeChapter number="04" title="How we deliver" discipline="supply" /></div>
-      <div className="kp-container kp-feature kp-supply">
-        <div className="kp-supply__visual">
-          <figure className="kp-feature__media kp-supply__media"><img src={I.ongoingSupply} alt="Illustrative preparation and packing of component deliveries" loading="lazy" /></figure>
-          <DeferredGraphic className="kp-graphic--supply" label="A larger production batch divided into agreed call-offs; schematic only."><SupplyRhythm /></DeferredGraphic>
-        </div>
-        <div className="kp-feature__copy">
-          <h2>{H['recurring-supply'].title}</h2><p>{H['recurring-supply'].intro}</p>
-          <SupplyDetails />
-          <Link to="/production-orders" className="kp-text-link">Explore recurring supply <ArrowRight size={18} aria-hidden="true" /></Link>
-        </div>
-      </div>
-      <div className="kp-container kp-supply-benefits" id="page-section-why-komponia">
-        <BenefitStories />
-        <div className="kp-actions"><Link to="/contact" className="kp-button">Prepare an inquiry <ArrowRight size={18} aria-hidden="true" /></Link></div>
-        <details className="kp-source"><summary>Transport-cost reference</summary><SourceNote note={H['why-komponia'].footnote} /></details>
-      </div>
-    </section>
-
-    <section className="kp-section kp-environment" id="page-section-environment">
-      <div className="kp-container">
-        <SectionHeading split eyebrow="Environment & resources" title={H.environment.title}>{H.environment.intro}</SectionHeading>
-        <ul className="kp-environment__points">{H.environment.bullets.map(text => <li key={text}><Check size={20} aria-hidden="true"/><span>{text}</span></li>)}</ul>
-        <div className="kp-actions"><Link to={H.environment.cta.to} className="kp-text-link">{H.environment.cta.label}<ArrowRight size={18} aria-hidden="true" /></Link></div>
-      </div>
-    </section>
-
-    <section className="kp-heritage" id="wts-experience" data-section-label="05 Experience & inquiry" aria-label="The experience behind Komponia">
-      <div className="kp-container">
-        <HomeChapter number="05" title="Experience & inquiry" discipline="neutral" />
-        <div className="kp-heritage__banner">
-          <div className="kp-heritage__date"><span>WTS experience since</span><strong>1997</strong><DeferredGraphic className="kp-graphic--heritage"><HeritageTimeline /></DeferredGraphic></div>
-          <div className="kp-heritage__copy">
-            <h2>{H.heritage.title}</h2><p>{H.heritage.intro}</p>
-            <Link to="/about" className="kp-text-link">About Komponia <ArrowRight size={18} aria-hidden="true" /></Link>
+        <div className="kp10-start__panel">
+          <header className="kp10-head kp10-head--center">
+            <p className="kp10-eyebrow"><span aria-hidden="true" />Inquiry</p>
+            <h2 id="kp10-start-title">{H['closing-cta'].title}</h2>
+            <p className="kp10-head__intro">{H['closing-cta'].intro}</p>
+          </header>
+          <ul className="kp10-start__routes" aria-label="Start your inquiry draft with">
+            {(Object.entries(INQUIRY_ENTRIES) as [InquiryEntry, typeof INQUIRY_ENTRIES[InquiryEntry]][]).map(([entry, d]) => {
+              const Icon = ENTRY_ICON[entry];
+              return <li key={entry}><Link to={`/contact?entry=${entry}`}>
+                <Icon size={22} strokeWidth={1.6} aria-hidden="true" />
+                <span className="kp10-start__label">{d.label}</span>
+                <span className="kp10-start__needs">{d.needs}</span>
+                <ArrowUpRight className="kp10-start__arrow" size={18} aria-hidden="true" />
+              </Link></li>;
+            })}
+          </ul>
+          <div className="kp10-actions kp10-actions--center">
+            <Link to="/contact" className="kp-button">Prepare an inquiry <ArrowRight size={18} aria-hidden="true" /></Link>
+            <Link to="/about" className="kp-text-link kp10-link">Explore the WTS background <ArrowRight size={16} aria-hidden="true" /></Link>
           </div>
         </div>
       </div>
-    </section>
-
-    <section className="kp-section kp-applications">
-      <div className="kp-container">
-        <SectionHeading split eyebrow="Built around your application" title={H.applications.title}>{H.applications.intro}</SectionHeading>
-        <div className="kp-applications__grid">{H.applications.cards.map((card, index) => <Link to={card.to} className="kp-application" key={card.title}>
-          <div className="kp-application__media">
-            <img src={[I.controllers, I.heating, I.customEngineering, I.sensors][index]} alt="" loading="lazy" />
-          </div>
-          <h3>{card.title}</h3><p>{card.text}</p><span className="kp-text-link">{card.link}<ArrowRight size={17} aria-hidden="true" /></span>
-        </Link>)}</div>
-      </div>
-    </section>
-
-    <section className="kp-closing" id="experience-and-inquiry">
-      <div className="kp-container kp-closing__inner">
-        <div className="kp-closing__copy">
-          <h2>{H['closing-cta'].title}</h2><p>{H['closing-cta'].intro}</p>
-          <Link to="/contact" className="kp-button kp-button--white">Prepare an inquiry <ArrowRight size={18} aria-hidden="true" /></Link>
-          <Link to="/about" className="kp-text-link kp-closing__experience">Explore the WTS background <ArrowRight size={16} aria-hidden="true" /></Link>
-        </div>
-        <DeferredGraphic className="kp-closing__mark"><ClosingAssembly /></DeferredGraphic>
-      </div>
-      <div className="kp-container"><DeferredGraphic className="kp-graphic--inquiry" label="Prepare an inquiry from a part number, drawing or application."><InquiryRoutes /></DeferredGraphic></div>
     </section>
   </div>;
 }

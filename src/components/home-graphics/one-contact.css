@@ -1,0 +1,51 @@
+/* One canvas: without Komponia (tangled) vs. with Komponia (one contact). Dark band context. */
+.kp-contact { margin: 0; padding: 22px 24px 18px; border: 1px solid #ffffff26; border-radius: 6px; background: #262624; color: #f5f5f1; transition: border-color .5s ease, background-color .5s ease; }
+.kp-contact[data-mode="with"] { border-color: #3e5af5; background: #22263a; }
+.kp-contact__switch { display: inline-flex; gap: 2px; margin-bottom: 22px; padding: 3px; border: 1px solid #ffffff2e; border-radius: 999px; background: #1f1f1d; }
+.kp-contact__switch button { padding: 6px 14px; border: 0; border-radius: 999px; background: transparent; color: #c9ccc3; font: inherit; font-size: 13px; font-weight: 500; line-height: 1.3; cursor: pointer; transition: background-color .25s ease, color .25s ease; }
+.kp-contact__switch button[aria-pressed="true"] { background: #f5f5f1; color: #1f1f1d; }
+.kp-contact[data-mode="with"] .kp-contact__switch button[aria-pressed="true"] { background: #3e5af5; color: #fff; }
+.kp-contact__switch button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.kp-contact__canvas { position: relative; height: 212px; }
+.kp-contact__canvas svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.kp-contact__canvas path { fill: none; vector-effect: non-scaling-stroke; }
+.kp-contact__tangle path { stroke: #9a9d94; stroke-width: 1.2; stroke-dasharray: 4 4; transition: opacity .45s ease; }
+.kp-contact__ordered path { stroke: #6f86ff; stroke-width: 1.6; opacity: 0; transition: opacity .4s ease; transition-delay: calc(.35s + var(--i, 0) * 80ms); }
+.kp-contact__ordered .kp-contact__trunk { stroke: #fff; stroke-width: 2.5; transition-delay: .2s; }
+.kp-contact[data-mode="with"] .kp-contact__tangle path { opacity: 0; }
+.kp-contact[data-mode="with"] .kp-contact__ordered path { opacity: 1; }
+
+.kp-contact__company, .kp-contact__hub { position: absolute; top: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.kp-contact__company { left: 0; width: 22%; height: 56px; padding: 0 6px; border: 1px solid #ffffff59; border-radius: 6px; background: #1f1f1d; color: #fff; font-size: 14px; font-weight: 500; line-height: 1.25; transform: translateY(-50%); }
+.kp-contact__hub { left: 28%; width: 24%; height: 66px; border-radius: 6px; background: #3e5af5; color: #fff; opacity: 0; transform: translateY(-50%) scale(.85); transition: opacity .4s ease .1s, transform .5s cubic-bezier(.2,.7,.2,1) .1s; }
+.kp-contact[data-mode="with"] .kp-contact__hub { opacity: 1; transform: translateY(-50%); }
+.kp-contact__hub strong { font-size: 15px; font-weight: 700; letter-spacing: -.03em; line-height: 1.2; }
+.kp-contact__hub span { margin-top: 2px; color: #dfe4ff; font-size: 11px; line-height: 1.3; }
+.kp-contact__hub::after { content: ''; position: absolute; inset: -1px; border: 2px solid #6f86ff; border-radius: 6px; opacity: 0; }
+.kp-contact[data-mode="with"] .kp-contact__hub::after { animation: none; }
+@keyframes kp-contact-pulse { 0% { opacity: .9; transform: scale(1); } 60%, 100% { opacity: 0; transform: scale(1.18); } }
+
+.kp-contact__nodes { position: absolute; top: 0; right: 0; bottom: 0; left: 58%; display: grid; grid-template-rows: repeat(5, 36px); gap: 8px; margin: 0; padding: 0; list-style: none; }
+.kp-contact__nodes li { display: flex; align-items: center; min-width: 0; padding: 0 10px; border: 1px solid #ffffff2e; border-radius: 6px; background: #1f1f1d; color: #e6e8e1; font-size: 13px; line-height: 1.2; transition: border-color .4s ease; transition-delay: calc(.4s + var(--i) * 80ms); }
+.kp-contact[data-mode="with"] .kp-contact__nodes li { border-color: #6f86ff80; }
+.kp-contact__note { min-height: 2.6em; margin: 18px 0 0; color: #d3d6cf; font-size: 14px; line-height: 1.5; }
+.kp-contact[data-mode="with"] .kp-contact__note { color: #dfe4ff; }
+.kp-contact figcaption { margin-top: 8px; color: #8d9088; font-size: var(--kp-type-label, 12px); line-height: 1.6; }
+
+@media (max-width: 1023px) {
+  .kp-contact { padding: 16px 14px 14px; }
+  .kp-contact__nodes li { padding: 0 7px; font-size: 12px; }
+  .kp-contact__company { font-size: 12px; }
+  .kp-contact__hub strong { font-size: 13px; }
+  .kp-contact__hub span { font-size: 10px; }
+  .kp-contact__switch button { padding: 6px 11px; font-size: 12px; }
+}
+@media (max-width: 359px) {
+  .kp-contact__nodes li { font-size: 11px; padding: 0 5px; }
+  .kp-contact__company { font-size: 11px; }
+  .kp-contact__hub strong { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kp-contact, .kp-contact *, .kp-contact path { transition: none !important; }
+  .kp-contact[data-mode="with"] .kp-contact__hub::after { animation: none; }
+}

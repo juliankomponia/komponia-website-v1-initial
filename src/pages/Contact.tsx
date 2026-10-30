@@ -23,8 +23,8 @@ type InquiryType = keyof typeof TYPES;
 type Values = { name: string; company: string; email: string; type: InquiryType; entry: InquiryStartingPoint; reference: string; requirements: string; quantity: string; date: string };
 type Errors = Partial<Record<keyof Values, string>>;
 
-function InquiryForm({ reference, type, entry }: { reference: string; type: InquiryType; entry: InquiryStartingPoint }) {
-  const [values, setValues] = useState<Values>({ name: '', company: '', email: '', type, entry, reference, requirements: '', quantity: '', date: '' });
+function InquiryForm({ reference, type, entry, requirements }: { reference: string; type: InquiryType; entry: InquiryStartingPoint; requirements: string }) {
+  const [values, setValues] = useState<Values>({ name: '', company: '', email: '', type, entry, reference, requirements, quantity: '', date: '' });
   const [errors, setErrors] = useState<Errors>({});
   const [draft, setDraft] = useState<string | null>(null);
   const [status, setStatus] = useState('');
@@ -161,6 +161,8 @@ export default function Contact() {
   const requested = params.get('type');
   const type: InquiryType = requested && Object.hasOwn(TYPES, requested) ? requested as InquiryType : 'component';
   const entry = parseInquiryEntry(params.get('entry'));
+  /** Optional prefill from the homepage requirement brief (visitor's own entries only). */
+  const requirements = (params.get('brief') ?? '').slice(0, 5000);
   return <div className="contact-page">
     <section className="bg-[#1F1F1D]">
       <div className="site-shell section-pad grid lg:grid-cols-2 gap-10 items-center">
@@ -172,7 +174,7 @@ export default function Contact() {
     </section>
     <PageSections />
     <section className="bg-white" data-section-label="Prepare an inquiry"><div className="site-shell section-pad inquiry-layout">
-      <div><h2 className="h2-orig mb-6">Prepare an inquiry</h2><InquiryForm key={search} reference={reference} type={type} entry={entry} /></div>
+      <div><h2 className="h2-orig mb-6">Prepare an inquiry</h2><InquiryForm key={search} reference={reference} type={type} entry={entry} requirements={requirements} /></div>
       <aside className="inquiry-aside">
         <span className="inquiry-brand-rule" aria-hidden="true" />
         <h2 className="text-xl font-medium mb-4">Talk to Komponia.</h2>

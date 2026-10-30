@@ -1,0 +1,42 @@
+Komponia – Integration der Grok-Startseite, 30.10.2026
+
+Quelle: vom Nutzer bereitgestellte komponia-website-v10.zip.
+Ziel: bestehende React-Website komponia-website-v1-initial.
+Branch: codex/grok-v10-komponia
+Vorschau: http://localhost:3000/#/
+
+Umgesetzt
+- Grok-Struktur mit Hero, interaktivem Bauteilkatalog, Prozess, 12 Leistungsbereichen,
+  Ansprechpartner-Grafik und Anfrage-Einstiegen integriert.
+- Komponia-Designsystem: Sora, Ink #1F1F1D, warmes Grau #F5F5F1, Blau #3E5AF5,
+  Lavender #D4B9F3 und Gelb #F7D44B; Karten 14px, Panels 20px, klare Konturen.
+- Hero als ruhige Objektinszenierung mit konkreterem Angebotstext; Glasflächen,
+  Cursor-Parallax, Dauervideos und endlose dekorative Animationen entfernt.
+- Prozess als kompakte, tastaturbedienbare Auswahl statt 500vh Scrollstrecke.
+- 26 Bauteiltypen, zwei manuell drehbare 360-Grad-Ansichten und Anforderungswahl.
+- Bauteil und Anforderungen werden an das bestehende Anfrageformular übergeben;
+  Zurücknavigation behält Auswahl und Angaben. Es wird weiterhin nur ein Entwurf vorbereitet.
+- WTS-Erfahrung seit 1997 präzisiert; CAD, Prüfungen und Versorgungsbedingungen projektbezogen.
+- Bestehende App-Routen und Unterseiten erhalten, Contact nur um das Prefill ergänzt.
+  Vorhandene Homepage-Datenstruktur beibehalten und um one-contact ergänzt.
+
+Medien
+Die beiden Hero-Poster, 14 zusätzliche Bauteilabbildungen in zwei Auflösungen und
+80 Frames für zwei Drehansichten stammen aus dem vom Nutzer gelieferten ZIP.
+Die vorhandenen 12 Leistungsbilder bleiben bestehen. Illustrative KI-Darstellungen
+sind im sichtbaren Kontext gekennzeichnet; keine Aussage über zusätzliche Bildrechte.
+Videos und nicht verwendete Grok-Unterseitenänderungen wurden nicht importiert.
+
+Prüfung
+- Produktionsbuild (TypeScript + Vite) erfolgreich.
+- ESLint für alle geänderten/neuen TS/TSX-Dateien ohne Befund.
+- Gesamtes Repository: 8 bestehende Lint-Befunde in unveränderten components/ui-Dateien
+  (Fast Refresh exports und Math.random in sidebar); nicht Teil dieser Startseitenarbeit.
+- Lokaler Chrome: 320, 390, 820, 1280 und 1440px, kein horizontaler Seitenüberlauf,
+  keine Browserfehler oder fehlgeschlagenen Ressourcen beim Durchlauf.
+- Varianten und eingegebene Temperaturanforderung erreichen Kontaktformular.
+- Manuelle Rotation wird nicht durch Intro-Animation überschrieben.
+- Prozessauswahl per Klick, Home/End/Pfeiltasten und Koordinations-Umschalter geprüft.
+- Bauteil/Varianten bleiben nach Anfrage und Browser-Zurück erhalten.
+- Reduzierte Bewegung berücksichtigt, keine Videos in der Startseite.
+- Vite meldet die vorhandene Bundle-Größenwarnung über 500kB; App-Routing nicht umgebaut.
