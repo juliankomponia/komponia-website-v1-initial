@@ -24,10 +24,19 @@ const ComponentSwitchPreview = import.meta.env.DEV
   ? lazy(() => import('./previews/component-switch/ComponentSwitchPreview'))
   : null;
 
+// Local design proposals remain separate from the production homepage.
+const DesignDirectionsPreview = import.meta.env.DEV
+  ? lazy(() => import('./previews/design-directions/DesignDirectionsPreview'))
+  : null;
+
 const genericPages = (pagesData as GenericPageData[]).filter((p) => !['industries', 'contact'].includes(p.route));
 
 export default function App() {
   const { pathname } = useLocation();
+
+  if (DesignDirectionsPreview && pathname === '/vorschau/designrichtungen') {
+    return <Suspense fallback={<p className="wrap-orig section-pad">Designvorschläge werden geladen …</p>}><DesignDirectionsPreview /></Suspense>;
+  }
 
   return (
     <div className="site-app min-h-screen bg-white font-sans text-brand-body antialiased" data-page={pathname === '/' ? 'home' : undefined}>

@@ -1,0 +1,171 @@
+KOMPONIA – ANALYSE UND DREI DESIGNRICHTUNGEN
+Stand: 30. Oktober 2026
+
+Zweck: Die wiederkehrenden Gestaltungswünsche nachvollziehbar zusammenführen und drei konkrete Vorschläge vergleichbar machen. Die Varianten sind lokale Arbeitsfassungen zur Auswahl und Weiterentwicklung. Keine Variante ist gestalterisch freigegeben. Technische Prüfergebnisse werden separat ergänzt.
+
+1. WAS TATSÄCHLICH VOM NUTZER KOMMT
+
+Direkt belegte Aussagen aus dem aktuellen Gespräch:
+– Die Grok-Startseite soll eingebaut werden, aber „weniger nach AI“ aussehen und an „unser Designsystem“ angepasst werden.
+– Der erste Umbau wurde ausdrücklich abgelehnt: „ne gefällt mir gar nicht mache mehr vorschläge“.
+– Gewünscht sind nun mehr Inhalte, mehr Wow-Effekte, ein hochwertiger Auftritt und der Charakter eines „30-jährigen Start-ups“ zwischen Startup und Mittelstand.
+– Deel und Stripe sollen als Referenzen untersucht werden. Auch frühere Gespräche und wiederkehrende Kritik sollen einfließen.
+
+Direkt belegte Aussagen aus früheren Chats, im aktuellen Recherchelauf wiedergefunden:
+– Im Chat „Komponia-Startseite nach Edison umk“: „und diese animationen etc in dem stil gefallen mir sehr gut!! es muss nur jetzt zu komponia auch passen“.
+– Im selben Chat: „Alle Unterseiten etc. sollen beibehalten werden.“
+– Im Chat „Komponia-Seite weiterbauen“: „erstmal nur localhost“.
+
+Das ist eine wichtige Unterscheidung: Animation ist ausdrücklich erwünscht. Das Problem ist ihre beliebige oder unpassende Ausführung. Ebenso bedeutet „weniger KI-Anmutung“ nicht automatisch weniger Farbe, weniger Information oder eine nüchterne Standardseite.
+
+Historische Chatquellen:
+– „Komponia-Startseite nach Edison umk“, Chat-ID 01a169a7-8e6e-70a1-bbf1-879a0a040e25.
+– „Komponia-Seite weiterbauen“, Chat-ID 01a16d01-ec1d-7fb0-833a-e1a3d395a1a1.
+
+2. WAS AUS ÜBERGABEN STAMMT – KEINE WÖRTLICHEN NUTZERAUSSAGEN
+
+Die Datei project-notes/UEBERGABE_CHATGPT_2026-10-20.md benennt ausdrücklich Claude als Verfasser. Sie dokumentiert eine damalige Browser- und Codeanalyse. Dort stehen folgende gestalterische Befunde:
+– ein künstlich wirkendes Laufband ohne zusätzlichen Informationswert;
+– eine zu lange und fragmentierte Seite;
+– mehrere Anzeigen derselben Prozessschritte;
+– gestapelte Kapitelmarker, Eyebrows und Überschriften;
+– dichte, wiederholte Kartenraster und uneinheitliche Bildsprache;
+– eine verwaiste Verbindungslinie und weitere unnötige Details.
+
+Die Übergabe schreibt die Ablehnung des Laufbands Julian zu. Das ist eine indirekte Überlieferung durch Claude, kein hier separat verifiziertes Originalzitat. Die übrigen Punkte sind zunächst Claudes Befunde. Sie dürfen nicht pauschal als „Das hast du immer kritisiert“ ausgegeben werden.
+
+Das gespeicherte Originalbriefing vom 20.10. beschreibt unter anderem technische Präzision, bedeutungstragende Markenfarben, große Typografiekontraste, Materialwechsel und Explosionsansichten. Die unmittelbare Autorschaft dieses gespeicherten Texts ist nicht gesichert. Es wird deshalb als historisches Arbeitsbriefing behandelt, nicht als nachgewiesenes wörtliches Nutzerstatement.
+
+Die Kimi-Übergabe vom 23.10. dokumentiert zudem, dass Laufband, doppelte Prozessanzeigen und einige inhaltliche Wiederholungen bereits entfernt wurden. Diese alten Fehlerlisten sind kein aktuelles offenes Backlog. Auch ein technisch bestandener Build oder früherer Abschlussbericht beweist keine gestalterische Zustimmung.
+
+Quellen im React-Projekt:
+– project-notes/UEBERGABE_CHATGPT_2026-10-20.md
+– project-notes/KOMPONIA_HOMEPAGE_ORIGINALBRIEFING_2026-10-20.txt
+– project-notes/UEBERGABE_CLAUDE_2026-10-20.txt
+– project-notes/UEBERGABE_KIMI_2026-10-23.md
+
+3. DEEL UND STRIPE – AKTUELL BEOBACHTET
+
+Die offiziellen Startseiten wurden am 30.10.2026 textlich und im Browser untersucht. Die beschriebenen Bedienungen wurden ausprobiert; es handelt sich nicht um Erinnerungen an ältere Screenshots.
+
+Deel – https://www.deel.com/
+Visuell: Ein geteilter Einstieg verbindet eine kräftige Farbfläche mit einem Menschenmotiv und konkreten Produktzuständen. Aufgaben können direkt im Einstieg ausgewählt werden. Später folgt eine umschaltbare Prozessdarstellung. Beim Wechsel auf IT ändern sich die Schritte: Laptop auswählen, Versand nach Spanien, erster Arbeitstag. Die Farbe begleitet einen tatsächlichen Inhaltswechsel. Textlich folgen Leistungsübersicht, konkrete Anwendungsfälle und Belege.
+Übertragbar: Besucher über ihre Aufgabe abholen; Interaktionen müssen eine nachvollziehbare Antwort verändern.
+
+Stripe – https://stripe.com/en-de
+Visuell: Der aktuelle Einstieg verbindet einen breiten Erklärungstext mit einer bewegten abstrakten Farbfläche. Unterschiedlich große Produktfelder zeigen konkrete Funktionen. Ein getesteter Billing-Klick öffnet eine ausführliche Vertiefung mit Nutzen, Funktionsbildern und nächsten Schritten. Große Kundenbilder wechseln mit Produktübersichten und technischen Informationen. In der Hertz-Fotografie bilden Straßenmarkierungen die Form des Stripe-Zeichens.
+Übertragbar: viel Substanz mit klarer Hierarchie; Markensprache auch in Bildkomposition und Interaktion. Die Stripe-Farbverläufe, Finanz-Dashboards oder Kennzahlen sind kein Komponia-Rezept.
+
+Eigene Schlussfolgerung: Die überzeugende Wirkung entsteht aus einer durchgängigen Idee, spezifischen Inhalten und passenden Beweisen. Einzelne Formen, Farben oder Animationen herauszukopieren führt genau zu der Austauschbarkeit, die hier vermieden werden soll.
+
+4. WIE DAS „30-JÄHRIGE START-UP“ SICHTBAR WIRD
+
+Erfahrung zeigt sich durch verständliche Zuständigkeiten, technische Fragen, Materialkenntnis, abgestimmte Prüfungen und praktische Versorgung. Die frische Haltung zeigt sich durch selbstbewusste Typografie, eine eigenständige Komposition und wenige gut bedienbare visuelle Momente.
+
+Die historische Aussage bleibt präzise: WTS seit 1997. „30-jähriges Start-up“ ist ein gestalterisches Leitbild, keine Behauptung über Komponias Gründungsjahr oder ein bereits erreichtes Jubiläum.
+
+Komponia bleibt ein persönlicher Partner für technische Komponenten, individuelle Lösungen und laufende Versorgung. Die Seite sollte diese drei Felder gleichwertig erklären. Inhouse-CAD, Herstellerkoordination, Lab und Abrufe verbinden sie. Sie sollte weder wie ein reiner Teilekatalog noch wie eine automatisierte Sofortpreis-Plattform wirken.
+
+Das Designsystem ist mehr als eine Farbpalette:
+– Sora sowie Ink #1F1F1D und Warmgrau #F5F5F1 schaffen die gemeinsame Basis.
+– Blau #3E5AF5 gehört zu Entwicklung/Beschaffung und primären Aktionen.
+– Lavendel #D4B9F3 und Gelb #F7D44B markieren Qualität beziehungsweise Versorgung.
+– Die Module der Komponia-Marke geben Bildern, Flächen und Verbindungen eine erkennbare Ordnung.
+– Technische Präzision entsteht durch Rhythmus, sinnvolle Details und fachlich plausible Darstellung; nicht durch möglichst viele kleine Etiketten.
+
+Die historischen Briefings waren bei großen Farbflächen restriktiver. Die drei aktuellen Vorschläge untersuchen unterschiedliche Intensitäten. Für den ausgewählten Entwurf sind Farbrollen, Flächenanteile und Typohierarchie abschließend mit den Original-Designreferenzen abzugleichen. „Originalfarben verwendet“ bedeutet noch keine vollständige Designsystem-Abnahme.
+
+5. DIE DREI VORSCHLÄGE
+
+A – WERKBANK
+Leitidee: Das Bauteil ist der Hauptdarsteller. Eine großzügige technische Komposition macht Material, Funktion und Anforderungen erlebbar.
+Konkrete Ausführung: großes „Supply redefined.“, ein Hydraulikblock mit steuerbarem radialem Wechsel zwischen Markeninterpretation und Materialdarstellung, technische Bezugslinien und wechselbare Vertiefungen zu Funktion, Schnittstellen und Bedarf.
+Stärke: präzise, eigenständig, nah an Engineering und Einkauf. Der Wow-Moment steckt im Gegenstand.
+Worauf zu achten ist: Die Zeichnungssprache muss groß und verständlich bleiben. Nicht jeden Abschnitt in eine Werkzeichnung verwandeln.
+
+B – VERBUND
+Leitidee: Komponia bringt die passenden Leistungen zusammen. Die Verbindung ist das eigentliche Angebot.
+Konkrete Ausführung: ein interaktives Netz aus Komponenten, Engineering, Lab und Supply. Die Auswahl „Bauteil“, „Sonderteil“ oder „laufende Versorgung“ verändert Verbindungen, Bild und Erläuterung. Eine Gegenüberstellung klärt die Aufgaben des Kunden und von Komponia. Eine weitere Vertiefung unterscheidet Standardkomponenten und individuelle Teile.
+Stärke: erklärt die Unternehmensstrategie besonders unmittelbar; mutiger Markenauftritt mit eigenständiger Modulgeometrie.
+Worauf zu achten ist: Das Netz ist ein Schema, keine Behauptung bestimmter Standorte, Kapazitäten oder Zertifizierungen. Es darf nicht wie ein erfundenes Software-Dashboard wirken.
+
+C – MENSCHEN & MATERIAL
+Leitidee: Industrie wird als konkrete Arbeit und persönliche Verantwortung sichtbar. Ein redaktioneller Aufbau ergänzt die technische Angebotswelt.
+Konkrete Ausführung: breite Typografie, ein großes angeschnittenes Arbeitsmotiv und vier manuell wechselbare Einstiege: Bauteil finden, Sonderteil entwickeln, Serie vorbereiten, Versorgung organisieren. Zwei Komponenten erläutern anschließend das Zusammenspiel von Funktion, Integration, Fertigung und Bedarf. Ein eigener Abschnitt erklärt die persönliche Koordination.
+Stärke: zugänglich, warm und selbstbewusst; die Mittelstandsseite der Marke wird sichtbarer.
+Worauf zu achten ist: Diese Richtung hängt stärker als A und B von glaubwürdigen Bildern ab. Allgemeine Arbeitsmotive allein erzählen noch keine konkrete Komponia-Geschichte.
+
+Alle drei Vorschläge haben dieselbe inhaltliche Vertiefung: Lab mit wählbaren Prüfaspekten, eine aufklappbare Baugruppenansicht, ein bedienbares Abrufschema, Anwendungen, WTS-Herkunft und drei Wege in die Anfrage. Dadurch lassen sich unterschiedliche Erscheinungsbilder bei vergleichbarem inhaltlichem Umfang beurteilen.
+
+Die Varianten sind Alternativen, keine Abstufung von „einfach“ zu „fertig“. Eine mögliche Kombination wäre die Werkbank als visuelle Leitidee, die Zuständigkeiten aus Verbund und später echte Menschen- und Arbeitsbilder. Das ist eine fachliche Empfehlung, keine vorweggenommene Entscheidung des Nutzers.
+
+6. MEHR INHALT, OHNE WIEDER MEHR WIEDERHOLUNG
+
+Jeder Abschnitt braucht eine konkrete Antwort:
+– Was bietet Komponia an und für welche Ausgangslage?
+– Welche Angaben helfen bei Auswahl oder Entwicklung?
+– Wie greifen Bauteil, Schnittstellen, Material und Fertigung ineinander?
+– Was wird im Lab nach Vereinbarung geprüft?
+– Wie unterscheiden sich Produktionslos, vereinbarter Bestand und Abruf?
+– Wer koordiniert die offenen Fragen?
+– Welche Erfahrung steht dahinter und wie beginnt eine Anfrage?
+
+Mehr Inhalt bedeutet hier zusätzliche Erklärungstiefe, nicht mehr Slogans oder mehr gleichförmige Karten. Übersichten bleiben knapp; Details erscheinen dort, wo ein Interessent sie bewusst öffnet. Wiederholte Aussagen über einen Ansprechpartner oder dieselben Prozessschritte werden zusammengeführt.
+
+7. SINNVOLLE WOW-FUNKTIONEN
+
+Bereits in den Vorschlägen konkret angelegt:
+– Materialwechsel: macht den Übergang von Markenidee zu Material verständlich.
+– Aufgabenwahl: verändert eine reale Erklärung und den passenden Anfrageweg.
+– Netzwerkschaltung: zeigt, welche Disziplinen für eine Aufgabe zusammenkommen.
+– Lab-Auswahl: verbindet Prüfaspekte mit sichtbaren Bildmarkierungen und Erklärung.
+– Explosionsansicht: erläutert Schnittstellen einer Baugruppe.
+– Abrufschema: zeigt, wie ein Produktionslos auf mehrere Abrufe verteilt wird.
+
+Für die Ausarbeitung gilt: Ein prägender Moment pro Abschnitt reicht. Jede Funktion muss auf Touch und mit Tastatur verständlich sein und ohne Bewegung ihren Inhalt behalten. Keine Pflicht zum Herumspielen, um das Angebot zu verstehen. Kein dekoratives Laufband als Ersatz für Substanz; kein erzwungener Scrollablauf.
+
+8. BILDER, GLAUBWÜRDIGKEIT UND OFFENE BEWERTUNG
+
+Die vorhandenen Arbeits-, Fertigungs- und Komponentenbilder sind illustrative Referenzen. Sie werden nicht als tatsächliche Komponia-Mitarbeiter, eigene Werke, freigegebene Kundenprodukte oder dokumentierte Projekte ausgegeben. Die Bezeichnung einer Datei als „real“ beschreibt teilweise nur die realistische Darstellungsvariante und ist kein Herkunftsnachweis.
+
+Echte, freigegebene Team-, Lab-, Lager-, Muster- oder Projektaufnahmen würden die Glaubwürdigkeit deutlich verbessern, besonders in Richtung C. Für spätere Ergänzungen kommen passend lizenzierte Medien oder dokumentierte generierte Illustrationen infrage. Auswahl und Bildrechte sind für die jeweilige Verwendung zu prüfen; fremde Wettbewerberbilder werden nicht übernommen.
+
+Keine erfundenen Kundenzahlen, Logos, Zertifikate, Toleranzen, Lieferfristen oder Einsparquoten. Präzise Fragen und nachvollziehbare Arbeitsschritte sind die verfügbaren Belege. Für tatsächliche Kundenergebnisse braucht es freigegebenes Material.
+
+Die nächste gestalterische Entscheidung sollte nach drei Fragen fallen:
+1. Welche Richtung fühlt sich am deutlichsten nach Komponia an?
+2. Wo wird das Angebot am schnellsten verständlich, ohne an Tiefe zu verlieren?
+3. Welcher Wow-Moment erklärt etwas und wirkt auch beim zweiten Besuch noch passend?
+
+Technische Verifikation und die gestalterische Entscheidung bleiben getrennt. Ein bestandener Test kann Bedienung und Darstellung absichern; ob der Auftritt den gewünschten Charakter trifft, entscheidet der Nutzer anhand der konkreten Vorschläge.
+
+
+9. UMGESETZTE MEDIEN UND VERIFIKATION – 30.10.2026
+
+Nach dem Auftrag, sorgfältig Schritt für Schritt und mit passenden frei nutzbaren Medien weiterzubauen, wurde die erste Medienrunde konkret integriert:
+– Variante C verwendet im Einstieg „Develop a custom part“ eine echte CNC-Nahaufnahme von Daniel Smyth. Die Webdatei hat 1920 Pixel Breite und ca. 310 KiB.
+– „Watch machining“ öffnet einen 21-sekündigen echten CNC-Film desselben Fotografen. Er lädt erst nach bewusster Betätigung, beginnt stumm, hat native Steuerelemente und kann per Schließen-Button oder Escape beendet werden. Beim Schließen wird das Video entfernt und die Wiedergabe beendet.
+– Beide Medien sind unter der Pexels License für diesen Websiteeinsatz frei nutzbar. Quellen, Autor, Download-URLs und Einsatzgrenzen stehen in src/previews/design-directions/media/QUELLEN.txt. Es handelt sich um frei nutzbare Stockmedien, nicht um als Open Source lizenzierte Werke.
+– Die Aufnahmen illustrieren Fertigung, ohne Komponias eigene Anlagen zu behaupten. Die übrigen vorhandenen Arbeitsbilder bleiben vorläufige Bildreferenzen. Die durchgehende Bildwelt wird in der ausgewählten Richtung weiter kuratiert.
+
+Foto: https://www.pexels.com/photo/close-up-photo-of-metal-tool-10406128/
+Film: https://www.pexels.com/video/a-machine-is-cutting-metal-with-a-metal-cutting-tool-9033891/
+Lizenz: https://www.pexels.com/license/
+
+Abgeschlossene Prüfungen:
+– TypeScript und Produktionsbuild erfolgreich. Bestehender Hinweis zum großen Hauptpaket bleibt; die neuen Designvorschauen und Medien werden nur im Entwicklungsmodus eingebunden.
+– ESLint für alle neuen Vorschaukomponenten und App.tsx erfolgreich.
+– Im Browser bei 1280 Pixeln und in drei 390-Pixel-Mobilansichten geprüft.
+– Materialwechsel 0/100, Anforderungstabs, Netzwerkauswahl, Bildthemenwechsel, Lab-Auswahl, Explosionsansicht und Teilabrufe bedient.
+– Das Abrufschema zeigt nun drei abgerufene Einheiten und neun verbleibende Einheiten im Bestand. Die Menge ist ausdrücklich schematisch.
+– Zielrouten und Anfrageparameter geprüft; Custom/Serie/Supply behalten ihren passenden Anfragetyp.
+– Mobiles Menü per Tastatur geprüft: Nach Öffnen erreicht Tab den ersten Menülink.
+– Film auf Desktop und mobil abgespielt; laufende Wiedergabe, 1280 x 720, 21,205 Sekunden bestätigt. Escape schließt, entfernt das Video und gibt den Fokus an den Startbutton zurück.
+– Keine Browserfehler in der geprüften Vorschau, keine defekten geladenen Bilder, keine horizontale Überbreite am geprüften Desktop.
+
+Lokale Vergleichsseite:
+http://localhost:3000/#/vorschau/designrichtungen?richtung=werkbank
+B: http://localhost:3000/#/vorschau/designrichtungen?richtung=verbund
+C: http://localhost:3000/#/vorschau/designrichtungen?richtung=menschen
+
+Die bisherige Homepage und ihre Unterseiten wurden in diesem Arbeitsschritt nicht ersetzt. Die drei Vorschläge sind separat beurteilbar. Die temporäre Mobil-Prüfseite wurde anschließend entfernt.
