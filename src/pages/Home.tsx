@@ -1,3 +1,4 @@
+import HomeCatalogueLookup from '../components/HomeCatalogueLookup';
 import PageSections from '../components/PageSections';
 import { CardGrid, FeatureRow } from '../components/Subpage';
 import { SectionLead, CapabilitiesCards, OrderingProcess, CaseStudies, NetworkGallery, QualityStandards, PartsGallery, IndustriesSection, ProtolabsBanner, ProductionSection, ProductionInfographic, DarkCta } from '../components/HomeSectionsStand2';
@@ -9,6 +10,7 @@ import SourceNote from '../components/SourceNote';
 export default function Home(){return <div className="home-page">
   <HomeHero/>
   <PageSections/>
+  <HomeCatalogueLookup/>
   <section data-section-label="Capabilities" className="bg-white"><div className="wrap-orig section-pad"><SectionLead title={H.capabilities.title}>{H.capabilities.intro}</SectionLead><CapabilitiesCards/></div></section>
   <section data-section-label="Why Komponia" className="bg-white"><div className="wrap-orig section-pad"><SectionLead title={H['why-komponia'].title}>{H['why-komponia'].intro}</SectionLead><CardGrid cards={H['why-komponia'].cards}/><SourceNote note={H['why-komponia'].footnote}/></div></section>
   <section data-section-label="Custom solutions" className="bg-brand-gray"><div className="wrap-orig section-pad"><FeatureRow eyebrow="Custom solutions" title={H['custom-solutions'].title} text={H['custom-solutions'].intro} img={I.customEngineering} imgAlt="Illustrative custom-part assessment on a workbench" link={H['custom-solutions'].cta}/></div></section>

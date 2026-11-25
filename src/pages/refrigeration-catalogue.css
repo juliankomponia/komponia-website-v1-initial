@@ -38,3 +38,20 @@
   .hvacr-search { width: 100%; }
   .hvacr-product { gap: .9rem; }
 }
+
+.hvacr-comparison { grid-column: 1 / -1; min-width: 0; }
+.hvacr-product:has(.hvacr-comparison) { row-gap: 1rem; }
+.hvacr-comparison summary { width: fit-content; cursor: pointer; padding-block: .5rem; color: #2d45bd; font-weight: 500; }
+.hvacr-comparison summary:hover { text-decoration: underline; text-underline-offset: 3px; }
+.hvacr-table-wrap { max-width: 100%; overflow-x: auto; border: 1px solid #d8d8d1; border-radius: 3px; }
+.hvacr-table { width: 100%; border-collapse: collapse; font-size: .925rem; font-variant-numeric: tabular-nums; }
+.hvacr-table caption { text-align: left; padding: .8rem 1rem; background: #f3f3ef; }
+.hvacr-table th, .hvacr-table td { padding: .65rem 1rem; text-align: left; border-top: 1px solid #deded8; vertical-align: top; overflow-wrap: normal; }
+.hvacr-table thead th { font-weight: 600; }
+.hvacr-table tbody th { font-weight: 500; }
+.hvacr-table tbody tr:focus-within, .hvacr-table tbody tr:hover { background: #f7f8fc; }
+@media (max-width: 720px) {
+  .hvacr-table { font-size: .875rem; }
+  .hvacr-table th, .hvacr-table td { padding: .65rem .75rem; }
+  .hvacr-table tbody th { min-width: 8.25rem; }
+}

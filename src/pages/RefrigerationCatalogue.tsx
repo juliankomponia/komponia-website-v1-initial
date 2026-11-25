@@ -9,29 +9,76 @@ import {
 import NotFound from './NotFound';
 import './refrigeration-catalogue.css';
 
-function ProductRow({ product }: { product: RefrigerationProduct }) {
-  const { title, description, example } = product;
-  const reference = example ? title + ' / ' + example.reference : title;
+function searchKey(text: string) {
+  return text.normalize('NFKC').toLowerCase().replace(/[^a-z0-9]+/g, '');
+}
+
+function matchProduct(product: RefrigerationProduct, groupTitle: string, query: string) {
+  const words = query.trim().split(/\s+/).map(searchKey).filter(Boolean);
+  if (query.trim() && !words.length) return null;
+  const family = [groupTitle, product.title, product.description].map(searchKey);
+  const remaining = words.filter(word => !family.some(field => field.includes(word)));
+  const { comparison, example } = product;
+  const exact = query.trim() && comparison.rows.find(row => searchKey(row[0]) === searchKey(query));
+  if (exact) return { product, rows: [exact], narrowed: true, example: example?.reference === exact[0] ? example : undefined };
+  if (!remaining.length) return { product, rows: comparison.rows, narrowed: false, example };
+
+  function matches(fields: string[]) {
+    const keys = fields.map(searchKey);
+    return remaining.every(word => keys.some(key => key.includes(word)));
+  }
+  const context = [comparison.caption, ...comparison.columns];
+  const rows = comparison.rows.filter(row => matches([...context, ...row]));
+  const matchedExample = example && matches([example.reference, example.specification]) ? example : undefined;
+  if (!rows.length && !matchedExample) return null;
+  return { product, rows, narrowed: true, example: matchedExample };
+}
+
+type ProductMatch = NonNullable<ReturnType<typeof matchProduct>>;
+
+function Comparison({ product, rows, narrowed }: ProductMatch) {
+  if (!rows.length) return null;
+  const { caption, columns } = product.comparison;
+  const table = <div className="hvacr-table-wrap" tabIndex={0} role="region" aria-label={product.title + ' comparison'}>
+    <table className="hvacr-table">
+      <caption>{caption}</caption>
+      <thead><tr>{columns.map(column => <th key={column} scope="col">{column}</th>)}<th scope="col">Enquiry</th></tr></thead>
+      <tbody>{rows.map(([reference, ...values]) => <tr key={reference}>
+        <th scope="row">{reference}</th>
+        {values.map((value, index) => <td key={columns[index + 1]}>{value}</td>)}
+        <td><Link className="hvacr-link" to={capabilityInquiryPath(product.title + ' / ' + reference, 'component')}
+          aria-label={'Request ' + reference}>Enquire <ArrowRight size={15} aria-hidden="true" /></Link></td>
+      </tr>)}</tbody>
+    </table>
+  </div>;
+
+  return narrowed ? <div className="hvacr-comparison">{table}</div> :
+    <details className="hvacr-comparison">
+      <summary>Compare {rows.length} configurations</summary>
+      {table}
+    </details>;
+}
+
+function ProductRow({ match }: { match: ProductMatch }) {
+  const { product, example, narrowed, rows } = match;
+  const reference = example ? product.title + ' / ' + example.reference : product.title;
   return <article className="hvacr-product">
     <div>
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <h3>{product.title}</h3>
+      <p>{product.description}</p>
     </div>
-    <div className="hvacr-example">
+    {(!narrowed || example) && <div className="hvacr-example">
       {example && <>
         <h4>Model or series <span>{example.reference}</span></h4>
         <p>{example.specification}</p>
       </>}
-      <Link className="hvacr-link" to={capabilityInquiryPath(reference, 'component')}>
-        {example ? 'Enquire about ' + example.reference : 'Enquire about ' + title.toLowerCase()}
+      {(!narrowed || !rows.length) && <Link className="hvacr-link" to={capabilityInquiryPath(reference, 'component')}>
+        {example ? 'Enquire about ' + example.reference : 'Enquire about ' + product.title.toLowerCase()}
         <ArrowRight size={16} aria-hidden="true" />
-      </Link>
-    </div>
+      </Link>}
+    </div>}
+    <Comparison {...match} />
   </article>;
-}
-
-function searchTerms(text: string) {
-  return text.normalize('NFKC').toLowerCase().replace(/co₂/g, 'co2').replace(/[^a-z0-9]+/g, '');
 }
 
 export default function RefrigerationCatalogue() {
@@ -41,15 +88,11 @@ export default function RefrigerationCatalogue() {
   const range = refrigerationRanges.find(item => item.slug === rangeSlug);
   if (rangeSlug && !range) return <NotFound />;
 
-  const terms = query.trim().split(/\s+/).map(searchTerms).filter(Boolean);
   const groups = range ? [range] : refrigerationRanges;
   const results = groups.map(group => ({
     ...group,
-    products: group.products.filter(product => {
-      const fields = [group.title, product.title, product.description, product.example?.reference, product.example?.specification];
-      const searchable = fields.map(field => searchTerms(field ?? ''));
-      return terms.every(term => searchable.some(field => field.includes(term)));
-    }),
+    products: group.products.map(product => matchProduct(product, group.title, query))
+      .filter((match): match is ProductMatch => match !== null),
   })).filter(group => group.products.length);
   const searching = Boolean(query.trim());
   const showProducts = Boolean(range || searching);
@@ -98,7 +141,7 @@ export default function RefrigerationCatalogue() {
       </p>
       {showProducts && results.map(group => <section key={group.slug} aria-label={group.title} className="hvacr-results">
         {!range && <h2><Link to={refrigerationPath + '/' + group.slug}>{group.title} <ArrowRight size={17} aria-hidden="true" /></Link></h2>}
-        {group.products.map(product => <ProductRow key={product.title} product={product} />)}
+        {group.products.map(match => <ProductRow key={match.product.title} match={match} />)}
       </section>)}
       {searching && count === 0 && <p className="hvacr-empty">Try a shorter reference or <Link className="hvacr-link" to={capabilityInquiryPath(query.trim().slice(0, 200), 'component')}>ask Komponia about this item <ArrowRight size={16} aria-hidden="true" /></Link>.</p>}
     </div>
