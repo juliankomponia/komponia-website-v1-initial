@@ -1,5 +1,6 @@
 import { ArrowRight, Search } from 'lucide-react';
 import { Link, useNavigate } from 'react-router';
+import { CatalogueSelection } from './CatalogueCards';
 import { refrigerationPath } from '../data/refrigeration';
 
 export default function HomeCatalogueLookup() {
@@ -23,5 +24,6 @@ export default function HomeCatalogueLookup() {
         <Link className="hvacr-link" to={refrigerationPath}>Browse all ranges <ArrowRight size={16} aria-hidden="true" /></Link>
       </div>
     </div>
+    <div className="site-shell catalogue-home"><CatalogueSelection subject="home" /></div>
   </aside>;
 }

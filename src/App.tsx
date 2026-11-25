@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Components from './pages/Components';
+import RefrigerationArticle from './pages/RefrigerationArticle';
 import RefrigerationCatalogue from './pages/RefrigerationCatalogue';
 import { refrigerationPath } from './data/refrigeration';
 import CncMachining from './pages/CncMachining';
@@ -31,6 +32,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/components" element={<Components />} />
+          <Route path={refrigerationPath + '/:rangeSlug/:articleSlug'} element={<RefrigerationArticle />} />
           <Route path={refrigerationPath + '/:rangeSlug?'} element={<RefrigerationCatalogue />} />
           <Route path="/components/:groupId" element={<Components />} />
           <Route path="/components/:groupId/:productId" element={<Components />} />

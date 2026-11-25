@@ -697,7 +697,7 @@
         "comparison": {
           "sourcePages": "60",
           "caption": "Danfoss T2/TE2 interchangeable orifices with filter. Nominal capacities for range N (−40 to +10 °C).",
-          "columns": ["Model", "Orifice", "R134a (kW)", "R404A / R507 (kW)"],
+          "columns": ["Order code", "Orifice", "R134a (kW)", "R404A / R507 (kW)"],
           "rows": [
             ["068-2002", "0X", "0.4", "0.38"],
             ["068-2003", "00", "0.9", "0.7"],

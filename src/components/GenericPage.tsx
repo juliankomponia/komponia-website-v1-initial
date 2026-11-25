@@ -1,3 +1,4 @@
+import { CatalogueSelection } from './CatalogueCards';
 import PageSections from './PageSections';
 import { INDUSTRIAL_IMAGES as I } from '../data/images';
 import { FeatureRow } from './Subpage';
@@ -135,6 +136,7 @@ export default function GenericPage({ page }: { page: GenericPageData }) {
       </section>
 
       <PageSections />
+      {page.route === 'industries/refrigeration-climate-control' && <CatalogueSelection subject="refrigeration" />}
       {/* content sections, alternating white / gray */}
       {page.sections.map((s, i) => (
         <section key={s.title + i} data-section-label={s.title} className={i % 2 === 1 ? 'bg-brand-gray' : 'bg-white'}>

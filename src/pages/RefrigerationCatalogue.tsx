@@ -1,7 +1,8 @@
 import { ArrowLeft, ArrowRight, Search } from 'lucide-react';
 import { Link, useParams, useSearchParams } from 'react-router';
 import { capabilityInquiryPath } from '../data/inquiry';
-import { HERO_PRODUCT_IMAGE } from '../data/images';
+import { ArticleCard, CatalogueFigure } from '../components/CatalogueCards';
+import { familyFeature, productArticle, rangeFeature } from '../data/refrigeration-articles';
 import {
   refrigerationPath, refrigerationRanges, refrigerationSummary, refrigerationTitle,
   type RefrigerationProduct,
@@ -28,7 +29,11 @@ function matchProduct(product: RefrigerationProduct, groupTitle: string, query: 
     return remaining.every(word => keys.some(key => key.includes(word)));
   }
   const context = [comparison.caption, ...comparison.columns];
-  const rows = comparison.rows.filter(row => matches([...context, ...row]));
+  const rows = comparison.rows.filter(row => {
+    if (matches([...context, ...row])) return true;
+    const series = productArticle(product, row[0])?.profile;
+    return series && matches([...context, ...row, series.name, series.application, ...series.commonFacts.flat(), ...(series.variants[row[0]] ?? []).flat()]);
+  });
   const matchedExample = example && matches([example.reference, example.specification]) ? example : undefined;
   if (!rows.length && !matchedExample) return null;
   return { product, rows, narrowed: true, example: matchedExample };
@@ -44,7 +49,7 @@ function Comparison({ product, rows, narrowed }: ProductMatch) {
       <caption>{caption}</caption>
       <thead><tr>{columns.map(column => <th key={column} scope="col">{column}</th>)}<th scope="col">Enquiry</th></tr></thead>
       <tbody>{rows.map(([reference, ...values]) => <tr key={reference}>
-        <th scope="row">{reference}</th>
+        <th scope="row"><Link className="hvacr-reference" to={productArticle(product, reference)!.path}>{reference}</Link></th>
         {values.map((value, index) => <td key={columns[index + 1]}>{value}</td>)}
         <td><Link className="hvacr-link" to={capabilityInquiryPath(product.title + ' / ' + reference, 'component')}
           aria-label={'Request ' + reference}>Enquire <ArrowRight size={15} aria-hidden="true" /></Link></td>
@@ -61,25 +66,37 @@ function Comparison({ product, rows, narrowed }: ProductMatch) {
 
 function ProductRow({ match }: { match: ProductMatch }) {
   const { product, example, narrowed, rows } = match;
-  const reference = example ? product.title + ' / ' + example.reference : product.title;
+  const references = rows.map(row => row[0]);
+  if (example) references.push(example.reference);
+  const feature = familyFeature(product, narrowed ? references : undefined);
+  const exampleArticle = example && productArticle(product, example.reference);
+  const showExample = example && exampleArticle && exampleArticle !== feature;
   return <article className="hvacr-product">
-    <div>
+    <div className="hvacr-family">
       <h3>{product.title}</h3>
       <p>{product.description}</p>
-    </div>
-    {(!narrowed || example) && <div className="hvacr-example">
-      {example && <>
-        <h4>Model or series <span>{example.reference}</span></h4>
+      {showExample && <div className="hvacr-example">
+        <Link className="hvacr-link" to={exampleArticle.path}>{exampleArticle.kind} {example.reference} <ArrowRight size={15} aria-hidden="true" /></Link>
         <p>{example.specification}</p>
-      </>}
-      {(!narrowed || !rows.length) && <Link className="hvacr-link" to={capabilityInquiryPath(reference, 'component')}>
-        {example ? 'Enquire about ' + example.reference : 'Enquire about ' + product.title.toLowerCase()}
-        <ArrowRight size={16} aria-hidden="true" />
-      </Link>}
-    </div>}
+      </div>}
+      {!feature && !exampleArticle && !narrowed && <Link className="hvacr-link" to={productArticle(product, rows[0][0])!.path}>
+        View {rows[0][0]} <ArrowRight size={16} aria-hidden="true" /></Link>}
+    </div>
+    {feature && <ArticleCard article={feature} />}
     <Comparison {...match} />
   </article>;
 }
+
+const rangeFeatures: Record<string, string> = {
+  'cooling-units': 'Truck refrigeration units',
+  'heat-exchangers': 'Microchannel condensers',
+  'compressors': 'Semi-hermetic piston and screw compressors',
+  'fluids-and-pipework': 'Copper and brass fittings',
+  'circuit-components': 'Solenoid valves',
+  'motors-and-controls': 'Shaded-pole and EC motors',
+  'service-tools': 'Tube working tools',
+  'cold-rooms-and-installation': 'Cold-room LED lighting',
+};
 
 export default function RefrigerationCatalogue() {
   const { rangeSlug } = useParams();
@@ -89,6 +106,7 @@ export default function RefrigerationCatalogue() {
   if (rangeSlug && !range) return <NotFound />;
 
   const groups = range ? [range] : refrigerationRanges;
+  const hero = range ? undefined : rangeFeature(refrigerationRanges[0], 'Low-profile rotary condensing units');
   const results = groups.map(group => ({
     ...group,
     products: group.products.map(product => matchProduct(product, group.title, query))
@@ -113,7 +131,10 @@ export default function RefrigerationCatalogue() {
           <h1>{range?.title ?? refrigerationTitle}</h1>
           <p>{range?.description ?? refrigerationSummary}</p>
         </div>
-        {!range && <img src={HERO_PRODUCT_IMAGE} alt="Illustration of refrigeration control, sensing and switching components" />}
+        {hero?.profile && <Link className="catalogue-hero-article" to={hero.path}>
+          <CatalogueFigure image={hero.profile.images[0]} priority />
+          <span>{hero.reference} · {hero.profile.name}<ArrowRight size={17} aria-hidden="true" /></span>
+        </Link>}
       </div>
     </header>
 
@@ -130,10 +151,17 @@ export default function RefrigerationCatalogue() {
       </div>
 
       {!showProducts && <div className="hvacr-index">
-        {refrigerationRanges.map(group => <Link key={group.slug} to={refrigerationPath + '/' + group.slug}>
-          <div><h3>{group.title}</h3><p>{group.description}</p></div>
-          <ArrowRight size={20} aria-hidden="true" />
-        </Link>)}
+        {refrigerationRanges.map(group => {
+          const feature = rangeFeature(group, rangeFeatures[group.slug]);
+          return <section className="catalogue-range" key={group.slug}>
+            {feature?.profile && <Link className="catalogue-range-example" to={feature.path}>
+              <CatalogueFigure image={feature.profile.images[0]} />
+              <span>{feature.kind} <strong>{feature.reference}</strong> <ArrowRight size={15} aria-hidden="true" /></span>
+            </Link>}
+            <h3><Link to={refrigerationPath + '/' + group.slug}>{group.title} <ArrowRight size={18} aria-hidden="true" /></Link></h3>
+            <p>{group.description}</p>
+          </section>;
+        })}
       </div>}
 
       <p className={searching ? 'hvacr-count' : 'sr-only'} role="status">

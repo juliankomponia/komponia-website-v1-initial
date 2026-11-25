@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router';
 import pages from '../data/pages.json';
 import { CAPABILITY_PAGES } from '../data/capability-pages';
+import { articleByPath, catalogueImagePath } from '../data/refrigeration-articles';
 import { refrigerationPath, refrigerationRanges, refrigerationSummary, refrigerationTitle } from '../data/refrigeration';
 import { COMPONENT_GROUPS } from '../data/components';
 import { INDUSTRIAL_IMAGES as I } from '../data/images';
@@ -43,6 +44,15 @@ function routeMetadata(pathname: string) {
   }
   if (path === refrigerationPath) {
     return { title: refrigerationTitle, description: refrigerationSummary, image: I.heroComponents };
+  }
+  const article = articleByPath(path);
+  if (article) {
+    const image = article.profile?.images[0];
+    return {
+      title: article.reference + ' · ' + (article.profile?.name ?? article.product.title),
+      description: article.profile?.application ?? article.product.description,
+      image: image ? catalogueImagePath(image) : I.heroComponents,
+    };
   }
   const range = refrigerationRanges.find(entry => path === refrigerationPath + '/' + entry.slug);
   if (range) return { title: range.title, description: range.description, image: I.heroComponents };
