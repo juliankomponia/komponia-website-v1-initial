@@ -3087,7 +3087,7 @@
     "range": "compressors",
     "family": "Oil level regulators",
     "name": "Electronic compressor oil-level regulator",
-    "kind": "Model",
+    "kind": "Series",
     "application": "The regulator admits oil from an oil receiver or separator to maintain the level in a compressor sight glass.",
     "images": [
       {
@@ -3120,7 +3120,12 @@
       ]
     ],
     "variants": {
-      "ICG680R": []
+      "ICG680R": [
+        [
+          "Supply frequency",
+          "50/60 Hz"
+        ]
+      ]
     }
   },
   {
@@ -7349,6 +7354,10 @@
     ],
     "commonFacts": [
       [
+        "Panel cut-out (mm)",
+        "58.4 × 25.7"
+      ],
+      [
         "Power",
         "1 × LR44 button cell"
       ],
@@ -7379,6 +7388,10 @@
       }
     ],
     "commonFacts": [
+      [
+        "Panel cut-out (mm)",
+        "59.5 × 25"
+      ],
       [
         "Power",
         "1 × LR44 button cell"
@@ -8637,18 +8650,6 @@
       }
     ],
     "commonFacts": [
-      [
-        "Indoor temperature range",
-        "0 to +50 °C"
-      ],
-      [
-        "Outdoor temperature range",
-        "−50 to +70 °C"
-      ],
-      [
-        "Temperature resolution",
-        "0.1 °C"
-      ],
       [
         "Temperature accuracy",
         "±1 °C"
@@ -14506,6 +14507,557 @@
       "DSB-30A": [],
       "DSB-60A": [],
       "DSB-60AN": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Digital and infrared thermometers",
+    "name": "Two-channel thermo-hygrometer",
+    "kind": "Model",
+    "application": "Read room and outdoor temperatures alongside relative humidity. The display also shows the time and retains the highest and lowest readings.",
+    "images": [
+      {
+        "file": "thermo-hygrometer-bt-3.webp",
+        "alt": "Freestanding BT-3 temperature and humidity display with folding support",
+        "caption": "BT-3 desktop instrument with indoor and outdoor temperature readouts."
+      }
+    ],
+    "commonFacts": [
+      [
+        "Temperature accuracy",
+        "±1 °C"
+      ],
+      [
+        "Display units",
+        "°C or °F"
+      ],
+      [
+        "Functions",
+        "Alarm clock, comfort indicator and minimum/maximum memory"
+      ]
+    ],
+    "variants": {
+      "BT-3": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Digital and infrared thermometers",
+    "name": "Solar panel thermometer",
+    "kind": "Model",
+    "application": "Use the wired probe to measure temperature away from the panel. The solar-powered readout fits a 59.5 × 25 mm opening.",
+    "images": [
+      {
+        "file": "solar-panel-thermometer-dst-30.webp",
+        "alt": "Black DST-30 panel thermometer with coiled probe lead",
+        "caption": "DST-30 panel display and wired probe."
+      }
+    ],
+    "commonFacts": [
+      [
+        "Panel cut-out (mm)",
+        "59.5 × 25"
+      ],
+      [
+        "Power",
+        "Solar"
+      ],
+      [
+        "Accuracy",
+        "±1 °C from −20 to +80 °C"
+      ],
+      [
+        "External dimensions",
+        "66 × 30 × 11.6 mm"
+      ]
+    ],
+    "variants": {
+      "DST-30": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Digital and infrared thermometers",
+    "name": "Pen-style probe thermometer",
+    "kind": "Model",
+    "application": "The probe and digital readout form a single instrument for spot measurements. It switches off automatically after use.",
+    "images": [
+      {
+        "file": "probe-thermometer-wt-1b.webp",
+        "alt": "WT-1B pen thermometer with exposed metal probe and separate sheath",
+        "caption": "WT-1B probe thermometer beside its sheath."
+      }
+    ],
+    "commonFacts": [
+      [
+        "Accuracy",
+        "±1 °C from −20 to +80 °C"
+      ],
+      [
+        "Display units",
+        "°C or °F"
+      ],
+      [
+        "Power",
+        "1 × LR44 button cell"
+      ],
+      [
+        "Dimensions",
+        "20 mm diameter × 207 mm"
+      ]
+    ],
+    "variants": {
+      "WT-1B": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Digital and infrared thermometers",
+    "name": "Handheld probe thermometer with memory",
+    "kind": "Model",
+    "application": "Hold a temperature reading on the handheld display or recall the minimum and maximum values. An alarm indicates a reading outside the measurement range.",
+    "images": [
+      {
+        "file": "probe-thermometer-wt-2.webp",
+        "alt": "WT-2 handheld digital thermometer with its probe clipped to the side",
+        "caption": "WT-2 handheld readout and probe."
+      }
+    ],
+    "commonFacts": [
+      [
+        "Accuracy",
+        "±1 °C from −20 to +80 °C"
+      ],
+      [
+        "Display units",
+        "°C or °F"
+      ],
+      [
+        "Power",
+        "1 × AAA alkaline cell"
+      ]
+    ],
+    "variants": {
+      "WT-2": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Digital and infrared thermometers",
+    "name": "Solar and battery probe thermometer",
+    "kind": "Model",
+    "application": "Read a contact temperature at the round display on the probe head. The instrument uses solar power and an LR44 cell.",
+    "images": [
+      {
+        "file": "probe-thermometer-wt-5.webp",
+        "alt": "WT-5 digital thermometer with round display head and straight metal probe",
+        "caption": "WT-5 thermometer with an integral probe."
+      }
+    ],
+    "commonFacts": [
+      [
+        "Accuracy",
+        "±1 °C from −20 to +80 °C"
+      ],
+      [
+        "Display units",
+        "°C or °F"
+      ],
+      [
+        "Power",
+        "Solar and LR44 button cell"
+      ],
+      [
+        "Dimensions",
+        "170 × 43 × 23.6 mm"
+      ]
+    ],
+    "variants": {
+      "WT-5": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Digital and infrared thermometers",
+    "name": "Handheld infrared thermometer",
+    "kind": "Model",
+    "application": "Use the colour readout to check surface temperatures without a contact probe. A laser helps position the 12:1 measurement spot.",
+    "images": [
+      {
+        "file": "infrared-thermometer-ar320-plus.webp",
+        "alt": "Black-and-yellow AR320+ with colour readout",
+        "caption": "AR320+ handheld infrared thermometer."
+      }
+    ],
+    "commonFacts": [
+      [
+        "Distance-to-spot ratio",
+        "12:1"
+      ],
+      [
+        "Accuracy",
+        "±3 °C from −32 to 0 °C, ±2 °C above 0 °C"
+      ],
+      [
+        "Response time",
+        "500 ms"
+      ],
+      [
+        "Display",
+        "Colour"
+      ],
+      [
+        "Display units",
+        "°C or °F"
+      ],
+      [
+        "Functions",
+        "Laser aiming, reading hold and automatic power-off"
+      ],
+      [
+        "Dimensions",
+        "152 × 75 × 37 mm"
+      ],
+      [
+        "Net weight",
+        "108 g"
+      ]
+    ],
+    "variants": {
+      "AR320+": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Digital and infrared thermometers",
+    "name": "Handheld infrared thermometer",
+    "kind": "Model",
+    "application": "Use the backlit display for surface checks from −50 °C. The laser pointer helps locate the target, and the hold function keeps the reading on screen.",
+    "images": [
+      {
+        "file": "infrared-thermometer-ar350-plus.webp",
+        "alt": "AR350+ infrared thermometer with yellow housing and backlit readout",
+        "caption": "AR350+ handheld infrared thermometer."
+      }
+    ],
+    "commonFacts": [
+      [
+        "Distance-to-spot ratio",
+        "12:1"
+      ],
+      [
+        "Accuracy",
+        "±3 °C from −50 to 0 °C, ±2 °C above 0 °C"
+      ],
+      [
+        "Response time",
+        "500 ms"
+      ],
+      [
+        "Display",
+        "Backlit"
+      ],
+      [
+        "Display units",
+        "°C or °F"
+      ],
+      [
+        "Functions",
+        "Laser aiming, reading hold and automatic power-off"
+      ],
+      [
+        "Dimensions",
+        "154 × 87 × 38 mm"
+      ],
+      [
+        "Net weight",
+        "115 g"
+      ]
+    ],
+    "variants": {
+      "AR350+": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Digital and infrared thermometers",
+    "name": "Handheld infrared thermometer",
+    "kind": "Model",
+    "application": "Measure hot surfaces from +200 °C using an 80:1 distance-to-spot ratio. Use the ratio to check whether the target fills the measurement spot at the chosen distance.",
+    "images": [
+      {
+        "file": "infrared-thermometer-as892.webp",
+        "alt": "Yellow AS892 thermometer with a long sensor housing and black grip",
+        "caption": "AS892 handheld infrared thermometer."
+      }
+    ],
+    "commonFacts": [
+      [
+        "Distance-to-spot ratio",
+        "80:1"
+      ],
+      [
+        "Accuracy",
+        "±2 °C"
+      ],
+      [
+        "Response time",
+        "500 ms"
+      ],
+      [
+        "Display",
+        "Backlit"
+      ],
+      [
+        "Display units",
+        "°C or °F"
+      ],
+      [
+        "Functions",
+        "Laser aiming, reading hold and automatic power-off"
+      ],
+      [
+        "Dimensions",
+        "205 × 155 × 62 mm"
+      ],
+      [
+        "Net weight",
+        "370 g"
+      ]
+    ],
+    "variants": {
+      "AS892": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Digital and infrared thermometers",
+    "name": "Handheld infrared thermometer",
+    "kind": "Model",
+    "application": "Check surface temperatures across a wide range using a 50:1 distance-to-spot ratio. The backlit display holds the reading after measurement.",
+    "images": [
+      {
+        "file": "infrared-thermometer-as872d.webp",
+        "alt": "AS872D infrared thermometer with yellow handle and backlit readout",
+        "caption": "AS872D handheld infrared thermometer."
+      }
+    ],
+    "commonFacts": [
+      [
+        "Distance-to-spot ratio",
+        "50:1"
+      ],
+      [
+        "Accuracy",
+        "±5 °C from −50 to −31 °C, ±3 °C above −31 °C"
+      ],
+      [
+        "Response time",
+        "500 ms"
+      ],
+      [
+        "Display",
+        "Backlit"
+      ],
+      [
+        "Display units",
+        "°C or °F"
+      ],
+      [
+        "Functions",
+        "Laser aiming, reading hold and automatic power-off"
+      ],
+      [
+        "Dimensions",
+        "207 × 141 × 64 mm"
+      ],
+      [
+        "Net weight",
+        "368 g"
+      ]
+    ],
+    "variants": {
+      "AS872D": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Digital and infrared thermometers",
+    "name": "Handheld infrared thermometer",
+    "kind": "Model",
+    "application": "Take non-contact surface readings using a 16:1 distance-to-spot ratio. The laser indicates the target and the display can hold the reading.",
+    "images": [
+      {
+        "file": "infrared-thermometer-st650.webp",
+        "alt": "Black ST650 infrared thermometer with rear screen and controls",
+        "caption": "ST650 handheld infrared thermometer."
+      }
+    ],
+    "commonFacts": [
+      [
+        "Distance-to-spot ratio",
+        "16:1"
+      ],
+      [
+        "Accuracy",
+        "±2 °C"
+      ],
+      [
+        "Response time",
+        "500 ms"
+      ],
+      [
+        "Display",
+        "Backlit"
+      ],
+      [
+        "Display units",
+        "°C or °F"
+      ],
+      [
+        "Functions",
+        "Laser aiming, reading hold and automatic power-off"
+      ],
+      [
+        "Dimensions",
+        "187 × 105 × 58 mm"
+      ],
+      [
+        "Net weight",
+        "271 g"
+      ]
+    ],
+    "variants": {
+      "ST650": []
+    }
+  },
+  {
+    "range": "compressors",
+    "family": "Optical level monitors and sensors",
+    "name": "ICG571C screw-in pressure insert",
+    "kind": "Model",
+    "application": "This brass insert fits the ICG571C oil differential pressure sensor. Select 02D557 for a M20 × 1.5 connection and a nominal differential of 0.65 bar.",
+    "images": [
+      {
+        "file": "oil-pressure-insert-02d557.webp",
+        "alt": "02D557 brass insert with end and side views",
+        "caption": "02D557 screw-in unit for the ICG571C sensor."
+      }
+    ],
+    "commonFacts": [
+      [
+        "Item supplied",
+        "Screw-in insert"
+      ],
+      [
+        "Connection thread",
+        "M20 × 1.5"
+      ],
+      [
+        "Switching differential",
+        "0.65 ± 0.15 bar"
+      ],
+      [
+        "Maximum operating pressure",
+        "140 bar"
+      ],
+      [
+        "Medium temperature",
+        "−30 to +90 °C"
+      ],
+      [
+        "Housing material",
+        "Brass"
+      ]
+    ],
+    "variants": {
+      "02D557": []
+    }
+  },
+  {
+    "range": "compressors",
+    "family": "Optical level monitors and sensors",
+    "name": "ICG571C screw-in pressure insert",
+    "kind": "Model",
+    "application": "This brass insert fits the ICG571C oil differential pressure sensor. Select 02D442 for a 3/4–16 UNF-2A connection and a nominal differential of 0.65 bar.",
+    "images": [
+      {
+        "file": "oil-pressure-insert-02d442.webp",
+        "alt": "02D442 brass insert with end and side views",
+        "caption": "02D442 screw-in unit for the ICG571C sensor."
+      }
+    ],
+    "commonFacts": [
+      [
+        "Item supplied",
+        "Screw-in insert"
+      ],
+      [
+        "Connection thread",
+        "3/4–16 UNF-2A"
+      ],
+      [
+        "Switching differential",
+        "0.65 ± 0.15 bar"
+      ],
+      [
+        "Maximum operating pressure",
+        "140 bar"
+      ],
+      [
+        "Medium temperature",
+        "−30 to +90 °C"
+      ],
+      [
+        "Housing material",
+        "Brass"
+      ]
+    ],
+    "variants": {
+      "02D442": []
+    }
+  },
+  {
+    "range": "compressors",
+    "family": "Optical level monitors and sensors",
+    "name": "ICG571C screw-in pressure insert",
+    "kind": "Model",
+    "application": "This brass insert fits the ICG571C oil differential pressure sensor. Select 02D443 for a 3/4–16 UNF-2A connection and a nominal differential of 0.95 bar.",
+    "images": [
+      {
+        "file": "oil-pressure-insert-02d443.webp",
+        "alt": "02D443 brass insert with end and side views",
+        "caption": "02D443 screw-in unit for the ICG571C sensor."
+      }
+    ],
+    "commonFacts": [
+      [
+        "Item supplied",
+        "Screw-in insert"
+      ],
+      [
+        "Connection thread",
+        "3/4–16 UNF-2A"
+      ],
+      [
+        "Switching differential",
+        "0.95 ± 0.15 bar"
+      ],
+      [
+        "Maximum operating pressure",
+        "140 bar"
+      ],
+      [
+        "Medium temperature",
+        "−30 to +90 °C"
+      ],
+      [
+        "Housing material",
+        "Brass"
+      ]
+    ],
+    "variants": {
+      "02D443": []
     }
   }
 ]

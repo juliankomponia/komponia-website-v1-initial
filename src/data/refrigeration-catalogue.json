@@ -549,7 +549,7 @@
             ["ICG360R-D1", "Low oil level alarm", "230 V AC"],
             ["ICG360R-D2", "High oil level monitoring", "230 V AC"],
             ["ICG580R", "Oil filling with a solenoid valve", "230 V AC"],
-            ["ICG680R", "Active oil level control", "230 V AC"]
+            ["ICG680R", "Active oil level control", "24 or 230 V AC"]
           ]
         }
       },
@@ -561,12 +561,15 @@
           "specification": "The optical prism stays in the vessel when the external evaluation unit is replaced."
         },
         "comparison": {
-          "caption": "Level, differential pressure and temperature are measured at different points in the refrigeration circuit.",
-          "columns": ["Series", "Measured quantity", "Sensing arrangement"],
+          "caption": "Compare the sensing arrangements. For an ICG571C replacement insert, match the thread and differential pressure to the original unit.",
+          "columns": ["Reference", "Measured quantity", "Sensing arrangement"],
           "rows": [
             ["ILM-D", "Liquid level", "Screw-in optical prism"],
             ["ICG571C", "Oil pressure differential", "Screw-in unit with removable electronics"],
-            ["ITS Screw-In", "Temperature", "Threaded thermal sensor"]
+            ["ITS Screw-In", "Temperature", "Threaded thermal sensor"],
+            ["02D557", "Oil pressure differential", "ICG571C insert, M20 × 1.5, 0.65 bar"],
+            ["02D442", "Oil pressure differential", "ICG571C insert, 3/4–16 UNF-2A, 0.65 bar"],
+            ["02D443", "Oil pressure differential", "ICG571C insert, 3/4–16 UNF-2A, 0.95 bar"]
           ]
         }
       },
@@ -1321,17 +1324,28 @@
       },
       {
         "title": "Digital and infrared thermometers",
-        "description": "Choose a remote probe for cabinet readings, a thermo-hygrometer for air temperature and humidity, or an infrared instrument for surface temperature.",
+        "description": "Compare panel meters for cabinet installations, probes for contact measurements and infrared thermometers for surface readings. Two-channel thermo-hygrometers also display humidity.",
         "example": {
           "reference": "DT-3",
           "specification": "Two temperature channels, humidity display and a remote temperature range of −50 to +70 °C."
         },
         "comparison": {
-          "caption": "Panel thermometers for equipment cut-outs. The cut-out dimensions refer to installation, not the outside face.",
-          "columns": ["Model", "Measuring range (°C)", "Panel cut-out (mm)", "Resolution (°C)"],
+          "caption": "Temperature ranges are given in degrees Celsius. Two-channel instruments list the indoor and outdoor ranges separately.",
+          "columns": ["Model", "Instrument", "Measuring range (°C)", "Resolution (°C)"],
           "rows": [
-            ["TPM-10", "−50 to +80", "58.4 × 25.7", "0.1"],
-            ["TPM-30", "−50 to +80", "59.5 × 25", "0.1"]
+            ["TPM-10", "Panel thermometer", "−50 to +80", "0.1"],
+            ["TPM-30", "Panel thermometer", "−50 to +80", "0.1"],
+            ["DT-3", "Thermo-hygrometer", "Indoor 0 to +50 / outdoor −50 to +70", "0.1"],
+            ["BT-3", "Thermo-hygrometer", "Indoor 0 to +50 / outdoor −50 to +70", "0.1"],
+            ["DST-30", "Panel thermometer", "−50 to +150", "0.1"],
+            ["WT-1B", "Probe thermometer", "−50 to +300", "0.1"],
+            ["WT-2", "Probe thermometer", "−50 to +300", "0.1"],
+            ["WT-5", "Probe thermometer", "−50 to +150", "0.1"],
+            ["AR320+", "Infrared thermometer", "−32 to +380", "0.1"],
+            ["AR350+", "Infrared thermometer", "−50 to +480", "0.1"],
+            ["AS892", "Infrared thermometer", "+200 to +2200", "0.1"],
+            ["AS872D", "Infrared thermometer", "−50 to +1150", "0.1"],
+            ["ST650", "Infrared thermometer", "−50 to +680", "0.1"]
           ]
         }
       },
