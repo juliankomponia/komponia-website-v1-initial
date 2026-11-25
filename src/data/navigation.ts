@@ -1,5 +1,6 @@
 import { INDUSTRIAL_IMAGES as I } from './images';
 import { NAV as TEMPLATE_NAV, type NavLink, type NavGroup } from './site';
+import { refrigerationPath } from './refrigeration';
 import { COMPONENT_GROUPS, componentPath } from './components';
 
 // Preserve the template's navigation structure and existing page routes.
@@ -151,6 +152,7 @@ export const FOOTER_COLUMNS: { title: string; links: FooterLinkData[] }[] = [
     title: 'Components',
     links: [
       { label: 'All components', to: '/components' },
+      { label: 'HVAC/R product catalogue', to: refrigerationPath },
       ...COMPONENT_GROUPS.map((group) => ({ label: group.title, to: componentPath(group) })),
     ],
   },

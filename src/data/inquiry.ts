@@ -6,3 +6,7 @@ export function inquiryPath(group?: ComponentGroup, product?: ComponentProduct) 
   if (product) query.set('component', product.slug);
   return `/contact${query.size ? `?${query}` : ''}`;
 }
+
+export function capabilityInquiryPath(reference: string, type = 'custom') {
+  return `/contact?${new URLSearchParams({ type, reference })}`;
+}

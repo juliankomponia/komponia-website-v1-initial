@@ -1,0 +1,40 @@
+.hvacr { color: #242421; }
+.hvacr-hero { background: #1f1f1d; color: #fff; }
+.hvacr-hero-inner { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: center; gap: clamp(24px, 5vw, 86px); padding-block: clamp(40px, 5vw, 80px); }
+.hvacr-hero-inner img { width: 100%; max-height: 325px; object-fit: contain; border-radius: 3px; }
+.hvacr-hero h1 { max-width: 21ch; font-size: clamp(2.25rem, 4.4vw, 4.5rem); font-weight: 500; line-height: 1.05; letter-spacing: -.04em; overflow-wrap: break-word; }
+.hvacr-hero p { max-width: 62ch; margin-top: 1.3rem; line-height: 1.6; color: #dededb; }
+.hvacr-hero--group .hvacr-hero-inner { display: block; }
+.hvacr-hero--group h1 { max-width: 30ch; }
+.hvacr-crumbs { display: flex; align-items: baseline; gap: .65rem; margin-bottom: 1.5rem; color: #c8c8c5; font-size: .875rem; }
+.hvacr-crumbs a:hover { text-decoration: underline; }
+.hvacr-content { padding-block: clamp(36px, 5vw, 76px); }
+.hvacr-tools { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 24px; }
+.hvacr-tools h2 { font-size: clamp(1.6rem, 2.5vw, 2.4rem); font-weight: 500; letter-spacing: -.04em; }
+.hvacr-search { display: flex; align-items: center; gap: .65rem; min-height: 48px; width: min(100%, 25rem); border: 1px solid #92928a; border-radius: 3px; padding-inline: .85rem; }
+.hvacr-search:focus-within { outline: 2px solid #3e5af5; outline-offset: 2px; }
+.hvacr-search input { flex: 1; min-width: 0; background: transparent; color: inherit; font: inherit; outline: none; }
+.hvacr-search button { padding: .5rem .1rem; color: #2d45bd; text-decoration: underline; }
+.hvacr-index { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(24px, 4vw, 72px); }
+.hvacr-index > a, .hvacr-product { border-top: 1px solid #c8c8c1; }
+.hvacr-index > a { display: flex; justify-content: space-between; align-items: baseline; gap: 1.25rem; padding-block: 1.5rem; }
+.hvacr-index svg, .hvacr-link svg { flex: none; }
+.hvacr-index svg, .hvacr-link { color: #2d45bd; }
+.hvacr-index a:hover h3, .hvacr-link:hover, .hvacr-results h2 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.hvacr h3 { font-size: clamp(1.13rem, 1.6vw, 1.5rem); font-weight: 500; line-height: 1.3; }
+.hvacr-index p, .hvacr-product p { max-width: 68ch; margin-top: .55rem; color: #555550; line-height: 1.6; }
+.hvacr-link, .hvacr-results h2 a { display: inline-flex; gap: .5rem; align-items: center; }
+.hvacr-back { margin-bottom: 1.25rem; }
+.hvacr-count { margin-bottom: 1rem; color: #555550; }
+.hvacr-results h2 { margin: 2rem 0 1rem; font-size: 1.45rem; font-weight: 500; }
+.hvacr-product { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(2rem, 5vw, 6rem); padding-block: 1.6rem; overflow-wrap: anywhere; }
+.hvacr-example h4 { font-size: .875rem; color: #555550; }
+.hvacr-example h4 span { display: inline-block; margin-inline-start: .4rem; color: #242421; font: 600 .95rem ui-monospace, monospace; }
+.hvacr-example p + .hvacr-link { margin-top: .75rem; }
+@media (max-width: 720px) {
+  .hvacr-hero-inner, .hvacr-index, .hvacr-product { grid-template-columns: 1fr; }
+  .hvacr-hero-inner img { max-height: 175px; }
+  .hvacr-tools { align-items: stretch; flex-direction: column; }
+  .hvacr-search { width: 100%; }
+  .hvacr-product { gap: .9rem; }
+}

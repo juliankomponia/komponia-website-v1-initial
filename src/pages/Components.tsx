@@ -9,6 +9,7 @@ import { DarkCta } from '../components/Sections';
 import { inquiryPath } from '../data/inquiry';
 import { downloadText } from '../lib/download';
 import BrandLabel from '../components/BrandLabel';
+import { refrigerationPath } from '../data/refrigeration';
 import './components.css';
 
 // Illustrative category examples, not a specific product configuration.
@@ -71,7 +72,8 @@ function Overview() {
     <section className="components-dark components-overview-hero"><div className="components-section wrap-orig section-pad">
       <BrandLabel inverse>Technical components</BrandLabel>
       <h1 className="hero-title">Components for your application</h1>
-      <p>The right solution starts with the right component. Explore controllers, sensors, heating elements, and pressure and switching devices for your application.</p>
+      <p>Explore controllers, sensors, heating elements and switching devices, or browse the refrigeration and air-conditioning range by product or model.</p>
+      <Link to={refrigerationPath} className="btn-primary-l mt-6">Browse the HVAC/R catalogue <ArrowRight size={18} aria-hidden="true" /></Link>
     </div></section>
     <PageSections /><section data-section-label="Component groups" className="components-section wrap-orig section-pad" aria-label="Product groups"><div className="components-cap-grid">{COMPONENT_GROUPS.map((group) => <GroupCard key={group.id} group={group} />)}</div></section>
     <section data-section-label="Selection requirements" className="components-section wrap-orig section-pad components-resources"><h2 className="h2-orig components-section-title">Start with your requirement</h2><CardGrid cols={4} cards={H['technical-questions'].cards.map(card => ({ title: card.title, text: card.text, link: 'Explore this requirement', to: card.to }))} /></section><ComponentFaq /><ContactCta />

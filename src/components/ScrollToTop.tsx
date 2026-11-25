@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router';
 import pages from '../data/pages.json';
 import { CAPABILITY_PAGES } from '../data/capability-pages';
+import { refrigerationPath, refrigerationRanges, refrigerationSummary, refrigerationTitle } from '../data/refrigeration';
 import { COMPONENT_GROUPS } from '../data/components';
 import { INDUSTRIAL_IMAGES as I } from '../data/images';
 
@@ -40,6 +41,11 @@ function routeMetadata(pathname: string) {
       image: group ? [I.controllers, I.sensors, I.heating, I.pressureSwitches][COMPONENT_GROUPS.indexOf(group)] : I.heroComponents,
     };
   }
+  if (path === refrigerationPath) {
+    return { title: refrigerationTitle, description: refrigerationSummary, image: I.heroComponents };
+  }
+  const range = refrigerationRanges.find(entry => path === refrigerationPath + '/' + entry.slug);
+  if (range) return { title: range.title, description: range.description, image: I.heroComponents };
   const capability = CAPABILITY_PAGES.find(page => page.route === path);
   if (capability) return { title: capability.title, description: capability.intro, image: capability.hero };
   const generic = pages.find(page => `/${page.route}` === path);

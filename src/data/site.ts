@@ -1,3 +1,4 @@
+import { refrigerationPath } from './refrigeration';
 import { COMPONENT_GROUPS, componentPath } from './components';
 
 // Shared site data — image assets are hotlinked from the original CDN
@@ -180,14 +181,21 @@ export const NAV: NavItem[] = [
     image: IMG.navMat,
     compact: true,
     overview: { label: 'All components', to: '/components' },
-    groups: COMPONENT_GROUPS.map((group) => ({
-      title: group.title,
-      plain: true,
-      links: [
-        { label: 'Overview', to: componentPath(group) },
-        ...group.products.map((product) => ({ label: product.title, to: componentPath(group, product) })),
-      ],
-    })),
+    groups: [
+      {
+        title: 'Refrigeration & air conditioning',
+        plain: true,
+        links: [{ label: 'HVAC/R product catalogue', to: refrigerationPath }],
+      },
+      ...COMPONENT_GROUPS.map((group) => ({
+        title: group.title,
+        plain: true,
+        links: [
+          { label: 'Overview', to: componentPath(group) },
+          ...group.products.map((product) => ({ label: product.title, to: componentPath(group, product) })),
+        ],
+      })),
+    ],
   },
   {
     label: 'Resources',
