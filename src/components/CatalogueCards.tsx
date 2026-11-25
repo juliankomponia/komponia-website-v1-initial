@@ -15,7 +15,7 @@ export function ArticleCard({ article }: { article: CatalogueArticle }) {
   if (!profile?.images.length) return null;
   return <Link className="catalogue-card" to={path}>
     <CatalogueFigure image={profile.images[0]} />
-    <div className="catalogue-card-meta">{kind} <strong>{reference}</strong></div>
+    <div className="catalogue-card-meta">{kind} <strong>{reference}</strong>{article.number && <span className="catalogue-card-number">{article.number}</span>}</div>
     <div className="catalogue-card-title"><span>{profile.name || product.title}</span><ArrowRight size={18} aria-hidden="true" /></div>
   </Link>;
 }

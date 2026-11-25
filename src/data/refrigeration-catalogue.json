@@ -7,13 +7,11 @@
       {
         "title": "Air-cooled condensing units",
         "description": "ACU and KCU units use scroll compressors. DCU and MCU units use semi-hermetic reciprocating compressors. Select the series by refrigerant and capacity at the required evaporating temperature.",
-        "sourcePages": "7–10",
         "example": {
           "reference": "ACU-2M",
           "specification": "R404A with a 450 mm condenser fan. Cooling capacity is 2.95 kW at −10 °C evaporation and 1.85 kW at −20 °C evaporation."
         },
         "comparison": {
-          "sourcePages": "7",
           "caption": "ACU scroll units with R404A. Cooling capacity is shown at three evaporating temperatures.",
           "columns": ["Model", "Compressor", "At −5 °C (W)", "At −10 °C (W)", "At −20 °C (W)"],
           "rows": [
@@ -32,9 +30,7 @@
       {
         "title": "DCU semi-hermetic condensing units",
         "description": "An air-cooled condenser and a Bitzer semi-hermetic reciprocating compressor share a cabinet. Select the medium- or low-temperature duty using capacity at the design evaporating temperature.",
-        "sourcePages": "8",
         "comparison": {
-          "sourcePages": "8",
           "caption": "R404A cooling capacities at −20 °C evaporating temperature. The article lists the other rating points for its duty.",
           "columns": ["Model", "Duty", "Compressor model", "Cooling at −20 °C (W)"],
           "rows": [
@@ -64,9 +60,7 @@
       {
         "title": "LCU indoor scroll condensing units",
         "description": "An indoor unit with horizontal air discharge combines a Copeland scroll compressor and an air-cooled condenser. ZB compressors serve medium-temperature duty and ZF compressors serve low-temperature duty.",
-        "sourcePages": "9",
         "comparison": {
-          "sourcePages": "9",
           "caption": "R404A cooling capacities at −20 °C evaporating temperature. The article lists the other rating points for its duty.",
           "columns": ["Model", "Duty", "Compressor model", "Cooling at −20 °C (W)"],
           "rows": [
@@ -91,13 +85,11 @@
       {
         "title": "Packaged cold-room units",
         "description": "Monoblock units combine the refrigeration circuit and hot-gas defrost for small cold rooms. The HA range serves medium-temperature rooms and the MA range serves freezers.",
-        "sourcePages": "11",
         "example": {
           "reference": "MONO-HA00833",
           "specification": "Listed for a 6–9 m³ room at −5 to +5 °C application temperature, with a 220 V single-phase, 50 Hz supply. Room load determines the final selection."
         },
         "comparison": {
-          "sourcePages": "11",
           "caption": "MONO packaged units with hot-gas defrost. The room volume is a selection guide for the stated room temperature.",
           "columns": ["Model", "Room temperature (°C)", "Cooling capacity (W)", "Room volume (m³)"],
           "rows": [
@@ -123,13 +115,11 @@
       {
         "title": "Low-profile rotary condensing units",
         "description": "A horizontal rotary compressor keeps the cabinet shallow. Choose the refrigerant version and check clearance for airflow and service.",
-        "sourcePages": "12",
         "example": {
           "reference": "RCU-HSN10EL",
           "specification": "R404A, 220 V single-phase at 50 Hz. The cabinet measures 680 × 485 × 265 mm."
         },
         "comparison": {
-          "sourcePages": "12",
           "caption": "Fixed-speed horizontal units, 220 V single-phase at 50 Hz. Capacity figures refer to evaporating temperature.",
           "columns": ["Model", "Refrigerant", "At −15 °C (W)", "At −30 °C (W)", "Cabinet L × W × H (mm)"],
           "rows": [
@@ -148,13 +138,11 @@
       {
         "title": "Top-mounted cabinet units",
         "description": "S and M series units fit refrigerated kitchen cabinets. Cabinet temperature determines the unit and defrost arrangement.",
-        "sourcePages": "13",
         "example": {
           "reference": "KFS-L5",
           "specification": "R290 freezer configuration with hot-gas defrost for a cabinet interior of −22 to −18 °C."
         },
         "comparison": {
-          "sourcePages": "13",
           "caption": "S series with a fixed-speed R290 compressor. Select for the temperature inside the cabinet.",
           "columns": ["Model", "Cabinet range (°C)", "Cooling capacity (W)", "Input (W)", "Defrost"],
           "rows": [
@@ -175,13 +163,11 @@
       {
         "title": "Truck refrigeration units",
         "description": "Split and integrated units cool insulated vehicle bodies. Supply voltage, box volume and required cargo temperature narrow the choice.",
-        "sourcePages": "14",
         "example": {
           "reference": "XDL-400EV",
           "specification": "Electric split unit for a 10–18 m³ body, with a 250–750 V DC supply and an R404A circuit."
         },
         "comparison": {
-          "sourcePages": "14",
           "caption": "Electric split systems with R404A for refrigerated vehicle bodies.",
           "columns": ["Model", "Vehicle supply (V DC)", "Box volume (m³)", "Refrigerant charge (kg)"],
           "rows": [
@@ -193,9 +179,7 @@
       {
         "title": "DC micro cooling modules",
         "description": "Choose a condensing unit, a coaxial or plate liquid chiller, or an air-cooling module for a mobile cabinet. R134a versions use variable-speed compressors with 12, 24 or 48 V DC supplies.",
-        "sourcePages": "15",
         "comparison": {
-          "sourcePages": "15",
           "caption": "Compact R134a modules with a choice of 12, 24 or 48 V DC supply.",
           "columns": ["Configuration", "Length (mm)", "Width (mm)", "Height (mm)", "Approx. mass (kg)"],
           "rows": [
@@ -216,13 +200,11 @@
       {
         "title": "Cold-room air coolers",
         "description": "Stainless steel, powder-coated steel and aluminium-magnesium versions suit different room environments. Compare fin spacing at the intended air and evaporating temperatures.",
-        "sourcePages": "16–18",
         "example": {
           "reference": "SS-TL301E4",
           "specification": "Stainless steel casing and drain tray, 4 mm fin spacing and one 300 mm fan. Capacity is 2.6 kW at 0 °C entering air and −8 °C evaporation."
         },
         "comparison": {
-          "sourcePages": "16",
           "caption": "Stainless steel Light Series. Each capacity applies to the air and evaporation temperatures in its own row.",
           "columns": ["Model", "Fin spacing (mm)", "Air / evaporation (°C)", "Cooling capacity (kW)", "Fans × diameter (mm)"],
           "rows": [
@@ -271,9 +253,7 @@
       {
         "title": "Air-cooled condensers",
         "description": "Side-mounted FNH and INH condensers are offered with 7 mm internally grooved or 9.52 mm smooth copper tubes, respectively. Size the fan and coil for the required heat rejection.",
-        "sourcePages": "19",
         "comparison": {
-          "sourcePages": "19",
           "caption": "Side-mount condensers at a 15 K temperature difference. FNH uses 7 mm internally grooved tube, INH uses 9.52 mm smooth tube.",
           "columns": ["Model", "Capacity (W)", "Airflow (m³/h)", "Fans × diameter (mm)"],
           "rows": [
@@ -335,13 +315,11 @@
       {
         "title": "Microchannel condensers",
         "description": "Aluminium microchannel heat exchangers pair a compact core with an axial fan. Match connection size and heat rejection at the intended ambient temperature.",
-        "sourcePages": "20",
         "example": {
           "reference": "MCHE-5",
           "specification": "5 kW at 45 °C condensing temperature, 32 °C ambient and 5 K subcooling. Fan diameter 350 mm, inlet and outlet 12.7 mm."
         },
         "comparison": {
-          "sourcePages": "20",
           "caption": "MCHE condensers at 45 °C condensing temperature, 32 °C ambient and 5 K subcooling.",
           "columns": ["Model", "Heat rejection (kW)", "Airflow (m³/h)", "Inlet / outlet (mm)"],
           "rows": [
@@ -360,13 +338,11 @@
       {
         "title": "Shell-and-tube evaporators",
         "description": "The secondary liquid runs through the tubes while refrigerant evaporates on the shell side. Specify liquid flow, inlet and outlet temperatures, and the pipe connection.",
-        "sourcePages": "20",
         "example": {
           "reference": "STHE-4",
           "specification": "DN25 liquid connection. The STHE-6.5 configuration uses DN40."
         },
         "comparison": {
-          "sourcePages": "20",
           "caption": "STHE shell-and-tube evaporators. Connection size is the nominal diameter on the liquid side.",
           "columns": ["Model", "Liquid connection"],
           "rows": [
@@ -399,13 +375,11 @@
       {
         "title": "Scroll compressors",
         "description": "Copeland, Bsonyo, LG, Danfoss and GMCC scroll ranges cover different duties. Match the complete model suffix, refrigerant, evaporating range and motor supply. Digital scroll variants are listed for capacity modulation.",
-        "sourcePages": "21–29",
         "example": {
           "reference": "ZBD21KQE",
           "specification": "Digital scroll compressor with 48 cm³ displacement per revolution, a ¾-inch suction connection and a ½-inch discharge connection."
         },
         "comparison": {
-          "sourcePages": "22",
           "caption": "Copeland ZBD digital scroll compressors for medium- and high-temperature refrigeration.",
           "columns": ["Model", "Displacement (cm³/rev)", "Oil volume (L)", "Nominal power (hp)"],
           "rows": [
@@ -423,13 +397,11 @@
       {
         "title": "Rotary compressors",
         "description": "Fixed-speed and inverter-driven variants are selected by refrigerant, displacement and supply. Ranges include GMCC, Highly, Panasonic and CRSS.",
-        "sourcePages": "31–34",
         "example": {
           "reference": "DSK44V21UZH3",
           "specification": "Fixed-speed R290 rotary compressor with 4.4 cm³ displacement per revolution and a 220–240 V single-phase, 50 Hz supply."
         },
         "comparison": {
-          "sourcePages": "31",
           "caption": "Fixed-speed GMCC R290 rotary compressors at the T1 rating condition, 220–240 V single-phase, 50 Hz.",
           "columns": ["Model", "Displacement (cm³/rev)", "Cooling capacity (W)", "Height (mm)"],
           "rows": [
@@ -459,9 +431,7 @@
       {
         "title": "R32 fixed-speed rotary compressors",
         "description": "These single-phase Panasonic rotary compressors have T1 ratings for R32. Compare displacement, cooling capacity and coefficient of performance at the stated supply.",
-        "sourcePages": "33",
         "comparison": {
-          "sourcePages": "33",
           "caption": "Panasonic R32 fixed-speed models at T1, 220–240 V single-phase, 50 Hz.",
           "columns": ["Model", "Displacement (cm³)", "T1 cooling capacity (W)", "T1 COP"],
           "rows": [
@@ -491,13 +461,11 @@
       {
         "title": "Hermetic reciprocating compressors",
         "description": "Maneurop, GMCC, Secop, Cubigel and Embraco ranges include distinct low-, medium- and high-back-pressure applications. Match refrigerant, motor starting arrangement and rating conditions.",
-        "sourcePages": "30, 35–38",
         "example": {
           "reference": "SZ35Y1K",
           "specification": "Fixed-speed R600a low-back-pressure compressor, 3.5 cm³ displacement and 220–240 V at 50 Hz."
         },
         "comparison": {
-          "sourcePages": "35",
           "caption": "GMCC R600a low-back-pressure compressors, fixed speed, 220–240 V at 50 Hz.",
           "columns": ["Model", "Displacement (cm³/rev)", "Motor type"],
           "rows": [
@@ -516,13 +484,11 @@
       {
         "title": "Semi-hermetic piston and screw compressors",
         "description": "Reciprocating options include Bitzer, Bock and Dorin. Screw models add stepped capacity control. Displacement depends on operating speed.",
-        "sourcePages": "39–43",
         "example": {
           "reference": "BLG-20Z-84",
           "specification": "Screw compressor with 84 m³/h displacement at 50 Hz and 101 m³/h at 60 Hz."
         },
         "comparison": {
-          "sourcePages": "40",
           "caption": "Semi-hermetic screw compressors. Swept volume changes with drive frequency.",
           "columns": ["Model", "Displacement at 50 Hz (m³/h)", "Displacement at 60 Hz (m³/h)"],
           "rows": [
@@ -555,9 +521,7 @@
       {
         "title": "Compressor heaters and replacement parts",
         "description": "Crankcase heaters, air-cooler nozzle heaters, valve plates and gaskets, pistons and connecting rods, and terminal blocks. For a replacement, include the compressor nameplate and the dimensions of the existing part.",
-        "sourcePages": "44",
         "comparison": {
-          "sourcePages": "44",
           "caption": "Air-cooler nozzle heaters in the heater and spare-parts range. Specify the nozzle diameter and heater length together.",
           "columns": ["Configuration", "Power (W)", "Heater length (mm)"],
           "rows": [
@@ -574,13 +538,11 @@
       {
         "title": "Oil level regulators",
         "description": "Compressor-mounted devices monitor the oil level. Select alarm monitoring or automatic oil feed and check the sight-glass mounting arrangement.",
-        "sourcePages": "45–46",
         "example": {
           "reference": "ICG580R",
           "specification": "A Hall sensor tracks the magnetic float. The regulator controls oil filling through a solenoid valve."
         },
         "comparison": {
-          "sourcePages": "45–46",
           "caption": "Oil level devices for compressor and reservoir installations. Select the signal or filling function required by the circuit.",
           "columns": ["Model", "Function", "Nominal supply"],
           "rows": [
@@ -594,13 +556,11 @@
       {
         "title": "Optical level monitors and sensors",
         "description": "Screw-in optical prisms detect liquid level. Oil differential pressure sensors monitor the lubrication circuit, while thermal sensors monitor temperature.",
-        "sourcePages": "47–48",
         "example": {
           "reference": "ILM-D",
           "specification": "The optical prism stays in the vessel when the external evaluation unit is replaced."
         },
         "comparison": {
-          "sourcePages": "47–48",
           "caption": "Level, differential pressure and temperature are measured at different points in the refrigeration circuit.",
           "columns": ["Series", "Measured quantity", "Sensing arrangement"],
           "rows": [
@@ -613,9 +573,7 @@
       {
         "title": "Phase and motor protection relays",
         "description": "PFR51 and PFR53 relays monitor three-phase supply faults. The MPR69 motor protection relay monitors a PTC temperature-sensor circuit. Specify supply, sensor circuit and relay output.",
-        "sourcePages": "49–50",
         "comparison": {
-          "sourcePages": "49",
           "caption": "PFR51 and PFR53 DIN-rail phase monitors. These variants have a single changeover contact.",
           "columns": ["Model", "Measuring range (V AC)", "Neutral-line protection"],
           "rows": [
@@ -639,9 +597,7 @@
       {
         "title": "Refrigeration oils",
         "description": "Mineral oil, POE, PAG, alkylbenzene, PAO and PVE lubricants cover different compressor and refrigerant combinations. Vacuum pump oil is a separate service product. Specify the oil grade and viscosity required by the equipment manufacturer.",
-        "sourcePages": "51–52",
         "comparison": {
-          "sourcePages": "51–52",
           "caption": "Oil designations for matching an existing fill. Confirm the specified grade with the compressor documentation.",
           "columns": ["Oil grade", "Lubricant base"],
           "rows": [
@@ -669,9 +625,7 @@
       {
         "title": "Refrigerants and cylinders",
         "description": "Refrigerant options include R290, R600a, R32 and R134a. Specify the equipment designation, destination, required quantity and cylinder type so Komponia can confirm the supply option for the application.",
-        "sourcePages": "53",
         "comparison": {
-          "sourcePages": "53",
           "caption": "Refrigerants for equipment-specific enquiries. Confirm the destination and packaging with Komponia.",
           "columns": ["Refrigerant", "Chemical family", "Listed pack size (kg)"],
           "rows": [
@@ -685,13 +639,11 @@
       {
         "title": "Copper tube and capillaries",
         "description": "Choose soft pancake coils, level-wound coils, straight lengths or capillary tube. Specify outside diameter and wall thickness for pipework, and bore for capillaries.",
-        "sourcePages": "54",
         "example": {
           "reference": "TC-26",
           "specification": "Soft copper capillary with 1.83 mm outside diameter, 0.660 mm bore and 0.584 mm wall."
         },
         "comparison": {
-          "sourcePages": "54",
           "caption": "Soft copper capillary tube. The bore and wall thickness are listed separately to distinguish similar outside diameters.",
           "columns": ["Model", "Outside diameter (mm)", "Bore (mm)", "Wall (mm)"],
           "rows": [
@@ -713,9 +665,7 @@
       {
         "title": "Insulated line sets",
         "description": "Single and paired copper lines with closed-cell PE foam insulation connect indoor and outdoor split systems. Specify both tube diameters, length and whether brass nuts or capped ends are required.",
-        "sourcePages": "55",
         "comparison": {
-          "sourcePages": "55",
           "caption": "Insulated twin copper lines for split installations. Tube outside diameters are in inches. Standard lengths include 3, 4 and 20 m.",
           "columns": ["Line pair", "Small tube wall (mm)", "Large tube wall (mm)"],
           "rows": [
@@ -732,9 +682,7 @@
       {
         "title": "Thermoplastic capillary hoses",
         "description": "Flexible connections for pressure gauges, switches, test points and oil-management circuits. The 2.0 mm bore, 5.9 mm outside-diameter version has a 10 mm minimum bend radius.",
-        "sourcePages": "56",
         "comparison": {
-          "sourcePages": "56",
           "caption": "Capillary hoses for gauge and switch connections, listed at 60 bar working pressure and −40 to +130 °C.",
           "columns": ["Configuration", "Outside diameter (mm)", "Min. bend radius (mm)", "Colours"],
           "rows": [
@@ -747,9 +695,7 @@
       {
         "title": "Copper and brass fittings",
         "description": "Brazed copper and press fittings include elbows, tees, reducers, couplings and end caps. Brass flare fittings and access valves cover service connections. Match tube size, joining method, refrigerant and pressure rating.",
-        "sourcePages": "57–59",
         "comparison": {
-          "sourcePages": "59",
           "caption": "Brass flare nuts for service connections. The same nominal thread connection can use a different nut profile.",
           "columns": ["Model", "Nut profile", "Flare size (in)"],
           "rows": [
@@ -784,9 +730,7 @@
       {
         "title": "T2/TE2 expansion valve orifices",
         "description": "An interchangeable orifice with a filter sets the capacity of a Danfoss T2 or TE2 expansion valve. Select the orifice by refrigerant and duty, then match it to a valve body.",
-        "sourcePages": "60",
         "comparison": {
-          "sourcePages": "60",
           "caption": "Danfoss T2/TE2 interchangeable orifices with filter. Nominal capacities for range N (−40 to +10 °C).",
           "columns": ["Order code", "Orifice", "R134a (kW)", "R404A / R507 (kW)"],
           "rows": [
@@ -805,9 +749,7 @@
       {
         "title": "T2/TE2 flare-to-flare valve bodies",
         "description": "Select the Danfoss body by refrigerant charge, evaporating range and pressure equalisation. Each body has flare connections at both ports. The interchangeable capacity orifice has its own order code.",
-        "sourcePages": "60",
         "comparison": {
-          "sourcePages": "60",
           "caption": "Each order code identifies the valve body and thermostatic element. MOP denotes maximum operating pressure.",
           "columns": ["Order code", "Valve type", "Refrigerant", "Inlet × outlet", "Evaporating range", "MOP"],
           "rows": [
@@ -854,9 +796,7 @@
       {
         "title": "T2/TE2 flare-to-solder valve bodies",
         "description": "Select the Danfoss body by refrigerant charge, evaporating range and pressure equalisation. Each body has a flare inlet and an ODF solder outlet. The interchangeable capacity orifice has its own order code.",
-        "sourcePages": "60",
         "comparison": {
-          "sourcePages": "60",
           "caption": "Each order code identifies the valve body and thermostatic element. MOP denotes maximum operating pressure.",
           "columns": ["Order code", "Valve type", "Refrigerant", "Inlet × outlet", "Evaporating range", "MOP"],
           "rows": [
@@ -920,9 +860,7 @@
       {
         "title": "RFGD balanced-port expansion valves",
         "description": "Sanhua RFGD10 and RFGD20 valves have a built-in orifice and an external equalising connection. Compare the rated capacity and both line sizes for the selected refrigerant.",
-        "sourcePages": "62",
         "comparison": {
-          "sourcePages": "62",
           "caption": "Nominal capacity at 38 °C condensing, +4.4 °C evaporating and 37 °C liquid temperature, with 3.5 K static superheat.",
           "columns": ["Model", "Series", "Refrigerant", "Nominal capacity (kW)", "Inlet (in)", "Outlet (in)"],
           "rows": [
@@ -980,13 +918,11 @@
       {
         "title": "Solenoid valves",
         "description": "Danfoss EVR, Castel and Sanhua MDF ranges include different flow capacities and connection sizes. Select the valve body, coil voltage, normal position and operating pressure differential together.",
-        "sourcePages": "63–65",
         "example": {
           "reference": "MDF3",
           "specification": "Normally closed, direct-acting version with a ¼-inch connection."
         },
         "comparison": {
-          "sourcePages": "65",
           "caption": "Sanhua MDF valve bodies. The NC and NO entries identify the position with the coil de-energised.",
           "columns": ["Model", "Normal position", "Actuation", "Kv (m³/h)"],
           "rows": [
@@ -1010,13 +946,11 @@
       {
         "title": "Single and dual pressure switches",
         "description": "Low- and high-pressure switches are offered separately or in a dual assembly. Match the switching range, differential and reset mode.",
-        "sourcePages": "66–68",
         "example": {
           "reference": "PSL502",
           "specification": "Low-pressure switch with a −0.5 to 2 bar setting range and an adjustable 0.2–0.7 bar differential."
         },
         "comparison": {
-          "sourcePages": "68",
           "caption": "Adjustable single pressure switches. Setting range and differential are distinct selection parameters.",
           "columns": ["Model", "Side", "Setting range (bar)", "Differential (bar)"],
           "rows": [
@@ -1033,13 +967,11 @@
       {
         "title": "Vibration absorbers",
         "description": "Flexible metal sections connect refrigeration pipework to vibrating equipment. Select by line diameter, overall length and rated working pressure.",
-        "sourcePages": "69",
         "example": {
           "reference": "VAT-3/8",
           "specification": "⅜-inch connection and 210 mm overall length."
         },
         "comparison": {
-          "sourcePages": "69",
           "caption": "Standard vibration absorbers with copper tube ends. Compare the line connection and installed length.",
           "columns": ["Model", "Connection (in)", "Overall length (mm)"],
           "rows": [
@@ -1062,13 +994,11 @@
       {
         "title": "Isolation, reversing and service valves",
         "description": "Ball, globe, check, bypass, four-way reversing, oil differential, receiver and Rotalock valves cover different circuit functions. Sight glasses and oil-filled pressure gauges provide local indication.",
-        "sourcePages": "70–75",
         "example": {
           "reference": "VABV-202",
           "specification": "Ball valve with ¼-inch ODF connection. The VABV-202A version adds an access port on the tube."
         },
         "comparison": {
-          "sourcePages": "70",
           "caption": "VABV ball valves with ODF connections. The A suffix identifies an access port on the tube.",
           "columns": ["Model", "ODF connection (in)", "Access port"],
           "rows": [
@@ -1102,13 +1032,11 @@
       {
         "title": "Filter driers",
         "description": "Copper-bodied, liquid-line, suction-line and burnout filter driers serve different duties. Bi-flow versions suit reversing flow, and combined drier and sight-glass versions allow visual checks.",
-        "sourcePages": "74, 76–80",
         "example": {
           "reference": "DK-032",
           "specification": "¼-inch SAE liquid-line filter drier. Nominal flow capacity is 6.7 kW for R134a at a 0.07 bar pressure drop."
         },
         "comparison": {
-          "sourcePages": "76",
           "caption": "DK liquid-line filter driers. Nominal flow capacities at 0.07 bar pressure drop.",
           "columns": ["Model", "Connection", "R134a (kW)", "R404A / R507 (kW)"],
           "rows": [
@@ -1164,13 +1092,11 @@
       {
         "title": "Oil filters, cores and drier shells",
         "description": "Replaceable-core housings give service access to the filter element. Match the shell, core size, number of cores and connection. Separate oil-line filters and mounting brackets are also available.",
-        "sourcePages": "81–82",
         "example": {
           "reference": "FDA-485",
           "specification": "Single-core filter drier shell with a ⅝-inch ODF connection."
         },
         "comparison": {
-          "sourcePages": "82",
           "caption": "FDA replaceable-core drier shells. Select the connection size and the space available for the housing.",
           "columns": ["Model", "ODF connection (in)", "Overall length L (mm)"],
           "rows": [
@@ -1198,9 +1124,7 @@
       {
         "title": "Liquid receivers and suction accumulators",
         "description": "Vertical or horizontal receivers store liquid refrigerant. Suction accumulators sit upstream of the compressor, with heat-exchange versions also listed. Specify circuit position, volume, orientation and connections.",
-        "sourcePages": "83–85",
         "comparison": {
-          "sourcePages": "84",
           "caption": "Horizontal liquid receivers. The nominal connection and vessel diameter are listed separately.",
           "columns": ["Model", "Connection (in)", "Vessel diameter (mm)", "Volume (L)"],
           "rows": [
@@ -1228,9 +1152,7 @@
       {
         "title": "Oil separators and reservoirs",
         "description": "Conventional and helical separators return oil from discharge gas. Separate vertical and horizontal reservoirs and combined separator-reservoirs accommodate different oil-management layouts.",
-        "sourcePages": "86–88",
         "comparison": {
-          "sourcePages": "88",
           "caption": "FDOC vertical and FDOCW horizontal oil reservoirs for oil-management circuits.",
           "columns": ["Model", "Orientation", "Connection ODF (in)", "Volume (L)"],
           "rows": [
@@ -1255,13 +1177,11 @@
       {
         "title": "R744 circuit components",
         "description": "Dedicated CO₂ filter driers, suction accumulators, liquid receivers and oil separators are available for R744 systems. Match the pressure rating to the individual component and circuit position.",
-        "sourcePages": "89–90",
         "example": {
           "reference": "FDCCO2-V-8L",
           "specification": "Vertical receiver with ⅝-inch ODS inlet and outlet and a ⅜-inch NPT port."
         },
         "comparison": {
-          "sourcePages": "90",
           "caption": "R744 liquid receivers. Some horizontal models use different connection sizes on the inlet and outlet.",
           "columns": ["Model", "Orientation", "Inlet ODS (in)", "Outlet ODS (in)", "NPT port (in)"],
           "rows": [
@@ -1296,13 +1216,11 @@
       {
         "title": "Shaded-pole and EC motors",
         "description": "Shaded-pole and electronically commutated motors drive condenser and evaporator fans. Match the supply, rotation, fan blade and mounting bracket.",
-        "sourcePages": "91–92",
         "example": {
           "reference": "YZ5-13",
           "specification": "The 220–240 V, 50/60 Hz version has 5 W rated output and takes a 200 mm fan blade."
         },
         "comparison": {
-          "sourcePages": "91",
           "caption": "Shaded-pole motors in the 220–240 V, 50/60 Hz configuration.",
           "columns": ["Model", "Output (W)", "Speed (rpm)", "Fan diameter (mm)", "Bracket"],
           "rows": [
@@ -1319,13 +1237,11 @@
       {
         "title": "Axial, crossflow and compact fans",
         "description": "AC and EC axial fans, crossflow blowers, evaporator fan motors and compact AC fans cover different airflow paths. Specify airflow at the working pressure and the available mounting space.",
-        "sourcePages": "93–96",
         "example": {
           "reference": "AF-8025-A1HSL",
           "specification": "80 × 80 × 25 mm compact AC fan with sleeve bearings and a 110 V supply."
         },
         "comparison": {
-          "sourcePages": "96",
           "caption": "Compact AC fans. Match both the frame dimensions and the bearing type when specifying a replacement.",
           "columns": ["Model", "Frame (mm)", "Supply (V AC)", "Bearing"],
           "rows": [
@@ -1375,9 +1291,7 @@
       {
         "title": "Capacitors and motor starting devices",
         "description": "Single and dual run capacitors, start capacitors and hard-start devices serve different motor circuits. Match capacitance, voltage rating and duty to the motor specification.",
-        "sourcePages": "107–108",
         "comparison": {
-          "sourcePages": "107–108",
           "caption": "Capacitor ranges at 50/60 Hz. Match the capacitance and voltage of the required configuration.",
           "columns": ["Series", "Capacitance (µF)", "Rated voltage (V AC)"],
           "rows": [
@@ -1389,13 +1303,11 @@
       {
         "title": "Air-conditioning remote controls",
         "description": "Handheld remotes and replacement control-board kits are available for split units. Match the original controller, fan speeds and inverter configuration.",
-        "sourcePages": "109–110",
         "example": {
           "reference": "QD-U8C",
           "specification": "Split A/C control kit with three fan speeds, automatic defrost and automatic restart."
         },
         "comparison": {
-          "sourcePages": "110",
           "caption": "Replacement controls for split and cabinet A/C units. Verify wiring and fan control against the original board.",
           "columns": ["Model", "Equipment", "Control functions"],
           "rows": [
@@ -1410,13 +1322,11 @@
       {
         "title": "Digital and infrared thermometers",
         "description": "Choose a remote probe for cabinet readings, a thermo-hygrometer for air temperature and humidity, or an infrared instrument for surface temperature.",
-        "sourcePages": "111",
         "example": {
           "reference": "DT-3",
           "specification": "Two temperature channels, humidity display and a remote temperature range of −50 to +70 °C."
         },
         "comparison": {
-          "sourcePages": "111",
           "caption": "Panel thermometers for equipment cut-outs. The cut-out dimensions refer to installation, not the outside face.",
           "columns": ["Model", "Measuring range (°C)", "Panel cut-out (mm)", "Resolution (°C)"],
           "rows": [
@@ -1428,13 +1338,11 @@
       {
         "title": "Voltage protection, relays and contactors",
         "description": "Plug-in voltage protectors, switching relays and contactors match different loads and supply arrangements. Specify plug or terminal type, motor current, pole count and coil voltage.",
-        "sourcePages": "112–114",
         "example": {
           "reference": "1.5P-30A-24V",
           "specification": "Single-pole contactor with a 24 V coil and a 30 A full-load rating."
         },
         "comparison": {
-          "sourcePages": "114",
           "caption": "Contactors by motor full-load current, pole count and coil voltage. Coils are rated for 50/60 Hz.",
           "columns": ["Model", "Poles", "Full-load current (A)", "Coil (V AC)"],
           "rows": [
@@ -1462,9 +1370,7 @@
       {
         "title": "Control boxes, thermostats and defrost timers",
         "description": "Electronic control boxes and temperature controllers operate cold equipment. Capillary thermostats and defrost timers provide separate switching functions. Include the probe or capillary, switching duty and defrost cycle.",
-        "sourcePages": "113, 115–116",
         "comparison": {
-          "sourcePages": "116",
           "caption": "TMDJ defrost timers. The cycle and defrost duration below apply at 50 Hz.",
           "columns": ["Model", "Switch rating", "Defrost (min)", "Cycle (h)"],
           "rows": [
@@ -1473,6 +1379,24 @@
             ["TMDJ 721ZF1", "250V/10A", "21", "7"],
             ["TMDJ 8072ZF-1", "250V/10A", "7", "8"],
             ["TMDJ X25SCR", "125V/15A", "25", "12"]
+          ]
+        }
+      },
+      {
+        "title": "Evaporator fan motors",
+        "description": "Match a replacement motor to the available supply, mounting arrangement and fan load.",
+        "comparison": {
+          "caption": "Power and current are quoted at the supply listed for the individual motor.",
+          "columns": ["Model", "Supply", "Power (W)", "Power basis", "Current (A)"],
+          "rows": [
+            ["F61-10", "220 V, 50/60 Hz", "6.5", "Rated", "0.06"],
+            ["SM-670", "110 V, 50/60 Hz", "20", "Rated", "0.45"],
+            ["IS-3210ARCB", "220 V, 50/60 Hz", "10", "Input", "0.10"],
+            ["IS-3210DWNFF", "220 V, 50/60 Hz", "8.5", "Input", "0.08"],
+            ["MA-61103D-EM", "220 V, 50/60 Hz", "7", "Input", "0.08"],
+            ["SM-101J", "230 V, 50 Hz", "8", "Rated", "0.18"],
+            ["SM-672", "220 V, 50/60 Hz", "20", "Rated", "0.32"],
+            ["SM-999", "120 V, 60 Hz", "18", "Input", "0.38"]
           ]
         }
       }
@@ -1486,13 +1410,11 @@
       {
         "title": "Tube working tools",
         "description": "Tube cutters, flaring and swaging kits, benders and deburring tools prepare refrigerant lines. Specify the tube material, outside diameter and required joint geometry.",
-        "sourcePages": "97–98",
         "example": {
           "reference": "CT-195",
           "specification": "45° flaring tool for tube outside diameters from 3/16 to ⅝ inch."
         },
         "comparison": {
-          "sourcePages": "97",
           "caption": "Flaring tools selected by the outside diameter of the tube.",
           "columns": ["Model", "Tool type", "Tube outside diameter (in)"],
           "rows": [
@@ -1508,9 +1430,7 @@
       {
         "title": "Tube and capillary cutters",
         "description": "Choose a wheel cutter by tube outside diameter. The PTC-01 uses a shear action for capillary tubing.",
-        "sourcePages": "97",
         "comparison": {
-          "sourcePages": "97",
           "caption": "Outside diameters are given in the two size ranges printed for each wheel cutter.",
           "columns": ["Model", "Tool type", "Tube OD (in)", "Tube OD (mm)"],
           "rows": [
@@ -1526,9 +1446,7 @@
       {
         "title": "Tube expander kits",
         "description": "Hydraulic and lever-operated kits expand tube ends for socket joints. Select the head set in inch or metric sizes and check the tools supplied in the case.",
-        "sourcePages": "98",
         "comparison": {
-          "sourcePages": "98",
           "caption": "Each model identifies a kit with a specific head size range and tube preparation tools.",
           "columns": ["Model", "Actuation", "Tube outside diameter", "Included cutter"],
           "rows": [
@@ -1542,13 +1460,11 @@
       {
         "title": "Manifolds, charging hoses and couplers",
         "description": "Manifold gauge sets, precision gauges, refrigerant-specific hoses, quick couplers, can-tap valves, piercing valves and valve-core tools. Match the service port, refrigerant scale and rated working pressure.",
-        "sourcePages": "99–101",
         "example": {
           "reference": "RYB-36-134",
           "specification": "90 cm charging hose for R134a service."
         },
         "comparison": {
-          "sourcePages": "100",
           "caption": "Charging hoses by refrigerant and working pressure. The series suffix distinguishes otherwise similar lengths.",
           "columns": ["Model", "Refrigerant", "Hose length (cm)", "Working pressure (psi)"],
           "rows": [
@@ -1570,9 +1486,7 @@
       {
         "title": "Brazing tools and filler rods",
         "description": "Hand torches, brazing kits and copper-phosphorus or silver-bearing brazing rods for refrigeration tube joints. Select the filler alloy for the metals being joined.",
-        "sourcePages": "102–103",
         "comparison": {
-          "sourcePages": "102",
           "caption": "Hand torches with adjustable flame control. Match the required ignition and tip construction.",
           "columns": ["Model", "Ignition", "Tip"],
           "rows": [
@@ -1587,9 +1501,7 @@
       {
         "title": "Manual oil charging pumps",
         "description": "Hand-operated PCO pumps transfer oil through an SAE service connection. Compare the maximum delivery per stroke and pump pressure.",
-        "sourcePages": "98",
         "comparison": {
-          "sourcePages": "98",
           "caption": "Pump pressure and delivery per stroke are maximum values.",
           "columns": ["Model", "Maximum pressure (psi)", "Maximum delivery (mL/stroke)", "SAE connection"],
           "rows": [
@@ -1601,13 +1513,11 @@
       {
         "title": "Vacuum pumps",
         "description": "Single- and two-stage pumps are offered with different pumping speeds. Compare flow at the local supply frequency and the specified ultimate vacuum.",
-        "sourcePages": "104",
         "example": {
           "reference": "VP-2A",
           "specification": "Single-stage pump rated at 100 L/min at 50 Hz and 113 L/min at 60 Hz."
         },
         "comparison": {
-          "sourcePages": "104",
           "caption": "Evacuation pump displacement at the local power frequency.",
           "columns": ["Model", "Stages", "At 50 Hz (L/min)", "At 60 Hz (L/min)"],
           "rows": [
@@ -1631,13 +1541,11 @@
       {
         "title": "Recovery machines, scales and cylinders",
         "description": "Refrigerant recovery machines, electronic charging scales and recovery cylinders. Check refrigerant suitability, supply voltage, recovery mode and cylinder capacity.",
-        "sourcePages": "105",
         "example": {
           "reference": "RC520-R32",
           "specification": "Oil-less twin-piston recovery machine with a 220–240 V, 50/60 Hz supply."
         },
         "comparison": {
-          "sourcePages": "105",
           "caption": "Refrigerant recovery machines. Liquid and vapour recovery rates are listed separately.",
           "columns": ["Model", "Supply (V AC)", "Vapour (kg/min)", "Liquid (kg/min)"],
           "rows": [
@@ -1651,9 +1559,7 @@
       {
         "title": "Electronic refrigerant charging scales",
         "description": "These field scales weigh a refrigerant cylinder during charging or recovery. Choose by cylinder weight, platform size and resolution.",
-        "sourcePages": "105",
         "comparison": {
-          "sourcePages": "105",
           "caption": "Mass capacity, display resolution in grams and platform dimensions are listed for each scale.",
           "columns": ["Model", "Capacity (kg)", "Resolution (g)", "Platform (mm)"],
           "rows": [
@@ -1668,9 +1574,7 @@
       {
         "title": "Refrigerant leak detectors",
         "description": "Handheld RLD and IRD series instruments locate refrigerant leaks. Specify the refrigerant and required sensitivity when selecting the detector.",
-        "sourcePages": "106",
         "comparison": {
-          "sourcePages": "106",
           "caption": "Handheld leak detectors. Compare probe reach and the indication at the instrument or probe.",
           "columns": ["Model", "Probe length (mm)", "Indication"],
           "rows": [
@@ -1686,13 +1590,11 @@
       {
         "title": "Condensate pumps",
         "description": "Mini-split, corner-mounted and tank pumps lift condensate where gravity drainage is impractical. Size the pump at the required delivery head.",
-        "sourcePages": "106",
         "example": {
           "reference": "PC-10D",
           "specification": "Maximum flow 12 L/h and maximum discharge head 7 m. These are separate limits of the pump curve."
         },
         "comparison": {
-          "sourcePages": "106",
           "caption": "Pump maximums are separate limits. Select at the required flow and discharge head on the pump curve.",
           "columns": ["Model", "Construction", "Maximum flow (L/h)", "Maximum head (m)"],
           "rows": [
@@ -1707,6 +1609,51 @@
             ["PC-760A", "Tank", "760", "8"]
           ]
         }
+      },
+      {
+        "title": "Refrigerant service couplers",
+        "description": "Choose the coupling geometry and hose connection for the available service-port clearance.",
+        "comparison": {
+          "caption": "Each red or blue coupler carries its own model reference.",
+          "columns": ["Model", "Colour", "Connection or service", "Body / accessory"],
+          "rows": [
+            ["QC-12H", "Red", "1/4 in male flare", "Straight"],
+            ["QC-12L", "Blue", "1/4 in male flare", "Straight"],
+            ["QC-15H", "Red", "1/4 in male flare", "90°"],
+            ["QC-15L", "Blue", "1/4 in male flare", "90°"],
+            ["QC-19H", "Red", "1/4 in male flare", "90° with adaptor"],
+            ["QC-19L", "Blue", "1/4 in male flare", "90° with adaptor"],
+            ["QC-18H", "Red", "1/4 in male flare", "90°"],
+            ["QC-18L", "Blue", "1/4 in male flare", "90°"],
+            ["QC-1234H", "Red", "R1234yf", "Service coupler"],
+            ["QC-1234L", "Blue", "R1234yf", "Service coupler"]
+          ]
+        }
+      },
+      {
+        "title": "Valve core removal tools",
+        "description": "Remove or reinstall a service-port core when preparing a system for evacuation or charging.",
+        "comparison": {
+          "caption": "Both models are listed for R410A and R32 service.",
+          "columns": ["Model", "Refrigerants", "Adaptor"],
+          "rows": [
+            ["VCR-01", "R410A / R32", "1/4 to 5/16 in SAE"],
+            ["VCR-02", "R410A / R32", "1/4 to 5/16 in SAE"]
+          ]
+        }
+      },
+      {
+        "title": "Tube piercing valves",
+        "description": "Select a piercing valve by the outside diameter of the service tube.",
+        "comparison": {
+          "caption": "Dimensions identify the compatible tube sizes for each tool.",
+          "columns": ["Model", "Tube outside diameter (in)"],
+          "rows": [
+            ["PV-341", "3/16 to 3/8"],
+            ["PV-21", "1/2 or 5/8"],
+            ["PV-31", "1/4, 5/16 or 3/8"]
+          ]
+        }
       }
     ]
   },
@@ -1718,9 +1665,7 @@
       {
         "title": "Cold-room panels",
         "description": "PIR and PUR insulated wall and roof panels are offered with several joint types and metal facings. Hook-type wall panels come in 50, 75, 100, 150, 180 and 200 mm thicknesses.",
-        "sourcePages": "117–118",
         "comparison": {
-          "sourcePages": "117",
           "caption": "Hook-type wall panels. U-values are for the individual panels, in W/(m²·K).",
           "columns": ["Panel", "Thickness (mm)", "Core", "Panel U-value (W/m²·K)"],
           "rows": [
@@ -1742,9 +1687,7 @@
       {
         "title": "Insulated doors",
         "description": "Hinged, sliding, bi-parting and vertical sliding cold-room doors suit different openings. Sectional and high-speed roll-up doors are also available. Specify clear opening, wall thickness, temperature and traffic.",
-        "sourcePages": "119–120",
         "comparison": {
-          "sourcePages": "119",
           "caption": "Polyurethane-insulated cold-room doors. Specify the clear opening and available travel before choosing the door arrangement.",
           "columns": ["Door type", "Leaf thickness options (mm)", "Construction"],
           "rows": [
@@ -1759,13 +1702,11 @@
       {
         "title": "Door hardware and pressure relief ports",
         "description": "Cam-lift hinges, latches and pressure relief ports are selected by door geometry and room conditions. For a replacement, include the mounting pattern and door offset.",
-        "sourcePages": "121–122",
         "example": {
           "reference": "LH-1132",
           "specification": "Reversible edge-mount cam-lift hinge for reach-in doors."
         },
         "comparison": {
-          "sourcePages": "121",
           "caption": "Cold-room door hardware. Check the door offset, mounting pattern and material before ordering.",
           "columns": ["Model", "Function", "Material"],
           "rows": [
@@ -1781,13 +1722,11 @@
       {
         "title": "Cold-room LED lighting",
         "description": "Oval and square luminaires for cold-room interiors. Match the enclosure, supply voltage and room temperature.",
-        "sourcePages": "123",
         "example": {
           "reference": "CSL-301O",
           "specification": "Oval 10 W, 6500 K luminaire with 36, 110 or 220 V versions."
         },
         "comparison": {
-          "sourcePages": "123",
           "caption": "Cold-room luminaires by housing geometry and rated electrical input.",
           "columns": ["Model", "Housing", "Power (W)", "LED count"],
           "rows": [
@@ -1808,13 +1747,11 @@
       {
         "title": "Insulation, brackets and vibration mounts",
         "description": "Closed-cell pipe insulation, UV-resistant sleeves, insulation sheets and rolls, wall brackets and anti-vibration mounts. Size the mounting hardware to the load and support geometry.",
-        "sourcePages": "124–126",
         "example": {
           "reference": "J050C",
           "specification": "Galvanised steel wall bracket with a 500 mm horizontal arm, 230 mm vertical leg and 2 mm material thickness."
         },
         "comparison": {
-          "sourcePages": "125",
           "caption": "Wall bracket dimensions. Confirm the mounting surface and required supported load for the installation.",
           "columns": ["Model", "Horizontal arm (mm)", "Vertical leg (mm)", "Material thickness (mm)"],
           "rows": [
@@ -1833,13 +1770,11 @@
       {
         "title": "Air curtains",
         "description": "Crossflow and centrifugal air curtains cover commercial and industrial doorways. Select the unit width, installation height and required air volume.",
-        "sourcePages": "127–128",
         "example": {
           "reference": "FM-6009-GY",
           "specification": "The 220 V, 50 Hz industrial version delivers 3,500 m³/h and measures 914 × 345 × 351 mm."
         },
         "comparison": {
-          "sourcePages": "128",
           "caption": "XD centrifugal air curtains at 220 V, 50 Hz. Airflow is shown at the high and low fan settings.",
           "columns": ["Model", "Width (mm)", "High airflow (m³/h)", "Low airflow (m³/h)"],
           "rows": [
@@ -1861,9 +1796,7 @@
       {
         "title": "Drainage, ducting and line-set covers",
         "description": "Flexible drain pipe, foam and cork tape, foil tape, flexible duct, insulation sleeves and disconnect boxes support split-system installations. Line-set covers include elbows, tees, soffit inlets and end covers.",
-        "sourcePages": "129–131",
         "comparison": {
-          "sourcePages": "131",
           "caption": "Straight line-set covers and flexible joints. A, B and C are the dimension labels in the component drawing.",
           "columns": ["Model", "Type", "A (mm)", "B (mm)", "C (mm)"],
           "rows": [
@@ -1881,13 +1814,11 @@
       {
         "title": "A/C cleaning covers",
         "description": "Covers for wall-mounted and ceiling-mounted air conditioners collect wash water and route it to a drain. Choose the cover geometry and size to fit the indoor unit.",
-        "sourcePages": "132",
         "example": {
           "reference": "Q-536",
           "specification": "Ceiling-unit cleaning cover measuring 120 × 120 cm, supplied with a drain pipe."
         },
         "comparison": {
-          "sourcePages": "132",
           "caption": "Cleaning covers for different indoor unit shapes. The fit measurement differs between ceiling and wall units.",
           "columns": ["Model", "Type", "Unit or cover size"],
           "rows": [
@@ -1897,6 +1828,82 @@
             ["Q-535", "Wall-mounted", "Unit circumference under 3.2 m"],
             ["Q-562", "Supporting panel", "Unit length 70–100 cm"],
             ["Q-565", "Supporting panel", "Unit length 100–130 cm"]
+          ]
+        }
+      },
+      {
+        "title": "Studded anti-vibration mounts",
+        "description": "Select a mounting foot by its footprint and mounting-hole geometry.",
+        "comparison": {
+          "caption": "Dimensions A to K refer to the corresponding AVM mounting drawing. All values are in millimetres.",
+          "columns": ["Model", "Footprint A × B (mm)", "Dimension C (mm)"],
+          "rows": [
+            ["AVM-001-A", "110 × 50", "17"],
+            ["AVM-002-A", "107 × 48", "15"],
+            ["AVM-002-B", "112 × 50", "17"],
+            ["AVM-002-C", "110 × 48", "17"],
+            ["AVM-112", "107 × 47", "15"]
+          ]
+        }
+      },
+      {
+        "title": "Anti-vibration support rails",
+        "description": "Compare the equipment support length and base section for rail-mounted installations.",
+        "comparison": {
+          "caption": "Length, width and height follow dimensions A, B and C in the rail drawing.",
+          "columns": ["Model", "Length (mm)", "Width (mm)", "Height (mm)"],
+          "rows": [
+            ["AVM-250", "250", "163", "98"],
+            ["AVM-400", "400", "130", "53"],
+            ["AVM-450", "450", "163", "98"],
+            ["AVM-500", "500", "133", "68"],
+            ["AVM-600", "600", "163", "98"],
+            ["AVM-1000", "1000", "163", "98"]
+          ]
+        }
+      },
+      {
+        "title": "Cold-room cam-lift hinges",
+        "description": "Compare reversible hinges for reach-in doors by hinge material and spring arrangement.",
+        "comparison": {
+          "caption": "Spring details are given where the model description specifies them.",
+          "columns": ["Model", "Material", "Design"],
+          "rows": [
+            ["LH-1138", "Die-cast zinc", "Edge mount"],
+            ["LH-1140", "Die-cast zinc", "Edge mount"],
+            ["LH-1191", "High-density ABS", "Cam lift"],
+            ["LH-1192", "High-density ABS", "Cam lift"],
+            ["LH-1158", "Stainless steel", "Cam lift"],
+            ["LH-1128", "Die-cast zinc", "Cam lift"],
+            ["LH-1238A", "Die-cast zinc", "Without spring"],
+            ["LH-1230A", "Die-cast zinc", "Without spring"],
+            ["LH-1138B", "Die-cast zinc", "With spring"],
+            ["LH-1130B", "Die-cast zinc", "With spring"]
+          ]
+        }
+      },
+      {
+        "title": "Cold-room door closers",
+        "description": "Select the closing mechanism for a cold-room door with a surface-mounted closer.",
+        "comparison": {
+          "caption": "Both models have a steel housing.",
+          "columns": ["Model", "Closing mechanism", "Housing"],
+          "rows": [
+            ["LH-2000", "Nitrogen gas pressure", "Steel"],
+            ["LH-200", "Spring", "Steel"]
+          ]
+        }
+      },
+      {
+        "title": "A/C disconnect switch boxes",
+        "description": "Choose an outdoor-unit disconnect by current, fuse arrangement and the motor rating at the installation voltage.",
+        "comparison": {
+          "caption": "Motor ratings are shown as standard / maximum horsepower.",
+          "columns": ["Model", "Current (A)", "Protection", "120 V (hp)", "240 V (hp)"],
+          "rows": [
+            ["DSB-30A", "30", "Fused", "0.5 / 2", "1.5 / 3"],
+            ["DSB-60A", "60", "Fused", "1.5 / 3", "3 / 10"],
+            ["DSB-60AN", "60", "Non-fused", "Unlisted", "3 / 10"]
           ]
         }
       }

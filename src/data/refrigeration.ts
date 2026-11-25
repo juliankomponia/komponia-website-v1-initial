@@ -10,12 +10,9 @@ export const refrigerationSummary = 'Komponia distributes refrigeration equipmen
 export type RefrigerationProduct = {
   title: string;
   description: string;
-  // Printed pages in the 2026 distribution catalogue, revision 04.
-  sourcePages: string;
   relatedFamilies?: string[];
   example?: { reference: string; specification: string };
   comparison: {
-    sourcePages: string;
     caption: string;
     columns: string[];
     // First cell identifies the model or configuration carried into the inquiry.

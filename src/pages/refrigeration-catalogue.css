@@ -145,3 +145,8 @@
 @media (max-width: 520px) {
   .hvacr-index { grid-template-columns: 1fr; gap: 2.1rem; }
 }
+
+.article-number { margin: .6rem 0; font-size: 1rem; }
+.article-number strong, .hvacr-number, .catalogue-card-number { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.hvacr-number { display: block; font-size: .78rem; font-weight: 500; margin-top: .25rem; }
+.catalogue-card-number { margin-left: .55em; }

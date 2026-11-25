@@ -5,13 +5,11 @@
     "name": "Air-cooled scroll condensing unit",
     "kind": "Model",
     "application": "The cabinet combines an R404A scroll compressor with an air-cooled condenser for a remote refrigeration evaporator.",
-    "sourcePage": 7,
     "images": [
       {
         "file": "acu-condenser-fan-detail.webp",
         "alt": "Axial fan and wire guard on an ACU condenser cabinet",
-        "caption": "ACU series detail. Fan diameter and quantity depend on the model.",
-        "sourcePage": 7
+        "caption": "ACU series detail. Fan diameter and quantity depend on the model."
       }
     ],
     "commonFacts": [
@@ -119,13 +117,11 @@
     "name": "Packaged cold-room unit",
     "kind": "Model",
     "application": "This monoblock provides cooling for a small medium-temperature storage room and uses hot gas for defrost.",
-    "sourcePage": 11,
     "images": [
       {
         "file": "mono-ventilation-detail.webp",
         "alt": "Honeycomb air grille on a packaged refrigeration unit",
-        "caption": "MONO series detail showing the grille on the condenser side.",
-        "sourcePage": 11
+        "caption": "MONO series detail showing the grille on the condenser side."
       }
     ],
     "commonFacts": [
@@ -199,13 +195,11 @@
     "name": "Packaged freezer-room unit",
     "kind": "Model",
     "application": "This monoblock serves a small freezer room. Hot gas defrost clears the evaporator during a defrost cycle.",
-    "sourcePage": 11,
     "images": [
       {
         "file": "mono-ventilation-detail.webp",
         "alt": "Honeycomb air grille on a packaged refrigeration unit",
-        "caption": "MONO series detail showing the grille on the condenser side.",
-        "sourcePage": 11
+        "caption": "MONO series detail showing the grille on the condenser side."
       }
     ],
     "commonFacts": [
@@ -279,13 +273,11 @@
     "name": "Horizontal rotary condensing unit",
     "kind": "Model",
     "application": "A horizontal compressor and slim fan assembly fit into shallow equipment compartments. Check the available footprint against the cabinet dimensions.",
-    "sourcePage": 12,
     "images": [
       {
         "file": "rcu-horizontal-units.webp",
         "alt": "Two horizontal rotary condensing units with exposed piping and axial fans",
-        "caption": "RCU series photograph showing two fan arrangements.",
-        "sourcePage": 12
+        "caption": "RCU series photograph showing two fan arrangements."
       }
     ],
     "commonFacts": [
@@ -401,13 +393,11 @@
     "name": "Top-mounted refrigerated cabinet unit",
     "kind": "Model",
     "application": "The plug-in assembly mounts above a commercial kitchen cabinet. Match the cabinet temperature and defrost method to the duty.",
-    "sourcePage": 13,
     "images": [
       {
         "file": "kfs-cabinet-unit.webp",
         "alt": "Top-mounted cooling assembly with a compressor and insulated cabinet section",
-        "caption": "S-series assembly. The same photograph illustrates the KFS models.",
-        "sourcePage": 13
+        "caption": "S-series assembly. The same photograph illustrates the KFS models."
       }
     ],
     "commonFacts": [
@@ -441,13 +431,11 @@
     "name": "Top-mounted freezer unit",
     "kind": "Model",
     "application": "The plug-in assembly mounts above a commercial kitchen cabinet. Match the cabinet temperature and defrost method to the duty.",
-    "sourcePage": 13,
     "images": [
       {
         "file": "kfs-cabinet-unit.webp",
         "alt": "Top-mounted cooling assembly with a compressor and insulated cabinet section",
-        "caption": "S-series assembly. The same photograph illustrates the KFS models.",
-        "sourcePage": 13
+        "caption": "S-series assembly. The same photograph illustrates the KFS models."
       }
     ],
     "commonFacts": [
@@ -476,13 +464,11 @@
     "name": "Electric truck refrigeration unit",
     "kind": "Model",
     "application": "The electrically driven split system cools a vehicle load compartment with separate condenser and evaporator sections.",
-    "sourcePage": 14,
     "images": [
       {
         "file": "xdl-400ev-split-unit.webp",
         "alt": "The two sections supplied for the XDL-400EV truck refrigeration unit",
-        "caption": "XDL-400EV condenser and evaporator.",
-        "sourcePage": 14
+        "caption": "XDL-400EV condenser and evaporator."
       }
     ],
     "commonFacts": [
@@ -517,13 +503,11 @@
     "name": "Electric truck refrigeration unit",
     "kind": "Model",
     "application": "The electrically driven split system cools a vehicle load compartment with separate condenser and evaporator sections.",
-    "sourcePage": 14,
     "images": [
       {
         "file": "xdl-550ev-split-unit.webp",
         "alt": "The two sections supplied for the XDL-550EV truck refrigeration unit",
-        "caption": "XDL-550EV condenser and evaporator.",
-        "sourcePage": 14
+        "caption": "XDL-550EV condenser and evaporator."
       }
     ],
     "commonFacts": [
@@ -558,13 +542,11 @@
     "name": "DC micro condensing unit",
     "kind": "Configuration",
     "application": "The compact DC unit supplies refrigeration for a mobile cabinet or portable cold box.",
-    "sourcePage": 15,
     "images": [
       {
         "file": "micro-dc-condensing-unit.webp",
         "alt": "Compact compressor platform with copper pipework and a finned heat exchanger",
-        "caption": "DC micro condensing unit configuration shown.",
-        "sourcePage": 15
+        "caption": "DC micro condensing unit configuration shown."
       }
     ],
     "commonFacts": [
@@ -595,13 +577,11 @@
     "name": "DC coaxial liquid chiller",
     "kind": "Configuration",
     "application": "The stainless steel coaxial evaporator removes heat from a water circuit.",
-    "sourcePage": 15,
     "images": [
       {
         "file": "coaxial-liquid-chiller.webp",
         "alt": "Liquid chiller with insulated pipework and a coaxial evaporator",
-        "caption": "Coaxial liquid chiller configuration shown.",
-        "sourcePage": 15
+        "caption": "Coaxial liquid chiller configuration shown."
       }
     ],
     "commonFacts": [
@@ -632,13 +612,11 @@
     "name": "DC plate liquid chiller",
     "kind": "Configuration",
     "application": "The brazed plate evaporator couples a small liquid or gas cooling circuit to the refrigeration module.",
-    "sourcePage": 15,
     "images": [
       {
         "file": "plate-liquid-chiller.webp",
         "alt": "Compact liquid chiller with a brazed plate evaporator and exposed pipework",
-        "caption": "Plate liquid chiller configuration shown.",
-        "sourcePage": 15
+        "caption": "Plate liquid chiller configuration shown."
       }
     ],
     "commonFacts": [
@@ -669,13 +647,11 @@
     "name": "DC air-conditioning module",
     "kind": "Configuration",
     "application": "A copper-tube, aluminium-fin evaporator cools air in compact DC-powered equipment.",
-    "sourcePage": 15,
     "images": [
       {
         "file": "micro-ac-module.webp",
         "alt": "DC air-conditioning module with an exposed finned coil",
-        "caption": "Micro A/C module configuration shown.",
-        "sourcePage": 15
+        "caption": "Micro A/C module configuration shown."
       }
     ],
     "commonFacts": [
@@ -706,13 +682,11 @@
     "name": "Stainless steel cold-room air cooler",
     "kind": "Model",
     "application": "A stainless steel casing and drain tray suit refrigerated food storage. Choose the fin spacing for the room and evaporation temperatures shown.",
-    "sourcePage": 16,
     "images": [
       {
         "file": "stainless-air-cooler-fan-detail.webp",
         "alt": "Three fan openings on a stainless steel air cooler",
-        "caption": "Stainless steel range detail. Fan quantity and size vary by model.",
-        "sourcePage": 16
+        "caption": "Stainless steel range detail. Fan quantity and size vary by model."
       }
     ],
     "commonFacts": [
@@ -964,13 +938,11 @@
     "name": "Side-mounted air-cooled condenser",
     "kind": "Model",
     "application": "The side-mounted coil rejects heat to the surrounding air. Use the airflow and fan arrangement to size the installation.",
-    "sourcePage": 19,
     "images": [
       {
         "file": "side-mounted-condensers.webp",
         "alt": "Two side-mounted condenser configurations showing their fans and copper return bends",
-        "caption": "FNH and INH range photograph. Fan layout varies by model.",
-        "sourcePage": 19
+        "caption": "FNH and INH range photograph. Fan layout varies by model."
       }
     ],
     "commonFacts": [
@@ -1508,13 +1480,11 @@
     "name": "Microchannel condenser",
     "kind": "Model",
     "application": "The aluminium microchannel coil rejects heat from a refrigerant circuit. Use the stated rating conditions when comparing heat rejection.",
-    "sourcePage": 20,
     "images": [
       {
         "file": "microchannel-condensers.webp",
         "alt": "A group of bare aluminium microchannel coils in several sizes",
-        "caption": "Microchannel condenser range photograph showing the coil construction.",
-        "sourcePage": 20
+        "caption": "Microchannel condenser range photograph showing the coil construction."
       }
     ],
     "commonFacts": [
@@ -1594,19 +1564,16 @@
     "name": "Shell-and-tube evaporator",
     "kind": "Model",
     "application": "Liquid passes through the tubes while refrigerant evaporates on their outer surfaces. Use the drawing to check shell length and mounting clearance.",
-    "sourcePage": 20,
     "images": [
       {
         "file": "shell-and-tube-dimension-drawing.webp",
         "alt": "Side and end views of the STHE shell with dimensions A to E marked",
-        "caption": "STHE series drawing. The letters correspond to the dimensions for the selected model.",
-        "sourcePage": 20
+        "caption": "STHE series drawing. The letters correspond to the dimensions for the selected model."
       },
       {
         "file": "shell-and-tube-cutaway.webp",
         "alt": "Section of a shell-and-tube exchanger exposing parallel copper tubes",
-        "caption": "STHE series cutaway detail showing the tube bundle inside the shell.",
-        "sourcePage": 20
+        "caption": "STHE series cutaway detail showing the tube bundle inside the shell."
       }
     ],
     "commonFacts": [],
@@ -1907,13 +1874,11 @@
     "name": "Digital scroll compressor",
     "kind": "Model",
     "application": "This digital scroll fits medium- and high-temperature refrigeration circuits. Match the motor version and solder connections to the installation.",
-    "sourcePage": 22,
     "images": [
       {
         "file": "scroll-compressor-body.webp",
         "alt": "Upright cylindrical scroll compressor with pipe stubs and mounting feet",
-        "caption": "Scroll compressor family photograph. The housing shown illustrates the compressor type.",
-        "sourcePage": 21
+        "caption": "Scroll compressor family photograph. The housing shown illustrates the compressor type."
       }
     ],
     "commonFacts": [],
@@ -2070,13 +2035,11 @@
     "name": "Fixed-speed R290 rotary compressor",
     "kind": "Model",
     "application": "This rotary compressor serves single-phase R290 equipment. Compare height and cooling capacity at the T1 rating point.",
-    "sourcePage": 31,
     "images": [
       {
         "file": "rotary-compressor-connections.webp",
         "alt": "Upper shell, pipe stubs and accumulator on a rotary compressor",
-        "caption": "Rotary compressor family detail showing the upper connections.",
-        "sourcePage": 31
+        "caption": "Rotary compressor family detail showing the upper connections."
       }
     ],
     "commonFacts": [
@@ -2218,13 +2181,11 @@
     "name": "Hermetic R600a reciprocating compressor",
     "kind": "Model",
     "application": "This fixed-speed compressor serves low-back-pressure refrigeration circuits with R600a.",
-    "sourcePage": 35,
     "images": [
       {
         "file": "reciprocating-compressor-cutaway.webp",
         "alt": "Cutaway illustration showing the mechanism inside a hermetic reciprocating compressor",
-        "caption": "Reciprocating compressor family illustration showing the internal construction.",
-        "sourcePage": 35
+        "caption": "Reciprocating compressor family illustration showing the internal construction."
       }
     ],
     "commonFacts": [
@@ -2336,13 +2297,11 @@
     "name": "Semi-hermetic screw compressor",
     "kind": "Model",
     "application": "This screw compressor has stepped capacity control. Compare swept volume at the site frequency and verify the suction and discharge connections.",
-    "sourcePage": 40,
     "images": [
       {
         "file": "blg-semi-hermetic-screw.webp",
         "alt": "Green semi-hermetic screw compressor with a black electrical enclosure",
-        "caption": "BLG series photograph. Connection sizes vary with displacement.",
-        "sourcePage": 40
+        "caption": "BLG series photograph. Connection sizes vary with displacement."
       }
     ],
     "commonFacts": [],
@@ -2953,13 +2912,11 @@
     "name": "Air-cooler nozzle heater",
     "kind": "Configuration",
     "application": "The flexible heater strip fits around the fan nozzle of an air cooler. Select the strip length and output for the nozzle diameter.",
-    "sourcePage": 44,
     "images": [
       {
         "file": "air-cooler-nozzle-heater.webp",
         "alt": "Flexible orange heater strip and electrical leads",
-        "caption": "Nozzle-heater range photograph. Strip length depends on the nozzle diameter.",
-        "sourcePage": 44
+        "caption": "Nozzle-heater range photograph. Strip length depends on the nozzle diameter."
       }
     ],
     "commonFacts": [
@@ -3019,13 +2976,11 @@
     "name": "Low oil-level monitor",
     "kind": "Model",
     "application": "This Hall-effect device monitors oil level in separators, reservoirs or drain tanks and operates an alarm contact.",
-    "sourcePage": 45,
     "images": [
       {
         "file": "icg360r-mount-detail.webp",
         "alt": "Circular sensing head and mounting fasteners of an oil-level monitor",
-        "caption": "ICG360R-D series detail showing the sensing head.",
-        "sourcePage": 45
+        "caption": "ICG360R-D series detail showing the sensing head."
       }
     ],
     "commonFacts": [
@@ -3060,13 +3015,11 @@
     "name": "High oil-level monitor",
     "kind": "Model",
     "application": "This Hall-effect device monitors oil level in separators, reservoirs or drain tanks and operates an alarm contact.",
-    "sourcePage": 45,
     "images": [
       {
         "file": "icg360r-mount-detail.webp",
         "alt": "Circular sensing head and mounting fasteners of an oil-level monitor",
-        "caption": "ICG360R-D series detail showing the sensing head.",
-        "sourcePage": 45
+        "caption": "ICG360R-D series detail showing the sensing head."
       }
     ],
     "commonFacts": [
@@ -3101,13 +3054,11 @@
     "name": "Electronic compressor oil-level regulator",
     "kind": "Model",
     "application": "A magnetic float and Hall sensor monitor the oil level. The regulator controls the fill valve and signals a low-oil alarm.",
-    "sourcePage": 46,
     "images": [
       {
         "file": "icg580r-mount-detail.webp",
         "alt": "Round metal oil-level sensing head with a mounting flange",
-        "caption": "ICG580R and ICG580RM series detail showing the sensing head.",
-        "sourcePage": 46
+        "caption": "ICG580R and ICG580RM series detail showing the sensing head."
       }
     ],
     "commonFacts": [
@@ -3138,19 +3089,16 @@
     "name": "Electronic compressor oil-level regulator",
     "kind": "Model",
     "application": "The regulator admits oil from an oil receiver or separator to maintain the level in a compressor sight glass.",
-    "sourcePage": 46,
     "images": [
       {
         "file": "icg680r-level-bands.webp",
         "alt": "Four colour bands with thresholds at 25, 40 and 60 percent of sight-glass height",
-        "caption": "ICG680R series illustration of the sight-glass level bands.",
-        "sourcePage": 46
+        "caption": "ICG680R series illustration of the sight-glass level bands."
       },
       {
         "file": "icg680r-connection-detail.webp",
         "alt": "Brass oil inlet fitting on the ICG680R housing",
-        "caption": "ICG680R series detail showing the inlet fitting.",
-        "sourcePage": 46
+        "caption": "ICG680R series detail showing the inlet fitting."
       }
     ],
     "commonFacts": [
@@ -3181,13 +3129,11 @@
     "name": "Optical liquid-level monitor",
     "kind": "Series",
     "application": "A screw-in glass prism senses the liquid level in a reservoir. The separate electronics can be replaced while the vessel stays closed.",
-    "sourcePage": 47,
     "images": [
       {
         "file": "ilm-optical-prism-heads.webp",
         "alt": "Five optical prism head options with different threads and shielding",
-        "caption": "ILM-D series prism options. The fitting depends on the vessel connection.",
-        "sourcePage": 47
+        "caption": "ILM-D series prism options. The fitting depends on the vessel connection."
       }
     ],
     "commonFacts": [
@@ -3218,13 +3164,11 @@
     "name": "Oil differential pressure sensor",
     "kind": "Series",
     "application": "The sensor monitors compressor oil differential pressure. Its replaceable evaluation unit operates the alarm relay if the pressure differential remains too low.",
-    "sourcePage": 48,
     "images": [
       {
         "file": "oil-pressure-insert-drawings.webp",
         "alt": "Brass pressure-sensing inserts with dimensioned drawings for 02D557, 02D442 and 02D443",
-        "caption": "ICG571C series insert variants, from left: 02D557, 02D442 and 02D443.",
-        "sourcePage": 48
+        "caption": "ICG571C series insert variants, from left: 02D557, 02D442 and 02D443."
       }
     ],
     "commonFacts": [
@@ -3259,13 +3203,11 @@
     "name": "Screw-in thermal sensor",
     "kind": "Series",
     "application": "This threaded stainless steel probe monitors equipment temperature for thermal overload protection.",
-    "sourcePage": 48,
     "images": [
       {
         "file": "its-screw-in-probe.webp",
         "alt": "Stainless steel threaded temperature probe and red cable",
-        "caption": "ITS screw-in series probe.",
-        "sourcePage": 48
+        "caption": "ITS screw-in series probe."
       }
     ],
     "commonFacts": [
@@ -3296,13 +3238,11 @@
     "name": "Three-phase monitoring relay",
     "kind": "Model",
     "application": "The DIN-rail relay monitors phase sequence, phase loss and voltage imbalance in a three-phase circuit.",
-    "sourcePage": 49,
     "images": [
       {
         "file": "pfr-phase-relay.webp",
         "alt": "Narrow phase-monitoring relay with a DIN-rail foot and screw terminals",
-        "caption": "PFR51 and PFR53 series photograph of the shared housing style.",
-        "sourcePage": 49
+        "caption": "PFR51 and PFR53 series photograph of the shared housing style."
       }
     ],
     "commonFacts": [
@@ -3339,7 +3279,6 @@
     "name": "Soft copper capillary tube",
     "kind": "Model",
     "application": "This 0.660 mm bore provides a fixed restriction in a small refrigeration circuit. Match the bore and cut length to the system design.",
-    "sourcePage": 54,
     "images": [
       {
         "file": "tc-capillary.webp",
@@ -3375,7 +3314,6 @@
     "name": "Soft copper capillary tube",
     "kind": "Model",
     "application": "This 0.711 mm bore provides a fixed restriction in a small refrigeration circuit. Match the bore and cut length to the system design.",
-    "sourcePage": 54,
     "images": [
       {
         "file": "tc-capillary.webp",
@@ -3411,7 +3349,6 @@
     "name": "Soft copper capillary tube",
     "kind": "Model",
     "application": "This 0.991 mm bore provides a fixed restriction in a small refrigeration circuit. Match the bore and cut length to the system design.",
-    "sourcePage": 54,
     "images": [
       {
         "file": "tc-capillary.webp",
@@ -3447,7 +3384,6 @@
     "name": "Soft copper capillary tube",
     "kind": "Model",
     "application": "This 1.07 mm bore provides a fixed restriction in a small refrigeration circuit. Match the bore and cut length to the system design.",
-    "sourcePage": 54,
     "images": [
       {
         "file": "tc-capillary.webp",
@@ -3483,7 +3419,6 @@
     "name": "Soft copper capillary tube",
     "kind": "Model",
     "application": "This 1.17 mm bore provides a fixed restriction in a small refrigeration circuit. Match the bore and cut length to the system design.",
-    "sourcePage": 54,
     "images": [
       {
         "file": "tc-capillary.webp",
@@ -3519,7 +3454,6 @@
     "name": "Soft copper capillary tube",
     "kind": "Model",
     "application": "This 1.37 mm bore provides a fixed restriction in a small refrigeration circuit. Match the bore and cut length to the system design.",
-    "sourcePage": 54,
     "images": [
       {
         "file": "tc-capillary.webp",
@@ -3555,7 +3489,6 @@
     "name": "Soft copper capillary tube",
     "kind": "Model",
     "application": "This 1.50 mm bore provides a fixed restriction in a small refrigeration circuit. Match the bore and cut length to the system design.",
-    "sourcePage": 54,
     "images": [
       {
         "file": "tc-capillary.webp",
@@ -3591,7 +3524,6 @@
     "name": "Soft copper capillary tube",
     "kind": "Model",
     "application": "This 1.63 mm bore provides a fixed restriction in a small refrigeration circuit. Match the bore and cut length to the system design.",
-    "sourcePage": 54,
     "images": [
       {
         "file": "tc-capillary.webp",
@@ -3627,7 +3559,6 @@
     "name": "Soft copper capillary tube",
     "kind": "Model",
     "application": "This 1.78 mm bore provides a fixed restriction in a small refrigeration circuit. Match the bore and cut length to the system design.",
-    "sourcePage": 54,
     "images": [
       {
         "file": "tc-capillary.webp",
@@ -3663,7 +3594,6 @@
     "name": "Soft copper capillary tube",
     "kind": "Model",
     "application": "This 1.91 mm bore provides a fixed restriction in a small refrigeration circuit. Match the bore and cut length to the system design.",
-    "sourcePage": 54,
     "images": [
       {
         "file": "tc-capillary.webp",
@@ -3699,7 +3629,6 @@
     "name": "Soft copper capillary tube",
     "kind": "Model",
     "application": "This 2.03 mm bore provides a fixed restriction in a small refrigeration circuit. Match the bore and cut length to the system design.",
-    "sourcePage": 54,
     "images": [
       {
         "file": "tc-capillary.webp",
@@ -3735,7 +3664,6 @@
     "name": "Soft copper capillary tube",
     "kind": "Model",
     "application": "This 2.30 mm bore provides a fixed restriction in a small refrigeration circuit. Match the bore and cut length to the system design.",
-    "sourcePage": 54,
     "images": [
       {
         "file": "tc-capillary.webp",
@@ -3771,7 +3699,6 @@
     "name": "Insulated twin copper line set",
     "kind": "Tube size pair",
     "application": "The two insulated copper lines connect the indoor and outdoor units of a split air conditioner or heat pump.",
-    "sourcePage": 55,
     "images": [
       {
         "file": "insulated-tube-set.webp",
@@ -3809,7 +3736,6 @@
     "name": "Thermoplastic capillary hose",
     "kind": "Bore configuration",
     "application": "Use a flexible connection between a refrigerant pressure point and a gauge or pressure switch. Match the end fittings to both ports.",
-    "sourcePage": 56,
     "images": [
       {
         "file": "capillary-hose.webp",
@@ -3866,7 +3792,6 @@
     "name": "Short brass flare nut",
     "kind": "Model",
     "application": "This short nut secures a 1/4 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "short-flare-nuts.webp",
@@ -3894,7 +3819,6 @@
     "name": "Forged brass flare nut",
     "kind": "Model",
     "application": "This forged nut secures a 1/4 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "forged-flare-nuts.webp",
@@ -3922,7 +3846,6 @@
     "name": "Long brass flare nut",
     "kind": "Model",
     "application": "This long nut secures a 1/4 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "long-flare-nuts.webp",
@@ -3950,7 +3873,6 @@
     "name": "Short brass flare nut",
     "kind": "Model",
     "application": "This short nut secures a 5/16 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "short-flare-nuts.webp",
@@ -3978,7 +3900,6 @@
     "name": "Forged brass flare nut",
     "kind": "Model",
     "application": "This forged nut secures a 5/16 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "forged-flare-nuts.webp",
@@ -4006,7 +3927,6 @@
     "name": "Long brass flare nut",
     "kind": "Model",
     "application": "This long nut secures a 5/16 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "long-flare-nuts.webp",
@@ -4034,7 +3954,6 @@
     "name": "Short brass flare nut",
     "kind": "Model",
     "application": "This short nut secures a 3/8 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "short-flare-nuts.webp",
@@ -4062,7 +3981,6 @@
     "name": "Forged brass flare nut",
     "kind": "Model",
     "application": "This forged nut secures a 3/8 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "forged-flare-nuts.webp",
@@ -4090,7 +4008,6 @@
     "name": "Long brass flare nut",
     "kind": "Model",
     "application": "This long nut secures a 3/8 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "long-flare-nuts.webp",
@@ -4118,7 +4035,6 @@
     "name": "Short brass flare nut",
     "kind": "Model",
     "application": "This short nut secures a 1/2 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "short-flare-nuts.webp",
@@ -4146,7 +4062,6 @@
     "name": "Forged brass flare nut",
     "kind": "Model",
     "application": "This forged nut secures a 1/2 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "forged-flare-nuts.webp",
@@ -4174,7 +4089,6 @@
     "name": "Long brass flare nut",
     "kind": "Model",
     "application": "This long nut secures a 1/2 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "long-flare-nuts.webp",
@@ -4202,7 +4116,6 @@
     "name": "Short brass flare nut",
     "kind": "Model",
     "application": "This short nut secures a 5/8 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "short-flare-nuts.webp",
@@ -4230,7 +4143,6 @@
     "name": "Forged brass flare nut",
     "kind": "Model",
     "application": "This forged nut secures a 5/8 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "forged-flare-nuts.webp",
@@ -4258,7 +4170,6 @@
     "name": "Long brass flare nut",
     "kind": "Model",
     "application": "This long nut secures a 5/8 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "long-flare-nuts.webp",
@@ -4286,7 +4197,6 @@
     "name": "Short brass flare nut",
     "kind": "Model",
     "application": "This short nut secures a 3/4 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "short-flare-nuts.webp",
@@ -4314,7 +4224,6 @@
     "name": "Forged brass flare nut",
     "kind": "Model",
     "application": "This forged nut secures a 3/4 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "forged-flare-nuts.webp",
@@ -4342,7 +4251,6 @@
     "name": "Long brass flare nut",
     "kind": "Model",
     "application": "This long nut secures a 3/4 in flared tube to its mating fitting in a refrigeration line.",
-    "sourcePage": 59,
     "images": [
       {
         "file": "long-flare-nuts.webp",
@@ -4370,7 +4278,6 @@
     "name": "Normally closed refrigerant solenoid valve",
     "kind": "Model",
     "application": "Use this valve to switch flow in an HCFC or HFC refrigerant circuit. The body is closed when the coil is de-energised.",
-    "sourcePage": 65,
     "images": [
       {
         "file": "mdf-solenoid.webp",
@@ -4491,7 +4398,6 @@
     "name": "Normally open refrigerant solenoid valve",
     "kind": "Model",
     "application": "Use this valve to switch flow in an HCFC or HFC refrigerant circuit. The body is open when the coil is de-energised.",
-    "sourcePage": 65,
     "images": [
       {
         "file": "mdf-solenoid.webp",
@@ -4572,7 +4478,6 @@
     "name": "Braided vibration absorber",
     "kind": "Model",
     "application": "Install the flexible section between a vibrating compressor and rigid refrigerant pipework to limit vibration transmission.",
-    "sourcePage": 69,
     "images": [
       {
         "file": "vat-vibration-absorber.webp",
@@ -4685,7 +4590,6 @@
     "name": "Refrigeration ball valve",
     "kind": "Model",
     "application": "Isolate a section of refrigerant pipework for service. The ball valve accepts flow in either direction.",
-    "sourcePage": 70,
     "images": [
       {
         "file": "vabv-isolation.webp",
@@ -4728,7 +4632,6 @@
     "name": "Refrigeration ball valve with access port",
     "kind": "Model",
     "application": "Isolate a section of refrigerant pipework for service. The ball valve accepts flow in either direction. A service port on the tube provides an access point.",
-    "sourcePage": 70,
     "images": [
       {
         "file": "vabv-access.webp",
@@ -4771,7 +4674,6 @@
     "name": "Liquid-line filter drier",
     "kind": "Model",
     "application": "The molecular-sieve core removes moisture from liquid refrigerant. Select the connection and check flow capacity for the refrigerant in use.",
-    "sourcePage": 76,
     "images": [
       {
         "file": "dk-drier-drawing.webp",
@@ -5446,7 +5348,6 @@
     "name": "Replaceable-core filter drier shell",
     "kind": "Model",
     "application": "The removable end cover gives service access to the 48-series filter core. Allow room beside the cover for core removal.",
-    "sourcePage": 82,
     "images": [
       {
         "file": "fda-shell-drawing.webp",
@@ -5537,7 +5438,6 @@
     "name": "Replaceable-core filter drier shell",
     "kind": "Model",
     "application": "The removable end cover gives service access to the 48-series filter cores. Allow room beside the cover for core removal.",
-    "sourcePage": 82,
     "images": [
       {
         "file": "fda-shell-drawing.webp",
@@ -5732,7 +5632,6 @@
     "name": "Horizontal liquid receiver",
     "kind": "Model",
     "application": "This horizontal vessel stores liquid refrigerant downstream of the condenser. Rotalock valves are fitted at the inlet and outlet.",
-    "sourcePage": 84,
     "images": [
       {
         "file": "fdc-liquid-receiver.webp",
@@ -5940,7 +5839,6 @@
     "name": "Vertical oil reservoir",
     "kind": "Model",
     "application": "This vessel holds the oil reserve in a refrigeration oil-management circuit. Use the mounting orientation and port locations to plan the return pipework.",
-    "sourcePage": 88,
     "images": [
       {
         "file": "fdoc-oil-reservoir.webp",
@@ -6047,7 +5945,6 @@
     "name": "Horizontal oil reservoir",
     "kind": "Model",
     "application": "This vessel holds the oil reserve in a refrigeration oil-management circuit. Use the mounting orientation and port locations to plan the return pipework.",
-    "sourcePage": 88,
     "images": [
       {
         "file": "fdocw-oil-reservoir.webp",
@@ -6144,7 +6041,6 @@
     "name": "Vertical R744 liquid receiver",
     "kind": "Model",
     "application": "The receiver stores liquid CO₂ in an R744 circuit. Its dimensional drawing identifies the relief connection separately from the inlet and outlet.",
-    "sourcePage": 90,
     "images": [
       {
         "file": "co2-vertical-receiver.webp",
@@ -6293,7 +6189,6 @@
     "name": "Horizontal R744 liquid receiver",
     "kind": "Model",
     "application": "The receiver stores liquid CO₂ in an R744 circuit. Its dimensional drawing identifies the relief connection separately from the inlet and outlet.",
-    "sourcePage": 90,
     "images": [
       {
         "file": "co2-horizontal-receiver.webp",
@@ -6442,7 +6337,6 @@
     "name": "Shaded-pole fan motor",
     "kind": "Model",
     "application": "This continuous-duty motor drives a 200 mm fan blade. Match the motor bracket and electrical input when replacing a fan assembly.",
-    "sourcePage": 91,
     "images": [
       {
         "file": "yz-shaded-pole-motor.webp",
@@ -6482,7 +6376,6 @@
     "name": "Shaded-pole fan motor",
     "kind": "Model",
     "application": "This continuous-duty motor drives a 230 mm fan blade. Match the motor bracket and electrical input when replacing a fan assembly.",
-    "sourcePage": 91,
     "images": [
       {
         "file": "yz-shaded-pole-motor.webp",
@@ -6533,7 +6426,6 @@
     "name": "Shaded-pole fan motor",
     "kind": "Model",
     "application": "This continuous-duty motor drives a 250 mm fan blade. Match the motor bracket and electrical input when replacing a fan assembly.",
-    "sourcePage": 91,
     "images": [
       {
         "file": "yz-shaded-pole-motor.webp",
@@ -6584,7 +6476,6 @@
     "name": "Shaded-pole fan motor",
     "kind": "Model",
     "application": "This continuous-duty motor drives a 300 mm fan blade. Match the motor bracket and electrical input when replacing a fan assembly.",
-    "sourcePage": 91,
     "images": [
       {
         "file": "yz-shaded-pole-motor.webp",
@@ -6635,7 +6526,6 @@
     "name": "Compact AC axial fan",
     "kind": "Model",
     "application": "This 110 V fan moves air along its shaft axis for equipment cooling. Check the frame depth and the temperature range of the sleeve bearing before selection.",
-    "sourcePage": 96,
     "images": [
       {
         "file": "af-compact-fans.webp",
@@ -6798,7 +6688,6 @@
     "name": "Compact AC axial fan",
     "kind": "Model",
     "application": "This 110 V fan moves air along its shaft axis for equipment cooling. Check the frame depth and the temperature range of the ball bearing before selection.",
-    "sourcePage": 96,
     "images": [
       {
         "file": "af-compact-fans.webp",
@@ -6961,7 +6850,6 @@
     "name": "Compact AC axial fan",
     "kind": "Model",
     "application": "This 220 V fan moves air along its shaft axis for equipment cooling. Check the frame depth and the temperature range of the sleeve bearing before selection.",
-    "sourcePage": 96,
     "images": [
       {
         "file": "af-compact-fans.webp",
@@ -7124,7 +7012,6 @@
     "name": "Compact AC axial fan",
     "kind": "Model",
     "application": "This 220 V fan moves air along its shaft axis for equipment cooling. Check the frame depth and the temperature range of the ball bearing before selection.",
-    "sourcePage": 96,
     "images": [
       {
         "file": "af-compact-fans.webp",
@@ -7287,7 +7174,6 @@
     "name": "AC motor start capacitor",
     "kind": "Series",
     "application": "The CD60 series supplies starting capacitance for AC motors and refrigeration compressors. Select the capacitance and AC voltage required by the motor.",
-    "sourcePage": 108,
     "images": [
       {
         "file": "cd60-start-capacitor.webp",
@@ -7319,7 +7205,6 @@
     "name": "Split A/C control kit",
     "kind": "Model",
     "application": "Use the replacement control board and user controls together. Check the original unit’s fan, sensors and wiring before specifying a kit.",
-    "sourcePage": 110,
     "images": [
       {
         "file": "qd-u02-control-kit.webp",
@@ -7347,7 +7232,6 @@
     "name": "Split A/C control kit",
     "kind": "Model",
     "application": "Use the replacement control board and user controls together. Check the original unit’s fan, sensors and wiring before specifying a kit.",
-    "sourcePage": 110,
     "images": [
       {
         "file": "qd-u03-control-kit.webp",
@@ -7375,7 +7259,6 @@
     "name": "Split A/C control kit",
     "kind": "Model",
     "application": "Use the replacement control board and user controls together. Check the original unit’s fan, sensors and wiring before specifying a kit.",
-    "sourcePage": 110,
     "images": [
       {
         "file": "qd-u8c-control-kit.webp",
@@ -7403,7 +7286,6 @@
     "name": "Cabinet A/C control kit",
     "kind": "Model",
     "application": "Use the replacement control board and user controls together. Check the original unit’s fan, sensors and wiring before specifying a kit.",
-    "sourcePage": 110,
     "images": [
       {
         "file": "qd-u11a-control-kit.webp",
@@ -7431,7 +7313,6 @@
     "name": "Cabinet A/C control kit",
     "kind": "Model",
     "application": "Use the replacement control board and user controls together. Check the original unit’s fan, sensors and wiring before specifying a kit.",
-    "sourcePage": 110,
     "images": [
       {
         "file": "qd-u12a-control-kit.webp",
@@ -7459,7 +7340,6 @@
     "name": "Digital panel thermometer",
     "kind": "Model",
     "application": "This battery-powered display fits a rectangular panel cut-out for local temperature readout. Check the cut-out against the panel opening before ordering.",
-    "sourcePage": 111,
     "images": [
       {
         "file": "tpm-10-panel-thermometer.webp",
@@ -7491,7 +7371,6 @@
     "name": "Digital panel thermometer",
     "kind": "Model",
     "application": "This battery-powered display fits a rectangular panel cut-out for local temperature readout. Check the cut-out against the panel opening before ordering.",
-    "sourcePage": 111,
     "images": [
       {
         "file": "tpm-30-panel-thermometer.webp",
@@ -7523,7 +7402,6 @@
     "name": "Single-pole contactor",
     "kind": "Model",
     "application": "The 24 V AC coil switches a motor load up to the listed full-load rating. Match the coil supply independently of the load voltage.",
-    "sourcePage": 114,
     "images": [
       {
         "file": "single-pole-contactor.webp",
@@ -7570,7 +7448,6 @@
     "name": "Single-pole contactor",
     "kind": "Model",
     "application": "The 120 V AC coil switches a motor load up to the listed full-load rating. Match the coil supply independently of the load voltage.",
-    "sourcePage": 114,
     "images": [
       {
         "file": "single-pole-contactor.webp",
@@ -7617,7 +7494,6 @@
     "name": "Single-pole contactor",
     "kind": "Model",
     "application": "The 240 V AC coil switches a motor load up to the listed full-load rating. Match the coil supply independently of the load voltage.",
-    "sourcePage": 114,
     "images": [
       {
         "file": "single-pole-contactor.webp",
@@ -7664,7 +7540,6 @@
     "name": "Two-pole contactor",
     "kind": "Model",
     "application": "The 24 V AC coil switches a motor load up to the listed full-load rating. Match the coil supply independently of the load voltage.",
-    "sourcePage": 114,
     "images": [
       {
         "file": "two-pole-contactor.webp",
@@ -7711,7 +7586,6 @@
     "name": "Two-pole contactor",
     "kind": "Model",
     "application": "The 120 V AC coil switches a motor load up to the listed full-load rating. Match the coil supply independently of the load voltage.",
-    "sourcePage": 114,
     "images": [
       {
         "file": "two-pole-contactor.webp",
@@ -7758,7 +7632,6 @@
     "name": "Two-pole contactor",
     "kind": "Model",
     "application": "The 240 V AC coil switches a motor load up to the listed full-load rating. Match the coil supply independently of the load voltage.",
-    "sourcePage": 114,
     "images": [
       {
         "file": "two-pole-contactor.webp",
@@ -7805,7 +7678,6 @@
     "name": "Three-pole contactor",
     "kind": "Model",
     "application": "The 24 V AC coil switches a motor load up to the listed full-load rating. Match the coil supply independently of the load voltage.",
-    "sourcePage": 114,
     "images": [
       {
         "file": "three-pole-contactor.webp",
@@ -7852,7 +7724,6 @@
     "name": "Three-pole contactor",
     "kind": "Model",
     "application": "The 120 V AC coil switches a motor load up to the listed full-load rating. Match the coil supply independently of the load voltage.",
-    "sourcePage": 114,
     "images": [
       {
         "file": "three-pole-contactor.webp",
@@ -7899,7 +7770,6 @@
     "name": "Three-pole contactor",
     "kind": "Model",
     "application": "The 240 V AC coil switches a motor load up to the listed full-load rating. Match the coil supply independently of the load voltage.",
-    "sourcePage": 114,
     "images": [
       {
         "file": "three-pole-contactor.webp",
@@ -7946,7 +7816,6 @@
     "name": "Electromechanical defrost timer",
     "kind": "Model",
     "application": "Use the timer to switch a refrigeration system into defrost at a fixed interval. Check the supply frequency because it changes both the cycle and the defrost period.",
-    "sourcePage": 116,
     "images": [
       {
         "file": "tmdj-defrost-timer.webp",
@@ -8034,13 +7903,11 @@
     "name": "Mineral refrigeration oil",
     "kind": "Oil grade",
     "application": "A mineral-oil grade for refrigeration compressors that specify naphthenic oil. Match the viscosity grade to the compressor specification.",
-    "sourcePage": 51,
     "images": [
       {
         "file": "mo-oil-containers.webp",
         "alt": "Bottle and handled container of mineral refrigeration oil",
-        "caption": "BS-MO mineral oil series packaging. Select the viscosity grade by reference.",
-        "sourcePage": 51
+        "caption": "BS-MO mineral oil series packaging. Select the viscosity grade by reference."
       }
     ],
     "commonFacts": [],
@@ -8107,7 +7974,6 @@
     "name": "Polyolester refrigeration oil",
     "kind": "Oil grade",
     "application": "A synthetic polyolester grade for refrigeration compressors using HFC refrigerants. Match the viscosity grade to the compressor specification.",
-    "sourcePage": 51,
     "images": [],
     "commonFacts": [],
     "variants": {
@@ -8173,7 +8039,6 @@
     "name": "Polyalkylene glycol refrigeration oil",
     "kind": "Oil grade",
     "application": "A polyalkylene glycol grade for automotive air-conditioning compressors using R134a. Match the viscosity grade to the compressor specification.",
-    "sourcePage": 51,
     "images": [],
     "commonFacts": [],
     "variants": {
@@ -8239,7 +8104,6 @@
     "name": "Alkylbenzene refrigeration oil",
     "kind": "Oil grade",
     "application": "An alkylbenzene grade for low-temperature systems using CFC or HCFC refrigerants. Match the viscosity grade to the compressor specification.",
-    "sourcePage": 52,
     "images": [],
     "commonFacts": [],
     "variants": {
@@ -8305,13 +8169,11 @@
     "name": "Polyalphaolefin refrigeration oil",
     "kind": "Oil grade",
     "application": "A polyalphaolefin grade for compressors in ammonia refrigeration systems. Match the viscosity grade to the compressor specification.",
-    "sourcePage": 52,
     "images": [
       {
         "file": "pao-oil-containers.webp",
         "alt": "Two metal bottles of polyalphaolefin refrigeration oil",
-        "caption": "BS-PAO oil series packaging. The photograph represents several viscosity grades.",
-        "sourcePage": 52
+        "caption": "BS-PAO oil series packaging. The photograph represents several viscosity grades."
       }
     ],
     "commonFacts": [],
@@ -8378,13 +8240,11 @@
     "name": "Polyvinyl ether refrigeration oil",
     "kind": "Oil grade",
     "application": "A polyvinyl ether grade for air-conditioning and refrigeration compressors using HFC refrigerants. Match the viscosity grade to the compressor specification.",
-    "sourcePage": 52,
     "images": [
       {
         "file": "pve-oil-containers.webp",
         "alt": "Two metal bottles of polyvinyl ether refrigeration oil",
-        "caption": "BS-PVE oil series packaging. Check the full grade suffix when ordering.",
-        "sourcePage": 52
+        "caption": "BS-PVE oil series packaging. Check the full grade suffix when ordering."
       }
     ],
     "commonFacts": [
@@ -8436,7 +8296,6 @@
     "name": "Hydrocarbon refrigerant",
     "kind": "Refrigerant designation",
     "application": "Refrigerant for low-back-pressure equipment such as the SZ35Y1K fixed-speed compressor.",
-    "sourcePage": 53,
     "images": [],
     "commonFacts": [
       [
@@ -8458,7 +8317,6 @@
     "name": "Hydrocarbon refrigerant",
     "kind": "Refrigerant designation",
     "application": "Specified for equipment including the KFS-M5 cabinet cooling unit and the DSK44V21UZH3 rotary compressor.",
-    "sourcePage": 53,
     "images": [],
     "commonFacts": [
       [
@@ -8480,7 +8338,6 @@
     "name": "HFC refrigerant",
     "kind": "Refrigerant designation",
     "application": "Specified for R32 rotary compressor circuits with fixed-speed or inverter drives. Quote the refrigerant designation and the cylinder requirement for the installation.",
-    "sourcePage": 53,
     "images": [],
     "commonFacts": [
       [
@@ -8502,7 +8359,6 @@
     "name": "HFC refrigerant",
     "kind": "Refrigerant designation",
     "application": "Specified for mobile DC refrigeration modules and other equipment designed for R134a.",
-    "sourcePage": 53,
     "images": [],
     "commonFacts": [
       [
@@ -8524,7 +8380,6 @@
     "name": "Interchangeable expansion valve orifice",
     "kind": "Order code",
     "application": "Fit this filtered orifice assembly in a T2 or TE2 thermostatic expansion valve. Select capacity for the refrigerant and valve operating range.",
-    "sourcePage": 60,
     "images": [],
     "commonFacts": [
       [
@@ -8629,7 +8484,6 @@
     "name": "Adjustable low-pressure switch",
     "kind": "Model",
     "application": "Monitor the suction side of a refrigeration circuit. Set the switching range and differential to suit the required control points.",
-    "sourcePage": 68,
     "images": [
       {
         "file": "adjustable-pressure-switch-detail.webp",
@@ -8678,7 +8532,6 @@
     "name": "Adjustable high-pressure switch",
     "kind": "Model",
     "application": "Monitor the discharge side of a refrigeration circuit. Set the switching range and differential to suit the required control points.",
-    "sourcePage": 68,
     "images": [
       {
         "file": "adjustable-pressure-switch-detail.webp",
@@ -8745,13 +8598,11 @@
     "name": "AC motor capacitor",
     "kind": "Series",
     "application": "Select the capacitance and voltage specified for the motor or refrigeration compressor.",
-    "sourcePage": 107,
     "images": [
       {
         "file": "cbb60-connection-detail.webp",
         "alt": "Lead exit and blade terminals on two CBB60 capacitors",
-        "caption": "CBB60 series connection detail showing lead and blade-terminal versions.",
-        "sourcePage": 107
+        "caption": "CBB60 series connection detail showing lead and blade-terminal versions."
       }
     ],
     "commonFacts": [
@@ -8778,7 +8629,6 @@
     "name": "Two-channel digital thermo-hygrometer",
     "kind": "Model",
     "application": "Read indoor and outdoor temperatures on the same display alongside humidity. The memory retains maximum and minimum readings.",
-    "sourcePage": 111,
     "images": [
       {
         "file": "dt-3-thermo-hygrometer.webp",
@@ -8818,7 +8668,6 @@
     "name": "45° flaring tool",
     "kind": "Model",
     "application": "Clamp the tube by its outside diameter and form the flare for a refrigeration line connection.",
-    "sourcePage": 97,
     "images": [
       {
         "file": "ct-195.webp",
@@ -8842,7 +8691,6 @@
     "name": "45° flaring tool",
     "kind": "Model",
     "application": "Clamp the tube by its outside diameter and form the flare for a refrigeration line connection.",
-    "sourcePage": 97,
     "images": [
       {
         "file": "ct-203.webp",
@@ -8866,7 +8714,6 @@
     "name": "Block flaring tool",
     "kind": "Model",
     "application": "Clamp the tube by its outside diameter and form the flare for a refrigeration line connection.",
-    "sourcePage": 97,
     "images": [
       {
         "file": "ct-block-flaring.webp",
@@ -8891,7 +8738,6 @@
     "name": "Grabber flaring tool",
     "kind": "Model",
     "application": "Clamp the tube by its outside diameter and form the flare for a refrigeration line connection.",
-    "sourcePage": 97,
     "images": [
       {
         "file": "ct-525-f.webp",
@@ -8915,7 +8761,6 @@
     "name": "Grabber flaring tool",
     "kind": "Model",
     "application": "Clamp the tube by its outside diameter and form the flare for a refrigeration line connection.",
-    "sourcePage": 97,
     "images": [
       {
         "file": "ct-526-f.webp",
@@ -8939,7 +8784,6 @@
     "name": "Refrigerant charging hose set",
     "kind": "Model",
     "application": "Connect a service manifold to a refrigeration system using the hose set rated for its refrigerant and service pressure.",
-    "sourcePage": 100,
     "images": [
       {
         "file": "ryb-r12-r22-r502.webp",
@@ -8986,7 +8830,6 @@
     "name": "Refrigerant charging hose set",
     "kind": "Model",
     "application": "Connect a service manifold to a refrigeration system using the hose set rated for its refrigerant and service pressure.",
-    "sourcePage": 100,
     "images": [
       {
         "file": "ryb-r134a.webp",
@@ -9033,7 +8876,6 @@
     "name": "Refrigerant charging hose set",
     "kind": "Model",
     "application": "Connect a service manifold to a refrigeration system using the hose set rated for its refrigerant and service pressure.",
-    "sourcePage": 100,
     "images": [
       {
         "file": "ryb-r410a.webp",
@@ -9080,7 +8922,6 @@
     "name": "Swivel brazing torch",
     "kind": "Model",
     "application": "Direct heat onto a tube joint during brazing. The head swivels to reach joints in confined pipe runs.",
-    "sourcePage": 102,
     "images": [
       {
         "file": "ht-1s.webp",
@@ -9112,7 +8953,6 @@
     "name": "Swivel brazing torch",
     "kind": "Model",
     "application": "Direct heat onto a tube joint during brazing. The head swivels to reach joints in confined pipe runs.",
-    "sourcePage": 102,
     "images": [
       {
         "file": "ht-1s6.webp",
@@ -9144,7 +8984,6 @@
     "name": "Swivel brazing torch",
     "kind": "Model",
     "application": "Direct heat onto a tube joint during brazing. The head swivels to reach joints in confined pipe runs.",
-    "sourcePage": 102,
     "images": [
       {
         "file": "ht-1.webp",
@@ -9176,7 +9015,6 @@
     "name": "Swivel brazing torch",
     "kind": "Model",
     "application": "Direct heat onto a tube joint during brazing. The head swivels to reach joints in confined pipe runs.",
-    "sourcePage": 102,
     "images": [
       {
         "file": "ht-16.webp",
@@ -9208,7 +9046,6 @@
     "name": "Twin-tip brazing torch",
     "kind": "Model",
     "application": "Direct heat onto a tube joint during brazing. The head swivels to reach joints in confined pipe runs.",
-    "sourcePage": 102,
     "images": [
       {
         "file": "ht-2.webp",
@@ -9240,7 +9077,6 @@
     "name": "Single-stage evacuation pump",
     "kind": "Model",
     "application": "Evacuate air and moisture from a refrigeration circuit before charging. Match pump displacement to the site supply frequency.",
-    "sourcePage": 104,
     "images": [
       {
         "file": "vp-single-inlet.webp",
@@ -9445,7 +9281,6 @@
     "name": "Two-stage evacuation pump",
     "kind": "Model",
     "application": "Evacuate air and moisture from a refrigeration circuit before charging. Match pump displacement to the site supply frequency.",
-    "sourcePage": 104,
     "images": [
       {
         "file": "vp-double-inlet.webp",
@@ -9650,7 +9485,6 @@
     "name": "Portable refrigerant recovery machine",
     "kind": "Model",
     "application": "Transfer refrigerant out of a circuit during service or decommissioning. Vapour, liquid and push-pull transfer have separate capacities.",
-    "sourcePage": 105,
     "images": [
       {
         "file": "trr-recovery-controls.webp",
@@ -9709,7 +9543,6 @@
     "name": "Portable refrigerant recovery machine",
     "kind": "Model",
     "application": "Transfer refrigerant out of a circuit during service or decommissioning. Vapour, liquid and push-pull transfer have separate capacities.",
-    "sourcePage": 105,
     "images": [
       {
         "file": "rc-recovery-unit.webp",
@@ -9772,7 +9605,6 @@
     "name": "Handheld refrigerant leak detector",
     "kind": "Model",
     "application": "Trace leaks around joints and components in HFC, HCFC, CFC and HFO systems with the flexible probe.",
-    "sourcePage": 106,
     "images": [
       {
         "file": "rld-leak-detector.webp",
@@ -9833,7 +9665,6 @@
     "name": "Handheld refrigerant leak detector",
     "kind": "Model",
     "application": "Trace leaks around joints and components in HFC, HCFC, CFC and HFO systems with the flexible probe.",
-    "sourcePage": 106,
     "images": [
       {
         "file": "ird-leak-detector.webp",
@@ -9894,7 +9725,6 @@
     "name": "Mini-split condensate pump",
     "kind": "Model",
     "application": "Lift condensate from an indoor unit or refrigerated installation when the drain cannot run continuously downhill.",
-    "sourcePage": 106,
     "images": [
       {
         "file": "pc-mini-split.webp",
@@ -9941,7 +9771,6 @@
     "name": "Slim-profile condensate pump",
     "kind": "Model",
     "application": "Lift condensate from an indoor unit or refrigerated installation when the drain cannot run continuously downhill.",
-    "sourcePage": 106,
     "images": [
       {
         "file": "pc-10d.webp",
@@ -9981,7 +9810,6 @@
     "name": "Corner condensate pump",
     "kind": "Model",
     "application": "Lift condensate from an indoor unit or refrigerated installation when the drain cannot run continuously downhill.",
-    "sourcePage": 106,
     "images": [
       {
         "file": "pc-corner.webp",
@@ -10024,7 +9852,6 @@
     "name": "High-head condensate pump",
     "kind": "Model",
     "application": "Lift condensate from an indoor unit or refrigerated installation when the drain cannot run continuously downhill.",
-    "sourcePage": 106,
     "images": [
       {
         "file": "pc-360a.webp",
@@ -10060,7 +9887,6 @@
     "name": "Condensate tank pump",
     "kind": "Model",
     "application": "Lift condensate from an indoor unit or refrigerated installation when the drain cannot run continuously downhill.",
-    "sourcePage": 106,
     "images": [
       {
         "file": "pc-320a.webp",
@@ -10096,7 +9922,6 @@
     "name": "High-flow condensate tank pump",
     "kind": "Model",
     "application": "Lift condensate from an indoor unit or refrigerated installation when the drain cannot run continuously downhill.",
-    "sourcePage": 106,
     "images": [
       {
         "file": "pc-600a.webp",
@@ -10132,7 +9957,6 @@
     "name": "High-flow condensate tank pump",
     "kind": "Model",
     "application": "Lift condensate from an indoor unit or refrigerated installation when the drain cannot run continuously downhill.",
-    "sourcePage": 106,
     "images": [
       {
         "file": "pc-760a.webp",
@@ -10168,7 +9992,6 @@
     "name": "PIR insulated wall panel",
     "kind": "Panel configuration",
     "application": "Form the insulated envelope of a cold room using 50 mm hook-joint wall panels. Select the facing and panel height for the installation.",
-    "sourcePage": 117,
     "images": [
       {
         "file": "hook-panel-joint.webp",
@@ -10209,7 +10032,6 @@
     "name": "PIR insulated wall panel",
     "kind": "Panel configuration",
     "application": "Form the insulated envelope of a cold room using 75 mm hook-joint wall panels. Select the facing and panel height for the installation.",
-    "sourcePage": 117,
     "images": [
       {
         "file": "hook-panel-joint.webp",
@@ -10250,7 +10072,6 @@
     "name": "PIR insulated wall panel",
     "kind": "Panel configuration",
     "application": "Form the insulated envelope of a cold room using 100 mm hook-joint wall panels. Select the facing and panel height for the installation.",
-    "sourcePage": 117,
     "images": [
       {
         "file": "hook-panel-joint.webp",
@@ -10291,7 +10112,6 @@
     "name": "PIR insulated wall panel",
     "kind": "Panel configuration",
     "application": "Form the insulated envelope of a cold room using 150 mm hook-joint wall panels. Select the facing and panel height for the installation.",
-    "sourcePage": 117,
     "images": [
       {
         "file": "hook-panel-joint.webp",
@@ -10332,7 +10152,6 @@
     "name": "PIR insulated wall panel",
     "kind": "Panel configuration",
     "application": "Form the insulated envelope of a cold room using 180 mm hook-joint wall panels. Select the facing and panel height for the installation.",
-    "sourcePage": 117,
     "images": [
       {
         "file": "hook-panel-joint.webp",
@@ -10373,7 +10192,6 @@
     "name": "PIR insulated wall panel",
     "kind": "Panel configuration",
     "application": "Form the insulated envelope of a cold room using 200 mm hook-joint wall panels. Select the facing and panel height for the installation.",
-    "sourcePage": 117,
     "images": [
       {
         "file": "hook-panel-joint.webp",
@@ -10414,7 +10232,6 @@
     "name": "PUR insulated wall panel",
     "kind": "Panel configuration",
     "application": "Form the insulated envelope of a cold room using 50 mm hook-joint wall panels. Select the facing and panel height for the installation.",
-    "sourcePage": 117,
     "images": [
       {
         "file": "hook-panel-joint.webp",
@@ -10455,7 +10272,6 @@
     "name": "PUR insulated wall panel",
     "kind": "Panel configuration",
     "application": "Form the insulated envelope of a cold room using 75 mm hook-joint wall panels. Select the facing and panel height for the installation.",
-    "sourcePage": 117,
     "images": [
       {
         "file": "hook-panel-joint.webp",
@@ -10496,7 +10312,6 @@
     "name": "PUR insulated wall panel",
     "kind": "Panel configuration",
     "application": "Form the insulated envelope of a cold room using 100 mm hook-joint wall panels. Select the facing and panel height for the installation.",
-    "sourcePage": 117,
     "images": [
       {
         "file": "hook-panel-joint.webp",
@@ -10537,7 +10352,6 @@
     "name": "PUR insulated wall panel",
     "kind": "Panel configuration",
     "application": "Form the insulated envelope of a cold room using 150 mm hook-joint wall panels. Select the facing and panel height for the installation.",
-    "sourcePage": 117,
     "images": [
       {
         "file": "hook-panel-joint.webp",
@@ -10578,7 +10392,6 @@
     "name": "PUR insulated wall panel",
     "kind": "Panel configuration",
     "application": "Form the insulated envelope of a cold room using 180 mm hook-joint wall panels. Select the facing and panel height for the installation.",
-    "sourcePage": 117,
     "images": [
       {
         "file": "hook-panel-joint.webp",
@@ -10619,7 +10432,6 @@
     "name": "PUR insulated wall panel",
     "kind": "Panel configuration",
     "application": "Form the insulated envelope of a cold room using 200 mm hook-joint wall panels. Select the facing and panel height for the installation.",
-    "sourcePage": 117,
     "images": [
       {
         "file": "hook-panel-joint.webp",
@@ -10660,7 +10472,6 @@
     "name": "Fully recessed cold-room door",
     "kind": "Door configuration",
     "application": "Close a cold-room personnel opening with the leaf recessed fully into its frame.",
-    "sourcePage": 119,
     "images": [
       {
         "file": "cold-room-fully-recessed-door.webp",
@@ -10692,7 +10503,6 @@
     "name": "Semi-recessed cold-room door",
     "kind": "Door configuration",
     "application": "Close a cold-room opening with a hinged leaf that sits partly within the frame.",
-    "sourcePage": 119,
     "images": [
       {
         "file": "cold-room-semi-recessed-door.webp",
@@ -10724,7 +10534,6 @@
     "name": "Sliding cold-room door",
     "kind": "Door configuration",
     "application": "Keep the swing path clear at a cold-room opening by moving the leaf along the overhead rail.",
-    "sourcePage": 119,
     "images": [
       {
         "file": "cold-room-sliding-door.webp",
@@ -10768,7 +10577,6 @@
     "name": "Bi-parting sliding cold-room door",
     "kind": "Door configuration",
     "application": "Provide a wider cold-room passage for equipment with two leaves that can travel independently.",
-    "sourcePage": 119,
     "images": [
       {
         "file": "cold-room-bi-parting-sliding-door.webp",
@@ -10812,7 +10620,6 @@
     "name": "Double-leaf hinged cold-room door",
     "kind": "Door configuration",
     "application": "Open a single leaf for personnel and both leaves to move larger loads into the cold room.",
-    "sourcePage": 119,
     "images": [
       {
         "file": "cold-room-double-leaf-hinged-door.webp",
@@ -10844,7 +10651,6 @@
     "name": "Cam-lift safety latch",
     "kind": "Model",
     "application": "Secure a cold-room door to its frame. Match mounting height and latch position to the door offset.",
-    "sourcePage": 121,
     "images": [
       {
         "file": "lh-1178.webp",
@@ -10868,7 +10674,6 @@
     "name": "Cam-lift safety latch",
     "kind": "Model",
     "application": "Secure a cold-room door to its frame. Match mounting height and latch position to the door offset.",
-    "sourcePage": 121,
     "images": [
       {
         "file": "lh-1179.webp",
@@ -10892,7 +10697,6 @@
     "name": "Cam-lift safety latch",
     "kind": "Model",
     "application": "Secure a cold-room door to its frame. Match mounting height and latch position to the door offset.",
-    "sourcePage": 121,
     "images": [
       {
         "file": "lh-1188.webp",
@@ -10916,7 +10720,6 @@
     "name": "Surface-mount latch",
     "kind": "Model",
     "application": "Secure a cold-room door to its frame. Match mounting height and latch position to the door offset.",
-    "sourcePage": 121,
     "images": [
       {
         "file": "lh-1061.webp",
@@ -10940,7 +10743,6 @@
     "name": "Reversible edge-mount hinge",
     "kind": "Model",
     "application": "Support an insulated door at its edge and align the leaf with its frame.",
-    "sourcePage": 121,
     "images": [
       {
         "file": "lh-1132.webp",
@@ -10968,7 +10770,6 @@
     "name": "Edge-mount hinge",
     "kind": "Model",
     "application": "Support an insulated door at its edge and align the leaf with its frame.",
-    "sourcePage": 121,
     "images": [
       {
         "file": "lh-1332.webp",
@@ -10992,7 +10793,6 @@
     "name": "Oval cold-room LED lamp",
     "kind": "Model",
     "application": "Light a temperature-controlled storage area with a sealed luminaire sized for the available mounting position.",
-    "sourcePage": 123,
     "images": [
       {
         "file": "csl-oval.webp",
@@ -11030,7 +10830,6 @@
     "name": "Square cold-room LED lamp",
     "kind": "Model",
     "application": "Light a temperature-controlled storage area with a sealed luminaire sized for the available mounting position.",
-    "sourcePage": 123,
     "images": [
       {
         "file": "csl-square.webp",
@@ -11067,7 +10866,6 @@
     "name": "Rectangular cold-room LED lamp",
     "kind": "Model",
     "application": "Light a temperature-controlled storage area with a sealed luminaire sized for the available mounting position.",
-    "sourcePage": 123,
     "images": [
       {
         "file": "csl-rectangular.webp",
@@ -11105,7 +10903,6 @@
     "name": "Round cold-room LED lamp",
     "kind": "Model",
     "application": "Light a temperature-controlled storage area with a sealed luminaire sized for the available mounting position.",
-    "sourcePage": 123,
     "images": [
       {
         "file": "csl-round.webp",
@@ -11142,7 +10939,6 @@
     "name": "Cylindrical cold-room LED lamp",
     "kind": "Model",
     "application": "Light a temperature-controlled storage area with a sealed luminaire sized for the available mounting position.",
-    "sourcePage": 123,
     "images": [
       {
         "file": "csl-cylindrical.webp",
@@ -11178,7 +10974,6 @@
     "name": "Wall bracket for an outdoor unit",
     "kind": "Model",
     "application": "Support an outdoor A/C unit on a wall. Check the bracket reach against the unit footprint and the supporting wall.",
-    "sourcePage": 125,
     "images": [
       {
         "file": "j050-wall-bracket.webp",
@@ -11210,7 +11005,6 @@
     "name": "Wall bracket for an outdoor unit",
     "kind": "Model",
     "application": "Support an outdoor A/C unit on a wall. Check the bracket reach against the unit footprint and the supporting wall.",
-    "sourcePage": 125,
     "images": [
       {
         "file": "n-wall-bracket.webp",
@@ -11244,7 +11038,6 @@
     "name": "Wall bracket for an outdoor unit",
     "kind": "Model",
     "application": "Support an outdoor A/C unit on a wall. Check the bracket reach against the unit footprint and the supporting wall.",
-    "sourcePage": 125,
     "images": [
       {
         "file": "hg-wall-bracket.webp",
@@ -11278,7 +11071,6 @@
     "name": "Wall bracket for an outdoor unit",
     "kind": "Model",
     "application": "Support an outdoor A/C unit on a wall. Check the bracket reach against the unit footprint and the supporting wall.",
-    "sourcePage": 125,
     "images": [
       {
         "file": "ba-wall-bracket.webp",
@@ -11311,7 +11103,6 @@
     "name": "Recessed centrifugal air curtain",
     "kind": "Model",
     "application": "Direct a sheet of air across a doorway from a recessed housing. Select the width and fan setting to suit the opening.",
-    "sourcePage": 128,
     "images": [
       {
         "file": "xd-centrifugal-air-curtain.webp",
@@ -11506,7 +11297,6 @@
     "name": "Straight line-set cover",
     "kind": "Model",
     "application": "Enclose the straight run of refrigerant lines between an indoor and an outdoor unit.",
-    "sourcePage": 131,
     "images": [
       {
         "file": "gg-straight-cover.webp",
@@ -11584,7 +11374,6 @@
     "name": "Flexible line-set cover joint",
     "kind": "Model",
     "application": "Bridge a change of direction or alignment between rigid line-set cover sections.",
-    "sourcePage": 131,
     "images": [
       {
         "file": "rg-flexible-joint.webp",
@@ -11610,7 +11399,6 @@
     "name": "Ceiling cassette cleaning cover",
     "kind": "Model",
     "application": "Suspend the cover beneath a ceiling cassette to collect the wash water and direct it to a drain hose.",
-    "sourcePage": 132,
     "images": [
       {
         "file": "q-536.webp",
@@ -11642,7 +11430,6 @@
     "name": "Ceiling cassette cleaning cover",
     "kind": "Model",
     "application": "Suspend the cover beneath a ceiling cassette to collect the wash water and direct it to a drain hose.",
-    "sourcePage": 132,
     "images": [
       {
         "file": "q-539.webp",
@@ -11674,7 +11461,6 @@
     "name": "Wall-unit cleaning cover",
     "kind": "Model",
     "application": "Fit the cover around a wall-mounted indoor unit to capture cleaning water at the open face of the unit.",
-    "sourcePage": 132,
     "images": [
       {
         "file": "wall-unit-cleaning-cover.webp",
@@ -11703,7 +11489,6 @@
     "name": "Rigid-panel A/C cleaning cover",
     "kind": "Model",
     "application": "Support the cover around a wall unit and collect rinse water behind the front curtain and rear splash baffle.",
-    "sourcePage": 132,
     "images": [
       {
         "file": "rigid-cleaning-cover-collector.webp",
@@ -11741,7 +11526,6 @@
     "name": "Industrial centrifugal air curtain",
     "kind": "Model",
     "application": "Direct a high-volume air stream across an industrial doorway. Specify the site voltage with the model reference because the two versions have different dimensions and airflow.",
-    "sourcePage": 128,
     "images": [
       {
         "file": "gy-industrial-air-curtain.webp",
@@ -11797,13 +11581,11 @@
     "name": "Danfoss T2/TE2 thermostatic expansion valve body",
     "kind": "Order code",
     "application": "The sensing bulb follows the evaporator outlet temperature. Match the body charge to the refrigerant and the separately specified orifice to the required capacity.",
-    "sourcePage": 60,
     "images": [
       {
         "file": "t2-te2-bodies.webp",
         "alt": "Two Danfoss expansion valve bodies with coiled capillaries and sensing bulbs",
-        "caption": "T2/TE2 series photograph with flare-ended bodies. Port sizes and equalisation depend on the order code.",
-        "sourcePage": 60
+        "caption": "T2/TE2 series photograph with flare-ended bodies. Port sizes and equalisation depend on the order code."
       }
     ],
     "commonFacts": [
@@ -12329,13 +12111,11 @@
     "name": "Danfoss T2/TE2 thermostatic expansion valve body",
     "kind": "Order code",
     "application": "The sensing bulb follows the evaporator outlet temperature. Match the body charge to the refrigerant and the separately specified orifice to the required capacity.",
-    "sourcePage": 60,
     "images": [
       {
         "file": "t2-te2-bodies.webp",
         "alt": "Two Danfoss expansion valve bodies with coiled capillaries and sensing bulbs",
-        "caption": "T2/TE2 series photograph with flare-ended bodies. Port sizes and equalisation depend on the order code.",
-        "sourcePage": 60
+        "caption": "T2/TE2 series photograph with flare-ended bodies. Port sizes and equalisation depend on the order code."
       }
     ],
     "commonFacts": [
@@ -12887,13 +12667,11 @@
     "name": "Sanhua balanced-port thermostatic expansion valve",
     "kind": "Model",
     "application": "The built-in orifice meters refrigerant into the evaporator. The balanced port is suitable for reversible circuits, and the bulb senses temperature at the evaporator outlet.",
-    "sourcePage": 62,
     "images": [
       {
         "file": "rfgd-balanced-port-valves.webp",
         "alt": "Two brass expansion valves with capillary tubes and sensing bulbs",
-        "caption": "RFGD series photograph. The model determines the port sizes and nominal capacity.",
-        "sourcePage": 62
+        "caption": "RFGD series photograph. The model determines the port sizes and nominal capacity."
       }
     ],
     "commonFacts": [
@@ -12975,13 +12753,11 @@
     "name": "DCU air-cooled condensing unit",
     "kind": "Model",
     "application": "An air-cooled condenser and a Bitzer semi-hermetic reciprocating compressor share a cabinet. Select the medium- or low-temperature duty using capacity at the design evaporating temperature.",
-    "sourcePage": 8,
     "images": [
       {
         "file": "dcu-condenser-fans.webp",
         "alt": "Four fans on the condenser side of a DCU cabinet",
-        "caption": "DCU series cabinet detail. The four-fan arrangement shown varies by model.",
-        "sourcePage": 8
+        "caption": "DCU series cabinet detail. The four-fan arrangement shown varies by model."
       }
     ],
     "commonFacts": [
@@ -13363,13 +13139,11 @@
     "name": "LCU air-cooled condensing unit",
     "kind": "Model",
     "application": "An indoor unit with horizontal air discharge combines a Copeland scroll compressor and an air-cooled condenser. ZB compressors serve medium-temperature duty and ZF compressors serve low-temperature duty.",
-    "sourcePage": 9,
     "images": [
       {
         "file": "lcu-horizontal-discharge.webp",
         "alt": "LCU unit with a scroll compressor, copper lines, gauges and condenser fans",
-        "caption": "LCU series photograph. Fan count and compressor model vary with duty.",
-        "sourcePage": 9
+        "caption": "LCU series photograph. Fan count and compressor model vary with duty."
       }
     ],
     "commonFacts": [
@@ -13661,13 +13435,11 @@
     "name": "Panasonic R32 fixed-speed rotary compressor",
     "kind": "Model",
     "application": "This rotary compressor serves a single-phase R32 air-conditioning circuit. The T1 capacity and electrical supply provide the basis for model comparison.",
-    "sourcePage": 33,
     "images": [
       {
         "file": "panasonic-rotary-housings.webp",
         "alt": "Black rotary compressor shell with pipe connections and mounting feet",
-        "caption": "Panasonic rotary compressor family photograph. Housing and connections vary by model.",
-        "sourcePage": 33
+        "caption": "Panasonic rotary compressor family photograph. Housing and connections vary by model."
       }
     ],
     "commonFacts": [
@@ -13813,13 +13585,11 @@
     "name": "Mini tube cutter",
     "kind": "Model",
     "application": "The compact frame guides a cutting wheel around small-diameter refrigeration tube.",
-    "sourcePage": 97,
     "images": [
       {
         "file": "mini-tube-cutters.webp",
         "alt": "Two small wheel cutters for refrigeration tube",
-        "caption": "CT-127 and CT-128 mini cutter family. Refer to the model for the cutting range.",
-        "sourcePage": 97
+        "caption": "CT-127 and CT-128 mini cutter family. Refer to the model for the cutting range."
       }
     ],
     "commonFacts": [],
@@ -13834,13 +13604,11 @@
     "name": "Adjustable tube cutter",
     "kind": "Model",
     "application": "The screw feed advances the cutting wheel as the tool rotates around the tube.",
-    "sourcePage": 97,
     "images": [
       {
         "file": "adjustable-tube-cutters.webp",
         "alt": "Two tube cutters with screw feeds and black adjusting knobs",
-        "caption": "CT-274 and CT-312 cutter family. The maximum opening depends on the model.",
-        "sourcePage": 97
+        "caption": "CT-274 and CT-312 cutter family. The maximum opening depends on the model."
       }
     ],
     "commonFacts": [],
@@ -13855,13 +13623,11 @@
     "name": "Large-diameter tube cutter",
     "kind": "Model",
     "application": "An open frame and adjustable feed accept refrigeration tubing up to 66 mm outside diameter.",
-    "sourcePage": 97,
     "images": [
       {
         "file": "large-tube-cutter.webp",
         "alt": "Large wheel cutter with an open frame and blue adjusting knob",
-        "caption": "CT-206 tube cutter.",
-        "sourcePage": 97
+        "caption": "CT-206 tube cutter."
       }
     ],
     "commonFacts": [],
@@ -13875,13 +13641,11 @@
     "name": "Capillary tube cutter",
     "kind": "Model",
     "application": "A plier-style cutter for preparing capillary tube ends. Specify the tube size in the enquiry.",
-    "sourcePage": 97,
     "images": [
       {
         "file": "capillary-shears.webp",
         "alt": "Green-handled capillary tube shears",
-        "caption": "PTC-01 capillary cutter.",
-        "sourcePage": 97
+        "caption": "PTC-01 capillary cutter."
       }
     ],
     "commonFacts": [],
@@ -13895,13 +13659,11 @@
     "name": "Hydraulic tube expander kit",
     "kind": "Model",
     "application": "The expander forms the socket end of a tube joint. The matching cutter and deburrer prepare the tube before expansion.",
-    "sourcePage": 98,
     "images": [
       {
         "file": "hydraulic-expander-kit.webp",
         "alt": "Open case with a tube expander, interchangeable heads and preparation tools",
-        "caption": "CT-300 series kit. Expander heads depend on the inch or metric model.",
-        "sourcePage": 98
+        "caption": "CT-300 series kit. Expander heads depend on the inch or metric model."
       }
     ],
     "commonFacts": [
@@ -13925,13 +13687,11 @@
     "name": "Hand-lever tube expander kit",
     "kind": "Model",
     "application": "The expander forms the socket end of a tube joint. The matching cutter and deburrer prepare the tube before expansion.",
-    "sourcePage": 98,
     "images": [
       {
         "file": "manual-expander-kit.webp",
         "alt": "Open case with a tube expander, interchangeable heads and preparation tools",
-        "caption": "CT-100 series kit. Expander heads depend on the inch or metric model.",
-        "sourcePage": 98
+        "caption": "CT-100 series kit. Expander heads depend on the inch or metric model."
       }
     ],
     "commonFacts": [
@@ -13951,13 +13711,11 @@
     "name": "Manual refrigeration oil charging pump",
     "kind": "Model",
     "application": "The pump handle delivers oil one stroke at a time. Choose the model by the service connection and the pressure required to transfer oil.",
-    "sourcePage": 98,
     "images": [
       {
         "file": "oil-charging-pump.webp",
         "alt": "Hand pump with a T-handle, metal pickup tube and side connection",
-        "caption": "PCO series pump photograph. Connections and delivery per stroke vary by model.",
-        "sourcePage": 98
+        "caption": "PCO series pump photograph. Connections and delivery per stroke vary by model."
       }
     ],
     "commonFacts": [],
@@ -13972,13 +13730,11 @@
     "name": "Electronic refrigerant charging scale",
     "kind": "Model",
     "application": "Place the cylinder on the platform to monitor its change in mass as refrigerant is added or recovered.",
-    "sourcePage": 105,
     "images": [
       {
         "file": "rc-charging-scale.webp",
         "alt": "RC charging scale in its carrying case with the display beside the platform",
-        "caption": "RC series scale and case. Capacity and resolution are model-specific.",
-        "sourcePage": 105
+        "caption": "RC series scale and case. Capacity and resolution are model-specific."
       }
     ],
     "commonFacts": [
@@ -14024,13 +13780,11 @@
     "name": "Electronic refrigerant charging scale",
     "kind": "Model",
     "application": "Place the cylinder on the platform to monitor its change in mass as refrigerant is added or recovered.",
-    "sourcePage": 105,
     "images": [
       {
         "file": "ers-charging-scale.webp",
         "alt": "Charging scale with a separate wired display in an open case",
-        "caption": "ERS series scale and case. Capacity and resolution are model-specific.",
-        "sourcePage": 105
+        "caption": "ERS series scale and case. Capacity and resolution are model-specific."
       }
     ],
     "commonFacts": [
@@ -14063,6 +13817,695 @@
       "ERS-50": [],
       "ERS-70": [],
       "ERS-100": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Evaporator fan motors",
+    "name": "Evaporator fan motor",
+    "kind": "Model",
+    "application": "Drives the fan that circulates air across an evaporator. Check the shaft and mounting dimensions against the existing assembly.",
+    "images": [
+      {
+        "file": "evaporator-motor-f61-10.webp",
+        "alt": "F61-10 evaporator fan motor and drive shaft",
+        "caption": "F61-10 motor, shown from the shaft end."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "F61-10": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Evaporator fan motors",
+    "name": "Evaporator fan motor",
+    "kind": "Model",
+    "application": "Drives the fan that circulates air across an evaporator. Check the shaft and mounting dimensions against the existing assembly.",
+    "images": [
+      {
+        "file": "evaporator-motor-sm-670.webp",
+        "alt": "SM-670 evaporator fan motor and drive shaft",
+        "caption": "SM-670 motor, shown from the shaft end."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "SM-670": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Evaporator fan motors",
+    "name": "Evaporator fan motor",
+    "kind": "Model",
+    "application": "Drives the fan that circulates air across an evaporator. Check the shaft and mounting dimensions against the existing assembly.",
+    "images": [
+      {
+        "file": "evaporator-motor-is-3210arcb.webp",
+        "alt": "IS-3210ARCB evaporator fan motor and drive shaft",
+        "caption": "IS-3210ARCB motor, shown from the shaft end."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "IS-3210ARCB": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Evaporator fan motors",
+    "name": "Evaporator fan motor",
+    "kind": "Model",
+    "application": "Drives the fan that circulates air across an evaporator. Check the shaft and mounting dimensions against the existing assembly.",
+    "images": [
+      {
+        "file": "evaporator-motor-is-3210dwnff.webp",
+        "alt": "IS-3210DWNFF evaporator fan motor and drive shaft",
+        "caption": "IS-3210DWNFF motor, shown from the shaft end."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "IS-3210DWNFF": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Evaporator fan motors",
+    "name": "Evaporator fan motor",
+    "kind": "Model",
+    "application": "Drives the fan that circulates air across an evaporator. Check the shaft and mounting dimensions against the existing assembly.",
+    "images": [
+      {
+        "file": "evaporator-motor-ma-61103d-em.webp",
+        "alt": "MA-61103D-EM evaporator fan motor and drive shaft",
+        "caption": "MA-61103D-EM motor, shown from the shaft end."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "MA-61103D-EM": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Evaporator fan motors",
+    "name": "Evaporator fan motor",
+    "kind": "Model",
+    "application": "Drives the fan that circulates air across an evaporator. Check the shaft and mounting dimensions against the existing assembly.",
+    "images": [
+      {
+        "file": "evaporator-motor-sm-101j.webp",
+        "alt": "SM-101J evaporator fan motor and drive shaft",
+        "caption": "SM-101J motor, shown from the shaft end."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "SM-101J": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Evaporator fan motors",
+    "name": "Evaporator fan motor",
+    "kind": "Model",
+    "application": "Drives the fan that circulates air across an evaporator. Check the shaft and mounting dimensions against the existing assembly.",
+    "images": [
+      {
+        "file": "evaporator-motor-sm-672.webp",
+        "alt": "SM-672 evaporator fan motor and drive shaft",
+        "caption": "SM-672 motor, shown from the shaft end."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "SM-672": []
+    }
+  },
+  {
+    "range": "motors-and-controls",
+    "family": "Evaporator fan motors",
+    "name": "Evaporator fan motor",
+    "kind": "Model",
+    "application": "Drives the fan that circulates air across an evaporator. Check the shaft and mounting dimensions against the existing assembly.",
+    "images": [
+      {
+        "file": "evaporator-motor-sm-999.webp",
+        "alt": "SM-999 evaporator fan motor and drive shaft",
+        "caption": "SM-999 motor, shown from the shaft end."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "SM-999": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Refrigerant service couplers",
+    "name": "Refrigerant service coupler",
+    "kind": "Model",
+    "application": "Connects a service hose at the refrigeration service port. Select the matching coupling and hose interface.",
+    "images": [
+      {
+        "file": "service-coupler-qc-12.webp",
+        "alt": "Red and blue QC-12 series refrigerant service couplers",
+        "caption": "QC-12 series pair. The selected model identifies one coupler."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "QC-12H": [],
+      "QC-12L": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Refrigerant service couplers",
+    "name": "Refrigerant service coupler",
+    "kind": "Model",
+    "application": "Connects a service hose at the refrigeration service port. Select the matching coupling and hose interface.",
+    "images": [
+      {
+        "file": "service-coupler-qc-15.webp",
+        "alt": "Red and blue QC-15 series refrigerant service couplers",
+        "caption": "QC-15 series pair. The selected model identifies one coupler."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "QC-15H": [],
+      "QC-15L": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Refrigerant service couplers",
+    "name": "Refrigerant service coupler",
+    "kind": "Model",
+    "application": "Connects a service hose at the refrigeration service port. Select the matching coupling and hose interface.",
+    "images": [
+      {
+        "file": "service-coupler-qc-19.webp",
+        "alt": "Red and blue QC-19 series refrigerant service couplers",
+        "caption": "QC-19 series pair. The selected model identifies one coupler."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "QC-19H": [],
+      "QC-19L": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Refrigerant service couplers",
+    "name": "Refrigerant service coupler",
+    "kind": "Model",
+    "application": "Connects a service hose at the refrigeration service port. Select the matching coupling and hose interface.",
+    "images": [
+      {
+        "file": "service-coupler-qc-18.webp",
+        "alt": "Red and blue QC-18 series refrigerant service couplers",
+        "caption": "QC-18 series pair. The selected model identifies one coupler."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "QC-18H": [],
+      "QC-18L": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Refrigerant service couplers",
+    "name": "Refrigerant service coupler",
+    "kind": "Model",
+    "application": "Connects a service hose at the refrigeration service port. Select the matching coupling and hose interface.",
+    "images": [
+      {
+        "file": "service-coupler-qc-1234.webp",
+        "alt": "Red and blue QC-1234 series refrigerant service couplers",
+        "caption": "QC-1234 series pair. The selected model identifies one coupler."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "QC-1234H": [],
+      "QC-1234L": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Valve core removal tools",
+    "name": "Service-port valve core tool",
+    "kind": "Model",
+    "application": "Provides access to the valve core through the service connection during charging or evacuation.",
+    "images": [
+      {
+        "file": "valve-core-tool-vcr-01.webp",
+        "alt": "VCR-01 brass valve core tool",
+        "caption": "VCR-01 service tool and adaptor."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "VCR-01": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Valve core removal tools",
+    "name": "Service-port valve core tool",
+    "kind": "Model",
+    "application": "Provides access to the valve core through the service connection during charging or evacuation.",
+    "images": [
+      {
+        "file": "valve-core-tool-vcr-02.webp",
+        "alt": "VCR-02 brass valve core tool",
+        "caption": "VCR-02 service tool and adaptor."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "VCR-02": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Tube piercing valves",
+    "name": "Tube piercing valve",
+    "kind": "Model",
+    "application": "Provides a service connection on tubing within the specified diameter range.",
+    "images": [
+      {
+        "file": "tube-piercing-valve-pv-341.webp",
+        "alt": "PV-341 tube piercing valve",
+        "caption": "PV-341 valve body."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "PV-341": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Tube piercing valves",
+    "name": "Tube piercing valve",
+    "kind": "Model",
+    "application": "Provides a service connection on tubing within the specified diameter range.",
+    "images": [
+      {
+        "file": "tube-piercing-valve-pv-21.webp",
+        "alt": "PV-21 tube piercing valve",
+        "caption": "PV-21 valve body."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "PV-21": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Tube piercing valves",
+    "name": "Tube piercing valve",
+    "kind": "Model",
+    "application": "Provides a service connection on tubing within the specified diameter range.",
+    "images": [
+      {
+        "file": "tube-piercing-valve-pv-31.webp",
+        "alt": "PV-31 tube piercing valve",
+        "caption": "PV-31 valve body."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "PV-31": []
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Studded anti-vibration mounts",
+    "name": "Studded anti-vibration mount",
+    "kind": "Model",
+    "application": "Mounts equipment on a vibration-isolating foot with a projecting stud and two fixing holes.",
+    "images": [
+      {
+        "file": "studded-mount-avm-001.webp",
+        "alt": "Studded black mounting foot with a rectangular base",
+        "caption": "AVM-001 mounting foot. Refer to the model dimensions for the hole pattern."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "AVM-001-A": [
+        [
+          "Dimensions D / E / F / G (mm)",
+          "37 / 37 / 61 / 41"
+        ],
+        [
+          "Dimensions H / I / J / K (mm)",
+          "30 / 22 / 8 / 20"
+        ]
+      ]
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Studded anti-vibration mounts",
+    "name": "Studded anti-vibration mount",
+    "kind": "Model",
+    "application": "Mounts equipment on a vibration-isolating foot with a projecting stud and two fixing holes.",
+    "images": [
+      {
+        "file": "studded-mount-avm-002.webp",
+        "alt": "Studded black mounting foot with a rectangular base",
+        "caption": "AVM-002 mounting foot. Refer to the model dimensions for the hole pattern."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "AVM-002-A": [
+        [
+          "Dimensions D / E / F / G (mm)",
+          "48 / 38 / 58 / 36"
+        ],
+        [
+          "Dimensions H / I / J / K (mm)",
+          "35 / 30 / 8 / 20"
+        ]
+      ],
+      "AVM-002-B": [
+        [
+          "Dimensions D / E / F / G (mm)",
+          "53 / 43 / 60 / 40"
+        ],
+        [
+          "Dimensions H / I / J / K (mm)",
+          "36 / 30 / 8 / 20"
+        ]
+      ],
+      "AVM-002-C": [
+        [
+          "Dimensions D / E / F / G (mm)",
+          "50 / 38 / 121 / 90"
+        ],
+        [
+          "Dimensions H / I / J / K (mm)",
+          "35 / 26 / 8 / 20"
+        ]
+      ]
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Studded anti-vibration mounts",
+    "name": "Studded anti-vibration mount",
+    "kind": "Model",
+    "application": "Mounts equipment on a vibration-isolating foot with a projecting stud and two fixing holes.",
+    "images": [
+      {
+        "file": "studded-mount-avm-112.webp",
+        "alt": "Studded black mounting foot with a rectangular base",
+        "caption": "AVM-112 mounting foot. Refer to the model dimensions for the hole pattern."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "AVM-112": [
+        [
+          "Dimensions D / E / F / G (mm)",
+          "50 / 41 / 61 / 41"
+        ],
+        [
+          "Dimensions H / I / J / K (mm)",
+          "35 / 26 / 8 / 20"
+        ]
+      ]
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Anti-vibration support rails",
+    "name": "Anti-vibration equipment support rail",
+    "kind": "Model",
+    "application": "Supports equipment along a mounting rail. Check the available footprint and required load with the enquiry.",
+    "images": [
+      {
+        "file": "avm-support-rail.webp",
+        "alt": "Black equipment support rail with an inset metal channel",
+        "caption": "AVM support rail series. Length and cross-section vary by model."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "AVM-250": [],
+      "AVM-400": [],
+      "AVM-450": [],
+      "AVM-500": [],
+      "AVM-600": [],
+      "AVM-1000": []
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Cold-room cam-lift hinges",
+    "name": "Reversible cam-lift door hinge",
+    "kind": "Model",
+    "application": "The cam lifts the door as it opens. Check the door offset and fixing pattern when matching an existing hinge.",
+    "images": [
+      {
+        "file": "door-hinge-lh-1138.webp",
+        "alt": "LH-1138 reversible cold-room door hinge",
+        "caption": "LH-1138 hinge for a reach-in door."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "LH-1138": []
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Cold-room cam-lift hinges",
+    "name": "Reversible cam-lift door hinge",
+    "kind": "Model",
+    "application": "The cam lifts the door as it opens. Check the door offset and fixing pattern when matching an existing hinge.",
+    "images": [
+      {
+        "file": "door-hinge-lh-1140.webp",
+        "alt": "LH-1140 reversible cold-room door hinge",
+        "caption": "LH-1140 hinge for a reach-in door."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "LH-1140": []
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Cold-room cam-lift hinges",
+    "name": "Reversible cam-lift door hinge",
+    "kind": "Model",
+    "application": "The cam lifts the door as it opens. Check the door offset and fixing pattern when matching an existing hinge.",
+    "images": [
+      {
+        "file": "door-hinge-lh-1191.webp",
+        "alt": "LH-1191 reversible cold-room door hinge",
+        "caption": "LH-1191 hinge for a reach-in door."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "LH-1191": []
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Cold-room cam-lift hinges",
+    "name": "Reversible cam-lift door hinge",
+    "kind": "Model",
+    "application": "The cam lifts the door as it opens. Check the door offset and fixing pattern when matching an existing hinge.",
+    "images": [
+      {
+        "file": "door-hinge-lh-1192.webp",
+        "alt": "LH-1192 reversible cold-room door hinge",
+        "caption": "LH-1192 hinge for a reach-in door."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "LH-1192": []
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Cold-room cam-lift hinges",
+    "name": "Reversible cam-lift door hinge",
+    "kind": "Model",
+    "application": "The cam lifts the door as it opens. Check the door offset and fixing pattern when matching an existing hinge.",
+    "images": [
+      {
+        "file": "door-hinge-lh-1158.webp",
+        "alt": "LH-1158 reversible cold-room door hinge",
+        "caption": "LH-1158 hinge for a reach-in door."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "LH-1158": []
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Cold-room cam-lift hinges",
+    "name": "Reversible cam-lift door hinge",
+    "kind": "Model",
+    "application": "The cam lifts the door as it opens. Check the door offset and fixing pattern when matching an existing hinge.",
+    "images": [
+      {
+        "file": "door-hinge-lh-1128.webp",
+        "alt": "LH-1128 reversible cold-room door hinge",
+        "caption": "LH-1128 hinge for a reach-in door."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "LH-1128": []
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Cold-room cam-lift hinges",
+    "name": "Reversible cam-lift door hinge",
+    "kind": "Model",
+    "application": "The cam lifts the door as it opens. Check the door offset and fixing pattern when matching an existing hinge.",
+    "images": [
+      {
+        "file": "door-hinge-lh-1238a.webp",
+        "alt": "LH-1238A reversible cold-room door hinge",
+        "caption": "LH-1238A hinge for a reach-in door."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "LH-1238A": []
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Cold-room cam-lift hinges",
+    "name": "Reversible cam-lift door hinge",
+    "kind": "Model",
+    "application": "The cam lifts the door as it opens. Check the door offset and fixing pattern when matching an existing hinge.",
+    "images": [
+      {
+        "file": "door-hinge-lh-1230a.webp",
+        "alt": "LH-1230A reversible cold-room door hinge",
+        "caption": "LH-1230A hinge for a reach-in door."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "LH-1230A": []
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Cold-room cam-lift hinges",
+    "name": "Reversible cam-lift door hinge",
+    "kind": "Model",
+    "application": "The cam lifts the door as it opens. Check the door offset and fixing pattern when matching an existing hinge.",
+    "images": [
+      {
+        "file": "door-hinge-lh-1138b.webp",
+        "alt": "LH-1138B reversible cold-room door hinge",
+        "caption": "LH-1138B hinge for a reach-in door."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "LH-1138B": []
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Cold-room cam-lift hinges",
+    "name": "Reversible cam-lift door hinge",
+    "kind": "Model",
+    "application": "The cam lifts the door as it opens. Check the door offset and fixing pattern when matching an existing hinge.",
+    "images": [
+      {
+        "file": "door-hinge-lh-1130b.webp",
+        "alt": "LH-1130B reversible cold-room door hinge",
+        "caption": "LH-1130B hinge for a reach-in door."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "LH-1130B": []
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Cold-room door closers",
+    "name": "Cold-room door closer",
+    "kind": "Model",
+    "application": "Draws the door into its closed position as the mechanism engages the catch.",
+    "images": [
+      {
+        "file": "door-closer-lh-2000.webp",
+        "alt": "LH-2000 cold-room door closer and catch",
+        "caption": "LH-2000 closer and mating catch."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "LH-2000": []
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "Cold-room door closers",
+    "name": "Cold-room door closer",
+    "kind": "Model",
+    "application": "Draws the door into its closed position as the mechanism engages the catch.",
+    "images": [
+      {
+        "file": "door-closer-lh-200.webp",
+        "alt": "LH-200 cold-room door closer and catch",
+        "caption": "LH-200 closer and mating catch."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "LH-200": []
+    }
+  },
+  {
+    "range": "cold-rooms-and-installation",
+    "family": "A/C disconnect switch boxes",
+    "name": "A/C disconnect switch box",
+    "kind": "Model",
+    "application": "Provides local electrical isolation for an outdoor unit. The removable cover gives access to the wiring compartment.",
+    "images": [
+      {
+        "file": "ac-disconnect-box.webp",
+        "alt": "Closed and open metal disconnect boxes with a removable front cover",
+        "caption": "DSB series enclosures. Fuse arrangement and motor rating depend on the model."
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "DSB-30A": [],
+      "DSB-60A": [],
+      "DSB-60AN": []
     }
   }
 ]

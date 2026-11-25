@@ -1,8 +1,7 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { Link, useLocation } from 'react-router';
 import { CatalogueFigure } from '../components/CatalogueCards';
-import { capabilityInquiryPath } from '../data/inquiry';
-import { articleByPath, productArticle, type CatalogueArticle } from '../data/refrigeration-articles';
+import { articleByPath, articleInquiryPath, productArticle, type CatalogueArticle } from '../data/refrigeration-articles';
 import { refrigerationFamilyPath, refrigerationPath } from '../data/refrigeration';
 import NotFound from './NotFound';
 
@@ -33,9 +32,10 @@ export default function RefrigerationArticle() {
         <div className="article-copy">
           <div className="article-kind">{kind}</div>
           <h1>{reference}</h1>
+          {article.number && <p className="article-number">Komponia article no. <strong>{article.number}</strong></p>}
           <p className="article-name">{profile?.name ?? product.title}</p>
           <p className="article-application">{profile?.application ?? product.description}</p>
-          <Link to={capabilityInquiryPath(product.title + ' / ' + reference, 'component')} className="btn-primary-l">Enquire about {reference} <ArrowRight size={17} aria-hidden="true" /></Link>
+          <Link to={articleInquiryPath(article)} className="btn-primary-l">Enquire about {reference} <ArrowRight size={17} aria-hidden="true" /></Link>
         </div>
         {profile?.images[0] && <CatalogueFigure image={profile.images[0]} priority />}
       </header>

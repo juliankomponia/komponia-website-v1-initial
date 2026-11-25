@@ -1,3 +1,5 @@
+import numbers from './refrigeration-numbers.json';
+import { capabilityInquiryPath } from './inquiry';
 import profiles from './refrigeration-articles.json';
 import { refrigerationPath, refrigerationRanges, type RefrigerationProduct, type RefrigerationRange } from './refrigeration';
 
@@ -9,7 +11,6 @@ type ArticleProfile = {
   name: string;
   kind: string;
   application: string;
-  sourcePage: number;
   images: CatalogueImage[];
   commonFacts: Fact[];
   variants: Partial<Record<string, Fact[]>>;
@@ -23,6 +24,7 @@ export type CatalogueArticle = {
   fields: Fact[];
   kind: string;
   profile?: ArticleProfile;
+  number?: string;
 };
 
 function referenceSlug(reference: string) {
@@ -33,6 +35,7 @@ export function catalogueImagePath(image: CatalogueImage) {
   return import.meta.env.BASE_URL + 'catalogue/' + image.file;
 }
 
+const approvedNumbers: Readonly<Record<string, string>> = numbers;
 const byProduct = new Map<RefrigerationProduct, Map<string, CatalogueArticle>>();
 const byPath = new Map<string, CatalogueArticle>();
 
@@ -44,7 +47,7 @@ for (const range of refrigerationRanges) {
     for (const [reference, ...values] of [...rows, ...extra]) {
       const path = refrigerationPath + '/' + range.slug + '/' + referenceSlug(reference);
       const fields = values.map((value, index) => [columns[index + 1], value]);
-      const article = { range, product, reference, path, fields, kind: columns[0] };
+      const article = { range, product, reference, path, fields, kind: columns[0], number: approvedNumbers[path] };
       articles.set(reference, article);
       byPath.set(path, article);
     }
@@ -63,6 +66,11 @@ for (const series of profiles satisfies ArticleProfile[]) {
       article.kind = series.kind;
     }
   }
+}
+
+export function articleInquiryPath(article: CatalogueArticle) {
+  const reference = [article.number, article.product.title, article.reference].filter(Boolean).join(' / ');
+  return capabilityInquiryPath(reference, 'component');
 }
 
 export function articleByPath(path: string) { return byPath.get(path); }

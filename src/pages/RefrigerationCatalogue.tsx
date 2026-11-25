@@ -2,7 +2,7 @@ import { ArrowLeft, ArrowRight, Search } from 'lucide-react';
 import { Link, useParams, useSearchParams } from 'react-router';
 import { capabilityInquiryPath } from '../data/inquiry';
 import { ArticleCard, CatalogueFigure } from '../components/CatalogueCards';
-import { familyFeature, productArticle, rangeFeature } from '../data/refrigeration-articles';
+import { articleInquiryPath, familyFeature, productArticle, rangeFeature } from '../data/refrigeration-articles';
 import {
   refrigerationFamilyPath, refrigerationPath, refrigerationRanges, refrigerationSummary, refrigerationTitle,
   type RefrigerationProduct,
@@ -20,8 +20,12 @@ function matchProduct(product: RefrigerationProduct, groupTitle: string, query: 
   const family = [groupTitle, product.title, product.description].map(searchKey);
   const remaining = words.filter(word => !family.some(field => field.includes(word)));
   const { comparison, example } = product;
-  const exact = query.trim() && comparison.rows.find(row => searchKey(row[0]) === searchKey(query));
-  if (exact) return { product, rows: [exact], narrowed: true, example: example?.reference === exact[0] ? example : undefined };
+  const needle = searchKey(query);
+  const literal = query.trim().toLowerCase();
+  const literalRows = comparison.rows.filter(([ref]) => ref.toLowerCase() === literal);
+  const exact = literalRows.length ? literalRows : comparison.rows.filter(([ref]) =>
+    needle && (searchKey(ref) === needle || searchKey(productArticle(product, ref)?.number ?? '') === needle));
+  if (exact.length) return { product, rows: exact, narrowed: true, example: exact.some(([ref]) => ref === example?.reference) ? example : undefined };
   if (!remaining.length) return { product, rows: comparison.rows, narrowed: false, example };
 
   function matches(fields: string[]) {
@@ -31,10 +35,12 @@ function matchProduct(product: RefrigerationProduct, groupTitle: string, query: 
   const context = [comparison.caption, ...comparison.columns];
   const rows = comparison.rows.filter(row => {
     if (matches([...context, ...row])) return true;
-    const series = productArticle(product, row[0])?.profile;
+    const article = productArticle(product, row[0]);
+    if (article?.number && matches([...context, ...row, article.number])) return true;
+    const series = article?.profile;
     return series && matches([...context, ...row, series.name, series.application, ...series.commonFacts.flat(), ...(series.variants[row[0]] ?? []).flat()]);
   });
-  const matchedExample = example && matches([example.reference, example.specification]) ? example : undefined;
+  const matchedExample = example && matches([example.reference, example.specification, productArticle(product, example.reference)?.number ?? '']) ? example : undefined;
   if (!rows.length && !matchedExample) return null;
   return { product, rows, narrowed: true, example: matchedExample };
 }
@@ -49,9 +55,11 @@ function Comparison({ product, rows, narrowed }: ProductMatch) {
       <caption>{caption}</caption>
       <thead><tr>{columns.map(column => <th key={column} scope="col">{column}</th>)}<th scope="col">Enquiry</th></tr></thead>
       <tbody>{rows.map(([reference, ...values]) => <tr key={reference}>
-        <th scope="row"><Link className="hvacr-reference" to={productArticle(product, reference)!.path}>{reference}</Link></th>
+        <th scope="row"><Link className="hvacr-reference" to={productArticle(product, reference)!.path}>{reference}</Link>
+          {productArticle(product, reference)?.number && <small className="hvacr-number">{productArticle(product, reference)!.number}</small>}
+        </th>
         {values.map((value, index) => <td key={columns[index + 1]}>{value}</td>)}
-        <td><Link className="hvacr-link" to={capabilityInquiryPath(product.title + ' / ' + reference, 'component')}
+        <td><Link className="hvacr-link" to={articleInquiryPath(productArticle(product, reference)!)}
           aria-label={'Request ' + reference}>Enquire <ArrowRight size={15} aria-hidden="true" /></Link></td>
       </tr>)}</tbody>
     </table>
@@ -148,7 +156,7 @@ export default function RefrigerationCatalogue() {
         <div className="hvacr-search" role="search" aria-label="Catalogue">
           <Search size={18} aria-hidden="true" />
           <label className="sr-only" htmlFor="hvacr-query">{range ? 'Search this range' : 'Search the catalogue'}</label>
-          <input id="hvacr-query" type="search" placeholder={range ? 'Search this range' : 'Search by product or model'} value={query} onChange={event => updateQuery(event.target.value)} />
+          <input id="hvacr-query" type="search" placeholder={range ? 'Search this range' : 'Article no., model or product'} value={query} onChange={event => updateQuery(event.target.value)} />
           {query && <button type="button" onClick={() => updateQuery('')}>Clear</button>}
         </div>
       </div>

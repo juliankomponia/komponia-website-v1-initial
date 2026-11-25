@@ -17,8 +17,8 @@ export default function HomeCatalogueLookup() {
           const query = String(new FormData(event.currentTarget).get('q') ?? '').trim();
           navigate({ pathname: refrigerationPath, search: query ? new URLSearchParams({ q: query }).toString() : '' });
         }}>
-          <label htmlFor="home-catalogue-query" className="sr-only">Product or model reference</label>
-          <input id="home-catalogue-query" type="search" name="q" placeholder="Product or model reference" />
+          <label htmlFor="home-catalogue-query" className="sr-only">Article no., model or product</label>
+          <input id="home-catalogue-query" type="search" name="q" placeholder="Article no., model or product" />
           <button type="submit" aria-label="Search catalogue"><Search size={20} aria-hidden="true" /></button>
         </form>
         <Link className="hvacr-link" to={refrigerationPath}>Browse all ranges <ArrowRight size={16} aria-hidden="true" /></Link>
