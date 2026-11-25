@@ -87,6 +87,12 @@
 .catalogue-range-example > span { display: flex; flex-wrap: wrap; gap: .4rem; align-items: baseline; margin: .7rem 0 1rem; }
 .catalogue-range-example > span svg { align-self: center; }
 .catalogue-range h3 { border-top: 1px solid #bdbdb5; padding-top: .8rem; }
+.catalogue-family-links { margin-top: .8rem; }
+.catalogue-family-links summary { width: fit-content; cursor: pointer; color: #2d45bd; }
+.catalogue-family-links ul { list-style: none; margin: .45rem 0 0; padding: 0; }
+.catalogue-family-links li a { display: block; padding: .4rem 0; color: #2d45bd; }
+.catalogue-family-links a:hover, .article-related a:hover { text-decoration: underline; }
+.article-related { display: grid; justify-items: start; gap: .65rem; margin: 1.4rem 0; }
 .catalogue-range p { font-size: .92rem; }
 .hvacr-family .hvacr-example { margin-top: 1rem; }
 .hvacr-reference { color: #2d45bd; text-decoration: underline; text-underline-offset: 3px; }

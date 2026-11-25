@@ -1,6 +1,9 @@
 import catalogue from './refrigeration-catalogue.json';
 
 export const refrigerationPath = '/refrigeration-catalogue';
+export function refrigerationFamilyPath(rangeSlug: string, family: string) {
+  return refrigerationPath + '/' + rangeSlug + '?' + new URLSearchParams({ family });
+}
 export const refrigerationTitle = 'Refrigeration & air-conditioning catalogue';
 export const refrigerationSummary = 'Komponia distributes refrigeration equipment, components and service tools. Browse by product family or look up a model reference to prepare an inquiry.';
 
@@ -9,6 +12,7 @@ export type RefrigerationProduct = {
   description: string;
   // Printed pages in the 2026 distribution catalogue, revision 04.
   sourcePages: string;
+  relatedFamilies?: string[];
   example?: { reference: string; specification: string };
   comparison: {
     sourcePages: string;

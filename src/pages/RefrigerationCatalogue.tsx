@@ -4,7 +4,7 @@ import { capabilityInquiryPath } from '../data/inquiry';
 import { ArticleCard, CatalogueFigure } from '../components/CatalogueCards';
 import { familyFeature, productArticle, rangeFeature } from '../data/refrigeration-articles';
 import {
-  refrigerationPath, refrigerationRanges, refrigerationSummary, refrigerationTitle,
+  refrigerationFamilyPath, refrigerationPath, refrigerationRanges, refrigerationSummary, refrigerationTitle,
   type RefrigerationProduct,
 } from '../data/refrigeration';
 import NotFound from './NotFound';
@@ -88,28 +88,31 @@ function ProductRow({ match }: { match: ProductMatch }) {
 }
 
 const rangeFeatures: Record<string, string> = {
-  'cooling-units': 'Truck refrigeration units',
+  'cooling-units': 'DCU semi-hermetic condensing units',
   'heat-exchangers': 'Microchannel condensers',
-  'compressors': 'Semi-hermetic piston and screw compressors',
+  'compressors': 'R32 fixed-speed rotary compressors',
   'fluids-and-pipework': 'Copper and brass fittings',
-  'circuit-components': 'Solenoid valves',
+  'circuit-components': 'T2/TE2 flare-to-flare valve bodies',
   'motors-and-controls': 'Shaded-pole and EC motors',
-  'service-tools': 'Tube working tools',
+  'service-tools': 'Electronic refrigerant charging scales',
   'cold-rooms-and-installation': 'Cold-room LED lighting',
 };
 
 export default function RefrigerationCatalogue() {
   const { rangeSlug } = useParams();
   const [params, setParams] = useSearchParams();
-  const query = params.get('q') ?? '';
+  const selectedFamily = params.get('family');
+  const query = params.get('q') ?? selectedFamily ?? '';
   const range = refrigerationRanges.find(item => item.slug === rangeSlug);
   if (rangeSlug && !range) return <NotFound />;
 
   const groups = range ? [range] : refrigerationRanges;
-  const hero = range ? undefined : rangeFeature(refrigerationRanges[0], 'Low-profile rotary condensing units');
+  const hero = range ? undefined : rangeFeature(refrigerationRanges[0], 'LCU indoor scroll condensing units');
   const results = groups.map(group => ({
     ...group,
-    products: group.products.map(product => matchProduct(product, group.title, query))
+    products: group.products
+      .filter(product => !selectedFamily || product.title === selectedFamily)
+      .map(product => matchProduct(product, group.title, query))
       .filter((match): match is ProductMatch => match !== null),
   })).filter(group => group.products.length);
   const searching = Boolean(query.trim());
@@ -160,6 +163,12 @@ export default function RefrigerationCatalogue() {
             </Link>}
             <h3><Link to={refrigerationPath + '/' + group.slug}>{group.title} <ArrowRight size={18} aria-hidden="true" /></Link></h3>
             <p>{group.description}</p>
+            <details className="catalogue-family-links">
+              <summary>Browse {group.products.length} product families</summary>
+              <ul>{group.products.map(product => <li key={product.title}>
+                <Link to={refrigerationFamilyPath(group.slug, product.title)}>{product.title}</Link>
+              </li>)}</ul>
+            </details>
           </section>;
         })}
       </div>}
@@ -169,7 +178,7 @@ export default function RefrigerationCatalogue() {
       </p>
       {showProducts && results.map(group => <section key={group.slug} aria-label={group.title} className="hvacr-results">
         {!range && <h2><Link to={refrigerationPath + '/' + group.slug}>{group.title} <ArrowRight size={17} aria-hidden="true" /></Link></h2>}
-        {group.products.map(match => <ProductRow key={match.product.title} match={match} />)}
+        {group.products.map(match => <ProductRow key={match.product.title} match={selectedFamily ? { ...match, narrowed: true } : match} />)}
       </section>)}
       {searching && count === 0 && <p className="hvacr-empty">Try a shorter reference or <Link className="hvacr-link" to={capabilityInquiryPath(query.trim().slice(0, 200), 'component')}>ask Komponia about this item <ArrowRight size={16} aria-hidden="true" /></Link>.</p>}
     </div>

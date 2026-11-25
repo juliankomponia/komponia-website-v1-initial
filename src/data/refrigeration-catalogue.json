@@ -30,6 +30,65 @@
         }
       },
       {
+        "title": "DCU semi-hermetic condensing units",
+        "description": "An air-cooled condenser and a Bitzer semi-hermetic reciprocating compressor share a cabinet. Select the medium- or low-temperature duty using capacity at the design evaporating temperature.",
+        "sourcePages": "8",
+        "comparison": {
+          "sourcePages": "8",
+          "caption": "R404A cooling capacities at −20 °C evaporating temperature. The article lists the other rating points for its duty.",
+          "columns": ["Model", "Duty", "Compressor model", "Cooling at −20 °C (W)"],
+          "rows": [
+            ["DCU-3M", "Medium temperature", "2DES-3Y", "3870"],
+            ["DCU-4M", "Medium temperature", "2CES-4Y", "4880"],
+            ["DCU-5M", "Medium temperature", "4FES-5Y", "5250"],
+            ["DCU-6M", "Medium temperature", "4EES-6Y", "6520"],
+            ["DCU-7M", "Medium temperature", "4DES-7Y", "8000"],
+            ["DCU-9M", "Medium temperature", "4CES-9Y", "9610"],
+            ["DCU-10M", "Medium temperature", "4VES-10Y", "9480"],
+            ["DCU-12M", "Medium temperature", "4TES-12Y", "11730"],
+            ["DCU-15M", "Medium temperature", "4PES-15Y", "12920"],
+            ["DCU-20M", "Medium temperature", "4NES-20Y", "16070"],
+            ["DCU-3L", "Low temperature", "4FES-3Y", "5250"],
+            ["DCU-4L", "Low temperature", "4EES-4Y", "6690"],
+            ["DCU-5L", "Low temperature", "4DES-5Y", "8000"],
+            ["DCU-6L", "Low temperature", "4CES-6Y", "9610"],
+            ["DCU-7L", "Low temperature", "4VES-7Y", "9480"],
+            ["DCU-9L", "Low temperature", "4TES-9Y", "11780"],
+            ["DCU-12L", "Low temperature", "4PES-12Y", "13010"],
+            ["DCU-14L", "Low temperature", "4NES-14Y", "15950"],
+            ["DCU-15L", "Low temperature", "4JE-15Y", "19080"],
+            ["DCU-18L", "Low temperature", "4HE-18Y", "22600"]
+          ]
+        }
+      },
+      {
+        "title": "LCU indoor scroll condensing units",
+        "description": "An indoor unit with horizontal air discharge combines a Copeland scroll compressor and an air-cooled condenser. ZB compressors serve medium-temperature duty and ZF compressors serve low-temperature duty.",
+        "sourcePages": "9",
+        "comparison": {
+          "sourcePages": "9",
+          "caption": "R404A cooling capacities at −20 °C evaporating temperature. The article lists the other rating points for its duty.",
+          "columns": ["Model", "Duty", "Compressor model", "Cooling at −20 °C (W)"],
+          "rows": [
+            ["LCU-2M", "Medium temperature", "ZB15KQE", "2030"],
+            ["LCU-3M", "Medium temperature", "ZB21KQE", "3180"],
+            ["LCU-4M", "Medium temperature", "ZB29KQE", "3800"],
+            ["LCU-5M", "Medium temperature", "ZB38KQE", "5300"],
+            ["LCU-6M", "Medium temperature", "ZB45KQE", "6060"],
+            ["LCU-8M", "Medium temperature", "ZB58KQE", "6940"],
+            ["LCU-9M", "Medium temperature", "ZB66KQE", "7560"],
+            ["LCU-10M", "Medium temperature", "ZB76KQE", "8890"],
+            ["LCU-13M", "Medium temperature", "ZB95KQE", "11700"],
+            ["LCU-15M", "Medium temperature", "ZB114KQE", "13600"],
+            ["LCU-3L", "Low temperature", "ZF09KQE", "3100"],
+            ["LCU-3.5L", "Low temperature", "ZF11KQE", "4000"],
+            ["LCU-5L", "Low temperature", "ZF15KQE", "5300"],
+            ["LCU-6L", "Low temperature", "ZF18KQE", "6600"],
+            ["LCU-8L", "Low temperature", "ZF25KQE", "8300"]
+          ]
+        }
+      },
+      {
         "title": "Packaged cold-room units",
         "description": "Monoblock units combine the refrigeration circuit and hot-gas defrost for small cold rooms. The HA range serves medium-temperature rooms and the MA range serves freezers.",
         "sourcePages": "11",
@@ -398,6 +457,38 @@
         }
       },
       {
+        "title": "R32 fixed-speed rotary compressors",
+        "description": "These single-phase Panasonic rotary compressors have T1 ratings for R32. Compare displacement, cooling capacity and coefficient of performance at the stated supply.",
+        "sourcePages": "33",
+        "comparison": {
+          "sourcePages": "33",
+          "caption": "Panasonic R32 fixed-speed models at T1, 220–240 V single-phase, 50 Hz.",
+          "columns": ["Model", "Displacement (cm³)", "T1 cooling capacity (W)", "T1 COP"],
+          "rows": [
+            ["9SS042DA", "4.3", "1305", "4.41"],
+            ["9RS050DA", "5.0", "1315", "4.28"],
+            ["9RS066DA", "6.7", "1705", "3.34"],
+            ["9RS072DB", "7.3", "1880", "3.11"],
+            ["9RS080DC", "8.0", "2160", "3.54"],
+            ["9RS092EA", "9.2", "2470", "3.50"],
+            ["9PS096DA", "9.6", "2565", "3.64"],
+            ["9PS102DF", "10.2", "2795", "3.70"],
+            ["9PS126DA", "12.6", "3480", "3.68"],
+            ["9PS132EA", "13.2", "3630", "3.72"],
+            ["9PS136EA", "13.6", "3780", "3.69"],
+            ["9PS146DA", "14.7", "4095", "3.71"],
+            ["9KS180DA", "18.0", "4930", "3.64"],
+            ["9KS196DA", "19.6", "5365", "3.65"],
+            ["9KS205DD", "20.7", "5725", "3.67"],
+            ["9VS210DA", "21.0", "5975", "3.83"],
+            ["9VS250DA", "25.0", "7120", "3.83"],
+            ["9VS270DA", "27.0", "7540", "3.81"],
+            ["9VS295DA", "29.5", "8240", "3.68"],
+            ["9VD330DA", "33.0", "9340", "3.66"]
+          ]
+        }
+      },
+      {
         "title": "Hermetic reciprocating compressors",
         "description": "Maneurop, GMCC, Secop, Cubigel and Embraco ranges include distinct low-, medium- and high-back-pressure applications. Match refrigerant, motor starting arrangement and rating conditions.",
         "sourcePages": "30, 35–38",
@@ -691,9 +782,9 @@
     "description": "Expansion and shut-off valves, filter driers, pressure vessels and oil management.",
     "products": [
       {
-        "title": "Thermostatic expansion valves",
-        "description": "Danfoss T2 and TE2 and Sanhua RFKH and RFGD ranges meter refrigerant into the evaporator. Specify refrigerant, capacity, equalisation method and connection. T2 and TE2 accept interchangeable orifices.",
-        "sourcePages": "60–62",
+        "title": "T2/TE2 expansion valve orifices",
+        "description": "An interchangeable orifice with a filter sets the capacity of a Danfoss T2 or TE2 expansion valve. Select the orifice by refrigerant and duty, then match it to a valve body.",
+        "sourcePages": "60",
         "comparison": {
           "sourcePages": "60",
           "caption": "Danfoss T2/TE2 interchangeable orifices with filter. Nominal capacities for range N (−40 to +10 °C).",
@@ -707,6 +798,182 @@
             ["068-2007", "04", "6.7", "6.0"],
             ["068-2008", "05", "8.6", "7.7"],
             ["068-2009", "06", "10.5", "9.1"]
+          ]
+        },
+        "relatedFamilies": ["T2/TE2 flare-to-flare valve bodies", "T2/TE2 flare-to-solder valve bodies"]
+      },
+      {
+        "title": "T2/TE2 flare-to-flare valve bodies",
+        "description": "Select the Danfoss body by refrigerant charge, evaporating range and pressure equalisation. Each body has flare connections at both ports. The interchangeable capacity orifice has its own order code.",
+        "sourcePages": "60",
+        "comparison": {
+          "sourcePages": "60",
+          "caption": "Each order code identifies the valve body and thermostatic element. MOP denotes maximum operating pressure.",
+          "columns": ["Order code", "Valve type", "Refrigerant", "Inlet × outlet", "Evaporating range", "MOP"],
+          "rows": [
+            ["068Z3206", "TX 2", "R22 / R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3208", "TX 2", "R22 / R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "With MOP"],
+            ["068Z3224", "TX 2", "R22 / R407C", "3/8 in × 1/2 in", "−40 to −5 °C", "With MOP"],
+            ["068Z3226", "TX 2", "R22 / R407C", "3/8 in × 1/2 in", "−40 to −15 °C", "With MOP"],
+            ["068Z3207", "TX 2", "R22 / R407C", "3/8 in × 1/2 in", "−60 to −25 °C", "Without MOP"],
+            ["068Z3228", "TX 2", "R22 / R407C", "3/8 in × 1/2 in", "−60 to −25 °C", "With MOP"],
+            ["068Z3209", "TEX 2", "R22 / R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3211", "TEX 2", "R22 / R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "With MOP"],
+            ["068Z3225", "TEX 2", "R22 / R407C", "3/8 in × 1/2 in", "−40 to −5 °C", "With MOP"],
+            ["068Z3227", "TEX 2", "R22 / R407C", "3/8 in × 1/2 in", "−40 to −15 °C", "With MOP"],
+            ["068Z3210", "TEX 2", "R22 / R407C", "3/8 in × 1/2 in", "−60 to −25 °C", "Without MOP"],
+            ["068Z3229", "TEX 2", "R22 / R407C", "3/8 in × 1/2 in", "−60 to −25 °C", "With MOP"],
+            ["068Z3496", "TZ 2", "R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3516", "TZ 2", "R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "With MOP"],
+            ["068Z3501", "TEZ 2", "R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3517", "TEZ 2", "R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "With MOP"],
+            ["068Z3346", "TN 2", "R134a", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3347", "TN 2", "R134a", "3/8 in × 1/2 in", "−40 to +10 °C", "With MOP"],
+            ["068Z3393", "TN 2", "R134a", "3/8 in × 1/2 in", "−40 to −5 °C", "With MOP"],
+            ["068Z3360", "TN 2", "R134a", "3/8 in × 1/2 in", "−40 to −15 °C", "With MOP"],
+            ["068Z3348", "TEN 2", "R134a", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3349", "TEN 2", "R134a", "3/8 in × 1/2 in", "−40 to +10 °C", "With MOP"],
+            ["068Z3392", "TEN 2", "R134a", "3/8 in × 1/2 in", "−40 to −5 °C", "With MOP"],
+            ["068Z3370", "TEN 2", "R134a", "3/8 in × 1/2 in", "−40 to −15 °C", "With MOP"],
+            ["068Z3400", "TS 2", "R404A / R507", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3402", "TS 2", "R404A / R507", "3/8 in × 1/2 in", "−40 to +10 °C", "With MOP"],
+            ["068Z3406", "TS 2", "R404A / R507", "3/8 in × 1/2 in", "−40 to −5 °C", "With MOP"],
+            ["068Z3408", "TS 2", "R404A / R507", "3/8 in × 1/2 in", "−40 to −15 °C", "With MOP"],
+            ["068Z3401", "TS 2", "R404A / R507", "3/8 in × 1/2 in", "−60 to −25 °C", "Without MOP"],
+            ["068Z3410", "TS 2", "R404A / R507", "3/8 in × 1/2 in", "−60 to −25 °C", "With MOP"],
+            ["068Z3403", "TES 2", "R404A / R507", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3405", "TES 2", "R404A / R507", "3/8 in × 1/2 in", "−40 to +10 °C", "With MOP"],
+            ["068Z3407", "TES 2", "R404A / R507", "3/8 in × 1/2 in", "−40 to −5 °C", "With MOP"],
+            ["068Z3409", "TES 2", "R404A / R507", "3/8 in × 1/2 in", "−40 to −15 °C", "With MOP"],
+            ["068Z3404", "TES 2", "R404A / R507", "3/8 in × 1/2 in", "−60 to −25 °C", "Without MOP"],
+            ["068Z3411", "TES 2", "R404A / R507", "3/8 in × 1/2 in", "−60 to −25 °C", "With MOP"]
+          ]
+        },
+        "relatedFamilies": ["T2/TE2 expansion valve orifices"]
+      },
+      {
+        "title": "T2/TE2 flare-to-solder valve bodies",
+        "description": "Select the Danfoss body by refrigerant charge, evaporating range and pressure equalisation. Each body has a flare inlet and an ODF solder outlet. The interchangeable capacity orifice has its own order code.",
+        "sourcePages": "60",
+        "comparison": {
+          "sourcePages": "60",
+          "caption": "Each order code identifies the valve body and thermostatic element. MOP denotes maximum operating pressure.",
+          "columns": ["Order code", "Valve type", "Refrigerant", "Inlet × outlet", "Evaporating range", "MOP"],
+          "rows": [
+            ["068Z3281", "TX 2", "R22 / R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3287", "TX 2", "R22 / R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "+15 °C"],
+            ["068Z3357", "TX 2", "R22 / R407C", "3/8 in × 1/2 in", "−60 to −25 °C", "Without MOP"],
+            ["068Z3319", "TX 2", "R22 / R407C", "3/8 in × 1/2 in", "−60 to −25 °C", "−20 °C"],
+            ["068Z3302", "TX 2", "R22 / R407C", "10 mm × 12 mm", "−40 to +10 °C", "Without MOP"],
+            ["068Z3308", "TX 2", "R22 / R407C", "10 mm × 12 mm", "−40 to +10 °C", "+15 °C"],
+            ["068Z3366", "TX 2", "R22 / R407C", "10 mm × 12 mm", "−40 to −15 °C", "−10 °C"],
+            ["068Z3361", "TX 2", "R22 / R407C", "10 mm × 12 mm", "−60 to −25 °C", "Without MOP"],
+            ["068Z3276", "TX 2", "R22 / R407C", "10 mm × 12 mm", "−60 to −25 °C", "−20 °C"],
+            ["068Z3284", "TEX 2", "R22 / R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3290", "TEX 2", "R22 / R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "+15 °C"],
+            ["068Z3359", "TEX 2", "R22 / R407C", "3/8 in × 1/2 in", "−60 to −25 °C", "Without MOP"],
+            ["068Z3320", "TEX 2", "R22 / R407C", "3/8 in × 1/2 in", "−60 to −25 °C", "−20 °C"],
+            ["068Z3305", "TEX 2", "R22 / R407C", "10 mm × 12 mm", "−40 to +10 °C", "Without MOP"],
+            ["068Z3311", "TEX 2", "R22 / R407C", "10 mm × 12 mm", "−40 to +10 °C", "+15 °C"],
+            ["068Z3367", "TEX 2", "R22 / R407C", "10 mm × 12 mm", "−40 to −15 °C", "−10 °C"],
+            ["068Z3363", "TEX 2", "R22 / R407C", "10 mm × 12 mm", "−60 to −25 °C", "Without MOP"],
+            ["068Z3277", "TEX 2", "R22 / R407C", "10 mm × 12 mm", "−60 to −25 °C", "−20 °C"],
+            ["068Z3329", "TZ 2", "R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "+15 °C"],
+            ["068Z3502", "TZ 2", "R407C", "10 mm × 12 mm", "−40 to +10 °C", "Without MOP"],
+            ["068Z3514", "TZ 2", "R407C", "10 mm × 12 mm", "−40 to +10 °C", "+15 °C"],
+            ["068Z3446", "TEZ 2", "R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3447", "TEZ 2", "R407C", "3/8 in × 1/2 in", "−40 to +10 °C", "+15 °C"],
+            ["068Z3503", "TEZ 2", "R407C", "10 mm × 12 mm", "−40 to +10 °C", "Without MOP"],
+            ["068Z3515", "TEZ 2", "R407C", "10 mm × 12 mm", "−40 to +10 °C", "+15 °C"],
+            ["068Z3383", "TN 2", "R134a", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3387", "TN 2", "R134a", "3/8 in × 1/2 in", "−40 to +10 °C", "+15 °C"],
+            ["068Z3384", "TN 2", "R134a", "10 mm × 12 mm", "−40 to +10 °C", "Without MOP"],
+            ["068Z3388", "TN 2", "R134a", "10 mm × 12 mm", "−40 to +10 °C", "+15 °C"],
+            ["068Z3385", "TEN 2", "R134a", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3389", "TEN 2", "R134a", "3/8 in × 1/2 in", "−40 to +10 °C", "+15 °C"],
+            ["068Z3386", "TEN 2", "R134a", "10 mm × 12 mm", "−40 to +10 °C", "Without MOP"],
+            ["068Z3390", "TEN 2", "R134a", "10 mm × 12 mm", "−40 to +10 °C", "+15 °C"],
+            ["068Z3414", "TS 2", "R404A / R507", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3416", "TS 2", "R404A / R507", "3/8 in × 1/2 in", "−40 to +10 °C", "+15 °C"],
+            ["068Z3429", "TS 2", "R404A / R507", "3/8 in × 1/2 in", "−40 to −15 °C", "−10 °C"],
+            ["068Z3418", "TS 2", "R404A / R507", "3/8 in × 1/2 in", "−60 to −25 °C", "Without MOP"],
+            ["068Z3420", "TS 2", "R404A / R507", "3/8 in × 1/2 in", "−60 to −25 °C", "−20 °C"],
+            ["068Z3435", "TS 2", "R404A / R507", "10 mm × 12 mm", "−40 to +10 °C", "Without MOP"],
+            ["068Z3423", "TS 2", "R404A / R507", "10 mm × 12 mm", "−40 to +10 °C", "+15 °C"],
+            ["068Z3436", "TS 2", "R404A / R507", "10 mm × 12 mm", "−40 to −15 °C", "−10 °C"],
+            ["068Z3425", "TS 2", "R404A / R507", "10 mm × 12 mm", "−60 to −25 °C", "Without MOP"],
+            ["068Z3427", "TS 2", "R404A / R507", "10 mm × 12 mm", "−60 to −25 °C", "−20 °C"],
+            ["068Z3415", "TES 2", "R404A / R507", "3/8 in × 1/2 in", "−40 to +10 °C", "Without MOP"],
+            ["068Z3417", "TES 2", "R404A / R507", "3/8 in × 1/2 in", "−40 to +10 °C", "+15 °C"],
+            ["068Z3430", "TES 2", "R404A / R507", "3/8 in × 1/2 in", "−40 to −15 °C", "−10 °C"],
+            ["068Z3419", "TES 2", "R404A / R507", "3/8 in × 1/2 in", "−60 to −25 °C", "Without MOP"],
+            ["068Z3421", "TES 2", "R404A / R507", "3/8 in × 1/2 in", "−60 to −25 °C", "−20 °C"],
+            ["068Z3422", "TES 2", "R404A / R507", "10 mm × 12 mm", "−40 to +10 °C", "Without MOP"],
+            ["068Z3424", "TES 2", "R404A / R507", "10 mm × 12 mm", "−40 to +10 °C", "+15 °C"],
+            ["068Z3437", "TES 2", "R404A / R507", "10 mm × 12 mm", "−40 to −15 °C", "−10 °C"],
+            ["068Z3426", "TES 2", "R404A / R507", "10 mm × 12 mm", "−60 to −25 °C", "Without MOP"],
+            ["068Z3428", "TES 2", "R404A / R507", "10 mm × 12 mm", "−60 to −25 °C", "−20 °C"]
+          ]
+        },
+        "relatedFamilies": ["T2/TE2 expansion valve orifices"]
+      },
+      {
+        "title": "RFGD balanced-port expansion valves",
+        "description": "Sanhua RFGD10 and RFGD20 valves have a built-in orifice and an external equalising connection. Compare the rated capacity and both line sizes for the selected refrigerant.",
+        "sourcePages": "62",
+        "comparison": {
+          "sourcePages": "62",
+          "caption": "Nominal capacity at 38 °C condensing, +4.4 °C evaporating and 37 °C liquid temperature, with 3.5 K static superheat.",
+          "columns": ["Model", "Series", "Refrigerant", "Nominal capacity (kW)", "Inlet (in)", "Outlet (in)"],
+          "rows": [
+            ["RFGD 01E-3.0-10", "RFGD10", "R22", "10.6", "3/8", "5/8"],
+            ["RFGD 01E-12.0-506", "RFGD20", "R22", "42.2", "5/8", "7/8"],
+            ["RFGD 01E-4.0-17", "RFGD10", "R22", "14.1", "1/2", "7/8"],
+            ["RFGD 01E-12.0-513", "RFGD20", "R22", "42.2", "5/8", "1-1/8"],
+            ["RFGD 01E-6.0-06", "RFGD10", "R22", "21.1", "1/2", "7/8"],
+            ["RFGD 01E-15.0-514", "RFGD20", "R22", "52.8", "5/8", "1-1/8"],
+            ["RFGD 01E-7.5-19", "RFGD10", "R22", "26.4", "5/8", "7/8"],
+            ["RFGD 01E-15.0-516", "RFGD20", "R22", "52.8", "7/8", "1-1/8"],
+            ["RFGD 01E-9.0-31", "RFGD10", "R22", "31.7", "5/8", "7/8"],
+            ["RFGD 01E-18.0-518", "RFGD20", "R22", "63.3", "7/8", "1-1/8"],
+            ["RFGD 01E-11.0-20", "RFGD10", "R22", "38.7", "5/8", "7/8"],
+            ["RFGD 01E-18.0-519", "RFGD20", "R22", "63.3", "7/8", "1-3/8"],
+            ["RFGD 02E-3.1-33", "RFGD10", "R407C", "10.9", "3/8", "5/8"],
+            ["RFGD 02E-12.0-542", "RFGD20", "R407C", "42.2", "5/8", "7/8"],
+            ["RFGD 02E-4.2-34", "RFGD10", "R407C", "14.8", "1/2", "7/8"],
+            ["RFGD 02E-12.0-543", "RFGD20", "R407C", "42.2", "5/8", "1-1/8"],
+            ["RFGD 02E-6.3-35", "RFGD10", "R407C", "22.2", "1/2", "7/8"],
+            ["RFGD 02E-15.0-545", "RFGD20", "R407C", "52.8", "5/8", "1-1/8"],
+            ["RFGD 02E-8.1-36", "RFGD10", "R407C", "28.5", "5/8", "7/8"],
+            ["RFGD 02E-15.0-547", "RFGD20", "R407C", "52.8", "7/8", "1-1/8"],
+            ["RFGD 02E-9.4-37", "RFGD10", "R407C", "33.1", "5/8", "7/8"],
+            ["RFGD 02E-18.0-549", "RFGD20", "R407C", "63.3", "7/8", "1-1/8"],
+            ["RFGD 02E-11.7-38", "RFGD10", "R407C", "41.1", "5/8", "7/8"],
+            ["RFGD 02E-18.0-551", "RFGD20", "R407C", "63.3", "7/8", "1-3/8"],
+            ["RFGD 03E-2.0-39", "RFGD10", "R404A / R507", "7.0", "3/8", "5/8"],
+            ["RFGD 03E-9.0-532", "RFGD20", "R404A / R507", "31.7", "5/8", "7/8"],
+            ["RFGD 03E-2.8-40", "RFGD10", "R404A / R507", "9.8", "1/2", "7/8"],
+            ["RFGD 03E-9.0-533", "RFGD20", "R404A / R507", "31.7", "5/8", "1-1/8"],
+            ["RFGD 03E-4.2-41", "RFGD10", "R404A / R507", "14.8", "1/2", "7/8"],
+            ["RFGD 03E-11.0-535", "RFGD20", "R404A / R507", "38.7", "5/8", "1-1/8"],
+            ["RFGD 03E-5.4-42", "RFGD10", "R404A / R507", "19.0", "5/8", "7/8"],
+            ["RFGD 03E-11.0-537", "RFGD20", "R404A / R507", "38.7", "7/8", "1-1/8"],
+            ["RFGD 03E-6.4-43", "RFGD10", "R404A / R507", "22.5", "5/8", "7/8"],
+            ["RFGD 03E-13.0-539", "RFGD20", "R404A / R507", "45.7", "7/8", "1-1/8"],
+            ["RFGD 03E-7.8-44", "RFGD10", "R404A / R507", "27.4", "5/8", "7/8"],
+            ["RFGD 03E-13.0-541", "RFGD20", "R404A / R507", "45.7", "7/8", "1-3/8"],
+            ["RFGD 04E-1.8-01", "RFGD10", "R134a", "6.3", "3/8", "5/8"],
+            ["RFGD 04E-8.0-501", "RFGD20", "R134a", "28.1", "5/8", "7/8"],
+            ["RFGD 04E-2.5-02", "RFGD10", "R134a", "8.8", "1/2", "7/8"],
+            ["RFGD 04E-8.0-502", "RFGD20", "R134a", "28.1", "5/8", "1-1/8"],
+            ["RFGD 04E-3.6-03", "RFGD10", "R134a", "12.7", "1/2", "7/8"],
+            ["RFGD 04E-10.0-504", "RFGD20", "R134a", "35.2", "5/8", "1-1/8"],
+            ["RFGD 04E-4.6-04", "RFGD10", "R134a", "16.2", "5/8", "7/8"],
+            ["RFGD 04E-10.0-520", "RFGD20", "R134a", "35.2", "7/8", "1-1/8"],
+            ["RFGD 04E-5.5-49", "RFGD10", "R134a", "19.3", "5/8", "7/8"],
+            ["RFGD 04E-12.0-522", "RFGD20", "R134a", "42.2", "7/8", "1-1/8"],
+            ["RFGD 04E-6.8-32", "RFGD10", "R134a", "23.9", "5/8", "7/8"],
+            ["RFGD 04E-12.0-524", "RFGD20", "R134a", "42.2", "7/8", "1-3/8"]
           ]
         }
       },
@@ -1239,6 +1506,40 @@
         }
       },
       {
+        "title": "Tube and capillary cutters",
+        "description": "Choose a wheel cutter by tube outside diameter. The PTC-01 uses a shear action for capillary tubing.",
+        "sourcePages": "97",
+        "comparison": {
+          "sourcePages": "97",
+          "caption": "Outside diameters are given in the two size ranges printed for each wheel cutter.",
+          "columns": ["Model", "Tool type", "Tube OD (in)", "Tube OD (mm)"],
+          "rows": [
+            ["CT-127", "Mini wheel cutter", "1/8 to 5/8", "3–16"],
+            ["CT-128", "Mini wheel cutter", "1/8 to 7/8", "3–22"],
+            ["CT-274", "Wheel cutter", "1/8 to 1-1/8", "3–28"],
+            ["CT-312", "Wheel cutter", "1/4 to 1-5/8", "6–41"],
+            ["CT-206", "Wheel cutter", "3/8 to 2-5/8", "10–66"],
+            ["PTC-01", "Capillary shears", "Unspecified", "Unspecified"]
+          ]
+        }
+      },
+      {
+        "title": "Tube expander kits",
+        "description": "Hydraulic and lever-operated kits expand tube ends for socket joints. Select the head set in inch or metric sizes and check the tools supplied in the case.",
+        "sourcePages": "98",
+        "comparison": {
+          "sourcePages": "98",
+          "caption": "Each model identifies a kit with a specific head size range and tube preparation tools.",
+          "columns": ["Model", "Actuation", "Tube outside diameter", "Included cutter"],
+          "rows": [
+            ["CT-300AL", "Hydraulic", "3/8 to 1-5/8 in", "CT-650"],
+            ["CT-300ML", "Hydraulic", "10–42 mm", "CT-650"],
+            ["CT-100A", "Hand lever", "3/8 to 1-1/8 in", "CT-532"],
+            ["CT-100M", "Hand lever", "10–28 mm", "CT-532"]
+          ]
+        }
+      },
+      {
         "title": "Manifolds, charging hoses and couplers",
         "description": "Manifold gauge sets, precision gauges, refrigerant-specific hoses, quick couplers, can-tap valves, piercing valves and valve-core tools. Match the service port, refrigerant scale and rated working pressure.",
         "sourcePages": "99–101",
@@ -1280,6 +1581,20 @@
             ["HT-1", "Manual", "Stainless steel"],
             ["HT-16", "Manual", "Brass"],
             ["HT-2", "Manual", "Dual stainless steel"]
+          ]
+        }
+      },
+      {
+        "title": "Manual oil charging pumps",
+        "description": "Hand-operated PCO pumps transfer oil through an SAE service connection. Compare the maximum delivery per stroke and pump pressure.",
+        "sourcePages": "98",
+        "comparison": {
+          "sourcePages": "98",
+          "caption": "Pump pressure and delivery per stroke are maximum values.",
+          "columns": ["Model", "Maximum pressure (psi)", "Maximum delivery (mL/stroke)", "SAE connection"],
+          "rows": [
+            ["PCO-1", "200", "50", "1/4 in"],
+            ["PCO-2", "250", "75", "1/4 and 3/8 in"]
           ]
         }
       },
@@ -1330,6 +1645,23 @@
             ["TRR24A", "220–240", "0.50", "3.5"],
             ["RC250-R32", "110–127", "0.26", "1.85"],
             ["RC520-R32", "220–240", "0.52", "3.70"]
+          ]
+        }
+      },
+      {
+        "title": "Electronic refrigerant charging scales",
+        "description": "These field scales weigh a refrigerant cylinder during charging or recovery. Choose by cylinder weight, platform size and resolution.",
+        "sourcePages": "105",
+        "comparison": {
+          "sourcePages": "105",
+          "caption": "Mass capacity, display resolution in grams and platform dimensions are listed for each scale.",
+          "columns": ["Model", "Capacity (kg)", "Resolution (g)", "Platform (mm)"],
+          "rows": [
+            ["RC-320", "100", "5", "270 × 270"],
+            ["RC-320C", "100", "5", "270 × 270"],
+            ["ERS-50", "50", "2", "230 × 230"],
+            ["ERS-70", "70", "5", "230 × 230"],
+            ["ERS-100", "100", "5", "230 × 230"]
           ]
         }
       },

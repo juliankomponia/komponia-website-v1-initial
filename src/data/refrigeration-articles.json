@@ -8035,7 +8035,14 @@
     "kind": "Oil grade",
     "application": "A mineral-oil grade for refrigeration compressors that specify naphthenic oil. Match the viscosity grade to the compressor specification.",
     "sourcePage": 51,
-    "images": [],
+    "images": [
+      {
+        "file": "mo-oil-containers.webp",
+        "alt": "Bottle and handled container of mineral refrigeration oil",
+        "caption": "BS-MO mineral oil series packaging. Select the viscosity grade by reference.",
+        "sourcePage": 51
+      }
+    ],
     "commonFacts": [],
     "variants": {
       "BS-MO-3GS": [
@@ -8299,7 +8306,14 @@
     "kind": "Oil grade",
     "application": "A polyalphaolefin grade for compressors in ammonia refrigeration systems. Match the viscosity grade to the compressor specification.",
     "sourcePage": 52,
-    "images": [],
+    "images": [
+      {
+        "file": "pao-oil-containers.webp",
+        "alt": "Two metal bottles of polyalphaolefin refrigeration oil",
+        "caption": "BS-PAO oil series packaging. The photograph represents several viscosity grades.",
+        "sourcePage": 52
+      }
+    ],
     "commonFacts": [],
     "variants": {
       "BS-PAO-46": [
@@ -8365,7 +8379,14 @@
     "kind": "Oil grade",
     "application": "A polyvinyl ether grade for air-conditioning and refrigeration compressors using HFC refrigerants. Match the viscosity grade to the compressor specification.",
     "sourcePage": 52,
-    "images": [],
+    "images": [
+      {
+        "file": "pve-oil-containers.webp",
+        "alt": "Two metal bottles of polyvinyl ether refrigeration oil",
+        "caption": "BS-PVE oil series packaging. Check the full grade suffix when ordering.",
+        "sourcePage": 52
+      }
+    ],
     "commonFacts": [
       [
         "Pour point",
@@ -8499,7 +8520,7 @@
   },
   {
     "range": "circuit-components",
-    "family": "Thermostatic expansion valves",
+    "family": "T2/TE2 expansion valve orifices",
     "name": "Interchangeable expansion valve orifice",
     "kind": "Order code",
     "application": "Fit this filtered orifice assembly in a T2 or TE2 thermostatic expansion valve. Select capacity for the refrigerant and valve operating range.",
@@ -8725,7 +8746,14 @@
     "kind": "Series",
     "application": "Select the capacitance and voltage specified for the motor or refrigeration compressor.",
     "sourcePage": 107,
-    "images": [],
+    "images": [
+      {
+        "file": "cbb60-connection-detail.webp",
+        "alt": "Lead exit and blade terminals on two CBB60 capacitors",
+        "caption": "CBB60 series connection detail showing lead and blade-terminal versions.",
+        "sourcePage": 107
+      }
+    ],
     "commonFacts": [
       [
         "Rated frequency",
@@ -11761,6 +11789,2280 @@
     ],
     "variants": {
       "FM-6009-GY": []
+    }
+  },
+  {
+    "range": "circuit-components",
+    "family": "T2/TE2 flare-to-flare valve bodies",
+    "name": "Danfoss T2/TE2 thermostatic expansion valve body",
+    "kind": "Order code",
+    "application": "The sensing bulb follows the evaporator outlet temperature. Match the body charge to the refrigerant and the separately specified orifice to the required capacity.",
+    "sourcePage": 60,
+    "images": [
+      {
+        "file": "t2-te2-bodies.webp",
+        "alt": "Two Danfoss expansion valve bodies with coiled capillaries and sensing bulbs",
+        "caption": "T2/TE2 series photograph with flare-ended bodies. Port sizes and equalisation depend on the order code.",
+        "sourcePage": 60
+      }
+    ],
+    "commonFacts": [
+      [
+        "Capillary length",
+        "1.5 m"
+      ],
+      [
+        "Connections",
+        "Flare inlet × flare outlet"
+      ]
+    ],
+    "variants": {
+      "068Z3206": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3208": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3224": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "NM"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3226": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "NL"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3207": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "B"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3228": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "B"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3209": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3211": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3225": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "NM"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3227": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "NL"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3210": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "B"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3229": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "B"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3496": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3516": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3501": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3517": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3346": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3347": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3393": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "NM"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3360": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "NL"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3348": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3349": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3392": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "NM"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3370": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "NL"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3400": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3402": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3406": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "NM"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3408": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "NL"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3401": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "B"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3410": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "B"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3403": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3405": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3407": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "NM"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3409": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "NL"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3404": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "B"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ],
+      "068Z3411": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "B"
+        ],
+        [
+          "Listed metric tube sizes",
+          "10 × 12 mm"
+        ]
+      ]
+    }
+  },
+  {
+    "range": "circuit-components",
+    "family": "T2/TE2 flare-to-solder valve bodies",
+    "name": "Danfoss T2/TE2 thermostatic expansion valve body",
+    "kind": "Order code",
+    "application": "The sensing bulb follows the evaporator outlet temperature. Match the body charge to the refrigerant and the separately specified orifice to the required capacity.",
+    "sourcePage": 60,
+    "images": [
+      {
+        "file": "t2-te2-bodies.webp",
+        "alt": "Two Danfoss expansion valve bodies with coiled capillaries and sensing bulbs",
+        "caption": "T2/TE2 series photograph with flare-ended bodies. Port sizes and equalisation depend on the order code.",
+        "sourcePage": 60
+      }
+    ],
+    "commonFacts": [
+      [
+        "Capillary length",
+        "1.5 m"
+      ],
+      [
+        "Connections",
+        "Flare inlet × ODF solder outlet"
+      ]
+    ],
+    "variants": {
+      "068Z3281": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3287": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3357": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3319": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3302": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3308": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3366": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "NL"
+        ]
+      ],
+      "068Z3361": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3276": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3284": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3290": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3359": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3320": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3305": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3311": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3367": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "NL"
+        ]
+      ],
+      "068Z3363": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3277": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3329": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3502": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3514": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3446": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3447": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3503": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3515": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3383": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3387": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3384": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3388": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3385": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3389": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3386": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3390": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3414": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3416": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3429": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "NL"
+        ]
+      ],
+      "068Z3418": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3420": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3435": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3423": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3436": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "NL"
+        ]
+      ],
+      "068Z3425": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3427": [
+        [
+          "Pressure equalisation",
+          "Internal"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3415": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3417": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3430": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "NL"
+        ]
+      ],
+      "068Z3419": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3421": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3422": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3424": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "N"
+        ]
+      ],
+      "068Z3437": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "NL"
+        ]
+      ],
+      "068Z3426": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ],
+      "068Z3428": [
+        [
+          "Pressure equalisation",
+          "External"
+        ],
+        [
+          "Range designation",
+          "B"
+        ]
+      ]
+    }
+  },
+  {
+    "range": "circuit-components",
+    "family": "RFGD balanced-port expansion valves",
+    "name": "Sanhua balanced-port thermostatic expansion valve",
+    "kind": "Model",
+    "application": "The built-in orifice meters refrigerant into the evaporator. The balanced port is suitable for reversible circuits, and the bulb senses temperature at the evaporator outlet.",
+    "sourcePage": 62,
+    "images": [
+      {
+        "file": "rfgd-balanced-port-valves.webp",
+        "alt": "Two brass expansion valves with capillary tubes and sensing bulbs",
+        "caption": "RFGD series photograph. The model determines the port sizes and nominal capacity.",
+        "sourcePage": 62
+      }
+    ],
+    "commonFacts": [
+      [
+        "Equalising connection",
+        "1/4 in, external"
+      ],
+      [
+        "Evaporating range",
+        "−40 to +10 °C, without MOP"
+      ],
+      [
+        "Maximum operating pressure",
+        "4.8 MPa"
+      ],
+      [
+        "Standard capillary length",
+        "1500 mm"
+      ],
+      [
+        "Ambient temperature",
+        "−35 to +55 °C"
+      ]
+    ],
+    "variants": {
+      "RFGD 01E-3.0-10": [],
+      "RFGD 01E-12.0-506": [],
+      "RFGD 01E-4.0-17": [],
+      "RFGD 01E-12.0-513": [],
+      "RFGD 01E-6.0-06": [],
+      "RFGD 01E-15.0-514": [],
+      "RFGD 01E-7.5-19": [],
+      "RFGD 01E-15.0-516": [],
+      "RFGD 01E-9.0-31": [],
+      "RFGD 01E-18.0-518": [],
+      "RFGD 01E-11.0-20": [],
+      "RFGD 01E-18.0-519": [],
+      "RFGD 02E-3.1-33": [],
+      "RFGD 02E-12.0-542": [],
+      "RFGD 02E-4.2-34": [],
+      "RFGD 02E-12.0-543": [],
+      "RFGD 02E-6.3-35": [],
+      "RFGD 02E-15.0-545": [],
+      "RFGD 02E-8.1-36": [],
+      "RFGD 02E-15.0-547": [],
+      "RFGD 02E-9.4-37": [],
+      "RFGD 02E-18.0-549": [],
+      "RFGD 02E-11.7-38": [],
+      "RFGD 02E-18.0-551": [],
+      "RFGD 03E-2.0-39": [],
+      "RFGD 03E-9.0-532": [],
+      "RFGD 03E-2.8-40": [],
+      "RFGD 03E-9.0-533": [],
+      "RFGD 03E-4.2-41": [],
+      "RFGD 03E-11.0-535": [],
+      "RFGD 03E-5.4-42": [],
+      "RFGD 03E-11.0-537": [],
+      "RFGD 03E-6.4-43": [],
+      "RFGD 03E-13.0-539": [],
+      "RFGD 03E-7.8-44": [],
+      "RFGD 03E-13.0-541": [],
+      "RFGD 04E-1.8-01": [],
+      "RFGD 04E-8.0-501": [],
+      "RFGD 04E-2.5-02": [],
+      "RFGD 04E-8.0-502": [],
+      "RFGD 04E-3.6-03": [],
+      "RFGD 04E-10.0-504": [],
+      "RFGD 04E-4.6-04": [],
+      "RFGD 04E-10.0-520": [],
+      "RFGD 04E-5.5-49": [],
+      "RFGD 04E-12.0-522": [],
+      "RFGD 04E-6.8-32": [],
+      "RFGD 04E-12.0-524": []
+    }
+  },
+  {
+    "range": "cooling-units",
+    "family": "DCU semi-hermetic condensing units",
+    "name": "DCU air-cooled condensing unit",
+    "kind": "Model",
+    "application": "An air-cooled condenser and a Bitzer semi-hermetic reciprocating compressor share a cabinet. Select the medium- or low-temperature duty using capacity at the design evaporating temperature.",
+    "sourcePage": 8,
+    "images": [
+      {
+        "file": "dcu-condenser-fans.webp",
+        "alt": "Four fans on the condenser side of a DCU cabinet",
+        "caption": "DCU series cabinet detail. The four-fan arrangement shown varies by model.",
+        "sourcePage": 8
+      }
+    ],
+    "commonFacts": [
+      [
+        "Refrigerant",
+        "R404A"
+      ],
+      [
+        "Compressor type",
+        "Semi-hermetic reciprocating"
+      ]
+    ],
+    "variants": {
+      "DCU-3M": [
+        [
+          "Compressor nominal power",
+          "3 hp"
+        ],
+        [
+          "Condenser fans",
+          "1 × 500 mm"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "7420 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "4890 W"
+        ]
+      ],
+      "DCU-4M": [
+        [
+          "Compressor nominal power",
+          "4 hp"
+        ],
+        [
+          "Condenser fans",
+          "1 × 500 mm"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "9180 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "6120 W"
+        ]
+      ],
+      "DCU-5M": [
+        [
+          "Compressor nominal power",
+          "5 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 500 mm"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "9940 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "6580 W"
+        ]
+      ],
+      "DCU-6M": [
+        [
+          "Compressor nominal power",
+          "6 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 500 mm"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "12510 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "8220 W"
+        ]
+      ],
+      "DCU-7M": [
+        [
+          "Compressor nominal power",
+          "7 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 500 mm"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "15220 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "10040 W"
+        ]
+      ],
+      "DCU-9M": [
+        [
+          "Compressor nominal power",
+          "9 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 500 mm"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "18520 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "12120 W"
+        ]
+      ],
+      "DCU-10M": [
+        [
+          "Compressor nominal power",
+          "10 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 500 mm"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "19180 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "12200 W"
+        ]
+      ],
+      "DCU-12M": [
+        [
+          "Compressor nominal power",
+          "12 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 500 mm"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "23300 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "14990 W"
+        ]
+      ],
+      "DCU-15M": [
+        [
+          "Compressor nominal power",
+          "15 hp"
+        ],
+        [
+          "Condenser fans",
+          "4 × 500 mm"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "26350 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "16680 W"
+        ]
+      ],
+      "DCU-20M": [
+        [
+          "Compressor nominal power",
+          "20 hp"
+        ],
+        [
+          "Condenser fans",
+          "4 × 500 mm"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "31700 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "20450 W"
+        ]
+      ],
+      "DCU-3L": [
+        [
+          "Compressor nominal power",
+          "3 hp"
+        ],
+        [
+          "Condenser fans",
+          "1 × 500 mm"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "3170 W"
+        ],
+        [
+          "Cooling at −35 °C evaporation",
+          "2380 W"
+        ]
+      ],
+      "DCU-4L": [
+        [
+          "Compressor nominal power",
+          "4 hp"
+        ],
+        [
+          "Condenser fans",
+          "1 × 500 mm"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "4020 W"
+        ],
+        [
+          "Cooling at −35 °C evaporation",
+          "3010 W"
+        ]
+      ],
+      "DCU-5L": [
+        [
+          "Compressor nominal power",
+          "5 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 500 mm"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "4800 W"
+        ],
+        [
+          "Cooling at −35 °C evaporation",
+          "3600 W"
+        ]
+      ],
+      "DCU-6L": [
+        [
+          "Compressor nominal power",
+          "6 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 500 mm"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "5690 W"
+        ],
+        [
+          "Cooling at −35 °C evaporation",
+          "4220 W"
+        ]
+      ],
+      "DCU-7L": [
+        [
+          "Compressor nominal power",
+          "7 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 500 mm"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "5280 W"
+        ],
+        [
+          "Cooling at −35 °C evaporation",
+          "3710 W"
+        ]
+      ],
+      "DCU-9L": [
+        [
+          "Compressor nominal power",
+          "9 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 500 mm"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "6740 W"
+        ],
+        [
+          "Cooling at −35 °C evaporation",
+          "4840 W"
+        ]
+      ],
+      "DCU-12L": [
+        [
+          "Compressor nominal power",
+          "12 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 500 mm"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "7200 W"
+        ],
+        [
+          "Cooling at −35 °C evaporation",
+          "5040 W"
+        ]
+      ],
+      "DCU-14L": [
+        [
+          "Compressor nominal power",
+          "14 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 500 mm"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "9140 W"
+        ],
+        [
+          "Cooling at −35 °C evaporation",
+          "6580 W"
+        ]
+      ],
+      "DCU-15L": [
+        [
+          "Compressor nominal power",
+          "15 hp"
+        ],
+        [
+          "Condenser fans",
+          "4 × 500 mm"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "11200 W"
+        ],
+        [
+          "Cooling at −35 °C evaporation",
+          "8160 W"
+        ]
+      ],
+      "DCU-18L": [
+        [
+          "Compressor nominal power",
+          "18 hp"
+        ],
+        [
+          "Condenser fans",
+          "4 × 500 mm"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "13570 W"
+        ],
+        [
+          "Cooling at −35 °C evaporation",
+          "10070 W"
+        ]
+      ]
+    }
+  },
+  {
+    "range": "cooling-units",
+    "family": "LCU indoor scroll condensing units",
+    "name": "LCU air-cooled condensing unit",
+    "kind": "Model",
+    "application": "An indoor unit with horizontal air discharge combines a Copeland scroll compressor and an air-cooled condenser. ZB compressors serve medium-temperature duty and ZF compressors serve low-temperature duty.",
+    "sourcePage": 9,
+    "images": [
+      {
+        "file": "lcu-horizontal-discharge.webp",
+        "alt": "LCU unit with a scroll compressor, copper lines, gauges and condenser fans",
+        "caption": "LCU series photograph. Fan count and compressor model vary with duty.",
+        "sourcePage": 9
+      }
+    ],
+    "commonFacts": [
+      [
+        "Refrigerant",
+        "R404A"
+      ],
+      [
+        "Compressor type",
+        "Scroll"
+      ]
+    ],
+    "variants": {
+      "LCU-2M": [
+        [
+          "Compressor nominal power",
+          "2 hp"
+        ],
+        [
+          "Condenser fans",
+          "1 × 120 W"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "3790 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "2880 W"
+        ]
+      ],
+      "LCU-3M": [
+        [
+          "Compressor nominal power",
+          "3 hp"
+        ],
+        [
+          "Condenser fans",
+          "1 × 120 W"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "5000 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "3580 W"
+        ]
+      ],
+      "LCU-4M": [
+        [
+          "Compressor nominal power",
+          "4 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 120 W"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "7000 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "4600 W"
+        ]
+      ],
+      "LCU-5M": [
+        [
+          "Compressor nominal power",
+          "5 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 120 W"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "8300 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "6000 W"
+        ]
+      ],
+      "LCU-6M": [
+        [
+          "Compressor nominal power",
+          "6 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 120 W"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "10950 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "7580 W"
+        ]
+      ],
+      "LCU-8M": [
+        [
+          "Compressor nominal power",
+          "8 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 180 W"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "14200 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "9900 W"
+        ]
+      ],
+      "LCU-9M": [
+        [
+          "Compressor nominal power",
+          "9 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 180 W"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "16450 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "11700 W"
+        ]
+      ],
+      "LCU-10M": [
+        [
+          "Compressor nominal power",
+          "10 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 180 W"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "19550 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "14400 W"
+        ]
+      ],
+      "LCU-13M": [
+        [
+          "Compressor nominal power",
+          "13 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 450 W"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "22000 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "15500 W"
+        ]
+      ],
+      "LCU-15M": [
+        [
+          "Compressor nominal power",
+          "15 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 600 W"
+        ],
+        [
+          "Cooling at −5 °C evaporation",
+          "26900 W"
+        ],
+        [
+          "Cooling at −15 °C evaporation",
+          "18100 W"
+        ]
+      ],
+      "LCU-3L": [
+        [
+          "Compressor nominal power",
+          "3 hp"
+        ],
+        [
+          "Condenser fans",
+          "1 × 180 W"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "2190 W"
+        ],
+        [
+          "Cooling at −40 °C evaporation",
+          "1400 W"
+        ]
+      ],
+      "LCU-3.5L": [
+        [
+          "Compressor nominal power",
+          "3.5 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 140 W"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "2800 W"
+        ],
+        [
+          "Cooling at −40 °C evaporation",
+          "1900 W"
+        ]
+      ],
+      "LCU-5L": [
+        [
+          "Compressor nominal power",
+          "5 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 180 W"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "3800 W"
+        ],
+        [
+          "Cooling at −40 °C evaporation",
+          "2500 W"
+        ]
+      ],
+      "LCU-6L": [
+        [
+          "Compressor nominal power",
+          "6 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 180 W"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "4700 W"
+        ],
+        [
+          "Cooling at −40 °C evaporation",
+          "3100 W"
+        ]
+      ],
+      "LCU-8L": [
+        [
+          "Compressor nominal power",
+          "8 hp"
+        ],
+        [
+          "Condenser fans",
+          "2 × 180 W"
+        ],
+        [
+          "Cooling at −30 °C evaporation",
+          "5950 W"
+        ],
+        [
+          "Cooling at −40 °C evaporation",
+          "3800 W"
+        ]
+      ]
+    }
+  },
+  {
+    "range": "compressors",
+    "family": "R32 fixed-speed rotary compressors",
+    "name": "Panasonic R32 fixed-speed rotary compressor",
+    "kind": "Model",
+    "application": "This rotary compressor serves a single-phase R32 air-conditioning circuit. The T1 capacity and electrical supply provide the basis for model comparison.",
+    "sourcePage": 33,
+    "images": [
+      {
+        "file": "panasonic-rotary-housings.webp",
+        "alt": "Black rotary compressor shell with pipe connections and mounting feet",
+        "caption": "Panasonic rotary compressor family photograph. Housing and connections vary by model.",
+        "sourcePage": 33
+      }
+    ],
+    "commonFacts": [
+      [
+        "Refrigerant",
+        "R32"
+      ],
+      [
+        "Supply",
+        "220–240 V, single-phase, 50 Hz"
+      ],
+      [
+        "Drive",
+        "Fixed speed"
+      ]
+    ],
+    "variants": {
+      "9SS042DA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "4453"
+        ]
+      ],
+      "9RS050DA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "4487"
+        ]
+      ],
+      "9RS066DA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "5817"
+        ]
+      ],
+      "9RS072DB": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "6415"
+        ]
+      ],
+      "9RS080DC": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "7370"
+        ]
+      ],
+      "9RS092EA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "8428"
+        ]
+      ],
+      "9PS096DA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "8752"
+        ]
+      ],
+      "9PS102DF": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "9537"
+        ]
+      ],
+      "9PS126DA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "11874"
+        ]
+      ],
+      "9PS132EA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "12386"
+        ]
+      ],
+      "9PS136EA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "12897"
+        ]
+      ],
+      "9PS146DA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "13972"
+        ]
+      ],
+      "9KS180DA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "16821"
+        ]
+      ],
+      "9KS196DA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "18305"
+        ]
+      ],
+      "9KS205DD": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "19534"
+        ]
+      ],
+      "9VS210DA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "20387"
+        ]
+      ],
+      "9VS250DA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "24293"
+        ]
+      ],
+      "9VS270DA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "25726"
+        ]
+      ],
+      "9VS295DA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "28115"
+        ]
+      ],
+      "9VD330DA": [
+        [
+          "T1 cooling capacity (Btu/h)",
+          "31868"
+        ]
+      ]
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Tube and capillary cutters",
+    "name": "Mini tube cutter",
+    "kind": "Model",
+    "application": "The compact frame guides a cutting wheel around small-diameter refrigeration tube.",
+    "sourcePage": 97,
+    "images": [
+      {
+        "file": "mini-tube-cutters.webp",
+        "alt": "Two small wheel cutters for refrigeration tube",
+        "caption": "CT-127 and CT-128 mini cutter family. Refer to the model for the cutting range.",
+        "sourcePage": 97
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "CT-127": [],
+      "CT-128": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Tube and capillary cutters",
+    "name": "Adjustable tube cutter",
+    "kind": "Model",
+    "application": "The screw feed advances the cutting wheel as the tool rotates around the tube.",
+    "sourcePage": 97,
+    "images": [
+      {
+        "file": "adjustable-tube-cutters.webp",
+        "alt": "Two tube cutters with screw feeds and black adjusting knobs",
+        "caption": "CT-274 and CT-312 cutter family. The maximum opening depends on the model.",
+        "sourcePage": 97
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "CT-274": [],
+      "CT-312": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Tube and capillary cutters",
+    "name": "Large-diameter tube cutter",
+    "kind": "Model",
+    "application": "An open frame and adjustable feed accept refrigeration tubing up to 66 mm outside diameter.",
+    "sourcePage": 97,
+    "images": [
+      {
+        "file": "large-tube-cutter.webp",
+        "alt": "Large wheel cutter with an open frame and blue adjusting knob",
+        "caption": "CT-206 tube cutter.",
+        "sourcePage": 97
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "CT-206": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Tube and capillary cutters",
+    "name": "Capillary tube cutter",
+    "kind": "Model",
+    "application": "A plier-style cutter for preparing capillary tube ends. Specify the tube size in the enquiry.",
+    "sourcePage": 97,
+    "images": [
+      {
+        "file": "capillary-shears.webp",
+        "alt": "Green-handled capillary tube shears",
+        "caption": "PTC-01 capillary cutter.",
+        "sourcePage": 97
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "PTC-01": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Tube expander kits",
+    "name": "Hydraulic tube expander kit",
+    "kind": "Model",
+    "application": "The expander forms the socket end of a tube joint. The matching cutter and deburrer prepare the tube before expansion.",
+    "sourcePage": 98,
+    "images": [
+      {
+        "file": "hydraulic-expander-kit.webp",
+        "alt": "Open case with a tube expander, interchangeable heads and preparation tools",
+        "caption": "CT-300 series kit. Expander heads depend on the inch or metric model.",
+        "sourcePage": 98
+      }
+    ],
+    "commonFacts": [
+      [
+        "Included deburrer",
+        "CT-207"
+      ],
+      [
+        "Included reamer",
+        "CT-209"
+      ]
+    ],
+    "variants": {
+      "CT-300AL": [],
+      "CT-300ML": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Tube expander kits",
+    "name": "Hand-lever tube expander kit",
+    "kind": "Model",
+    "application": "The expander forms the socket end of a tube joint. The matching cutter and deburrer prepare the tube before expansion.",
+    "sourcePage": 98,
+    "images": [
+      {
+        "file": "manual-expander-kit.webp",
+        "alt": "Open case with a tube expander, interchangeable heads and preparation tools",
+        "caption": "CT-100 series kit. Expander heads depend on the inch or metric model.",
+        "sourcePage": 98
+      }
+    ],
+    "commonFacts": [
+      [
+        "Included deburrer",
+        "CT-207"
+      ]
+    ],
+    "variants": {
+      "CT-100A": [],
+      "CT-100M": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Manual oil charging pumps",
+    "name": "Manual refrigeration oil charging pump",
+    "kind": "Model",
+    "application": "The pump handle delivers oil one stroke at a time. Choose the model by the service connection and the pressure required to transfer oil.",
+    "sourcePage": 98,
+    "images": [
+      {
+        "file": "oil-charging-pump.webp",
+        "alt": "Hand pump with a T-handle, metal pickup tube and side connection",
+        "caption": "PCO series pump photograph. Connections and delivery per stroke vary by model.",
+        "sourcePage": 98
+      }
+    ],
+    "commonFacts": [],
+    "variants": {
+      "PCO-1": [],
+      "PCO-2": []
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Electronic refrigerant charging scales",
+    "name": "Electronic refrigerant charging scale",
+    "kind": "Model",
+    "application": "Place the cylinder on the platform to monitor its change in mass as refrigerant is added or recovered.",
+    "sourcePage": 105,
+    "images": [
+      {
+        "file": "rc-charging-scale.webp",
+        "alt": "RC charging scale in its carrying case with the display beside the platform",
+        "caption": "RC series scale and case. Capacity and resolution are model-specific.",
+        "sourcePage": 105
+      }
+    ],
+    "commonFacts": [
+      [
+        "Accuracy",
+        "0.05%"
+      ],
+      [
+        "Display units",
+        "kg, lb, oz"
+      ],
+      [
+        "Battery supply",
+        "6 × AAA"
+      ],
+      [
+        "Operating temperature",
+        "−10 to +40 °C"
+      ],
+      [
+        "Weight",
+        "3.2 kg"
+      ]
+    ],
+    "variants": {
+      "RC-320": [
+        [
+          "Functions",
+          "Automatic power-off, Backlit display"
+        ]
+      ],
+      "RC-320C": [
+        [
+          "Functions",
+          "Numeric keypad, Charging and recovery alarm"
+        ]
+      ]
+    }
+  },
+  {
+    "range": "service-tools",
+    "family": "Electronic refrigerant charging scales",
+    "name": "Electronic refrigerant charging scale",
+    "kind": "Model",
+    "application": "Place the cylinder on the platform to monitor its change in mass as refrigerant is added or recovered.",
+    "sourcePage": 105,
+    "images": [
+      {
+        "file": "ers-charging-scale.webp",
+        "alt": "Charging scale with a separate wired display in an open case",
+        "caption": "ERS series scale and case. Capacity and resolution are model-specific.",
+        "sourcePage": 105
+      }
+    ],
+    "commonFacts": [
+      [
+        "Accuracy",
+        "0.05%"
+      ],
+      [
+        "Display units",
+        "kg, lb, oz"
+      ],
+      [
+        "Battery supply",
+        "2 × 9 V"
+      ],
+      [
+        "Operating temperature",
+        "0 to +50 °C"
+      ],
+      [
+        "Weight",
+        "3.3 kg"
+      ],
+      [
+        "Functions",
+        "Memory, overload alert and weight-removed display"
+      ]
+    ],
+    "variants": {
+      "ERS-50": [],
+      "ERS-70": [],
+      "ERS-100": []
     }
   }
 ]

@@ -21,9 +21,9 @@ export function ArticleCard({ article }: { article: CatalogueArticle }) {
 }
 
 const selections: Record<string, string[]> = {
-  home: ['Truck refrigeration units', 'Liquid receivers and suction accumulators', 'Tube working tools'],
-  refrigeration: ['Cold-room air coolers', 'Solenoid valves', 'Cold-room LED lighting'],
-  components: ['Single and dual pressure switches', 'Digital and infrared thermometers', 'Shaded-pole and EC motors'],
+  home: ['Truck refrigeration units', 'T2/TE2 flare-to-flare valve bodies', 'Tube expander kits'],
+  refrigeration: ['LCU indoor scroll condensing units', 'RFGD balanced-port expansion valves', 'R32 fixed-speed rotary compressors'],
+  components: ['Single and dual pressure switches', 'T2/TE2 flare-to-solder valve bodies', 'Shaded-pole and EC motors'],
   'pressure-and-switching-devices': ['Single and dual pressure switches', 'Phase and motor protection relays'],
   'pressure-switches': ['Single and dual pressure switches'],
   'controllers-and-control-systems': ['Air-conditioning remote controls', 'Control boxes, thermostats and defrost timers', 'Voltage protection, relays and contactors'],

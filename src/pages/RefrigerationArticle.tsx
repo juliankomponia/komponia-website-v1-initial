@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router';
 import { CatalogueFigure } from '../components/CatalogueCards';
 import { capabilityInquiryPath } from '../data/inquiry';
 import { articleByPath, productArticle, type CatalogueArticle } from '../data/refrigeration-articles';
-import { refrigerationPath } from '../data/refrigeration';
+import { refrigerationFamilyPath, refrigerationPath } from '../data/refrigeration';
 import NotFound from './NotFound';
 
 function Specifications({ article }: { article: CatalogueArticle }) {
@@ -53,6 +53,12 @@ export default function RefrigerationArticle() {
             return <Link key={ref} to={variant.path} aria-current={ref === reference ? 'page' : undefined}>{ref}</Link>;
           })}
         </div>
+        {product.relatedFamilies?.length && <nav className="article-related" aria-label="Matching valve components">
+          <h3>Matching valve components</h3>
+          {product.relatedFamilies.map(title => <Link key={title} className="hvacr-link" to={refrigerationFamilyPath(range.slug, title)}>
+            {title} <ArrowRight size={16} aria-hidden="true" />
+          </Link>)}
+        </nav>}
         <Link className="hvacr-link" to={rangePath}><ArrowLeft size={16} aria-hidden="true" /> Browse {range.title.toLowerCase()}</Link>
       </section>
     </div>
